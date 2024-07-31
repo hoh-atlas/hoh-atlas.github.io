@@ -19,7 +19,7 @@ const Intro = () => {
         imageUrls={['https://i.ibb.co/cF5FpyK/channels4-banner.jpg']}> {/* second image: https://i.ibb.co/wwcPmgV/channels4-banner.jpg*/ }
     </TextContainer>
     <SectionDivider />
-    <H1 center={true} style={{marginBottom: '0px'}} >Frequently Used Menuu</H1>
+    <H1 center={true} style={{marginBottom: '0px'}} >Frequently Used Menu</H1>
     <MenuGrid />
     <SectionDivider />
     <CardContainer 
