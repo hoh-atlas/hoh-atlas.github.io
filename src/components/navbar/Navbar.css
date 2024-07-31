@@ -1,0 +1,137 @@
+/*.activeLink {
+    color: red;
+}
+
+.nonactiveLink {
+    color: blue;
+}*/
+
+/* 700px and more */
+nav {
+    background-color: #3367b4;
+    border-radius: 0px 0px 15px 15px;
+    background-image: url('../../images/loading_navbar.png');
+    background-repeat: repeat-x;
+    background-position: left bottom -7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+}
+
+.nav-header img {
+    width: 110px;
+    margin-left: 30px;
+    vertical-align: middle;
+}
+
+.nav-header button {
+    cursor: pointer;
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-list ul {
+    margin-right: 50px;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #e5e5e5;
+    /*background-image: url('../../images/button_skin.png');*/
+}
+
+.nav-list a:hover {
+    color: #da8641;
+}
+
+.nav-list a:hover .nav-icon {
+    transform: scale(1.05);
+}
+
+.nav-icon {
+    width: 25px;
+    margin-right: 5px;
+    vertical-align: middle;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Less than 700px */
+@media (max-width: 700px) {
+    .navigation {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .nav-header {
+        width: 100%;
+    }
+
+    .nav-header button {
+        cursor: pointer;
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+
+    .hamburger-icon {
+        color: #e5e5e5;
+        font-size: 25px;
+        margin-right: 20px;
+    }
+
+    .nav-list li {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .nav-list a:hover {
+        color: #a55a5a;
+    }
+
+    .nav-list a:hover .nav-icon {
+        transform: scale(1.05);
+    }
+
+    .nav-icon {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    /* React classes */
+    .hide {
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.1s linear;
+    }
+
+    .show {
+        height: 300px;
+        /*transition: all 0.1s linear;*/
+    }
+}

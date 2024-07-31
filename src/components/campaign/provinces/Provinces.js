@@ -1,0 +1,63 @@
+import "./Provinces.css";
+
+import { useState, useEffect } from "react";
+
+import SelectBox from "../../shared/SelectBox";
+import Prologue from "../../shared/Prologue";
+import SectionDivider from "../../shared/SectionDivider";
+
+import allProvinces from "../data";
+import TableProvince from "./TableProvince";
+
+const Provinces = () => {
+
+    const basePath = "campaign";
+    const pageName = "Campaign - Provinces";
+
+    const optionsColors = {"panganea":"#76cc66", "desert_valley":"#d1b077"};
+
+    const options = allProvinces.map((oneProvince) => {
+        return {value: oneProvince.id, label: `${oneProvince.id} - ${oneProvince.name}`, dotColor: optionsColors[oneProvince?.location]}
+    });
+
+    const [selectedOption, setSelectedOption] = useState(options[0]);
+
+    const getProvince = (option) => {
+        return allProvinces.find(oneProvince => oneProvince.id == option.value);
+    }
+
+    useEffect(() => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedOptionParam = urlParams.get('region');
+        if (selectedOptionParam) {
+            const foundOption = options.find(option => option.value == selectedOptionParam);
+            if (foundOption) {
+                setSelectedOption(foundOption);
+            }
+        }
+    }, []);
+
+    const handleOptionChange = (selectedOption) => {
+        setSelectedOption(selectedOption);
+        const newUrl = `${window.location.pathname}?region=${selectedOption.value}`;
+        window.history.pushState({ path: newUrl }, '', newUrl);
+    };
+
+    return <>
+        <Prologue imageSrc={"https://i.ibb.co/PZ7fb4t/icon-expansion-city-capital-land.png"} alt={"Provinces"} maxHeight={"65px"}>This is an overview of all Regions and their possible rewards.</Prologue>
+        <SelectBox
+            options={options}
+            width={"50%"}
+            color={"#f2f1ed"}
+            selectedOption={selectedOption}
+            onOptionChange={handleOptionChange}
+        />
+        <SectionDivider/>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "15px", marginBottom: "15px" }}>
+            <img src={getProvince(selectedOption)?.img} style={{ maxHeight: '200px' }} />
+        </div>
+        <TableProvince data={getProvince(selectedOption)}/>
+    </>
+}
+
+export default Provinces;

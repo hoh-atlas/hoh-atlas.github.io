@@ -1,0 +1,9 @@
+.centered-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.inline-image-container {
+    display: inline-block;
+    vertical-align: middle;
+}
