@@ -1,8 +1,19 @@
+import province_1 from '../../images/campaign/provinces/province_1.webp';
+import province_2 from '../../images/campaign/provinces/province_2.webp';
+import province_3 from '../../images/campaign/provinces/province_3.webp';
+import province_4 from '../../images/campaign/provinces/province_4.webp';
+import province_5 from '../../images/campaign/provinces/province_5.webp';
+import province_6 from '../../images/campaign/provinces/province_6.webp';
+import province_7 from '../../images/campaign/provinces/province_7.webp';
+import province_8 from '../../images/campaign/provinces/province_8.webp';
+import province_9 from '../../images/campaign/provinces/province_9.webp';
+import province_10 from '../../images/campaign/provinces/province_10.webp';
+
 const allProvinces = [
     {
         id: 1,
         name: "Verdant Shore",
-        img: "https://i.ibb.co/sq8yKjb/province-1.png",
+        img: province_1,
         location: "panganea",
         encounters: [
             {
@@ -204,7 +215,7 @@ const allProvinces = [
     {
         id: 2,
         name: "Razorback Plains",
-        img: "https://i.ibb.co/fnNycZB/province-2.png",
+        img: province_2,
         location: "panganea",
         encounters: [
             {
@@ -492,7 +503,7 @@ const allProvinces = [
     {
         id: 3,
         name: "Grok's Domain",
-        img: "https://i.ibb.co/G5fvGN9/province-3.png",
+        img: province_3,
         location: "panganea",
         encounters: [
             {
@@ -752,7 +763,7 @@ const allProvinces = [
     {
         id: 4,
         name: "The Foothills",
-        img: "https://i.ibb.co/6bf4dpx/province-4.png",
+        img: province_4,
         location: "panganea",
         encounters: [
             {
@@ -1020,7 +1031,7 @@ const allProvinces = [
     {
         id: 5,
         name: "Rumbling Plateau",
-        img: "https://i.ibb.co/kXjw9hw/province-5.png",
+        img: province_5,
         location: "panganea",
         encounters: [
             {
@@ -1280,7 +1291,7 @@ const allProvinces = [
     {
         id: 6,
         name: "Northern Coast",
-        img: "https://i.ibb.co/TWgf756/province-6.png",
+        img: province_6,
         location: "panganea",
         encounters: [
             {
@@ -1540,7 +1551,7 @@ const allProvinces = [
     {
         id: 7,
         name: "Minotaur Isthmus",
-        img: "https://i.ibb.co/1ZZhNCb/province-7.png",
+        img: province_7,
         location: "panganea",
         encounters: [
             {
@@ -1796,7 +1807,7 @@ const allProvinces = [
     {
         id: 8,
         name: "Eroding Lands",
-        img: "https://i.ibb.co/WKJw13B/province-8.png",
+        img: province_8,
         location: "panganea",
         encounters: [
             {
@@ -2048,7 +2059,7 @@ const allProvinces = [
     {
         id: 9,
         name: "White Dunes",
-        img: "https://i.ibb.co/j87B0fX/province-9.png",
+        img: province_9,
         location: "desert_valley",
         encounters: [
             {
@@ -2339,7 +2350,7 @@ const allProvinces = [
     {
         id: 10,
         name: "Deerhide Flats",
-        img: "https://i.ibb.co/gz981s3/province-10.png",
+        img: province_10,
         location: "desert_valley",
         encounters: [
             {

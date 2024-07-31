@@ -1,15 +1,266 @@
+import Unit_AbrahamLincoln_fullbody from '../../images/heroes/fullbody/Unit_AbrahamLincoln_fullbody.webp';
+import Unit_Achilles_fullbody from '../../images/heroes/fullbody/Unit_Achilles_fullbody.webp';
+import Unit_AdaLovelace_fullbody from '../../images/heroes/fullbody/Unit_AdaLovelace_fullbody.webp';
+import Unit_AlbertEinstein_fullbody from '../../images/heroes/fullbody/Unit_AlbertEinstein_fullbody.webp';
+import Unit_ArtemisiaIOfCaria_fullbody from '../../images/heroes/fullbody/Unit_ArtemisiaIOfCaria_fullbody.webp';
+import Unit_AshokaTheGreat_fullbody from '../../images/heroes/fullbody/Unit_AshokaTheGreat_fullbody.webp';
+import Unit_AttilaTheHun_fullbody from '../../images/heroes/fullbody/Unit_AttilaTheHun_fullbody.webp';
+import Unit_AztecTlacateccatl_fullbody from '../../images/heroes/fullbody/Unit_AztecTlacateccatl_fullbody.webp';
+import Unit_BenjaminFranklin_fullbody from '../../images/heroes/fullbody/Unit_BenjaminFranklin_fullbody.webp';
+import Unit_Charlemagne_fullbody from '../../images/heroes/fullbody/Unit_Charlemagne_fullbody.webp';
+import Unit_Cleopatra_fullbody from '../../images/heroes/fullbody/Unit_Cleopatra_fullbody.webp';
+import Unit_CyrusTheGreat_fullbody from '../../images/heroes/fullbody/Unit_CyrusTheGreat_fullbody.webp';
+import Unit_DArtagnan_fullbody from '../../images/heroes/fullbody/Unit_DArtagnan_fullbody.webp';
+import Unit_Edison_fullbody from '../../images/heroes/fullbody/Unit_Edison_fullbody.webp';
+import Unit_EgyptianVizier_fullbody from '../../images/heroes/fullbody/Unit_EgyptianVizier_fullbody.webp';
+import Unit_Geisha_fullbody from '../../images/heroes/fullbody/Unit_Geisha_fullbody.webp';
+import Unit_GeorgeWashington_fullbody from '../../images/heroes/fullbody/Unit_GeorgeWashington_fullbody.webp';
+import Unit_GreekMathematician_fullbody from '../../images/heroes/fullbody/Unit_GreekMathematician_fullbody.webp';
+import Unit_Hatshepsut_fullbody from '../../images/heroes/fullbody/Unit_Hatshepsut_fullbody.webp';
+import Unit_Hercules_fullbody from '../../images/heroes/fullbody/Unit_Hercules_fullbody.webp';
+import Unit_HermannTheCheruscan_fullbody from '../../images/heroes/fullbody/Unit_HermannTheCheruscan_fullbody.webp';
+import Unit_Hoplit_fullbody from '../../images/heroes/fullbody/Unit_Hoplit_fullbody.webp';
+import Unit_HuaMulan_fullbody from '../../images/heroes/fullbody/Unit_HuaMulan_fullbody.webp';
+import Unit_Inanna_fullbody from '../../images/heroes/fullbody/Unit_Inanna_fullbody.webp';
+import Unit_JaguarWarrior_fullbody from '../../images/heroes/fullbody/Unit_JaguarWarrior_fullbody.webp';
+import Unit_JaneAusten_fullbody from '../../images/heroes/fullbody/Unit_JaneAusten_fullbody.webp';
+import Unit_JapaneseShogun_fullbody from '../../images/heroes/fullbody/Unit_JapaneseShogun_fullbody.webp';
+import Unit_Jester_fullbody from '../../images/heroes/fullbody/Unit_Jester_fullbody.webp';
+import Unit_JoanOfArc_fullbody from '../../images/heroes/fullbody/Unit_JoanOfArc_fullbody.webp';
+import Unit_JuliusCaesar_fullbody from '../../images/heroes/fullbody/Unit_JuliusCaesar_fullbody.webp';
+import Unit_KarlMarx_fullbody from '../../images/heroes/fullbody/Unit_KarlMarx_fullbody.webp';
+import Unit_KingMinos_fullbody from '../../images/heroes/fullbody/Unit_KingMinos_fullbody.webp';
+import Unit_LadySixSky_fullbody from '../../images/heroes/fullbody/Unit_LadySixSky_fullbody.webp';
+import Unit_Lagertha_fullbody from '../../images/heroes/fullbody/Unit_Lagertha_fullbody.webp';
+import Unit_LeifErikson_fullbody from '../../images/heroes/fullbody/Unit_LeifErikson_fullbody.webp';
+import Unit_LeonardoDaVinci_fullbody from '../../images/heroes/fullbody/Unit_LeonardoDaVinci_fullbody.webp';
+import Unit_Leonidas_fullbody from '../../images/heroes/fullbody/Unit_Leonidas_fullbody.webp';
+import Unit_LouisXIV_fullbody from '../../images/heroes/fullbody/Unit_LouisXIV_fullbody.webp';
+import Unit_LudwigvanBeethoven_fullbody from '../../images/heroes/fullbody/Unit_LudwigvanBeethoven_fullbody.webp';
+import Unit_MansaMusa_fullbody from '../../images/heroes/fullbody/Unit_MansaMusa_fullbody.webp';
+import Unit_MaoriChief_fullbody from '../../images/heroes/fullbody/Unit_MaoriChief_fullbody.webp';
+import Unit_MarcoPolo_fullbody from '../../images/heroes/fullbody/Unit_MarcoPolo_fullbody.webp';
+import Unit_MargaretIOfDenmark_fullbody from '../../images/heroes/fullbody/Unit_MargaretIOfDenmark_fullbody.webp';
+import Unit_MarieCurie_fullbody from '../../images/heroes/fullbody/Unit_MarieCurie_fullbody.webp';
+import Unit_MayanAstronomer_fullbody from '../../images/heroes/fullbody/Unit_MayanAstronomer_fullbody.webp';
+import Unit_Medusa_fullbody from '../../images/heroes/fullbody/Unit_Medusa_fullbody.webp';
+import Unit_Menes_fullbody from '../../images/heroes/fullbody/Unit_Menes_fullbody.webp';
+import Unit_MiyamotoMusashi_fullbody from '../../images/heroes/fullbody/Unit_MiyamotoMusashi_fullbody.webp';
+import Unit_NapoleonBonaparte_fullbody from '../../images/heroes/fullbody/Unit_NapoleonBonaparte_fullbody.webp';
+import Unit_NikolaTesla_fullbody from '../../images/heroes/fullbody/Unit_NikolaTesla_fullbody.webp';
+import Unit_Ninja_fullbody from '../../images/heroes/fullbody/Unit_Ninja_fullbody.webp';
+import Unit_NubianMercenary_fullbody from '../../images/heroes/fullbody/Unit_NubianMercenary_fullbody.webp';
+import Unit_OracleofDephi_fullbody from '../../images/heroes/fullbody/Unit_OracleofDephi_fullbody.webp';
+import Unit_OttomanGeneral_fullbody from '../../images/heroes/fullbody/Unit_OttomanGeneral_fullbody.webp';
+import Unit_OttoVonBismarck_fullbody from '../../images/heroes/fullbody/Unit_OttoVonBismarck_fullbody.webp';
+import Unit_PakalTheGreat_fullbody from '../../images/heroes/fullbody/Unit_PakalTheGreat_fullbody.webp';
+import Unit_Pocahontas_fullbody from '../../images/heroes/fullbody/Unit_Pocahontas_fullbody.webp';
+import Unit_Pythagoras_fullbody from '../../images/heroes/fullbody/Unit_Pythagoras_fullbody.webp';
+import Unit_QinShiHuang_fullbody from '../../images/heroes/fullbody/Unit_QinShiHuang_fullbody.webp';
+import Unit_QueenBoudicca_fullbody from '../../images/heroes/fullbody/Unit_QueenBoudicca_fullbody.webp';
+import Unit_QueenElizabethI_fullbody from '../../images/heroes/fullbody/Unit_QueenElizabethI_fullbody.webp';
+import Unit_RagnarLodbrok_fullbody from '../../images/heroes/fullbody/Unit_RagnarLodbrok_fullbody.webp';
+import Unit_RamsesII_fullbody from '../../images/heroes/fullbody/Unit_RamsesII_fullbody.webp';
+import Unit_RobinHood_fullbody from '../../images/heroes/fullbody/Unit_RobinHood_fullbody.webp';
+import Unit_RomanCenturion_fullbody from '../../images/heroes/fullbody/Unit_RomanCenturion_fullbody.webp';
+import Unit_RomanPraetor_fullbody from '../../images/heroes/fullbody/Unit_RomanPraetor_fullbody.webp';
+import Unit_Shaolin_fullbody from '../../images/heroes/fullbody/Unit_Shaolin_fullbody.webp';
+import Unit_SiouxShaman_fullbody from '../../images/heroes/fullbody/Unit_SiouxShaman_fullbody.webp';
+import Unit_SirLancelot_fullbody from '../../images/heroes/fullbody/Unit_SirLancelot_fullbody.webp';
+import Unit_Spartacus_fullbody from '../../images/heroes/fullbody/Unit_Spartacus_fullbody.webp';
+import Unit_SunTzu_fullbody from '../../images/heroes/fullbody/Unit_SunTzu_fullbody.webp';
+import Unit_TomoeGozen_fullbody from '../../images/heroes/fullbody/Unit_TomoeGozen_fullbody.webp';
+import Unit_TribalHealer_fullbody from '../../images/heroes/fullbody/Unit_TribalHealer_fullbody.webp';
+import Unit_UlyssesSGrant_fullbody from '../../images/heroes/fullbody/Unit_UlyssesSGrant_fullbody.webp';
+import Unit_VikingJarl_fullbody from '../../images/heroes/fullbody/Unit_VikingJarl_fullbody.webp';
+import Unit_VikingRaider_fullbody from '../../images/heroes/fullbody/Unit_VikingRaider_fullbody.webp';
+import Unit_VincentVanGogh_fullbody from '../../images/heroes/fullbody/Unit_VincentVanGogh_fullbody.webp';
+import Unit_WilliamTell_fullbody from '../../images/heroes/fullbody/Unit_WilliamTell_fullbody.webp';
+import Unit_WilliamWallace_fullbody from '../../images/heroes/fullbody/Unit_WilliamWallace_fullbody.webp';
+
+import Unit_AbrahamLincoln from '../../images/heroes/icons/Unit_AbrahamLincoln.webp';
+import Unit_Achilles from '../../images/heroes/icons/Unit_Achilles.webp';
+import Unit_AdaLovelace from '../../images/heroes/icons/Unit_AdaLovelace.webp';
+import Unit_AlbertEinstein from '../../images/heroes/icons/Unit_AlbertEinstein.webp';
+import Unit_ArtemisiaIOfCaria from '../../images/heroes/icons/Unit_ArtemisiaIOfCaria.webp';
+import Unit_AshokaTheGreat from '../../images/heroes/icons/Unit_AshokaTheGreat.webp';
+import Unit_AttilaTheHun from '../../images/heroes/icons/Unit_AttilaTheHun.webp';
+import Unit_AztecTlacateccatl from '../../images/heroes/icons/Unit_AztecTlacateccatl.webp';
+import Unit_BenjaminFranklin from '../../images/heroes/icons/Unit_BenjaminFranklin.webp';
+import Unit_Charlemagne from '../../images/heroes/icons/Unit_Charlemagne.webp';
+import Unit_Cleopatra from '../../images/heroes/icons/Unit_Cleopatra.webp';
+import Unit_Confucius from '../../images/heroes/icons/Unit_Confucius.webp';
+import Unit_CyrusTheGreat from '../../images/heroes/icons/Unit_CyrusTheGreat.webp';
+import Unit_DArtagnan from '../../images/heroes/icons/Unit_DArtagnan.webp';
+import Unit_EarlyRome_Huns_Attila from '../../images/heroes/icons/Unit_EarlyRome_Huns_Attila.webp';
+import Unit_EgyptianVizier from '../../images/heroes/icons/Unit_EgyptianVizier.webp';
+import Unit_Geisha from '../../images/heroes/icons/Unit_Geisha.webp';
+import Unit_GeorgeWashington from '../../images/heroes/icons/Unit_GeorgeWashington.webp';
+import Unit_GreekMathematician from '../../images/heroes/icons/Unit_GreekMathematician.webp';
+import Unit_Hatshepsut from '../../images/heroes/icons/Unit_Hatshepsut.webp';
+import Unit_Hercules from '../../images/heroes/icons/Unit_Hercules.webp';
+import Unit_HermannTheCheruscan from '../../images/heroes/icons/Unit_HermannTheCheruscan.webp';
+import Unit_Hoplit from '../../images/heroes/icons/Unit_Hoplit.webp';
+import Unit_HuaMulan from '../../images/heroes/icons/Unit_HuaMulan.webp';
+import Unit_Inanna from '../../images/heroes/icons/Unit_Inanna.webp';
+import Unit_JaguarWarrior from '../../images/heroes/icons/Unit_JaguarWarrior.webp';
+import Unit_JaneAusten from '../../images/heroes/icons/Unit_JaneAusten.webp';
+import Unit_JapaneseShogun from '../../images/heroes/icons/Unit_JapaneseShogun.webp';
+import Unit_Jester from '../../images/heroes/icons/Unit_Jester.webp';
+import Unit_JoanOfArc from '../../images/heroes/icons/Unit_JoanOfArc.webp';
+import Unit_JohnLocke from '../../images/heroes/icons/Unit_JohnLocke.webp';
+import Unit_JuliusCaesar from '../../images/heroes/icons/Unit_JuliusCaesar.webp';
+import Unit_KarlMarx from '../../images/heroes/icons/Unit_KarlMarx.webp';
+import Unit_KingMinos from '../../images/heroes/icons/Unit_KingMinos.webp';
+import Unit_LadySixSky from '../../images/heroes/icons/Unit_LadySixSky.webp';
+import Unit_Lagertha from '../../images/heroes/icons/Unit_Lagertha.webp';
+import Unit_LeifErikson from '../../images/heroes/icons/Unit_LeifErikson.webp';
+import Unit_LeonardoDaVinci from '../../images/heroes/icons/Unit_LeonardoDaVinci.webp';
+import Unit_Leonidas from '../../images/heroes/icons/Unit_Leonidas.webp';
+import Unit_LouisXIV from '../../images/heroes/icons/Unit_LouisXIV.webp';
+import Unit_LudwigVanBeethoven from '../../images/heroes/icons/Unit_LudwigVanBeethoven.webp';
+import Unit_MansaMusa from '../../images/heroes/icons/Unit_MansaMusa.webp';
+import Unit_MaoriChief from '../../images/heroes/icons/Unit_MaoriChief.webp';
+import Unit_MarcoPolo from '../../images/heroes/icons/Unit_MarcoPolo.webp';
+import Unit_MargaretIOfDenmark from '../../images/heroes/icons/Unit_MargaretIOfDenmark.webp';
+import Unit_MarieCurie from '../../images/heroes/icons/Unit_MarieCurie.webp';
+import Unit_MayanAstronomer from '../../images/heroes/icons/Unit_MayanAstronomer.webp';
+import Unit_Medusa from '../../images/heroes/icons/Unit_Medusa.webp';
+import Unit_Menes from '../../images/heroes/icons/Unit_Menes.webp';
+import Unit_MiyamotoMusashi from '../../images/heroes/icons/Unit_MiyamotoMusashi.webp';
+import Unit_NapoleonBonaparte from '../../images/heroes/icons/Unit_NapoleonBonaparte.webp';
+import Unit_NikolaTesla from '../../images/heroes/icons/Unit_NikolaTesla.webp';
+import Unit_Ninja from '../../images/heroes/icons/Unit_Ninja.webp';
+import Unit_NubianMercenary from '../../images/heroes/icons/Unit_NubianMercenary.webp';
+import Unit_OracleOfDephi from '../../images/heroes/icons/Unit_OracleOfDephi.webp';
+import Unit_OttomanGeneral from '../../images/heroes/icons/Unit_OttomanGeneral.webp';
+import Unit_OttoVonBismarck from '../../images/heroes/icons/Unit_OttoVonBismarck.webp';
+import Unit_PakalTheGreat from '../../images/heroes/icons/Unit_PakalTheGreat.webp';
+import Unit_Plato from '../../images/heroes/icons/Unit_Plato.webp';
+import Unit_Pythagoras from '../../images/heroes/icons/Unit_Pythagoras.webp';
+import Unit_QinShiHuang from '../../images/heroes/icons/Unit_QinShiHuang.webp';
+import Unit_QueenBoudicca from '../../images/heroes/icons/Unit_QueenBoudicca.webp';
+import Unit_QueenElizabethI from '../../images/heroes/icons/Unit_QueenElizabethI.webp';
+import Unit_RagnarLodbrok from '../../images/heroes/icons/Unit_RagnarLodbrok.webp';
+import Unit_RamsesII from '../../images/heroes/icons/Unit_RamsesII.webp';
+import Unit_RobinHood from '../../images/heroes/icons/Unit_RobinHood.webp';
+import Unit_RomanCenturion from '../../images/heroes/icons/Unit_RomanCenturion.webp';
+import Unit_RomanPraetor from '../../images/heroes/icons/Unit_RomanPraetor.webp';
+import Unit_Shaolin from '../../images/heroes/icons/Unit_Shaolin.webp';
+import Unit_SiouxShaman from '../../images/heroes/icons/Unit_SiouxShaman.webp';
+import Unit_SirLancelot from '../../images/heroes/icons/Unit_SirLancelot.webp';
+import Unit_Spartacus from '../../images/heroes/icons/Unit_Spartacus.webp';
+import Unit_SunTzu from '../../images/heroes/icons/Unit_SunTzu.webp';
+import Unit_ThomasAlvaEdison from '../../images/heroes/icons/Unit_ThomasAlvaEdison.webp';
+import Unit_TigerLily from '../../images/heroes/icons/Unit_TigerLily.webp';
+import Unit_TomoeGozen from '../../images/heroes/icons/Unit_TomoeGozen.webp';
+import Unit_TribalHealer from '../../images/heroes/icons/Unit_TribalHealer.webp';
+import Unit_UlyssesSGrant from '../../images/heroes/icons/Unit_UlyssesSGrant.webp';
+import Unit_Unknown from '../../images/heroes/icons/Unit_Unknown.webp';
+import Unit_VikingJarl from '../../images/heroes/icons/Unit_VikingJarl.webp';
+import Unit_VikingRaider from '../../images/heroes/icons/Unit_VikingRaider.webp';
+import Unit_VincentVanGogh from '../../images/heroes/icons/Unit_VincentVanGogh.webp';
+import Unit_WilliamTell from '../../images/heroes/icons/Unit_WilliamTell.webp';
+import Unit_WilliamWallace from '../../images/heroes/icons/Unit_WilliamWallace.webp';
+
+import icon_hero_battle_ability_abrahamlincoln from '../../images/heroes/abilities/icon_hero_battle_ability_abrahamlincoln.webp';
+import icon_hero_battle_ability_achilles from '../../images/heroes/abilities/icon_hero_battle_ability_achilles.webp';
+import icon_hero_battle_ability_adalovelace from '../../images/heroes/abilities/icon_hero_battle_ability_adalovelace.webp';
+import icon_hero_battle_ability_alberteinstein from '../../images/heroes/abilities/icon_hero_battle_ability_alberteinstein.webp';
+import icon_hero_battle_ability_artemisiaiofcaria from '../../images/heroes/abilities/icon_hero_battle_ability_artemisiaiofcaria.webp';
+import icon_hero_battle_ability_ashokathegreat from '../../images/heroes/abilities/icon_hero_battle_ability_ashokathegreat.webp';
+import icon_hero_battle_ability_attilathehun from '../../images/heroes/abilities/icon_hero_battle_ability_attilathehun.webp';
+import icon_hero_battle_ability_aztectlacateccatl from '../../images/heroes/abilities/icon_hero_battle_ability_aztectlacateccatl.webp';
+import icon_hero_battle_ability_benjaminfranklin from '../../images/heroes/abilities/icon_hero_battle_ability_benjaminfranklin.webp';
+import icon_hero_battle_ability_charlemagne from '../../images/heroes/abilities/icon_hero_battle_ability_charlemagne.webp';
+import icon_hero_battle_ability_cleopatra from '../../images/heroes/abilities/icon_hero_battle_ability_cleopatra.webp';
+import icon_hero_battle_ability_confucius from '../../images/heroes/abilities/icon_hero_battle_ability_confucius.webp';
+import icon_hero_battle_ability_cyrusthegreat from '../../images/heroes/abilities/icon_hero_battle_ability_cyrusthegreat.webp';
+import icon_hero_battle_ability_dartagnan from '../../images/heroes/abilities/icon_hero_battle_ability_dartagnan.webp';
+import icon_hero_battle_ability_egyptianvizier from '../../images/heroes/abilities/icon_hero_battle_ability_egyptianvizier.webp';
+import icon_hero_battle_ability_geisha from '../../images/heroes/abilities/icon_hero_battle_ability_geisha.webp';
+import icon_hero_battle_ability_georgewashington from '../../images/heroes/abilities/icon_hero_battle_ability_georgewashington.webp';
+import icon_hero_battle_ability_greekmathematician from '../../images/heroes/abilities/icon_hero_battle_ability_greekmathematician.webp';
+import icon_hero_battle_ability_harunalrashid from '../../images/heroes/abilities/icon_hero_battle_ability_harunalrashid.webp';
+import icon_hero_battle_ability_hatshepsut from '../../images/heroes/abilities/icon_hero_battle_ability_hatshepsut.webp';
+import icon_hero_battle_ability_hercules from '../../images/heroes/abilities/icon_hero_battle_ability_hercules.webp';
+import icon_hero_battle_ability_hermannthecheruscan from '../../images/heroes/abilities/icon_hero_battle_ability_hermannthecheruscan.webp';
+import icon_hero_battle_ability_hoplit from '../../images/heroes/abilities/icon_hero_battle_ability_hoplit.webp';
+import icon_hero_battle_ability_huamulan from '../../images/heroes/abilities/icon_hero_battle_ability_huamulan.webp';
+import icon_hero_battle_ability_inanna from '../../images/heroes/abilities/icon_hero_battle_ability_inanna.webp';
+import icon_hero_battle_ability_jaguarwarrior from '../../images/heroes/abilities/icon_hero_battle_ability_jaguarwarrior.webp';
+import icon_hero_battle_ability_janeausten from '../../images/heroes/abilities/icon_hero_battle_ability_janeausten.webp';
+import icon_hero_battle_ability_japaneseshogun from '../../images/heroes/abilities/icon_hero_battle_ability_japaneseshogun.webp';
+import icon_hero_battle_ability_jester from '../../images/heroes/abilities/icon_hero_battle_ability_jester.webp';
+import icon_hero_battle_ability_joanofarc from '../../images/heroes/abilities/icon_hero_battle_ability_joanofarc.webp';
+import icon_hero_battle_ability_johnlocke from '../../images/heroes/abilities/icon_hero_battle_ability_johnlocke.webp';
+import icon_hero_battle_ability_juliuscaesar from '../../images/heroes/abilities/icon_hero_battle_ability_juliuscaesar.webp';
+import icon_hero_battle_ability_karlmarx from '../../images/heroes/abilities/icon_hero_battle_ability_karlmarx.webp';
+import icon_hero_battle_ability_kingminos from '../../images/heroes/abilities/icon_hero_battle_ability_kingminos.webp';
+import icon_hero_battle_ability_ladysixsky from '../../images/heroes/abilities/icon_hero_battle_ability_ladysixsky.webp';
+import icon_hero_battle_ability_lagertha from '../../images/heroes/abilities/icon_hero_battle_ability_lagertha.webp';
+import icon_hero_battle_ability_leiferikson from '../../images/heroes/abilities/icon_hero_battle_ability_leiferikson.webp';
+import icon_hero_battle_ability_leonardodavinci from '../../images/heroes/abilities/icon_hero_battle_ability_leonardodavinci.webp';
+import icon_hero_battle_ability_leonidas from '../../images/heroes/abilities/icon_hero_battle_ability_leonidas.webp';
+import icon_hero_battle_ability_louisxiv from '../../images/heroes/abilities/icon_hero_battle_ability_louisxiv.webp';
+import icon_hero_battle_ability_ludwigvanbeethoven from '../../images/heroes/abilities/icon_hero_battle_ability_ludwigvanbeethoven.webp';
+import icon_hero_battle_ability_mansamusa from '../../images/heroes/abilities/icon_hero_battle_ability_mansamusa.webp';
+import icon_hero_battle_ability_maorichief from '../../images/heroes/abilities/icon_hero_battle_ability_maorichief.webp';
+import icon_hero_battle_ability_marcopolo from '../../images/heroes/abilities/icon_hero_battle_ability_marcopolo.webp';
+import icon_hero_battle_ability_margaretiofdenmark from '../../images/heroes/abilities/icon_hero_battle_ability_margaretiofdenmark.webp';
+import icon_hero_battle_ability_mariecurie from '../../images/heroes/abilities/icon_hero_battle_ability_mariecurie.webp';
+import icon_hero_battle_ability_mayanastronomer from '../../images/heroes/abilities/icon_hero_battle_ability_mayanastronomer.webp';
+import icon_hero_battle_ability_medusa from '../../images/heroes/abilities/icon_hero_battle_ability_medusa.webp';
+import icon_hero_battle_ability_menes from '../../images/heroes/abilities/icon_hero_battle_ability_menes.webp';
+import icon_hero_battle_ability_miyamotomusashi from '../../images/heroes/abilities/icon_hero_battle_ability_miyamotomusashi.webp';
+import icon_hero_battle_ability_montezumai from '../../images/heroes/abilities/icon_hero_battle_ability_montezumai.webp';
+import icon_hero_battle_ability_napoleonbonaparte from '../../images/heroes/abilities/icon_hero_battle_ability_napoleonbonaparte.webp';
+import icon_hero_battle_ability_ninja from '../../images/heroes/abilities/icon_hero_battle_ability_ninja.webp';
+import icon_hero_battle_ability_nubianmercenary from '../../images/heroes/abilities/icon_hero_battle_ability_nubianmercenary.webp';
+import icon_hero_battle_ability_oracleofdephi from '../../images/heroes/abilities/icon_hero_battle_ability_oracleofdephi.webp';
+import icon_hero_battle_ability_ottomangeneral from '../../images/heroes/abilities/icon_hero_battle_ability_ottomangeneral.webp';
+import icon_hero_battle_ability_ottovonbismarck from '../../images/heroes/abilities/icon_hero_battle_ability_ottovonbismarck.webp';
+import icon_hero_battle_ability_pakalthegreat from '../../images/heroes/abilities/icon_hero_battle_ability_pakalthegreat.webp';
+import icon_hero_battle_ability_plato from '../../images/heroes/abilities/icon_hero_battle_ability_plato.webp';
+import icon_hero_battle_ability_pythagoras from '../../images/heroes/abilities/icon_hero_battle_ability_pythagoras.webp';
+import icon_hero_battle_ability_queenboudicca from '../../images/heroes/abilities/icon_hero_battle_ability_queenboudicca.webp';
+import icon_hero_battle_ability_queenelizabethi from '../../images/heroes/abilities/icon_hero_battle_ability_queenelizabethi.webp';
+import icon_hero_battle_ability_quinshihuang from '../../images/heroes/abilities/icon_hero_battle_ability_quinshihuang.webp';
+import icon_hero_battle_ability_ragnarlodbrok from '../../images/heroes/abilities/icon_hero_battle_ability_ragnarlodbrok.webp';
+import icon_hero_battle_ability_ramsesii from '../../images/heroes/abilities/icon_hero_battle_ability_ramsesii.webp';
+import icon_hero_battle_ability_robinhood from '../../images/heroes/abilities/icon_hero_battle_ability_robinhood.webp';
+import icon_hero_battle_ability_romancenturion from '../../images/heroes/abilities/icon_hero_battle_ability_romancenturion.webp';
+import icon_hero_battle_ability_romanpraetor from '../../images/heroes/abilities/icon_hero_battle_ability_romanpraetor.webp';
+import icon_hero_battle_ability_saladin from '../../images/heroes/abilities/icon_hero_battle_ability_saladin.webp';
+import icon_hero_battle_ability_scheherazade from '../../images/heroes/abilities/icon_hero_battle_ability_scheherazade.webp';
+import icon_hero_battle_ability_shaolin from '../../images/heroes/abilities/icon_hero_battle_ability_shaolin.webp';
+import icon_hero_battle_ability_siouxshaman from '../../images/heroes/abilities/icon_hero_battle_ability_siouxshaman.webp';
+import icon_hero_battle_ability_sirlancelot from '../../images/heroes/abilities/icon_hero_battle_ability_sirlancelot.webp';
+import icon_hero_battle_ability_spartacus from '../../images/heroes/abilities/icon_hero_battle_ability_spartacus.webp';
+import icon_hero_battle_ability_suntzu from '../../images/heroes/abilities/icon_hero_battle_ability_suntzu.webp';
+import icon_hero_battle_ability_thomasalvaedison from '../../images/heroes/abilities/icon_hero_battle_ability_thomasalvaedison.webp';
+import icon_hero_battle_ability_tigerlily from '../../images/heroes/abilities/icon_hero_battle_ability_tigerlily.webp';
+import icon_hero_battle_ability_tomoegozen from '../../images/heroes/abilities/icon_hero_battle_ability_tomoegozen.webp';
+import icon_hero_battle_ability_tribalhealer from '../../images/heroes/abilities/icon_hero_battle_ability_tribalhealer.webp';
+import icon_hero_battle_ability_ulyssessgrant from '../../images/heroes/abilities/icon_hero_battle_ability_ulyssessgrant.webp';
+import icon_hero_battle_ability_vikingjarl from '../../images/heroes/abilities/icon_hero_battle_ability_vikingjarl.webp';
+import icon_hero_battle_ability_vikingraider from '../../images/heroes/abilities/icon_hero_battle_ability_vikingraider.webp';
+import icon_hero_battle_ability_vincentvangogh from '../../images/heroes/abilities/icon_hero_battle_ability_vincentvangogh.webp';
+import icon_hero_battle_ability_williamtell from '../../images/heroes/abilities/icon_hero_battle_ability_williamtell.webp';
+import icon_hero_battle_ability_williamwallace from '../../images/heroes/abilities/icon_hero_battle_ability_williamwallace.webp';
+
 const allHeroes = [
     {
         id: "cleopatra",
         name: "Cleopatra",
-        image: "https://i.ibb.co/R76zC55/Unit-Cleopatra-fullbody.png",
-        icon: "https://i.ibb.co/gW9JWs9/Unit-Cleopatra.png",
+        image: Unit_Cleopatra_fullbody,
+        icon: Unit_Cleopatra,
         backdrop: "egypt",
         stars: 5,
         heroClass: "great-leader",
         unit: "ranged",
         color: "yellow",
-        abilityIcon: "https://i.ibb.co/YQStSbg/icon-hero-battle-ability-cleopatra.png",
+        abilityIcon: icon_hero_battle_ability_cleopatra,
         ascension: {
             10: [
                 {
@@ -55,13 +306,13 @@ const allHeroes = [
     {
         id: "albert-einstein",
         name: "Albert Einstein",
-        image: "https://i.ibb.co/ynd8zKQ/Unit-Albert-Einstein-fullbody.png",
-        icon: "https://i.ibb.co/KyMqcy4/Unit-Albert-Einstein.png",
+        image: Unit_AlbertEinstein_fullbody,
+        icon: Unit_AlbertEinstein,
         backdrop: "modern",
         stars: 5,
         heroClass: "genius",
         unit: "siege",
-        abilityIcon: "https://i.ibb.co/58zmYCj/icon-hero-battle-ability-alberteinstein.png",
+        abilityIcon: icon_hero_battle_ability_alberteinstein,
         ascension: {
             10: [
                 {
@@ -74,173 +325,173 @@ const allHeroes = [
     {
         id: "benjamin-franklin",
         name: "Benjamin Franklin",
-        image: "https://i.ibb.co/r303kP1/Unit-Benjamin-Franklin-fullbody.png",
-        icon: "https://i.ibb.co/hf8S5Q2/Unit-Benjamin-Franklin.png",
+        image: Unit_BenjaminFranklin_fullbody,
+        icon: Unit_BenjaminFranklin,
         backdrop: "modern",
         stars: 5,
         heroClass: "manipulator",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/vYg6gJp/icon-hero-battle-ability-benjaminfranklin.png",
+        abilityIcon: icon_hero_battle_ability_benjaminfranklin,
     },
     {
         id: "julius-caesar",
         name: "Julius Caesar",
-        image: "https://i.ibb.co/QNJdYVP/Unit-Julius-Caesar-fullbody.png",
-        icon: "https://i.ibb.co/6stWLHM/Unit-Julius-Caesar.png",
+        image: Unit_JuliusCaesar_fullbody,
+        icon: Unit_JuliusCaesar,
         backdrop: "italy",
         stars: 5,
         heroClass: "commander",
         unit: "heavy-infantry",
-        abilityIcon: "https://i.ibb.co/TtD5WrH/icon-hero-battle-ability-juliuscaesar.png",
+        abilityIcon: icon_hero_battle_ability_juliuscaesar,
     },
     {
         id: "leonardo-da-vinci",
         name: "Leonardo Da Vinci",
-        image: "https://i.ibb.co/nc0vKGm/Unit-Leonardo-Da-Vinci-fullbody.png",
-        icon: "https://i.ibb.co/m6F5Kcq/Unit-Leonardo-Da-Vinci.png",
+        image: Unit_LeonardoDaVinci_fullbody,
+        icon: Unit_LeonardoDaVinci,
         backdrop: "renaissance",
         stars: 5,
         heroClass: "genius",
         unit: "siege",
-        abilityIcon: "https://i.ibb.co/5TN70Vw/icon-hero-battle-ability-leonardodavinci.png",
+        abilityIcon: icon_hero_battle_ability_leonardodavinci,
     },
     {
         id: "marie-curie",
         name: "Marie Curie",
-        image: "https://i.ibb.co/tcJrD6g/Unit-Marie-Curie-fullbody.png",
-        icon: "https://i.ibb.co/KmP2KCS/Unit-Marie-Curie.png",
+        image: Unit_MarieCurie_fullbody,
+        icon: Unit_MarieCurie,
         backdrop: "windmill",
         stars: 5,
         heroClass: "genius",
         unit: "siege",
-        abilityIcon: "https://i.ibb.co/pKNm8T1/icon-hero-battle-ability-mariecurie.png",
+        abilityIcon: icon_hero_battle_ability_mariecurie,
     },
     {
         id: "napoleon-bonaparte",
         name: "Napoleon Bonaparte",
-        image: "https://i.ibb.co/0fcBfz2/Unit-Napoleon-Bonaparte-fullbody.png",
-        icon: "https://i.ibb.co/C70jyDv/Unit-Napoleon-Bonaparte.png",
+        image: Unit_NapoleonBonaparte_fullbody,
+        icon: Unit_NapoleonBonaparte,
         backdrop: "baroque",
         stars: 5,
         heroClass: "commander",
         unit: "heavy-infantry",
-        abilityIcon: "https://i.ibb.co/JdVf6m5/icon-hero-battle-ability-napoleonbonaparte.png",
+        abilityIcon: icon_hero_battle_ability_napoleonbonaparte,
     },
     {
         id: "queen-elisabeth-i",
         name: "Queen Elisabeth I",
-        image: "https://i.ibb.co/9sTMWx3/Unit-Queen-Elizabeth-I-fullbody.png",
-        icon: "https://i.ibb.co/Y3McmdP/Unit-Queen-Elizabeth-I.png",
+        image: Unit_QueenElizabethI_fullbody,
+        icon: Unit_QueenElizabethI,
         backdrop: "windmill",
         stars: 5,
         heroClass: "great-leader",
         unit: "cavalry",
-        abilityIcon: "https://i.ibb.co/SQ28gQ4/icon-hero-battle-ability-queenelizabethi.png",
+        abilityIcon: icon_hero_battle_ability_queenelizabethi,
     },
     {
         id: "sir-lancelot",
         name: "Sir Lancelot",
-        image: "https://i.ibb.co/sP0tLqb/Unit-Sir-Lancelot-fullbody.png",
-        icon: "https://i.ibb.co/ysbNz5Z/Unit-Sir-Lancelot.png",
+        image: Unit_SirLancelot_fullbody,
+        icon: Unit_SirLancelot,
         backdrop: "sunflower",
         stars: 5,
         heroClass: "champion",
         unit: "infantry",
-        abilityIcon: "https://i.ibb.co/L18zRfM/icon-hero-battle-ability-sirlancelot.png",
+        abilityIcon: icon_hero_battle_ability_sirlancelot,
     },
     {
         id: "george-washington",
         name: "George Washington",
-        image: "https://i.ibb.co/qCncwY7/Unit-George-Washington-fullbody.png",
-        icon: "https://i.ibb.co/XyW87Gy/Unit-George-Washington.png",
+        image: Unit_GeorgeWashington_fullbody,
+        icon: Unit_GeorgeWashington,
         backdrop: "modern",
         stars: 5,
         heroClass: "commander",
         unit: "heavy-infantry",
-        abilityIcon: "https://i.ibb.co/8jQcmZr/icon-hero-battle-ability-georgewashington.png",
+        abilityIcon: icon_hero_battle_ability_georgewashington,
     },
     {
         id: "hercules",
         name: "Hercules",
-        image: "https://i.ibb.co/KW1mYGb/Unit-Hercules-fullbody.png",
-        icon: "https://i.ibb.co/YkhK0vj/Unit-Hercules.png",
+        image: Unit_Hercules_fullbody,
+        icon: Unit_Hercules,
         backdrop: "greek",
         stars: 5,
         heroClass: "champion",
         unit: "infantry",
-        abilityIcon: "https://i.ibb.co/YLhBVcd/icon-hero-battle-ability-hercules.png",
+        abilityIcon: icon_hero_battle_ability_hercules,
     },
     {
         id: "william-wallace",
         name: "William Wallace",
-        image: "https://i.ibb.co/g3ZcSjZ/Unit-William-Wallace-fullbody.png",
-        icon: "https://i.ibb.co/Ph5YcG9/Unit-William-Wallace.png",
+        image: Unit_WilliamWallace_fullbody,
+        icon: Unit_WilliamWallace,
         backdrop: "grass",
         stars: 5,
         heroClass: "champion",
         unit: "infantry",
-        abilityIcon: "https://i.ibb.co/Y27JQGr/icon-hero-battle-ability-williamwallace.png",
+        abilityIcon: icon_hero_battle_ability_williamwallace,
     },
     {
         id: "robin-hood",
         name: "Robin Hood",
-        image: "https://i.ibb.co/sR4MSg6/Unit-Robin-Hood-fullbody.png",
-        icon: "https://i.ibb.co/gPG4Tsr/Unit-Robin-Hood.png",
+        image: Unit_RobinHood_fullbody,
+        icon: Unit_RobinHood,
         backdrop: "grass",
         stars: 5,
         heroClass: "champion",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/SdCCYqQ/icon-hero-battle-ability-robinhood.png",
+        abilityIcon: icon_hero_battle_ability_robinhood,
     },
     {
         id: "joan-of-arc",
         name: "Joan of Arc",
-        image: "https://i.ibb.co/Gtyygpp/Unit-Joan-Of-Arc-fullbody.png",
-        icon: "https://i.ibb.co/0Qwn1hP/Unit-Joan-Of-Arc.png",
+        image: Unit_JoanOfArc_fullbody,
+        icon: Unit_JoanOfArc,
         backdrop: "windmill",
         stars: 5,
         heroClass: "commander",
         unit: "heavy-infantry",
-        abilityIcon: "https://i.ibb.co/1dTQ0G0/icon-hero-battle-ability-joanofarc.png",
+        abilityIcon: icon_hero_battle_ability_joanofarc,
     },
     {
         id: "achilles",
         name: "Achilles",
-        image: "https://i.ibb.co/F4c084L/Unit-Achilles-fullbody.png",
-        icon: "https://i.ibb.co/9rKb9rW/Unit-Achilles.png",
+        image: Unit_Achilles_fullbody,
+        icon: Unit_Achilles,
         backdrop: "greek",
         stars: 5,
         heroClass: "champion",
         unit: "infantry",
-        abilityIcon: "https://i.ibb.co/JyNDb8b/icon-hero-battle-ability-achilles.png",
+        abilityIcon: icon_hero_battle_ability_achilles,
     },
     {
         id: "abraham-lincoln",
         name: "Abraham Lincoln",
-        image: "https://i.ibb.co/sjxYsqK/Unit-Abraham-Lincoln-fullbody.png",
-        icon: "https://i.ibb.co/LZbLBsy/Unit-Abraham-Lincoln.png",
+        image: Unit_AbrahamLincoln_fullbody,
+        icon: Unit_AbrahamLincoln,
         backdrop: "modern",
         stars: 5,
         heroClass: "great-leader",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/1XdrmWD/icon-hero-battle-ability-abrahamlincoln.png",
+        abilityIcon: icon_hero_battle_ability_abrahamlincoln,
     },
     {
         id: "medusa",
         name: "Medusa",
-        image: "https://i.ibb.co/McffnfJ/Unit-Medusa-fullbody.png",
-        icon: "https://i.ibb.co/1XzrhWp/Unit-Medusa.png",
+        image: Unit_Medusa_fullbody,
+        icon: Unit_Medusa,
         backdrop: "greek",
         stars: 5,
         heroClass: "manipulator",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/W6ggm5T/icon-hero-battle-ability-medusa.png",
+        abilityIcon: icon_hero_battle_ability_medusa,
     },
     {
         id: "nikola-tesla",
         name: "Nikola Tesla",
-        image: "https://i.ibb.co/HDVCCjs/Unit-Nikola-Tesla-fullbody.png",
-        icon: "https://i.ibb.co/hDB4KJs/Unit-Nikola-Tesla.png",
+        image: Unit_NikolaTesla_fullbody,
+        icon: Unit_NikolaTesla,
         backdrop: "modern",
         stars: 4,
         heroClass: "genius",
@@ -250,13 +501,13 @@ const allHeroes = [
     {
         id: "menes",
         name: "Menes",
-        image: "https://i.ibb.co/7CffsCZ/Unit-Menes-fullbody.png",
-        icon: "https://i.ibb.co/8K3Xrxk/Unit-Menes.png",
+        image: Unit_Menes_fullbody,
+        icon: Unit_Menes,
         backdrop: "egypt",
         stars: 4,
         heroClass: "genius",
         unit: "siege",
-        abilityIcon: "https://i.ibb.co/vZGJ54P/icon-hero-battle-ability-menes.png",
+        abilityIcon: icon_hero_battle_ability_menes,
         ascension: {
             10: [
                 {
@@ -269,24 +520,24 @@ const allHeroes = [
     {
         id: "ramses-ii",
         name: "Ramses II",
-        image: "https://i.ibb.co/z62D9kH/Unit-Ramses-II-fullbody.png",
-        icon: "https://i.ibb.co/SQCJsDr/Unit-Ramses-II.png",
+        image: Unit_RamsesII_fullbody,
+        icon: Unit_RamsesII,
         backdrop: "",
         stars: 4,
         heroClass: "",
         unit: "",
-        abilityIcon: "https://i.ibb.co/HzbJMZn/icon-hero-battle-ability-ramsesii.png",
+        abilityIcon: icon_hero_battle_ability_ramsesii,
     },
     {
         id: "spartacus",
         name: "Spartacus",
-        image: "https://i.ibb.co/RSCmSN0/Unit-Spartacus-fullbody.png",
-        icon: "https://i.ibb.co/rw1x3w7/Unit-Spartacus.png",
+        image: Unit_Spartacus_fullbody,
+        icon: Unit_Spartacus,
         backdrop: "italy",
         stars: 4,
         heroClass: "champion",
         unit: "infantry",
-        abilityIcon: "https://i.ibb.co/6FcC3qy/icon-hero-battle-ability-spartacus.png",
+        abilityIcon: icon_hero_battle_ability_spartacus,
     },
     {
         id: "confucius",
@@ -297,62 +548,62 @@ const allHeroes = [
         stars: 4,
         heroClass: "manipulator",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/6sm7pGf/icon-hero-battle-ability-confuzius.png",
+        abilityIcon: icon_hero_battle_ability_confucius,
     },
     {
         id: "hatshepsut",
         name: "Hatshepsut",
-        image: "https://i.ibb.co/Zx34J4y/Unit-Hatshepsut-fullbody.png",
-        icon: "https://i.ibb.co/rxwhxrt/Unit-Hatshepsut.png",
+        image: Unit_Hatshepsut_fullbody,
+        icon: Unit_Hatshepsut,
         backdrop: "egypt",
         stars: 4,
         heroClass: "great-leader",
         unit: "cavalry",
-        abilityIcon: "https://i.ibb.co/7WDXxRB/icon-hero-battle-ability-hatshepsut.png",
+        abilityIcon: icon_hero_battle_ability_hatshepsut,
     },
     {
         id: "jane-austen",
         name: "Jane Austen",
-        image: "https://i.ibb.co/ypHGCjh/Unit-Jane-Austen-fullbody.png",
-        icon: "https://i.ibb.co/DVKXpVt/Unit-Jane-Austen.png",
+        image: Unit_JaneAusten_fullbody,
+        icon: Unit_JaneAusten,
         backdrop: "modern",
         stars: 4,
         heroClass: "manipulator",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/xfXWSFX/icon-hero-battle-ability-janeausten.png",
+        abilityIcon: icon_hero_battle_ability_janeausten,
     },
     {
         id: "louis-xiv",
         name: "Louis XIV",
-        image: "https://i.ibb.co/KDHG5rM/Unit-Louis-XIV-fullbody.png",
-        icon: "https://i.ibb.co/S5kHK56/Unit-Louis-XIV.png",
+        image: Unit_LouisXIV_fullbody,
+        icon: Unit_LouisXIV,
         backdrop: "sunflower",
         stars: 4,
         heroClass: "great-leader",
         unit: "cavalry",
-        abilityIcon: "https://i.ibb.co/8Xpw5Jh/icon-hero-battle-ability-louisxiv.png",
+        abilityIcon: icon_hero_battle_ability_louisxiv,
     },
     {
         id: "ludwig-van-beethoven",
         name: "Ludwig Van Beethoven",
-        image: "https://i.ibb.co/7b7LNns/Unit-Ludwigvan-Beethoven-fullbody.png",
-        icon: "https://i.ibb.co/h8sy232/Unit-Ludwigvan-Beethoven.png",
+        image: Unit_LudwigvanBeethoven_fullbody,
+        icon: Unit_LudwigVanBeethoven,
         backdrop: "renaissance",
         stars: 4,
         heroClass: "genius",
         unit: "siege",
-        abilityIcon: "https://i.ibb.co/WKqJhbD/icon-hero-battle-ability-ludwigvanbeethoven.png",
+        abilityIcon: icon_hero_battle_ability_ludwigvanbeethoven,
     },
     {
         id: "margaret-i-of-denmark",
         name: "Margaret I of Denmark",
-        image: "https://i.ibb.co/B3SnnZ0/Unit-Margaret-IOf-Denmark-fullbody.png",
-        icon: "https://i.ibb.co/7GJVr1t/Unit-Margaret-IOf-Denmark.png",
+        image: Unit_MargaretIOfDenmark_fullbody,
+        icon: Unit_MargaretIOfDenmark,
         backdrop: "snow",
         stars: 4,
         heroClass: "great-leader",
         unit: "cavalry",
-        abilityIcon: "https://i.ibb.co/8cktk16/icon-hero-battle-ability-margaretofdenmark.png",
+        abilityIcon: icon_hero_battle_ability_margaretiofdenmark,
     },
     {
         id: "plato",
@@ -363,12 +614,12 @@ const allHeroes = [
         stars: 4,
         heroClass: "manipulator",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/YtG0L2T/icon-hero-battle-ability-plato.png",
+        abilityIcon: icon_hero_battle_ability_plato,
     },
     {
         id: "pocahontas",
         name: "Pocahontas",
-        image: "https://i.ibb.co/1XXKs8b/Unit-Pocahontas-fullbody.png",
+        image: Unit_Pocahontas_fullbody,
         icon: "https://i.ibb.co/rMfhr8g/Unit-Pocahontas.png",
         backdrop: "grass",
         stars: 4,
@@ -379,112 +630,112 @@ const allHeroes = [
     {
         id: "vincent-van-gogh",
         name: "Vincent Van Gogh",
-        image: "https://i.ibb.co/zJSsHzq/Unit-Vincent-Van-Gogh-fullbody.png",
-        icon: "https://i.ibb.co/6PJK1tz/Unit-Vincent-Van-Gogh.png",
+        image: Unit_VincentVanGogh_fullbody,
+        icon: Unit_VincentVanGogh,
         backdrop: "sunflower",
         stars: 4,
         heroClass: "genius",
         unit: "siege",
-        abilityIcon: "https://i.ibb.co/yhvN4Kj/icon-hero-battle-ability-vincentvangogh.png",
+        abilityIcon: icon_hero_battle_ability_vincentvangogh,
     },
     {
         id: "tomoe-gozen",
         name: "Tomoe Gozen",
-        image: "https://i.ibb.co/FWF6fZg/Unit-Tomoe-Gozen-fullbody.png",
-        icon: "https://i.ibb.co/K5wn5BD/Unit-Tomoe-Gozen.png",
+        image: Unit_TomoeGozen_fullbody,
+        icon: Unit_TomoeGozen,
         backdrop: "",
         stars: 4,
         heroClass: "champion",
         unit: "infantry",
-        abilityIcon: "https://i.ibb.co/3kV2rdP/icon-hero-battle-ability-tomoegozen.png",
+        abilityIcon: icon_hero_battle_ability_tomoegozen,
     },
     {
         id: "thomas-alva-edison",
         name: "Thomas Alva Edison",
-        image: "https://i.ibb.co/4Z1spgG/Unit-Edison-fullbody.png",
+        image: Unit_Edison_fullbody,
         icon: "https://i.ibb.co/N3XTMrY/Unit-Thomas-Alva-Edison.png",
         backdrop: "modern",
         stars: 4,
         heroClass: "genius",
         unit: "siege",
-        abilityIcon: "https://i.ibb.co/yN4S7js/icon-hero-battle-ability-thomasalvaedison.png",
+        abilityIcon: icon_hero_battle_ability_thomasalvaedison,
     },
     {
         id: "attila-the-hun",
         name: "Attila The Hun",
-        image: "https://i.ibb.co/WGRXD2P/Unit-Attila-The-Hun-fullbody.png",
-        icon: "https://i.ibb.co/RgmRNBN/Unit-Attila-The-Hun.png",
+        image: Unit_AttilaTheHun_fullbody,
+        icon: Unit_AttilaTheHun,
         backdrop: "grass",
         stars: 4,
         heroClass: "commander",
         unit: "cavalry",
-        abilityIcon: "https://i.ibb.co/SrvN7pT/icon-hero-battle-ability-attilathehun.png",
+        abilityIcon: icon_hero_battle_ability_attilathehun,
     },
     {
         id: "charlemagne",
         name: "Charlemagne",
-        image: "https://i.ibb.co/DrM5fCT/Unit-Charlemagne-fullbody.png",
-        icon: "https://i.ibb.co/njK2F5t/Unit-Charlemagne.png",
+        image: Unit_Charlemagne_fullbody,
+        icon: Unit_Charlemagne,
         backdrop: "sunflower",
         stars: 4,
         heroClass: "commander",
         unit: "heavy-infantry",
-        abilityIcon: "https://i.ibb.co/CnjCvwL/icon-hero-battle-ability-charlemagne.png",
+        abilityIcon: icon_hero_battle_ability_charlemagne,
     },
     {
         id: "dartagnan",
         name: "D'artagnan",
-        image: "https://i.ibb.co/bKPPZdM/Unit-DArtagnan-fullbody.png",
-        icon: "https://i.ibb.co/rtkt5RN/Unit-DArtagnan.png",
+        image: Unit_DArtagnan_fullbody,
+        icon: Unit_DArtagnan,
         backdrop: "sunflower",
         stars: 4,
         heroClass: "champion",
         unit: "infantry",
-        abilityIcon: "https://i.ibb.co/gdCjS4m/icon-hero-battle-ability-dartagnan.png",
+        abilityIcon: icon_hero_battle_ability_dartagnan,
     },
     {
         id: "king-minos",
         name: "King Minos",
-        image: "https://i.ibb.co/F0HXVRj/Unit-King-Minos-fullbody.png",
-        icon: "https://i.ibb.co/TT971jZ/Unit-King-Minos.png",
+        image: Unit_KingMinos_fullbody,
+        icon: Unit_KingMinos,
         backdrop: "greek",
         stars: 4,
         heroClass: "commander",
         unit: "heavy-infantry",
-        abilityIcon: "https://i.ibb.co/zxQV3z4/icon-hero-battle-ability-kingminos.png",
+        abilityIcon: icon_hero_battle_ability_kingminos,
     },
     {
         id: "queen-boudicca",
         name: "Queen Boudicca",
-        image: "https://i.ibb.co/yfmQn20/Unit-Queen-Boudicca-fullbody.png",
-        icon: "https://i.ibb.co/zZpFR4g/Unit-Queen-Boudicca.png",
+        image: Unit_QueenBoudicca_fullbody,
+        icon: Unit_QueenBoudicca,
         backdrop: "grass",
         stars: 4,
         heroClass: "champion",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/cXfN15Y/icon-hero-battle-ability-queenboudicca.png",
+        abilityIcon: icon_hero_battle_ability_queenboudicca,
     },
     {
         id: "miyamoto-musashi",
         name: "Miyamoto Musashi",
-        image: "https://i.ibb.co/VMhb6tt/Unit-Miyamoto-Musashi-fullbody.png",
-        icon: "https://i.ibb.co/1nfjv8K/Unit-Miyamoto-Musashi.png",
+        image: Unit_MiyamotoMusashi_fullbody,
+        icon: Unit_MiyamotoMusashi,
         backdrop: "china",
         stars: 3,
         heroClass: "champion",
         unit: "infantry",
-        abilityIcon: "https://i.ibb.co/PQ9NVp2/icon-hero-battle-ability-miyamotomusashi.png",
+        abilityIcon: icon_hero_battle_ability_miyamotomusashi,
     },
     {
         id: "cyrus-the-great",
         name: "Cyrus the Great",
-        image: "https://i.ibb.co/ySZkVrT/Unit-Cyrus-The-Great-fullbody.png",
-        icon: "https://i.ibb.co/tztV1V4/Unit-Cyrus-The-Great.png",
+        image: Unit_CyrusTheGreat_fullbody,
+        icon: Unit_CyrusTheGreat,
         backdrop: "desert",
         stars: 3,
         heroClass: "commander",
         unit: "cavalry",
-        abilityIcon: "https://i.ibb.co/8zjPMNc/icon-hero-battle-ability-cyrusthegreat.png",
+        abilityIcon: icon_hero_battle_ability_cyrusthegreat,
     },
     {
         id: "john-locke",
@@ -495,381 +746,381 @@ const allHeroes = [
         stars: 3,
         heroClass: "manipulator",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/WBgJZjg/icon-hero-battle-ability-johnlocke.png",
+        abilityIcon: icon_hero_battle_ability_johnlocke,
     },
     {
         id: "karl-marx",
         name: "Karl Marx",
-        image: "https://i.ibb.co/vHqHFQG/Unit-Karl-Marx-fullbody.png",
-        icon: "https://i.ibb.co/8dFPbyk/Unit-Karl-Marx.png",
+        image: Unit_KarlMarx_fullbody,
+        icon: Unit_KarlMarx,
         backdrop: "sunflower",
         stars: 3,
         heroClass: "manipulator",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/92ysZGV/icon-hero-battle-ability-karlmarx.png",
+        abilityIcon: icon_hero_battle_ability_karlmarx,
     },
     {
         id: "mansa-musa",
         name: "Mansa Musa",
-        image: "https://i.ibb.co/KsZP6h1/Unit-Mansa-Musa-fullbody.png",
-        icon: "https://i.ibb.co/3vRXTwM/Unit-Mansa-Musa.png",
+        image: Unit_MansaMusa_fullbody,
+        icon: Unit_MansaMusa,
         backdrop: "desert",
         stars: 3,
         heroClass: "great-leader",
         unit: "cavalry",
-        abilityIcon: "https://i.ibb.co/nz2MChC/icon-hero-battle-ability-mansamusa.png",
+        abilityIcon: icon_hero_battle_ability_mansamusa,
     },
     {
         id: "marco-polo",
         name: "Marco Polo",
-        image: "https://i.ibb.co/mJb2m68/Unit-Marco-Polo-fullbody.png",
-        icon: "https://i.ibb.co/GVGbN0c/Unit-Marco-Polo.png",
+        image: Unit_MarcoPolo_fullbody,
+        icon: Unit_MarcoPolo,
         backdrop: "renaissance",
         stars: 3,
         heroClass: "genius",
         unit: "siege",
-        abilityIcon: "https://i.ibb.co/tLfdFMH/icon-hero-battle-ability-marcopolo.png",
+        abilityIcon: icon_hero_battle_ability_marcopolo,
     },
     {
         id: "oracle-of-dephi",
         name: "Oracle of Dephi",
-        image: "https://i.ibb.co/LJ8Q4Df/Unit-Oracleof-Dephi-fullbody.png",
-        icon: "https://i.ibb.co/yfVDY8j/Unit-Oracleof-Dephi.png",
+        image: Unit_OracleofDephi_fullbody,
+        icon: Unit_OracleOfDephi,
         backdrop: "greek",
         stars: 3,
         heroClass: "manipulator",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/sJfbMPk/icon-hero-battle-ability-oracleofdelphi.png",
+        abilityIcon: icon_hero_battle_ability_oracleofdephi,
     },
     {
         id: "ada-lovelace",
         name: "Ada Lovelace",
-        image: "https://i.ibb.co/601YTTg/Unit-Ada-Lovelace-fullbody.png",
-        icon: "https://i.ibb.co/V34PJRL/Unit-Ada-Lovelace.png",
+        image: Unit_AdaLovelace_fullbody,
+        icon: Unit_AdaLovelace,
         backdrop: "sunflower",
         stars: 3,
         heroClass: "genius",
         unit: "siege",
-        abilityIcon: "https://i.ibb.co/8DBYQkv/icon-hero-battle-ability-adalovelace.png",
+        abilityIcon: icon_hero_battle_ability_adalovelace,
     },
     {
         id: "artemisia-i-of-caria",
         name: "Artemisia I of Caria",
-        image: "https://i.ibb.co/JKc45NC/Unit-Artemisia-IOf-Caria-fullbody.png",
-        icon: "https://i.ibb.co/FW1mTX5/Unit-Artemisia-IOf-Caria.png",
+        image: Unit_ArtemisiaIOfCaria_fullbody,
+        icon: Unit_ArtemisiaIOfCaria,
         backdrop: "desert",
         stars: 3,
         heroClass: "champion",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/6vCqSPS/icon-hero-battle-ability-artemisiaiofcaria.png",
+        abilityIcon: icon_hero_battle_ability_artemisiaiofcaria,
     },
     {
         id: "pythagoras",
         name: "Pythagoras",
-        image: "https://i.ibb.co/mtGKN86/Unit-Pythagoras-fullbody.png",
-        icon: "https://i.ibb.co/JxjdHzt/Unit-Pythagoras.png",
+        image: Unit_Pythagoras_fullbody,
+        icon: Unit_Pythagoras,
         backdrop: "greek",
         stars: 3,
         heroClass: "genius",
         unit: "siege",
-        abilityIcon: "https://i.ibb.co/0nwBWqL/icon-hero-battle-ability-pythagoras.png",
+        abilityIcon: icon_hero_battle_ability_pythagoras,
     },
     {
         id: "hermann-the-cheruscan",
         name: "Hermann the Cheruscan",
-        image: "https://i.ibb.co/6g9yY53/Unit-Hermann-The-Cheruscan-fullbody.png",
-        icon: "",
+        image: Unit_HermannTheCheruscan_fullbody,
+        icon: Unit_HermannTheCheruscan,
         backdrop: "grass",
         stars: 3,
         heroClass: "commander",
         unit: "heavy-infantry",
-        abilityIcon: "https://i.ibb.co/bJCqT5g/icon-hero-battle-ability-hermannthecheruscan.png",
+        abilityIcon: icon_hero_battle_ability_hermannthecheruscan,
     },
     {
         id: "inanna",
         name: "Inanna",
-        image: "https://i.ibb.co/5K3jQpz/Unit-Inanna-fullbody.png",
-        icon: "https://i.ibb.co/nM23SNy/Unit-Inanna.png",
+        image: Unit_Inanna_fullbody,
+        icon: Unit_Inanna,
         backdrop: "desert",
         stars: 3,
         heroClass: "champion",
         unit: "infantry",
-        abilityIcon: "https://i.ibb.co/MfX8TpM/icon-hero-battle-ability-inanna.png",
+        abilityIcon: icon_hero_battle_ability_inanna,
     },
     {
         id: "otto-von-bismarck",
         name: "Otto Von Bismarck",
-        image: "https://i.ibb.co/QrqX7h9/Unit-Otto-Von-Bismarck-fullbody.png",
-        icon: "https://i.ibb.co/KxP2n4c/Unit-Otto-Von-Bismarck.png",
+        image: Unit_OttoVonBismarck_fullbody,
+        icon: Unit_OttoVonBismarck,
         backdrop: "baroque",
         stars: 3,
         heroClass: "commander",
         unit: "heavy-infantry",
-        abilityIcon: "https://i.ibb.co/dGY1j8G/icon-hero-battle-ability-ottovonbismarck.png",
+        abilityIcon: icon_hero_battle_ability_ottovonbismarck,
     },
     {
         id: "ulysses-s-grant",
         name: "Ulysses S. Grant",
-        image: "https://i.ibb.co/KyWP5vM/Unit-Ulysses-SGrant-fullbody.png",
-        icon: "https://i.ibb.co/9GZVR5V/Unit-Ulysses-SGrant.png",
+        image: Unit_UlyssesSGrant_fullbody,
+        icon: Unit_UlyssesSGrant,
         backdrop: "modern",
         stars: 3,
         heroClass: "commander",
         unit: "heavy-infantry",
-        abilityIcon: "https://i.ibb.co/Cs82Nnq/icon-hero-battle-ability-ulyssessgrant.png",
+        abilityIcon: icon_hero_battle_ability_ulyssessgrant,
     },
     {
         id: "ashoka-the-great",
         name: "Ashoka the Great",
-        image: "https://i.ibb.co/CQ81tWB/Unit-Ashoka-The-Great-fullbody.png",
-        icon: "https://i.ibb.co/3TjS6kC/Unit-Ashoka-The-Great.png",
+        image: Unit_AshokaTheGreat_fullbody,
+        icon: Unit_AshokaTheGreat,
         backdrop: "rainforest",
         stars: 3,
         heroClass: "great-leader",
         unit: "cavalry",
-        abilityIcon: "https://i.ibb.co/tLVp9Yc/icon-hero-battle-ability-ashokathegreat.png",
+        abilityIcon: icon_hero_battle_ability_ashokathegreat,
     },
     {
         id: "leonidas-i",
         name: "Leonidas I.",
-        image: "https://i.ibb.co/M5xR850/Unit-Leonidas-fullbody.png",
-        icon: "https://i.ibb.co/BtdK1ZT/Unit-Leonidas.png",
+        image: Unit_Leonidas_fullbody,
+        icon: Unit_Leonidas,
         backdrop: "greek",
         stars: 3,
         heroClass: "champion",
         unit: "infantry",
-        abilityIcon: "https://i.ibb.co/FVKFXJw/icon-hero-battle-ability-leonidas.png",
+        abilityIcon: icon_hero_battle_ability_leonidas,
     },
     {
         id: "william-tell",
         name: "William Tell",
-        image: "https://i.ibb.co/bWjry2t/Unit-William-Tell-fullbody.png",
-        icon: "https://i.ibb.co/FKzyGTY/Unit-William-Tell.png",
+        image: Unit_WilliamTell_fullbody,
+        icon: Unit_WilliamTell,
         backdrop: "windmill",
         stars: 3,
         heroClass: "champion",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/y69BCKB/icon-hero-battle-ability-williamtell.png",
+        abilityIcon: icon_hero_battle_ability_williamtell,
     },
     {
         id: "maori-chief",
         name: "Maori Chief",
-        image: "https://i.ibb.co/tPkRkRh/Unit-Maori-Chief-fullbody.png",
-        icon: "https://i.ibb.co/56xgswG/Unit-Maori-Chief.png",
+        image: Unit_MaoriChief_fullbody,
+        icon: Unit_MaoriChief,
         backdrop: "rainforest",
         stars: 2,
         heroClass: "great-leader",
         unit: "cavalry",
-        abilityIcon: "https://i.ibb.co/wC5FQ9s/icon-hero-battle-ability-maorichief.png",
+        abilityIcon: icon_hero_battle_ability_maorichief,
     },
     {
         id: "geisha",
         name: "Geisha",
-        image: "https://i.ibb.co/7KPwTKc/Unit-Geisha-fullbody.png",
-        icon: "https://i.ibb.co/JxG0p44/Unit-Geisha.png",
+        image: Unit_Geisha_fullbody,
+        icon: Unit_Geisha,
         backdrop: "china",
         stars: 2,
         heroClass: "manipulator",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/tHWV6sr/icon-hero-battle-ability-geisha.png",
+        abilityIcon: icon_hero_battle_ability_geisha,
     },
     {
         id: "greek-mathematician",
         name: "Greek Mathematician",
-        image: "https://i.ibb.co/xqWKj12/Unit-Greek-Mathematician-fullbody.png",
-        icon: "https://i.ibb.co/fvVcJZR/Unit-Greek-Mathematician.png",
+        image: Unit_GreekMathematician_fullbody,
+        icon: Unit_GreekMathematician,
         backdrop: "greek",
         stars: 2,
         heroClass: "genius",
         unit: "siege",
-        abilityIcon: "https://i.ibb.co/9N5SLHk/icon-hero-battle-ability-greekmathematician.png",
+        abilityIcon: icon_hero_battle_ability_greekmathematician,
     },
     {
         id: "mayan-astronomer",
         name: "Mayan Astronomer",
-        image: "https://i.ibb.co/fXxDMsz/Unit-Mayan-Astronomer-fullbody.png",
-        icon: "https://i.ibb.co/nRNcgGP/Unit-Mayan-Astronomer.png",
+        image: Unit_MayanAstronomer_fullbody,
+        icon: Unit_MayanAstronomer,
         backdrop: "rainforest",
         stars: 2,
         heroClass: "genius",
         unit: "siege",
-        abilityIcon: "https://i.ibb.co/bXxwpjW/icon-hero-battle-ability-mayanastronomer.png",
+        abilityIcon: icon_hero_battle_ability_mayanastronomer,
     },
     {
         id: "roman-praetor",
         name: "Roman Praetor",
-        image: "https://i.ibb.co/db8Zy1D/Unit-Roman-Praetor-fullbody.png",
-        icon: "https://i.ibb.co/DYsRbqW/Unit-Roman-Praetor.png",
+        image: Unit_RomanPraetor_fullbody,
+        icon: Unit_RomanPraetor,
         backdrop: "italy",
         stars: 2,
         heroClass: "manipulator",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/x6jrgpz/icon-hero-battle-ability-romanpraetor.png",
+        abilityIcon: icon_hero_battle_ability_romanpraetor,
     },
     {
         id: "sioux-shaman",
         name: "Sioux Shaman",
-        image: "https://i.ibb.co/4SK2M3z/Unit-Sioux-Shaman-fullbody.png",
-        icon: "https://i.ibb.co/SNhDQKd/Unit-Sioux-Shaman.png",
+        image: Unit_SiouxShaman_fullbody,
+        icon: Unit_SiouxShaman,
         backdrop: "grass",
         stars: 2,
         heroClass: "great-leader",
         unit: "cavalry",
-        abilityIcon: "https://i.ibb.co/fdkYjtD/icon-hero-battle-ability-siouxshaman.png",
+        abilityIcon: icon_hero_battle_ability_siouxshaman,
     },
     {
         id: "tribal-healer",
         name: "Tribal Healer",
-        image: "https://i.ibb.co/CmGHMT1/Unit-Tribal-Healer-fullbody.png",
-        icon: "https://i.ibb.co/SfyHbCj/Unit-Tribal-Healer.png",
+        image: Unit_TribalHealer_fullbody,
+        icon: Unit_TribalHealer,
         backdrop: "grass",
         stars: 2,
         heroClass: "great-leader",
         unit: "cavalry",
-        abilityIcon: "https://i.ibb.co/WxCBftB/icon-hero-battle-ability-tribalhealer.png",
+        abilityIcon: icon_hero_battle_ability_tribalhealer,
     },
     {
         id: "roman-centurion",
         name: "Roman Centurion",
-        image: "https://i.ibb.co/1LbNFk2/Unit-Roman-Centurion-fullbody.png",
-        icon: "https://i.ibb.co/2ZybnKm/Unit-Roman-Centurion.png",
+        image: Unit_RomanCenturion_fullbody,
+        icon: Unit_RomanCenturion,
         backdrop: "italy",
         stars: 2,
         heroClass: "commander",
         unit: "heavy-infantry",
-        abilityIcon: "https://i.ibb.co/rGS5ChS/icon-hero-battle-ability-romancenturion.png",
+        abilityIcon: icon_hero_battle_ability_romancenturion,
     },
     {
         id: "egyptian-vizier",
         name: "Egyptian Vizier",
-        image: "https://i.ibb.co/PTntZhG/Unit-Egyptian-Vizier-fullbody.png",
-        icon: "https://i.ibb.co/82vXJhC/Unit-Egyptian-Vizier.png",
+        image: Unit_EgyptianVizier_fullbody,
+        icon: Unit_EgyptianVizier,
         backdrop: "egypt",
         stars: 2,
         heroClass: "manipulator",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/DpcX8qT/icon-hero-battle-ability-egyptianvezir.png",
+        abilityIcon: icon_hero_battle_ability_egyptianvizier,
     },
     {
         id: "ninja",
         name: "Ninja",
-        image: "https://i.ibb.co/Bs0JCJy/Unit-Ninja-fullbody.png",
-        icon: "https://i.ibb.co/5FGtWhF/Unit-Ninja.png",
+        image: Unit_Ninja_fullbody,
+        icon: Unit_Ninja,
         backdrop: "china",
         stars: 2,
         heroClass: "champion",
         unit: "ranged",
-        abilityIcon: "https://i.ibb.co/3ktz9Ys/icon-hero-battle-ability-ninja.png",
+        abilityIcon: icon_hero_battle_ability_ninja,
     },
     {
         id: "viking-jarl",
         name: "Viking Jarl",
-        image: "https://i.ibb.co/WyPqpKR/Unit-Viking-Jarl-fullbody.png",
-        icon: "https://i.ibb.co/2qZNnFm/Unit-Viking-Jarl.png",
+        image: Unit_VikingJarl_fullbody,
+        icon: Unit_VikingJarl,
         backdrop: "snow",
         stars: 2,
         heroClass: "great-leader",
         unit: "cavalry",
-        abilityIcon: "https://i.ibb.co/dKCc523/icon-hero-battle-ability-vikingjarl.png",
+        abilityIcon: icon_hero_battle_ability_vikingjarl,
     },
     {
         id: "aztec-tlacateccatl",
         name: "Aztec Tlacateccatl",
-        image: "https://i.ibb.co/B6DYHSL/Unit-Aztec-Tlacateccatl-fullbody.png",
-        icon: "https://i.ibb.co/SfWpLC1/Unit-Aztec-Tlacateccatl.png",
+        image: Unit_AztecTlacateccatl_fullbody,
+        icon: Unit_AztecTlacateccatl,
         backdrop: "rainforest",
         stars: 2,
         heroClass: "commander",
         unit: "heavy-infantry",
-        abilityIcon: "https://i.ibb.co/RT72pjc/icon-hero-battle-ability-aztectlacateccatl.png",
+        abilityIcon: icon_hero_battle_ability_aztectlacateccatl,
     },
     {
         id: "hoplit",
         name: "Hoplit",
-        image: "https://i.ibb.co/PxmYBPt/Unit-Hoplit-fullbody.png",
-        icon: "https://i.ibb.co/2Fskp3Z/Unit-Hoplit.png",
+        image: Unit_Hoplit_fullbody,
+        icon: Unit_Hoplit,
         backdrop: "greek",
         stars: 2,
         heroClass: "champion",
         unit: "infantry",
-        abilityIcon: "https://i.ibb.co/4MdQpbh/icon-hero-battle-ability-hoplit.png",
+        abilityIcon: icon_hero_battle_ability_hoplit,
     },
     {
         id: "jaguar-warrior",
         name: "Jaguar Warrior",
-        image: "https://i.ibb.co/0YKxx7Y/Unit-Jaguar-Warrior-fullbody.png",
-        icon: "https://i.ibb.co/LxBs4w6/Unit-Jaguar-Warrior.png",
+        image: Unit_JaguarWarrior_fullbody,
+        icon: Unit_JaguarWarrior,
         backdrop: "rainforest",
         stars: 2,
         heroClass: "champion",
         unit: "infantry",
-        abilityIcon: "https://i.ibb.co/PZgndRz/icon-hero-battle-ability-jaguarwarrior.png",
+        abilityIcon: icon_hero_battle_ability_jaguarwarrior,
     },
     {
         id: "japanese-shogun",
         name: "Japanese Shogun",
-        image: "https://i.ibb.co/yhPYSdC/Unit-Japanese-Shogun-fullbody.png",
-        icon: "https://i.ibb.co/MNjJygX/Unit-Japanese-Shogun.png",
+        image: Unit_JapaneseShogun_fullbody,
+        icon: Unit_JapaneseShogun,
         backdrop: "china",
         stars: 2,
         heroClass: "commander",
         unit: "heavy-infantry",
-        abilityIcon: "https://i.ibb.co/BwH4Rvq/icon-hero-battle-ability-japaneseshogun.png",
+        abilityIcon: icon_hero_battle_ability_japaneseshogun,
     },
     {
         id: "ottoman-general",
         name: "Ottoman General",
-        image: "https://i.ibb.co/GRVKWHq/Unit-Ottoman-General-fullbody.png",
-        icon: "https://i.ibb.co/0tRrd6Z/Unit-Ottoman-General.png",
+        image: Unit_OttomanGeneral_fullbody,
+        icon: Unit_OttomanGeneral,
         backdrop: "desert",
         stars: 2,
         heroClass: "commander",
         unit: "heavy-infantry",
-        abilityIcon: "https://i.ibb.co/rfFgfyv/icon-hero-battle-ability-ottomangeneral.png",
+        abilityIcon: icon_hero_battle_ability_ottomangeneral,
     },
     {
         id: "shaolin",
         name: "Shaolin",
-        image: "https://i.ibb.co/HphGf9H/Unit-Shaolin-fullbody.png",
-        icon: "https://i.ibb.co/rHsBj3R/Unit-Shaolin.png",
+        image: Unit_Shaolin_fullbody,
+        icon: Unit_Shaolin,
         backdrop: "china",
         stars: 2,
         heroClass: "champion",
         unit: "infantry",
-        abilityIcon: "https://i.ibb.co/c2WXYG2/icon-hero-battle-ability-shaolin.png",
+        abilityIcon: icon_hero_battle_ability_shaolin,
     },
     {
         id: "jester",
         name: "Jester",
-        image: "https://i.ibb.co/ydW9VN9/Unit-Jester-fullbody.png",
-        icon: "https://i.ibb.co/zH0XK6d/Unit-Jester.png",
+        image: Unit_Jester_fullbody,
+        icon: Unit_Jester,
         backdrop: "windmill",
         stars: 2,
         heroClass: "genius",
         unit: "siege",
-        abilityIcon: "https://i.ibb.co/30YgFD0/icon-hero-battle-ability-jester.png",
+        abilityIcon: icon_hero_battle_ability_jester,
     },
     {
         id: "nubian-mercenary",
         name: "Nubian Mercenary",
-        image: "https://i.ibb.co/KwgQH6v/Unit-Nubian-Mercenary-fullbody.png",
-        icon: "https://i.ibb.co/yXDckB4/Unit-Nubian-Mercenary.png",
+        image: Unit_NubianMercenary_fullbody,
+        icon: Unit_NubianMercenary,
         backdrop: "desert",
         stars: 2,
         heroClass: "champion",
         unit: "infantry",
-        abilityIcon: "https://i.ibb.co/R6PWqxx/icon-hero-battle-ability-nubianmercenary.png",
+        abilityIcon: icon_hero_battle_ability_nubianmercenary,
     },
     {
         id: "viking-raider",
         name: "Viking Raider",
-        image: "https://i.ibb.co/K6h6PVS/Unit-Viking-Raider-fullbody.png",
-        icon: "https://i.ibb.co/VLHrfPN/Unit-Viking-Raider.png",
+        image: Unit_VikingRaider_fullbody,
+        icon: Unit_VikingRaider,
         backdrop: "snow",
         stars: 2,
         heroClass: "champion",
         unit: "infantry",
-        abilityIcon: "https://i.ibb.co/n6VtFD7/icon-hero-battle-ability-vikingraider.png",
+        abilityIcon: icon_hero_battle_ability_vikingraider,
     },
 ]
 
