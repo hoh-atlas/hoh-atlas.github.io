@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7e5b9493.css",
+    "main.js": "/static/js/main.a61c6d4e.js",
+    "static/media/loading_navbar.png": "/static/media/loading_navbar.7961641a9e850277dd7e.png",
+    "static/media/hoh_logo.png": "/static/media/hoh_logo.58a1bc4391a225c491e8.png",
+    "index.html": "/index.html",
+    "main.7e5b9493.css.map": "/static/css/main.7e5b9493.css.map",
+    "main.a61c6d4e.js.map": "/static/js/main.a61c6d4e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e5b9493.css",
+    "static/js/main.a61c6d4e.js"
+  ]
+}
