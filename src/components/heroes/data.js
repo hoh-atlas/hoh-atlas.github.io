@@ -292,22 +292,21 @@ const allHeroes = [
         heroClass: "great-leader",
         unit: "ranged",
         color: "yellow",
-        abilityIcon: icon_hero_battle_ability_cleopatra,
         ascension: {
             10: [
                 {
                     resource: "yellow_crest_common",
-                    amount: 25
+                    amount: 30
                 }
             ],
             20: [
                 {
                     resource: "yellow_crest_common",
-                    amount: 30
+                    amount: 50
                 },
                 {
                     resource: "yellow_crest_enhanced",
-                    amount: 10
+                    amount: 20
                 },
                 {
                     resource: "fragrant_potpourri",
@@ -316,19 +315,218 @@ const allHeroes = [
             ],
             30: [
                 {
-                    resource: "yellow_crest_common",
-                    amount: 50
+                    resource: "yellow_crest_enhanced",
+                    amount: 100
                 },
                 {
-                    resource: "herbal_poultice",
-                    amount: 1
+                    resource: "fragrant_potpourri",
+                    amount: 5
                 },
                 {
                     resource: "shadow_dial",
                     amount: 2
                 }
+            ],
+            40: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 4
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                },
+                {
+                    resource: "prism_of_fate",
+                    amount: 1
+                }
+            ],
+            60: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "prism_of_fate",
+                    amount: 2
+                }
+            ],
+            80: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 7
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "prism_of_fate",
+                    amount: 3
+                }
+            ],
+            100: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "hortus_sanitatis",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
+            ],
+            110: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 160
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 6
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 4
+                },
+                {
+                    resource: "prism_of_fate",
+                    amount: 4
+                }
+            ],
+            120: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 170
+                },
+                {
+                    resource: "hortus_sanitatis",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 6
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 5
+                }
+            ],
+            130: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 190
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 10
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 8
+                },
+                {
+                    resource: "prism_of_fate",
+                    amount: 5
+                }
+            ],
+            140: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 250
+                },
+                {
+                    resource: "hortus_sanitatis",
+                    amount: 12
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 10
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 6
+                }
             ]
         },
+        abilityIcon: icon_hero_battle_ability_cleopatra,
         abilityName: "Pharaoh's Puppets",
         abilityDescription: "Directs the Eye of Horus at the biggest cluster of enemy units, making them attack their allies for <b>3.50s</b>. Enemy units under Cleopatra's control gain <b>35%</b> attack speed.",
         ability: [
@@ -921,6 +1119,79 @@ const allHeroes = [
         stars: 3,
         heroClass: "champion",
         unit: "infantry",
+        color: "red",
+        ascension: {
+            10: [
+                {
+                    resource: "red_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "red_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 1
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "prism_of_fate",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_leonidas,
     },
     {
@@ -1156,38 +1427,6 @@ const allHeroes = [
     },
 ]
 
-//https://i.ibb.co/L1CWfBs/Unit-Sun-Tzu-fullbody.png
-//https://i.ibb.co/R07jTnK/Unit-Ragnar-Lodbrok-fullbody.png
-//https://i.ibb.co/vLb3YkH/Unit-Qin-Shi-Huang-fullbody.png
-//https://i.ibb.co/Fbm1CbG/Unit-Pakal-The-Great-fullbody.png
-//https://i.ibb.co/VNwxfjf/Unit-Leif-Erikson-fullbody.png
-//https://i.ibb.co/R2xZFXc/Unit-Lagertha-fullbody.png
-//https://i.ibb.co/SJr8Y2z/Unit-Lady-Six-Sky-fullbody.png
-//https://i.ibb.co/94Fy3XH/Unit-Hua-Mulan-fullbody.png
-
-//https://i.ibb.co/44vpRWm/Unit-Hua-Mulan.png
-//https://i.ibb.co/WfpWMxk/Unit-Pakal-The-Great.png
-//https://i.ibb.co/Htxq2yR/Unit-Lady-Six-Sky.png
-//https://i.ibb.co/7jfkJ65/Unit-Lagertha.png
-//https://i.ibb.co/HxK2c70/Unit-Leif-Erikson.png
-//https://i.ibb.co/Lr1znPM/Unit-Qin-Shi-Huang.png
-//https://i.ibb.co/sgJKcz9/Unit-Ragnar-Lodbrok.png
-//https://i.ibb.co/gV0nS91/Unit-Sun-Tzu.png
-//https://i.ibb.co/h1tWDst/Unit-Unknown.png
-
-//https://i.ibb.co/489Qd58/icon-hero-battle-ability-suntzu.png
-//https://i.ibb.co/02gfp8J/icon-hero-battle-ability-montezumai.png
-//https://i.ibb.co/kxnss6S/icon-hero-battle-ability-leiferikson.png
-//https://i.ibb.co/Jpkn4Mz/icon-hero-battle-ability-ladysixsky.png
-//https://i.ibb.co/1Gppy2q/icon-hero-battle-ability-scheherazade.png
-//https://i.ibb.co/gZ0LtP1/icon-hero-battle-ability-saladin.png
-//https://i.ibb.co/TktsnK2/icon-hero-battle-ability-lagertha.png
-//https://i.ibb.co/mTLMMJB/icon-hero-battle-ability-ragnarlodbrok.png
-//https://i.ibb.co/N6bpKD5/icon-hero-battle-ability-quinshihuang.png
-//https://i.ibb.co/FDjwqhx/icon-hero-battle-ability-harunalrashid.png
-//https://i.ibb.co/hs1gfNF/icon-hero-battle-ability-huamulan.png
-//https://i.ibb.co/bFMJRkX/icon-hero-battle-ability-pakalthegreat.png
-
 const levelsExperiences = {
     5: [
         100, 120, 140, 160, 170, 180, 190, 200, 210, 240, 250, 260, 260, 270, 280, 290, 290, 300, 300, 350, 350, 360, 370, 370, 380, 380, 390, 390, 400, 490 // the last is level 30 to 31
@@ -1245,6 +1484,7 @@ const colorIcons = {
 
 const colorNames = {
     "yellow": "Yellow",
+    "red": "Red",
 }
 
 const backdrops = {
