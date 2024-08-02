@@ -249,6 +249,38 @@ import icon_hero_battle_ability_vincentvangogh from '../../images/heroes/intro/a
 import icon_hero_battle_ability_williamtell from '../../images/heroes/intro/abilities/icon_hero_battle_ability_williamtell.webp';
 import icon_hero_battle_ability_williamwallace from '../../images/heroes/intro/abilities/icon_hero_battle_ability_williamwallace.webp';
 
+import icon_class_champion from "../../images/heroes/intro/classIcons/icon-class-champion.webp";
+import icon_class_commander from "../../images/heroes/intro/classIcons/icon-class-commander.webp";
+import icon_class_genius from "../../images/heroes/intro/classIcons/icon-class-genius.webp";
+import icon_class_great_leader from "../../images/heroes/intro/classIcons/icon-class-great-leader.webp";
+import icon_class_manipulator from "../../images/heroes/intro/classIcons/icon-class-manipulator.webp";
+
+import icon_flat_unit_cavalry from "../../images/heroes/intro/unitIcons/icon-flat-unit-cavalry.webp";
+import icon_flat_unit_heavy_infantry from "../../images/heroes/intro/unitIcons/icon-flat-unit-heavy-infantry.webp";
+import icon_flat_unit_melee from "../../images/heroes/intro/unitIcons/icon-flat-unit-melee.webp";
+import icon_flat_unit_range from "../../images/heroes/intro/unitIcons/icon-flat-unit-range.webp";
+import icon_flat_unit_siege_units from "../../images/heroes/intro/unitIcons/icon-flat-unit-siege-units.webp";
+
+import icon_color_red from "../../images/heroes/intro/colorIcons/icon-colour-red.webp";
+import icon_color_yellow from "../../images/heroes/intro/colorIcons/icon-colour-yellow.webp";
+import icon_color_green from "../../images/heroes/intro/colorIcons/icon-colour-green.webp";
+import icon_color_blue from "../../images/heroes/intro/colorIcons/icon-colour-blue.webp";
+import icon_color_purple from "../../images/heroes/intro/colorIcons/icon-colour-purple.webp";
+
+import hero_backdrop_baroque from "../../images/heroes/intro/backdrops/hero-backdrop-baroque.webp";
+import hero_backdrop_china from "../../images/heroes/intro/backdrops/hero-backdrop-china.webp";
+import hero_backdrop_desert from "../../images/heroes/intro/backdrops/hero-backdrop-desert.webp";
+import hero_backdrop_egypt from "../../images/heroes/intro/backdrops/hero-backdrop-egypt.webp";
+import hero_backdrop_grass from "../../images/heroes/intro/backdrops/hero-backdrop-grass.webp";
+import hero_backdrop_greek from "../../images/heroes/intro/backdrops/hero-backdrop-greek.webp";
+import hero_backdrop_italy from "../../images/heroes/intro/backdrops/hero-backdrop-italy.webp";
+import hero_backdrop_modern from "../../images/heroes/intro/backdrops/hero-backdrop-modern.webp";
+import hero_backdrop_rainforest from "../../images/heroes/intro/backdrops/hero-backdrop-rainforest.webp";
+import hero_backdrop_renaissance from "../../images/heroes/intro/backdrops/hero-backdrop-renaissance.webp";
+import hero_backdrop_snow from "../../images/heroes/intro/backdrops/hero-backdrop-snow.webp";
+import hero_backdrop_sunflower from "../../images/heroes/intro/backdrops/hero-backdrop-sunflower.webp";
+import hero_backdrop_windmill from "../../images/heroes/intro/backdrops/hero-backdrop-windmill.webp";
+
 const allHeroes = [
     {
         id: "cleopatra",
@@ -1172,11 +1204,11 @@ const levelsExperiences = {
 }
 
 const heroClassIcons = {
-    "champion": "https://i.ibb.co/rGsTmsn/icon-class-champion.png",
-    "commander": "https://i.ibb.co/xL6jYNr/icon-class-commander.png",
-    "genius": "https://i.ibb.co/J36xYv6/icon-class-genius.png",
-    "great-leader": "https://i.ibb.co/sKQ3RsX/icon-class-great-leader.png",
-    "manipulator": "https://i.ibb.co/Z8h0MkJ/icon-class-manipulator.png",
+    "champion": icon_class_champion,
+    "commander": icon_class_commander,
+    "genius": icon_class_genius,
+    "great-leader": icon_class_great_leader,
+    "manipulator": icon_class_manipulator,
 }
 
 const heroClassNames = {
@@ -1188,11 +1220,11 @@ const heroClassNames = {
 }
 
 const unitIcons = {
-    "cavalry": "https://i.ibb.co/D7FWhy7/icon-flat-unit-cavalry.png",
-    "heavy-infantry": "https://i.ibb.co/jD4r7DG/icon-flat-unit-heavy-infantry.png",
-    "infantry": "https://i.ibb.co/YLY9PBK/icon-flat-unit-melee.png",
-    "ranged": "https://i.ibb.co/KGbfZCw/icon-flat-unit-range.png",
-    "siege": "https://i.ibb.co/wRkH9y3/icon-flat-unit-siege-units.png",
+    "cavalry": icon_flat_unit_cavalry,
+    "heavy-infantry": icon_flat_unit_heavy_infantry,
+    "infantry": icon_flat_unit_melee,
+    "ranged": icon_flat_unit_range,
+    "siege": icon_flat_unit_siege_units,
 }
 
 const unitNames = {
@@ -1204,11 +1236,11 @@ const unitNames = {
 }
 
 const colorIcons = {
-    "red": "https://i.ibb.co/LrNs29P/icon-colour-red.png",
-    "yellow": "https://i.ibb.co/5vqb0XR/icon-colour-yellow.png",
-    "green": "https://i.ibb.co/2qKmQZ5/icon-colour-green.png",
-    "blue": "https://i.ibb.co/vQjqrqD/icon-colour-blue.png",
-    "purple": "https://i.ibb.co/7S9B1Yk/icon-colour-purple.png",
+    "red": icon_color_red,
+    "yellow": icon_color_yellow,
+    "green": icon_color_green,
+    "blue": icon_color_blue,
+    "purple": icon_color_purple,
 }
 
 const colorNames = {
@@ -1216,19 +1248,19 @@ const colorNames = {
 }
 
 const backdrops = {
-    "baroque": "https://i.ibb.co/1vzmXpr/hero-backdrop-baroque.png",
-    "china": "https://i.ibb.co/3N16Gs6/hero-backdrop-china.png",
-    "desert": "https://i.ibb.co/TBcxWMP/hero-backdrop-desert.png",
-    "egypt": "https://i.ibb.co/prJxhdN/hero-backdrop-egypt.png",
-    "grass": "https://i.ibb.co/8syD7nD/hero-backdrop-grass.png",
-    "greek": "https://i.ibb.co/crgP1vG/hero-backdrop-greek.png",
-    "italy": "https://i.ibb.co/MSY4Mb0/hero-backdrop-italy.png",
-    "modern": "https://i.ibb.co/kBq0zjw/hero-backdrop-modern.png",
-    "rainforest": "https://i.ibb.co/LYb9Yrc/hero-backdrop-rainforest.png",
-    "renaissance": "https://i.ibb.co/bNdmcNR/hero-backdrop-renaissance.png",
-    "snow": "https://i.ibb.co/1zhLYGR/hero-backdrop-snow.png",
-    "sunflower": "https://i.ibb.co/34wsJxD/hero-backdrop-sunflower.png",
-    "windmill": "https://i.ibb.co/PFsFVbz/hero-backdrop-windmill.png",
+    "baroque": hero_backdrop_baroque,
+    "china": hero_backdrop_china,
+    "desert": hero_backdrop_desert,
+    "egypt": hero_backdrop_egypt,
+    "grass": hero_backdrop_grass,
+    "greek": hero_backdrop_greek,
+    "italy": hero_backdrop_italy,
+    "modern": hero_backdrop_modern,
+    "rainforest": hero_backdrop_rainforest,
+    "renaissance": hero_backdrop_renaissance,
+    "snow": hero_backdrop_snow,
+    "sunflower": hero_backdrop_sunflower,
+    "windmill": hero_backdrop_windmill,
 }
 
 export { allHeroes, levelsExperiences, heroClassIcons, heroClassNames, unitIcons, unitNames, colorIcons, colorNames, backdrops };
