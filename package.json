@@ -1,5 +1,6 @@
 {
   "name": "hoh-website",
+  "homepage": "https://hoh-atlas.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -44,6 +45,5 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
-  },
-  "homepage": "https://hoh-atlas.github.io"
+  }
 }
