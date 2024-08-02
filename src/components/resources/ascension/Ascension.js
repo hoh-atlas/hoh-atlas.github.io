@@ -7,6 +7,8 @@ import Icon from "../../shared/Icon";
 import { leftJoinArrays } from "../../shared/utils";
 import { Link } from "react-router-dom";
 
+import icon_war_horn from "../../../images/shared/resources/icon_war_horn.webp";
+
 const Ascension = () => {
 
     const ascensionAdditionalData = [
@@ -28,7 +30,7 @@ const Ascension = () => {
     const goodsExpanded = leftJoinArrays(ascensionAdditionalData, resources);
 
     return <>
-        <Prologue imageSrc={"https://i.ibb.co/PZr1YBn/icon-war-horn.png"} alt={"Provinces"} maxHeight={"65px"}>
+        <Prologue imageSrc={icon_war_horn} alt={"Provinces"} maxHeight={"65px"}>
         Ascension materials are a special type of resource needed to elevate your heroes to higher levels. 
         They can be found in various locations throughout the game, including campaign provinces and Treasure Hunts. For detailed information on which heroes require specific ascension materials, visit the <Link to="/heroes" className="text-link">Heroes Page</Link>. 
         Alternatively, navigate through the links below to directly access specific hero groups.

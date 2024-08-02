@@ -7,6 +7,8 @@ import resources from "../../shared/data/resources";
 import { leftJoinArrays } from "../../shared/utils";
 import { Link } from "react-router-dom";
 
+import icon_amber from "../../../images/shared/resources/icon_amber.webp";
+
 const Research = () => {
 
     const researchAdditionalData = [
@@ -46,7 +48,7 @@ const Research = () => {
     }, {});
 
     return <>
-        <Prologue imageSrc={"https://i.ibb.co/47T974Y/icon-amber.png"} alt={"Provinces"} maxHeight={"65px"}>
+        <Prologue imageSrc={icon_amber} alt={"Provinces"} maxHeight={"65px"}>
         Research materials are a unique type of goods required to unlock specific technologies in the research tree. Each era introduces its own set of research materials.
         They are obtainable within the campaign provinces on the world map. For further information on where to collect these research materials and the best odds for acquiring them, visit the <Link to="/campaign" className='text-link'>Campaign Page</Link>.
         </Prologue>

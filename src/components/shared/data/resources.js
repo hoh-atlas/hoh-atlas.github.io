@@ -1,140 +1,262 @@
+import alabaster_idol from '../../../images/shared/resources/alabaster_idol.webp';
+import barrel from '../../../images/shared/resources/barrel.webp';
+import bronze_bracelet from '../../../images/shared/resources/bronze_bracelet.webp';
+import CampaignEnergy from '../../../images/shared/resources/CampaignEnergy.webp';
+import cape from '../../../images/shared/resources/cape.webp';
+import cartwheel from '../../../images/shared/resources/cartwheel.webp';
+import chili from '../../../images/shared/resources/chili.webp';
+import Coin from '../../../images/shared/resources/Coin.webp';
+import column from '../../../images/shared/resources/column.webp';
+import deben from '../../../images/shared/resources/deben.webp';
+import door from '../../../images/shared/resources/door.webp';
+import Food from '../../../images/shared/resources/Food.webp';
+import Gem from '../../../images/shared/resources/Gem.webp';
+import goblet from '../../../images/shared/resources/goblet.webp';
+import gold_laurel from '../../../images/shared/resources/gold_laurel.webp';
+import herbs from '../../../images/shared/resources/herbs.webp';
+import icon_agate from '../../../images/shared/resources/icon_agate.webp';
+import icon_amber from '../../../images/shared/resources/icon_amber.webp';
+import icon_amethyst from '../../../images/shared/resources/icon_amethyst.webp';
+import icon_ankh from '../../../images/shared/resources/icon_ankh.webp';
+import icon_aquamarine from '../../../images/shared/resources/icon_aquamarine.webp';
+import icon_arabesque_wood_carving from '../../../images/shared/resources/icon_arabesque_wood_carving.webp';
+import icon_blue_crest_common from '../../../images/shared/resources/icon_blue_crest_common.webp';
+import icon_blue_crest_enhanced from '../../../images/shared/resources/icon_blue_crest_enhanced.webp';
+import icon_blue_crest_superior from '../../../images/shared/resources/icon_blue_crest_superior.webp';
+import icon_byzantine_ewer from '../../../images/shared/resources/icon_byzantine_ewer.webp';
+import icon_champion_crest_common from '../../../images/shared/resources/icon_champion_crest_common.webp';
+import icon_champion_crest_enhanced from '../../../images/shared/resources/icon_champion_crest_enhanced.webp';
+import icon_champion_crest_superior from '../../../images/shared/resources/icon_champion_crest_superior.webp';
+import icon_charta_terrestre from '../../../images/shared/resources/icon_charta_terrestre.webp';
+import icon_commander_crest_common from '../../../images/shared/resources/icon_commander_crest_common.webp';
+import icon_commander_crest_enhanced from '../../../images/shared/resources/icon_commander_crest_enhanced.webp';
+import icon_commander_crest_superior from '../../../images/shared/resources/icon_commander_crest_superior.webp';
+import icon_crested_guidon from '../../../images/shared/resources/icon_crested_guidon.webp';
+import icon_emerald from '../../../images/shared/resources/icon_emerald.webp';
+import icon_etruscan_bronze_mirror from '../../../images/shared/resources/icon_etruscan_bronze_mirror.webp';
+import icon_expansion_city_capital_land from '../../../images/shared/resources/icon_expansion_city_capital_land.webp';
+import icon_expansion_city_china_land from '../../../images/shared/resources/icon_expansion_city_china_land.webp';
+import icon_expansion_city_egypt_land from '../../../images/shared/resources/icon_expansion_city_egypt_land.webp';
+import icon_folio_of_enlightenment from '../../../images/shared/resources/icon_folio_of_enlightenment.webp';
+import icon_fragrant_potpourri from '../../../images/shared/resources/icon_fragrant_potpourri.webp';
+import icon_frankish_fibula from '../../../images/shared/resources/icon_frankish_fibula.webp';
+import icon_genius_crest_common from '../../../images/shared/resources/icon_genius_crest_common.webp';
+import icon_genius_crest_enhanced from '../../../images/shared/resources/icon_genius_crest_enhanced.webp';
+import icon_genius_crest_superior from '../../../images/shared/resources/icon_genius_crest_superior.webp';
+import icon_gilded_pennant from '../../../images/shared/resources/icon_gilded_pennant.webp';
+import icon_gold_ore from '../../../images/shared/resources/icon_gold_ore.webp';
+import icon_greatleader_crest_common from '../../../images/shared/resources/icon_greatleader_crest_common.webp';
+import icon_greatleader_crest_enhanced from '../../../images/shared/resources/icon_greatleader_crest_enhanced.webp';
+import icon_greatleader_crest_superior from '../../../images/shared/resources/icon_greatleader_crest_superior.webp';
+import icon_greek_lyre from '../../../images/shared/resources/icon_greek_lyre.webp';
+import icon_green_crest_common from '../../../images/shared/resources/icon_green_crest_common.webp';
+import icon_green_crest_enhanced from '../../../images/shared/resources/icon_green_crest_enhanced.webp';
+import icon_green_crest_superior from '../../../images/shared/resources/icon_green_crest_superior.webp';
+import icon_hematite from '../../../images/shared/resources/icon_hematite.webp';
+import icon_herbal_poultice from '../../../images/shared/resources/icon_herbal_poultice.webp';
+import icon_hortus_sanitatis from '../../../images/shared/resources/icon_hortus_sanitatis.webp';
+import icon_iberian_torc_necklace from '../../../images/shared/resources/icon_iberian_torc_necklace.webp';
+import icon_jasper from '../../../images/shared/resources/icon_jasper.webp';
+import icon_lapis_lazuli from '../../../images/shared/resources/icon_lapis_lazuli.webp';
+import icon_lava_stone from '../../../images/shared/resources/icon_lava_stone.webp';
+import icon_manipulator_crest_common from '../../../images/shared/resources/icon_manipulator_crest_common.webp';
+import icon_manipulator_crest_enhanced from '../../../images/shared/resources/icon_manipulator_crest_enhanced.webp';
+import icon_manipulator_crest_superior from '../../../images/shared/resources/icon_manipulator_crest_superior.webp';
+import icon_medieval_tapestry from '../../../images/shared/resources/icon_medieval_tapestry.webp';
+import icon_minoan_frescoes from '../../../images/shared/resources/icon_minoan_frescoes.webp';
+import icon_opal from '../../../images/shared/resources/icon_opal.webp';
+import icon_papyrus from '../../../images/shared/resources/icon_papyrus.webp';
+import icon_papyrus_scroll from '../../../images/shared/resources/icon_papyrus_scroll.webp';
+import icon_petroglyph from '../../../images/shared/resources/icon_petroglyph.webp';
+import icon_prism_of_fate from '../../../images/shared/resources/icon_prism_of_fate.webp';
+import icon_purple_crest_common from '../../../images/shared/resources/icon_purple_crest_common.webp';
+import icon_purple_crest_enhanced from '../../../images/shared/resources/icon_purple_crest_enhanced.webp';
+import icon_purple_crest_superior from '../../../images/shared/resources/icon_purple_crest_superior.webp';
+import icon_red_crest_common from '../../../images/shared/resources/icon_red_crest_common.webp';
+import icon_red_crest_enhanced from '../../../images/shared/resources/icon_red_crest_enhanced.webp';
+import icon_red_crest_superior from '../../../images/shared/resources/icon_red_crest_superior.webp';
+import icon_rift_token_china_common from '../../../images/shared/resources/icon_rift_token_china_common.webp';
+import icon_rift_token_common from '../../../images/shared/resources/icon_rift_token_common.webp';
+import icon_rift_token_common_part from '../../../images/shared/resources/icon_rift_token_common_part.webp';
+import icon_rift_token_egypt_common from '../../../images/shared/resources/icon_rift_token_egypt_common.webp';
+import icon_rift_token_legendary from '../../../images/shared/resources/icon_rift_token_legendary.webp';
+import icon_rift_token_legendary_part from '../../../images/shared/resources/icon_rift_token_legendary_part.webp';
+import icon_rift_token_vikings_common from '../../../images/shared/resources/icon_rift_token_vikings_common.webp';
+import icon_roman_cameo_ring from '../../../images/shared/resources/icon_roman_cameo_ring.webp';
+import icon_shadow_dial from '../../../images/shared/resources/icon_shadow_dial.webp';
+import icon_spessartine from '../../../images/shared/resources/icon_spessartine.webp';
+import icon_stardust_quartz from '../../../images/shared/resources/icon_stardust_quartz.webp';
+import icon_tesla_core from '../../../images/shared/resources/icon_tesla_core.webp';
+import icon_travelers_compass from '../../../images/shared/resources/icon_travelers_compass.webp';
+import icon_war_horn from '../../../images/shared/resources/icon_war_horn.webp';
+import icon_workers_city_egypt from '../../../images/shared/resources/icon_workers_city_egypt.webp';
+import icon_xp_scroll_common from '../../../images/shared/resources/icon_xp_scroll_common.webp';
+import icon_xp_scroll_epic from '../../../images/shared/resources/icon_xp_scroll_epic.webp';
+import icon_xp_scroll_legendary from '../../../images/shared/resources/icon_xp_scroll_legendary.webp';
+import icon_xp_scroll_rare from '../../../images/shared/resources/icon_xp_scroll_rare.webp';
+import icon_xp_scroll_uncommon from '../../../images/shared/resources/icon_xp_scroll_uncommon.webp';
+import icon_yellow_crest_common from '../../../images/shared/resources/icon_yellow_crest_common.webp';
+import icon_yellow_crest_enhanced from '../../../images/shared/resources/icon_yellow_crest_enhanced.webp';
+import icon_yellow_crest_superior from '../../../images/shared/resources/icon_yellow_crest_superior.webp';
+import ink from '../../../images/shared/resources/ink.webp';
+import iron_pendant from '../../../images/shared/resources/iron_pendant.webp';
+import linen_shirt from '../../../images/shared/resources/linen_shirt.webp';
+import manuscript from '../../../images/shared/resources/manuscript.webp';
+import marble_bust from '../../../images/shared/resources/marble_bust.webp';
+import mosaic from '../../../images/shared/resources/mosaic.webp';
+import parchment from '../../../images/shared/resources/parchment.webp';
+import pepper from '../../../images/shared/resources/pepper.webp';
+import planks from '../../../images/shared/resources/planks.webp';
+import Research from '../../../images/shared/resources/Research.webp';
+import saffron from '../../../images/shared/resources/saffron.webp';
+import salt from '../../../images/shared/resources/salt.webp';
+import silver_ring from '../../../images/shared/resources/silver_ring.webp';
+import stone_tablet from '../../../images/shared/resources/stone_tablet.webp';
+import toga from '../../../images/shared/resources/toga.webp';
+import tome from '../../../images/shared/resources/tome.webp';
+import tunic from '../../../images/shared/resources/tunic.webp';
+import wardrobe from '../../../images/shared/resources/wardrobe.webp';
+import wax_seal from '../../../images/shared/resources/wax_seal.webp';
+import wool from '../../../images/shared/resources/wool.webp';
+
 const resources = [
     // BASIC
-    {id: "coins", name: "Coins", img: "https://i.ibb.co/Nx97Rt1/Coin.png", category: "soft"},   // zvazit ci nezmenit typ category na array, napr. categories: ["crests", "colors"]
-    {id: "food", name: "Food", img: "https://i.ibb.co/XzhNBBx/Food.png", category: "soft"},
-    {id: "research_point", name: "Research Point", img: "https://i.ibb.co/gDjKhpp/Research.png", category: "soft"},
-    {id: "gems", name: "Gems", img: "https://i.ibb.co/84q4q37/Gem.png", category: "soft"},
-    {id: "energy", name: "Stamina", img: "https://i.ibb.co/CVyVJRx/icon-campaign-energy.png", category: "soft"},
+    {id: "coins", name: "Coins", img: Coin, category: "soft"},   // consider different type of categories, such as: ["crests", "colors"]
+    {id: "food", name: "Food", img: Food, category: "soft"},
+    {id: "research_point", name: "Research Point", img: Research, category: "soft"},
+    {id: "gems", name: "Gems", img: Gem, category: "soft"},
+    {id: "energy", name: "Stamina", img: CampaignEnergy, category: "soft"},
     // EXPERIENCES
-    {id: "xp_common", name: "Common Scroll of Prowess", img: "https://i.ibb.co/1vRgTgt/icon-xp-scroll-common-426919.png", category: "experiences"},
-    {id: "xp_uncommon", name: "Uncommon Scroll of Prowess", img: "https://i.ibb.co/zxp91Rq/icon-xp-scroll-uncommon.png", category: "experiences"},
-    {id: "xp_rare", name: "Rare Scroll of Prowess", img: "https://i.ibb.co/Hnk7n57/icon-xp-scroll-rare.png", category: "experiences"},
-    {id: "xp_epic", name: "Epic Scroll of Prowess", img: "https://i.ibb.co/pzF9fc2/icon-xp-scroll-epic.png", category: "experiences"},
-    {id: "xp_legendary", name: "Legendary Scroll of Prowess", img: "https://i.ibb.co/L6JypkY/icon-xp-scroll-legendary.png", category: "experiences"},
+    {id: "xp_common", name: "Common Scroll of Prowess", img: icon_xp_scroll_common, category: "experiences"},
+    {id: "xp_uncommon", name: "Uncommon Scroll of Prowess", img: icon_xp_scroll_uncommon, category: "experiences"},
+    {id: "xp_rare", name: "Rare Scroll of Prowess", img: icon_xp_scroll_rare, category: "experiences"},
+    {id: "xp_epic", name: "Epic Scroll of Prowess", img: icon_xp_scroll_epic, category: "experiences"},
+    {id: "xp_legendary", name: "Legendary Scroll of Prowess", img: icon_xp_scroll_legendary, category: "experiences"},
     // ANTIMATTERS
-    {id: "antimatter", name: "Antimatter", img: "https://i.ibb.co/Px15C0R/rift-token-common.png", category: "antimatters"},
-    {id: "antimatter_egyptian", name: "Egyptian Antimatter", img: "https://i.ibb.co/9hQjpX7/icon-rift-token-egypt-common.png", category: "antimatters"},
-    {id: "antimatter_legendary", name: "Legendary Antimatter", img: "https://i.ibb.co/BKN2NnW/icon-rift-token-legendary.png", category: "antimatters"},
+    {id: "antimatter", name: "Antimatter", img: icon_rift_token_common, category: "antimatters"},
+    {id: "antimatter_egyptian", name: "Egyptian Antimatter", img: icon_rift_token_egypt_common, category: "antimatters"},
+    {id: "antimatter_legendary", name: "Legendary Antimatter", img: icon_rift_token_legendary, category: "antimatters"},
     {id: "antimatter_seasonpass", name: "Season Pass Antimatter", img: "https://i.ibb.co/6Drpr0d/icon-rift-token-seasonpass-common.png", category: "antimatters"}, //old image: https://i.ibb.co/RbK0gQc/icon-rift-token-seasonpass-common.png
-    {id: "antimatter_china", name: "China Antimatter", img: "https://i.ibb.co/GR6Fys1/icon-rift-token-china-common.png", category: "antimatters"},
-    {id: "antimatter_vikings", name: "Vikings Antimatter", img: "https://i.ibb.co/8d6K8M0/icon-rift-token-vikings-common.png", category: "antimatters"},
+    {id: "antimatter_china", name: "China Antimatter", img: icon_rift_token_china_common, category: "antimatters"},
+    {id: "antimatter_vikings", name: "Vikings Antimatter", img: icon_rift_token_vikings_common, category: "antimatters"},
     // CRESTS - COLORS
-    {id: "red_crest_common", name: "Common Red Crest", img: "https://i.ibb.co/6sjV4Lx/icon-red-crest-common.png", category: "crests_colors"},
-    {id: "yellow_crest_common", name: "Common Yellow Crest", img: "https://i.ibb.co/dJMk2dF/icon-yellow-crest-common.png", category: "crests_colors"},
-    {id: "green_crest_common", name: "Common Green Crest", img: "https://i.ibb.co/B4Mvdv8/icon-green-crest-common.png", category: "crests_colors"},
-    {id: "blue_crest_common", name: "Common Blue Crest", img: "https://i.ibb.co/xSQ36qG/icon-blue-crest-common.png", category: "crests_colors"},
-    {id: "purple_crest_common", name: "Common Purple Crest", img: "https://i.ibb.co/WG1ShRB/icon-purple-crest-common.png", category: "crests_colors"},
-    {id: "red_crest_enhanced", name: "Enhanced Red Crest", img: "https://i.ibb.co/fvKPzYk/icon-red-crest-enhanced.png", category: "crests_colors"},
-    {id: "yellow_crest_enhanced", name: "Enhanced Yellow Crest", img: "https://i.ibb.co/8K0qBcG/icon-yellow-crest-enhanced.png", category: "crests_colors"},
-    {id: "green_crest_enhanced", name: "Enhanced Green Crest", img: "https://i.ibb.co/HXPNRdn/icon-green-crest-enhanced.png", category: "crests_colors"},
-    {id: "blue_crest_enhanced", name: "Enhanced Blue Crest", img: "https://i.ibb.co/JQpmkLH/icon-blue-crest-enhanced.png", category: "crests_colors"},
-    {id: "purple_crest_enhanced", name: "Enhanced Purple Crest", img: "https://i.ibb.co/zJYy3CF/icon-purple-crest-enhanced.png", category: "crests_colors"},
-    {id: "red_crest_superior", name: "Superior Red Crest", img: "https://i.ibb.co/5B7xLfQ/icon-red-crest-superior.png", category: "crests_colors"},
-    {id: "yellow_crest_superior", name: "Superior Yellow Crest", img: "https://i.ibb.co/qMJN1tJ/icon-yellow-crest-superior.png", category: "crests_colors"},
-    {id: "green_crest_superior", name: "Superior Green Crest", img: "https://i.ibb.co/1Rp6Js8/icon-green-crest-superior.png", category: "crests_colors"},
-    {id: "blue_crest_superior", name: "Superior Blue Crest", img: "https://i.ibb.co/5548ZDf/icon-blue-crest-superior.png", category: "crests_colors"},
-    {id: "purple_crest_superior", name: "Superior Purple Crest", img: "https://i.ibb.co/p2PmqDG/icon-purple-crest-superior.png", category: "crests_colors"},
+    {id: "red_crest_common", name: "Common Red Crest", img: icon_red_crest_common, category: "crests_colors"},
+    {id: "yellow_crest_common", name: "Common Yellow Crest", img: icon_yellow_crest_common, category: "crests_colors"},
+    {id: "green_crest_common", name: "Common Green Crest", img: icon_green_crest_common, category: "crests_colors"},
+    {id: "blue_crest_common", name: "Common Blue Crest", img: icon_blue_crest_common, category: "crests_colors"},
+    {id: "purple_crest_common", name: "Common Purple Crest", img: icon_purple_crest_common, category: "crests_colors"},
+    {id: "red_crest_enhanced", name: "Enhanced Red Crest", img: icon_red_crest_enhanced, category: "crests_colors"},
+    {id: "yellow_crest_enhanced", name: "Enhanced Yellow Crest", img: icon_yellow_crest_enhanced, category: "crests_colors"},
+    {id: "green_crest_enhanced", name: "Enhanced Green Crest", img: icon_green_crest_enhanced, category: "crests_colors"},
+    {id: "blue_crest_enhanced", name: "Enhanced Blue Crest", img: icon_blue_crest_enhanced, category: "crests_colors"},
+    {id: "purple_crest_enhanced", name: "Enhanced Purple Crest", img: icon_purple_crest_enhanced, category: "crests_colors"},
+    {id: "red_crest_superior", name: "Superior Red Crest", img: icon_red_crest_superior, category: "crests_colors"},
+    {id: "yellow_crest_superior", name: "Superior Yellow Crest", img: icon_yellow_crest_superior, category: "crests_colors"},
+    {id: "green_crest_superior", name: "Superior Green Crest", img: icon_green_crest_superior, category: "crests_colors"},
+    {id: "blue_crest_superior", name: "Superior Blue Crest", img: icon_blue_crest_superior, category: "crests_colors"},
+    {id: "purple_crest_superior", name: "Superior Purple Crest", img: icon_purple_crest_superior, category: "crests_colors"},
     // CRESTS - FACTIONS
-    {id: "commander_crest_common", name: "Common Commander Crest", img: "https://i.ibb.co/Mfn4xnp/icon-commander-crest-common.png", category: "crests_factions"},
-    {id: "manipulator_crest_common", name: "Common Manipulator Crest", img: "https://i.ibb.co/VSnrRT2/icon-manipulator-crest-common.png", category: "crests_factions"},
-    {id: "champion_crest_common", name: "Common Champion Crest", img: "https://i.ibb.co/9hF0npf/icon-champion-crest-common.png", category: "crests_factions"},
-    {id: "greatleader_crest_common", name: "Common Great Leader Crest", img: "https://i.ibb.co/RpJkQrp/icon-greatleader-crest-common.png", category: "crests_factions"},
-    {id: "genius_crest_common", name: "Common Genius Crest", img: "https://i.ibb.co/cyTtKx8/icon-genius-crest-common.png", category: "crests_factions"},
-    {id: "commander_crest_enhanced", name: "Enhanced Commander Crest", img: "https://i.ibb.co/4fFzsqd/icon-commander-crest-enhanced.png", category: "crests_factions"},
-    {id: "manipulator_crest_enhanced", name: "Enhanced Manipulator Crest", img: "https://i.ibb.co/Y0rKb24/icon-manipulator-crest-enhanced.png", category: "crests_factions"},
-    {id: "champion_crest_enhanced", name: "Enhanced Champion Crest", img: "https://i.ibb.co/JsnFP0L/icon-champion-crest-enhanced.png", category: "crests_factions"},
-    {id: "greatleader_crest_enhanced", name: "Enhanced Great Leader Crest", img: "https://i.ibb.co/sgtqdPr/icon-greatleader-crest-enhanced.png", category: "crests_factions"},
-    {id: "genius_crest_enhanced", name: "Enhanced Genius Crest", img: "https://i.ibb.co/7XJ7hjj/icon-genius-crest-enhanced.png", category: "crests_factions"},
-    {id: "commander_crest_superior", name: "Superior Commander Crest", img: "https://i.ibb.co/WprGf8j/icon-commander-crest-superior.png", category: "crests_factions"},
-    {id: "manipulator_crest_superior", name: "Superior Manipulator Crest", img: "https://i.ibb.co/5cX9KYz/icon-manipulator-crest-superior.png", category: "crests_factions"},
-    {id: "champion_crest_superior", name: "Superior Champion Crest", img: "https://i.ibb.co/dKQ0zH1/icon-champion-crest-superior.png", category: "crests_factions"},
-    {id: "greatleader_crest_superior", name: "Superior Great Leader Crest", img: "https://i.ibb.co/JcNdn2h/icon-greatleader-crest-superior.png", category: "crests_factions"},
-    {id: "genius_crest_superior", name: "Superior Genius Crest", img: "https://i.ibb.co/tbkXML8/icon-genius-crest-superior.png", category: "crests_factions"},
+    {id: "commander_crest_common", name: "Common Commander Crest", img: icon_commander_crest_common, category: "crests_factions"},
+    {id: "manipulator_crest_common", name: "Common Manipulator Crest", img: icon_manipulator_crest_common, category: "crests_factions"},
+    {id: "champion_crest_common", name: "Common Champion Crest", img: icon_champion_crest_common, category: "crests_factions"},
+    {id: "greatleader_crest_common", name: "Common Great Leader Crest", img: icon_greatleader_crest_common, category: "crests_factions"},
+    {id: "genius_crest_common", name: "Common Genius Crest", img: icon_genius_crest_common, category: "crests_factions"},
+    {id: "commander_crest_enhanced", name: "Enhanced Commander Crest", img: icon_commander_crest_enhanced, category: "crests_factions"},
+    {id: "manipulator_crest_enhanced", name: "Enhanced Manipulator Crest", img: icon_manipulator_crest_enhanced, category: "crests_factions"},
+    {id: "champion_crest_enhanced", name: "Enhanced Champion Crest", img: icon_champion_crest_enhanced, category: "crests_factions"},
+    {id: "greatleader_crest_enhanced", name: "Enhanced Great Leader Crest", img: icon_greatleader_crest_enhanced, category: "crests_factions"},
+    {id: "genius_crest_enhanced", name: "Enhanced Genius Crest", img: icon_genius_crest_enhanced, category: "crests_factions"},
+    {id: "commander_crest_superior", name: "Superior Commander Crest", img: icon_commander_crest_superior, category: "crests_factions"},
+    {id: "manipulator_crest_superior", name: "Superior Manipulator Crest", img: icon_manipulator_crest_superior, category: "crests_factions"},
+    {id: "champion_crest_superior", name: "Superior Champion Crest", img: icon_champion_crest_superior, category: "crests_factions"},
+    {id: "greatleader_crest_superior", name: "Superior Great Leader Crest", img: icon_greatleader_crest_superior, category: "crests_factions"},
+    {id: "genius_crest_superior", name: "Superior Genius Crest", img: icon_genius_crest_superior, category: "crests_factions"},
     // RESEARCH MATERIALS
-    {id: "agate", name: "Agate", img: "https://i.ibb.co/GHR8St3/icon-agate.png", category: "research_materials"},
-    {id: "amber", name: "Amber", img: "https://i.ibb.co/47T974Y/icon-amber.png", category: "research_materials"},
-    {id: "amethyst", name: "Amethyst", img: "https://i.ibb.co/JmVv5pB/icon-amethyst.png", category: "research_materials"},
-    {id: "aquamarine", name: "Aquamarine", img: "https://i.ibb.co/VHwCXYJ/icon-aquamarine.png", category: "research_materials"},
-    {id: "arabesque_wood_carving", name: "Arabesque Wood Carving", img: "https://i.ibb.co/wdX4jQR/icon-arabesque-wood-carving.png", category: "research_materials"},
-    {id: "byzantine_ewer", name: "Byzantine Ewer", img: "https://i.ibb.co/pLyTb82/icon-byzantine-ewer.png", category: "research_materials"},
-    {id: "emerald", name: "Emerald", img: "https://i.ibb.co/X4GbhXM/icon-emerald.png", category: "research_materials"},
-    {id: "etruscan_bronze_mirror", name: "Etruscan Bronze Mirror", img: "https://i.ibb.co/mFDNcw9/icon-etruscan-bronze-mirror.png", category: "research_materials"},
-    {id: "frankish_fibula", name: "Frankish Fibula", img: "https://i.ibb.co/zXXqKZP/icon-frankish-fibula.png", category: "research_materials"},
-    {id: "greek_lyre", name: "Greek Lyre", img: "https://i.ibb.co/mDX8dVS/icon-greek-lyre.png", category: "research_materials"},
-    {id: "hematite", name: "Hematite", img: "https://i.ibb.co/7rmxV18/icon-hematite.png", category: "research_materials"},
-    {id: "iberian_torc_necklace", name: "Iberian Torc Necklace", img: "https://i.ibb.co/x2T4Ztk/icon-iberian-torc-necklace.png", category: "research_materials"},
-    {id: "jasper", name: "Jasper", img: "https://i.ibb.co/WDFpBDc/icon-jasper.png", category: "research_materials"},
-    {id: "lapis_lazuli", name: "Lapis Lazuli", img: "https://i.ibb.co/9qjTNXQ/icon-lapis-lazuli.png", category: "research_materials"},
-    {id: "lava_stone", name: "Lava Stone", img: "https://i.ibb.co/sQJjPC3/icon-lava-stone.png", category: "research_materials"},
-    {id: "medieval_tapestry", name: "Medieval Tapestry", img: "https://i.ibb.co/1bBxWgQ/icon-medieval-tapestry.png", category: "research_materials"},
-    {id: "minoan_frescoes", name: "Minoan Frescoes", img: "https://i.ibb.co/CQKMqgX/icon-minoan-frescoes.png", category: "research_materials"},
-    {id: "opal", name: "Opal", img: "https://i.ibb.co/r06G4rj/icon-opal.png", category: "research_materials"},
-    {id: "petroglyph", name: "Petroglyph", img: "https://i.ibb.co/5FXchFn/icon-petroglyph.png", category: "research_materials"},
-    {id: "roman_cameo_ring", name: "Roman Cameo Ring", img: "https://i.ibb.co/7RGHLv6/icon-roman-cameo-ring.png", category: "research_materials"},
-    {id: "spessartine", name: "Spessartine", img: "https://i.ibb.co/jh7j1MD/icon-spessartine.png", category: "research_materials"},
+    {id: "agate", name: "Agate", img: icon_agate, category: "research_materials"},
+    {id: "amber", name: "Amber", img: icon_amber, category: "research_materials"},
+    {id: "amethyst", name: "Amethyst", img: icon_amethyst, category: "research_materials"},
+    {id: "aquamarine", name: "Aquamarine", img: icon_aquamarine, category: "research_materials"},
+    {id: "arabesque_wood_carving", name: "Arabesque Wood Carving", img: icon_arabesque_wood_carving, category: "research_materials"},
+    {id: "byzantine_ewer", name: "Byzantine Ewer", img: icon_byzantine_ewer, category: "research_materials"},
+    {id: "emerald", name: "Emerald", img: icon_emerald, category: "research_materials"},
+    {id: "etruscan_bronze_mirror", name: "Etruscan Bronze Mirror", img: icon_etruscan_bronze_mirror, category: "research_materials"},
+    {id: "frankish_fibula", name: "Frankish Fibula", img: icon_frankish_fibula, category: "research_materials"},
+    {id: "greek_lyre", name: "Greek Lyre", img: icon_greek_lyre, category: "research_materials"},
+    {id: "hematite", name: "Hematite", img: icon_hematite, category: "research_materials"},
+    {id: "iberian_torc_necklace", name: "Iberian Torc Necklace", img: icon_iberian_torc_necklace, category: "research_materials"},
+    {id: "jasper", name: "Jasper", img: icon_jasper, category: "research_materials"},
+    {id: "lapis_lazuli", name: "Lapis Lazuli", img: icon_lapis_lazuli, category: "research_materials"},
+    {id: "lava_stone", name: "Lava Stone", img: icon_lava_stone, category: "research_materials"},
+    {id: "medieval_tapestry", name: "Medieval Tapestry", img: icon_medieval_tapestry, category: "research_materials"},
+    {id: "minoan_frescoes", name: "Minoan Frescoes", img: icon_minoan_frescoes, category: "research_materials"},
+    {id: "opal", name: "Opal", img: icon_opal, category: "research_materials"},
+    {id: "petroglyph", name: "Petroglyph", img: icon_petroglyph, category: "research_materials"},
+    {id: "roman_cameo_ring", name: "Roman Cameo Ring", img: icon_roman_cameo_ring, category: "research_materials"},
+    {id: "spessartine", name: "Spessartine", img: icon_spessartine, category: "research_materials"},
     // ASCENSION MATERIALS
-    {id: "charta_terrestre", name: "Charta Terrestre", img: "https://i.ibb.co/pWNNQPg/icon-charta-terrestre.png", category: "ascension_materials"},
-    {id: "crested_guidon", name: "Crested Guidon", img: "https://i.ibb.co/fGVQ0N7/icon-crested-guidon.png", category: "ascension_materials"},
-    {id: "folio_of_enlightenment", name: "Folio of Enlightenment", img: "https://i.ibb.co/9GbjPdZ/icon-folio-of-enlightenment.png", category: "ascension_materials"},
-    {id: "fragrant_potpourri", name: "Fragrant Potpourri", img: "https://i.ibb.co/61TqJtB/icon-fragrant-potpourri.png", category: "ascension_materials"},
-    {id: "gilded_pennant", name: "Gilded Pennant", img: "https://i.ibb.co/cTXKJDS/icon-gilded-pennant.png", category: "ascension_materials"},
-    {id: "herbal_poultice", name: "Herbal Poultice", img: "https://i.ibb.co/Bncb6j0/icon-herbal-poultice.png", category: "ascension_materials"},
-    {id: "hortus_sanitatis", name: "Hortus Sanitatis", img: "https://i.ibb.co/2ZQW37j/icon-hortus-sanitatis.png", category: "ascension_materials"},
-    {id: "prism_of_fate", name: "Prism of Fate", img: "https://i.ibb.co/Gp9F6kp/icon-prism-of-fate.png", category: "ascension_materials"},
-    {id: "shadow_dial", name: "Shadow Dial", img: "https://i.ibb.co/gPRKJxv/icon-shadow-dial.png", category: "ascension_materials"},
-    {id: "stardust_quartz", name: "Stardust Quartz", img: "https://i.ibb.co/cY7q75V/icon-stardust-quartz.png", category: "ascension_materials"},
-    {id: "tesla_core", name: "Tesla Core", img: "https://i.ibb.co/DQYBQYZ/icon-tesla-core.png", category: "ascension_materials"},
-    {id: "travelers_compass", name: "Traveler's Compass", img: "https://i.ibb.co/K9BQ3V6/icon-travelers-compass.png", category: "ascension_materials"},
-    {id: "war_horn", name: "War Horn", img: "https://i.ibb.co/PZr1YBn/icon-war-horn.png", category: "ascension_materials"},
+    {id: "charta_terrestre", name: "Charta Terrestre", img: icon_charta_terrestre, category: "ascension_materials"},
+    {id: "crested_guidon", name: "Crested Guidon", img: icon_crested_guidon, category: "ascension_materials"},
+    {id: "folio_of_enlightenment", name: "Folio of Enlightenment", img: icon_folio_of_enlightenment, category: "ascension_materials"},
+    {id: "fragrant_potpourri", name: "Fragrant Potpourri", img: icon_fragrant_potpourri, category: "ascension_materials"},
+    {id: "gilded_pennant", name: "Gilded Pennant", img: icon_gilded_pennant, category: "ascension_materials"},
+    {id: "herbal_poultice", name: "Herbal Poultice", img: icon_herbal_poultice, category: "ascension_materials"},
+    {id: "hortus_sanitatis", name: "Hortus Sanitatis", img: icon_hortus_sanitatis, category: "ascension_materials"},
+    {id: "prism_of_fate", name: "Prism of Fate", img: icon_prism_of_fate, category: "ascension_materials"},
+    {id: "shadow_dial", name: "Shadow Dial", img: icon_shadow_dial, category: "ascension_materials"},
+    {id: "stardust_quartz", name: "Stardust Quartz", img: icon_stardust_quartz, category: "ascension_materials"},
+    {id: "tesla_core", name: "Tesla Core", img: icon_tesla_core, category: "ascension_materials"},
+    {id: "travelers_compass", name: "Traveler's Compass", img: icon_travelers_compass, category: "ascension_materials"},
+    {id: "war_horn", name: "War Horn", img: icon_war_horn, category: "ascension_materials"},
     // GOODS
-    {id: "alabaster_idol", name: "Alabaster Idol", img: "https://i.ibb.co/Sn1b7nb/alabaster-idol.png", category: "goods"},
-    {id: "bronze_bracelet", name: "Bronze Bracelet", img: "https://i.ibb.co/ThhXw5C/bronze-bracelet.png", category: "goods"},
-    {id: "wool", name: "Wool", img: "https://i.ibb.co/n188k43/wool.png", category: "goods"},
-    {id: "marble_bust", name: "Marble Bust", img: "https://i.ibb.co/xCCLc2K/marble-bust.png", category: "goods"},
-    {id: "iron_pendant", name: "Iron Pendant", img: "https://i.ibb.co/jHRXv74/iron-pendant.png", category: "goods"},
-    {id: "linen_shirt", name: "Linen Shirt", img: "https://i.ibb.co/68YD0xg/linen-shirt.png", category: "goods"},
-    {id: "column", name: "Column", img: "https://i.ibb.co/ZdYY6kx/column.png", category: "goods"},
-    {id: "silver_ring", name: "Silver Ring", img: "https://i.ibb.co/c88CZdc/silver-ring.png", category: "goods"},
-    {id: "toga", name: "Toga", img: "https://i.ibb.co/mccn2hw/toga.png", category: "goods"},
-    {id: "stone_tablet", name: "Stone Tablet", img: "https://i.ibb.co/5jtYy69/stone-tablet.png", category: "goods"},
-    {id: "gold_laurel", name: "Gold Laurel", img: "https://i.ibb.co/n0RFWZz/gold-laurel.png", category: "goods"},
-    {id: "tunic", name: "Tunic", img: "https://i.ibb.co/VtPFv9G/tunic.png", category: "goods"},
-    {id: "mosaic", name: "Mosaic", img: "https://i.ibb.co/JBkcrWp/mosaic.png", category: "goods"},
-    {id: "goblet", name: "Goblet", img: "https://i.ibb.co/nM0Xsjz/goblet.png", category: "goods"},
-    {id: "cape", name: "Cape", img: "https://i.ibb.co/xLrX0z3/cape.png", category: "goods"},
-    {id: "planks", name: "Planks", img: "https://i.ibb.co/nL5gQfS/planks.png", category: "goods"},
-    {id: "parchment", name: "Parchment", img: "https://i.ibb.co/887Xrxx/parchment.png", category: "goods"},
-    {id: "pepper", name: "Pepper", img: "https://i.ibb.co/ggKN2s1/pepper.png", category: "goods"},
-    {id: "cartwheel", name: "Cartwheel", img: "https://i.ibb.co/VSq1jrS/cartwheel.png", category: "goods"},
-    {id: "ink", name: "Ink", img: "https://i.ibb.co/yXsTvhm/ink.png", category: "goods"},
-    {id: "salt", name: "Salt", img: "https://i.ibb.co/64x8W77/salt.png", category: "goods"},
-    {id: "barrel", name: "Barrel", img: "https://i.ibb.co/Zc6wFCR/barrel.png", category: "goods"},
-    {id: "manuscript", name: "Manuscript", img: "https://i.ibb.co/1J5mD38/manuscript.png", category: "goods"},
-    {id: "herbs", name: "Herbs", img: "https://i.ibb.co/WV2xCGh/herbs.png", category: "goods"},
-    {id: "door", name: "Door", img: "https://i.ibb.co/TBCTt92/door.png", category: "goods"},
-    {id: "wax_seal", name: "Wax Seal", img: "https://i.ibb.co/fxjRXBj/wax-seal.png", category: "goods"},
-    {id: "saffron", name: "Saffron", img: "https://i.ibb.co/JKgrRXr/saffron.png", category: "goods"},
-    {id: "wardrobe", name: "Wardrobe", img: "https://i.ibb.co/1r1NB87/wardrobe.png", category: "goods"},
-    {id: "tome", name: "Tome", img: "https://i.ibb.co/3v2b4D5/tome.png", category: "goods"},
-    {id: "chili", name: "Chili", img: "https://i.ibb.co/FmFsBHk/chili.png", category: "goods"},
+    {id: "alabaster_idol", name: "Alabaster Idol", img: alabaster_idol, category: "goods"},
+    {id: "bronze_bracelet", name: "Bronze Bracelet", img: bronze_bracelet, category: "goods"},
+    {id: "wool", name: "Wool", img: wool, category: "goods"},
+    {id: "marble_bust", name: "Marble Bust", img: marble_bust, category: "goods"},
+    {id: "iron_pendant", name: "Iron Pendant", img: iron_pendant, category: "goods"},
+    {id: "linen_shirt", name: "Linen Shirt", img: linen_shirt, category: "goods"},
+    {id: "column", name: "Column", img: column, category: "goods"},
+    {id: "silver_ring", name: "Silver Ring", img: silver_ring, category: "goods"},
+    {id: "toga", name: "Toga", img: toga, category: "goods"},
+    {id: "stone_tablet", name: "Stone Tablet", img: stone_tablet, category: "goods"},
+    {id: "gold_laurel", name: "Gold Laurel", img: gold_laurel, category: "goods"},
+    {id: "tunic", name: "Tunic", img: tunic, category: "goods"},
+    {id: "mosaic", name: "Mosaic", img: mosaic, category: "goods"},
+    {id: "goblet", name: "Goblet", img: goblet, category: "goods"},
+    {id: "cape", name: "Cape", img: cape, category: "goods"},
+    {id: "planks", name: "Planks", img: planks, category: "goods"},
+    {id: "parchment", name: "Parchment", img: parchment, category: "goods"},
+    {id: "pepper", name: "Pepper", img: pepper, category: "goods"},
+    {id: "cartwheel", name: "Cartwheel", img: cartwheel, category: "goods"},
+    {id: "ink", name: "Ink", img: ink, category: "goods"},
+    {id: "salt", name: "Salt", img: salt, category: "goods"},
+    {id: "barrel", name: "Barrel", img: barrel, category: "goods"},
+    {id: "manuscript", name: "Manuscript", img: manuscript, category: "goods"},
+    {id: "herbs", name: "Herbs", img: herbs, category: "goods"},
+    {id: "door", name: "Door", img: door, category: "goods"},
+    {id: "wax_seal", name: "Wax Seal", img: wax_seal, category: "goods"},
+    {id: "saffron", name: "Saffron", img: saffron, category: "goods"},
+    {id: "wardrobe", name: "Wardrobe", img: wardrobe, category: "goods"},
+    {id: "tome", name: "Tome", img: tome, category: "goods"},
+    {id: "chili", name: "Chili", img: chili, category: "goods"},
     // EGYPT ALLIED CULTURE
-    {id: "deben", name: "Deben", img: "https://i.ibb.co/Tw1K6WY/Deben.png", category: "culture_egypt"},
-    {id: "papyrus", name: "Papyrus", img: "https://i.ibb.co/1fC1vNY/Papyrus.png", category: "culture_egypt"},
-    {id: "gold_ore", name: "Gold Ore", img: "https://i.ibb.co/L9pNvkZ/Gold-Ore.png", category: "culture_egypt"},
-    {id: "papyrus_scroll", name: "Papyrus Scroll", img: "https://i.ibb.co/jHtsYrS/Papyrus-Scroll.png", category: "culture_egypt"},
-    {id: "ankh", name: "Ankh", img: "https://i.ibb.co/25mkmr0/Ankh.png", category: "culture_egypt"},
-    {id: "egypt_worker", name: "Egypt Worker", img: "https://i.ibb.co/NSP1bs1/Egypt-Worker.png", category: "culture_egypt"},
+    {id: "deben", name: "Deben", img: deben, category: "culture_egypt"},
+    {id: "papyrus", name: "Papyrus", img: icon_papyrus, category: "culture_egypt"},
+    {id: "gold_ore", name: "Gold Ore", img: icon_gold_ore, category: "culture_egypt"},
+    {id: "papyrus_scroll", name: "Papyrus Scroll", img: icon_papyrus_scroll, category: "culture_egypt"},
+    {id: "ankh", name: "Ankh", img: icon_ankh, category: "culture_egypt"},
+    {id: "egypt_worker", name: "Egypt Worker", img: icon_workers_city_egypt, category: "culture_egypt"},
     // EXPANSIONS
-    {id: "expansion_regular", name: "Regular Expansion", img: "https://i.ibb.co/PZ7fb4t/icon-expansion-city-capital-land.png", category: "expansions"},
-    {id: "expansion_egypt", name: "Egypt Expansion", img: "https://i.ibb.co/dWLfh7w/icon-expansion-city-egypt-land.png", category: "expansions"},
-    {id: "expansion_china", name: "China Expansion", img: "https://i.ibb.co/P9hChQ8/icon-expansion-city-china-land.png", category: "expansions"},
+    {id: "expansion_regular", name: "Regular Expansion", img: icon_expansion_city_capital_land, category: "expansions"},
+    {id: "expansion_egypt", name: "Egypt Expansion", img: icon_expansion_city_egypt_land, category: "expansions"},
+    {id: "expansion_china", name: "China Expansion", img: icon_expansion_city_china_land, category: "expansions"},
     // ATTACK ICONS
     {id: "attack", name: "Attack", img: "https://i.ibb.co/YRn1jcX/icon-hero-atk.png", category: "attack"},
     {id: "defense", name: "Defense", img: "https://i.ibb.co/1Jy3KQ0/icon-hero-def.png", category: "attack"},
     {id: "hp", name: "HP", img: "https://i.ibb.co/3c8TYXL/icon-hero-hp.png", category: "attack"},
     {id: "hero_power", name: "Hero Power", img: "https://i.ibb.co/yNZpy6D/icon-hero-power-538925.png", category: "attack"},
     // FRAGMENTS
-    {id: "antimatter_legendary_part", name: "Legendary Antimatter Piece", img: "https://i.ibb.co/KzFfgTH/icon-rift-token-legendary-part.png", category: "fragments"},
+    {id: "antimatter_common_part", name: "Antimatter Piece", img: icon_rift_token_common_part, category: "fragments"},
+    {id: "antimatter_legendary_part", name: "Legendary Antimatter Piece", img: icon_rift_token_legendary_part, category: "fragments"},
 ]
 
 export default resources;

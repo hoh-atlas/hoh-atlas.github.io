@@ -1,3 +1,5 @@
+import cleopatra from "../../images/heroes/intro/tutorial-host-cleopatra.webp";
+
 const sectionsDefinition = {
     page: "heroes",
     tabs: [
@@ -5,7 +7,7 @@ const sectionsDefinition = {
             id: 1,
             url: "",
             name: "Intro",
-            img: "https://i.ibb.co/ZVSvFBz/Ancient-Greek-Access-Button-Bg.png",
+            img: cleopatra,
             show: false,
             dynamicSegments: [":heroId"],
         },

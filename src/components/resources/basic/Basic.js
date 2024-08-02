@@ -6,6 +6,8 @@ import Prologue from "../../shared/Prologue";
 import SectionDivider from "../../shared/SectionDivider";
 import Icon from "../../shared/Icon";
 
+import Food from '../../../images/resources/basic/food.webp';
+
 const Basic = () => {
 
     const basicAdditionalData = [
@@ -39,7 +41,7 @@ const Basic = () => {
     }, {});
 
     return <>
-        <Prologue imageSrc={"https://i.ibb.co/wYKQHtH/food-538941.png"} alt={"Provinces"} maxHeight={"65px"}>
+        <Prologue imageSrc={Food} alt={"Provinces"} maxHeight={"65px"}>
             These resources are crucial for your in-game progress. You need them to develop your city, unlock technologies in research, explore, evolve new heroes, and traverse through the realms of history and allied cultures.
         </Prologue>
         <SectionDivider/>

@@ -11,6 +11,8 @@ import SearchBox from "../../shared/SearchBox";
 import resources from "../../shared/data/resources";
 import { useState, useEffect } from "react";
 
+import cleopatra from "../../../images/heroes/intro/tutorial-host-cleopatra.webp";
+
 const Intro = (props) => {
     const heroId = props.heroId;
 
@@ -229,7 +231,7 @@ const Intro = (props) => {
 
     return (
         <>
-            <Prologue imageSrc={"https://i.ibb.co/LZsTSzb/tutorial-host-cleopatra.png"} alt={"Event"} maxHeight={"65px"}>
+            <Prologue imageSrc={cleopatra} alt={"Event"} maxHeight={"65px"}>
             Use the filters to refine your search and find heroes that match your preferred criteria. Whether you seek valiant knights, cunning rogues, powerful mages, or wise sages, you'll find them all here. 
             Filter by hero class, unit type, crest colors, and factions to tailor your adventure to your liking.
             </Prologue>

@@ -7,6 +7,8 @@ import { leftJoinArrays } from "../../shared/utils";
 import resources from "../../shared/data/resources";
 import { Link } from "react-router-dom";
 
+import icon_manipulator_crest_common from "../../../images/shared/resources/icon_manipulator_crest_common.webp";
+
 const Crests = () => {
 
     const crestsAdditionalData = [
@@ -55,7 +57,7 @@ const Crests = () => {
     const crestTypes = ["crests_colors", "crests_factions"];
 
     return <>
-        <Prologue imageSrc={"https://i.ibb.co/VSnrRT2/icon-manipulator-crest-common.png"} alt={"Provinces"} maxHeight={"65px"}>
+        <Prologue imageSrc={icon_manipulator_crest_common} alt={"Provinces"} maxHeight={"65px"}>
         Each color and faction of heroes possesses its unique set of crests - common, enhanced, and superior. Crests are essential for ascending your heroes to higher levels. 
         While you can collect them through campaign provinces, the primary source of crests is the Tesla Storms feature, providing even more valuable crests for your heroes. 
         To discover which heroes require specific crests, refer to the <Link to="/heroes" className="text-link">Heroes Page</Link>.

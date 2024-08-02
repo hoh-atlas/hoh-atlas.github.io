@@ -9,6 +9,8 @@ import SectionDivider from "../../shared/SectionDivider";
 import allProvinces from "../data";
 import TableProvince from "./TableProvince";
 
+import icon_expansion_city_capital_land from "../../../images/shared/resources/icon_expansion_city_capital_land.webp";
+
 const Provinces = () => {
 
     const basePath = "campaign";
@@ -44,7 +46,7 @@ const Provinces = () => {
     };
 
     return <>
-        <Prologue imageSrc={"https://i.ibb.co/PZ7fb4t/icon-expansion-city-capital-land.png"} alt={"Provinces"} maxHeight={"65px"}>This is an overview of all Regions and their possible rewards.</Prologue>
+        <Prologue imageSrc={icon_expansion_city_capital_land} alt={"Provinces"} maxHeight={"65px"}>This is an overview of all Regions and their possible rewards.</Prologue>
         <SelectBox
             options={options}
             width={"50%"}

@@ -1,3 +1,5 @@
+import icon_battle from "../../images/campaign/intro/icon-battle.webp";
+
 const sectionsDefinition = {
     page: "campaign",
     tabs: [
@@ -5,7 +7,7 @@ const sectionsDefinition = {
             id: 1,
             url: "",
             name: "Campaign",
-            img: "https://i.ibb.co/3sQJLqS/icon-battle.png",
+            img: icon_battle,
             show: true,
             dynamicSegments: [],
         },

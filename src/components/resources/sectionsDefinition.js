@@ -1,3 +1,10 @@
+import icon_amber from "../../images/shared/resources/icon_amber.webp";
+import icon_war_horn from "../../images/shared/resources/icon_war_horn.webp";
+import Food from '../../images/resources/basic/food.webp';
+import icon_manipulator_crest_common from "../../images/shared/resources/icon_manipulator_crest_common.webp";
+import alabaster_idol from '../../images/resources/goods/icon-alabaster-idol.webp';
+import icon_goldfood from '../../images/resources/intro/icon-goldfood.webp';
+
 const sectionsDefinition = {
     page: "resources",
     tabs: [
@@ -5,7 +12,7 @@ const sectionsDefinition = {
             id: 1,
             url: "",
             name: "",
-            img: "https://i.ibb.co/Xt9rhTC/icon-goldfood.png",
+            img: icon_goldfood,
             show: true,
             dynamicSegments: [],
         },
@@ -13,7 +20,7 @@ const sectionsDefinition = {
             id: 2,
             url: "basic",
             name: "Basic",
-            img: "https://i.ibb.co/XzhNBBx/Food.png",
+            img: Food,
             show: true,
             dynamicSegments: [],
         },
@@ -21,7 +28,7 @@ const sectionsDefinition = {
             id: 3,
             url: "goods",
             name: "Goods",
-            img: "https://i.ibb.co/Sn1b7nb/alabaster-idol.png",
+            img: alabaster_idol,
             show: true,
             dynamicSegments: [],
         },
@@ -29,7 +36,7 @@ const sectionsDefinition = {
             id: 4,
             url: "research",
             name: "Research",
-            img: "https://i.ibb.co/47T974Y/icon-amber.png",
+            img: icon_amber,
             show: true,
             dynamicSegments: [],
         },
@@ -37,7 +44,7 @@ const sectionsDefinition = {
             id: 5,
             url: "crests",
             name: "Crests",
-            img: "https://i.ibb.co/VSnrRT2/icon-manipulator-crest-common.png",
+            img: icon_manipulator_crest_common,
             show: true,
             dynamicSegments: [],
         },
@@ -45,7 +52,7 @@ const sectionsDefinition = {
             id: 6,
             url: "ascension",
             name: "Ascension",
-            img: "https://i.ibb.co/PZr1YBn/icon-war-horn.png",
+            img: icon_war_horn,
             show: true,
             dynamicSegments: [],
         },

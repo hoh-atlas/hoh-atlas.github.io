@@ -7,6 +7,8 @@ import React from "react";
 import Icon from "../../shared/Icon";
 import { leftJoinArrays } from "../../shared/utils";
 
+import alabaster_idol from '../../../images/resources/goods/icon-alabaster-idol.webp';
+
 const Goods = () => {
 
     const goodsAdditionalData = [
@@ -65,7 +67,7 @@ const Goods = () => {
     });
 
     return <>
-        <Prologue imageSrc={"https://i.ibb.co/cb1RzMh/icon-alabaster-idol-294130.png"} alt={"Provinces"} maxHeight={"65px"}>
+        <Prologue imageSrc={alabaster_idol} alt={"Provinces"} maxHeight={"65px"}>
             Goods are produced in workshops. In each era, starting with the Bronze Age, you unlock three workshops for your city, each producing a unique type of goods.
             Workshops require workers to produce goods. Goods are necessary to unlock technologies in research and upgrade buildings in your city.
         </Prologue>
