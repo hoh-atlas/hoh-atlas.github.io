@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { HashRouter, Routes, Route} from "react-router-dom";
 import { useEffect } from "react";
 
 import HomePage from "./pages/HomePage";
@@ -27,7 +27,7 @@ const App = () => {
 		document.title = "Heroes of History - Atlas";
 	}, []);
 	
-	return <BrowserRouter>
+	return <HashRouter>
 		<Routes>
 			<Route path="/" element={ <SharedLayout /> }>
 
@@ -101,7 +101,7 @@ const App = () => {
 				<Route path="*" element={ <Error /> }/>
 			</Route>
 		</Routes>
-	</BrowserRouter>
+	</HashRouter>
 }
 
 export default App;
