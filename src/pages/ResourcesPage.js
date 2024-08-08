@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+import ReactGA from "react-ga4";
 import Container from "../components/shared/Container";
 
 import layoutResources from "../components/resources/sectionsDefinition";
@@ -12,6 +13,12 @@ import Basic from "../components/resources/basic/Basic";
 import { Link } from "react-router-dom";
 
 const ResourcesPage = (props) => {
+
+    ReactGA.send({
+        hitType: "pageview",
+        page: props.tab.url,
+        title: props.tab.name,
+    });
 
     const basePath = "resources";
 

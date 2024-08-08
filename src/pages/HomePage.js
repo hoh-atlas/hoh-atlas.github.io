@@ -9,8 +9,8 @@ const HomePage = (props) => {
 
     ReactGA.send({
         hitType: "pageview",
-        page: "/",
-        title: "Home",
+        page: props.tab.url,
+        title: props.tab.name,
     });
 
     const basePath = "";
