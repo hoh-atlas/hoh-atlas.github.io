@@ -10,6 +10,7 @@ import ResourcesPage from "./pages/ResourcesPage";
 import Error from "./pages/Error";
 import SharedLayout from "./pages/SharedLayout";
 import { createPathFromParameters } from "./components/shared/utils";
+import ReactGA from "react-ga4";
 
 import layoutHome from "./components/home/sectionsDefinition";
 import layoutCampaign from "./components/campaign/sectionsDefinition";
@@ -19,6 +20,8 @@ import layoutTreasureHunt from "./components/treasure-hunt/sectionsDefinition";
 import layoutResources from "./components/resources/sectionsDefinition";
 
 const App = () => {
+
+	ReactGA.initialize("G-TH20891YX2");
 
 	useEffect(() => {
 		document.title = "Heroes of History - Atlas";

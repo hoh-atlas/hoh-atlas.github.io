@@ -1,10 +1,17 @@
 import Container from "../components/shared/Container";
 
+import ReactGA from "react-ga4";
 import layoutHome from "../components/home/sectionsDefinition";
 import Intro from "../components/home/intro/Intro";
 import { Link } from "react-router-dom";
 
 const HomePage = (props) => {
+
+    ReactGA.send({
+        hitType: "pageview",
+        page: "/",
+        title: "Home",
+    });
 
     const basePath = "";
 
