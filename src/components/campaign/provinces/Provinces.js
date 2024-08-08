@@ -8,6 +8,7 @@ import SectionDivider from "../../shared/SectionDivider";
 
 import allProvinces from "../data";
 import TableProvince from "./TableProvince";
+import TableFinalRewards from "./TableFinalRewards";
 
 import icon_expansion_city_capital_land from "../../../images/shared/resources/icon_expansion_city_capital_land.webp";
 
@@ -59,6 +60,7 @@ const Provinces = () => {
             <img src={getProvince(selectedOption)?.img} style={{ maxHeight: '200px' }} />
         </div>
         <TableProvince data={getProvince(selectedOption)}/>
+        <TableFinalRewards data={getProvince(selectedOption)}/>
     </>
 }
 

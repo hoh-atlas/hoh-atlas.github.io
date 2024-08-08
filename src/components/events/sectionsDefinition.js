@@ -1,3 +1,5 @@
+import events_intro from "../../images/events/intro/icon_feature_eventcities.webp";
+
 const sectionsDefinition = {
     page: "events",
     tabs: [
@@ -5,7 +7,7 @@ const sectionsDefinition = {
             id: 1,
             url: "",
             name: "Events",
-            img: "https://i.ibb.co/nRvy33n/event-widget-backer-time-Paradox-2021.png",
+            img: events_intro,
             show: true,
             dynamicSegments: [],
         },

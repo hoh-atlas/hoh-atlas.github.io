@@ -9,6 +9,8 @@ import useOptionURL from "../../shared/hooks/useOptionURL";
 
 import allEvents from "../data";
 
+import events_intro from "../../../images/events/intro/icon_feature_eventcities.webp";
+
 const Intro = () => {
 
     const basePath = "events";
@@ -22,7 +24,7 @@ const Intro = () => {
   
     return (
         <>
-            <Prologue imageSrc={"https://i.ibb.co/nRvy33n/event-widget-backer-time-Paradox-2021.png"} alt={"Event"} maxHeight={"65px"} >
+            <Prologue imageSrc={events_intro} alt={"Event"} maxHeight={"65px"} >
             Events happen throughout the year to celebrate special occasions, and
             in game players will get additional questlines, new resources to
             collect and try to gain a new building or upgrades. Events that last

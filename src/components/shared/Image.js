@@ -1,11 +1,13 @@
 import './Image.css';
 
-const Image = ({ src, alt, centered = true, maxWidth, maxHeight, roundedCorners = false, cornerRadius, inline = false, ...rest }) => {
+const Image = ({ src, alt, centered = true, maxWidth, maxHeight, roundedCorners = false, cornerRadius, inline = false, spacing = false, ...rest }) => {
 
   const imageStyles = {
     maxWidth: maxWidth ? maxWidth : '100%',
     maxHeight: maxHeight ? maxHeight : '100%',
-    borderRadius: roundedCorners ? (cornerRadius ? cornerRadius : '3%') : '0',
+    borderRadius: roundedCorners ? (cornerRadius ? cornerRadius : '0.50rem') : '0',
+    marginTop: spacing ? '20px' : '0',
+    marginBottom: spacing ? '20px' : '0',
     ...rest
   };
 

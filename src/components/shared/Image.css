@@ -7,3 +7,10 @@
     display: inline-block;
     vertical-align: middle;
 }
+
+@media (max-width: 400px) {
+    .centered-image-container,
+    .inline-image-container {
+      max-width: 60%;
+    }
+  }

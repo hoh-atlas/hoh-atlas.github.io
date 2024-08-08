@@ -24,6 +24,7 @@ import icon_blue_crest_common from '../../../images/shared/resources/icon_blue_c
 import icon_blue_crest_enhanced from '../../../images/shared/resources/icon_blue_crest_enhanced.webp';
 import icon_blue_crest_superior from '../../../images/shared/resources/icon_blue_crest_superior.webp';
 import icon_byzantine_ewer from '../../../images/shared/resources/icon_byzantine_ewer.webp';
+import icon_campaign_battle_ticket from '../../../images/shared/resources/icon_campaign_battle_ticket.webp';
 import icon_champion_crest_common from '../../../images/shared/resources/icon_champion_crest_common.webp';
 import icon_champion_crest_enhanced from '../../../images/shared/resources/icon_champion_crest_enhanced.webp';
 import icon_champion_crest_superior from '../../../images/shared/resources/icon_champion_crest_superior.webp';
@@ -126,6 +127,7 @@ const resources = [
     {id: "research_point", name: "Research Point", img: Research, category: "soft"},
     {id: "gems", name: "Gems", img: Gem, category: "soft"},
     {id: "energy", name: "Stamina", img: CampaignEnergy, category: "soft"},
+    {id: "victory_ticket", name: "Victory Ticket", img: icon_campaign_battle_ticket, category: "soft"},
     // EXPERIENCES
     {id: "xp_common", name: "Common Scroll of Prowess", img: icon_xp_scroll_common, category: "experiences"},
     {id: "xp_uncommon", name: "Uncommon Scroll of Prowess", img: icon_xp_scroll_uncommon, category: "experiences"},
