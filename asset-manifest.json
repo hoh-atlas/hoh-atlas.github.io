@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cc8a8d43.css",
-    "main.js": "/static/js/main.7e5e98ff.js",
+    "main.js": "/static/js/main.d38bf7a6.js",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
     "static/media/loading_navbar.png": "/static/media/loading_navbar.7961641a9e850277dd7e.png",
     "static/media/hoh_logo.png": "/static/media/hoh_logo.58a1bc4391a225c491e8.png",
@@ -426,10 +426,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.cc8a8d43.css.map": "/static/css/main.cc8a8d43.css.map",
-    "main.7e5e98ff.js.map": "/static/js/main.7e5e98ff.js.map"
+    "main.d38bf7a6.js.map": "/static/js/main.d38bf7a6.js.map"
   },
   "entrypoints": [
     "static/css/main.cc8a8d43.css",
-    "static/js/main.7e5e98ff.js"
+    "static/js/main.d38bf7a6.js"
   ]
 }
