@@ -30,8 +30,8 @@ const Provinces = () => {
     }
 
     useEffect(() => {
-        const urlParams = new URLSearchParams(window.location.search);
-        const selectedOptionParam = urlParams.get('region');
+        const hashParams = new URLSearchParams(window.location.hash.substring(window.location.hash.indexOf('?') + 1));
+        const selectedOptionParam = hashParams.get('region');
         if (selectedOptionParam) {
             const foundOption = options.find(option => option.value == selectedOptionParam);
             if (foundOption) {
@@ -42,7 +42,7 @@ const Provinces = () => {
 
     const handleOptionChange = (selectedOption) => {
         setSelectedOption(selectedOption);
-        const newUrl = `${window.location.pathname}?region=${selectedOption.value}`;
+        const newUrl = `/#/?region=${selectedOption.value}`;
         window.history.pushState({ path: newUrl }, '', newUrl);
     };
 

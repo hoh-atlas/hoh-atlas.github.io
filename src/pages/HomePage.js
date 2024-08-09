@@ -9,7 +9,7 @@ const HomePage = (props) => {
 
     ReactGA.send({
         hitType: "pageview",
-        page: props.tab.url,
+        page: window.location.hash || "/",
         title: props.tab.name,
     });
 
