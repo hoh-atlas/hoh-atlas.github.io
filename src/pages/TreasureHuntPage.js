@@ -2,6 +2,7 @@ import Container from "../components/shared/Container";
 
 import { useParams } from "react-router-dom";
 
+import ReactGA from "react-ga4";
 import layoutTreasureHunt from "../components/treasure-hunt/sectionsDefinition";
 import Intro from "../components/treasure-hunt/intro/Intro";
 import Encounters from "../components/treasure-hunt/encounters/Encounters";
@@ -13,6 +14,12 @@ import { Link } from "react-router-dom";
 const TreasureHuntPage = (props) => {
 
     const basePath = "treasure-hunt";
+
+    ReactGA.send({
+        hitType: "pageview",
+        page: `/#/${basePath}`,
+        title: props.tab.name,
+    });
 
     const pageName = props.tab.url ? (
         <span>

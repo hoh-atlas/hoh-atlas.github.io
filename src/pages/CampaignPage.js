@@ -1,5 +1,6 @@
 import Container from "../components/shared/Container";
 
+import ReactGA from "react-ga4";
 import layoutCampaign from "../components/campaign/sectionsDefinition";
 import Intro from "../components/campaign/intro/Intro";
 import Provinces from "../components/campaign/provinces/Provinces";
@@ -8,6 +9,12 @@ import { Link } from "react-router-dom";
 const CampaignPage = (props) => {
 
     const basePath = "campaign";
+
+    ReactGA.send({
+        hitType: "pageview",
+        page: `/#/${basePath}`,
+        title: props.tab.name,
+    });
 
     const pageName = props.tab.url ? (
         <span>

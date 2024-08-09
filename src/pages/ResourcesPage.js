@@ -14,13 +14,13 @@ import { Link } from "react-router-dom";
 
 const ResourcesPage = (props) => {
 
+    const basePath = "resources";
+
     ReactGA.send({
         hitType: "pageview",
-        page: props.tab.url,
+        page: `/#/${basePath}`,
         title: props.tab.name,
     });
-
-    const basePath = "resources";
 
     const pageName = props.tab.url ? (
         <span>

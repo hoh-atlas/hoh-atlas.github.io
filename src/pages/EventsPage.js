@@ -5,6 +5,7 @@ import SelectBox from "../components/shared/SelectBox";
 import useOptionURL from "../components/shared/hooks/useOptionURL";
 import Quests from "../components/events/quests/Quests";
 import { Link } from "react-router-dom";
+import ReactGA from "react-ga4";
 
 import layoutEvents from "../components/events/sectionsDefinition";
 import allEvents from "../components/events/data";
@@ -17,6 +18,12 @@ import Layouts from "../components/events/layouts/Layouts";
 const EventsPage = (props) => {
 
     const basePath = "events";
+
+    ReactGA.send({
+        hitType: "pageview",
+        page: `/#/${basePath}`,
+        title: props.tab.name,
+    });
 
     const pageName = props.tab.url ? (
         <span>

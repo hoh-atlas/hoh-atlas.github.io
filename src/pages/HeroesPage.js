@@ -1,4 +1,5 @@
 import Container from "../components/shared/Container";
+import ReactGA from "react-ga4";
 import { useParams, Link } from "react-router-dom";
 import layoutHeroes from "../components/heroes/sectionsDefinition";
 import Intro from "../components/heroes/intro/Intro";
@@ -6,7 +7,15 @@ import Heroes from "../components/heroes/heroes/Heroes";
 import { allHeroes } from "../components/heroes/data";
 
 const HeroesPage = (props) => {
+
     const basePath = "heroes";
+
+    ReactGA.send({
+        hitType: "pageview",
+        page: `/#/${basePath}`,
+        title: props.tab.name,
+    });
+
     const { heroId } = useParams();
 
     const hero = allHeroes.find(oneHero => oneHero.id == heroId);
