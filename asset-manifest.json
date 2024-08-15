@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cc8a8d43.css",
-    "main.js": "/static/js/main.75900113.js",
+    "main.js": "/static/js/main.030991aa.js",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
     "static/media/loading_navbar.png": "/static/media/loading_navbar.7961641a9e850277dd7e.png",
     "static/media/hoh_logo.png": "/static/media/hoh_logo.58a1bc4391a225c491e8.png",
@@ -304,6 +304,7 @@
     "static/media/icon_hero_battle_ability_greekmathematician.webp": "/static/media/icon_hero_battle_ability_greekmathematician.3b7466d0a2391635bd53.webp",
     "static/media/icon_hero_battle_ability_egyptianvizier.webp": "/static/media/icon_hero_battle_ability_egyptianvizier.5253e88d40df85c6155f.webp",
     "static/media/icon_greatleader_crest_superior.webp": "/static/media/icon_greatleader_crest_superior.cdf1d81584746c9c2f67.webp",
+    "static/media/icon_xp_hero.webp": "/static/media/icon_xp_hero.8b5eebf952140548836d.webp",
     "static/media/icon_commander_crest_superior.webp": "/static/media/icon_commander_crest_superior.ea6628d3df0551ecfb30.webp",
     "static/media/icon_greek_lyre.webp": "/static/media/icon_greek_lyre.be2132f1373f31670438.webp",
     "static/media/icon_fragrant_potpourri.webp": "/static/media/icon_fragrant_potpourri.65601ed9393d95d689d0.webp",
@@ -426,10 +427,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.cc8a8d43.css.map": "/static/css/main.cc8a8d43.css.map",
-    "main.75900113.js.map": "/static/js/main.75900113.js.map"
+    "main.030991aa.js.map": "/static/js/main.030991aa.js.map"
   },
   "entrypoints": [
     "static/css/main.cc8a8d43.css",
-    "static/js/main.75900113.js"
+    "static/js/main.030991aa.js"
   ]
 }
