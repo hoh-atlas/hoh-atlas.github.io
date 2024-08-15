@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc8a8d43.css",
+    "main.css": "/static/css/main.e50f854b.css",
     "main.js": "/static/js/main.030991aa.js",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
     "static/media/loading_navbar.png": "/static/media/loading_navbar.7961641a9e850277dd7e.png",
@@ -393,10 +393,10 @@
     "static/media/icon-colour-yellow.webp": "/static/media/icon-colour-yellow.698260f686163918a252.webp",
     "static/media/icon-colour-green.webp": "/static/media/icon-colour-green.3070a0ef41499526b1fb.webp",
     "static/media/icon-colour-purple.webp": "/static/media/icon-colour-purple.fb31533386d253ecd479.webp",
+    "index.html": "/index.html",
     "static/media/cartwheel.webp": "/static/media/cartwheel.08a3989cc1d8d1f6944a.webp",
     "static/media/gold_laurel.webp": "/static/media/gold_laurel.ecee59f35e097f8816d1.webp",
     "static/media/iron_pendant.webp": "/static/media/iron_pendant.937f7490479411bf1051.webp",
-    "index.html": "/index.html",
     "static/media/icon-colour-red.webp": "/static/media/icon-colour-red.0c41f773edec126ca9e4.webp",
     "static/media/marble_bust.webp": "/static/media/marble_bust.49321c3904d2b23b25bb.webp",
     "static/media/bronze_bracelet.webp": "/static/media/bronze_bracelet.ededc451ee9022d03f74.webp",
@@ -426,11 +426,11 @@
     "static/media/herbs.webp": "/static/media/herbs.45e59d4e77aed5c7159a.webp",
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
-    "main.cc8a8d43.css.map": "/static/css/main.cc8a8d43.css.map",
+    "main.e50f854b.css.map": "/static/css/main.e50f854b.css.map",
     "main.030991aa.js.map": "/static/js/main.030991aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc8a8d43.css",
+    "static/css/main.e50f854b.css",
     "static/js/main.030991aa.js"
   ]
 }
