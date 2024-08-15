@@ -91,6 +91,7 @@ import icon_tesla_core from '../../../images/shared/resources/icon_tesla_core.we
 import icon_travelers_compass from '../../../images/shared/resources/icon_travelers_compass.webp';
 import icon_war_horn from '../../../images/shared/resources/icon_war_horn.webp';
 import icon_workers_city_egypt from '../../../images/shared/resources/icon_workers_city_egypt.webp';
+import icon_xp_hero from '../../../images/shared/resources/icon_xp_hero.webp';
 import icon_xp_scroll_common from '../../../images/shared/resources/icon_xp_scroll_common.webp';
 import icon_xp_scroll_epic from '../../../images/shared/resources/icon_xp_scroll_epic.webp';
 import icon_xp_scroll_legendary from '../../../images/shared/resources/icon_xp_scroll_legendary.webp';
@@ -134,6 +135,7 @@ const resources = [
     {id: "xp_rare", name: "Rare Scroll of Prowess", img: icon_xp_scroll_rare, category: "experiences"},
     {id: "xp_epic", name: "Epic Scroll of Prowess", img: icon_xp_scroll_epic, category: "experiences"},
     {id: "xp_legendary", name: "Legendary Scroll of Prowess", img: icon_xp_scroll_legendary, category: "experiences"},
+    {id: "xp_hero", name: "Experience Points", img: icon_xp_hero, category: "experiences"},
     // ANTIMATTERS
     {id: "antimatter", name: "Antimatter", img: icon_rift_token_common, category: "antimatters"},
     {id: "antimatter_egyptian", name: "Egyptian Antimatter", img: icon_rift_token_egypt_common, category: "antimatters"},

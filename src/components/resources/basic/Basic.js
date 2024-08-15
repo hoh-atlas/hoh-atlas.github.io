@@ -20,6 +20,7 @@ const Basic = () => {
         {id: "xp_rare", description1: "Campaign", description2: "Adds 700 Experience to your Hero"},
         {id: "xp_epic", description1: "Campaign, Treasure Hunt", description2: "Adds 1500 Experience to your Hero"},
         {id: "xp_legendary", description1: "Campaign, Treasure Hunt", description2: "Adds 3000 Experience to your Hero"},
+        {id: "xp_hero", description1: "Campaign, Treasure Hunt", description2: "Leveling Up your Heroes"},
         {id: "antimatter", description1: "Campaign, Quests", description2: "Powers the Time Portal"},
         {id: "antimatter_legendary", description1: "City Events, Fragments", description2: "Powers the Legendary Time Portal"},
         {id: "antimatter_egyptian", description1: "", description2: "Powers the Egyptian Time Portal"},
