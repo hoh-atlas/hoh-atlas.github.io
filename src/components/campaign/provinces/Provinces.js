@@ -42,7 +42,7 @@ const Provinces = () => {
 
     const handleOptionChange = (selectedOption) => {
         setSelectedOption(selectedOption);
-        const newUrl = `/#/?region=${selectedOption.value}`;
+        const newUrl = `/#/campaign/provinces/?region=${selectedOption.value}`;
         window.history.pushState({ path: newUrl }, '', newUrl);
     };
 

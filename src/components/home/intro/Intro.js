@@ -58,10 +58,10 @@ const Intro = () => {
     <SectionDivider />
     <TextContainer 
         centered={true} 
-        headerTexts={['About the game', 'Credits']}
+        headerTexts={['About the game']}
         texts={[`The Heroes of History are ready for your command!
                 Forge your city through time - from the stone age to the future in the strategic city-building game. Start a legendary journey through history and ancient cultures, 
-                as you collect powerful heroes from each era. Engage in thrilling PvE combat or challenge your friends in PvP. It's time to rise your empire and become the world's greatest leader in history.`, '...']}
+                as you collect powerful heroes from each era. Engage in thrilling PvE combat or challenge your friends in PvP. It's time to rise your empire and become the world's greatest leader in history.`]}
         style={{ marginBottom: '20px' }}
         textRectangleHeight={'80px'}
         autoSlideSeconds={3}>

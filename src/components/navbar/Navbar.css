@@ -134,4 +134,10 @@ nav {
         height: 300px;
         /*transition: all 0.1s linear;*/
     }
+
+    nav .show {
+        background-image: url('../../images/navbar/background_mobile.png');
+        background-repeat: repeat-x;
+        background-position: left bottom -7px;
+    }
 }

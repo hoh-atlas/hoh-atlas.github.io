@@ -61,3 +61,14 @@ table > thead > tr:first-child > th:last-child {
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
 }
+
+.responsive-table-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .responsive-table-container {
+        width: 100%;
+    }
+}

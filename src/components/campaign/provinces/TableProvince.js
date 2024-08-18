@@ -84,79 +84,83 @@ const TableProvince = (props) => {
         return baseColumns1.includes(column) || baseColumns2.includes(column);
     }
 
-    return <table>
-        <thead>
-            <tr>
-                {
-                    COLUMNS.map((oneColumn) => (
-                        isBaseColumn(oneColumn) ?
-                        <th rowSpan={2}>
-                            {oneColumn}
-                        </th> :
-                        <th colSpan={oneColumn.columns.length + getSumOfOccurrencesAndAdjust(oneColumn.columns)}>
-                            {priorities[oneColumn.category]}
-                        </th>
-                    ))                                   
-                }
-            </tr>
-            <tr>
-                {
-                    COLUMNS.map((oneColumn) => (
-                        !isBaseColumn(oneColumn) &&
-                        oneColumn.columns.map((column) => (
-                            <th colSpan={maxOccurrences[column]}>
-                                <Icon resource={resources.find((resource) => resource.id === column)} />
-                            </th>
-                        ))
-                    ))                                   
-                }
-            </tr>
-        </thead>
-        <tbody>
-            {props.data.encounters.map((encounter, index) => (
-                <React.Fragment key={index}>
-                <tr>
-                    {
-                        COLUMNS.map((oneColumn) => (
-                            isBaseColumn(oneColumn) ?
-                                baseColumns2.includes(oneColumn) ?
-                                <td rowSpan={2}>{encounter.firstVictoryBonus.map((reward) => <div style={{ display: 'inline-flex', marginRight: '5px'}}>{reward.amount} <Icon resource={resources.find((resource) => resource.id === reward.resource)} /></div>)}</td> :
-                                <td rowSpan={2}>{encounter.id}</td> :
-                            oneColumn.columns.map((column) => {
-                                const occurrences = maxOccurrences[column];
-                                return (
-                                    Array.from({ length: occurrences }).map((_, index) => (
-                                        <td key={`${column}_${index}`}>
-                                            {getRewardAmount(encounter, column, index)}
-                                        </td>
-                                    ))
-                                )
-                            })
-                        ))
-                    }
-                </tr>
-                <tr>
-                    {
-                        COLUMNS.map((oneColumn) => (
-                            isBaseColumn(oneColumn) ?
-                            null :
-                            oneColumn.columns.map((column) => {
-                                const occurrences = maxOccurrences[column];
-                                return (
-                                    Array.from({ length: occurrences }).map((_, index) => (
-                                        getRewardPercentage(encounter, column, index) ?
-                                        <td style={{fontSize: 'small'}}>{getRewardPercentage(encounter, column, index)}%</td> :
-                                        <td></td>
-                                    ))
-                                )
-                            })
-                        ))
-                    }
-                </tr>
-                </React.Fragment>
-            ))}
-        </tbody>
-    </table>
+    return (
+        <div style={{ overflowX: 'auto' }} className="responsive-table-container">
+            <table style={{ width: '100%' }}>
+                <thead>
+                    <tr>
+                        {
+                            COLUMNS.map((oneColumn) => (
+                                isBaseColumn(oneColumn) ?
+                                <th rowSpan={2} style={{ width: '25%' }}>
+                                    {oneColumn}
+                                </th> :
+                                <th colSpan={oneColumn.columns.length + getSumOfOccurrencesAndAdjust(oneColumn.columns)}>
+                                    {priorities[oneColumn.category]}
+                                </th>
+                            ))                                   
+                        }
+                    </tr>
+                    <tr>
+                        {
+                            COLUMNS.map((oneColumn) => (
+                                !isBaseColumn(oneColumn) &&
+                                oneColumn.columns.map((column) => (
+                                    <th colSpan={maxOccurrences[column]}>
+                                        <Icon resource={resources.find((resource) => resource.id === column)} />
+                                    </th>
+                                ))
+                            ))                                   
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    {props.data.encounters.map((encounter, index) => (
+                        <React.Fragment key={index}>
+                        <tr>
+                            {
+                                COLUMNS.map((oneColumn) => (
+                                    isBaseColumn(oneColumn) ?
+                                        baseColumns2.includes(oneColumn) ?
+                                        <td rowSpan={2}>{encounter.firstVictoryBonus.map((reward) => <div style={{ display: 'inline-flex', marginRight: '5px'}}>{reward.amount} <Icon resource={resources.find((resource) => resource.id === reward.resource)} /></div>)}</td> :
+                                        <td rowSpan={2}>{encounter.id}</td> :
+                                    oneColumn.columns.map((column) => {
+                                        const occurrences = maxOccurrences[column];
+                                        return (
+                                            Array.from({ length: occurrences }).map((_, index) => (
+                                                <td key={`${column}_${index}`}>
+                                                    {getRewardAmount(encounter, column, index)}
+                                                </td>
+                                            ))
+                                        )
+                                    })
+                                ))
+                            }
+                        </tr>
+                        <tr>
+                            {
+                                COLUMNS.map((oneColumn) => (
+                                    isBaseColumn(oneColumn) ?
+                                    null :
+                                    oneColumn.columns.map((column) => {
+                                        const occurrences = maxOccurrences[column];
+                                        return (
+                                            Array.from({ length: occurrences }).map((_, index) => (
+                                                getRewardPercentage(encounter, column, index) ?
+                                                <td style={{fontSize: 'small'}}>{getRewardPercentage(encounter, column, index)}%</td> :
+                                                <td></td>
+                                            ))
+                                        )
+                                    })
+                                ))
+                            }
+                        </tr>
+                        </React.Fragment>
+                    ))}
+                </tbody>
+            </table>
+        </div>
+    );    
 }
 
 export default TableProvince;

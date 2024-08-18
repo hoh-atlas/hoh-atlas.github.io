@@ -6,7 +6,8 @@ const FeedbackModal = ({ show, handleClose }) => {
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
     const modalRef = useRef(null);
-    const from = window.location.pathname;
+    const from = window.location.hash;
+    
     const minutesToWait = 15;
 
     const handleSubmit = async (event) => {
@@ -19,9 +20,9 @@ const FeedbackModal = ({ show, handleClose }) => {
         }
 
         const formData = new FormData(event.target);
-        formData.set('entry.1905586169', from);
+        formData.set('entry.599192843', from);
 
-        const formAction = "https://docs.google.com/forms/d/1Vr6j64nH7LvoS0vWSUwerKvaslIDdODhPRQciEGP134/formResponse";
+        const formAction = "https://docs.google.com/forms/d/199XGBJpGUvv6za8yPYybuYdf6qHqTaWjpjuNyX-wsfY/formResponse";
 
         try {
             await fetch(formAction, {
@@ -67,14 +68,14 @@ const FeedbackModal = ({ show, handleClose }) => {
                 {isSubmitted && <p className="modal-description message-success">Successfully sent. I will get to your email soon.</p>}
                 {errorMessage && <p className="modal-description message-error">{errorMessage}</p>}
                 <form onSubmit={handleSubmit}>
-                    <input type="hidden" name="entry.1905586169" value={from} />
+                    <input type="hidden" name="entry.599192843" value={from} />
                     <div className="form-group">
                         <label htmlFor="email" className="modal-description">Email:</label>
-                        <input type="email" id="email" name="entry.1345306327" />
+                        <input type="email" id="email" name="entry.1694799912" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="message" className="modal-description">Message: *</label>
-                        <textarea id="message" name="entry.1059753647" required></textarea>
+                        <textarea id="message" name="entry.1554266932" required></textarea>
                     </div>
                     <div className="modal-actions">
                         <button type="button" className="btn-close" onClick={handleClose}>Close</button>

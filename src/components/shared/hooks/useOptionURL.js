@@ -18,7 +18,7 @@ const useOptionURL = (options, path) => {
 
   const handleOptionChange = (selectedOption) => {
     setSelectedOption(selectedOption);
-    const newUrl = `${window.location.pathname}?${path}=${selectedOption.value}`;
+    const newUrl = `${window.location.hash}?${path}=${selectedOption.value}`;
     window.history.pushState({ path: newUrl }, "", newUrl);
   };
 

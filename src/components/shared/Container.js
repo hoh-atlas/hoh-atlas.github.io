@@ -18,15 +18,10 @@ const Container = ({ children, basePath, tabs, pageName, selectBox }) => {
     return <>
         <Tabs basePath={basePath} tabs={tabs} />
         <section className="section-header">
-            <div className="header-left">{pageName}</div>
-            <div className="header-center">{selectBox}</div>
+            <div className={`header-left ${!selectBox ? 'empty-selectbox' : ''}`}>{pageName}</div>
+            <div className={`header-center ${!selectBox ? 'empty' : ''}`}>{selectBox}</div>
             <div className="header-right">
-                <img
-                    src="https://i.ibb.co/DKqPS20/icon-flat-info.png"
-                    alt="Info Icon"
-                    onClick={handleIconClick}
-                    style={{ cursor: 'pointer' }}
-                />
+                <img src="https://i.ibb.co/DKqPS20/icon-flat-info.png" alt="Info Icon" onClick={handleIconClick} style={{ cursor: 'pointer' }} />
             </div>
         </section>
         <section className="section-body">
