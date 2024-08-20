@@ -7,6 +7,10 @@ import H1 from "../../shared/H1";
 import MenuGrid from "./MenuGrid";
 import TextContainer from "../../shared/TextContainer";
 
+import news_banner_abusimbel from "../../../images/home/intro/news_banner_abusimbel.webp";
+import app_store from "../../../images/home/intro/app_store.webp";
+import google_play from "../../../images/home/intro/google_play.webp";
+
 const Intro = () => {
     return <>
     {/*<Image src="https://i.ibb.co/26Mgb9Y/hoh-logo-big.png" alt="" roundedCorners={true} maxHeight={"180px"} marginTop={"10px"} /><br />*/}
@@ -27,10 +31,10 @@ const Intro = () => {
             <Card title={"<b>Where to play?</b>"} centered backgroundImage="https://i.ibb.co/SR8g7WX/a467bccb3caf3e38be6a.jpg" blurred={true} footer="<b>Or play in browser: <a href='https://un-play.heroesofhistorygame.com/' class='text-link-skin'>Heroes of History</a></b>">
                 <div className="store-links">
                     <a href="https://apps.apple.com/us/app/heroes-of-history-epic-empire/id6468993261" target="_blank">
-                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" />
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" /> {/*<img src={app_store} alt="App Store" /> */}
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=com.innogames.heroesofhistory&gl=US" target="_blank" >
-                    <img src="https://i.ibb.co/sV03Rwp/Google-Play.png" style={{height: '50px', width: '167px'}} alt="Google Play" />
+                    <img src="https://i.ibb.co/sV03Rwp/Google-Play.png" style={{height: '50px', width: '167px'}} alt="Google Play" /> {/* <img src={google_play} alt="Google Play" /> */}
                     </a>
                 </div>
             </Card>

@@ -57,7 +57,7 @@ const Provinces = () => {
         />
         <SectionDivider/>
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "15px", marginBottom: "15px" }}>
-            <img src={getProvince(selectedOption)?.img} style={{ maxHeight: '200px' }} />
+            <img src={getProvince(selectedOption)?.img} style={{ maxHeight: '200px', maxWidth: '90%' }} />
         </div>
         <TableProvince data={getProvince(selectedOption)}/>
         <TableFinalRewards data={getProvince(selectedOption)}/>

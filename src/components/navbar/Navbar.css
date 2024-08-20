@@ -123,7 +123,6 @@ nav {
         transition: transform 0.2s ease-in-out;
     }
 
-    /* React classes */
     .hide {
         height: 0px;
         overflow: hidden;
@@ -136,7 +135,7 @@ nav {
     }
 
     nav .show {
-        background-image: url('../../images/navbar/background_mobile.png');
+        background-image: url('../../images/navbar/background_mobile.webp');
         background-repeat: repeat-x;
         background-position: left bottom -7px;
     }

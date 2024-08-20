@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Select, { components } from "react-select";
+import './SelectBox.css';
 
 const dot = (color = 'transparent') => ({
     alignItems: 'center',
@@ -31,6 +32,20 @@ const SingleValue = ({ children, ...props }) => (
 );
 
 const SelectBox = ({ options, width, height, color, selectedOption, onOptionChange, style }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handleChange = (value) => {
     onOptionChange(value);
@@ -39,7 +54,7 @@ const SelectBox = ({ options, width, height, color, selectedOption, onOptionChan
   const customStyles = {
     control: (provided) => ({
       ...provided,
-      width: width,
+      width: isMobile ? '90%' : width,
       margin: "0 auto",
       backgroundColor: color,
       minHeight: height,
@@ -50,20 +65,17 @@ const SelectBox = ({ options, width, height, color, selectedOption, onOptionChan
       height: height,
       padding: '0 6px',
     }),
-    input: (provided, state) => ({
+    input: (provided) => ({
       ...provided,
       margin: '0px',
     }),
-    /*indicatorSeparator: state => ({
-      display: 'none',
-    }),*/
-    indicatorsContainer: (provided, state) => ({
+    indicatorsContainer: (provided) => ({
       ...provided,
       height: height,
     }),
     menu: (provided) => ({
       ...provided,
-      width: width,
+      width: isMobile ? '90%' : width,
       margin: "auto",
       left: 0,
       right: 0,
@@ -74,7 +86,7 @@ const SelectBox = ({ options, width, height, color, selectedOption, onOptionChan
       padding: "5px",
       fontSize: "14px",
       ...(data.dotColor ? dot(data.dotColor) : {}),
-    })
+    }),
   };
 
   return (

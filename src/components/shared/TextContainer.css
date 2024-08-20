@@ -49,8 +49,6 @@
     color: #ebe4cc;
     position: absolute;
     width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
@@ -102,4 +100,27 @@
 
 .pulsate {
     animation: pulsate 3s infinite;
+}
+
+@media (max-width: 768px) {
+    .intro-container {
+        width: 95%;
+    }
+
+    .intro-heading {
+        font-size: 20px;
+    }
+
+    .intro-text-wrapper {
+        padding: 10px;
+    }
+
+    .intro-text {
+        font-size: 14px;
+    }
+
+    .slider-arrow {
+        padding: 6px;
+        font-size: 16px;
+    }
 }
