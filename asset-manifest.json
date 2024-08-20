@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.231c11b2.css",
-    "main.js": "/static/js/main.97044abe.js",
+    "main.css": "/static/css/main.508d408a.css",
+    "main.js": "/static/js/main.49ea09ed.js",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
-    "static/media/background_mobile.png": "/static/media/background_mobile.1c16660580655afc2e99.png",
     "static/media/loading_navbar.png": "/static/media/loading_navbar.7961641a9e850277dd7e.png",
     "static/media/hoh_logo.png": "/static/media/hoh_logo.58a1bc4391a225c491e8.png",
+    "static/media/news_banner_abusimbel.webp": "/static/media/news_banner_abusimbel.df4a9d6903da00a65834.webp",
     "static/media/province_1.webp": "/static/media/province_1.330032e5fd52bcacc12a.webp",
     "static/media/Unit_Hercules_fullbody.webp": "/static/media/Unit_Hercules_fullbody.aa09b7bf834575e102a5.webp",
     "static/media/province_10.webp": "/static/media/province_10.0b1a0b985778750868bb.webp",
@@ -125,6 +125,7 @@
     "static/media/Navbar_Resources.webp": "/static/media/Navbar_Resources.7013be60faf092cadbe3.webp",
     "static/media/Navbar_Home.webp": "/static/media/Navbar_Home.6a52b1ce74d8b53866ce.webp",
     "static/media/Unit_LadySixSky.webp": "/static/media/Unit_LadySixSky.58e04ce1a1dc522ea11e.webp",
+    "static/media/background_mobile.webp": "/static/media/background_mobile.49893679d89a7f613a80.webp",
     "static/media/Unit_Cleopatra.webp": "/static/media/Unit_Cleopatra.8d6f431099091ad88ede.webp",
     "static/media/Navbar_Campaign.webp": "/static/media/Navbar_Campaign.1593034ee310ade0fd81.webp",
     "static/media/Unit_Charlemagne.webp": "/static/media/Unit_Charlemagne.9d5be8bb0b6d7ccac7c9.webp",
@@ -314,6 +315,7 @@
     "static/media/icon_hero_battle_ability_mayanastronomer.webp": "/static/media/icon_hero_battle_ability_mayanastronomer.e586ba10ae5f668b165b.webp",
     "static/media/icon_roman_cameo_ring.webp": "/static/media/icon_roman_cameo_ring.95f3e96687b64467f42e.webp",
     "static/media/icon_hero_battle_ability_romanpraetor.webp": "/static/media/icon_hero_battle_ability_romanpraetor.324bf0f303c1c26dedb4.webp",
+    "static/media/google_play.webp": "/static/media/google_play.a017b16bf12d3d20dd37.webp",
     "static/media/icon_papyrus_scroll.webp": "/static/media/icon_papyrus_scroll.91f093217cbdf92fc8e2.webp",
     "static/media/icon_genius_crest_superior.webp": "/static/media/icon_genius_crest_superior.c50e1194d3e220619b61.webp",
     "static/media/icon_iberian_torc_necklace.webp": "/static/media/icon_iberian_torc_necklace.23e053ec3ff786e27c10.webp",
@@ -369,6 +371,7 @@
     "static/media/icon-class-commander.webp": "/static/media/icon-class-commander.6dbe113ae8ee379cd59d.webp",
     "static/media/icon_papyrus.webp": "/static/media/icon_papyrus.e9cf6577e02fa4cb10fe.webp",
     "static/media/icon_champion_crest_enhanced.webp": "/static/media/icon_champion_crest_enhanced.68ada95676ec8dbfb778.webp",
+    "static/media/app_store.webp": "/static/media/app_store.671da3d4d47217457c24.webp",
     "static/media/food.webp": "/static/media/food.c1591ef8328a17e55489.webp",
     "static/media/icon_ankh.webp": "/static/media/icon_ankh.01eb9c36379c44d49cea.webp",
     "static/media/icon_hematite.webp": "/static/media/icon_hematite.d139b8dbb34514e27c0b.webp",
@@ -427,11 +430,11 @@
     "static/media/herbs.webp": "/static/media/herbs.45e59d4e77aed5c7159a.webp",
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
-    "main.231c11b2.css.map": "/static/css/main.231c11b2.css.map",
-    "main.97044abe.js.map": "/static/js/main.97044abe.js.map"
+    "main.508d408a.css.map": "/static/css/main.508d408a.css.map",
+    "main.49ea09ed.js.map": "/static/js/main.49ea09ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.231c11b2.css",
-    "static/js/main.97044abe.js"
+    "static/css/main.508d408a.css",
+    "static/js/main.49ea09ed.js"
   ]
 }
