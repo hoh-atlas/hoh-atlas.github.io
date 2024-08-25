@@ -35,10 +35,10 @@ const links = [
     },
     {
         id: 5,
-        url: "/events",
-        text: "Events",
+        url: "/allied-cultures",
+        text: "Allied Cultures",
         img: Navbar_Events,
-        show: false,
+        show: true,
     },
     {
         id: 6,

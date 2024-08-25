@@ -13,7 +13,7 @@ const HeroesPage = (props) => {
     ReactGA.send({
         hitType: "pageview",
         page: `/#/${basePath}`,
-        title: props.tab.name,
+        title: `Heroes - ${props.tab.name}`,
     });
 
     const { heroId } = useParams();

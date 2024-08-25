@@ -7,18 +7,18 @@ import SelectBox from "../../shared/SelectBox";
 import SectionDivider from "../../shared/SectionDivider";
 import useOptionURL from "../../shared/hooks/useOptionURL";
 
-import allEvents from "../data";
+import allAlliedCultures from "../data";
 
 const Layouts = (props) => {
 
-    const basePath = "events";
-    const pageName = "Events - Layouts";
-  
-    const options = allEvents.map((oneEvent) => {
-        return {value: oneEvent.id, label: `${oneEvent.name}`, image: oneEvent.image}
-    });
+    const basePath = "allied-cultures";
+    const pageName = "Allied Cultures - Layouts";
+    
+    const getAlliedCulture = () => {
+        return allAlliedCultures.find(oneAlliedCulture => oneAlliedCulture.id == props.selectedAlliedCulture);
+    }
 
-    const { selectedOption, handleOptionChange } = useOptionURL(options, "event");
+    const layouts = getAlliedCulture().layouts;
   
     return (
       <>
@@ -27,7 +27,7 @@ const Layouts = (props) => {
         </Prologue>
         <SectionDivider />
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "15px",marginBottom: "15px" }}>
-          <img src={"https://i.ibb.co/GW4SLwD/great-sphinx.png"} style={{ maxWidth: "300px" }} />
+          
         </div>
       </>
     );

@@ -358,12 +358,8 @@ const allHeroes = [
                     resource: "shadow_dial",
                     amount: 4
                 },
-                {
-                    resource: "prism_of_fate",
-                    amount: 1
-                }
             ],
-            60: [
+            /*60: [  check values before publishing due to changes
                 {
                     resource: "yellow_crest_superior",
                     amount: 110
@@ -524,7 +520,7 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 6
                 }
-            ]
+            ]*/
         },
         abilityIcon: icon_hero_battle_ability_cleopatra,
         abilityName: "Pharaoh's Puppets",
@@ -542,15 +538,81 @@ const allHeroes = [
         stars: 5,
         heroClass: "genius",
         unit: "siege",
-        abilityIcon: icon_hero_battle_ability_alberteinstein,
+        color: "blue",
         ascension: {
             10: [
                 {
                     resource: "blue_crest_common",
-                    amount: 25
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 5
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 4
                 }
             ]
         },
+        abilityIcon: icon_hero_battle_ability_alberteinstein,
+        abilityName: "Everything is relative",
+        abilityDescription: "Manipulates the space-time continuum to create a black hole at the location of Einstein's current target. The black hole will move across the battlefield in a spiral shape for <b>6s</b>, dealing up to <b>486%</b> damage to nearby enemy units and stunning them for <b>1s</b>.",
+        ability: [
+            "6s,486%,1s",
+        ]
     },
     {
         id: "benjamin-franklin",
@@ -561,7 +623,81 @@ const allHeroes = [
         stars: 5,
         heroClass: "manipulator",
         unit: "ranged",
+        color: "purple",
+        ascension: {
+            10: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 5
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 4
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_benjaminfranklin,
+        abilityName: "Kite Conductor",
+        abilityDescription: "Inhibits all enemy units' ability to attack, decreasing their Accuracy by <b>10%</b>, their ATK Speed by <b>10%</b>, and their ATK by <b>11%</b> of Franklin's ATK for <b>8s</b>. Also prevents enemies from using Abilities for <b>4s</b>.",
+        ability: [
+            "10%,10%,11%,8s,4s",
+        ]
     },
     {
         id: "julius-caesar",
@@ -572,7 +708,81 @@ const allHeroes = [
         stars: 5,
         heroClass: "commander",
         unit: "heavy-infantry",
+        color: "red",
+        ascension: {
+            10: [
+                {
+                    resource: "red_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "red_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "war_horn",
+                    amount: 5
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 4
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_juliuscaesar,
+        abilityName: "Veni, Vidi, Vici",
+        abilityDescription: "Invokes the power of Rome, taunting all enemies for <b>5s</b> and becoming invincible for <b>6s</b>. Enemy units close to Caesar are affected by his fiery aura, burning them for <b>30%</b> damage over <b>2</b>.",
+        ability: [
+            "5s,6s,30%,2",
+        ]
     },
     {
         id: "leonardo-da-vinci",
@@ -583,7 +793,81 @@ const allHeroes = [
         stars: 5,
         heroClass: "genius",
         unit: "siege",
+        color: "red",
+        ascension: {
+            10: [
+                {
+                    resource: "red_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "red_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 5
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 4
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_leonardodavinci,
+        abilityName: "Vitruvian Vortex",
+        abilityDescription: "Teleports to the largest cluster of enemy units and shoots fiery projectiles at enemies within a range of <b>2</b>, burning them for <b>200%</b> damage over <b>8s</b>, and gaining <b>15%</b> attack and <b>10%</b> attack speed for the rest of the battle. Da Vinci then teleports back to his original position on the battlefield after 4 seconds.",
+        ability: [
+            "2,200%,8s,15%,10%",
+        ]
     },
     {
         id: "marie-curie",
@@ -594,7 +878,81 @@ const allHeroes = [
         stars: 5,
         heroClass: "genius",
         unit: "siege",
+        color: "purple",
+        ascension: {
+            10: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 5
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 4
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_mariecurie,
+        abilityName: "Radium Cascade",
+        abilityDescription: "Throws <b>4</b> vials with unstable chemicals at random enemy units, dealing <b>100%</b> damage in a range of <b>1</b> and leaving affected units bleeding and poisoned for a further <b>160%</b> damage over <b>8s</b>.",
+        ability: [
+            "4,100%,1,160%,8s",
+        ]
     },
     {
         id: "napoleon-bonaparte",
@@ -605,7 +963,81 @@ const allHeroes = [
         stars: 5,
         heroClass: "commander",
         unit: "heavy-infantry",
+        color: "blue",
+        ascension: {
+            10: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "war_horn",
+                    amount: 5
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 4
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_napoleonbonaparte,
+        abilityName: "Code of Battle",
+        abilityDescription: "Commands a cannon shot at the biggest cluster of enemy units, dealing <b>95%</b> damage in a range of <b>3</b>. Affected units have their accuracy reduced by <b>10%</b> for <b>6s</b>. All friendly units gain <b>10%</b> evasion for <b>6s</b>.",
+        ability: [
+            "95%,3,10%,6s,10%,6s",
+        ]
     },
     {
         id: "queen-elisabeth-i",
@@ -616,7 +1048,81 @@ const allHeroes = [
         stars: 5,
         heroClass: "great-leader",
         unit: "cavalry",
+        color: "red",
+        ascension: {
+            10: [
+                {
+                    resource: "red_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "red_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 5
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "war_horn",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 4
+                },
+                {
+                    resource: "war_horn",
+                    amount: 4
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_queenelizabethi,
+        abilityName: "Tudor's Triumph",
+        abilityDescription: "Inspires all friendly units, increasing their attack speed by <b>10%</b>, their ATK by <b>10%</b> of Elisabeth's ATK, their critical damage by <b>10%</b>, and their chance to critically hit by <b>10%</b> for <b>8s</b>.",
+        ability: [
+            "10%,10%,10%,10%,8s",
+        ]
     },
     {
         id: "sir-lancelot",
@@ -627,7 +1133,81 @@ const allHeroes = [
         stars: 5,
         heroClass: "champion",
         unit: "infantry",
+        color: "yellow",
+        ascension: {
+            10: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "war_horn",
+                    amount: 5
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 4
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_sirlancelot,
+        abilityName: "Camelot's Avenger",
+        abilityDescription: "Swings his sword at his current target five times, dealing increased damage with each strike for a total of <b>1500%</b> damage. Each strike has a <b>50%</b> chance to let the opponent bleed for <b>536%</b> damage over <b>8s</b>.",
+        ability: [
+            "1500%,50%,536%,8s",
+        ]
     },
     {
         id: "george-washington",
@@ -638,7 +1218,81 @@ const allHeroes = [
         stars: 5,
         heroClass: "commander",
         unit: "heavy-infantry",
+        color: "yellow",
+        ascension: {
+            10: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "war_horn",
+                    amount: 5
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 4
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_georgewashington,
+        abilityName: "Father of Defenders",
+        abilityDescription: "Stomps the ground, dealing <b>95%</b> damage to all enemies within a range of <b>2</b> and reducing their accuracy by <b>20%</b> for <b>8s</b>. Also links all friendly units' souls for <b>8s</b>. Soul-linked units share incoming damage between them.",
+        ability: [
+            "95%,2,20%,8s,8s",
+        ]
     },
     {
         id: "hercules",
@@ -649,7 +1303,81 @@ const allHeroes = [
         stars: 5,
         heroClass: "champion",
         unit: "infantry",
+        color: "red",
+        ascension: {
+            10: [
+                {
+                    resource: "red_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "red_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "war_horn",
+                    amount: 5
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 4
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_hercules,
+        abilityName: "Titan's Strength",
+        abilityDescription: "Slams the ground, dealing <b>135%</b> damage to all enemies within a range of <b>3</b> and stunning them for <b>1.50s</b>.",
+        ability: [
+            "135%,3,1.50s",
+        ]
     },
     {
         id: "william-wallace",
@@ -660,7 +1388,81 @@ const allHeroes = [
         stars: 5,
         heroClass: "champion",
         unit: "infantry",
+        color: "blue",
+        ascension: {
+            10: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "war_horn",
+                    amount: 5
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 4
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_williamwallace,
+        abilityName: "Brave Heart",
+        abilityDescription: "Performs a poweful sword attack, dealing <b>110%</b> damage to all enemy units within a range of <b>3</b>. William Wallace gains <b>350%</b> of his Base Damage as a shield and increases his DEF by <b>35%</b> for <b>8s</b>.",
+        ability: [
+            "110%,3,350%,35%,8s",
+        ]
     },
     {
         id: "robin-hood",
@@ -671,7 +1473,81 @@ const allHeroes = [
         stars: 5,
         heroClass: "champion",
         unit: "ranged",
+        color: "green",
+        ascension: {
+            10: [
+                {
+                    resource: "green_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "green_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "war_horn",
+                    amount: 5
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 4
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_robinhood,
+        abilityName: "Sherwood's Vengeance",
+        abilityDescription: "Shoots an arrow at the furthest target, hitting them for <b>700%</b> damage and burning them for a further <b>1464%</b> damage over <b>8s</b>. Prioritizes heroes.",
+        ability: [
+            "700%,1464%,8s",
+        ]
     },
     {
         id: "joan-of-arc",
@@ -682,7 +1558,81 @@ const allHeroes = [
         stars: 5,
         heroClass: "commander",
         unit: "heavy-infantry",
+        color: "yellow",
+        ascension: {
+            10: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "war_horn",
+                    amount: 5
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 4
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_joanofarc,
+        abilityName: "Beacon of Hope",
+        abilityDescription: "Calls for divine assistance targeting the biggest cluster of enemy units, dealing <b>95%</b> damage in a range of <b>2</b>. Also heals the biggest cluster of friendly units by <b>170%</b> of Joan's base damage in a range of <b>2</b>.",
+        ability: [
+            "95%,2,170%,2",
+        ]
     },
     {
         id: "achilles",
@@ -693,7 +1643,81 @@ const allHeroes = [
         stars: 5,
         heroClass: "champion",
         unit: "infantry",
+        color: "red",
+        ascension: {
+            10: [
+                {
+                    resource: "red_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "red_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "war_horn",
+                    amount: 5
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 4
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_achilles,
+        abilityName: "Achilles' Last Stand",
+        abilityDescription: "Unleashes extraordinary strength by striking the current target for <b>610%</b> damage. Achilles then gains a surge of swiftness, increasing his ATK speed by <b>100%</b> for 8s and becoming invincible for <b>4.50s</b>.",
+        ability: [
+            "610%,100%,4.50s",
+        ]
     },
     {
         id: "abraham-lincoln",
@@ -704,7 +1728,81 @@ const allHeroes = [
         stars: 5,
         heroClass: "great-leader",
         unit: "ranged",
+        color: "purple",
+        ascension: {
+            10: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 5
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "war_horn",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 4
+                },
+                {
+                    resource: "war_horn",
+                    amount: 4
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_abrahamlincoln,
+        abilityName: "President's Protection",
+        abilityDescription: "Provides Invincibility to all friendly units for <b>3s</b>.",
+        ability: [
+            "3s",
+        ]
     },
     {
         id: "medusa",
@@ -715,7 +1813,336 @@ const allHeroes = [
         stars: 5,
         heroClass: "manipulator",
         unit: "ranged",
+        color: "green",
+        ascension: {
+            10: [
+                {
+                    resource: "green_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "green_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 5
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 4
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_medusa,
+        abilityName: "Petrifying Gaze",
+        abilityDescription: "Fixes her gaze at the biggest cluster of enemy units, applying the poison to all enemies in a range of <b>2</b>. The poison deals <b>400%</b> damage over <b>8s</b> and leaves affected units stunned for <b>3s</b>.",
+        ability: [
+            "2,400%,8s,3s",
+        ]
+    },
+    {
+        id: "hua-mulan",
+        name: "Hua Mulan",
+        image: Unit_HuaMulan_fullbody,
+        icon: Unit_HuaMulan,
+        backdrop: "china",
+        stars: 5,
+        heroClass: "champion",
+        unit: "infantry",
+        color: "red",
+        ascension: {
+            10: [
+                {
+                    resource: "red_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "red_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "war_horn",
+                    amount: 5
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 4
+                }
+            ]
+        },
+        abilityIcon: icon_hero_battle_ability_huamulan,
+        abilityName: "Revenge of the Dragon",
+        abilityDescription: "Summons a fiery dragon striken the location of the biggest cluster of enemy units three times, reducing DEF by <b>15%</b> of Mulan's ATK each time and dealing a total of <b>150%</b> damage in a range of <b>2</b>. Affected enemy units burn for a further <b>50%</b> damage over <b>6s</b>.",
+        ability: [
+            "15%,150%,2,50%,6s",
+        ]
+    },
+    {
+        id: "ramses-ii",
+        name: "Ramses II",
+        image: Unit_RamsesII_fullbody,
+        icon: Unit_RamsesII,
+        backdrop: "egypt",
+        stars: 5,
+        heroClass: "great-leader",
+        unit: "cavalry",
+        color: "blue",
+        ascension: {
+            10: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 5
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "war_horn",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 4
+                },
+                {
+                    resource: "war_horn",
+                    amount: 4
+                }
+            ]
+        },
+        abilityIcon: icon_hero_battle_ability_ramsesii,
+        abilityName: "Unity of Egypt",
+        abilityDescription: "Targets the biggest cluster of friendly units, increasing their ATK by <b>60%</b> of Ramses' ATK, their movement speed by <b>25%</b>, their Accuracy by <b>20%</b>, their critical damage by <b>25%</b>, and their chance to critically hit by <b>15%</b> for <b>8s</b> in a range of <b>3</b>.",
+        ability: [
+            "60%,25%,20%,25%,15%,8s,3",
+        ]
+    },
+    {
+        id: "sun-tzu",
+        name: "Sun Tzu",
+        image: Unit_SunTzu_fullbody,
+        icon: Unit_SunTzu,
+        backdrop: "china",
+        stars: 5,
+        heroClass: "commander",
+        unit: "heavy-infantry",
+        color: "green",
+        ascension: {
+            10: [
+                {
+                    resource: "green_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "green_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "war_horn",
+                    amount: 5
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 4
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                }
+            ]
+        },
+        abilityIcon: icon_hero_battle_ability_suntzu,
+        abilityName: "Art of Defense",
+        abilityDescription: "Strikes the current target twice, dealing a total of <b>160%</b> damage to all enemy units within a range of <b>2.5</b>. Then Sun Tzu centers himself, causing an aura of calmness, reducing nearby enemies' ATK Speed by <b>15%</b> for <b>8s</b>.",
+        ability: [
+            "160%,2.5,15%,8s",
+        ]
     },
     {
         id: "nikola-tesla",
@@ -737,26 +2164,81 @@ const allHeroes = [
         stars: 4,
         heroClass: "genius",
         unit: "siege",
-        abilityIcon: icon_hero_battle_ability_menes,
+        color: "red",
         ascension: {
             10: [
                 {
                     resource: "red_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "red_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "red_crest_enhanced",
                     amount: 15
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
                 }
             ]
         },
-    },
-    {
-        id: "ramses-ii",
-        name: "Ramses II",
-        image: Unit_RamsesII_fullbody,
-        icon: Unit_RamsesII,
-        backdrop: "",
-        stars: 4,
-        heroClass: "",
-        unit: "",
-        abilityIcon: icon_hero_battle_ability_ramsesii,
+        abilityIcon: icon_hero_battle_ability_menes,
+        abilityName: "Sandstorm Surge",
+        abilityDescription: "Calls forth a storm at the location of the biggest cluster of enemy units. The storm deals <b>110%</b> damage in a range of <b>3</b>, reduces movement speed by <b>80%</b>, and leaves affected units burning for <b>80%</b> over <b>6s</b>.",
+        ability: [
+            "110%,3,80%,80%,6s",
+        ]
     },
     {
         id: "spartacus",
@@ -767,18 +2249,251 @@ const allHeroes = [
         stars: 4,
         heroClass: "champion",
         unit: "infantry",
+        color: "purple",
+        ascension: {
+            10: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "war_horn",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_spartacus,
+        abilityName: "Brutal Gladiator",
+        abilityDescription: "Slashes the current target four times, dealing increased damage with each strike for a total of <b>1150%</b> damage. Also increases Spartacus' crit chance by <b>35%</b> for <b>6s</b>.",
+        ability: [
+            "1150%,35%,6s",
+        ]
+    },
+    {
+        id: "tiger-lily",
+        name: "Tiger Lily",
+        image: "",
+        icon: Unit_TigerLily,
+        backdrop: "grass",
+        stars: 4,
+        heroClass: "great-leader",
+        unit: "cavalry",
+        color: "green",
+        ascension: {
+            10: [
+                {
+                    resource: "green_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "green_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "war_horn",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "war_horn",
+                    amount: 3
+                }
+            ]
+        },
+        abilityIcon: icon_hero_battle_ability_tigerlily,
+        abilityName: "Tiger Lily's Pacification",
+        abilityDescription: "Unleashes the power of nature, healing all friendly units by <b>700%</b> of Tiger Lily's base damage. Cleanses all negative effects.",
+        ability: [
+            "700%",
+        ]
     },
     {
         id: "confucius",
         name: "Confucius",
         image: "",
-        icon: "https://i.ibb.co/vH8GtMd/Unit-Confucius.png",
+        icon: Unit_Confucius,
         backdrop: "china",
         stars: 4,
         heroClass: "manipulator",
         unit: "ranged",
+        color: "purple",
+        ascension: {
+            10: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 4
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_confucius,
+        abilityName: "Confucian Confusion",
+        abilityDescription: "Confucius unleashes the wind's wisdom, reducing all enemy units' DEF by <b>22%</b> of his ATK and increasing all friendly units' ATK by <b>25%</b> of his ATK for <b>8s</b>.",
+        ability: [
+            "22%,25%,8s",
+        ]
     },
     {
         id: "hatshepsut",
@@ -789,7 +2504,81 @@ const allHeroes = [
         stars: 4,
         heroClass: "great-leader",
         unit: "cavalry",
+        color: "green",
+        ascension: {
+            10: [
+                {
+                    resource: "green_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "green_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "war_horn",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "war_horn",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_hatshepsut,
+        abilityName: "Thebes' Tranquility",
+        abilityDescription: "Draws energy from fertile ground, healing all friendly units by <b>467%</b> of her base damage and granting them <b>1.60s</b> worth of focus instantly.",
+        ability: [
+            "467%,1.60s",
+        ]
     },
     {
         id: "jane-austen",
@@ -800,7 +2589,81 @@ const allHeroes = [
         stars: 4,
         heroClass: "manipulator",
         unit: "ranged",
+        color: "yellow",
+        ascension: {
+            10: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 4
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_janeausten,
+        abilityName: "Pride and Prejudice",
+        abilityDescription: "Unleashes her literaly genius, convincing an enemy unit to attack their allies for <b>5s</b>. While under Jane's control, the enemy unit's ATK is increased by <b>120%</b>. Prioritizes heroes.",
+        ability: [
+            "5s,120%",
+        ]
     },
     {
         id: "louis-xiv",
@@ -811,7 +2674,81 @@ const allHeroes = [
         stars: 4,
         heroClass: "great-leader",
         unit: "cavalry",
+        color: "yellow",
+        ascension: {
+            10: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "war_horn",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "war_horn",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_louisxiv,
+        abilityName: "Roi-Soleil's Favour",
+        abilityDescription: "Targets the biggest cluster of friendly units, increasing DEF by <b>36%</b> of Louis' DEF in a range of <b>2.5</b> for <b>8s</b>. Affected units also gain <b>175%</b> of Louis' base damage as a shield.",
+        ability: [
+            "36%,2.5,8s,175%",
+        ]
     },
     {
         id: "ludwig-van-beethoven",
@@ -822,7 +2759,81 @@ const allHeroes = [
         stars: 4,
         heroClass: "genius",
         unit: "siege",
+        color: "yellow",
+        ascension: {
+            10: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_ludwigvanbeethoven,
+        abilityName: "Ode to Destruction",
+        abilityDescription: "Directs a deafening sound towards the biggest cluster of enemy units, dealing <b>50%</b> damage and stunning all enemies for <b>1.50s</b> in a range of <b>3</b>.",
+        ability: [
+            "50%,1.50s,3",
+        ]
     },
     {
         id: "margaret-i-of-denmark",
@@ -833,18 +2844,166 @@ const allHeroes = [
         stars: 4,
         heroClass: "great-leader",
         unit: "cavalry",
+        color: "blue",
+        ascension: {
+            10: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "war_horn",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "war_horn",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_margaretiofdenmark,
+        abilityName: "Nordic Nova",
+        abilityDescription: "Inspires all friendly units, increasing their attack speed by <b>35%</b> and their ATK by <b>35%</b> of Margaret's ATK for <b>8s</b>.",
+        ability: [
+            "35%,35%,8s",
+        ]
     },
     {
         id: "plato",
         name: "Plato",
         image: "",
-        icon: "https://i.ibb.co/BwDBcLV/Unit-Plato.png",
+        icon: Unit_Plato,
         backdrop: "greek",
         stars: 4,
         heroClass: "manipulator",
         unit: "ranged",
+        color: "blue",
+        ascension: {
+            10: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 4
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_plato,
+        abilityName: "Dialogue's Disarray",
+        abilityDescription: "Plato speaks in allegories, confusing enemy units and decreasing their accuracy by <b>10%</b> and ATK by <b>17%</b> of Plato's ATK for <b>8s</b>.",
+        ability: [
+            "10%,17%,8s",
+        ]
     },
     {
         id: "pocahontas",
@@ -866,29 +3025,251 @@ const allHeroes = [
         stars: 4,
         heroClass: "genius",
         unit: "siege",
+        color: "red",
+        ascension: {
+            10: [
+                {
+                    resource: "red_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "red_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_vincentvangogh,
+        abilityName: "Starry Night Storm",
+        abilityDescription: "Creates a swirl of color at the location of the current target. For <b>6s</b>, the swirl will move across the battlefield in a spiral shape and deal up to <b>360%</b> damage and reduce defense by <b>8%</b> to all enemy units it comes into contact with.",
+        ability: [
+            "6s,360%,8%,",
+        ]
     },
     {
         id: "tomoe-gozen",
         name: "Tomoe Gozen",
         image: Unit_TomoeGozen_fullbody,
         icon: Unit_TomoeGozen,
-        backdrop: "",
+        backdrop: "china",
         stars: 4,
         heroClass: "champion",
         unit: "infantry",
+        color: "yellow",
+        ascension: {
+            10: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "war_horn",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_tomoegozen,
+        abilityName: "Sakura Slash",
+        abilityDescription: "Strikes the ground with her spear, unleashing a shockwave that deals <b>220%</b> damage to all enemies within a range of <b>3</b>.",
+        ability: [
+            "220%,3",
+        ]
     },
     {
         id: "thomas-alva-edison",
         name: "Thomas Alva Edison",
         image: Unit_Edison_fullbody,
-        icon: "https://i.ibb.co/N3XTMrY/Unit-Thomas-Alva-Edison.png",
+        icon: Unit_ThomasAlvaEdison,
         backdrop: "modern",
         stars: 4,
         heroClass: "genius",
         unit: "siege",
+        color: "purple",
+        ascension: {
+            10: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_thomasalvaedison,
+        abilityName: "Warp Shock",
+        abilityDescription: "Teleports into the largest cluster of enemy units, causing an explosion on arrival. The explosion deals <b>130%</b> damage in a range of <b>2</b>. Edison then gains <b>44%</b> attack speed for the rest of the wave.",
+        ability: [
+            "130%,2,44%",
+        ]
     },
     {
         id: "attila-the-hun",
@@ -899,7 +3280,81 @@ const allHeroes = [
         stars: 4,
         heroClass: "commander",
         unit: "cavalry",
+        color: "green",
+        ascension: {
+            10: [
+                {
+                    resource: "green_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "green_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "war_horn",
+                    amount: 4
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_attilathehun,
+        abilityName: "Horde Leader's Arrow",
+        abilityDescription: "Attila shoots a life-draining arrow at the furthest enemy target, dealing <b>980%</b> damage and healing himself for <b>420%</b> of his base damage.",
+        ability: [
+            "980%,420%",
+        ]
     },
     {
         id: "charlemagne",
@@ -910,7 +3365,81 @@ const allHeroes = [
         stars: 4,
         heroClass: "commander",
         unit: "heavy-infantry",
+        color: "yellow",
+        ascension: {
+            10: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "war_horn",
+                    amount: 4
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_charlemagne,
+        abilityName: "Carolingian Valor",
+        abilityDescription: "Strikes the current target, causing an explosion that deals <b>110%</b> damage to all enemy units in a range of <b>2</b> around the target and reduces their ATK Speed by <b>17%</b> for <b>6s</b>.",
+        ability: [
+            "110%,2,17%,6s",
+        ]
     },
     {
         id: "dartagnan",
@@ -921,7 +3450,81 @@ const allHeroes = [
         stars: 4,
         heroClass: "champion",
         unit: "infantry",
+        color: "blue",
+        ascension: {
+            10: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "war_horn",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_dartagnan,
+        abilityName: "Musketeer's Vendetta",
+        abilityDescription: "Pierces the current target four times, dealing increased damage with each stab for a total of <b>700%</b> damage. Each stab has a <b>50%</b> chance to let the opponent bleed for <b>520%</b> over <b>8s</b>.",
+        ability: [
+            "700%,50%,520%,8s",
+        ]
     },
     {
         id: "king-minos",
@@ -932,7 +3535,81 @@ const allHeroes = [
         stars: 4,
         heroClass: "commander",
         unit: "heavy-infantry",
+        color: "yellow",
+        ascension: {
+            10: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "war_horn",
+                    amount: 4
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_kingminos,
+        abilityName: "Minotaur Guardian",
+        abilityDescription: "Pounds his chest, taunting all enemies for <b>5s</b> and gaining <b>950%</b> of DEF as a shield.",
+        ability: [
+            "5s,950%",
+        ]
     },
     {
         id: "queen-boudicca",
@@ -943,7 +3620,166 @@ const allHeroes = [
         stars: 4,
         heroClass: "champion",
         unit: "ranged",
+        color: "red",
+        ascension: {
+            10: [
+                {
+                    resource: "red_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "red_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "war_horn",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_queenboudicca,
+        abilityName: "Celtic Vengeance",
+        abilityDescription: "Throws her spear at the furthest target, hitting them for <b>1150%</b> damage and leaving them stunned for <b>3.50s</b>. Prioritizes heroes.",
+        ability: [
+            "1150%,3.50s",
+        ]
+    },
+    {
+        id: "qin-shi-huang",
+        name: "Qin Shi Huang",
+        image: Unit_QinShiHuang_fullbody,
+        icon: Unit_QinShiHuang,
+        backdrop: "china",
+        stars: 4,
+        heroClass: "genius",
+        unit: "siege",
+        color: "yellow",
+        ascension: {
+            10: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                }
+            ]
+        },
+        abilityIcon: icon_hero_battle_ability_quinshihuang,
+        abilityName: "Spirit Sword",
+        abilityDescription: "Qin Shi Huang summons his Spirit Sword that flies across the battlefield, damaging enemy units for <b>65%</b> damage, and healing allied units for <b>95%</b> of Qin Shi Huang's base damage for <b>6s</b>.",
+        ability: [
+            "65%,95%,6s",
+        ]
     },
     {
         id: "miyamoto-musashi",
@@ -954,7 +3790,81 @@ const allHeroes = [
         stars: 3,
         heroClass: "champion",
         unit: "infantry",
+        color: "purple",
+        ascension: {
+            10: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 1
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_miyamotomusashi,
+        abilityName: "Dual Blade Mastery",
+        abilityDescription: "Strikes the current target four times for a total of <b>3250%</b> damage.",
+        ability: [
+            "3250%",
+        ]
     },
     {
         id: "cyrus-the-great",
@@ -965,18 +3875,166 @@ const allHeroes = [
         stars: 3,
         heroClass: "commander",
         unit: "cavalry",
+        color: "red",
+        ascension: {
+            10: [
+                {
+                    resource: "red_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "red_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 1
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_cyrusthegreat,
+        abilityName: "Achamenid Edict",
+        abilityDescription: "Causes an explosion on the current target, dealing <b>120%</b> to all enemy units within a range of <b>1.5</b>.",
+        ability: [
+            "120%,1.5",
+        ]
     },
     {
         id: "john-locke",
         name: "John Locke",
         image: "",
-        icon: "https://i.ibb.co/4SRVWsr/Unit-John-Locke.png",
+        icon: Unit_JohnLocke,
         backdrop: "renaissance",
         stars: 3,
         heroClass: "manipulator",
         unit: "ranged",
+        color: "green",
+        ascension: {
+            10: [
+                {
+                    resource: "green_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "green_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 1
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 30
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_johnlocke,
+        abilityName: "Empirical Echo",
+        abilityDescription: "Deals <b>844%</b> damage to the current target and stuns it for <b>2s</b>. Enemy units within a radius of <b>2</b> around the target receive <b>70%</b> damage.",
+        ability: [
+            "844%,2s,2,70%",
+        ]
     },
     {
         id: "karl-marx",
@@ -987,7 +4045,81 @@ const allHeroes = [
         stars: 3,
         heroClass: "manipulator",
         unit: "ranged",
+        color: "red",
+        ascension: {
+            10: [
+                {
+                    resource: "red_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "red_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 1
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resoure: "shadow_dial",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_karlmarx,
+        abilityName: "Manifesto Misdirection",
+        abilityDescription: "Targets the biggest cluster of enemy unis, reducing accuracy by <b>16%</b> and ATK by <b>50%</b> of Marx's ATK for <b>8s</b> in a range of <b>2</b>.",
+        ability: [
+            "16%,50%,8s,2",
+        ]
     },
     {
         id: "mansa-musa",
@@ -998,7 +4130,81 @@ const allHeroes = [
         stars: 3,
         heroClass: "great-leader",
         unit: "cavalry",
+        color: "purple",
+        ascension: {
+            10: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 1
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "war_horn",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_mansamusa,
+        abilityName: "Gold-Coast Gambit",
+        abilityDescription: "Mansa Musa targets the biggest cluster of friendly units, increasing their chance to critically hit by <b>25%</b> and their ATK by <b>65%</b> of Mansa Musa's ATK for <b>8s</b> in a range of <b>2</b>.",
+        ability: [
+            "25%,65%,8s,2",
+        ]
     },
     {
         id: "marco-polo",
@@ -1009,7 +4215,81 @@ const allHeroes = [
         stars: 3,
         heroClass: "genius",
         unit: "siege",
+        color: "green",
+        ascension: {
+            10: [
+                {
+                    resource: "green_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "green_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 1
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_marcopolo,
+        abilityName: "Burst of Discovery",
+        abilityDescription: "Teleports into the largest cluster of enemy units, causing an explosion on arrival. The explosion deals <b>182%</b> damage in a range of <b>2</b>.",
+        ability: [
+            "182%,2",
+        ]
     },
     {
         id: "oracle-of-dephi",
@@ -1020,7 +4300,81 @@ const allHeroes = [
         stars: 3,
         heroClass: "manipulator",
         unit: "ranged",
+        color: "purple",
+        ascension: {
+            10: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 1
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_oracleofdephi,
+        abilityName: "Oracle's Omen",
+        abilityDescription: "Targets the biggest cluster of enemy units, reducing DEF by <b>45%</b> of the Oracle's ATK for <b>8s</b> in a range of <b>2</b>.",
+        ability: [
+            "45%,8s,2",
+        ]
     },
     {
         id: "ada-lovelace",
@@ -1031,7 +4385,81 @@ const allHeroes = [
         stars: 3,
         heroClass: "genius",
         unit: "siege",
+        color: "yellow",
+        ascension: {
+            10: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 1
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_adalovelace,
+        abilityName: "Logic Bomb",
+        abilityDescription: "Detonates an explosion targetting the biggest cluster of enemy units, dealing <b>180%</b> damage in a range of <b>1.5</b>.",
+        ability: [
+            "180%,1.5",
+        ]
     },
     {
         id: "artemisia-i-of-caria",
@@ -1042,7 +4470,81 @@ const allHeroes = [
         stars: 3,
         heroClass: "champion",
         unit: "ranged",
+        color: "green",
+        ascension: {
+            10: [
+                {
+                    resource: "green_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "green_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 1
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_artemisiaiofcaria,
+        abilityName: "Storm of Arrows",
+        abilityDescription: "Lets arrows rain on the biggest cluster of enemy units, dealing <b>115%</b> damage in a range of <b>2.5</b>.",
+        ability: [
+            "115%,2.5",
+        ]
     },
     {
         id: "pythagoras",
@@ -1053,7 +4555,81 @@ const allHeroes = [
         stars: 3,
         heroClass: "genius",
         unit: "siege",
+        color: "blue",
+        ascension: {
+            10: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 1
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_pythagoras,
+        abilityName: "Pythagorean Theorem",
+        abilityDescription: "Throws his triangle ruler at the current target. For <b>4s</b>, the ruler will move across the battlefield in a triangular shape and deal up to <b>336%</b> damage to nearby enemy units.",
+        ability: [
+            "4s,336%",
+        ]
     },
     {
         id: "hermann-the-cheruscan",
@@ -1064,7 +4640,81 @@ const allHeroes = [
         stars: 3,
         heroClass: "commander",
         unit: "heavy-infantry",
+        color: "green",
+        ascension: {
+            10: [
+                {
+                    resource: "green_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "green_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 1
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_hermannthecheruscan,
+        abilityName: "Teutonic Tremor",
+        abilityDescription: "Stomps the ground, dealing <b>132%</b> damage to all enemies within a range of <b>2.5</b> and recovering <b>570%</b> of his base damage.",
+        ability: [
+            "132%,2.5,570%",
+        ]
     },
     {
         id: "inanna",
@@ -1075,7 +4725,81 @@ const allHeroes = [
         stars: 3,
         heroClass: "champion",
         unit: "infantry",
+        color: "yellow",
+        ascension: {
+            10: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 1
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_inanna,
+        abilityName: "Swift Strike",
+        abilityDescription: "Skillfully strikes the current target with her staff, dealing <b>1080%</b> damage.",
+        ability: [
+            "1080%",
+        ]
     },
     {
         id: "otto-von-bismarck",
@@ -1086,7 +4810,81 @@ const allHeroes = [
         stars: 3,
         heroClass: "commander",
         unit: "heavy-infantry",
+        color: "purple",
+        ascension: {
+            10: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 1
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_ottovonbismarck,
+        abilityName: "Iron Chancellor",
+        abilityDescription: "Taunts all enemies for <b>4s</b>. Bismarck gains <b>520%</b> of his base damage as a shield.",
+        ability: [
+            "4s,520%",
+        ]
     },
     {
         id: "ulysses-s-grant",
@@ -1097,7 +4895,81 @@ const allHeroes = [
         stars: 3,
         heroClass: "commander",
         unit: "heavy-infantry",
+        color: "blue",
+        ascension: {
+            10: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 1
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_ulyssessgrant,
+        abilityName: "Union Rejuvenation",
+        abilityDescription: "Strikes the current target for <b>405%</b> damage, before shooting at the enemy with the lowest DEF, dealing <b>735%</b> damage. Then Ulysses heals himself for <b>500%</b> of his base damage.",
+        ability: [
+            "405%,735%,500%",
+        ]
     },
     {
         id: "ashoka-the-great",
@@ -1108,7 +4980,81 @@ const allHeroes = [
         stars: 3,
         heroClass: "great-leader",
         unit: "cavalry",
+        color: "red",
+        ascension: {
+            10: [
+                {
+                    resource: "red_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "red_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 1
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "war_horn",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_ashokathegreat,
+        abilityName: "Dharma's Divinity",
+        abilityDescription: "Channels divine energy, healing the target with the most missing HP by <b>1080%</b> of Ashoka's base damage. Prioritizes heroes.",
+        ability: [
+            "1080%",
+        ]
     },
     {
         id: "leonidas-i",
@@ -1186,13 +5132,14 @@ const allHeroes = [
                     resource: "fragrant_potpourri",
                     amount: 3
                 },
-                {
-                    resource: "prism_of_fate",
-                    amount: 1
-                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_leonidas,
+        abilityName: "This is Sparta!",
+        abilityDescription: "Leonidas stomps the ground, dealing <b>120%</b> damage to all enemies within a range of <b>2.5</b>.",
+        ability: [
+            "120%,2.5",
+        ]
     },
     {
         id: "william-tell",
@@ -1203,84 +5150,452 @@ const allHeroes = [
         stars: 3,
         heroClass: "champion",
         unit: "ranged",
+        color: "blue",
+        ascension: {
+            10: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 20
+                }
+            ],
+            20: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 30
+                },
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 10
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 70
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ],
+            40: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 50
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 1
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 75
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_williamtell,
+        abilityName: "Apple Splitter",
+        abilityDescription: "Aims his crossbow at the furthest target, shooting them for <b>1475%</b> damage. Prioritizes heroes.",
+        ability: [
+            "1475%",
+        ]
     },
     {
         id: "maori-chief",
-        name: "Maori Chief",
+        name: "Te Wherowhero",
         image: Unit_MaoriChief_fullbody,
         icon: Unit_MaoriChief,
         backdrop: "rainforest",
         stars: 2,
         heroClass: "great-leader",
         unit: "cavalry",
+        color: "blue",
+        ascension: {
+            10: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_maorichief,
+        abilityName: "Haka Huddle",
+        abilityDescription: "Invokes the power of water targeting the biggest cluster of friendly units, providing <b>15%</b> of Te Wherowhero's Base Damage as a shield in a range of <b>2</b>.",
+        ability: [
+            "15%,2",
+        ]
     },
     {
         id: "geisha",
-        name: "Geisha",
+        name: "Yoshino Dayu",
         image: Unit_Geisha_fullbody,
         icon: Unit_Geisha,
         backdrop: "china",
         stars: 2,
         heroClass: "manipulator",
         unit: "ranged",
+        color: "purple",
+        ascension: {
+            10: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+        },
         abilityIcon: icon_hero_battle_ability_geisha,
+        abilityName: "Sakura Strike",
+        abilityDescription: "Throws a poisoned fan at the enemy with the highest HP, dealing <b>450%</b> damage and poisoning them for <b>280%</b> damage over <b>8s</b>.",
+        ability: [
+            "450%,280%,8s",
+        ]
     },
     {
         id: "greek-mathematician",
-        name: "Greek Mathematician",
+        name: "Euclid",
         image: Unit_GreekMathematician_fullbody,
         icon: Unit_GreekMathematician,
         backdrop: "greek",
         stars: 2,
         heroClass: "genius",
         unit: "siege",
+        color: "blue",
+        ascension: {
+            10: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_greekmathematician,
+        abilityName: "Axiomatic Assault",
+        abilityDescription: "Stomps the ground, dealing <b>75%</b> damage to all enemies within a range of <b>3</b>.",
+        ability: [
+            "75%,3",
+        ]
     },
     {
         id: "mayan-astronomer",
-        name: "Mayan Astronomer",
+        name: "Itzamnaaj Bahlam III",
         image: Unit_MayanAstronomer_fullbody,
         icon: Unit_MayanAstronomer,
         backdrop: "rainforest",
         stars: 2,
         heroClass: "genius",
         unit: "siege",
+        color: "blue",
+        ascension: {
+            10: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_mayanastronomer,
+        abilityName: "Cosmic Blast",
+        abilityDescription: "Summon celestial energy to rain down upon a random enemy unit, dealing <b>180%</b> damage. The impact also affects nearby enemy units within a range of <b>2</b> from the target.",
+        ability: [
+            "180%,2",
+        ]
     },
     {
         id: "roman-praetor",
-        name: "Roman Praetor",
+        name: "Aemilia Tertia",
         image: Unit_RomanPraetor_fullbody,
         icon: Unit_RomanPraetor,
         backdrop: "italy",
         stars: 2,
         heroClass: "manipulator",
         unit: "ranged",
+        color: "green",
+        ascension: {
+            10: [
+                {
+                    resource: "green_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "green_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_romanpraetor,
+        abilityName: "Legion's Lull",
+        abilityDescription: "Targets the biggest cluster of enemy units, reducing ATK by <b>50%</b> of Aemilia Tertia's ATK for <b>8s</b> in a range of <b>2</b>.",
+        ability: [
+            "50%,8s,2",
+        ]
     },
     {
         id: "sioux-shaman",
-        name: "Sioux Shaman",
+        name: "Sitting Bull",
         image: Unit_SiouxShaman_fullbody,
         icon: Unit_SiouxShaman,
         backdrop: "grass",
         stars: 2,
         heroClass: "great-leader",
         unit: "cavalry",
+        color: "green",
+        ascension: {
+            10: [
+                {
+                    resource: "green_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "green_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_siouxshaman,
+        abilityName: "Spirit of Tatanka",
+        abilityDescription: "Targets the biggest cluster of enemy units, increasing DEF by <b>34%</b> of Sitting Bull's DEF for <b>8s</b> in a range of <b>2</b>.",
+        ability: [
+            "34%,8s,2",
+        ]
     },
     {
         id: "tribal-healer",
-        name: "Tribal Healer",
+        name: "Naya of the Cave Clan",
         image: Unit_TribalHealer_fullbody,
         icon: Unit_TribalHealer,
         backdrop: "grass",
         stars: 2,
         heroClass: "great-leader",
         unit: "cavalry",
+        color: "green",
+        ascension: {
+            10: [
+                {
+                    resource: "green_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "green_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_tribalhealer,
+        abilityName: "Healing Salve",
+        abilityDescription: "Applies a herbal concoction to the friendly unit with the most missing HP, healing them by <b>800%</b> of Naya's base damage. Prioritizes heroes.",
+        ability: [
+            "800%",
+        ]
     },
     {
         id: "roman-centurion",
@@ -1291,29 +5606,155 @@ const allHeroes = [
         stars: 2,
         heroClass: "commander",
         unit: "heavy-infantry",
+        color: "purple",
+        ascension: {
+            10: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_romancenturion,
+        abilityName: "Turtle Formation",
+        abilityDescription: "Stabs the current target from behind his shield, dealing <b>700%</b> damage and gaining <b>500%</b> of his Base Damage as a shield.",
+        ability: [
+            "700%,500%",
+        ]
     },
     {
         id: "egyptian-vizier",
-        name: "Egyptian Vizier",
+        name: "Imhotep",
         image: Unit_EgyptianVizier_fullbody,
         icon: Unit_EgyptianVizier,
         backdrop: "egypt",
         stars: 2,
         heroClass: "manipulator",
         unit: "ranged",
+        color: "blue",
+        ascension: {
+            10: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+        },
         abilityIcon: icon_hero_battle_ability_egyptianvizier,
+        abilityName: "Vizier's Veil",
+        abilityDescription: "Targets the biggest cluster of enemy units, reducing DEF by <b>34%</b> of Imhotep's ATK for <b>8s</b> in a range of <b>2</b>.",
+        ability: [
+            "34%,8s,2",
+        ]
     },
     {
         id: "ninja",
-        name: "Ninja",
+        name: "Mochizuki Chiyome",
         image: Unit_Ninja_fullbody,
         icon: Unit_Ninja,
         backdrop: "china",
         stars: 2,
         heroClass: "champion",
         unit: "ranged",
+        color: "purple",
+        ascension: {
+            10: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_ninja,
+        abilityName: "Whispering Blade",
+        abilityDescription: "Throws a kunai at the enemy with the lowest current HP, dealing <b>540%</b> damage. Prioritizes heroes.",
+        ability: [
+            "540%",
+        ]
     },
     {
         id: "viking-jarl",
@@ -1324,106 +5765,526 @@ const allHeroes = [
         stars: 2,
         heroClass: "great-leader",
         unit: "cavalry",
+        color: "red",
+        ascension: {
+            10: [
+                {
+                    resource: "red_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "red_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_vikingjarl,
+        abilityName: "Berserker's Boost",
+        abilityDescription: "Unleashes a rallying shout, increasing the ATK of friendly units in a range of <b>5</b> around him by <b>40%</b> of his ATk for <b>8s</b>.",
+        ability: [
+            "5,40%,8s",
+        ]
     },
     {
         id: "aztec-tlacateccatl",
-        name: "Aztec Tlacateccatl",
+        name: "Cuauhtemoc",
         image: Unit_AztecTlacateccatl_fullbody,
         icon: Unit_AztecTlacateccatl,
         backdrop: "rainforest",
         stars: 2,
         heroClass: "commander",
         unit: "heavy-infantry",
+        color: "yellow",
+        ascension: {
+            10: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+        },
         abilityIcon: icon_hero_battle_ability_aztectlacateccatl,
+        abilityName: "Sun God's Embrace",
+        abilityDescription: "Invokes the Aztec spirits, healing Cuauhtémoc and all friendly units within a range of <b>1</b> by <b>450%</b> of Cuauhtémoc's Base Damage.",
+        ability: [
+            "1,450%",
+        ]
     },
     {
         id: "hoplit",
-        name: "Hoplit",
+        name: "Miltiades",
         image: Unit_Hoplit_fullbody,
         icon: Unit_Hoplit,
         backdrop: "greek",
         stars: 2,
         heroClass: "champion",
         unit: "infantry",
+        color: "red",
+        ascension: {
+            10: [
+                {
+                    resource: "red_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "red_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_hoplit,
+        abilityName: "Piercing Thrust",
+        abilityDescription: "Pierces the current target with a spear, dealing <b>720%</b> damage.",
+        ability: [
+            "720%",
+        ]
     },
     {
         id: "jaguar-warrior",
-        name: "Jaguar Warrior",
+        name: "Ocelotl",
         image: Unit_JaguarWarrior_fullbody,
         icon: Unit_JaguarWarrior,
         backdrop: "rainforest",
         stars: 2,
         heroClass: "champion",
         unit: "infantry",
+        color: "green",
+        ascension: {
+            10: [
+                {
+                    resource: "green_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "green_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_jaguarwarrior,
+        abilityName: "Jungle Predator",
+        abilityDescription: "Swings her sword in a circular motion, dealing <b>90%</b> damage to all enemy units within a range of <b>2.5</b>.",
+        ability: [
+            "90%,2.5",
+        ]
     },
     {
         id: "japanese-shogun",
-        name: "Japanese Shogun",
+        name: "Kondo Isami",
         image: Unit_JapaneseShogun_fullbody,
         icon: Unit_JapaneseShogun,
         backdrop: "china",
         stars: 2,
         heroClass: "commander",
         unit: "heavy-infantry",
+        color: "blue",
+        ascension: {
+            10: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_japaneseshogun,
+        abilityName: "Ikedaya Duskblade",
+        abilityDescription: "Takes a swipe at the current target, dealing <b>100%</b> damage to all enemy units in a range of <b>2</b> around it. Affected units have their accuracy reduced by <b>10%</b> for <b>8s</b>.",
+        ability: [
+            "100%,2,10%,8s",
+        ]
     },
     {
         id: "ottoman-general",
-        name: "Ottoman General",
+        name: "Hasan Pasha",
         image: Unit_OttomanGeneral_fullbody,
         icon: Unit_OttomanGeneral,
         backdrop: "desert",
         stars: 2,
         heroClass: "commander",
         unit: "heavy-infantry",
+        color: "green",
+        ascension: {
+            10: [
+                {
+                    resource: "green_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "green_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_ottomangeneral,
+        abilityName: "Ottoman Rampart",
+        abilityDescription: "Taunts all enemy units for <b>4s</b>. During this time, Hasan Pasha's DEF is increased by <b>40%</b>.",
+        ability: [
+            "4s,40%",
+        ]
     },
     {
         id: "shaolin",
-        name: "Shaolin",
+        name: "Xueting Fuyu",
         image: Unit_Shaolin_fullbody,
         icon: Unit_Shaolin,
         backdrop: "china",
         stars: 2,
         heroClass: "champion",
         unit: "infantry",
+        color: "yellow",
+        ascension: {
+            10: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_shaolin,
+        abilityName: "Dragon Kick",
+        abilityDescription: "Kicks the current target three times for a total of <b>720%</b> damage.",
+        ability: [
+            "720%",
+        ]
     },
     {
         id: "jester",
-        name: "Jester",
+        name: "Triboulet",
         image: Unit_Jester_fullbody,
         icon: Unit_Jester,
         backdrop: "windmill",
         stars: 2,
         heroClass: "genius",
         unit: "siege",
+        color: "purple",
+        ascension: {
+            10: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_jester,
+        abilityName: "Confetti Cannon",
+        abilityDescription: "Shoots his cannon at four random targets, dealing <b>30%</b> to enemies in a range of <b>2</b>.",
+        ability: [
+            "30%,2",
+        ]
     },
     {
         id: "nubian-mercenary",
-        name: "Nubian Mercenary",
+        name: "Kandake of Nubia",
         image: Unit_NubianMercenary_fullbody,
         icon: Unit_NubianMercenary,
         backdrop: "desert",
         stars: 2,
         heroClass: "champion",
         unit: "infantry",
+        color: "yellow",
+        ascension: {
+            10: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "yellow_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "yellow_crest_enhanced",
+                    amount: 40
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_nubianmercenary,
+        abilityName: "Desert Viper",
+        abilityDescription: "Strikes the current target twice for a total of <b>1000%</b> damage.",
+        ability: [
+            "1000%",
+        ]
     },
     {
         id: "viking-raider",
-        name: "Viking Raider",
+        name: "Freydis Eiriksdottir",
         image: Unit_VikingRaider_fullbody,
         icon: Unit_VikingRaider,
         backdrop: "snow",
         stars: 2,
         heroClass: "champion",
         unit: "infantry",
+        color: "red",
+        ascension: {
+            10: [
+                {
+                    resource: "red_crest_common",
+                    amount: 10
+                }
+            ],
+            20: [
+                {
+                    resource: "red_crest_common",
+                    amount: 20
+                },
+                {
+                    resource: "red_crest_enhanced",
+                    amount: 5
+                },
+                {
+                    resource: "war_horn",
+                    amount: 1
+                }
+            ],
+            30: [
+                {
+                    resource: "red_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 1
+                }
+            ]
+        },
         abilityIcon: icon_hero_battle_ability_vikingraider,
+        abilityName: "Axe of Ragnarok",
+        abilityDescription: "Throws an axe at the enemy unit with the most HP, dealing <b>600%</b> damage.",
+        ability: [
+            "600%",
+        ]
     },
 ]
 
@@ -1485,6 +6346,9 @@ const colorIcons = {
 const colorNames = {
     "yellow": "Yellow",
     "red": "Red",
+    "purple": "Purple",
+    "blue": "Blue",
+    "green": "Green",
 }
 
 const backdrops = {

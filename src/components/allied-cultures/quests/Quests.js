@@ -9,27 +9,27 @@ import useOptionURL from "../../shared/hooks/useOptionURL";
 import OneQuest from "./OneQuest";
 import OneQuestline from "./OneQuestline";
 
-import allEvents from "../data";
+import allAlliedCultures from "../data";
 
 const Quests = (props) => {
 
-    const basePath = "events";
-    const pageName = "Events - Quests";
+    const basePath = "allied-cultures";
+    const pageName = "Allied Cultures - Quests";
 
-    const getEvent = () => {
-        return allEvents.find(oneEvent => oneEvent.id == props.selectedEvent);
+    const getAlliedCulture = () => {
+        return allAlliedCultures.find(oneAlliedCulture => oneAlliedCulture.id == props.selectedAlliedCulture);
     }
   
       return (
         <>
             <Prologue imageSrc={"https://i.ibb.co/Yphv4st/event-hud-icon-persian-2023-299042.png"} alt={"Event"} maxHeight={"65px"} >
-                Quests description
+                Quests introduce players to the story of the allied culture and offer a variety of rewards.
             </Prologue>
             <SectionDivider />
             <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", marginTop: "15px",marginBottom: "15px" }}>
                 {
-                    getEvent().questlines?.map((oneQuestline) => (
-                        <OneQuestline questline={oneQuestline} headerColor={"#329CB3"} />
+                    getAlliedCulture().questlines?.map((oneQuestline) => (
+                        <OneQuestline questline={oneQuestline} headerColor={getAlliedCulture().questlineColor} />
                     ))
                 }
             </div>

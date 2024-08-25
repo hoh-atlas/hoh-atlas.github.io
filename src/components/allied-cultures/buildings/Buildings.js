@@ -11,33 +11,33 @@ import H1 from "../../shared/H1";
 import Image from "../../shared/Image";
 import Icon from "../../shared/Icon";
 
-import allEvents from "../data";
+import allAlliedCultures from "../data";
 import resources from "../../shared/data/resources";
 
 const Buildings = (props) => {
 
-    const basePath = "events";
-    const pageName = "Events - Buildings";
+    const basePath = "allied-cultures";
+    const pageName = "Allied Cultures - Buildings";
   
-    const getEvent = () => {
-        return allEvents.find(oneEvent => oneEvent.id == props.selectedEvent);
+    const getAlliedCulture = () => {
+        return allAlliedCultures.find(oneAlliedCulture => oneAlliedCulture.id == props.selectedAlliedCulture);
     }
 
-    const buildingCategories = getEvent().buildingCategories;
+    const buildingCategories = getAlliedCulture().buildingCategories;
   
     return (
       <>
         <Prologue imageSrc={"https://i.ibb.co/DtgGzzS/Technology-Iberian-Era-Masia.png"} alt={"Event"} maxHeight={"65px"} >
-          Buildings description
+            
         </Prologue>
         <SectionDivider />
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "15px",marginBottom: "15px" }}>
-          <img src={"https://i.ibb.co/GW4SLwD/great-sphinx.png"} style={{ maxWidth: "300px" }} />
+            
         </div>
 
         <H1 center={true}>Home</H1>
         <div className="scroll">
-            <table style={{ width: '90%', marginTop: '10px' }}>
+            {buildingCategories.home && <table style={{ width: '90%', marginTop: '10px' }}>
                 {buildingCategories.home.buildings.map( (building, index) => (
                   <>
                   <thead>
@@ -118,7 +118,7 @@ const Buildings = (props) => {
                   </>
                   ))
                 }
-            </table>
+            </table> }
         </div>
       </>
     );

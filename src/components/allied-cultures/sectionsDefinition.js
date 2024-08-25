@@ -1,13 +1,13 @@
-import events_intro from "../../images/events/intro/icon_feature_eventcities.webp";
+import alliedCultures_intro from "../../images/allied-cultures/intro/icon_feature_eventcities.webp";
 
 const sectionsDefinition = {
-    page: "events",
+    page: "allied-cultures",
     tabs: [
         {
             id: 1,
             url: "",
-            name: "Events",
-            img: events_intro,
+            name: "Allied Cultures",
+            img: alliedCultures_intro,
             show: true,
             dynamicSegments: [],
         },
@@ -40,7 +40,7 @@ const sectionsDefinition = {
             url: "strategies",
             name: "Strategies",
             img: "https://i.ibb.co/j3g6mfB/icon-unitstat-movementspeed.png",
-            show: true,
+            show: false,
             dynamicSegments: [],
         },
         {
@@ -48,7 +48,7 @@ const sectionsDefinition = {
             url: "layouts",
             name: "Layouts",
             img: "https://i.ibb.co/zn3VD69/Technology-Roman-Empire-Urban-Management.png",
-            show: true,
+            show: false,
             dynamicSegments: [],
         },
     ]

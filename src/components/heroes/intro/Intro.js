@@ -99,7 +99,7 @@ const Intro = (props) => {
     
         const hasFilters = selectedClasses?.length > 0 || selectedUnits?.length > 0 || selectedCrestColors?.length > 0 || selectedCrestFactions?.length > 0 || selectedColors?.length > 0 || selectedAscensionMaterials?.length > 0;
     
-        const newUrl = hasFilters ? `${window.location.pathname}?${urlParams.toString()}` : window.location.pathname;
+        const newUrl = hasFilters ? `${window.location.hash.split('?')[0]}?${urlParams.toString()}` : window.location.hash.split('?')[0];
         window.history.pushState({ path: newUrl }, '', newUrl);
     };
 
@@ -138,7 +138,7 @@ const Intro = (props) => {
     };
 
     useEffect(() => {
-        const urlParams = new URLSearchParams(window.location.search);
+        const urlParams = new URLSearchParams(window.location.hash.split('?')[1] || '');
         const classParams = urlParams.getAll('class');
         const unitParams = urlParams.getAll('unit');
         const crestColorParams = urlParams.getAll('crestColor');

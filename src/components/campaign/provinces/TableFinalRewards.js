@@ -19,7 +19,7 @@ const TableFinalRewards = (props) => {
                     <tr>
                         <td>
                             {
-                                rewards.map((oneReward) => <div style={{ display: 'inline-flex', marginRight: '5px'}}>{oneReward.amount} <Icon resource={resources.find((resource) => resource.id === oneReward.resource)} /></div>)
+                                rewards.map((oneReward) => <div style={{ display: 'inline-flex', marginRight: '5px'}}>{oneReward.amount}&nbsp;<Icon resource={resources.find((resource) => resource.id === oneReward.resource)} /></div>)
                             }
                         </td>
                     </tr>

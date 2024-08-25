@@ -5,6 +5,9 @@ import React from "react";
 import resources from "../../shared/data/resources";
 import Icon from "../../shared/Icon";
 
+import common_map_encounter from "../../../images/campaign/provinces/common_map_encounter.webp";
+import common_map_encounter_xp from "../../../images/campaign/provinces/common_map_encounter_xp.webp";
+
 const TableProvince = (props) => {
 
     let baseColumns1 = ["Encounter"];
@@ -122,8 +125,14 @@ const TableProvince = (props) => {
                                 COLUMNS.map((oneColumn) => (
                                     isBaseColumn(oneColumn) ?
                                         baseColumns2.includes(oneColumn) ?
-                                        <td rowSpan={2}>{encounter.firstVictoryBonus.map((reward) => <div style={{ display: 'inline-flex', marginRight: '5px'}}>{reward.amount} <Icon resource={resources.find((resource) => resource.id === reward.resource)} /></div>)}</td> :
-                                        <td rowSpan={2}>{encounter.id}</td> :
+                                        <td rowSpan={2}>{encounter.firstVictoryBonus.map((reward) => <div style={{ display: 'inline-flex', marginRight: '5px'}}>{reward.amount}&nbsp;<Icon resource={resources.find((resource) => resource.id === reward.resource)} /></div>)}</td> :
+                                        <td rowSpan={2}>
+                                                <div style={{backgroundImage: `url(${encounter.special ? common_map_encounter_xp : common_map_encounter})`, width: '30px', height: '30px', display: 'flex', justifyContent: 'center', margin: '0px auto', color: 'white', fontWeight: 'bold', textShadow: 'rgb(0,0,0) 1px 1px 1px', zIndex: '2', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', position: 'relative'}}>
+                                                    <p style={{marginTop: '3px', marginRight: `${encounter.special ? '8px' : '10px'}`, alignSelf: 'center', fontSize: '13px'}}>
+                                                        {encounter.id}
+                                                    </p>
+                                                </div>
+                                        </td> :
                                     oneColumn.columns.map((column) => {
                                         const occurrences = maxOccurrences[column];
                                         return (
@@ -147,7 +156,7 @@ const TableProvince = (props) => {
                                         return (
                                             Array.from({ length: occurrences }).map((_, index) => (
                                                 getRewardPercentage(encounter, column, index) ?
-                                                <td style={{fontSize: 'small'}}>{getRewardPercentage(encounter, column, index)}%</td> :
+                                                <td style={{ fontSize: '11px', color: '#916a17', borderTop: 'none !important' }}>{getRewardPercentage(encounter, column, index)}%</td> :
                                                 <td></td>
                                             ))
                                         )

@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage";
 import CampaignPage from "./pages/CampaignPage";
 import HeroesPage from "./pages/HeroesPage";
 import TreasureHuntPage from "./pages/TreasureHuntPage";
-import EventsPage from "./pages/EventsPage";
+import AlliedCulturesPage from "./pages/AlliedCulturesPage";
 import ResourcesPage from "./pages/ResourcesPage";
 import Error from "./pages/Error";
 import SharedLayout from "./pages/SharedLayout";
@@ -15,7 +15,7 @@ import ReactGA from "react-ga4";
 import layoutHome from "./components/home/sectionsDefinition";
 import layoutCampaign from "./components/campaign/sectionsDefinition";
 import layoutHeroes from "./components/heroes/sectionsDefinition";
-import layoutEvents from "./components/events/sectionsDefinition";
+import layoutAlliedCultures from "./components/allied-cultures/sectionsDefinition";
 import layoutTreasureHunt from "./components/treasure-hunt/sectionsDefinition";
 import layoutResources from "./components/resources/sectionsDefinition";
 
@@ -75,11 +75,11 @@ const App = () => {
 				}
 
 				{
-					layoutEvents.tabs.map( (eventTab) => {
+					layoutAlliedCultures.tabs.map( (alliedCultureTab) => {
 						return ( <>
-							<Route key={eventTab.id} path={createPathFromParameters(layoutEvents.page, eventTab.url)} element={ <EventsPage tab={eventTab}/> || <EventsPage tab={layoutEvents.tabs[0]}/> }/>
-							{eventTab.dynamicSegments.map( (dynamicSegment) => {
-								return <Route path={createPathFromParameters(layoutEvents.page, eventTab.url, dynamicSegment)} element={ <EventsPage tab={eventTab} />} />
+							<Route key={alliedCultureTab.id} path={createPathFromParameters(layoutAlliedCultures.page, alliedCultureTab.url)} element={ <AlliedCulturesPage tab={alliedCultureTab}/> || <AlliedCulturesPage tab={layoutAlliedCultures.tabs[0]}/> }/>
+							{alliedCultureTab.dynamicSegments.map( (dynamicSegment) => {
+								return <Route path={createPathFromParameters(layoutAlliedCultures.page, alliedCultureTab.url, dynamicSegment)} element={ <AlliedCulturesPage tab={alliedCultureTab} />} />
 							})}
 						</>
 						)

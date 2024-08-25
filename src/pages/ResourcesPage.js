@@ -19,7 +19,7 @@ const ResourcesPage = (props) => {
     ReactGA.send({
         hitType: "pageview",
         page: `/#/${basePath}`,
-        title: props.tab.name,
+        title: `Resources - ${props.tab.name}`,
     });
 
     const pageName = props.tab.url ? (

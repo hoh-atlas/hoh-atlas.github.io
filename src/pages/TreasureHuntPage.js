@@ -18,7 +18,7 @@ const TreasureHuntPage = (props) => {
     ReactGA.send({
         hitType: "pageview",
         page: `/#/${basePath}`,
-        title: props.tab.name,
+        title: `Treasure Hunt - ${props.tab.name}`,
     });
 
     const pageName = props.tab.url ? (

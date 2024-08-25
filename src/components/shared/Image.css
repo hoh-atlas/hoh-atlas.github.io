@@ -13,4 +13,8 @@
     .inline-image-container {
       max-width: 60%;
     }
+
+    .mobile-height {
+      max-height: var(--heightMobile);
   }
+}

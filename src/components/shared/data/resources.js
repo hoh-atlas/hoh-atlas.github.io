@@ -102,16 +102,22 @@ import icon_yellow_crest_enhanced from '../../../images/shared/resources/icon_ye
 import icon_yellow_crest_superior from '../../../images/shared/resources/icon_yellow_crest_superior.webp';
 import ink from '../../../images/shared/resources/ink.webp';
 import iron_pendant from '../../../images/shared/resources/iron_pendant.webp';
+import kaolin from '../../../images/shared/resources/kaolin.webp';
 import linen_shirt from '../../../images/shared/resources/linen_shirt.webp';
 import manuscript from '../../../images/shared/resources/manuscript.webp';
 import marble_bust from '../../../images/shared/resources/marble_bust.webp';
+import mastery_point from '../../../images/shared/resources/mastery_point.webp';
 import mosaic from '../../../images/shared/resources/mosaic.webp';
+import moth_cocoon from '../../../images/shared/resources/moth_cocoon.webp';
 import parchment from '../../../images/shared/resources/parchment.webp';
 import pepper from '../../../images/shared/resources/pepper.webp';
 import planks from '../../../images/shared/resources/planks.webp';
+import porcelain from '../../../images/shared/resources/porcelain.webp';
 import Research from '../../../images/shared/resources/Research.webp';
+import rice from '../../../images/shared/resources/rice.webp';
 import saffron from '../../../images/shared/resources/saffron.webp';
 import salt from '../../../images/shared/resources/salt.webp';
+import silk from '../../../images/shared/resources/silk.webp';
 import silver_ring from '../../../images/shared/resources/silver_ring.webp';
 import stone_tablet from '../../../images/shared/resources/stone_tablet.webp';
 import toga from '../../../images/shared/resources/toga.webp';
@@ -120,6 +126,7 @@ import tunic from '../../../images/shared/resources/tunic.webp';
 import wardrobe from '../../../images/shared/resources/wardrobe.webp';
 import wax_seal from '../../../images/shared/resources/wax_seal.webp';
 import wool from '../../../images/shared/resources/wool.webp';
+import wu_zhu from '../../../images/shared/resources/wu_zhu.webp';
 
 const resources = [
     // BASIC
@@ -136,6 +143,7 @@ const resources = [
     {id: "xp_epic", name: "Epic Scroll of Prowess", img: icon_xp_scroll_epic, category: "experiences"},
     {id: "xp_legendary", name: "Legendary Scroll of Prowess", img: icon_xp_scroll_legendary, category: "experiences"},
     {id: "xp_hero", name: "Experience Points", img: icon_xp_hero, category: "experiences"},
+    {id: "mastery_point", name: "Mastery Points", img: mastery_point, category: "experiences"},
     // ANTIMATTERS
     {id: "antimatter", name: "Antimatter", img: icon_rift_token_common, category: "antimatters"},
     {id: "antimatter_egyptian", name: "Egyptian Antimatter", img: icon_rift_token_egypt_common, category: "antimatters"},
@@ -249,6 +257,13 @@ const resources = [
     {id: "papyrus_scroll", name: "Papyrus Scroll", img: icon_papyrus_scroll, category: "culture_egypt"},
     {id: "ankh", name: "Ankh", img: icon_ankh, category: "culture_egypt"},
     {id: "egypt_worker", name: "Egypt Worker", img: icon_workers_city_egypt, category: "culture_egypt"},
+    // CHINA ALLIED CULTURE
+    {id: "wu_zhu", name: "Wu Zhu", img: wu_zhu, category: "culture_china"},
+    {id: "rice", name: "Rice", img: rice, category: "culture_china"},
+    {id: "moth_cocoon", name: "Moth Cocoon", img: moth_cocoon, category: "culture_china"},
+    {id: "silk", name: "Silk", img: silk, category: "culture_china"},
+    {id: "porcelain", name: "Porcelain", img: porcelain, category: "culture_china"},
+    {id: "kaolin", name: "Kaolin", img: kaolin, category: "culture_china"},
     // EXPANSIONS
     {id: "expansion_regular", name: "Regular Expansion", img: icon_expansion_city_capital_land, category: "expansions"},
     {id: "expansion_egypt", name: "Egypt Expansion", img: icon_expansion_city_egypt_land, category: "expansions"},

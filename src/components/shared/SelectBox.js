@@ -31,7 +31,7 @@ const SingleValue = ({ children, ...props }) => (
   </components.SingleValue>
 );
 
-const SelectBox = ({ options, width, height, color, selectedOption, onOptionChange, style }) => {
+const SelectBox = ({ options, width, mobileWidth, height, color, selectedOption, onOptionChange, style }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -54,7 +54,7 @@ const SelectBox = ({ options, width, height, color, selectedOption, onOptionChan
   const customStyles = {
     control: (provided) => ({
       ...provided,
-      width: isMobile ? '90%' : width,
+      width: isMobile ? mobileWidth : width,
       margin: "0 auto",
       backgroundColor: color,
       minHeight: height,
@@ -75,7 +75,7 @@ const SelectBox = ({ options, width, height, color, selectedOption, onOptionChan
     }),
     menu: (provided) => ({
       ...provided,
-      width: isMobile ? '90%' : width,
+      width: isMobile ? mobileWidth : width,
       margin: "auto",
       left: 0,
       right: 0,

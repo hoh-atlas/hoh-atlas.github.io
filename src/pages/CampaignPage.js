@@ -13,7 +13,7 @@ const CampaignPage = (props) => {
     ReactGA.send({
         hitType: "pageview",
         page: `/#/${basePath}`,
-        title: props.tab.name,
+        title: `Campaign - ${props.tab.name}`,
     });
 
     const pageName = props.tab.url ? (

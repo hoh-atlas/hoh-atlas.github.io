@@ -16,7 +16,7 @@ const OneQuest = (props) => {
     return (
         <div className="quest">
         <div className="quest-header" style={{ background: `linear-gradient(to right, ${headerColor}, #3e7bad 100%)`}}>
-            <div className="quest-header-label"><img src={questline?.questgiver} alt="Questgiver" style={{width: '30px', marginBottom: '-5px', verticalAlign: 'center'}}/>{questline.name} {questId}/{questline.quests.length}</div>
+            <div className="quest-header-label">{questline?.questgiver && <img src={questline?.questgiver} alt="Questgiver" style={{width: '30px', marginBottom: '-5px', verticalAlign: 'center'}}/>}{questline.name} {questId}/{questline.quests.length}</div>
             <div className="quest-header-reward"></div>
         </div>
         <div className="quest-background-divider"></div>

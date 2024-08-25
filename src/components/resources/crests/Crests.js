@@ -12,22 +12,22 @@ import icon_manipulator_crest_common from "../../../images/shared/resources/icon
 const Crests = () => {
 
     const crestsAdditionalData = [
-        {id: "red_crest_common", description1: "Tesla Storms", description2: "Ascension of _", link: <Link to="/heroes?color=red" className="text-link">Red Heroes</Link>},
-        {id: "yellow_crest_common", description1: "", description2: "Ascension of _", link: <Link to="/heroes?color=yellow" className="text-link">Yellow Heroes</Link>},
-        {id: "green_crest_common", description1: "", description2: "Ascension of _", link: <Link to="/heroes?color=green" className="text-link">Green Heroes</Link>},
-        {id: "blue_crest_common", description1: "", description2: "Ascension of _", link: <Link to="/heroes?color=blue" className="text-link">Blue Heroes</Link>},
-        {id: "purple_crest_common", description1: "", description2: "Ascension of _", link: <Link to="/heroes?color=purple" className="text-link">Purple Heroes</Link>},
-        {id: "red_crest_enhanced", description1: "", description2: "Ascension of _", link: <Link to="/heroes?color=red" className="text-link">Red Heroes</Link>},
-        {id: "yellow_crest_enhanced", description1: "", description2: "Ascension of _", link: <Link to="/heroes?color=yellow" className="text-link">Yellow Heroes</Link>},
-        {id: "green_crest_enhanced", description1: "", description2: "Ascension of _", link: <Link to="/heroes?color=green" className="text-link">Green Heroes</Link>},
-        {id: "blue_crest_enhanced", description1: "", description2: "Ascension of _", link: <Link to="/heroes?color=blue" className="text-link">Blue Heroes</Link>},
-        {id: "purple_crest_enhanced", description1: "", description2: "Ascension of _", link: <Link to="/heroes?color=purple" className="text-link">Purple Heroes</Link>},
-        {id: "red_crest_superior", description1: "", description2: "Ascension of _", link: <Link to="/heroes?color=red" className="text-link">Red Heroes</Link>},
-        {id: "yellow_crest_superior", description1: "", description2: "Ascension of _", link: <Link to="/heroes?color=yellow" className="text-link">Yellow Heroes</Link>},
-        {id: "green_crest_superior", description1: "", description2: "Ascension of _", link: <Link to="/heroes?color=green" className="text-link">Green Heroes</Link>},
-        {id: "blue_crest_superior", description1: "", description2: "Ascension of _", link: <Link to="/heroes?color=blue" className="text-link">Blue Heroes</Link>},
-        {id: "purple_crest_superior", description1: "", description2: "Ascension of _", link: <Link to="/heroes?color=purple" className="text-link">Purple Heroes</Link>},
-        {id: "commander_crest_common", description1: "", description2: "Ascension of _", link: <Link to="/heroes?class=commander" className="text-link">Commanders</Link>},
+        {id: "red_crest_common", description1: "Red Tesla Storms 1 - 6", description2: "Ascension of _", link: <Link to="/heroes?color=red" className="text-link">Red Heroes</Link>},
+        {id: "yellow_crest_common", description1: "Yellow Tesla Storms 1 - 6", description2: "Ascension of _", link: <Link to="/heroes?color=yellow" className="text-link">Yellow Heroes</Link>},
+        {id: "green_crest_common", description1: "Green Tesla Storms 1 - 6", description2: "Ascension of _", link: <Link to="/heroes?color=green" className="text-link">Green Heroes</Link>},
+        {id: "blue_crest_common", description1: "Blue Tesla Storms 1 - 6", description2: "Ascension of _", link: <Link to="/heroes?color=blue" className="text-link">Blue Heroes</Link>},
+        {id: "purple_crest_common", description1: "Purple Tesla Storms 1 - 6", description2: "Ascension of _", link: <Link to="/heroes?color=purple" className="text-link">Purple Heroes</Link>},
+        {id: "red_crest_enhanced", description1: "Red Tesla Storms 6 - 9", description2: "Ascension of _", link: <Link to="/heroes?color=red" className="text-link">Red Heroes</Link>},
+        {id: "yellow_crest_enhanced", description1: "Yellow Tesla Storms 6 - 9", description2: "Ascension of _", link: <Link to="/heroes?color=yellow" className="text-link">Yellow Heroes</Link>},
+        {id: "green_crest_enhanced", description1: "Green Tesla Storms 6 - 9", description2: "Ascension of _", link: <Link to="/heroes?color=green" className="text-link">Green Heroes</Link>},
+        {id: "blue_crest_enhanced", description1: "Blue Tesla Storms 6 - 9", description2: "Ascension of _", link: <Link to="/heroes?color=blue" className="text-link">Blue Heroes</Link>},
+        {id: "purple_crest_enhanced", description1: "Purple Tesla Storms 6 - 9", description2: "Ascension of _", link: <Link to="/heroes?color=purple" className="text-link">Purple Heroes</Link>},
+        {id: "red_crest_superior", description1: "Red Tesla Storms 9 - 15", description2: "Ascension of _", link: <Link to="/heroes?color=red" className="text-link">Red Heroes</Link>},
+        {id: "yellow_crest_superior", description1: "Yellow Tesla Storms 9 - 15", description2: "Ascension of _", link: <Link to="/heroes?color=yellow" className="text-link">Yellow Heroes</Link>},
+        {id: "green_crest_superior", description1: "Green Tesla Storms 9 - 15", description2: "Ascension of _", link: <Link to="/heroes?color=green" className="text-link">Green Heroes</Link>},
+        {id: "blue_crest_superior", description1: "Blue Tesla Storms 9 - 15", description2: "Ascension of _", link: <Link to="/heroes?color=blue" className="text-link">Blue Heroes</Link>},
+        {id: "purple_crest_superior", description1: "Purple Tesla Storms 9 - 15", description2: "Ascension of _", link: <Link to="/heroes?color=purple" className="text-link">Purple Heroes</Link>},
+        /*{id: "commander_crest_common", description1: "", description2: "Ascension of _", link: <Link to="/heroes?class=commander" className="text-link">Commanders</Link>},
         {id: "manipulator_crest_common", description1: "", description2: "Ascension of _", link: <Link to="/heroes?class=manipulator" className="text-link">Manipulators</Link>},
         {id: "champion_crest_common", description1: "", description2: "Ascension of _", link: <Link to="/heroes?class=champion" className="text-link">Champions</Link>},
         {id: "greatleader_crest_common", description1: "", description2: "Ascension of _", link: <Link to="/heroes?class=great-leader" className="text-link">Great Leaders</Link>},
@@ -41,7 +41,7 @@ const Crests = () => {
         {id: "manipulator_crest_superior", description1: "", description2: "Ascension of _", link: <Link to="/heroes?class=manipulator" className="text-link">Manipulators</Link>},
         {id: "champion_crest_superior", description1: "", description2: "Ascension of _", link: <Link to="/heroes?class=champion" className="text-link">Champions</Link>},
         {id: "greatleader_crest_superior", description1: "", description2: "Ascension of _", link: <Link to="/heroes?class=great-leader" className="text-link">Great Leaders</Link>},
-        {id: "genius_crest_superior", description1: "", description2: "Ascension of _", link: <Link to="/heroes?class=genius" className="text-link">Geniuses</Link>},
+        {id: "genius_crest_superior", description1: "", description2: "Ascension of _", link: <Link to="/heroes?class=genius" className="text-link">Geniuses</Link>},*/
     ]
 
     const goodsExpanded = leftJoinArrays(crestsAdditionalData, resources);
@@ -63,7 +63,7 @@ const Crests = () => {
         To discover which heroes require specific crests, refer to the <Link to="/heroes" className="text-link">Heroes Page</Link>.
         </Prologue>
         <SectionDivider/>
-        <table style={{width: '80%'}}>
+        {separatedByCrestTypes[crestTypes[0]]?.length > 0 && <table style={{width: '80%'}}>
             <thead>
                 <tr>
                     <th colSpan={4}>
@@ -89,8 +89,8 @@ const Crests = () => {
                     ))
                 }
             </tbody>
-        </table>
-        <table style={{width: '80%', marginTop: '10px'}}>
+        </table> }
+        {separatedByCrestTypes[crestTypes[1]]?.length > 0 && <table style={{width: '80%', marginTop: '10px'}}>
             <thead>
                 <tr>
                     <th colSpan={4}>
@@ -116,7 +116,7 @@ const Crests = () => {
                     ))
                 }
             </tbody>
-        </table>
+        </table> }
     </>
 }
 

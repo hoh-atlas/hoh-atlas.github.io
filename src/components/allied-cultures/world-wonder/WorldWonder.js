@@ -10,23 +10,24 @@ import useOptionURL from "../../shared/hooks/useOptionURL";
 import Icon from "../../shared/Icon";
 import resources from "../../shared/data/resources";
 
-import allEvents from "../data";
+import allAlliedCultures from "../data";
 
 const WorldWonder = (props) => {
 
-    const basePath = "events";
-    const pageName = "Events - World Wonder";
+    const basePath = "allied-cultures";
+    const pageName = "Allied Cultures - World Wonder";
 
-    const getEvent = () => {
-        return allEvents.find(oneEvent => oneEvent.id == props.selectedEvent);
+    const getAlliedCulture = () => {
+        return allAlliedCultures.find(oneAlliedCulture => oneAlliedCulture.id == props.selectedAlliedCulture);
     }
 
-    const wonder = getEvent().wonder;
+    const wonder = getAlliedCulture().wonder;
   
     return (
       <>
           <Prologue imageSrc={"https://i.ibb.co/2Ndt3D9/Technology-Age-Of-The-Franks-Sacred-Shrines.png"} alt={"Event"} maxHeight={"65px"} >
-              World wonder description
+              The World Wonder defines the main progress of the allied culture. Produce the necessary resources, upgrade the Wonder, collect rewards, and compete with other players in leagues.<br/>
+              Each level of the World Wonder increases the production of one of the allied culture's resources, accelerating your progress.
           </Prologue>
           <SectionDivider />
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "15px",marginBottom: "15px" }}>
