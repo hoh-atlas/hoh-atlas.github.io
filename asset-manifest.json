@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5796a533.css",
-    "main.js": "/static/js/main.d12b8abb.js",
+    "main.css": "/static/css/main.7b9b8b09.css",
+    "main.js": "/static/js/main.7b0092b2.js",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
     "static/media/province_19.webp": "/static/media/province_19.697cccf7a9d4d02bbecd.webp",
     "static/media/loading_navbar.png": "/static/media/loading_navbar.7961641a9e850277dd7e.png",
@@ -28,6 +28,7 @@
     "static/media/Unit_Hercules_fullbody.webp": "/static/media/Unit_Hercules_fullbody.aa09b7bf834575e102a5.webp",
     "static/media/ui_top.webp": "/static/media/ui_top.a4ecb4c5c6f9840f36a4.webp",
     "static/media/great_wall.webp": "/static/media/great_wall.96ae6034f872a3d2141b.webp",
+    "static/media/china_background_news.webp": "/static/media/china_background_news.598f56e701760888eea9.webp",
     "static/media/Unit_CyrusTheGreat_fullbody.webp": "/static/media/Unit_CyrusTheGreat_fullbody.bce1d55d853c116261de.webp",
     "static/media/Unit_RobinHood_fullbody.webp": "/static/media/Unit_RobinHood_fullbody.101ca3240b8d6fe3a13e.webp",
     "static/media/Unit_KingMinos_fullbody.webp": "/static/media/Unit_KingMinos_fullbody.be49ea6e8a6532b13dc7.webp",
@@ -453,11 +454,11 @@
     "static/media/herbs.webp": "/static/media/herbs.45e59d4e77aed5c7159a.webp",
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
-    "main.5796a533.css.map": "/static/css/main.5796a533.css.map",
-    "main.d12b8abb.js.map": "/static/js/main.d12b8abb.js.map"
+    "main.7b9b8b09.css.map": "/static/css/main.7b9b8b09.css.map",
+    "main.7b0092b2.js.map": "/static/js/main.7b0092b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.5796a533.css",
-    "static/js/main.d12b8abb.js"
+    "static/css/main.7b9b8b09.css",
+    "static/js/main.7b0092b2.js"
   ]
 }
