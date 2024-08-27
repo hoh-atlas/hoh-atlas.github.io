@@ -33,7 +33,7 @@ const Intro = () => {
             To follow your current state of resources, take a look at the top menu to find Coins <Icon resource={resources.find((resource) => resource.id === "coins")}/> and Food <Icon resource={resources.find((resource) => resource.id === "food")}/> (limited by the storage capacity of your current era)
             and most importantly, Goods <Icon resource={goods}/> button to track the unlimited resources you produced in workshops and collected on the campaign map.
 
-            {/*<Image src={ui_top} alt="" roundedCorners={true} height={'180px'} heightMobile={'100px'} spacing={true}/>*/}
+            {<Image src={ui_top} alt="" roundedCorners={true} height={'180px'} heightMobile={'100px'} spacing={true}/>}
 
             The storage capacity for Coins and Food increases each time you unlock the first technology of a new era. If your storage is full, you won't be able to collect more from your houses and farms, 
             but you can still receive them from other sources where they stand as rewards. Further option to increase the storage is to purchase a monthly premium.

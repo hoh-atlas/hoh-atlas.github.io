@@ -180,16 +180,6 @@ margin-top:
                     ))
                 }
             </tbody>
-            <thead>
-                <tr>
-                    <th colSpan={5}>Awaken</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td colSpan={5}>text</td>
-                </tr>
-            </tbody>
         </table>
     </div>
 }

@@ -11,7 +11,7 @@ const sectionsDefinition = {
         {
             id: 1,
             url: "",
-            name: "",
+            name: "Intro",
             img: icon_goldfood,
             show: true,
             dynamicSegments: [],

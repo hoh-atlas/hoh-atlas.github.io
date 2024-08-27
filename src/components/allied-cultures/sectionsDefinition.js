@@ -6,7 +6,7 @@ const sectionsDefinition = {
         {
             id: 1,
             url: "",
-            name: "Allied Cultures",
+            name: "Intro",
             img: alliedCultures_intro,
             show: true,
             dynamicSegments: [],

@@ -5758,7 +5758,7 @@ const allHeroes = [
     },
     {
         id: "viking-jarl",
-        name: "Viking Jarl",
+        name: "Erik the Red",
         image: Unit_VikingJarl_fullbody,
         icon: Unit_VikingJarl,
         backdrop: "snow",

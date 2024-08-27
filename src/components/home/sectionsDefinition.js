@@ -4,7 +4,7 @@ const sectionsDefinition = {
         {
             id: 1,
             url: "",
-            name: "Home",
+            name: "Intro",
             img: "",
             show: false,
             dynamicSegments: [],

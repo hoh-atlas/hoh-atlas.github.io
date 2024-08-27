@@ -6,7 +6,7 @@ const sectionsDefinition = {
         {
             id: 1,
             url: "",
-            name: "Campaign",
+            name: "Intro",
             img: icon_battle,
             show: true,
             dynamicSegments: [],

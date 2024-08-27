@@ -10,6 +10,7 @@ import TextContainer from "../../shared/TextContainer";
 import news_banner_abusimbel from "../../../images/home/intro/news_banner_abusimbel.webp";
 import app_store from "../../../images/home/intro/app_store.webp";
 import google_play from "../../../images/home/intro/google_play.webp";
+import china_background_news from "../../../images/home/intro/china_background_news.webp";
 
 const Intro = () => {
     return <>
