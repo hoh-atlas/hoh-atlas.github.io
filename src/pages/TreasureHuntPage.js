@@ -6,7 +6,8 @@ import ReactGA from "react-ga4";
 import layoutTreasureHunt from "../components/treasure-hunt/sectionsDefinition";
 import Intro from "../components/treasure-hunt/intro/Intro";
 import Encounters from "../components/treasure-hunt/encounters/Encounters";
-import treasureHuntData from "../components/treasure-hunt/data";
+import Checkpoints from "../components/treasure-hunt/checkpoints/Checkpoints";
+import { difficulties } from "../components/treasure-hunt/data";
 import useOptionURL from "../components/shared/hooks/useOptionURL";
 import SelectBox from "../components/shared/SelectBox";
 import { Link } from "react-router-dom";
@@ -27,32 +28,22 @@ const TreasureHuntPage = (props) => {
         </span>
     ) : "Treasure Hunt";
 
-    const options = treasureHuntData.map((oneDifficulty) => {
+    const options = difficulties.map((oneDifficulty) => {
         return {value: oneDifficulty.id, label: `${oneDifficulty.name}`, image: `${oneDifficulty.icon}`}
     });
-
-    const { selectedOption, handleOptionChange } = useOptionURL(options, "id");
 
     const renderSelectedTab = () => {
         switch (props.tab.url) {
             case "encounters":
                 return <Encounters tab={props.tab} />
+            case "checkpoints":
+                return <Checkpoints tab={props.tab} />
             default:
                 return <Intro tab={props.tab} />;
         }
     };
 
-    return <Container basePath={basePath} tabs={layoutTreasureHunt.tabs} pageName={pageName} selectBox={
-        <SelectBox
-            options={options}
-            width={"400px"}
-            height={"32px"}
-            color={"#EFEADA"}
-            selectedOption={selectedOption}
-            onOptionChange={handleOptionChange}
-            className="custom-selectbox"
-        />
-    }>
+    return <Container basePath={basePath} tabs={layoutTreasureHunt.tabs} pageName={pageName}>
         {renderSelectedTab()}
     </Container>
 }

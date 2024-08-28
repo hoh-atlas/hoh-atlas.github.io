@@ -2,7 +2,8 @@ import Navbar_Home from "../../images/navbar/Navbar_Home.webp";
 import Navbar_Campaign from "../../images/navbar/Navbar_Campaign.webp";
 import Navbar_Heroes from "../../images/navbar/Navbar_Heroes.webp";
 import Navbar_Resources from "../../images/navbar/Navbar_Resources.webp";
-import Navbar_Events from "../../images/navbar/Navbar_Events.webp";
+import Navbar_AlliedCultures from "../../images/navbar/Navbar_AlliedCultures.webp";
+import Navbar_TreasureHunt from "../../images/navbar/Navbar_TreasureHunt.webp";
 
 const links = [
     {
@@ -28,31 +29,31 @@ const links = [
     },
     {
         id: 4,
-        url: "/treasure-hunt",
-        text: "Treasure Hunt",
-        img: "https://i.ibb.co/6WdfMX6/ath-attempt.png",
-        show: false,
+        url: "/allied-cultures",
+        text: "Allied Cultures",
+        img: Navbar_AlliedCultures,
+        show: true,
     },
     {
         id: 5,
-        url: "/allied-cultures",
-        text: "Allied Cultures",
-        img: Navbar_Events,
+        url: "/treasure-hunt",
+        text: "Treasure Hunt",
+        img: Navbar_TreasureHunt,
         show: true,
     },
     {
         id: 6,
-        url: "/tesla-storms",
-        text: "Tesla Storms",
-        img: "https://i.ibb.co/nRvy33n/event-widget-backer-time-Paradox-2021.png",
-        show: false,
-    },
-    {
-        id: 7,
         url: "/resources",
         text: "Resources",
         img: Navbar_Resources,
         show: true,
+    },
+    {
+        id: 7,
+        url: "/tesla-storms",
+        text: "Tesla Storms",
+        img: "https://i.ibb.co/nRvy33n/event-widget-backer-time-Paradox-2021.png",
+        show: false,
     },
 ]
 

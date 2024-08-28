@@ -1,3 +1,6 @@
+import icon_ath_attempt from "../../images/treasure-hunt/intro/icon_ath_attempt.webp";
+import icon_mystery_chest_gold from "../../images/treasure-hunt/checkpoints/icon_mystery_chest_gold.webp";
+
 const sectionsDefinition = {
     page: "treasure-hunt",
     tabs: [
@@ -5,7 +8,7 @@ const sectionsDefinition = {
             id: 1,
             url: "",
             name: "Intro",
-            img: "https://i.ibb.co/YRG9Spn/ath-attempt.png",
+            img: icon_ath_attempt,
             show: true,
             dynamicSegments: [],
         },
@@ -14,6 +17,14 @@ const sectionsDefinition = {
             url: "encounters",
             name: "Encounters",
             img: "https://i.ibb.co/FDghJ4Y/Treasure-Hunt-Icon.png",
+            show: false,
+            dynamicSegments: [],
+        },
+        {
+            id: 3,
+            url: "checkpoints",
+            name: "Checkpoints",
+            img: icon_mystery_chest_gold,
             show: true,
             dynamicSegments: [],
         },

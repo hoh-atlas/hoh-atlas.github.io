@@ -121,6 +121,7 @@ import silk from '../../../images/shared/resources/silk.webp';
 import silver_ring from '../../../images/shared/resources/silver_ring.webp';
 import stone_tablet from '../../../images/shared/resources/stone_tablet.webp';
 import toga from '../../../images/shared/resources/toga.webp';
+import token_ath_fountain_of_youth from '../../../images/shared/resources/token_ath_fountain_of_youth.webp';
 import tome from '../../../images/shared/resources/tome.webp';
 import tunic from '../../../images/shared/resources/tunic.webp';
 import wardrobe from '../../../images/shared/resources/wardrobe.webp';
@@ -264,6 +265,8 @@ const resources = [
     {id: "silk", name: "Silk", img: silk, category: "culture_china"},
     {id: "porcelain", name: "Porcelain", img: porcelain, category: "culture_china"},
     {id: "kaolin", name: "Kaolin", img: kaolin, category: "culture_china"},
+    // TOKENS
+    {id: "token_ath_fountain_of_youth", name: "Fountain of Youth", img: token_ath_fountain_of_youth, category: "tokens"},
     // EXPANSIONS
     {id: "expansion_regular", name: "Regular Expansion", img: icon_expansion_city_capital_land, category: "expansions"},
     {id: "expansion_egypt", name: "Egypt Expansion", img: icon_expansion_city_egypt_land, category: "expansions"},

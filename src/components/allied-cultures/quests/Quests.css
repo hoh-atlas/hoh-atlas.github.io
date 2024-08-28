@@ -38,3 +38,9 @@
         transform: scale(0.58);
     }
 }
+
+@media screen and (max-width: 380px) {
+    .questlines-container {
+        transform: scale(0.54);
+    }
+}

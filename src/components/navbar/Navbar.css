@@ -82,7 +82,7 @@ nav {
 }
 
 /* Less than 700px */
-@media (max-width: 870px) {
+@media (max-width: 1044px) {
     .navigation {
         flex-direction: column;
         justify-content: center;

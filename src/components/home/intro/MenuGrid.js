@@ -6,7 +6,7 @@ import Navbar_Home from "../../../images/navbar/Navbar_Home.webp";
 import Navbar_Campaign from "../../../images/navbar/Navbar_Campaign.webp";
 import Navbar_Heroes from "../../../images/navbar/Navbar_Heroes.webp";
 import Navbar_Resources from "../../../images/navbar/Navbar_Resources.webp";
-import Navbar_Events from "../../../images/navbar/Navbar_Events.webp";
+import Navbar_AlliedCultures from "../../../images/navbar/Navbar_AlliedCultures.webp";
 
 const MenuGrid = () => {
     const items = [

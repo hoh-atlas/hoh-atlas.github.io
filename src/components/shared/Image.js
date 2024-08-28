@@ -35,11 +35,13 @@ const Image = ({
     borderRadius: roundedCorners ? (cornerRadius ? cornerRadius : '0.50rem') : '0',
     marginTop: spacing ? '20px' : '0',
     marginBottom: spacing ? '20px' : '0',
+    display: inline ? 'inline-block' : 'block',
+    verticalAlign: 'middle',
     ...rest
   };
 
   return (
-    <div className={`${centered ? 'centered-image-container' : ''} ${inline ? 'inline-image-container' : ''}`}>
+    <div className={`${centered && !inline ? 'centered-image-container' : ''} ${inline ? 'inline-image-container' : ''}`}>
       <img src={src} alt={alt} style={imageStyles} />
     </div>
   );

@@ -1,10 +1,11 @@
 import "./TextBlock.css";
 
-const TextBlock = (props) => {
-
-    return <div className="textblock">
-        {props.children}
-    </div>
+const TextBlock = ({ centered = false, children }) => {
+    return (
+        <div className={`textblock ${centered ? 'centered' : ''}`}>
+            {children}
+        </div>
+    );
 }
 
 export default TextBlock;

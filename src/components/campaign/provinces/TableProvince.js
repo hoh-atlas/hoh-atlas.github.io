@@ -120,7 +120,7 @@ const TableProvince = (props) => {
                 <tbody>
                     {props.data.encounters.map((encounter, index) => (
                         <React.Fragment key={index}>
-                        <tr>
+                        <tr style={{ borderTop: '2px solid #e1cda4', borderBottom: '2px dotted #e1cda4'}}>
                             {
                                 COLUMNS.map((oneColumn) => (
                                     isBaseColumn(oneColumn) ?
