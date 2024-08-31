@@ -3054,7 +3054,7 @@ const allProvinces = [
                         amount: 1200
                     },
                     {
-                        resouce: "expansion_regular",
+                        resource: "expansion_regular",
                         amount: 1
                     }
                 ],

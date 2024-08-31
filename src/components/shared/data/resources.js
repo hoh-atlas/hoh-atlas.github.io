@@ -4,6 +4,7 @@ import bronze_bracelet from '../../../images/shared/resources/bronze_bracelet.we
 import CampaignEnergy from '../../../images/shared/resources/CampaignEnergy.webp';
 import cape from '../../../images/shared/resources/cape.webp';
 import cartwheel from '../../../images/shared/resources/cartwheel.webp';
+import ceremonial_dress from '../../../images/shared/resources/ceremonial_dress.webp';
 import chili from '../../../images/shared/resources/chili.webp';
 import Coin from '../../../images/shared/resources/Coin.webp';
 import column from '../../../images/shared/resources/column.webp';
@@ -13,6 +14,7 @@ import Food from '../../../images/shared/resources/Food.webp';
 import Gem from '../../../images/shared/resources/Gem.webp';
 import goblet from '../../../images/shared/resources/goblet.webp';
 import gold_laurel from '../../../images/shared/resources/gold_laurel.webp';
+import golden_mask from '../../../images/shared/resources/golden_mask.webp';
 import herbs from '../../../images/shared/resources/herbs.webp';
 import icon_agate from '../../../images/shared/resources/icon_agate.webp';
 import icon_amber from '../../../images/shared/resources/icon_amber.webp';
@@ -102,6 +104,10 @@ import icon_yellow_crest_enhanced from '../../../images/shared/resources/icon_ye
 import icon_yellow_crest_superior from '../../../images/shared/resources/icon_yellow_crest_superior.webp';
 import ink from '../../../images/shared/resources/ink.webp';
 import iron_pendant from '../../../images/shared/resources/iron_pendant.webp';
+import irrigation_0 from '../../../images/shared/resources/irrigation_0.webp';
+import irrigation_1 from '../../../images/shared/resources/irrigation_1.webp';
+import irrigation_2 from '../../../images/shared/resources/irrigation_2.webp';
+import irrigation_3 from '../../../images/shared/resources/irrigation_3.webp';
 import kaolin from '../../../images/shared/resources/kaolin.webp';
 import linen_shirt from '../../../images/shared/resources/linen_shirt.webp';
 import manuscript from '../../../images/shared/resources/manuscript.webp';
@@ -257,7 +263,13 @@ const resources = [
     {id: "gold_ore", name: "Gold Ore", img: icon_gold_ore, category: "culture_egypt"},
     {id: "papyrus_scroll", name: "Papyrus Scroll", img: icon_papyrus_scroll, category: "culture_egypt"},
     {id: "ankh", name: "Ankh", img: icon_ankh, category: "culture_egypt"},
+    {id: "ceremonial_dress", name: "Ceremonial Dress", img: ceremonial_dress, category: "culture_egypt"},
+    {id: "golden_mask", name: "Golden Mask", img: golden_mask, category: "culture_egypt"},
     {id: "egypt_worker", name: "Egypt Worker", img: icon_workers_city_egypt, category: "culture_egypt"},
+    {id: "irrigation_0", name: "Irrigation", img: irrigation_0, category: "culture_egypt"},
+    {id: "irrigation_1", name: "Irrigation", img: irrigation_1, category: "culture_egypt"},
+    {id: "irrigation_2", name: "Irrigation", img: irrigation_2, category: "culture_egypt"},
+    {id: "irrigation_3", name: "Irrigation", img: irrigation_3, category: "culture_egypt"},
     // CHINA ALLIED CULTURE
     {id: "wu_zhu", name: "Wu Zhu", img: wu_zhu, category: "culture_china"},
     {id: "rice", name: "Rice", img: rice, category: "culture_china"},

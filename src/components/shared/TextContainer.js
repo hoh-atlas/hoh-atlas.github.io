@@ -7,6 +7,7 @@ const TextContainer = ({
     headerTexts = [],
     texts = [],
     imageUrls = [],
+    links,
     style,
     textRectangleHeight,
     pulsate,
@@ -20,6 +21,8 @@ const TextContainer = ({
     const hasMultipleItems = length > 1;
 
     const validIndex = (length > 0) ? currentIndex % length : 0;
+
+    const currentLink = Array.isArray(links) ? links[validIndex] : links;
 
     const prevSlide = () => {
         setShowText(false);
@@ -64,7 +67,7 @@ const TextContainer = ({
     const currentText = texts[validIndex] || '';
     const currentImageUrl = imageUrls[validIndex] || '';
 
-    return (
+    const content = (
         <div
             className={`intro-container ${centered ? 'centered' : ''} ${pulsate ? 'pulsate' : ''}`}
             style={style}
@@ -94,6 +97,14 @@ const TextContainer = ({
                 )}
             </div>
         </div>
+    );
+
+    return currentLink ? (
+        <a href={currentLink} className='text-link-white' style={{ textDecoration: 'none' }} rel="noopener noreferrer">
+            {content}
+        </a>
+    ) : (
+        content
     );
 }
 
