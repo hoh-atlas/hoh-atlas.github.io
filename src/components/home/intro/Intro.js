@@ -27,7 +27,7 @@ const Intro = () => {
     <SectionDivider />
     <H1 center={true} style={{marginBottom: '0px'}} >Frequently Used Menu</H1>
     <MenuGrid />
-    <SectionDivider />
+    {/*<SectionDivider />
     <TextContainer
         centered={true}
         headerTexts={['The Grand Celebration has started!']}
@@ -37,7 +37,7 @@ const Intro = () => {
         imageUrls={[news_egypt_banner]}
         links={['https://hoh-atlas.com/#/allied-cultures/?id=egypt_cheops_pyramid']}
         pulsate={true}>
-    </TextContainer>
+    </TextContainer>*/}
     <SectionDivider />
     <CardContainer 
         card1={
