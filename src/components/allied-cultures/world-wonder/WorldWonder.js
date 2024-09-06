@@ -9,8 +9,10 @@ import SectionDivider from "../../shared/SectionDivider";
 import useOptionURL from "../../shared/hooks/useOptionURL";
 import Icon from "../../shared/Icon";
 import resources from "../../shared/data/resources";
+import H1 from "../../shared/H1";
 
 import allAlliedCultures from "../data";
+import worldwonder_icon from "../../../images/allied-cultures/world-wonder/worldwonder_icon.webp";
 
 const WorldWonder = (props) => {
 
@@ -25,11 +27,12 @@ const WorldWonder = (props) => {
   
     return (
       <>
-          <Prologue imageSrc={"https://i.ibb.co/2Ndt3D9/Technology-Age-Of-The-Franks-Sacred-Shrines.png"} alt={"Event"} maxHeight={"65px"} >
+          <Prologue imageSrc={worldwonder_icon} alt={"Event"} maxHeight={"65px"} >
               The World Wonder defines the main progress of the allied culture. Produce the necessary resources, upgrade the Wonder, collect rewards, and compete with other players in leagues.<br/>
               Each level of the World Wonder increases the production of one of the allied culture's resources, accelerating your progress.
           </Prologue>
           <SectionDivider />
+          <H1 center={true}>{wonder.name}</H1>
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "15px",marginBottom: "15px" }}>
               <img src={wonder?.image} style={{ maxWidth: "300px" }} />
           </div>

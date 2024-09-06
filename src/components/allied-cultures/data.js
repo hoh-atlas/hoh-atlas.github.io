@@ -2,17 +2,34 @@ import hua_mulan from "../../images/heroes/intro/icons/Unit_HuaMulan.webp";
 import great_wall from "../../images/allied-cultures/world-wonder/great_wall.webp";
 import cheops_pyramid from "../../images/allied-cultures/world-wonder/cheops_pyramid.webp";
 import great_sphinx from "../../images/allied-cultures/world-wonder/great_sphinx.webp";
+import terracotta_army from "../../images/allied-cultures/world-wonder/terracotta_army.webp";
 import irrigation_1 from "../../images/shared/resources/irrigation_1.webp";
 import irrigation_3 from "../../images/shared/resources/irrigation_3.webp";
 import city_event_banner_egypt_cheopspyramid from "../../images/allied-cultures/intro/city_event_banner_egypt_cheopspyramid.webp";
 import city_event_banner_china_greatwall from "../../images/allied-cultures/intro/city_event_banner_china_greatwall.webp";
 import city_event_banner_egypt_greatsphinx from "../../images/allied-cultures/intro/city_event_banner_egypt_great_sphinx.webp";
+import city_event_banner_terracotta_army from "../../images/allied-cultures/intro/city_event_banner_china_terracottaarmy.webp";
+
+import China_Small_Home_Lv1 from "../../images/allied-cultures/buildings/China_Small_Home_Lv1.webp";
+import China_Small_Home_Lv2 from "../../images/allied-cultures/buildings/China_Small_Home_Lv2.webp";
+import China_Small_Home_Lv3 from "../../images/allied-cultures/buildings/China_Small_Home_Lv3.webp";
+import China_Small_Home_Lv4 from "../../images/allied-cultures/buildings/China_Small_Home_Lv4.webp";
+import China_Small_Home_Lv5 from "../../images/allied-cultures/buildings/China_Small_Home_Lv5.webp";
+import China_Small_Home_Lv6 from "../../images/allied-cultures/buildings/China_Small_Home_Lv6.webp";
+import China_Average_Home_Lv1 from "../../images/allied-cultures/buildings/China_Average_Home_Lv1.webp";
+import China_Average_Home_Lv2 from "../../images/allied-cultures/buildings/China_Average_Home_Lv2.webp";
+import China_Average_Home_Lv3 from "../../images/allied-cultures/buildings/China_Average_Home_Lv3.webp";
+import China_Average_Home_Lv4 from "../../images/allied-cultures/buildings/China_Average_Home_Lv4.webp";
+import China_Average_Home_Lv5 from "../../images/allied-cultures/buildings/China_Average_Home_Lv5.webp";
+import China_Average_Home_Lv6 from "../../images/allied-cultures/buildings/China_Average_Home_Lv6.webp";
+import China_Luxurious_Home_Lv1 from "../../images/allied-cultures/buildings/China_Luxurious_Home_Lv1.webp";
+import China_Luxurious_Home_Lv4 from "../../images/allied-cultures/buildings/China_Luxurious_Home_Lv4.webp";
 
 const allAlliedCultures = [
     {
         id: "china_terracotta_army",
         name: "The Festival of Warriors",
-        image: "https://i.ibb.co/WVvnWxS/btn-event-city-wonder-china-terracottaarmy.png",
+        image: city_event_banner_terracotta_army,
         questlineColor: "#BF2C4E",
         questlines: [
             {   
@@ -681,10 +698,546 @@ const allAlliedCultures = [
             }
         ],
         buildingCategories: {
-            
+            "home": {
+                categoryName: "Home",
+                buildings: [
+                    {
+                        id: "small_home",
+                        name: "Small Home",
+                        size: "2x2",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Small_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "5s",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 1200,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: China_Small_Home_Lv2,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 380
+                                    }
+                                ],
+                                construction: {
+                                    time: "15s",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 2250,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: China_Small_Home_Lv3,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 2900
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 4500,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: China_Small_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 8700
+                                    }
+                                ],
+                                construction: {
+                                    time: "3m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 13500,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: China_Small_Home_Lv5,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 17000
+                                    }
+                                ],
+                                construction: {
+                                    time: "12m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 24000,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: China_Small_Home_Lv6,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 34000
+                                    }
+                                ],
+                                construction: {
+                                    time: "25m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 42000,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "medium_home",
+                        name: "Medium Home",
+                        size: "4x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Average_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 250
+                                    }
+                                ],
+                                construction: {
+                                    time: "10s",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 3700,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: China_Average_Home_Lv2,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 1900
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 7500,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: China_Average_Home_Lv3,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 14000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m30s",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 15000,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: China_Average_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 42000
+                                    }
+                                ],
+                                construction: {
+                                    time: "5m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 45000,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: China_Average_Home_Lv5,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 84000
+                                    }
+                                ],
+                                construction: {
+                                    time: "25m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 80000,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: China_Average_Home_Lv6,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 170000
+                                    }
+                                ],
+                                construction: {
+                                    time: "50m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 145000,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "luxurious_home",
+                        name: "Luxurious Home",
+                        size: "3x2",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Luxurious_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 250
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 4300,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: China_Luxurious_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 80
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 8700,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: China_Luxurious_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 80
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 17300,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: China_Luxurious_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 80
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 55000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: China_Luxurious_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 80
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 95000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: China_Luxurious_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 80
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 165000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "papyrus_field": {
+                categoryName: "Papyrus Field"
+            }
         },
         wonder: {
-            image: "",
+            name: "Terracotta Army",
+            image: terracotta_army,
             levels: [
                 {
                     level: 0,
@@ -2826,6 +3379,7 @@ const allAlliedCultures = [
             }
         },
         wonder: {
+            name: "Cheops Pyramid",
             image: cheops_pyramid,
             levels: [
                 {
@@ -4699,6 +5253,7 @@ const allAlliedCultures = [
             
         },
         wonder: {
+            name: "Great Wall",
             image: great_wall,
             levels: [
                 {
@@ -6316,6 +6871,7 @@ const allAlliedCultures = [
             }
         },
         wonder: {
+            name: "",
             image: "",
             levels: [
                 {
@@ -6410,11 +6966,6 @@ const allAlliedCultures = [
         id: "china_forbidden_city",
         name: "Forbidden City",
         image: "https://i.ibb.co/cTb6RV8/btn-event-city-wonder-china-forbiddencity.png",
-    },
-    {
-        id: "china_terracotta_army",
-        name: "Terracotta Army",
-        image: "https://i.ibb.co/WVvnWxS/btn-event-city-wonder-china-terracottaarmy.png",
     },*/
 ]
 

@@ -12,6 +12,7 @@ import app_store from "../../../images/home/intro/app_store.webp";
 import google_play from "../../../images/home/intro/google_play.webp";
 import china_background_news from "../../../images/home/intro/china_background_news.webp";
 import news_egypt_banner from "../../../images/home/intro/news_egypt_banner.webp";
+import news_china_banner from "../../../images/home/intro/news_china_banner.webp";
 
 const Intro = () => {
     return <>
@@ -38,6 +39,17 @@ const Intro = () => {
         links={['https://hoh-atlas.com/#/allied-cultures/?id=egypt_cheops_pyramid']}
         pulsate={true}>
     </TextContainer>*/}
+    <SectionDivider />
+    <TextContainer
+        centered={true}
+        headerTexts={['The Festival of Warriors has started!']}
+        texts={[``]}
+        style={{ marginBottom: '20px', marginTop: '5px' }}
+        textRectangleHeight={'150px'}
+        imageUrls={[news_china_banner]}
+        links={['https://hoh-atlas.com/#/allied-cultures/?id=china_terracotta_army']}
+        pulsate={true}>
+    </TextContainer>
     <SectionDivider />
     <CardContainer 
         card1={

@@ -93,6 +93,7 @@ import icon_tesla_core from '../../../images/shared/resources/icon_tesla_core.we
 import icon_travelers_compass from '../../../images/shared/resources/icon_travelers_compass.webp';
 import icon_war_horn from '../../../images/shared/resources/icon_war_horn.webp';
 import icon_workers_city_egypt from '../../../images/shared/resources/icon_workers_city_egypt.webp';
+import icon_workers_city_china from '../../../images/shared/resources/icon_workers_city_china.webp';
 import icon_xp_hero from '../../../images/shared/resources/icon_xp_hero.webp';
 import icon_xp_scroll_common from '../../../images/shared/resources/icon_xp_scroll_common.webp';
 import icon_xp_scroll_epic from '../../../images/shared/resources/icon_xp_scroll_epic.webp';
@@ -277,6 +278,7 @@ const resources = [
     {id: "silk", name: "Silk", img: silk, category: "culture_china"},
     {id: "porcelain", name: "Porcelain", img: porcelain, category: "culture_china"},
     {id: "kaolin", name: "Kaolin", img: kaolin, category: "culture_china"},
+    {id: "china_worker", name: "China Worker", img: icon_workers_city_china, category: "culture_china"},
     // TOKENS
     {id: "token_ath_fountain_of_youth", name: "Fountain of Youth", img: token_ath_fountain_of_youth, category: "tokens"},
     // EXPANSIONS

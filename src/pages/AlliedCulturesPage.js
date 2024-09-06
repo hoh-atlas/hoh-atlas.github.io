@@ -52,7 +52,7 @@ const AlliedCulturesPage = (props) => {
 
     const handleOptionChange = (selectedOption) => {
         setSelectedOption(selectedOption);
-        const newUrl = `/#/allied-cultures/?id=${selectedOption.value}`;
+        const newUrl = `/#/allied-cultures/${props.tab.url}?id=${selectedOption.value}`;
         window.history.pushState({ path: newUrl }, '', newUrl);
     };
 

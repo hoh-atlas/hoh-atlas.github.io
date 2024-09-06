@@ -10,6 +10,7 @@ import OneQuest from "./OneQuest";
 import OneQuestline from "./OneQuestline";
 
 import allAlliedCultures from "../data";
+import quests_icon from "../../../images/allied-cultures/quests/quests_icon.webp";
 
 const Quests = (props) => {
 
@@ -22,7 +23,7 @@ const Quests = (props) => {
   
     return (
         <>
-            <Prologue imageSrc={"https://i.ibb.co/Yphv4st/event-hud-icon-persian-2023-299042.png"} alt={"Event"} maxHeight={"65px"} >
+            <Prologue imageSrc={quests_icon} alt={"Event"} maxHeight={"65px"} >
                 Quests introduce players to the story of the allied culture and offer a variety of rewards.
             </Prologue>
             <SectionDivider />

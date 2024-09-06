@@ -13,6 +13,7 @@ import Icon from "../../shared/Icon";
 
 import allAlliedCultures from "../data";
 import resources from "../../shared/data/resources";
+import buildings_icon from "../../../images/allied-cultures/buildings/buildings_icon.webp";
 
 const Buildings = (props) => {
 
@@ -27,8 +28,8 @@ const Buildings = (props) => {
   
     return (
       <>
-        <Prologue imageSrc={"https://i.ibb.co/DtgGzzS/Technology-Iberian-Era-Masia.png"} alt={"Event"} maxHeight={"65px"} >
-            
+        <Prologue imageSrc={buildings_icon} alt={"Event"} maxHeight={"65px"} >
+            More content about buildings will be added soon.
         </Prologue>
         <SectionDivider />
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "15px",marginBottom: "15px" }}>
