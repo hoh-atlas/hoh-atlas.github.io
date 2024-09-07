@@ -10,7 +10,7 @@
 nav {
     background-color: #3367b4;
     border-radius: 0px 0px 15px 15px;
-    background-image: url('../../images/loading_navbar.png');
+    background-image: url('../../images/shared/navbar.webp');
     background-repeat: repeat-x;
     background-position: left bottom -7px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);

@@ -10,7 +10,7 @@ import allProvinces from "../data";
 import TableProvince from "./TableProvince";
 import TableFinalRewards from "./TableFinalRewards";
 
-import icon_expansion_city_capital_land from "../../../images/shared/resources/icon_expansion_city_capital_land.webp";
+import icon_expansion_city_capital_land from "../../../images/campaign/provinces/icon_expansion_city_capital_land.webp";
 
 const Provinces = () => {
 

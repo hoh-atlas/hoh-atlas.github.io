@@ -15,6 +15,8 @@ import Icon from "../../shared/Icon";
 import resources from "../../shared/data/resources";
 import SectionDivider from "../../shared/SectionDivider";
 
+import icon_star from "../../../images/heroes/intro/icon_star.webp";
+
 const OneHero = (props) => {
 
     const {heroId} = useParams();
@@ -112,7 +114,7 @@ margin-top:
                     </td>
                     <td style={{ width: '17.5%', height: '120px'}}>
                         {[...Array(stars)].map( () => (
-                            <Image src="https://i.ibb.co/HXszQJS/icon-star.png" inline={true} maxWidth={'30px'}/>
+                            <Image src={icon_star} inline={true} maxWidth={'30px'}/>
                         ))}
                         <br/>
                         {stars === 5 ? "Legendary" : stars === 4 ? "Epic" : stars === 3 ? "Rare" : stars === 2 ? "Uncommon" : stars === 1 ? "Common" : "No Stars"}

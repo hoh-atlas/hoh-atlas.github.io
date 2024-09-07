@@ -1,4 +1,5 @@
 import icon_battle from "../../images/campaign/intro/icon-battle.webp";
+import icon_expansion_city_capital_land from "../../images/campaign/provinces/icon_expansion_city_capital_land.webp";
 
 const sectionsDefinition = {
     page: "campaign",
@@ -15,7 +16,7 @@ const sectionsDefinition = {
             id: 2,
             url: "provinces",
             name: "Provinces",
-            img: "https://i.ibb.co/PZ7fb4t/icon-expansion-city-capital-land.png",
+            img: icon_expansion_city_capital_land,
             show: true,
             dynamicSegments: [],
         },

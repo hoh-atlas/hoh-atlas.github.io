@@ -3,7 +3,6 @@ import ReactGA from "react-ga4";
 import { useParams, Link } from "react-router-dom";
 import layoutHeroes from "../components/heroes/sectionsDefinition";
 import Intro from "../components/heroes/intro/Intro";
-import Heroes from "../components/heroes/heroes/Heroes";
 import { allHeroes } from "../components/heroes/data";
 
 const HeroesPage = (props) => {
@@ -29,8 +28,6 @@ const HeroesPage = (props) => {
 
     const renderSelectedTab = () => {
         switch (props.tab.url) {
-            case "guide":
-                return <Heroes tab={props.tab} />
             default:
                 return <Intro tab={props.tab} heroId={heroId} />;
         }

@@ -85,6 +85,7 @@ import icon_rift_token_common_part from '../../../images/shared/resources/icon_r
 import icon_rift_token_egypt_common from '../../../images/shared/resources/icon_rift_token_egypt_common.webp';
 import icon_rift_token_legendary from '../../../images/shared/resources/icon_rift_token_legendary.webp';
 import icon_rift_token_legendary_part from '../../../images/shared/resources/icon_rift_token_legendary_part.webp';
+import icon_rift_token_seasonpass_common from '../../../images/shared/resources/icon_rift_token_seasonpass_common.webp';
 import icon_rift_token_vikings_common from '../../../images/shared/resources/icon_rift_token_vikings_common.webp';
 import icon_roman_cameo_ring from '../../../images/shared/resources/icon_roman_cameo_ring.webp';
 import icon_shadow_dial from '../../../images/shared/resources/icon_shadow_dial.webp';
@@ -158,7 +159,7 @@ const resources = [
     {id: "antimatter", name: "Antimatter", img: icon_rift_token_common, category: "antimatters"},
     {id: "antimatter_egyptian", name: "Egyptian Antimatter", img: icon_rift_token_egypt_common, category: "antimatters"},
     {id: "antimatter_legendary", name: "Legendary Antimatter", img: icon_rift_token_legendary, category: "antimatters"},
-    {id: "antimatter_seasonpass", name: "Season Pass Antimatter", img: "https://i.ibb.co/6Drpr0d/icon-rift-token-seasonpass-common.png", category: "antimatters"}, //old image: https://i.ibb.co/RbK0gQc/icon-rift-token-seasonpass-common.png
+    {id: "antimatter_seasonpass", name: "Season Pass Antimatter", img: icon_rift_token_seasonpass_common, category: "antimatters"}, //old image: https://i.ibb.co/RbK0gQc/icon-rift-token-seasonpass-common.png
     {id: "antimatter_china", name: "China Antimatter", img: icon_rift_token_china_common, category: "antimatters"},
     {id: "antimatter_vikings", name: "Vikings Antimatter", img: icon_rift_token_vikings_common, category: "antimatters"},
     // CRESTS - COLORS

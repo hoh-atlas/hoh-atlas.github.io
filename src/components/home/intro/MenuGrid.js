@@ -24,7 +24,7 @@ const MenuGrid = () => {
                 <Link key={item.id} to={item.link} className="text-link-skin">
                     <div className="menu-item">
                         <span className="menu-text">{item.text}</span>
-                        <img src={item.icon ? item.icon : "https://i.ibb.co/qdFQ48q/home.png"} alt="Icon" className="menu-icon" />
+                        <img src={item.icon ? item.icon : Navbar_Home} alt="Icon" className="menu-icon" />
                     </div>
                 </Link>
             ))}

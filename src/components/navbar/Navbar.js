@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
-import logo from "../../images/hoh_logo.png";
+import logo from "../../images/shared/logo.webp";
 import links from "./links";
 
 import { GiHamburgerMenu } from "react-icons/gi";

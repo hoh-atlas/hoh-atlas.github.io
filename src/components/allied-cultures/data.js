@@ -1,4 +1,5 @@
 import hua_mulan from "../../images/heroes/intro/icons/Unit_HuaMulan.webp";
+import Questgiver_Egypt_Cleopatra from "../../images/allied-cultures/quests/Questgiver_Egypt_Cleopatra.webp";
 import great_wall from "../../images/allied-cultures/world-wonder/great_wall.webp";
 import cheops_pyramid from "../../images/allied-cultures/world-wonder/cheops_pyramid.webp";
 import great_sphinx from "../../images/allied-cultures/world-wonder/great_sphinx.webp";
@@ -9,6 +10,19 @@ import city_event_banner_egypt_cheopspyramid from "../../images/allied-cultures/
 import city_event_banner_china_greatwall from "../../images/allied-cultures/intro/city_event_banner_china_greatwall.webp";
 import city_event_banner_egypt_greatsphinx from "../../images/allied-cultures/intro/city_event_banner_egypt_great_sphinx.webp";
 import city_event_banner_terracotta_army from "../../images/allied-cultures/intro/city_event_banner_china_terracottaarmy.webp";
+
+import Egypt_Small_Home_Lv1 from "../../images/allied-cultures/buildings/Egypt_Small_Home_Lv1.webp";
+import Egypt_Small_Home_Lv2 from "../../images/allied-cultures/buildings/Egypt_Small_Home_Lv2.webp";
+import Egypt_Small_Home_Lv3 from "../../images/allied-cultures/buildings/Egypt_Small_Home_Lv3.webp";
+import Egypt_Small_Home_Lv4 from "../../images/allied-cultures/buildings/Egypt_Small_Home_Lv4.webp";
+import Egypt_Small_Home_Lv5 from "../../images/allied-cultures/buildings/Egypt_Small_Home_Lv5.webp";
+import Egypt_Small_Home_Lv6 from "../../images/allied-cultures/buildings/Egypt_Small_Home_Lv6.webp";
+import Egypt_Average_Home_Lv1 from "../../images/allied-cultures/buildings/Egypt_Average_Home_Lv1.webp";
+import Egypt_Average_Home_Lv2 from "../../images/allied-cultures/buildings/Egypt_Average_Home_Lv2.webp";
+import Egypt_Average_Home_Lv3 from "../../images/allied-cultures/buildings/Egypt_Average_Home_Lv3.webp";
+import Egypt_Average_Home_Lv4 from "../../images/allied-cultures/buildings/Egypt_Average_Home_Lv4.webp";
+import Egypt_Average_Home_Lv5 from "../../images/allied-cultures/buildings/Egypt_Average_Home_Lv5.webp";
+import Egypt_Average_Home_Lv6 from "../../images/allied-cultures/buildings/Egypt_Average_Home_Lv6.webp";
 
 import China_Small_Home_Lv1 from "../../images/allied-cultures/buildings/China_Small_Home_Lv1.webp";
 import China_Small_Home_Lv2 from "../../images/allied-cultures/buildings/China_Small_Home_Lv2.webp";
@@ -3444,7 +3458,7 @@ const allAlliedCultures = [
                 id: 1,
                 appearsAfter: [],
                 name: "The Grand Celebration",
-                questgiver: "https://i.ibb.co/9gDdcQ6/Questgiver-Egypt-Cleopatra.png",
+                questgiver: Questgiver_Egypt_Cleopatra,
                 reward: {
                     resource: "deben",
                     amount: 250
@@ -3490,7 +3504,7 @@ const allAlliedCultures = [
                 id: 2,
                 appearsAfter: [1],
                 name: "Papyrus Scrolls",
-                questgiver: "https://i.ibb.co/9gDdcQ6/Questgiver-Egypt-Cleopatra.png",
+                questgiver: Questgiver_Egypt_Cleopatra,
                 reward: {
                     resource: "deben",
                     amount: 500
@@ -3548,7 +3562,7 @@ const allAlliedCultures = [
                 id: 3,
                 appearsAfter: [1],
                 name: "Ankhs",
-                questgiver: "https://i.ibb.co/9gDdcQ6/Questgiver-Egypt-Cleopatra.png",
+                questgiver: Questgiver_Egypt_Cleopatra,
                 reward: {
                     resource: "deben",
                     amount: 500
@@ -3606,7 +3620,7 @@ const allAlliedCultures = [
                 id: 4,
                 appearsAfter: [2,3],
                 name: "Irrigation",
-                questgiver: "https://i.ibb.co/9gDdcQ6/Questgiver-Egypt-Cleopatra.png",
+                questgiver: Questgiver_Egypt_Cleopatra,
                 reward: {
                     resource: "deben",
                     amount: 750
@@ -3664,7 +3678,7 @@ const allAlliedCultures = [
                 id: 5,
                 appearsAfter: [4],
                 name: "Workforce",
-                questgiver: "https://i.ibb.co/9gDdcQ6/Questgiver-Egypt-Cleopatra.png",
+                questgiver: Questgiver_Egypt_Cleopatra,
                 reward: [
                     {
                         resource: "papyrus",
@@ -3718,7 +3732,7 @@ const allAlliedCultures = [
                 id: 6,
                 appearsAfter: [5],
                 name: "Path to Greatness",
-                questgiver: "https://i.ibb.co/9gDdcQ6/Questgiver-Egypt-Cleopatra.png",
+                questgiver: Questgiver_Egypt_Cleopatra,
                 reward: {
                     resource: "deben",
                     amount: 250000
@@ -3800,7 +3814,7 @@ const allAlliedCultures = [
                 id: 7,
                 appearsAfter: [5],
                 name: "Crossing the Nile",
-                questgiver: "https://i.ibb.co/9gDdcQ6/Questgiver-Egypt-Cleopatra.png",
+                questgiver: Questgiver_Egypt_Cleopatra,
                 reward: [
                     {
                         resource: "papyrus_scroll",
@@ -3851,7 +3865,7 @@ const allAlliedCultures = [
                 id: 8,
                 appearsAfter: [6],
                 name: "The Final Stretch",
-                questgiver: "https://i.ibb.co/9gDdcQ6/Questgiver-Egypt-Cleopatra.png",
+                questgiver: Questgiver_Egypt_Cleopatra,
                 reward: [
                     {
                         resource: "ceremonial_dress",
@@ -3963,7 +3977,7 @@ const allAlliedCultures = [
                 id: 9,
                 appearsAfter: [2,3],
                 name: "The Cheops Pyramid - Phase I",
-                questgiver: "https://i.ibb.co/9gDdcQ6/Questgiver-Egypt-Cleopatra.png",
+                questgiver: Questgiver_Egypt_Cleopatra,
                 reward: {
                     resource: "antimatter_egyptian",
                     amount: 2
@@ -4019,7 +4033,7 @@ const allAlliedCultures = [
                 id: 10,
                 appearsAfter: [9],
                 name: "The Cheops Pyramid - Phase II",
-                questgiver: "https://i.ibb.co/9gDdcQ6/Questgiver-Egypt-Cleopatra.png",
+                questgiver: Questgiver_Egypt_Cleopatra,
                 reward: {
                     resource: "antimatter_egyptian",
                     amount: 2
@@ -4064,7 +4078,7 @@ const allAlliedCultures = [
                 id: 11,
                 appearsAfter: [10],
                 name: "The Cheops Pyramid - Phase III",
-                questgiver: "https://i.ibb.co/9gDdcQ6/Questgiver-Egypt-Cleopatra.png",
+                questgiver: Questgiver_Egypt_Cleopatra,
                 reward: {
                     resource: "antimatter_egyptian",
                     amount: 15
@@ -4140,7 +4154,7 @@ const allAlliedCultures = [
                         levels: [
                             {
                                 level: 1,
-                                image: "https://i.ibb.co/fF8K4XR/Egypt-Small-Home-1.png",
+                                image: Egypt_Small_Home_Lv1,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -4168,7 +4182,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 2,
-                                image: "https://i.ibb.co/sqnS25d/Egypt-Small-Home-2.png",
+                                image: Egypt_Small_Home_Lv2,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -4196,7 +4210,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 3,
-                                image: "https://i.ibb.co/tcgLgwK/Egypt-Small-Home-3.png",
+                                image: Egypt_Small_Home_Lv3,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -4224,7 +4238,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 4,
-                                image: "https://i.ibb.co/WxL8Xy8/Egypt-Small-Home-4.png",
+                                image: Egypt_Small_Home_Lv4,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -4252,7 +4266,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 5,
-                                image: "https://i.ibb.co/1RZhxnX/Egypt-Small-Home-5.png",
+                                image: Egypt_Small_Home_Lv5,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -4280,7 +4294,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 6,
-                                image: "https://i.ibb.co/TkddDcf/Egypt-Small-Home-6.png",
+                                image: Egypt_Small_Home_Lv6,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -4315,7 +4329,7 @@ const allAlliedCultures = [
                         levels: [
                             {
                                 level: 1,
-                                image: "https://i.ibb.co/zGtcq21/Egypt-Average-Home-1.png",
+                                image: Egypt_Average_Home_Lv1,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -4343,7 +4357,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 2,
-                                image: "https://i.ibb.co/F35K66m/Egypt-Average-Home-2.png",
+                                image: Egypt_Average_Home_Lv2,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -4371,7 +4385,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 3,
-                                image: "https://i.ibb.co/ThM9jT4/Egypt-Average-Home-3.png",
+                                image: Egypt_Average_Home_Lv3,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -4399,7 +4413,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 4,
-                                image: "https://i.ibb.co/QfHrmRM/Egypt-Average-Home-4.png",
+                                image: Egypt_Average_Home_Lv4,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -4427,7 +4441,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 5,
-                                image: "https://i.ibb.co/tbTrnyV/Egypt-Average-Home-5.png",
+                                image: Egypt_Average_Home_Lv5,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -4455,7 +4469,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 6,
-                                image: "https://i.ibb.co/0rPnz6W/Egypt-Average-Home-6.png",
+                                image: Egypt_Average_Home_Lv6,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -7469,7 +7483,7 @@ const allAlliedCultures = [
                 id: 1,
                 order: 1,
                 name: "The Trade Exhibition",
-                questgiver: "https://i.ibb.co/9gDdcQ6/Questgiver-Egypt-Cleopatra.png",
+                questgiver: Questgiver_Egypt_Cleopatra,
                 reward: {
                     resource: "deben",
                     amount: 250
@@ -7515,7 +7529,7 @@ const allAlliedCultures = [
                 id: 2,
                 order: 2,
                 name: "Papyrus Scrolls",
-                questgiver: "https://i.ibb.co/9gDdcQ6/Questgiver-Egypt-Cleopatra.png",
+                questgiver: Questgiver_Egypt_Cleopatra,
                 reward: {
                     resource: "deben",
                     amount: 500
@@ -7573,7 +7587,7 @@ const allAlliedCultures = [
                 id: 3,
                 order: 2,
                 name: "Ankhs",
-                questgiver: "https://i.ibb.co/9gDdcQ6/Questgiver-Egypt-Cleopatra.png",
+                questgiver: Questgiver_Egypt_Cleopatra,
                 reward: {
                     resource: "deben",
                     amount: 500
@@ -7640,7 +7654,7 @@ const allAlliedCultures = [
                         levels: [
                             {
                                 level: 1,
-                                image: "https://i.ibb.co/fF8K4XR/Egypt-Small-Home-1.png",
+                                image: Egypt_Small_Home_Lv1,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -7668,7 +7682,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 2,
-                                image: "https://i.ibb.co/sqnS25d/Egypt-Small-Home-2.png",
+                                image: Egypt_Small_Home_Lv2,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -7696,7 +7710,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 3,
-                                image: "https://i.ibb.co/tcgLgwK/Egypt-Small-Home-3.png",
+                                image: Egypt_Small_Home_Lv3,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -7724,7 +7738,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 4,
-                                image: "https://i.ibb.co/WxL8Xy8/Egypt-Small-Home-4.png",
+                                image: Egypt_Small_Home_Lv4,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -7752,7 +7766,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 5,
-                                image: "https://i.ibb.co/1RZhxnX/Egypt-Small-Home-5.png",
+                                image: Egypt_Small_Home_Lv5,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -7780,7 +7794,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 6,
-                                image: "https://i.ibb.co/TkddDcf/Egypt-Small-Home-6.png",
+                                image: Egypt_Small_Home_Lv6,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -7815,7 +7829,7 @@ const allAlliedCultures = [
                         levels: [
                             {
                                 level: 1,
-                                image: "https://i.ibb.co/zGtcq21/Egypt-Average-Home-1.png",
+                                image: Egypt_Average_Home_Lv1,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -7843,7 +7857,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 2,
-                                image: "https://i.ibb.co/F35K66m/Egypt-Average-Home-2.png",
+                                image: Egypt_Average_Home_Lv2,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -7871,7 +7885,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 3,
-                                image: "https://i.ibb.co/ThM9jT4/Egypt-Average-Home-3.png",
+                                image: Egypt_Average_Home_Lv3,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -7899,7 +7913,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 4,
-                                image: "https://i.ibb.co/QfHrmRM/Egypt-Average-Home-4.png",
+                                image: Egypt_Average_Home_Lv4,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -7927,7 +7941,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 5,
-                                image: "https://i.ibb.co/tbTrnyV/Egypt-Average-Home-5.png",
+                                image: Egypt_Average_Home_Lv5,
                                 costs: [
                                     {
                                         resource: "deben",
@@ -7955,7 +7969,7 @@ const allAlliedCultures = [
                             },
                             {
                                 level: 6,
-                                image: "https://i.ibb.co/0rPnz6W/Egypt-Average-Home-6.png",
+                                image: Egypt_Average_Home_Lv6,
                                 costs: [
                                     {
                                         resource: "deben",

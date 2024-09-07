@@ -137,6 +137,7 @@ import Unit_OttomanGeneral from '../../images/heroes/intro/icons/Unit_OttomanGen
 import Unit_OttoVonBismarck from '../../images/heroes/intro/icons/Unit_OttoVonBismarck.webp';
 import Unit_PakalTheGreat from '../../images/heroes/intro/icons/Unit_PakalTheGreat.webp';
 import Unit_Plato from '../../images/heroes/intro/icons/Unit_Plato.webp';
+import Unit_Pocahontas from '../../images/heroes/intro/icons/Unit_Pocahontas.webp';
 import Unit_Pythagoras from '../../images/heroes/intro/icons/Unit_Pythagoras.webp';
 import Unit_QinShiHuang from '../../images/heroes/intro/icons/Unit_QinShiHuang.webp';
 import Unit_QueenBoudicca from '../../images/heroes/intro/icons/Unit_QueenBoudicca.webp';
@@ -222,6 +223,7 @@ import icon_hero_battle_ability_ottomangeneral from '../../images/heroes/intro/a
 import icon_hero_battle_ability_ottovonbismarck from '../../images/heroes/intro/abilities/icon_hero_battle_ability_ottovonbismarck.webp';
 import icon_hero_battle_ability_pakalthegreat from '../../images/heroes/intro/abilities/icon_hero_battle_ability_pakalthegreat.webp';
 import icon_hero_battle_ability_plato from '../../images/heroes/intro/abilities/icon_hero_battle_ability_plato.webp';
+import icon_hero_battle_ability_pocahontas from '../../images/heroes/intro/abilities/icon_hero_battle_ability_pocahontas.webp';
 import icon_hero_battle_ability_pythagoras from '../../images/heroes/intro/abilities/icon_hero_battle_ability_pythagoras.webp';
 import icon_hero_battle_ability_queenboudicca from '../../images/heroes/intro/abilities/icon_hero_battle_ability_queenboudicca.webp';
 import icon_hero_battle_ability_queenelizabethi from '../../images/heroes/intro/abilities/icon_hero_battle_ability_queenelizabethi.webp';
@@ -3009,12 +3011,12 @@ const allHeroes = [
         id: "pocahontas",
         name: "Pocahontas",
         image: Unit_Pocahontas_fullbody,
-        icon: "https://i.ibb.co/rMfhr8g/Unit-Pocahontas.png",
+        icon: Unit_Pocahontas,
         backdrop: "grass",
         stars: 4,
         heroClass: "great-leader",
         unit: "cavalry",
-        abilityIcon: "https://i.ibb.co/Rv3hL64/icon-hero-battle-ability-pocahontas.png",
+        abilityIcon: icon_hero_battle_ability_pocahontas,
     },
     {
         id: "vincent-van-gogh",
