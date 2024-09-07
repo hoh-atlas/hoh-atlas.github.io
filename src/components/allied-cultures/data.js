@@ -24,6 +24,18 @@ import China_Average_Home_Lv5 from "../../images/allied-cultures/buildings/China
 import China_Average_Home_Lv6 from "../../images/allied-cultures/buildings/China_Average_Home_Lv6.webp";
 import China_Luxurious_Home_Lv1 from "../../images/allied-cultures/buildings/China_Luxurious_Home_Lv1.webp";
 import China_Luxurious_Home_Lv4 from "../../images/allied-cultures/buildings/China_Luxurious_Home_Lv4.webp";
+import China_Rice_Farm_Lv1 from "../../images/allied-cultures/buildings/China_Rice_Farm_Lv1.webp";
+import China_Rice_Farm_Lv2 from "../../images/allied-cultures/buildings/China_Rice_Farm_Lv2.webp";
+import China_Rice_Farm_Lv3 from "../../images/allied-cultures/buildings/China_Rice_Farm_Lv3.webp";
+import China_Rice_Farm_Lv4 from "../../images/allied-cultures/buildings/China_Rice_Farm_Lv4.webp";
+import China_Rice_Farm_Lv5 from "../../images/allied-cultures/buildings/China_Rice_Farm_Lv5.webp";
+import China_Rice_Farm_Lv6 from "../../images/allied-cultures/buildings/China_Rice_Farm_Lv6.webp";
+import China_Luxurious_Rice_Farm_Lv1 from "../../images/allied-cultures/buildings/China_Luxurious_Rice_Farm_Lv1.webp";
+import China_Luxurious_Rice_Farm_Lv4 from "../../images/allied-cultures/buildings/China_Luxurious_Rice_Farm_Lv4.webp";
+import China_Thread_Processor from "../../images/allied-cultures/buildings/China_Thread_Processor.webp";
+import China_Silk_Workshop from "../../images/allied-cultures/buildings/China_Silk_Workshop.webp";
+import China_Clay_Processor from "../../images/allied-cultures/buildings/China_Clay_Processor.webp";
+import China_Porcelain_Workshop from "../../images/allied-cultures/buildings/China_Porcelain_Workshop.webp";
 
 const allAlliedCultures = [
     {
@@ -1231,13 +1243,1112 @@ const allAlliedCultures = [
                     }
                 ]
             },
-            "papyrus_field": {
-                categoryName: "Papyrus Field"
-            }
+            "production": {
+                categoryName: "Production Buildings",
+                buildings: [
+                    {
+                        id: "rice_farm",
+                        name: "Rice Farm",
+                        size: "5x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Rice_Farm_Lv1,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 130
+                                    }
+                                ],
+                                construction: {
+                                    time: "15s",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 1500,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: China_Rice_Farm_Lv2,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 980
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 2250,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: China_Rice_Farm_Lv3,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 7400
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 3500,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: China_Rice_Farm_Lv4,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 22000
+                                    }
+                                ],
+                                construction: {
+                                    time: "5m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 6900,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: China_Rice_Farm_Lv5,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 44000
+                                    }
+                                ],
+                                construction: {
+                                    time: "38m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 10350,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: China_Rice_Farm_Lv6,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 88000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 15000,
+                                    time: "6h"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "luxurious_rice_farm",
+                        name: "Luxurious Rice Farm",
+                        size: "4x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Luxurious_Rice_Farm_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 150
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 2700,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: China_Luxurious_Rice_Farm_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 4000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: China_Luxurious_Rice_Farm_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 6000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: China_Luxurious_Rice_Farm_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 12000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: China_Luxurious_Rice_Farm_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 18000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: China_Luxurious_Rice_Farm_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 27500,
+                                    time: "8h"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "workshop": {
+                categoryName: "Workhops",
+                buildings: [
+                    {
+                        id: "thread_processor",
+                        name: "Thread Processor",
+                        size: "6x3",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 350
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 5,
+                                        time: "1m"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 2,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 2600
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 25,
+                                        time: "5m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 135,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 240,
+                                        time: "1h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 3,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 20000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 200,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 360,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 650,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 4,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 60000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 400,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 720,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 1300,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 5,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 120000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 600,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 1100,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 1900,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 6,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 240000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 900,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 1600,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 2900,
+                                        time: "2h"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: "silk_workshop",
+                        name: "Silk Workshop",
+                        size: "5x3",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 500
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 3,
+                                        time: "1m"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 2,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 3800
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 20,
+                                        time: "5m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 110,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 190,
+                                        time: "1h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 3,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 29000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 150,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 270,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 480,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 4,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 87000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 300,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 550,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 950,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 5,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 170000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 450,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 800,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 1450,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 6,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 340000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 700,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 1250,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 2550,
+                                        time: "2h"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: "clay_processor",
+                        name: "Clay Processor",
+                        size: "5x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 350
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 3,
+                                        time: "1m"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 2,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 2600
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 20,
+                                        time: "5m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 110,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 190,
+                                        time: "1h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 3,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 20000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 150,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 270,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 480,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 4,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 60000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 300,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 550,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 950,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 5,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 120000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 450,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 800,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 1450,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 6,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 240000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 700,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 1250,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 2550,
+                                        time: "2h"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: "porcelain_workshop",
+                        name: "Porcelain Workshop",
+                        size: "6x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 500
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 2,
+                                        time: "1m"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 2,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 3800
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 15,
+                                        time: "5m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 80,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 140,
+                                        time: "1h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 3,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 29000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 100,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 180,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 320,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 4,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 87000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 200,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 360,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 640,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 5,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 170000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 300,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 540,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 960,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 6,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 340000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 450,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 810,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 1440,
+                                        time: "2h"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                ]
+            },
         },
         wonder: {
             name: "Terracotta Army",
             image: terracotta_army,
+            boostedResource: {
+                id: "wu_zhu",
+                name: "Wu Zhu"
+            },
             levels: [
                 {
                     level: 0,
@@ -3381,6 +4492,10 @@ const allAlliedCultures = [
         wonder: {
             name: "Cheops Pyramid",
             image: cheops_pyramid,
+            boostedResource: {
+                id: "deben",
+                name: "Deben"
+            },
             levels: [
                 {
                     level: 0,
@@ -5255,6 +6370,10 @@ const allAlliedCultures = [
         wonder: {
             name: "Great Wall",
             image: great_wall,
+            boostedResource: {
+                id: "rice",
+                name: "Rice"
+            },
             levels: [
                 {
                     level: 0,
@@ -6873,6 +7992,10 @@ const allAlliedCultures = [
         wonder: {
             name: "",
             image: "",
+            boostedResource: {
+                id: "gold_ore",
+                name: "Gold Ore"
+            },
             levels: [
                 {
                     level: 0,

@@ -6,6 +6,7 @@ import cape from '../../../images/shared/resources/cape.webp';
 import cartwheel from '../../../images/shared/resources/cartwheel.webp';
 import ceremonial_dress from '../../../images/shared/resources/ceremonial_dress.webp';
 import chili from '../../../images/shared/resources/chili.webp';
+import clay from '../../../images/shared/resources/clay.webp';
 import Coin from '../../../images/shared/resources/Coin.webp';
 import column from '../../../images/shared/resources/column.webp';
 import deben from '../../../images/shared/resources/deben.webp';
@@ -125,6 +126,7 @@ import rice from '../../../images/shared/resources/rice.webp';
 import saffron from '../../../images/shared/resources/saffron.webp';
 import salt from '../../../images/shared/resources/salt.webp';
 import silk from '../../../images/shared/resources/silk.webp';
+import silk_threads from '../../../images/shared/resources/silk_threads.webp';
 import silver_ring from '../../../images/shared/resources/silver_ring.webp';
 import stone_tablet from '../../../images/shared/resources/stone_tablet.webp';
 import toga from '../../../images/shared/resources/toga.webp';
@@ -278,6 +280,8 @@ const resources = [
     {id: "silk", name: "Silk", img: silk, category: "culture_china"},
     {id: "porcelain", name: "Porcelain", img: porcelain, category: "culture_china"},
     {id: "kaolin", name: "Kaolin", img: kaolin, category: "culture_china"},
+    {id: "silk_threads", name: "Silk Threads", img: silk_threads, category: "culture_china"},
+    {id: "clay", name: "Clay", img: clay, category: "culture_china"},
     {id: "china_worker", name: "China Worker", img: icon_workers_city_china, category: "culture_china"},
     // TOKENS
     {id: "token_ath_fountain_of_youth", name: "Fountain of Youth", img: token_ath_fountain_of_youth, category: "tokens"},
