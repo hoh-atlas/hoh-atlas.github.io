@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.97270f16.css",
+    "main.css": "/static/css/main.f63a265f.css",
     "main.js": "/static/js/main.f7b28289.js",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
     "static/media/china_city.webp": "/static/media/china_city.415736e9ff5f7bc3bfe7.webp",
     "static/media/egypt_city.webp": "/static/media/egypt_city.7719ac968df164a2b372.webp",
     "static/media/hoh_background.webp": "/static/media/hoh_background.4da87c84804609d91f18.webp",
     "static/media/province_19.webp": "/static/media/province_19.697cccf7a9d4d02bbecd.webp",
+    "static/media/navbar.png": "/static/media/navbar.7961641a9e850277dd7e.png",
     "static/media/province_1.webp": "/static/media/province_1.35ee7c70cfdfc5be1ee4.webp",
     "static/media/province_15.webp": "/static/media/province_15.b1858562e77088338f25.webp",
     "static/media/news_china_banner.webp": "/static/media/news_china_banner.9095a497b462d2885920.webp",
@@ -274,7 +275,6 @@
     "static/media/icon_yellow_crest_enhanced.webp": "/static/media/icon_yellow_crest_enhanced.6944c06a986816a95dd3.webp",
     "static/media/icon_hero_battle_ability_jester.webp": "/static/media/icon_hero_battle_ability_jester.a3720f5703908430ae37.webp",
     "static/media/China_Small_Home_Lv1.webp": "/static/media/China_Small_Home_Lv1.bb7aea9b953d20c326f6.webp",
-    "static/media/navbar.webp": "/static/media/navbar.b9fa803008d52602dbab.webp",
     "static/media/icon_hero_battle_ability_marcopolo.webp": "/static/media/icon_hero_battle_ability_marcopolo.548e923b74dfeac3690c.webp",
     "static/media/icon-battle.webp": "/static/media/icon-battle.262e1ee29c6d21d6b811.webp",
     "static/media/icon_purple_crest_enhanced.webp": "/static/media/icon_purple_crest_enhanced.8354fda8fc375039dfc5.webp",
@@ -537,11 +537,11 @@
     "static/media/herbs.webp": "/static/media/herbs.45e59d4e77aed5c7159a.webp",
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
-    "main.97270f16.css.map": "/static/css/main.97270f16.css.map",
+    "main.f63a265f.css.map": "/static/css/main.f63a265f.css.map",
     "main.f7b28289.js.map": "/static/js/main.f7b28289.js.map"
   },
   "entrypoints": [
-    "static/css/main.97270f16.css",
+    "static/css/main.f63a265f.css",
     "static/js/main.f7b28289.js"
   ]
 }
