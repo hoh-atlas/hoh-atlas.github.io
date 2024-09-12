@@ -39,19 +39,18 @@ const Intro = () => {
 
     <MenuGrid />
 
-    {/*<SectionDivider />
+    <SectionDivider />
     <TextContainer
         centered={true}
-        headerTexts={['The Grand Celebration has started!']}
+        headerTexts={['The Trade Exhibition has started!']}
         texts={[``]}
         style={{ marginBottom: '20px', marginTop: '5px' }}
         textRectangleHeight={'150px'}
         imageUrls={[news_egypt_banner]}
-        links={['https://hoh-atlas.com/#/allied-cultures/?id=egypt_cheops_pyramid']}
+        links={['https://hoh-atlas.com/#/allied-cultures/?id=egypt_great_sphinx']}
         pulsate={true}>
-    </TextContainer>*/}
-    <SectionDivider />
-    <TextContainer
+    </TextContainer>
+    {/*<TextContainer
         centered={true}
         headerTexts={['The Festival of Warriors has started!']}
         texts={[``]}
@@ -60,7 +59,7 @@ const Intro = () => {
         imageUrls={[news_china_banner]}
         links={['https://hoh-atlas.com/#/allied-cultures/?id=china_terracotta_army']}
         pulsate={true}>
-    </TextContainer>
+    </TextContainer>*/}
 
     <SectionDivider />
 
