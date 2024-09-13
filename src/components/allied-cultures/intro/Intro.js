@@ -19,6 +19,7 @@ import egypt_city from "../../../images/allied-cultures/intro/egypt_city.webp";
 import irrigation_3 from "../../../images/shared/resources/irrigation_3.webp";
 import china_city from "../../../images/allied-cultures/intro/china_city.webp";
 import china_bridge from "../../../images/allied-cultures/intro/china_bridge.webp";
+import egypt_bridge from "../../../images/allied-cultures/intro/egypt_bridge.webp";
 
 const Intro = (props) => {
 
@@ -69,9 +70,45 @@ const Intro = (props) => {
                         <Image src={irrigation_3} alt="" spacing={true} maxHeight={'100px'}/>
                         
                         An important part of Egypt Culture is the irrigation system - a similar to the culture you know from your capital city. You can find a range of irrigation buildings in the Buildings Menu.
-                        Place these buildings next to your production buildings and make their output increase permanently!<br/>
+                        Place these buildings next to your production buildings and make their output increase permanently!
+
+                        <Image src={egypt_bridge} alt="" roundedCorners={true} spacing={true} maxHeight={'200px'}/>
+
                         Another vital water source is the Nile River, which flows through the center of your Egyptian city, providing free irrigation. To construct buildings on the opposite side of the Nile, you'll need to build a bridge. 
-                        This is crucial not only for completing the questline but also for efficiently producing resources at higher levels of your World Wonder.<br/><br/>
+                        This is crucial not only for completing the questline but also for efficiently producing resources at higher levels of your World Wonder. The construction process consists of 3 phases, each requiring Deben and some time.
+
+                        <div style={{ overflowX: 'auto', maxWidth: '100%' }}>
+                            <table style={{ marginTop: '20px', marginBottom: '20px' }}>
+                                <thead>
+                                    <tr>
+                                        <th colSpan={3}>Nile Bridge</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Level</th>
+                                        <th>Requirements</th>
+                                        <th>Time</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>5000 <Icon resource={resources.find((resource) => resource.id === "deben")}/></td>
+                                        <td>30m</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>30000 <Icon resource={resources.find((resource) => resource.id === "deben")}/></td>
+                                        <td>2h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>60000 <Icon resource={resources.find((resource) => resource.id === "deben")}/></td>
+                                        <td>6h</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         Visit the <b>Quests</b> tab to see all the quests that await you, the <b>Buildings</b> tab to find an overview of all buildings and their productions, and the <b>World Wonder</b> tab to find all the requirements, rewards and
                         bonuses of the {alliedCulture.wonder.name}!
                     </TextBlock>
@@ -96,48 +133,50 @@ const Intro = (props) => {
                         China does not contain a cultural system. Instead, the challenge lies in managing space and solving a puzzle-like mechanic. This is due to the large building shapes and the relatively small area available to fit them into. To expand your city, you need to
                         repair 2 bridges on the way. Each has 3 stages of construction:
                         
-                        <table style={{ marginTop: '20px', marginBottom: '20px' }}>
-                            <thead>
-                                <tr>
-                                    <th colSpan={3}>Southern Bridge</th>
-                                    <th colSpan={3}>Eastern Bridge</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th>Level</th>
-                                    <th>Requirements</th>
-                                    <th>Time</th>
-                                    <th>Level</th>
-                                    <th>Requirements</th>
-                                    <th>Time</th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>1500 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
-                                    <td>1m</td>
-                                    <td>1</td>
-                                    <td>5000 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
-                                    <td>30m</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>2500 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
-                                    <td>10m</td>
-                                    <td>2</td>
-                                    <td>15000 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
-                                    <td>1h</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>5000 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
-                                    <td>1h</td>
-                                    <td>3</td>
-                                    <td>30000 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
-                                    <td>2h</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div style={{ overflowX: 'auto', maxWidth: '100%' }}>
+                            <table style={{ marginTop: '20px', marginBottom: '20px' }}>
+                                <thead>
+                                    <tr>
+                                        <th colSpan={3}>Southern Bridge</th>
+                                        <th colSpan={3}>Eastern Bridge</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Level</th>
+                                        <th>Requirements</th>
+                                        <th>Time</th>
+                                        <th>Level</th>
+                                        <th>Requirements</th>
+                                        <th>Time</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1500 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
+                                        <td>1m</td>
+                                        <td>1</td>
+                                        <td>5000 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
+                                        <td>30m</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>2500 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
+                                        <td>10m</td>
+                                        <td>2</td>
+                                        <td>15000 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
+                                        <td>1h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>5000 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
+                                        <td>1h</td>
+                                        <td>3</td>
+                                        <td>30000 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
+                                        <td>2h</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         
                         Visit the <b>Quests</b> tab to see all the quests that await you, the <b>Buildings</b> tab to find an overview of all buildings and their productions, and the <b>World Wonder</b> tab to find all the requirements, rewards and
                         bonuses of the {alliedCulture.wonder.name}!

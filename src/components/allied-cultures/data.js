@@ -23,6 +23,34 @@ import Egypt_Average_Home_Lv3 from "../../images/allied-cultures/buildings/Egypt
 import Egypt_Average_Home_Lv4 from "../../images/allied-cultures/buildings/Egypt_Average_Home_Lv4.webp";
 import Egypt_Average_Home_Lv5 from "../../images/allied-cultures/buildings/Egypt_Average_Home_Lv5.webp";
 import Egypt_Average_Home_Lv6 from "../../images/allied-cultures/buildings/Egypt_Average_Home_Lv6.webp";
+import Egypt_Luxurious_Home_Lv1 from "../../images/allied-cultures/buildings/Egypt_Luxurious_Home_Lv1.webp";
+import Egypt_Luxurious_Home_Lv4 from "../../images/allied-cultures/buildings/Egypt_Luxurious_Home_Lv4.webp";
+import Egypt_Papyrus_Field_Lv1 from "../../images/allied-cultures/buildings/Egypt_Papyrus_Field_Lv1.webp";
+import Egypt_Papyrus_Field_Lv2 from "../../images/allied-cultures/buildings/Egypt_Papyrus_Field_Lv2.webp";
+import Egypt_Papyrus_Field_Lv3 from "../../images/allied-cultures/buildings/Egypt_Papyrus_Field_Lv3.webp";
+import Egypt_Papyrus_Field_Lv4 from "../../images/allied-cultures/buildings/Egypt_Papyrus_Field_Lv4.webp";
+import Egypt_Papyrus_Field_Lv5 from "../../images/allied-cultures/buildings/Egypt_Papyrus_Field_Lv5.webp";
+import Egypt_Papyrus_Field_Lv6 from "../../images/allied-cultures/buildings/Egypt_Papyrus_Field_Lv6.webp";
+import Egypt_Luxurious_Papyrus_Field_Lv1 from "../../images/allied-cultures/buildings/Egypt_Luxurious_Papyrus_Field_Lv1.webp";
+import Egypt_Luxurious_Papyrus_Field_Lv4 from "../../images/allied-cultures/buildings/Egypt_Luxurious_Papyrus_Field_Lv4.webp";
+import Egypt_Gold_Mine_Lv1 from "../../images/allied-cultures/buildings/Egypt_Gold_Mine_Lv1.webp";
+import Egypt_Gold_Mine_Lv2 from "../../images/allied-cultures/buildings/Egypt_Gold_Mine_Lv2.webp";
+import Egypt_Gold_Mine_Lv3 from "../../images/allied-cultures/buildings/Egypt_Gold_Mine_Lv3.webp";
+import Egypt_Gold_Mine_Lv4 from "../../images/allied-cultures/buildings/Egypt_Gold_Mine_Lv4.webp";
+import Egypt_Gold_Mine_Lv5 from "../../images/allied-cultures/buildings/Egypt_Gold_Mine_Lv5.webp";
+import Egypt_Gold_Mine_Lv6 from "../../images/allied-cultures/buildings/Egypt_Gold_Mine_Lv6.webp";
+import Egypt_Luxurious_Gold_Mine_Lv1 from "../../images/allied-cultures/buildings/Egypt_Luxurious_Gold_Mine_Lv1.webp";
+import Egypt_Luxurious_Gold_Mine_Lv4 from "../../images/allied-cultures/buildings/Egypt_Luxurious_Gold_Mine_Lv4.webp";
+import Egypt_Papyrus_Press_Lv1 from "../../images/allied-cultures/buildings/Egypt_Papyrus_Press_Lv1.webp";
+import Egypt_Papyrus_Press_Lv4 from "../../images/allied-cultures/buildings/Egypt_Papyrus_Press_Lv4.webp";
+import Egypt_Goldsmith_Lv1 from "../../images/allied-cultures/buildings/Egypt_Goldsmith_Lv1.webp";
+import Egypt_Goldsmith_Lv4 from "../../images/allied-cultures/buildings/Egypt_Goldsmith_Lv4.webp";
+import Egypt_Small_Well from "../../images/allied-cultures/buildings/Egypt_Small_Well.webp";
+import Egypt_Channel from "../../images/allied-cultures/buildings/Egypt_Channel.webp";
+import Egypt_Water_Pump from "../../images/allied-cultures/buildings/Egypt_Water_Pump.webp";
+import Egypt_Irrigation_Station from "../../images/allied-cultures/buildings/Egypt_Irrigation_Station.webp";
+import Egypt_Fountain from "../../images/allied-cultures/buildings/Egypt_Fountain.webp";
+import Egypt_Oasis from "../../images/allied-cultures/buildings/Egypt_Oasis.webp";
 
 import China_Small_Home_Lv1 from "../../images/allied-cultures/buildings/China_Small_Home_Lv1.webp";
 import China_Small_Home_Lv2 from "../../images/allied-cultures/buildings/China_Small_Home_Lv2.webp";
@@ -748,7 +776,7 @@ const allAlliedCultures = [
         ],
         buildingCategories: {
             "home": {
-                categoryName: "Home",
+                categoryName: "Houses",
                 buildings: [
                     {
                         id: "small_home",
@@ -1100,19 +1128,2176 @@ const allAlliedCultures = [
                                 }
                             }
                         ]
-                    }
+                    },
+                    {
+                        id: "luxurious_home",
+                        name: "Luxurious Home",
+                        size: "3x3",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Luxurious_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 190
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "deben",
+                                    amount: 12300,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Luxurious_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 60
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "deben",
+                                    amount: 25000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Luxurious_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 60
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "deben",
+                                    amount: 50000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Luxurious_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 60
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "deben",
+                                    amount: 87000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Luxurious_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 60
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "deben",
+                                    amount: 135000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Luxurious_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 60
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "deben",
+                                    amount: 200000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                }
+                            }
+                        ]
+                    },
                 ]
             },
             "papyrus_field": {
-                categoryName: "Papyrus Field"
-            }
+                categoryName: "Papyrus Fields",
+                buildings: [
+                    {
+                        id: "papyrus_field",
+                        name: "Papyrus Field",
+                        size: "4x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Papyrus_Field_Lv1,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 200
+                                    }
+                                ],
+                                construction: {
+                                    time: "15s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 5250,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Papyrus_Field_Lv2,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 300
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 7900,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Papyrus_Field_Lv3,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 60000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 11850,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Papyrus_Field_Lv4,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 100000
+                                    }
+                                ],
+                                construction: {
+                                    time: "5m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 18000,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Papyrus_Field_Lv5,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 170000
+                                    }
+                                ],
+                                construction: {
+                                    time: "38m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 27000,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Papyrus_Field_Lv6,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 290000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 40000,
+                                    time: "6h"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "luxurious_papyrus_field",
+                        name: "Luxurious Papyrus Field",
+                        size: "4x3",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Luxurious_Papyrus_Field_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 90
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 9300,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Luxurious_Papyrus_Field_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 14000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Luxurious_Papyrus_Field_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 21500,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Luxurious_Papyrus_Field_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 32000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Luxurious_Papyrus_Field_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 48000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Luxurious_Papyrus_Field_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 74000,
+                                    time: "8h"
+                                }
+                            }
+                        ]
+                    },
+                ]
+            },
+            "gold_mine": {
+                categoryName: "Gold Mines",
+                buildings: [
+                    {
+                        id: "gold_mine",
+                        name: "Gold Mine",
+                        size: "5x3",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Gold_Mine_Lv1,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 200
+                                    }
+                                ],
+                                construction: {
+                                    time: "15s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 3150,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Gold_Mine_Lv2,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 300
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 4700,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Gold_Mine_Lv3,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 60000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 7000,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Gold_Mine_Lv4,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 100000
+                                    }
+                                ],
+                                construction: {
+                                    time: "5m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 10500,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Gold_Mine_Lv5,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 170000
+                                    }
+                                ],
+                                construction: {
+                                    time: "38m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 16500,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Gold_Mine_Lv6,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 290000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 25500,
+                                    time: "6h"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "luxurious_gold_mine",
+                        name: "Luxurious Gold Mine",
+                        size: "4x4",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Luxurious_Gold_Mine_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 90
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 5600,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Luxurious_Gold_Mine_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 8300,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Luxurious_Gold_Mine_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 12700,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Luxurious_Gold_Mine_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 19500,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Luxurious_Gold_Mine_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 30000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Luxurious_Gold_Mine_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 44000,
+                                    time: "8h"
+                                }
+                            }
+                        ]
+                    },
+                ]
+            },
+            "workshop": {
+                categoryName: "Workshops",
+                buildings: [
+                    {
+                        id: "papyrus_press",
+                        name: "Papyrus Press",
+                        size: "5x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Papyrus_Press_Lv1,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 500
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 4,
+                                        time: "1m"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Papyrus_Press_Lv1,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 750
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 30,
+                                        time: "5m"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 150,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 240,
+                                        time: "1h"
+                                    },
+                                ]
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Papyrus_Press_Lv1,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 150000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 200,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 360,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 650,
+                                        time: "2h"
+                                    },
+                                ]
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Papyrus_Press_Lv4,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 250000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 300,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 550,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 950,
+                                        time: "2h"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 60,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 110,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 190,
+                                        time: "2h"
+                                    },
+                                ]
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Papyrus_Press_Lv4,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 430000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 500,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 900,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 1600,
+                                        time: "2h"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 90,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 160,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 290,
+                                        time: "2h"
+                                    },
+                                ]
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Papyrus_Press_Lv4,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 730000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 800,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 1450,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 2550,
+                                        time: "2h"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 135,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 240,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 430,
+                                        time: "2h"
+                                    },
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: "goldsmith",
+                        name: "Goldsmith",
+                        size: "5x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Goldsmith_Lv1,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 500
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "ankh",
+                                        amount: 3,
+                                        time: "1m"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Goldsmith_Lv1,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 750
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "ankh",
+                                        amount: 20,
+                                        time: "5m"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 100,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 160,
+                                        time: "1h"
+                                    },
+                                ]
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Goldsmith_Lv1,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 150000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "ankh",
+                                        amount: 150,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 270,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 480,
+                                        time: "2h"
+                                    },
+                                ]
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Goldsmith_Lv4,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 250000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "ankh",
+                                        amount: 250,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 450,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 800,
+                                        time: "2h"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 35,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 65,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 110,
+                                        time: "2h"
+                                    },
+                                ]
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Goldsmith_Lv4,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 430000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "ankh",
+                                        amount: 400,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 720,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 1300,
+                                        time: "2h"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 55,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 100,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 175,
+                                        time: "2h"
+                                    },
+                                ]
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Goldsmith_Lv4,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 730000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "ankh",
+                                        amount: 600,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 1100,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 1900,
+                                        time: "2h"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 90,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 160,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 290,
+                                        time: "2h"
+                                    },
+                                ]
+                            }
+                        ]
+                    },
+                ]
+            },
+            "irrigation": {
+                categoryName: "Irrigation Buildings",
+                buildings: [
+                    {
+                        id: "small_well",
+                        name: "Small Well",
+                        size: "2x2",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Small_Well,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 200
+                                    }
+                                ],
+                                construction: {
+                                    time: "20s",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 200,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Small_Well,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 300
+                                    }
+                                ],
+                                construction: {
+                                    time: "15s",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 280,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Small_Well,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 45000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 400,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Small_Well,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 75000
+                                    }
+                                ],
+                                construction: {
+                                    time: "3m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 550,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Small_Well,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 130000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h40m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 770,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Small_Well,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 220000
+                                    }
+                                ],
+                                construction: {
+                                    time: "3h20m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1080,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "channel",
+                        name: "Channel",
+                        size: "5x1",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Channel,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 230
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 250,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Channel,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 345
+                                    }
+                                ],
+                                construction: {
+                                    time: "15s",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 350,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Channel,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 52000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 500,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Channel,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 87000
+                                    }
+                                ],
+                                construction: {
+                                    time: "3m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 700,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Channel,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 150000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1000,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Channel,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 260000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1350,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "water_pump",
+                        name: "Water Pump",
+                        size: "2x1",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Water_Pump,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 130
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 100,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Water_Pump,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 195
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 150,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Water_Pump,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 29000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 200,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Water_Pump,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 48000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 280,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Water_Pump,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 82000
+                                    }
+                                ],
+                                construction: {
+                                    time: "50m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 400,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Water_Pump,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 140000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h40m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 550,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "irrigation_station",
+                        name: "Irrigation Station",
+                        size: "3x3",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Irrigation_Station,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 300
+                                    }
+                                ],
+                                construction: {
+                                    time: "7m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 400,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Irrigation_Station,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 450
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m30s",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 560,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Irrigation_Station,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 68000
+                                    }
+                                ],
+                                construction: {
+                                    time: "25m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 780,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Irrigation_Station,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 110000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1100,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Irrigation_Station,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 190000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h05m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1530,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Irrigation_Station,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 320000
+                                    }
+                                ],
+                                construction: {
+                                    time: "4h10m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 2140,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "oasis",
+                        name: "Oasis",
+                        size: "4x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Oasis,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 290
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 700,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Oasis,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 90
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 980,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Oasis,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 90
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1350,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Oasis,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 90
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1900,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Oasis,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 90
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 2650,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Oasis,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 90
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 3700,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "fountain",
+                        name: "Fountain",
+                        size: "4x3",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Fountain,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 390
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 600,
+                                        type: "irrigation_1",
+                                        range: 4
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Fountain,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 130
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 850,
+                                        type: "irrigation_1",
+                                        range: 4
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Fountain,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 130
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1200,
+                                        type: "irrigation_1",
+                                        range: 4
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Fountain,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 130
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1700,
+                                        type: "irrigation_1",
+                                        range: 4
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Fountain,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 130
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 2400,
+                                        type: "irrigation_1",
+                                        range: 4
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Fountain,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 130
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 3350,
+                                        type: "irrigation_1",
+                                        range: 4
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                ]
+            },
         },
         wonder: {
             name: "Great Sphinx",
             image: great_sphinx,
             boostedResource: {
                 id: "gold_ore",
-                name: "gold_ore"
+                name: "Gold Ore"
             },
             levels: [
                 {
@@ -2984,7 +5169,7 @@ const allAlliedCultures = [
         ],
         buildingCategories: {
             "home": {
-                categoryName: "Home",
+                categoryName: "Houses",
                 buildings: [
                     {
                         id: "small_home",
@@ -4628,7 +6813,7 @@ const allAlliedCultures = [
                     requirements: null,
                     bonuses: [
                         {
-                            resource: "wu_zhu", //boost_gold_ore
+                            resource: "wu_zhu",
                             amount: 5
                         }
                     ],
@@ -6403,7 +8588,7 @@ const allAlliedCultures = [
         ],
         buildingCategories: {
             "home": {
-                categoryName: "Home",
+                categoryName: "Houses",
                 buildings: [
                     {
                         id: "small_home",
@@ -6755,12 +8940,2169 @@ const allAlliedCultures = [
                                 }
                             }
                         ]
-                    }
+                    },
+                    {
+                        id: "luxurious_home",
+                        name: "Luxurious Home",
+                        size: "3x3",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Luxurious_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 190
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "deben",
+                                    amount: 12300,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Luxurious_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 60
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "deben",
+                                    amount: 25000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Luxurious_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 60
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "deben",
+                                    amount: 50000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Luxurious_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 60
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "deben",
+                                    amount: 87000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Luxurious_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 60
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "deben",
+                                    amount: 135000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Luxurious_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 60
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "deben",
+                                    amount: 200000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                }
+                            }
+                        ]
+                    },
                 ]
             },
             "papyrus_field": {
-                categoryName: "Papyrus Field"
-            }
+                categoryName: "Papyrus Fields",
+                buildings: [
+                    {
+                        id: "papyrus_field",
+                        name: "Papyrus Field",
+                        size: "4x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Papyrus_Field_Lv1,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 200
+                                    }
+                                ],
+                                construction: {
+                                    time: "15s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 5250,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Papyrus_Field_Lv2,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 300
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 7900,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Papyrus_Field_Lv3,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 60000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 11850,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Papyrus_Field_Lv4,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 100000
+                                    }
+                                ],
+                                construction: {
+                                    time: "5m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 18000,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Papyrus_Field_Lv5,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 170000
+                                    }
+                                ],
+                                construction: {
+                                    time: "38m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 27000,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Papyrus_Field_Lv6,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 290000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 40000,
+                                    time: "6h"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "luxurious_papyrus_field",
+                        name: "Luxurious Papyrus Field",
+                        size: "4x3",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Luxurious_Papyrus_Field_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 90
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 9300,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Luxurious_Papyrus_Field_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 14000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Luxurious_Papyrus_Field_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 21500,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Luxurious_Papyrus_Field_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 32000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Luxurious_Papyrus_Field_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 48000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Luxurious_Papyrus_Field_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "papyrus",
+                                    amount: 74000,
+                                    time: "8h"
+                                }
+                            }
+                        ]
+                    },
+                ]
+            },
+            "gold_mine": {
+                categoryName: "Gold Mines",
+                buildings: [
+                    {
+                        id: "gold_mine",
+                        name: "Gold Mine",
+                        size: "5x3",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Gold_Mine_Lv1,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 200
+                                    }
+                                ],
+                                construction: {
+                                    time: "15s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 3150,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Gold_Mine_Lv2,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 300
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 4700,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Gold_Mine_Lv3,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 60000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 7000,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Gold_Mine_Lv4,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 100000
+                                    }
+                                ],
+                                construction: {
+                                    time: "5m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 10500,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Gold_Mine_Lv5,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 170000
+                                    }
+                                ],
+                                construction: {
+                                    time: "38m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 16500,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Gold_Mine_Lv6,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 290000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 25500,
+                                    time: "6h"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "luxurious_gold_mine",
+                        name: "Luxurious Gold Mine",
+                        size: "4x4",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Luxurious_Gold_Mine_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 90
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 5600,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Luxurious_Gold_Mine_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 8300,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Luxurious_Gold_Mine_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 12700,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Luxurious_Gold_Mine_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 19500,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Luxurious_Gold_Mine_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 30000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Luxurious_Gold_Mine_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 30
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "gold_ore",
+                                    amount: 44000,
+                                    time: "8h"
+                                }
+                            }
+                        ]
+                    },
+                ]
+            },
+            "workshop": {
+                categoryName: "Workshops",
+                buildings: [
+                    {
+                        id: "papyrus_press",
+                        name: "Papyrus Press",
+                        size: "5x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Papyrus_Press_Lv1,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 500
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 4,
+                                        time: "1m"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Papyrus_Press_Lv1,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 750
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 30,
+                                        time: "5m"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 150,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 240,
+                                        time: "1h"
+                                    },
+                                ]
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Papyrus_Press_Lv1,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 150000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 200,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 360,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 650,
+                                        time: "2h"
+                                    },
+                                ]
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Papyrus_Press_Lv4,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 250000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 300,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 550,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 950,
+                                        time: "2h"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 60,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 110,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 190,
+                                        time: "2h"
+                                    },
+                                ]
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Papyrus_Press_Lv4,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 430000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 500,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 900,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 1600,
+                                        time: "2h"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 90,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 160,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 290,
+                                        time: "2h"
+                                    },
+                                ]
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Papyrus_Press_Lv4,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 730000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 800,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 1450,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "papyrus_scroll",
+                                        amount: 2550,
+                                        time: "2h"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 135,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 240,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "ceremonial_dress",
+                                        amount: 430,
+                                        time: "2h"
+                                    },
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: "goldsmith",
+                        name: "Goldsmith",
+                        size: "5x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Goldsmith_Lv1,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 500
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "ankh",
+                                        amount: 3,
+                                        time: "1m"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Goldsmith_Lv1,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 750
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "ankh",
+                                        amount: 20,
+                                        time: "5m"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 100,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 160,
+                                        time: "1h"
+                                    },
+                                ]
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Goldsmith_Lv1,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 150000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "ankh",
+                                        amount: 150,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 270,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 480,
+                                        time: "2h"
+                                    },
+                                ]
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Goldsmith_Lv4,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 250000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "ankh",
+                                        amount: 250,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 450,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 800,
+                                        time: "2h"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 35,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 65,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 110,
+                                        time: "2h"
+                                    },
+                                ]
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Goldsmith_Lv4,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 430000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "ankh",
+                                        amount: 400,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 720,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 1300,
+                                        time: "2h"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 55,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 100,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 175,
+                                        time: "2h"
+                                    },
+                                ]
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Goldsmith_Lv4,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 730000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "ankh",
+                                        amount: 600,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 1100,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "ankh",
+                                        amount: 1900,
+                                        time: "2h"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 90,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 160,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "golden_mask",
+                                        amount: 290,
+                                        time: "2h"
+                                    },
+                                ]
+                            }
+                        ]
+                    },
+                ]
+            },
+            "irrigation": {
+                categoryName: "Irrigation Buildings",
+                buildings: [
+                    {
+                        id: "small_well",
+                        name: "Small Well",
+                        size: "2x2",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Small_Well,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 200
+                                    }
+                                ],
+                                construction: {
+                                    time: "20s",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 200,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Small_Well,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 300
+                                    }
+                                ],
+                                construction: {
+                                    time: "15s",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 280,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Small_Well,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 45000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 400,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Small_Well,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 75000
+                                    }
+                                ],
+                                construction: {
+                                    time: "3m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 550,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Small_Well,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 130000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h40m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 770,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Small_Well,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 220000
+                                    }
+                                ],
+                                construction: {
+                                    time: "3h20m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1080,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "channel",
+                        name: "Channel",
+                        size: "5x1",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Channel,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 230
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 250,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Channel,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 345
+                                    }
+                                ],
+                                construction: {
+                                    time: "15s",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 350,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Channel,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 52000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 500,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Channel,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 87000
+                                    }
+                                ],
+                                construction: {
+                                    time: "3m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 700,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Channel,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 150000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1000,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Channel,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 260000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1350,
+                                        type: "irrigation_1",
+                                        range: 1
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "water_pump",
+                        name: "Water Pump",
+                        size: "2x1",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Water_Pump,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 130
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 100,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Water_Pump,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 195
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 150,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Water_Pump,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 29000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 200,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Water_Pump,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 48000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 280,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Water_Pump,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 82000
+                                    }
+                                ],
+                                construction: {
+                                    time: "50m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 400,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Water_Pump,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 140000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h40m",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 550,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "irrigation_station",
+                        name: "Irrigation Station",
+                        size: "3x3",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Irrigation_Station,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 300
+                                    }
+                                ],
+                                construction: {
+                                    time: "7m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 400,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Irrigation_Station,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 450
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m30s",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 560,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Irrigation_Station,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 68000
+                                    }
+                                ],
+                                construction: {
+                                    time: "25m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 780,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Irrigation_Station,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 110000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1100,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Irrigation_Station,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 190000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h05m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1530,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Irrigation_Station,
+                                costs: [
+                                    {
+                                        resource: "deben",
+                                        amount: 320000
+                                    }
+                                ],
+                                construction: {
+                                    time: "4h10m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 2140,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "oasis",
+                        name: "Oasis",
+                        size: "4x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Oasis,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 290
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 700,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Oasis,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 90
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 980,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Oasis,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 90
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1350,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Oasis,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 90
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1900,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Oasis,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 90
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 2650,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Oasis,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 90
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 3700,
+                                        type: "irrigation_1",
+                                        range: 2
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "fountain",
+                        name: "Fountain",
+                        size: "4x3",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: Egypt_Fountain,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 390
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 600,
+                                        type: "irrigation_1",
+                                        range: 4
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: Egypt_Fountain,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 130
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 850,
+                                        type: "irrigation_1",
+                                        range: 4
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: Egypt_Fountain,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 130
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1200,
+                                        type: "irrigation_1",
+                                        range: 4
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: Egypt_Fountain,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 130
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 1700,
+                                        type: "irrigation_1",
+                                        range: 4
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: Egypt_Fountain,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 130
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 2400,
+                                        type: "irrigation_1",
+                                        range: 4
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: Egypt_Fountain,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 130
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "egypt_worker"
+                                    }
+                                },
+                                provided: {
+                                    culture: {
+                                        amount: 3350,
+                                        type: "irrigation_1",
+                                        range: 4
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                ]
+            },
         },
         wonder: {
             name: "Cheops Pyramid",
@@ -8638,7 +12980,1637 @@ const allAlliedCultures = [
             }
         ],
         buildingCategories: {
-            
+            "home": {
+                categoryName: "Houses",
+                buildings: [
+                    {
+                        id: "small_home",
+                        name: "Small Home",
+                        size: "2x2",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Small_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "5s",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 1200,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: China_Small_Home_Lv2,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 380
+                                    }
+                                ],
+                                construction: {
+                                    time: "15s",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 2250,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: China_Small_Home_Lv3,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 2900
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 4500,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: China_Small_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 8700
+                                    }
+                                ],
+                                construction: {
+                                    time: "3m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 13500,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: China_Small_Home_Lv5,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 17000
+                                    }
+                                ],
+                                construction: {
+                                    time: "12m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 24000,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: China_Small_Home_Lv6,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 34000
+                                    }
+                                ],
+                                construction: {
+                                    time: "25m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 42000,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "medium_home",
+                        name: "Medium Home",
+                        size: "4x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Average_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 250
+                                    }
+                                ],
+                                construction: {
+                                    time: "10s",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 3700,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: China_Average_Home_Lv2,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 1900
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 7500,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: China_Average_Home_Lv3,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 14000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m30s",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 15000,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: China_Average_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 42000
+                                    }
+                                ],
+                                construction: {
+                                    time: "5m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 45000,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: China_Average_Home_Lv5,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 84000
+                                    }
+                                ],
+                                construction: {
+                                    time: "25m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 80000,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: China_Average_Home_Lv6,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 170000
+                                    }
+                                ],
+                                construction: {
+                                    time: "50m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 145000,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "luxurious_home",
+                        name: "Luxurious Home",
+                        size: "3x2",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Luxurious_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 250
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 4300,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: China_Luxurious_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 80
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 8700,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: China_Luxurious_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 80
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 17300,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: China_Luxurious_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 80
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 55000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: China_Luxurious_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 80
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 95000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: China_Luxurious_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 80
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 165000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "production": {
+                categoryName: "Production Buildings",
+                buildings: [
+                    {
+                        id: "rice_farm",
+                        name: "Rice Farm",
+                        size: "5x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Rice_Farm_Lv1,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 130
+                                    }
+                                ],
+                                construction: {
+                                    time: "15s",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 1500,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: China_Rice_Farm_Lv2,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 980
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 2250,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: China_Rice_Farm_Lv3,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 7400
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 3500,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: China_Rice_Farm_Lv4,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 22000
+                                    }
+                                ],
+                                construction: {
+                                    time: "5m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 6900,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: China_Rice_Farm_Lv5,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 44000
+                                    }
+                                ],
+                                construction: {
+                                    time: "38m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 10350,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: China_Rice_Farm_Lv6,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 88000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 15000,
+                                    time: "6h"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "luxurious_rice_farm",
+                        name: "Luxurious Rice Farm",
+                        size: "4x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Luxurious_Rice_Farm_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 150
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 2700,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: China_Luxurious_Rice_Farm_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 4000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: China_Luxurious_Rice_Farm_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 6000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: China_Luxurious_Rice_Farm_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 12000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: China_Luxurious_Rice_Farm_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 18000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: China_Luxurious_Rice_Farm_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 27500,
+                                    time: "8h"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "workshop": {
+                categoryName: "Workhops",
+                buildings: [
+                    {
+                        id: "thread_processor",
+                        name: "Thread Processor",
+                        size: "6x3",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 350
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 5,
+                                        time: "1m"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 2,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 2600
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 25,
+                                        time: "5m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 135,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 240,
+                                        time: "1h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 3,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 20000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 200,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 360,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 650,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 4,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 60000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 400,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 720,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 1300,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 5,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 120000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 600,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 1100,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 1900,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 6,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 240000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 900,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 1600,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 2900,
+                                        time: "2h"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: "silk_workshop",
+                        name: "Silk Workshop",
+                        size: "5x3",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 500
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 3,
+                                        time: "1m"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 2,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 3800
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 20,
+                                        time: "5m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 110,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 190,
+                                        time: "1h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 3,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 29000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 150,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 270,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 480,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 4,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 87000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 300,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 550,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 950,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 5,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 170000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 450,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 800,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 1450,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 6,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 340000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 700,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 1250,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 2550,
+                                        time: "2h"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: "clay_processor",
+                        name: "Clay Processor",
+                        size: "5x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 350
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 3,
+                                        time: "1m"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 2,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 2600
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 20,
+                                        time: "5m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 110,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 190,
+                                        time: "1h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 3,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 20000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 150,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 270,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 480,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 4,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 60000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 300,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 550,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 950,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 5,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 120000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 450,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 800,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 1450,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 6,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 240000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 700,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 1250,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 2550,
+                                        time: "2h"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: "porcelain_workshop",
+                        name: "Porcelain Workshop",
+                        size: "6x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 500
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 2,
+                                        time: "1m"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 2,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 3800
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 15,
+                                        time: "5m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 80,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 140,
+                                        time: "1h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 3,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 29000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 100,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 180,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 320,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 4,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 87000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 200,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 360,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 640,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 5,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 170000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 300,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 540,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 960,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 6,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 340000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 450,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 810,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 1440,
+                                        time: "2h"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                ]
+            },
         },
         wonder: {
             name: "Great Wall",
@@ -8653,7 +14625,7 @@ const allAlliedCultures = [
                     requirements: null,
                     bonuses: [
                         {
-                            resource: "rice", //boost_gold_ore
+                            resource: "rice",
                             amount: 5
                         }
                     ],
