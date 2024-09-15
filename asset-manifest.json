@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f63a265f.css",
-    "main.js": "/static/js/main.7f360152.js",
+    "main.js": "/static/js/main.92b9568e.js",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
     "static/media/china_city.webp": "/static/media/china_city.415736e9ff5f7bc3bfe7.webp",
     "static/media/egypt_city.webp": "/static/media/egypt_city.7719ac968df164a2b372.webp",
@@ -567,10 +567,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.f63a265f.css.map": "/static/css/main.f63a265f.css.map",
-    "main.7f360152.js.map": "/static/js/main.7f360152.js.map"
+    "main.92b9568e.js.map": "/static/js/main.92b9568e.js.map"
   },
   "entrypoints": [
     "static/css/main.f63a265f.css",
-    "static/js/main.7f360152.js"
+    "static/js/main.92b9568e.js"
   ]
 }
