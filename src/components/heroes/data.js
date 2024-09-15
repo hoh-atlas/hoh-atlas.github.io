@@ -361,7 +361,7 @@ const allHeroes = [
                     amount: 4
                 },
             ],
-            /*60: [  check values before publishing due to changes
+            60: [
                 {
                     resource: "yellow_crest_superior",
                     amount: 110
@@ -391,13 +391,9 @@ const allHeroes = [
                 {
                     resource: "charta_terrestre",
                     amount: 3
-                },
-                {
-                    resource: "prism_of_fate",
-                    amount: 2
                 }
             ],
-            80: [
+            /*80: [  check values before publishing due to changes
                 {
                     resource: "yellow_crest_superior",
                     amount: 130
@@ -607,6 +603,38 @@ const allHeroes = [
                     resource: "fragrant_potpourri",
                     amount: 4
                 }
+            ],
+            60: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_alberteinstein,
@@ -691,6 +719,38 @@ const allHeroes = [
                 {
                     resource: "shadow_dial",
                     amount: 4
+                }
+            ],
+            60: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            70: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
                 }
             ]
         },
@@ -777,6 +837,38 @@ const allHeroes = [
                     resource: "shadow_dial",
                     amount: 4
                 }
+            ],
+            60: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_juliuscaesar,
@@ -861,6 +953,38 @@ const allHeroes = [
                 {
                     resource: "fragrant_potpourri",
                     amount: 4
+                }
+            ],
+            60: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
                 }
             ]
         },
@@ -947,6 +1071,38 @@ const allHeroes = [
                     resource: "fragrant_potpourri",
                     amount: 4
                 }
+            ],
+            60: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_mariecurie,
@@ -1031,6 +1187,38 @@ const allHeroes = [
                 {
                     resource: "shadow_dial",
                     amount: 4
+                }
+            ],
+            60: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
                 }
             ]
         },
@@ -1117,6 +1305,38 @@ const allHeroes = [
                     resource: "war_horn",
                     amount: 4
                 }
+            ],
+            60: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_queenelizabethi,
@@ -1201,6 +1421,38 @@ const allHeroes = [
                 {
                     resource: "fragrant_potpourri",
                     amount: 4
+                }
+            ],
+            60: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
                 }
             ]
         },
@@ -1287,6 +1539,38 @@ const allHeroes = [
                     resource: "shadow_dial",
                     amount: 4
                 }
+            ],
+            60: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_georgewashington,
@@ -1371,6 +1655,38 @@ const allHeroes = [
                 {
                     resource: "fragrant_potpourri",
                     amount: 4
+                }
+            ],
+            60: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
                 }
             ]
         },
@@ -1457,6 +1773,38 @@ const allHeroes = [
                     resource: "fragrant_potpourri",
                     amount: 4
                 }
+            ],
+            60: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_williamwallace,
@@ -1541,6 +1889,38 @@ const allHeroes = [
                 {
                     resource: "fragrant_potpourri",
                     amount: 4
+                }
+            ],
+            60: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
                 }
             ]
         },
@@ -1627,6 +2007,38 @@ const allHeroes = [
                     resource: "shadow_dial",
                     amount: 4
                 }
+            ],
+            60: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_joanofarc,
@@ -1711,6 +2123,38 @@ const allHeroes = [
                 {
                     resource: "fragrant_potpourri",
                     amount: 4
+                }
+            ],
+            60: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
                 }
             ]
         },
@@ -1797,6 +2241,38 @@ const allHeroes = [
                     resource: "war_horn",
                     amount: 4
                 }
+            ],
+            60: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_abrahamlincoln,
@@ -1881,6 +2357,38 @@ const allHeroes = [
                 {
                     resource: "shadow_dial",
                     amount: 4
+                }
+            ],
+            60: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
                 }
             ]
         },
@@ -1967,6 +2475,38 @@ const allHeroes = [
                     resource: "fragrant_potpourri",
                     amount: 4
                 }
+            ],
+            60: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_huamulan,
@@ -2051,6 +2591,38 @@ const allHeroes = [
                 {
                     resource: "war_horn",
                     amount: 4
+                }
+            ],
+            60: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
                 }
             ]
         },
@@ -2137,6 +2709,38 @@ const allHeroes = [
                     resource: "shadow_dial",
                     amount: 4
                 }
+            ],
+            60: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_suntzu,
@@ -2146,7 +2750,7 @@ const allHeroes = [
             "160%,2.5,15%,8s",
         ]
     },
-    {
+    /*{
         id: "nikola-tesla",
         name: "Nikola Tesla",
         image: Unit_NikolaTesla_fullbody,
@@ -2156,7 +2760,7 @@ const allHeroes = [
         heroClass: "genius",
         unit: "siege",
         abilityIcon: "",
-    },
+    },*/
     {
         id: "menes",
         name: "Menes",
@@ -2232,6 +2836,38 @@ const allHeroes = [
                 {
                     resource: "fragrant_potpourri",
                     amount: 3
+                }
+            ],
+            60: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
                 }
             ]
         },
@@ -2318,6 +2954,38 @@ const allHeroes = [
                     resource: "fragrant_potpourri",
                     amount: 3
                 }
+            ],
+            60: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_spartacus,
@@ -2330,7 +2998,7 @@ const allHeroes = [
     {
         id: "tiger-lily",
         name: "Tiger Lily",
-        image: "",
+        image: Unit_Pocahontas_fullbody,
         icon: Unit_TigerLily,
         backdrop: "grass",
         stars: 4,
@@ -2402,6 +3070,38 @@ const allHeroes = [
                 {
                     resource: "war_horn",
                     amount: 3
+                }
+            ],
+            60: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            70: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
                 }
             ]
         },
@@ -2488,6 +3188,38 @@ const allHeroes = [
                     resource: "shadow_dial",
                     amount: 3
                 }
+            ],
+            60: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_confucius,
@@ -2572,6 +3304,38 @@ const allHeroes = [
                 {
                     resource: "war_horn",
                     amount: 3
+                }
+            ],
+            60: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
                 }
             ]
         },
@@ -2658,6 +3422,38 @@ const allHeroes = [
                     resource: "shadow_dial",
                     amount: 3
                 }
+            ],
+            60: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_janeausten,
@@ -2742,6 +3538,38 @@ const allHeroes = [
                 {
                     resource: "war_horn",
                     amount: 3
+                }
+            ],
+            60: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
                 }
             ]
         },
@@ -2828,6 +3656,38 @@ const allHeroes = [
                     resource: "fragrant_potpourri",
                     amount: 3
                 }
+            ],
+            60: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_ludwigvanbeethoven,
@@ -2912,6 +3772,38 @@ const allHeroes = [
                 {
                     resource: "war_horn",
                     amount: 3
+                }
+            ],
+            60: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
                 }
             ]
         },
@@ -2998,6 +3890,38 @@ const allHeroes = [
                     resource: "shadow_dial",
                     amount: 3
                 }
+            ],
+            60: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_plato,
@@ -3006,17 +3930,6 @@ const allHeroes = [
         ability: [
             "10%,17%,8s",
         ]
-    },
-    {
-        id: "pocahontas",
-        name: "Pocahontas",
-        image: Unit_Pocahontas_fullbody,
-        icon: Unit_Pocahontas,
-        backdrop: "grass",
-        stars: 4,
-        heroClass: "great-leader",
-        unit: "cavalry",
-        abilityIcon: icon_hero_battle_ability_pocahontas,
     },
     {
         id: "vincent-van-gogh",
@@ -3093,6 +4006,38 @@ const allHeroes = [
                 {
                     resource: "fragrant_potpourri",
                     amount: 3
+                }
+            ],
+            60: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
                 }
             ]
         },
@@ -3179,6 +4124,38 @@ const allHeroes = [
                     resource: "fragrant_potpourri",
                     amount: 3
                 }
+            ],
+            60: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_tomoegozen,
@@ -3263,6 +4240,38 @@ const allHeroes = [
                 {
                     resource: "fragrant_potpourri",
                     amount: 3
+                }
+            ],
+            60: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
                 }
             ]
         },
@@ -3349,6 +4358,38 @@ const allHeroes = [
                     resource: "shadow_dial",
                     amount: 3
                 }
+            ],
+            60: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_attilathehun,
@@ -3433,6 +4474,38 @@ const allHeroes = [
                 {
                     resource: "shadow_dial",
                     amount: 3
+                }
+            ],
+            60: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
                 }
             ]
         },
@@ -3519,6 +4592,38 @@ const allHeroes = [
                     resource: "fragrant_potpourri",
                     amount: 3
                 }
+            ],
+            60: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_dartagnan,
@@ -3603,6 +4708,38 @@ const allHeroes = [
                 {
                     resource: "shadow_dial",
                     amount: 3
+                }
+            ],
+            60: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
                 }
             ]
         },
@@ -3689,6 +4826,38 @@ const allHeroes = [
                     resource: "fragrant_potpourri",
                     amount: 3
                 }
+            ],
+            60: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_queenboudicca,
@@ -3773,6 +4942,38 @@ const allHeroes = [
                 {
                     resource: "fragrant_potpourri",
                     amount: 3
+                }
+            ],
+            60: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
                 }
             ]
         },

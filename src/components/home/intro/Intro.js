@@ -42,6 +42,18 @@ const Intro = () => {
     <SectionDivider />
     <TextContainer
         centered={true}
+        headerTexts={['Data Update: More Ascension Levels for Heroes (Sept 15th 2024)']}
+        texts={[`We've performed a data update, and now all 4-star and 5-star heroes have their ascension requirements available up to level 80. The ascension data for 2-star and 3-star heroes are already complete.
+            We will continue adding more info over time. Have fun with the game and thank you for sharing this site with other players!`]}
+        style={{ marginBottom: '20px', marginTop: '5px' }}
+        textRectangleHeight={'150px'}
+        imageUrls={['']}
+        links={[]}
+        pulsate={false}
+        autoSlideSeconds={10}>
+    </TextContainer>
+    {/*<TextContainer
+        centered={true}
         headerTexts={['The Trade Exhibition has started!']}
         texts={[``]}
         style={{ marginBottom: '20px', marginTop: '5px' }}
@@ -49,7 +61,7 @@ const Intro = () => {
         imageUrls={[news_egypt_banner]}
         links={['https://hoh-atlas.com/#/allied-cultures/?id=egypt_great_sphinx']}
         pulsate={true}>
-    </TextContainer>
+    </TextContainer>*/}
     {/*<TextContainer
         centered={true}
         headerTexts={['The Festival of Warriors has started!']}
