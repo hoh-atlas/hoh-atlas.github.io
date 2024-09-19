@@ -33,7 +33,7 @@ const Intro = (props) => {
     const alliedCulture = getAlliedCulture();
 
     const egyptCultures = ["egypt_cheops_pyramid", "egypt_great_sphinx"];
-    const chinaCultures = ["china_terracotta_army", "china_great_wall"];
+    const chinaCultures = ["china_terracotta_army", "china_great_wall", "china_forbidden_city"];
   
     return (
         <>
@@ -54,8 +54,13 @@ const Intro = (props) => {
                 egyptCultures.includes(alliedCulture.id) ? (
                     <TextBlock>
                         {alliedCulture.name} is one of the weekly events in the theme of Egypt culture. The World Wonder is the {alliedCulture.wonder.name} - a majestic structure located next to the allied city. 
-                        It contains 50 levels, each offering a unique reward including a special bonus for collecting {alliedCulture.wonder.boostedResource.name} <Icon resource={resources.find((resource) => resource.id === alliedCulture.wonder.boostedResource.id)}/> that 
-                        helps you to progress in the Allied Culture faster.
+                        It contains 50 levels, each offering a unique reward including a special bonus for collecting {alliedCulture.wonder.boostedResources.map((resource, index) => (
+                            <>
+                                {index > 0 && index === alliedCulture.wonder.boostedResources.length - 1 ? ' and ' : index > 0 ? ', ' : ''}
+                                {resource.name} <Icon resource={resources.find((r) => r.id === resource.id)} />
+                            </>
+                        ))}
+                        &nbsp;that helps you to progress in the Allied Culture faster.
 
                         <Image src={egypt_city} alt="" roundedCorners={true} spacing={true} maxHeight={'300px'}/>
 
@@ -114,9 +119,14 @@ const Intro = (props) => {
                     </TextBlock>
                 ) : chinaCultures.includes(alliedCulture.id) ? (
                     <TextBlock>
-                        {alliedCulture.name} is one of the weekly events in the theme of China culture. The World Wonder is the {alliedCulture.wonder.name} - a sculpture located next to the allied city.
-                        It contains 50 levels, each offering a unique reward including a special bonus for collecting {alliedCulture.wonder.boostedResource.name} <Icon resource={resources.find((resource) => resource.id === alliedCulture.wonder.boostedResource.id)}/> that
-                        helps you to progress in the Allied Culture faster.
+                        {alliedCulture.name} is one of the weekly events in the theme of China culture. The World Wonder is the {alliedCulture.wonder.name} - a majestic structure located next to the allied city. 
+                        It contains 50 levels, each offering a unique reward including a special bonus for collecting {alliedCulture.wonder.boostedResources.map((resource, index) => (
+                            <>
+                                {index > 0 && index === alliedCulture.wonder.boostedResources.length - 1 ? ' and ' : index > 0 ? ', ' : ''}
+                                {resource.name} <Icon resource={resources.find((r) => r.id === resource.id)} />
+                            </>
+                        ))}
+                        &nbsp;that helps you to progress in the Allied Culture faster.
 
                         <Image src={china_city} alt="" roundedCorners={true} spacing={true} maxHeight={'300px'}/>
 

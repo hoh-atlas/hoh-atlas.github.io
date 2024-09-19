@@ -4,12 +4,14 @@ import great_wall from "../../images/allied-cultures/world-wonder/great_wall.web
 import cheops_pyramid from "../../images/allied-cultures/world-wonder/cheops_pyramid.webp";
 import great_sphinx from "../../images/allied-cultures/world-wonder/great_sphinx.webp";
 import terracotta_army from "../../images/allied-cultures/world-wonder/terracotta_army.webp";
+import forbidden_city from "../../images/allied-cultures/world-wonder/forbidden_city.webp";
 import irrigation_1 from "../../images/shared/resources/irrigation_1.webp";
 import irrigation_3 from "../../images/shared/resources/irrigation_3.webp";
 import city_event_banner_egypt_cheopspyramid from "../../images/allied-cultures/intro/city_event_banner_egypt_cheopspyramid.webp";
 import city_event_banner_china_greatwall from "../../images/allied-cultures/intro/city_event_banner_china_greatwall.webp";
 import city_event_banner_egypt_greatsphinx from "../../images/allied-cultures/intro/city_event_banner_egypt_great_sphinx.webp";
 import city_event_banner_terracotta_army from "../../images/allied-cultures/intro/city_event_banner_china_terracottaarmy.webp";
+import city_event_banner_china_forbiddencity from "../../images/allied-cultures/intro/city_event_banner_china_forbiddencity.png";
 
 import Egypt_Small_Home_Lv1 from "../../images/allied-cultures/buildings/Egypt_Small_Home_Lv1.webp";
 import Egypt_Small_Home_Lv2 from "../../images/allied-cultures/buildings/Egypt_Small_Home_Lv2.webp";
@@ -80,6 +82,3612 @@ import China_Clay_Processor from "../../images/allied-cultures/buildings/China_C
 import China_Porcelain_Workshop from "../../images/allied-cultures/buildings/China_Porcelain_Workshop.webp";
 
 const allAlliedCultures = [
+    {
+        id: "china_forbidden_city",
+        name: "The Festival of Lights",
+        image: city_event_banner_china_forbiddencity,
+        questlineColor: "#BF2C4E",
+        questlines: [
+            {   
+                id: 1,
+                appearsAfter: null,
+                name: "The Festival of Lights",
+                questgiver: "",
+                reward: {
+                    resource: "wu_zhu",
+                    amount: 1000
+                },
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Rise of China</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 30
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>4 Small Home</b> on level <b>1</b> in <b>China</b>",
+                            "Have <b>1 Medium Home</b> on level <b>1</b> in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 50
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Collect <b>20 Wu Zhu</b> in <b>Egypt</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 100
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 2,
+                appearsAfter: [1],
+                name: "Rice Farms",
+                questgiver: "",
+                reward: {
+                    resource: "wu_zhu",
+                    amount: 200
+                },
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Ink and Brush</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>1 Rice Farm</b> on level <b>1</b> in <b>China</b>",
+                            "Have <b>1 Luxurious Rice Farm</b> on level <b>1</b> in <b>China</b>"
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 200
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Collect <b>5 Rice</b> in <b>China</b>",
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 350
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 3,
+                appearsAfter: [1],
+                name: "Silk Production",
+                questgiver: "",
+                reward: {
+                    resource: "wu_zhu",
+                    amount: 5000
+                },
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Claim <b>Moth Glade Area</b> in <b>China</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 200
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Research <b>Sericulture</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 200
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Collect <b>5 Moth Cocoon</b> in <b>China</b>",
+                            "Have <b>1 Moth Glade</b> on level <b>2</b> in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "moth_cocoon",
+                            amount: 40
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>1 Thread Processor</b> on level <b>1</b> in <b>China</b>",
+                            "Collect <b>5 Silk Threads</b> in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 500
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Research <b>Silk Manufacture</b>",
+                            "Have <b>1 Silk Workshop</b> on level <b>1</b> in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "rice",
+                            amount: 250
+                        }
+                    },
+                    {
+                        id: 6,
+                        tasks: [
+                            "Collect <b>3 Silk</b> in <b>China</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "moth_cocoon",
+                            amount: 250
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 4,
+                appearsAfter: [2,3],
+                name: "Workforce",
+                questgiver: "",
+                reward: [
+                    {
+                        resource: "rice",
+                        amount: 300
+                    },
+                    {
+                        resource: "moth_cocoon",
+                        amount: 300
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Rammed Eearth Houses</b>",
+                            "Have <b>3</b> expansions in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 500
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>6 Small Home</b> on level <b>2</b> in <b>China</b>",
+                            "Have <b>2 Luxurious Home</b> on level <b>2</b> in <b>China</b>"
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 1000
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Collect <b>200 Wu Zhu</b> in <b>China</b>",
+                            "Have <b>4</b> expansions in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 2500
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 5,
+                appearsAfter: [4],
+                name: "Path to Greatness",
+                questgiver: "",
+                reward: {
+                    resource: "wu_zhu",
+                    amount: 150000
+                },
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>7</b> technologies in <b>China</b>",
+                            "Have <b>8 Building</b> on level <b>2</b> in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 5000
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Claim <b>Western Moth Glade Area</b> in <b>China</b>",
+                            "Have <b>2 Moth Glade</b> on level <b>2</b> in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "rice",
+                            amount: 500
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Research <b>9</b> technologies for <b>China</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "moth_cocoon",
+                            amount: 750
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>2 Silk Workshop</b> on level <b>2</b> in <b>China</b>",
+                            "Have <b>2 Rice Farm</b> on level <b>2</b> in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 5000
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Research <b>11</b> technologies for <b>China</b>",
+                            "Have <b>12 Building</b> on level <b>3</b> in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "rice",
+                            amount: 1500
+                        }
+                    },
+                    {
+                        id: 6,
+                        tasks: [
+                            "Research <b>Dedicated Workforce</b>",
+                            "Claim <b>Southern Moth Glade Area</b> in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "silk",
+                            amount: 250
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 6,
+                appearsAfter: [4],
+                name: "Mount Song Crossing",
+                questgiver: "",
+                reward: {
+                    resource: "silk",
+                    amount: 500
+                },
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Complete <b>1</b> stage of <b>3</b> of the <b>Southern Bridge</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "rice",
+                            amount: 200
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Complete <b>2</b> stages out of <b>3</b> of the <b>Southern Bridge</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "moth_cocoon",
+                            amount: 400
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Complete <b>3</b> stages out of <b>3</b> of the <b>Southern Bridge</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "rice",
+                            amount: 250
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 7,
+                appearsAfter: [5],
+                name: "The Final Stretch",
+                questgiver: "",
+                reward: {
+                    resource: "porcelain",
+                    amount: 1000
+                },
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Have <b>2 Silk Workshops</b> on level <b>4</b> in <b>China</b>",
+                            "Research <b>Porcelain Production</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 10000
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Claim <b>Southern Kaolin Area</b> in <b>China</b>",
+                            "Have <b>1 Kaolin Quarry</b> on level <b>4</b> in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "kaolin",
+                            amount: 7500
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Have <b>1 Clay Processor</b> on level <b>4</b> in <b>China</b>",
+                            "Have <b>1 Porcelain Workshop</b> on level <b>4</b> in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "rice",
+                            amount: 5000
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Collect <b>300 Porcelain</b> in <b>China</b>",
+                            "Have <b>15 Building</b> on level <b>4</b> in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 25000
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Research <b>20</b> technologies for <b>China</b>",
+                            "Have <b>5 Building</b> on level <b>5</b> in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "kaolin",
+                            amount: 15000
+                        }
+                    },
+                    {
+                        id: 6,
+                        tasks: [
+                            "Research <b>22</b> technologies for <b>China</b>",
+                            "Have <b>10 Building</b> on level <b>6</b> in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "rice",
+                            amount: 8000
+                        }
+                    },
+                    {
+                        id: 7,
+                        tasks: [
+                            "Research <b>25</b> technologies for <b>China</b>",
+                            "Have <b>18 Building</b> on level <b>6</b> in <b>China</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 75000
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 8,
+                appearsAfter: [6],
+                name: "Within Reach",
+                questgiver: "",
+                reward: {
+                    resource: "silk",
+                    amount: 2000
+                },
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Complete <b>1</b> stage of <b>3</b> of the <b>Eastern Bridge</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "rice",
+                            amount: 1000
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Complete <b>2</b> stages out of <b>3</b> of the <b>Eastern Bridge</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "kaolin",
+                            amount: 3000
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Complete <b>3</b> stages out of <b>3</b> of the <b>Eastern Bridge</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "rice",
+                            amount: 2500
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 9,
+                appearsAfter: [2,3],
+                name: "Forbidden City - Phase I",
+                questgiver: "",
+                reward: {
+                    resource: "antimatter_china",
+                    amount: 2
+                },
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Have <b>Forbidden City</b> on level <b>1</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 200
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>Forbidden City</b> on level <b>3</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 500
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Have <b>Forbidden City</b> on level <b>5</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 2000
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>Forbidden City</b> on level <b>10</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 4000
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 10,
+                appearsAfter: [9],
+                name: "Forbidden City - Phase II",
+                questgiver: "",
+                reward: {
+                    resource: "antimatter_china",
+                    amount: 2
+                },
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Have <b>Forbidden City</b> on level <b>15</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 7000
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>Forbidden City</b> on level <b>20</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 10000
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Have <b>Forbidden City</b> on level <b>25</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 15000
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 11,
+                appearsAfter: [10],
+                name: "Forbidden City - Phase III",
+                questgiver: "",
+                reward: {
+                    resource: "antimatter_china",
+                    amount: 15
+                },
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Have <b>Forbidden City</b> on level <b>30</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 20000
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>Forbidden City</b> on level <b>35</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 25000
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Have <b>Forbidden City</b> on level <b>40</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 35000
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>Forbidden City</b> on level <b>45</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "wu_zhu",
+                            amount: 90000
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Have <b>Forbidden City</b> on level <b>50</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "antimatter_legendary_part",
+                            amount: 1
+                        }
+                    },
+                ]
+            }
+        ],
+        buildingCategories: {
+            "home": {
+                categoryName: "Houses",
+                buildings: [
+                    {
+                        id: "small_home",
+                        name: "Small Home",
+                        size: "2x2",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Small_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "5s",
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 1200,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: China_Small_Home_Lv2,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 380
+                                    }
+                                ],
+                                construction: {
+                                    time: "15s",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 2250,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: China_Small_Home_Lv3,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 2900
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 4500,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: China_Small_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 8700
+                                    }
+                                ],
+                                construction: {
+                                    time: "3m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 13500,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: China_Small_Home_Lv5,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 17000
+                                    }
+                                ],
+                                construction: {
+                                    time: "12m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 24000,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "egypt_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: China_Small_Home_Lv6,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 34000
+                                    }
+                                ],
+                                construction: {
+                                    time: "25m",
+                                    worker_entity: {
+                                        amount: 2,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 42000,
+                                    time: "3h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 1,
+                                        type: "china_worker"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "medium_home",
+                        name: "Medium Home",
+                        size: "4x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Average_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 250
+                                    }
+                                ],
+                                construction: {
+                                    time: "10s",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 3700,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: China_Average_Home_Lv2,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 1900
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 7500,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: China_Average_Home_Lv3,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 14000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m30s",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 15000,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: China_Average_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 42000
+                                    }
+                                ],
+                                construction: {
+                                    time: "5m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 45000,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: China_Average_Home_Lv5,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 84000
+                                    }
+                                ],
+                                construction: {
+                                    time: "25m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 80000,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: China_Average_Home_Lv6,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 170000
+                                    }
+                                ],
+                                construction: {
+                                    time: "50m",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 145000,
+                                    time: "6h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "luxurious_home",
+                        name: "Luxurious Home",
+                        size: "3x2",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Luxurious_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 250
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 4300,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: China_Luxurious_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 80
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 8700,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: China_Luxurious_Home_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 80
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 17300,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: China_Luxurious_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 80
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 55000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: China_Luxurious_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 80
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 95000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: China_Luxurious_Home_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 80
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "wu_zhu",
+                                    amount: 165000,
+                                    time: "8h"
+                                },
+                                provided: {
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "production": {
+                categoryName: "Production Buildings",
+                buildings: [
+                    {
+                        id: "rice_farm",
+                        name: "Rice Farm",
+                        size: "5x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Rice_Farm_Lv1,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 130
+                                    }
+                                ],
+                                construction: {
+                                    time: "15s",
+                                    worker_entity: {
+                                        amount: 3,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 1500,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: China_Rice_Farm_Lv2,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 980
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 2250,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: China_Rice_Farm_Lv3,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 7400
+                                    }
+                                ],
+                                construction: {
+                                    time: "1m30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 3500,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: China_Rice_Farm_Lv4,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 22000
+                                    }
+                                ],
+                                construction: {
+                                    time: "5m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 6900,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: China_Rice_Farm_Lv5,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 44000
+                                    }
+                                ],
+                                construction: {
+                                    time: "38m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 10350,
+                                    time: "6h"
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: China_Rice_Farm_Lv6,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 88000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 15000,
+                                    time: "6h"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        id: "luxurious_rice_farm",
+                        name: "Luxurious Rice Farm",
+                        size: "4x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Luxurious_Rice_Farm_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 150
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 2700,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 2,
+                                image: China_Luxurious_Rice_Farm_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 4000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 3,
+                                image: China_Luxurious_Rice_Farm_Lv1,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 6000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 4,
+                                image: China_Luxurious_Rice_Farm_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 12000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 5,
+                                image: China_Luxurious_Rice_Farm_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 18000,
+                                    time: "8h"
+                                }
+                            },
+                            {
+                                level: 6,
+                                image: China_Luxurious_Rice_Farm_Lv4,
+                                costs: [
+                                    {
+                                        resource: "gems",
+                                        amount: 50
+                                    }
+                                ],
+                                construction: {
+                                    time: "0s",
+                                    worker_entity: {
+                                        amount: 0,
+                                        type: "china_worker"
+                                    }
+                                },
+                                production: {
+                                    resource: "rice",
+                                    amount: 27500,
+                                    time: "8h"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "workshop": {
+                categoryName: "Workhops",
+                buildings: [
+                    {
+                        id: "thread_processor",
+                        name: "Thread Processor",
+                        size: "6x3",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 350
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 5,
+                                        time: "1m"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 2,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 2600
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 25,
+                                        time: "5m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 135,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 240,
+                                        time: "1h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 3,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 20000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 200,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 360,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 650,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 4,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 60000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 400,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 720,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 1300,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 5,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 120000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 600,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 1100,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 1900,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 6,
+                                image: China_Thread_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 240000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 900,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 1600,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk_threads",
+                                        amount: 2900,
+                                        time: "2h"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: "silk_workshop",
+                        name: "Silk Workshop",
+                        size: "5x3",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 500
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 3,
+                                        time: "1m"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 2,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 3800
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 20,
+                                        time: "5m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 110,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 190,
+                                        time: "1h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 3,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 29000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 150,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 270,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 480,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 4,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 87000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 300,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 550,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 950,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 5,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 170000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 450,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 800,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 1450,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 6,
+                                image: China_Silk_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 340000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "silk",
+                                        amount: 700,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 1250,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "silk",
+                                        amount: 2550,
+                                        time: "2h"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: "clay_processor",
+                        name: "Clay Processor",
+                        size: "5x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 350
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 3,
+                                        time: "1m"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 2,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 2600
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 20,
+                                        time: "5m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 110,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 190,
+                                        time: "1h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 3,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 20000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 150,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 270,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 480,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 4,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 60000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 300,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 550,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 950,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 5,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 120000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 450,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 800,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 1450,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 6,
+                                image: China_Clay_Processor,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 240000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "clay",
+                                        amount: 700,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 1250,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "clay",
+                                        amount: 2550,
+                                        time: "2h"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: "porcelain_workshop",
+                        name: "Porcelain Workshop",
+                        size: "6x4",
+                        cap: "∞",
+                        levels: [
+                            {
+                                level: 1,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 500
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 4,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 2,
+                                        time: "1m"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 2,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 3800
+                                    }
+                                ],
+                                construction: {
+                                    time: "30s",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 15,
+                                        time: "5m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 80,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 140,
+                                        time: "1h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 3,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 29000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 100,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 180,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 320,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 4,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 87000
+                                    }
+                                ],
+                                construction: {
+                                    time: "10m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 200,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 360,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 640,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 5,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 170000
+                                    }
+                                ],
+                                construction: {
+                                    time: "1h15m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 300,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 540,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 960,
+                                        time: "2h"
+                                    }
+                                ]
+                            },
+                            {
+                                level: 6,
+                                image: China_Porcelain_Workshop,
+                                costs: [
+                                    {
+                                        resource: "wu_zhu",
+                                        amount: 340000
+                                    }
+                                ],
+                                construction: {
+                                    time: "2h30m",
+                                    worker_entity: {
+                                        amount: 5,
+                                        type: "china_worker"
+                                    }
+                                },
+                                productions: [
+                                    {
+                                        resource: "porcelain",
+                                        amount: 450,
+                                        time: "30m"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 810,
+                                        time: "1h"
+                                    },
+                                    {
+                                        resource: "porcelain",
+                                        amount: 1440,
+                                        time: "2h"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                ]
+            },
+        },
+        wonder: {
+            name: "Forbidden City",
+            image: forbidden_city,
+            boostedResources: [
+                {
+                    id: "wu_zhu",
+                    name: "Wu Zhu"
+                },
+                {
+                    id: "rice",
+                    name: "Rice"
+                }
+            ],
+            levels: [
+                {
+                    level: 0,
+                    requirements: null,
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 2.5
+                        },
+                        {
+                            resource: "rice",
+                            amount: 2.5
+                        },
+                    ],
+                    reward: null
+                },
+                {
+                    level: 1,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 3
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 6
+                        },
+                        {
+                            resource: "rice",
+                            amount: 6
+                        },
+                    ],
+                    reward: {
+                        resource: "energy",
+                        amount: 25
+                    }
+                },
+                {
+                    level: 2,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 9
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 8.6
+                        },
+                        {
+                            resource: "rice",
+                            amount: 8.6
+                        },
+                    ],
+                    reward: {
+                        resource: "expansion_china",
+                        amount: 3
+                    }
+                },
+                {
+                    level: 3,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 24
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 10.3
+                        },
+                        {
+                            resource: "rice",
+                            amount: 10.3
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_china",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 4,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 40
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 11.6
+                        },
+                        {
+                            resource: "rice",
+                            amount: 11.6
+                        },
+                    ],
+                    reward: {
+                        resource: "xp_hero",
+                        amount: 900
+                    }
+                },
+                {
+                    level: 5,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 75
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 12.6
+                        },
+                        {
+                            resource: "rice",
+                            amount: 12.6
+                        },
+                    ],
+                    reward: {
+                        resource: "research_point",
+                        amount: 4
+                    }
+                },
+                {
+                    level: 6,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 250
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 13.5
+                        },
+                        {
+                            resource: "rice",
+                            amount: 13.5
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_china",
+                        amount: 2
+                    }
+                },
+                {
+                    level: 7,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 200
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 14.3
+                        },
+                        {
+                            resource: "rice",
+                            amount: 14.3
+                        },
+                    ],
+                    reward: {
+                        resource: "expansion_china",
+                        amount: 5
+                    }
+                },
+                {
+                    level: 8,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 200
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 15
+                        },
+                        {
+                            resource: "rice",
+                            amount: 15
+                        },
+                    ],
+                    reward: {
+                        resource: "goods_chest",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 9,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 200
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 15.6
+                        },
+                        {
+                            resource: "rice",
+                            amount: 15.6
+                        },
+                    ],
+                    reward: {
+                        resource: "energy",
+                        amount: 40
+                    }
+                },
+                {
+                    level: 10,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 200
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 16.2
+                        },
+                        {
+                            resource: "rice",
+                            amount: 16.2
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_china",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 11,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 275
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 16.7
+                        },
+                        {
+                            resource: "rice",
+                            amount: 16.7
+                        },
+                    ],
+                    reward: {
+                        resource: "food",
+                        amount: "N"
+                    }
+                },
+                {
+                    level: 12,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 500
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 17.1
+                        },
+                        {
+                            resource: "rice",
+                            amount: 17.1
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_china",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 13,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 540
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 17.5
+                        },
+                        {
+                            resource: "rice",
+                            amount: 17.5
+                        },
+                    ],
+                    reward: {
+                        resource: "expansion_china",
+                        amount: 7
+                    }
+                },
+                {
+                    level: 14,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 840
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 17.9
+                        },
+                        {
+                            resource: "rice",
+                            amount: 17.9
+                        },
+                    ],
+                    reward: {
+                        resource: "research_point",
+                        amount: 5
+                    }
+                },
+                {
+                    level: 15,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 1120
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 18.3
+                        },
+                        {
+                            resource: "rice",
+                            amount: 18.3
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_china",
+                        amount: 2
+                    }
+                },
+                {
+                    level: 16,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 1530
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 18.7
+                        },
+                        {
+                            resource: "rice",
+                            amount: 18.7
+                        },
+                    ],
+                    reward: {
+                        resource: "goods_chest",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 17,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 1950
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 19
+                        },
+                        {
+                            resource: "rice",
+                            amount: 19
+                        },
+                    ],
+                    reward: {
+                        resource: "expansion_china",
+                        amount: 8
+                    }
+                },
+                {
+                    level: 18,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 3150
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 19.3
+                        },
+                        {
+                            resource: "rice",
+                            amount: 19.3
+                        },
+                    ],
+                    reward: {
+                        resource: "food",
+                        amount: "N"
+                    }
+                },
+                {
+                    level: 19,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 4050
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 19.6
+                        },
+                        {
+                            resource: "rice",
+                            amount: 19.6
+                        },
+                    ],
+                    reward: {
+                        resource: "xp_hero",
+                        amount: 3500
+                    }
+                },
+                {
+                    level: 20,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 4900
+                        },
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 19.9
+                        },
+                        {
+                            resource: "rice",
+                            amount: 19.9
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_china",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 21,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 5800
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 45
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 20.2
+                        },
+                        {
+                            resource: "rice",
+                            amount: 20.2
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_legendary_part",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 22,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 6650
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 150
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 20.4
+                        },
+                        {
+                            resource: "rice",
+                            amount: 20.4
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_china",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 23,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 7550
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 245
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 20.7
+                        },
+                        {
+                            resource: "rice",
+                            amount: 20.7
+                        },
+                    ],
+                    reward: {
+                        resource: "research_point",
+                        amount: 6
+                    }
+                },
+                {
+                    level: 24,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 8400
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 900
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 20.9
+                        },
+                        {
+                            resource: "rice",
+                            amount: 20.9
+                        },
+                    ],
+                    reward: {
+                        resource: "expansion_china",
+                        amount: 8
+                    }
+                },
+                {
+                    level: 25,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 9300
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 1750
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 21.1
+                        },
+                        {
+                            resource: "rice",
+                            amount: 21.1
+                        },
+                    ],
+                    reward: {
+                        resource: "xp_hero",
+                        amount: 3500
+                    }
+                },
+                {
+                    level: 26,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 11400
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 4400
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 21.3
+                        },
+                        {
+                            resource: "rice",
+                            amount: 21.3
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_china",
+                        amount: 3
+                    }
+                },
+                {
+                    level: 27,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 12600
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 6500
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 21.6
+                        },
+                        {
+                            resource: "rice",
+                            amount: 21.6
+                        },
+                    ],
+                    reward: {
+                        resource: "food",
+                        amount: "N"
+                    }
+                },
+                {
+                    level: 28,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 13850
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 7900
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 21.8
+                        },
+                        {
+                            resource: "rice",
+                            amount: 21.8
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_china",
+                        amount: 5
+                    }
+                },
+                {
+                    level: 29,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 15050
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 11400
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 22
+                        },
+                        {
+                            resource: "rice",
+                            amount: 22
+                        },
+                    ],
+                    reward: {
+                        resource: "goods_chest",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 30,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 16300
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 12600
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 22.1
+                        },
+                        {
+                            resource: "rice",
+                            amount: 22.1
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_china",
+                        amount: 5
+                    }
+                },
+                {
+                    level: 31,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 17500
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 13300
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 22.3
+                        },
+                        {
+                            resource: "rice",
+                            amount: 22.3
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_legendary_part",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 32,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 18750
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 14000
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 22.5
+                        },
+                        {
+                            resource: "rice",
+                            amount: 22.5
+                        },
+                    ],
+                    reward: {
+                        resource: "xp_hero",
+                        amount: 2100
+                    }
+                },
+                {
+                    level: 33,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 19950
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 14550
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 22.7
+                        },
+                        {
+                            resource: "rice",
+                            amount: 22.7
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_china",
+                        amount: 3
+                    }
+                },
+                {
+                    level: 34,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 21200
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 15250
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 22.8
+                        },
+                        {
+                            resource: "rice",
+                            amount: 22.8
+                        },
+                    ],
+                    reward: {
+                        resource: "food",
+                        amount: "N"
+                    }
+                },
+                {
+                    level: 35,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 22400
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 15750
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 23
+                        },
+                        {
+                            resource: "rice",
+                            amount: 23
+                        },
+                    ],
+                    reward: {
+                        resource: "goods_chest",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 36,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 23650
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 16450
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 23.2
+                        },
+                        {
+                            resource: "rice",
+                            amount: 23.2
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_china",
+                        amount: 5
+                    }
+                },
+                {
+                    level: 37,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 24850
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 17000
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 23.3
+                        },
+                        {
+                            resource: "rice",
+                            amount: 23.3
+                        },
+                    ],
+                    reward: {
+                        resource: "research_point",
+                        amount: 10
+                    }
+                },
+                {
+                    level: 38,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 26100
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 17700
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 23.5
+                        },
+                        {
+                            resource: "rice",
+                            amount: 23.5
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_china",
+                        amount: 3
+                    }
+                },
+                {
+                    level: 39,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 27300
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 18400
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 23.6
+                        },
+                        {
+                            resource: "rice",
+                            amount: 23.6
+                        },
+                    ],
+                    reward: {
+                        resource: "xp_hero",
+                        amount: 5600
+                    }
+                },
+                {
+                    level: 40,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 28550
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 18900
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 23.8
+                        },
+                        {
+                            resource: "rice",
+                            amount: 23.8
+                        },
+                    ],
+                    reward: {
+                        resource: "goods_chest",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 41,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 29750
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 19600
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 23.9
+                        },
+                        {
+                            resource: "rice",
+                            amount: 23.9
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_legendary_part",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 42,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 31000
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 20150
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 24
+                        },
+                        {
+                            resource: "rice",
+                            amount: 24
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_china",
+                        amount: 5
+                    }
+                },
+                {
+                    level: 43,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 32200
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 20850
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 24.2
+                        },
+                        {
+                            resource: "rice",
+                            amount: 24.2
+                        },
+                    ],
+                    reward: {
+                        resource: "food",
+                        amount: "N"
+                    }
+                },
+                {
+                    level: 44,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 33450
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 21350
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 24.3
+                        },
+                        {
+                            resource: "rice",
+                            amount: 24.3
+                        },
+                    ],
+                    reward: {
+                        resource: "xp_hero",
+                        amount: 18000
+                    }
+                },
+                {
+                    level: 45,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 34650
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 22050
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 24.4
+                        },
+                        {
+                            resource: "rice",
+                            amount: 24.4
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_china",
+                        amount: 10
+                    }
+                },
+                {
+                    level: 46,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 35900
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 22750
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 24.6
+                        },
+                        {
+                            resource: "rice",
+                            amount: 24.6
+                        },
+                    ],
+                    reward: {
+                        resource: "research_point",
+                        amount: 15
+                    }
+                },
+                {
+                    level: 47,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 37100
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 23300
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 24.7
+                        },
+                        {
+                            resource: "rice",
+                            amount: 24.7
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_legendary_part",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 48,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 38350
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 24000
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 24.8
+                        },
+                        {
+                            resource: "rice",
+                            amount: 24.8
+                        },
+                    ],
+                    reward: {
+                        resource: "food",
+                        amount: "N"
+                    }
+                },
+                {
+                    level: 49,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 39550
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 24500
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 24.9
+                        },
+                        {
+                            resource: "rice",
+                            amount: 24.9
+                        },
+                    ],
+                    reward: {
+                        resource: "xp_hero",
+                        amount: 15000
+                    }
+                },
+                {
+                    level: 50,
+                    requirements: [
+                        {
+                            resource: "silk",
+                            amount: 40800
+                        },
+                        {
+                            resource: "porcelain",
+                            amount: 25200
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "wu_zhu",
+                            amount: 25
+                        },
+                        {
+                            resource: "rice",
+                            amount: 25
+                        },
+                    ],
+                    reward: {
+                        resource: "antimatter_china",
+                        amount: 20
+                    }
+                },
+            ]
+        }
+    },
     {
         id: "egypt_great_sphinx",
         name: "The Trade Exhibition",
@@ -3295,10 +6903,12 @@ const allAlliedCultures = [
         wonder: {
             name: "Great Sphinx",
             image: great_sphinx,
-            boostedResource: {
-                id: "gold_ore",
-                name: "Gold Ore"
-            },
+            boostedResources: [
+                {
+                    id: "gold_ore",
+                    name: "Gold Ore"
+                }
+            ],
             levels: [
                 {
                     level: 0,
@@ -6803,10 +10413,12 @@ const allAlliedCultures = [
         wonder: {
             name: "Terracotta Army",
             image: terracotta_army,
-            boostedResource: {
-                id: "wu_zhu",
-                name: "Wu Zhu"
-            },
+            boostedResources: [
+                {
+                    id: "wu_zhu",
+                    name: "Wu Zhu"
+                }
+            ],
             levels: [
                 {
                     level: 0,
@@ -11107,10 +14719,12 @@ const allAlliedCultures = [
         wonder: {
             name: "Cheops Pyramid",
             image: cheops_pyramid,
-            boostedResource: {
-                id: "deben",
-                name: "Deben"
-            },
+            boostedResources: [
+                {
+                    id: "deben",
+                    name: "Deben"
+                }
+            ],
             levels: [
                 {
                     level: 0,
@@ -14615,10 +18229,12 @@ const allAlliedCultures = [
         wonder: {
             name: "Great Wall",
             image: great_wall,
-            boostedResource: {
-                id: "rice",
-                name: "Rice"
-            },
+            boostedResources: [
+                {
+                    id: "rice",
+                    name: "Rice"
+                }
+            ],
             levels: [
                 {
                     level: 0,
@@ -15708,11 +19324,6 @@ const allAlliedCultures = [
         id: "egypt_abu_simbel",
         name: "The Visionary Invitation",
         image: "https://i.ibb.co/Xjm70X4/btn-event-city-wonder-egypt-abusimbel.png",
-    },*/
-    /*{
-        id: "china_forbidden_city",
-        name: "Forbidden City",
-        image: "https://i.ibb.co/cTb6RV8/btn-event-city-wonder-china-forbiddencity.png",
     },*/
 ]
 
