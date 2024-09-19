@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f63a265f.css",
-    "main.js": "/static/js/main.92b9568e.js",
+    "main.js": "/static/js/main.5672778b.js",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
     "static/media/china_city.webp": "/static/media/china_city.415736e9ff5f7bc3bfe7.webp",
     "static/media/egypt_city.webp": "/static/media/egypt_city.7719ac968df164a2b372.webp",
@@ -20,6 +20,7 @@
     "static/media/province_11.webp": "/static/media/province_11.2567a7693f4dc69cd638.webp",
     "static/media/province_9.webp": "/static/media/province_9.48406a5a73da0709c72f.webp",
     "static/media/province_4.webp": "/static/media/province_4.6c3da8dccbeb4607f881.webp",
+    "static/media/forbidden_city.webp": "/static/media/forbidden_city.fb87924a745f7649c751.webp",
     "static/media/province_13.webp": "/static/media/province_13.25a441efc7596bad4e16.webp",
     "static/media/province_7.webp": "/static/media/province_7.ae9c878038a53b4343be.webp",
     "static/media/province_12.webp": "/static/media/province_12.876689b8eed5c8fc5305.webp",
@@ -38,6 +39,7 @@
     "static/media/china_background_news.webp": "/static/media/china_background_news.598f56e701760888eea9.webp",
     "static/media/hoh_banner.webp": "/static/media/hoh_banner.7e066fb1f5260cd02238.webp",
     "static/media/Unit_CyrusTheGreat_fullbody.webp": "/static/media/Unit_CyrusTheGreat_fullbody.bce1d55d853c116261de.webp",
+    "static/media/city_event_banner_china_forbiddencity.png": "/static/media/city_event_banner_china_forbiddencity.77d42c155cc2ce45d5a4.png",
     "static/media/Unit_RobinHood_fullbody.webp": "/static/media/Unit_RobinHood_fullbody.101ca3240b8d6fe3a13e.webp",
     "static/media/Unit_KingMinos_fullbody.webp": "/static/media/Unit_KingMinos_fullbody.be49ea6e8a6532b13dc7.webp",
     "static/media/Unit_Hoplit_fullbody.webp": "/static/media/Unit_Hoplit_fullbody.609da7c302728ca776eb.webp",
@@ -567,10 +569,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.f63a265f.css.map": "/static/css/main.f63a265f.css.map",
-    "main.92b9568e.js.map": "/static/js/main.92b9568e.js.map"
+    "main.5672778b.js.map": "/static/js/main.5672778b.js.map"
   },
   "entrypoints": [
     "static/css/main.f63a265f.css",
-    "static/js/main.92b9568e.js"
+    "static/js/main.5672778b.js"
   ]
 }
