@@ -10,6 +10,7 @@ import useOptionURL from "../../shared/hooks/useOptionURL";
 import H1 from "../../shared/H1";
 import Image from "../../shared/Image";
 import Icon from "../../shared/Icon";
+import { getItem } from "../../shared/utils";
 
 import allAlliedCultures from "../data";
 import resources from "../../shared/data/resources";
@@ -90,16 +91,16 @@ const Buildings = (props) => {
                                         {building.size}
                                     </td>
                                     <td rowSpan={2}>
-                                        {level.costs[0].amount} <Icon resource={resources.find((resource) => resource.id === level.costs[0].resource)} />
+                                        {level.costs[0].amount} {getItem(level.costs[0].resource)}
                                     </td>
                                     <td>
                                         {level.construction.time}
                                     </td>
                                     <td rowSpan={2}>
-                                        {level.production.amount} <Icon resource={resources.find((resource) => resource.id === level.production.resource)} /> / {level.production.time}
+                                        {level.production.amount} {getItem(level.production.resource)} / {level.production.time}
                                     </td>
                                     <td rowSpan={2}>
-                                        {level.provided.worker_entity.amount} <Icon resource={resources.find((resource) => resource.id === level.provided.worker_entity.type)} />
+                                        {level.provided.worker_entity.amount} {getItem(level.provided.worker_entity.type)}
                                     </td>
                                     {
                                         index === 0 && (
@@ -112,7 +113,7 @@ const Buildings = (props) => {
                                 </tr>
                                 <tr>
                                     <td>
-                                        {level.construction.worker_entity.amount} <Icon resource={resources.find((resource) => resource.id === level.construction.worker_entity.type)} />
+                                        {level.construction.worker_entity.amount} {getItem(level.construction.worker_entity.type)}
                                     </td>
                                 </tr>
                                 </>
@@ -177,13 +178,13 @@ const Buildings = (props) => {
                                         {building.size}
                                     </td>
                                     <td rowSpan={2}>
-                                        {level.costs[0].amount} <Icon resource={resources.find((resource) => resource.id === level.costs[0].resource)} />
+                                        {level.costs[0].amount} {getItem(level.costs[0].resource)}
                                     </td>
                                     <td>
                                         {level.construction.time}
                                     </td>
                                     <td rowSpan={2}>
-                                        {level.production.amount} <Icon resource={resources.find((resource) => resource.id === level.production.resource)} /> / {level.production.time}
+                                        {level.production.amount} {getItem(level.production.resource)} / {level.production.time}
                                     </td>
                                     {
                                         index === 0 && (
@@ -196,7 +197,7 @@ const Buildings = (props) => {
                                 </tr>
                                 <tr>
                                     <td>
-                                        {level.construction.worker_entity.amount} <Icon resource={resources.find((resource) => resource.id === level.construction.worker_entity.type)} />
+                                        {level.construction.worker_entity.amount} {getItem(level.construction.worker_entity.type)}
                                     </td>
                                 </tr>
                                 </>
@@ -261,13 +262,13 @@ const Buildings = (props) => {
                                         {building.size}
                                     </td>
                                     <td rowSpan={2}>
-                                        {level.costs[0].amount} <Icon resource={resources.find((resource) => resource.id === level.costs[0].resource)} />
+                                        {level.costs[0].amount} {getItem(level.costs[0].resource)}
                                     </td>
                                     <td>
                                         {level.construction.time}
                                     </td>
                                     <td rowSpan={2}>
-                                        {level.production.amount} <Icon resource={resources.find((resource) => resource.id === level.production.resource)} /> / {level.production.time}
+                                        {level.production.amount} {getItem(level.production.resource)} / {level.production.time}
                                     </td>
                                     {
                                         index === 0 && (
@@ -280,7 +281,7 @@ const Buildings = (props) => {
                                 </tr>
                                 <tr>
                                     <td>
-                                        {level.construction.worker_entity.amount} <Icon resource={resources.find((resource) => resource.id === level.construction.worker_entity.type)} />
+                                        {level.construction.worker_entity.amount} {getItem(level.construction.worker_entity.type)}
                                     </td>
                                 </tr>
                                 </>
@@ -345,13 +346,13 @@ const Buildings = (props) => {
                                         {building.size}
                                     </td>
                                     <td rowSpan={2}>
-                                        {level.costs[0].amount} <Icon resource={resources.find((resource) => resource.id === level.costs[0].resource)} />
+                                        {level.costs[0].amount} {getItem(level.costs[0].resource)}
                                     </td>
                                     <td>
                                         {level.construction.time}
                                     </td>
                                     <td rowSpan={2}>
-                                        {level.production.amount} <Icon resource={resources.find((resource) => resource.id === level.production.resource)} /> / {level.production.time}
+                                        {level.production.amount} {getItem(level.production.resource)} / {level.production.time}
                                     </td>
                                     {
                                         index === 0 && (
@@ -364,7 +365,7 @@ const Buildings = (props) => {
                                 </tr>
                                 <tr>
                                     <td>
-                                        {level.construction.worker_entity.amount} <Icon resource={resources.find((resource) => resource.id === level.construction.worker_entity.type)} />
+                                        {level.construction.worker_entity.amount} {getItem(level.construction.worker_entity.type)}
                                     </td>
                                 </tr>
                                 </>
@@ -429,7 +430,7 @@ const Buildings = (props) => {
                                         {building.size}
                                     </td>
                                     <td rowSpan={2}>
-                                        {level.costs[0].amount} <Icon resource={resources.find((resource) => resource.id === level.costs[0].resource)} />
+                                        {level.costs[0].amount} {getItem(level.costs[0].resource)}
                                     </td>
                                     <td>
                                         {level.construction.time}
@@ -451,7 +452,7 @@ const Buildings = (props) => {
                                                                 flex: 1,
                                                             }}
                                                         >
-                                                            {production.amount} <Icon resource={resources.find((resource) => resource.id === production.resource)} /> / {production.time}
+                                                            {production.amount} {getItem(production.resource)} / {production.time}
                                                         </div>
                                                     ))
                                                 }
@@ -468,7 +469,7 @@ const Buildings = (props) => {
                                 </tr>
                                 <tr>
                                     <td>
-                                        {level.construction.worker_entity.amount} <Icon resource={resources.find((resource) => resource.id === level.construction.worker_entity.type)} />
+                                        {level.construction.worker_entity.amount} {getItem(level.construction.worker_entity.type)}
                                     </td>
                                 </tr>
                                 </>
@@ -533,13 +534,13 @@ const Buildings = (props) => {
                                         {building.size}
                                     </td>
                                     <td rowSpan={2}>
-                                        {level.costs[0].amount} <Icon resource={resources.find((resource) => resource.id === level.costs[0].resource)} />
+                                        {level.costs[0].amount} {getItem(level.costs[0].resource)}
                                     </td>
                                     <td>
                                         {level.construction.time}
                                     </td>
                                     <td rowSpan={2}>
-                                        {level.provided.culture.amount} <Icon resource={resources.find((resource) => resource.id === level.provided.culture.type)} /> in {level.provided.culture.range} {level.provided.culture.range > 1 ? "tiles" : "tile"}
+                                        {level.provided.culture.amount} {getItem(level.provided.culture.type)} in {level.provided.culture.range} {level.provided.culture.range > 1 ? "tiles" : "tile"}
                                     </td>
                                     {
                                         index === 0 && (
@@ -552,7 +553,7 @@ const Buildings = (props) => {
                                 </tr>
                                 <tr>
                                     <td>
-                                        {level.construction.worker_entity.amount} <Icon resource={resources.find((resource) => resource.id === level.construction.worker_entity.type)} />
+                                        {level.construction.worker_entity.amount} {getItem(level.construction.worker_entity.type)}
                                     </td>
                                 </tr>
                                 </>

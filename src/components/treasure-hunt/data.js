@@ -165,7 +165,7 @@ const checkpoints = [
         requirement: 10000,
         rewards: [
             {
-                resource: "puzzle",
+                resource: "puzzle_piece",
                 percentage: 20
             },
             {
@@ -271,7 +271,7 @@ const checkpoints = [
         requirement: 24000,
         rewards: [
             {
-                resource: "puzzle",
+                resource: "puzzle_piece",
                 percentage: 20
             },
             {
@@ -350,7 +350,7 @@ const checkpoints = [
         requirement: 39000,
         rewards: [
             {
-                resource: "puzzle",
+                resource: "puzzle_piece",
                 percentage: 25
             },
             {
@@ -385,7 +385,7 @@ const checkpoints = [
         requirement: 48000,
         rewards: [
             {
-                resource: "puzzle",
+                resource: "puzzle_piece",
                 percentage: 30
             },
             {

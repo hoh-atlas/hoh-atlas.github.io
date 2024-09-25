@@ -8,6 +8,7 @@ import H1 from "../../shared/H1";
 import Icon from "../../shared/Icon";
 import resources from "../../shared/data/resources";
 import TextBlock from "../../shared/TextBlock";
+import { getItem } from "../../shared/utils";
 
 import icon_battle from "../../../images/campaign/intro/icon-battle.webp";
 import WorldMap_Fallback from "../../../images/campaign/intro/WorldMap_Fallback.webp";
@@ -31,9 +32,9 @@ const Intro = () => {
 
             <Image src={deco_scout} alt="" roundedCorners={true} spacing={true} width={'400px'}/>
 
-            Campaign comes with the main storyline of the game and offers a range rewards, such as Experiences <Icon resource={resources.find((resource) => resource.id === "xp_hero")}/> to level-up your Heroes, 
-            Research Materials <Icon resource={resources.find((resource) => resource.id === "lapis_lazuli")}/> required to unlock specific technologies in the Research Tree,
-            Antimatters <Icon resource={resources.find((resource) => resource.id === "antimatter")}/> to power the Time Portal and expansions <Icon resource={resources.find((resource) => resource.id === "expansion_regular")}/> to expand your Capital City.
+            Campaign comes with the main storyline of the game and offers a range rewards, such as Experiences {getItem("xp_hero")} to level-up your Heroes, 
+            Research Materials {getItem("lapis_lazuli")} required to unlock specific technologies in the Research Tree,
+            Antimatters {getItem("antimatter")} to power the Time Portal and expansions {getItem("expansion_regular")} to expand your Capital City.
 
             <ImageWideHeader imageUrl={WorldMap_Fallback} style={{ height: '200px' }} centered={true} spacing={true}/>
 
@@ -50,9 +51,9 @@ const Intro = () => {
 
             <Image src={CampaignEnergy} alt="" spacing={true} height={'70px'} marginTop={'10px'} />
 
-            Stamina is essential for initiating battles on the Campaign Map, with each encounter costing 8 <Icon resource={resources.find((resource) => resource.id === "energy")}/> (regardless of the outcome).
-            It regenerates at a rate of 1 per 2 minutes. You can earn more Stamina from Quests, Treasure Hunt encounters, by watching ads (one ad gives 8 <Icon resource={resources.find((resource) => resource.id === "energy")}/> and
-            you have 3 available ads per day), from rewards of Allied City events or by purchasing it with gems (100 <Icon resource={resources.find((resource) => resource.id === "energy")}/> for 50 <Icon resource={resources.find((resource) => resource.id === "gems")}/>).<br/>
+            Stamina is essential for initiating battles on the Campaign Map, with each encounter costing 8 {getItem("energy")} (regardless of the outcome).
+            It regenerates at a rate of 1 per 2 minutes. You can earn more Stamina from Quests, Treasure Hunt encounters, by watching ads (one ad gives 8 {getItem("energy")} and
+            you have 3 available ads per day), from rewards of Allied City events or by purchasing it with gems (100 {getItem("energy")} for 50 {getItem("gems")}).<br/>
             Stamina is also required to initiate battles in Tesla Storms. It's important to manage your Stamina carefully and spread it between both features - Campaign gives you experiences to level-up your heroes, while
             Tesla Storms allow you to unlock their new levels.<br/> 
 

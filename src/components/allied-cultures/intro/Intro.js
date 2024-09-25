@@ -10,6 +10,7 @@ import H1 from "../../shared/H1";
 import Image from "../../shared/Image";
 import TextBlock from "../../shared/TextBlock";
 import Icon from "../../shared/Icon";
+import { getItem } from "../../shared/utils";
 
 import allAlliedCultures from "../data";
 import resources from "../../shared/data/resources";
@@ -57,19 +58,19 @@ const Intro = (props) => {
                         It contains 50 levels, each offering a unique reward including a special bonus for collecting {alliedCulture.wonder.boostedResources.map((resource, index) => (
                             <>
                                 {index > 0 && index === alliedCulture.wonder.boostedResources.length - 1 ? ' and ' : index > 0 ? ', ' : ''}
-                                {resource.name} <Icon resource={resources.find((r) => r.id === resource.id)} />
+                                {resource.name} {getItem(resource.id)}
                             </>
                         ))}
                         &nbsp;that helps you to progress in the Allied Culture faster.
 
                         <Image src={egypt_city} alt="" roundedCorners={true} spacing={true} maxHeight={'300px'}/>
 
-                        The core buildings include Houses (Small, Medium and Luxurious) that provide Egypt Workers <Icon resource={resources.find((resource) => resource.id === "egypt_worker")}/> and
-                        Deben <Icon resource={resources.find((resource) => resource.id === "deben")}/>. Production buildings consist of the Papyrus Field, which produces Papyrus <Icon resource={resources.find((resource) => resource.id === "papyrus")}/> and
-                        the Gold Mine, which yields Gold Ore <Icon resource={resources.find((resource) => resource.id === "gold_ore")}/>. These resources are essential for creating the final event products: 
-                        Papyrus Scrolls <Icon resource={resources.find((resource) => resource.id === "papyrus_scroll")}/> and Ankhs <Icon resource={resources.find((resource) => resource.id === "ankh")}/>, 
+                        The core buildings include Houses (Small, Medium and Luxurious) that provide Egypt Workers {getItem("egypt_worker")} and
+                        Deben {getItem("deben")}. Production buildings consist of the Papyrus Field, which produces Papyrus {getItem("papyrus")} and
+                        the Gold Mine, which yields Gold Ore {getItem("gold_ore")}. These resources are essential for creating the final event products: 
+                        Papyrus Scrolls {getItem("papyrus_scroll")} and Ankhs {getItem("ankh")}, 
                         which are produced in the Papyrus Press and Goldsmith buildings, respectively. Starting from level 4, these production buildings can also create 
-                        Ceremonial Dresses <Icon resource={resources.find((resource) => resource.id === "ceremonial_dress")}/> and Golden Masks <Icon resource={resources.find((resource) => resource.id === "golden_mask")}/>,
+                        Ceremonial Dresses {getItem("ceremonial_dress")} and Golden Masks {getItem("golden_mask")},
                         necessary for upgrading the Cheops Pyramid from level 21 onward.
 
                         <Image src={irrigation_3} alt="" spacing={true} maxHeight={'100px'}/>
@@ -97,17 +98,17 @@ const Intro = (props) => {
                                     </tr>
                                     <tr>
                                         <td>1</td>
-                                        <td>5000 <Icon resource={resources.find((resource) => resource.id === "deben")}/></td>
+                                        <td>5000 {getItem("deben")}</td>
                                         <td>30m</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>30000 <Icon resource={resources.find((resource) => resource.id === "deben")}/></td>
+                                        <td>30000 {getItem("deben")}</td>
                                         <td>2h</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>60000 <Icon resource={resources.find((resource) => resource.id === "deben")}/></td>
+                                        <td>60000 {getItem("deben")}</td>
                                         <td>6h</td>
                                     </tr>
                                 </tbody>
@@ -123,19 +124,19 @@ const Intro = (props) => {
                         It contains 50 levels, each offering a unique reward including a special bonus for collecting {alliedCulture.wonder.boostedResources.map((resource, index) => (
                             <>
                                 {index > 0 && index === alliedCulture.wonder.boostedResources.length - 1 ? ' and ' : index > 0 ? ', ' : ''}
-                                {resource.name} <Icon resource={resources.find((r) => r.id === resource.id)} />
+                                {resource.name} {getItem(resource.id)}
                             </>
                         ))}
                         &nbsp;that helps you to progress in the Allied Culture faster.
 
                         <Image src={china_city} alt="" roundedCorners={true} spacing={true} maxHeight={'300px'}/>
 
-                        The core buildings include Houses (Small, Medium and Luxurious) that provide China Workers <Icon resource={resources.find((resource) => resource.id === "china_worker")}/> and
-                        Wu Zhu <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/>. Production buildings consist of the Rice Farm, which produces Rice <Icon resource={resources.find((resource) => resource.id === "rice")}/> and
-                        2 special buildings that are obtainable only by unlocking the expansions in the allied city - Moth Glade and Kaolin Quarry, producing Moth Cocoon <Icon resource={resources.find((resource) => resource.id === "moth_cocoon")}/> and
-                        Kaolin <Icon resource={resources.find((resource) => resource.id === "kaolin")}/>, respectively. Secondary production buildings include Thread Processor, which produces Threads <Icon resource={resources.find((resource) => resource.id === "silk_threads")}/> and
-                        Clay Processor, which produces Clay <Icon resource={resources.find((resource) => resource.id === "clay")}/>. These resources are essential for creating the final event products:
-                        Silk <Icon resource={resources.find((resource) => resource.id === "silk")}/> and Porcelain <Icon resource={resources.find((resource) => resource.id === "porcelain")}/>, which are produced in the Silk Workshop and Porcelain Workshop,
+                        The core buildings include Houses (Small, Medium and Luxurious) that provide China Workers {getItem("china_worker")} and
+                        Wu Zhu {getItem("wu_zhu")}. Production buildings consist of the Rice Farm, which produces Rice {getItem("rice")} and
+                        2 special buildings that are obtainable only by unlocking the expansions in the allied city - Moth Glade and Kaolin Quarry, producing Moth Cocoon {getItem("moth_cocoon")} and
+                        Kaolin {getItem("kaolin")}, respectively. Secondary production buildings include Thread Processor, which produces Threads {getItem("silk_threads")} and
+                        Clay Processor, which produces Clay {getItem("clay")}. These resources are essential for creating the final event products:
+                        Silk {getItem("silk")} and Porcelain {getItem("porcelain")}, which are produced in the Silk Workshop and Porcelain Workshop,
                         respectively. The production chain leading to Porcelain is unlocked later in the research of the allied city and is required to upgrade the World Wonder from level 21 onward.
 
                         <Image src={china_bridge} alt="" roundedCorners={true} spacing={true} maxHeight={'200px'}/>
@@ -162,26 +163,26 @@ const Intro = (props) => {
                                     </tr>
                                     <tr>
                                         <td>1</td>
-                                        <td>1500 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
+                                        <td>1500 {getItem("wu_zhu")}</td>
                                         <td>1m</td>
                                         <td>1</td>
-                                        <td>5000 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
+                                        <td>5000 {getItem("wu_zhu")}</td>
                                         <td>30m</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>2500 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
+                                        <td>2500 {getItem("wu_zhu")}</td>
                                         <td>10m</td>
                                         <td>2</td>
-                                        <td>15000 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
+                                        <td>15000 {getItem("wu_zhu")}</td>
                                         <td>1h</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>5000 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
+                                        <td>5000 {getItem("wu_zhu")}</td>
                                         <td>1h</td>
                                         <td>3</td>
-                                        <td>30000 <Icon resource={resources.find((resource) => resource.id === "wu_zhu")}/></td>
+                                        <td>30000 {getItem("wu_zhu")}</td>
                                         <td>2h</td>
                                     </tr>
                                 </tbody>

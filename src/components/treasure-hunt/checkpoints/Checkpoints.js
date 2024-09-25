@@ -18,7 +18,8 @@ const Checkpoints = (props) => {
     return <>
         <Prologue imageSrc={icon_mystery_chest_gold} alt={"Checkpoints"} maxHeight={"65px"} >
             Alliance Checkpoints are the main sequence of rewards in Alliance Treasure Hunt. Together with your alliance members, you collect points for each completed encounter.
-            The number of points you receive depends on your current difficulty level. The higher the difficulty, the more you contribute to the shared rewards and the farther you can progress!
+            The number of points you receive depends on your current difficulty level. The higher the difficulty, the more you contribute to the shared rewards and the farther you can progress!<br/>
+            Note: You can click on the customizations to preview their details!
         </Prologue>
         <SectionDivider />
         <H1 center={true}>Checkpoints</H1>

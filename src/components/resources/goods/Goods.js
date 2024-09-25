@@ -5,7 +5,7 @@ import Prologue from "../../shared/Prologue";
 import SectionDivider from "../../shared/SectionDivider";
 import React from "react";
 import Icon from "../../shared/Icon";
-import { leftJoinArrays } from "../../shared/utils";
+import { leftJoinArrays, getItem } from "../../shared/utils";
 
 import alabaster_idol from '../../../images/resources/goods/icon-alabaster-idol.webp';
 
@@ -97,7 +97,7 @@ const Goods = () => {
                                                     {goodsExpanded
                                                         .filter(item => item.workshop === workshop && item.era === era)
                                                         .map((item, indexItem) => (
-                                                            <div key={indexItem}><Icon resource={resources.find((resource) => resource.id === item.id)}/> {item.name}</div>
+                                                            <div key={indexItem}>{getItem(item.id)} {item.name}</div>
                                                         ))
                                                     }
                                                 </td>

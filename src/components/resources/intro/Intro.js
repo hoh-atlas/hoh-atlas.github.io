@@ -8,6 +8,7 @@ import Image from "../../shared/Image";
 import Icon from "../../shared/Icon";
 import resources from "../../shared/data/resources";
 import ImageWideHeader from "../../shared/ImageWideHeader";
+import { getItem } from "../../shared/utils";
 
 import icon_goldfood from "../../../images/resources/intro/icon-goldfood.webp";
 import ui_top from "../../../images/resources/intro/ui_top.webp";
@@ -30,7 +31,7 @@ const Intro = () => {
 
             <H1 center={true}>Resources</H1>
             <br/>
-            To follow your current state of resources, take a look at the top menu to find Coins <Icon resource={resources.find((resource) => resource.id === "coins")}/> and Food <Icon resource={resources.find((resource) => resource.id === "food")}/> (limited by the storage capacity of your current era)
+            To follow your current state of resources, take a look at the top menu to find Coins {getItem("coins")} and Food {getItem("food")} (limited by the storage capacity of your current era)
             and most importantly, Goods <Icon resource={goods}/> button to track the unlimited resources you produced in workshops and collected on the campaign map.
 
             {<Image src={ui_top} alt="" roundedCorners={true} height={'180px'} heightMobile={'100px'} spacing={true}/>}

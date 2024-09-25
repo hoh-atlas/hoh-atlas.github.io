@@ -1,6 +1,6 @@
 import "./TableCheckpoints.css";
 
-import Icon from "../../shared/Icon";
+import { getItem } from "../../shared/utils";
 import resources from "../../shared/data/resources";
 import Image from "../../shared/Image";
 
@@ -35,13 +35,13 @@ const TableCheckpoints = (props) => {
                                     {
                                         [...Array(maxRewards)].map((_, index) => {
                                             const reward = checkpoint.rewards[index];
-                                            const resource = reward ? resources.find(r => r.id === reward.resource) : null;
+                                            const resource = reward?.resource;
                                             return (
                                                 <td key={`cell-${checkpointIndex}-${index}`} style={{ width: `${80 / maxRewards}%` }}>
                                                     {reward && resource ? (
                                                         <>
                                                             {reward.amount ? `${reward.amount}x ` : ""}
-                                                            <Icon resource={resource} />
+                                                            {getItem(resource)}
                                                         </>
                                                     ) : ""}
                                                 </td>

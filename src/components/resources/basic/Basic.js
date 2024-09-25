@@ -1,6 +1,6 @@
 import "./Basic.css";
 
-import { leftJoinArrays } from "../../shared/utils";
+import { leftJoinArrays, getItem } from "../../shared/utils";
 import resources from "../../shared/data/resources";
 import Prologue from "../../shared/Prologue";
 import SectionDivider from "../../shared/SectionDivider";
@@ -70,7 +70,7 @@ const Basic = () => {
                             categorizedData[category].map((item) => (
                                 <tr>
                                     <td style={{width: '30%'}}>{item.name}</td>
-                                    <td style={{width: '10%'}}><Icon resource={resources.find((resource) => resource.id === item.id)}/></td>
+                                    <td style={{width: '10%'}}>{getItem(item.id)}</td>
                                     <td style={{width: '30%'}}>{item.description1}</td>
                                     <td style={{width: '30%'}}>{item.description2}</td>
                                 </tr>

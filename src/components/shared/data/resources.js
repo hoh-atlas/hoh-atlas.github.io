@@ -8,14 +8,19 @@ import ceremonial_dress from '../../../images/shared/resources/ceremonial_dress.
 import chili from '../../../images/shared/resources/chili.webp';
 import clay from '../../../images/shared/resources/clay.webp';
 import Coin from '../../../images/shared/resources/Coin.webp';
+import coins_bonus from '../../../images/shared/resources/coins_bonus.webp';
 import column from '../../../images/shared/resources/column.webp';
+import culture_bonus from '../../../images/shared/resources/culture_bonus.webp';
 import deben from '../../../images/shared/resources/deben.webp';
 import door from '../../../images/shared/resources/door.webp';
 import Food from '../../../images/shared/resources/Food.webp';
+import food_bonus from '../../../images/shared/resources/food_bonus.webp';
 import Gem from '../../../images/shared/resources/Gem.webp';
 import goblet from '../../../images/shared/resources/goblet.webp';
 import gold_laurel from '../../../images/shared/resources/gold_laurel.webp';
 import golden_mask from '../../../images/shared/resources/golden_mask.webp';
+import goods from '../../../images/shared/resources/goods.webp';
+import goods_bonus from '../../../images/shared/resources/goods_bonus.webp';
 import herbs from '../../../images/shared/resources/herbs.webp';
 import icon_agate from '../../../images/shared/resources/icon_agate.webp';
 import icon_amber from '../../../images/shared/resources/icon_amber.webp';
@@ -122,6 +127,7 @@ import parchment from '../../../images/shared/resources/parchment.webp';
 import pepper from '../../../images/shared/resources/pepper.webp';
 import planks from '../../../images/shared/resources/planks.webp';
 import porcelain from '../../../images/shared/resources/porcelain.webp';
+import puzzle_piece from '../../../images/shared/resources/puzzle_piece.webp';
 import Research from '../../../images/shared/resources/Research.webp';
 import rice from '../../../images/shared/resources/rice.webp';
 import saffron from '../../../images/shared/resources/saffron.webp';
@@ -147,6 +153,7 @@ const resources = [
     {id: "gems", name: "Gems", img: Gem, category: "soft"},
     {id: "energy", name: "Stamina", img: CampaignEnergy, category: "soft"},
     {id: "victory_ticket", name: "Victory Ticket", img: icon_campaign_battle_ticket, category: "soft"},
+    {id: "goods", name: "Goods", img: goods, category: "soft"},
     // EXPERIENCES
     {id: "xp_common", name: "Common Scroll of Prowess", img: icon_xp_scroll_common, category: "experiences"},
     {id: "xp_uncommon", name: "Uncommon Scroll of Prowess", img: icon_xp_scroll_uncommon, category: "experiences"},
@@ -295,7 +302,13 @@ const resources = [
     {id: "defense", name: "Defense", img: "https://i.ibb.co/1Jy3KQ0/icon-hero-def.png", category: "attack"},
     {id: "hp", name: "HP", img: "https://i.ibb.co/3c8TYXL/icon-hero-hp.png", category: "attack"},
     {id: "hero_power", name: "Hero Power", img: "https://i.ibb.co/yNZpy6D/icon-hero-power-538925.png", category: "attack"},
+    // BONUSES
+    {id: "culture_bonus", name: "Culture Bonus", img: culture_bonus, category: "bonuses"},
+    {id: "food_bonus", name: "Food Bonus", img: food_bonus, category: "bonuses"},
+    {id: "goods_bonus", name: "Goods Bonus", img: goods_bonus, category: "bonuses"},
+    {id: "coins_bonus", name: "Coins Bonus", img: coins_bonus, category: "bonuses"},
     // FRAGMENTS
+    {id: "puzzle_piece", name: "Puzzle Piece", img: puzzle_piece, category: "fragments"},
     {id: "antimatter_common_part", name: "Antimatter Piece", img: icon_rift_token_common_part, category: "fragments"},
     {id: "antimatter_legendary_part", name: "Legendary Antimatter Piece", img: icon_rift_token_legendary_part, category: "fragments"},
 ]

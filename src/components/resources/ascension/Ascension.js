@@ -4,7 +4,7 @@ import Prologue from "../../shared/Prologue";
 import SectionDivider from "../../shared/SectionDivider";
 import resources from "../../shared/data/resources";
 import Icon from "../../shared/Icon";
-import { leftJoinArrays } from "../../shared/utils";
+import { leftJoinArrays, getItem } from "../../shared/utils";
 import { Link } from "react-router-dom";
 
 import icon_war_horn from "../../../images/shared/resources/icon_war_horn.webp";
@@ -50,7 +50,7 @@ const Ascension = () => {
                     goodsExpanded.map((material) => (
                         <tr>
                             <td>{material.name}</td>
-                            <td><Icon resource={resources.find((resource) => resource.id === material.id)}/></td>
+                            <td>{getItem(material.id)}</td>
                             <td>{material.description1}</td>
                             <td>{material.description2.split("_")[0]}{material.link}{material.description2.split("_")[1]}</td>
                         </tr>

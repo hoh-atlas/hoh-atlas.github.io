@@ -39,7 +39,7 @@ const Intro = () => {
 
     <MenuGrid />
 
-    <SectionDivider />
+    {/*<SectionDivider />
     <TextContainer
         centered={true}
         headerTexts={['Data Update: More Ascension Levels for Heroes (Sept 15th 2024)']}
@@ -51,7 +51,7 @@ const Intro = () => {
         links={[]}
         pulsate={false}
         autoSlideSeconds={10}>
-    </TextContainer>
+    </TextContainer>*/}
     {/*<TextContainer
         centered={true}
         headerTexts={['The Trade Exhibition has started!']}

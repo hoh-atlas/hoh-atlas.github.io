@@ -7,8 +7,7 @@ import Prologue from "../../shared/Prologue";
 import SelectBox from "../../shared/SelectBox";
 import SectionDivider from "../../shared/SectionDivider";
 import useOptionURL from "../../shared/hooks/useOptionURL";
-import Icon from "../../shared/Icon";
-import resources from "../../shared/data/resources";
+import { getItem } from "../../shared/utils";
 import H1 from "../../shared/H1";
 
 import allAlliedCultures from "../data";
@@ -67,7 +66,7 @@ const WorldWonder = (props) => {
                                               <>
                                                   {requirement.amount}x
                                                   {' '}
-                                                  <Icon resource={resources.find((resource) => resource.id === requirement.resource)} />
+                                                  {getItem(requirement.resource)}
                                                   {' '}
                                               </>
                                           ))
@@ -79,7 +78,7 @@ const WorldWonder = (props) => {
                                               <>
                                                   {bonus.amount}%
                                                   {' '}
-                                                  <Icon resource={resources.find((resource) => resource.id === bonus.resource)} />
+                                                  {getItem(bonus.resource)}
                                                   {' '}
                                               </>
                                           ))
@@ -91,7 +90,7 @@ const WorldWonder = (props) => {
                                               <>
                                                   {level.reward?.amount}x
                                                   {' '}
-                                                  <Icon resource={resources.find((resource) => resource.id === level.reward?.resource)} />
+                                                  {getItem(level.reward?.resource)}
                                                   {' '}
                                               </>
                                           )

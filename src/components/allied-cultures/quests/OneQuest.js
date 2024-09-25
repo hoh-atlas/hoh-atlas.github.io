@@ -1,7 +1,6 @@
 import "./OneQuest.css";
 
-import Icon from "../../shared/Icon";
-import resources from "../../shared/data/resources";
+import { getItem } from "../../shared/utils";
 import QuestPlusDivider from "./QuestPlusDivider";
 import QuestOrDivider from "./QuestOrDivider";
 import QuestConnector from "./QuestConnector";
@@ -52,7 +51,7 @@ const OneQuest = (props) => {
                 )
             }
             </div>
-            <div className="quest-reward"><span><Icon resource={resources.find((resource) => resource.id === questline.quests[questId-1].reward.resource)} /> {questline.quests[questId-1].reward.amount}</span></div>
+            <div className="quest-reward"><span>{getItem(questline.quests[questId-1].reward.resource)} {questline.quests[questId-1].reward.amount}</span></div>
         </div>
         {questId !== questline.quests.length && (
             <QuestConnector />

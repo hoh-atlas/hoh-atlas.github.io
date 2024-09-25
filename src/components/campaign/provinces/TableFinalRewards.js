@@ -1,5 +1,4 @@
-import resources from "../../shared/data/resources";
-import Icon from "../../shared/Icon";
+import { getItem } from "../../shared/utils";
 
 const TableFinalRewards = (props) => {
 
@@ -19,7 +18,7 @@ const TableFinalRewards = (props) => {
                     <tr>
                         <td>
                             {
-                                rewards.map((oneReward) => <div style={{ display: 'inline-flex', marginRight: '5px'}}>{oneReward.amount}&nbsp;<Icon resource={resources.find((resource) => resource.id === oneReward.resource)} /></div>)
+                                rewards.map((oneReward) => <div style={{ display: 'inline-flex', marginRight: '5px'}}>{oneReward.amount}&nbsp;{getItem(oneReward.resource)}</div>)
                             }
                         </td>
                     </tr>
