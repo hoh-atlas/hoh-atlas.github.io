@@ -39,19 +39,33 @@ const Intro = () => {
 
     <MenuGrid />
 
-    {/*<SectionDivider />
+    <SectionDivider />
+    <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Ag9u6cDam8w"
+            title="Heroes of History - Global Launch Trailer"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+        ></iframe>
+    </div>
+
+    <SectionDivider />
     <TextContainer
         centered={true}
-        headerTexts={['Data Update: More Ascension Levels for Heroes (Sept 15th 2024)']}
-        texts={[`We've performed a data update, and now all 4-star and 5-star heroes have their ascension requirements available up to level 80. The ascension data for 2-star and 3-star heroes are already complete.
-            We will continue adding more info over time. Have fun with the game and thank you for sharing this site with other players!`]}
+        headerTexts={['Global Launch is here! (Sept 26th 2024)']}
+        texts={[`Heroes of History is now available for all players as a mobile app for iOS and Android. A browser version with cross-play feature, allowing seamless switching between PC and mobile game, is set to be released later this year. 
+            Use the links below to start playing today!`]}
         style={{ marginBottom: '20px', marginTop: '5px' }}
         textRectangleHeight={'150px'}
         imageUrls={['']}
         links={[]}
         pulsate={false}
         autoSlideSeconds={10}>
-    </TextContainer>*/}
+    </TextContainer>
+
     {/*<TextContainer
         centered={true}
         headerTexts={['The Trade Exhibition has started!']}

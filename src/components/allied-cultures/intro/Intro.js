@@ -33,7 +33,7 @@ const Intro = (props) => {
 
     const alliedCulture = getAlliedCulture();
 
-    const egyptCultures = ["egypt_cheops_pyramid", "egypt_great_sphinx"];
+    const egyptCultures = ["egypt_cheops_pyramid", "egypt_great_sphinx", "egypt_abu_simbel"];
     const chinaCultures = ["china_terracotta_army", "china_great_wall", "china_forbidden_city"];
   
     return (
@@ -204,8 +204,9 @@ const Intro = (props) => {
                 After the event is over, next time you start developing your city from scratch and have the possibility to collect all the prizes again!<br/><br/>
                 Currently, the game features two Allied Cities: Egypt and China. Each city hosts three distinct events, each centered around different World Wonders. Depending on the event and the featured World Wonder, 
                 a unique resource from the Allied City will be boosted, offering varied strategies for city development each time.<br/><br/>
-                The currently known sequence of Allied Cultures is as follows: 'The Trade Exhibition' (featuring Egypt and the Abu Simbel wonder), 'Guardian of Heritage' (featuring China and the Great Wall wonder), 
-                and 'The Grand Celebration' (featuring Egypt and the Cheops Pyramid wonder). Explore all available Allied Cultures using the Select Box at the top of this page.
+                The sequence of Allied Cultures is as follows: 'The Visionary Invitation' (featuring Egypt and the Abu Simbel wonder), 'Guardian of Heritage' (featuring China and the Great Wall wonder), 
+                'The Grand Celebration' (featuring Egypt and the Cheops Pyramid wonder), 'The Festival of Warriors' (featuring China and the Terracotta Army wonder), 'The Trade Exhibition' (featuring Egypt and the Great Sphinx wonder)
+                and 'The Festival of Lights' (featuring China and the Forbidden City wonder). Explore all available Allied Cultures using the Select Box at the top of this page.
             </TextBlock>
         </>
     );
