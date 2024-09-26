@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.af990d1e.css",
-    "main.js": "/static/js/main.0d8d7830.js",
+    "main.js": "/static/js/main.60fee0c8.js",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
     "static/media/china_city.webp": "/static/media/china_city.415736e9ff5f7bc3bfe7.webp",
     "static/media/egypt_city.webp": "/static/media/egypt_city.7719ac968df164a2b372.webp",
@@ -34,6 +34,7 @@
     "static/media/hoh_banner_secondary.webp": "/static/media/hoh_banner_secondary.1931078af244473b1e92.webp",
     "static/media/terracotta_army.webp": "/static/media/terracotta_army.0ac6de969ba01b097fe2.webp",
     "static/media/ath_the_scallywags_shanty.webp": "/static/media/ath_the_scallywags_shanty.c587b1f96b1405f2ba10.webp",
+    "static/media/abu_simbel.webp": "/static/media/abu_simbel.b47e324b58525a869a88.webp",
     "static/media/ath_sugarcane_distillery.webp": "/static/media/ath_sugarcane_distillery.cb101a3581fbbaa2a88a.webp",
     "static/media/ath_belltower_cottage.webp": "/static/media/ath_belltower_cottage.c8deec4939b47e97381d.webp",
     "static/media/ath_crows_inn.webp": "/static/media/ath_crows_inn.632354c907625a77789f.webp",
@@ -181,6 +182,7 @@
     "static/media/Unit_Charlemagne.webp": "/static/media/Unit_Charlemagne.9d5be8bb0b6d7ccac7c9.webp",
     "static/media/Unit_Hercules.webp": "/static/media/Unit_Hercules.49f1df9ad2c610224b4b.webp",
     "static/media/city_event_banner_china_greatwall.webp": "/static/media/city_event_banner_china_greatwall.8191e158503de87df80a.webp",
+    "static/media/city_event_banner_egypt_abusimbel.webp": "/static/media/city_event_banner_egypt_abusimbel.fe11cb81e13e86c63f18.webp",
     "static/media/Unit_TomoeGozen.webp": "/static/media/Unit_TomoeGozen.3f8a177edb50353ac00f.webp",
     "static/media/Unit_Geisha.webp": "/static/media/Unit_Geisha.8ce00acb10a3eb3a1e5e.webp",
     "static/media/Unit_MayanAstronomer.webp": "/static/media/Unit_MayanAstronomer.25bb1d26be6ecd212b78.webp",
@@ -593,10 +595,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.af990d1e.css.map": "/static/css/main.af990d1e.css.map",
-    "main.0d8d7830.js.map": "/static/js/main.0d8d7830.js.map"
+    "main.60fee0c8.js.map": "/static/js/main.60fee0c8.js.map"
   },
   "entrypoints": [
     "static/css/main.af990d1e.css",
-    "static/js/main.0d8d7830.js"
+    "static/js/main.60fee0c8.js"
   ]
 }
