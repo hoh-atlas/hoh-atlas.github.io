@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.af990d1e.css",
-    "main.js": "/static/js/main.60fee0c8.js",
+    "main.js": "/static/js/main.4d958c91.js",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
     "static/media/china_city.webp": "/static/media/china_city.415736e9ff5f7bc3bfe7.webp",
     "static/media/egypt_city.webp": "/static/media/egypt_city.7719ac968df164a2b372.webp",
@@ -12,7 +12,9 @@
     "static/media/province_15.webp": "/static/media/province_15.b1858562e77088338f25.webp",
     "static/media/news_china_banner.webp": "/static/media/news_china_banner.9095a497b462d2885920.webp",
     "static/media/province_18.webp": "/static/media/province_18.2440d3e190573b1857eb.webp",
+    "static/media/province_20.webp": "/static/media/province_20.aafe2f761fe2c681d540.webp",
     "static/media/province_17.webp": "/static/media/province_17.16526ca60cdc7639b7c6.webp",
+    "static/media/province_21.webp": "/static/media/province_21.b61c438acdc11a594948.webp",
     "static/media/news_egypt_banner.webp": "/static/media/news_egypt_banner.9a352c3862d7ff17f5ef.webp",
     "static/media/province_14.webp": "/static/media/province_14.a94fb1dfc8329035f860.webp",
     "static/media/province_16.webp": "/static/media/province_16.e66baa910a49ecdb8e8a.webp",
@@ -595,10 +597,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.af990d1e.css.map": "/static/css/main.af990d1e.css.map",
-    "main.60fee0c8.js.map": "/static/js/main.60fee0c8.js.map"
+    "main.4d958c91.js.map": "/static/js/main.4d958c91.js.map"
   },
   "entrypoints": [
     "static/css/main.af990d1e.css",
-    "static/js/main.60fee0c8.js"
+    "static/js/main.4d958c91.js"
   ]
 }
