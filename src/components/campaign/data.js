@@ -17,6 +17,8 @@ import province_16 from '../../images/campaign/provinces/province_16.webp';
 import province_17 from '../../images/campaign/provinces/province_17.webp';
 import province_18 from '../../images/campaign/provinces/province_18.webp';
 import province_19 from '../../images/campaign/provinces/province_19.webp';
+import province_20 from '../../images/campaign/provinces/province_20.webp';
+import province_21 from '../../images/campaign/provinces/province_21.webp';
 
 const allProvinces = [
     {
@@ -5248,6 +5250,582 @@ const allProvinces = [
             {
                 resource: "research_point",
                 amount: 7
+            },
+            {
+                resource: "gems",
+                amount: 50
+            }
+        ]
+    },
+    {
+        id: 20,
+        name: "Tesla's Fortress",
+        img: province_20,
+        location: "early_rome",
+        encounters: [
+            {
+                id: 1,
+                firstVictoryBonus: [
+                    {
+                        resource: "xp_hero",
+                        amount: 1000
+                    }
+                ],
+                rewards: [
+                    {
+                        resource: "coins",
+                        amount: 2100,
+                        percentage: 35
+                    },
+                    {
+                        resource: "xp_hero",
+                        amount: 300,
+                        percentage: 30
+                    },
+                    {
+                        resource: "crested_guidon",
+                        amount: 1,
+                        percentage: 15
+                    },
+                    {
+                        resource: "etruscan_bronze_mirror",
+                        amount: 1,
+                        percentage: 20
+                    },
+                ]
+            },
+            {
+                id: 2,
+                firstVictoryBonus: [
+                    {
+                        resource: "research_point",
+                        amount: 1
+                    }
+                ],
+                rewards: [
+                    {
+                        resource: "coins",
+                        amount: 1100,
+                        percentage: 50
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1500,
+                        percentage: 35
+                    },
+                    {
+                        resource: "coins",
+                        amount: 3600,
+                        percentage: 15
+                    },
+                ],
+                special: true
+            },
+            {
+                id: 3,
+                firstVictoryBonus: [
+                    {
+                        resource: "xp_hero",
+                        amount: 1500
+                    }
+                ],
+                rewards: [
+                    {
+                        resource: "coins",
+                        amount: 2100,
+                        percentage: 25
+                    },
+                    {
+                        resource: "xp_hero",
+                        amount: 300,
+                        percentage: 30
+                    },
+                    {
+                        resource: "charta_terrestre",
+                        amount: 1,
+                        percentage: 15
+                    },
+                    {
+                        resource: "emerald",
+                        amount: 1,
+                        percentage: 30
+                    },
+                ]
+            },
+            {
+                id: 4,
+                firstVictoryBonus: [
+                    {
+                        resource: "research_point",
+                        amount: 1
+                    },
+                ],
+                rewards: [
+                    {
+                        resource: "coins",
+                        amount: 2100,
+                        percentage: 30
+                    },
+                    {
+                        resource: "xp_hero",
+                        amount: 300,
+                        percentage: 35
+                    },
+                    {
+                        resource: "herbal_poultice",
+                        amount: 1,
+                        percentage: 15
+                    },
+                    {
+                        resource: "etruscan_bronze_mirror",
+                        amount: 1,
+                        percentage: 20
+                    },
+                ]
+            },
+            {
+                id: 5,
+                firstVictoryBonus: [
+                    {
+                        resource: "antimatter",
+                        amount: 1
+                    }
+                ],
+                rewards: [
+                    {
+                        resource: "xp_hero",
+                        amount: 250,
+                        percentage: 50
+                    },
+                    {
+                        resource: "xp_hero",
+                        amount: 360,
+                        percentage: 35
+                    },
+                    {
+                        resource: "xp_hero",
+                        amount: 860,
+                        percentage: 15
+                    },
+                ],
+                special: true
+            },
+            {
+                id: 6,
+                firstVictoryBonus: [
+                    {
+                        resource: "research_point",
+                        amount: 1
+                    }
+                ],
+                rewards: [
+                    {
+                        resource: "coins",
+                        amount: 2100,
+                        percentage: 25
+                    },
+                    {
+                        resource: "xp_hero",
+                        amount: 300,
+                        percentage: 30
+                    },
+                    {
+                        resource: "crested_guidon",
+                        amount: 1,
+                        percentage: 15
+                    },
+                    {
+                        resource: "emerald",
+                        amount: 1,
+                        percentage: 30
+                    },
+                ]
+            },
+            {
+                id: 7,
+                firstVictoryBonus: [
+                    {
+                        resource: "xp_hero",
+                        amount: 700
+                    }
+                ],
+                rewards: [
+                    {
+                        resource: "coins",
+                        amount: 2100,
+                        percentage: 30
+                    },
+                    {
+                        resource: "xp_hero",
+                        amount: 300,
+                        percentage: 35
+                    },
+                    {
+                        resource: "charta_terrestre",
+                        amount: 1,
+                        percentage: 15
+                    },
+                    {
+                        resource: "etruscan_bronze_mirror",
+                        amount: 1,
+                        percentage: 20
+                    },
+                ]
+            },
+            {
+                id: 8,
+                firstVictoryBonus: [
+                    {
+                        resource: "research_point",
+                        amount: 1
+                    }
+                ],
+                rewards: [
+                    {
+                        resource: "coins",
+                        amount: 2100,
+                        percentage: 25
+                    },
+                    {
+                        resource: "xp_hero",
+                        amount: 300,
+                        percentage: 30
+                    },
+                    {
+                        resource: "herbal_poultice",
+                        amount: 1,
+                        percentage: 15
+                    },
+                    {
+                        resource: "emerald",
+                        amount: 1,
+                        percentage: 30
+                    },
+                ]
+            },
+            {
+                id: 9,
+                firstVictoryBonus: [
+                    {
+                        resource: "antimatter",
+                        amount: 1
+                    }
+                ],
+                rewards: [
+                    {
+                        resource: "etruscan_bronze_mirror",
+                        amount: 1,
+                        percentage: 95
+                    },
+                    {
+                        resource: "etruscan_bronze_mirror",
+                        amount: 2,
+                        percentage: 5
+                    },
+                ],
+                special: true
+            },
+        ],
+        rewards: [
+            {
+                resource: "antimatter_legendary_part",
+                amount: 1
+            },
+            {
+                resource: "expansion_regular",
+                amount: 1
+            },
+            {
+                resource: "research_point",
+                amount: 8
+            },
+            {
+                resource: "gems",
+                amount: 50
+            }
+        ]
+    },
+    {
+        id: 21,
+        name: "Path to the East",
+        img: province_21,
+        location: "early_rome",
+        encounters: [
+            {
+                id: 1,
+                firstVictoryBonus: [
+                    {
+                        resource: "research_point",
+                        amount: 1
+                    }
+                ],
+                rewards: [
+                    {
+                        resource: "coins",
+                        amount: 2700,
+                        percentage: 25
+                    },
+                    {
+                        resource: "xp_hero",
+                        amount: 300,
+                        percentage: 30
+                    },
+                    {
+                        resource: "crested_guidon",
+                        amount: 1,
+                        percentage: 15
+                    },
+                    {
+                        resource: "amethyst",
+                        amount: 1,
+                        percentage: 30
+                    },
+                ]
+            },
+            {
+                id: 2,
+                firstVictoryBonus: [
+                    {
+                        resource: "xp_hero",
+                        amount: 500
+                    }
+                ],
+                rewards: [
+                    {
+                        resource: "coins",
+                        amount: 1200,
+                        percentage: 50
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1650,
+                        percentage: 35
+                    },
+                    {
+                        resource: "coins",
+                        amount: 3950,
+                        percentage: 15
+                    },
+                ],
+                special: true
+            },
+            {
+                id: 3,
+                firstVictoryBonus: [
+                    {
+                        resource: "research_point",
+                        amount: 2
+                    }
+                ],
+                rewards: [
+                    {
+                        resource: "coins",
+                        amount: 2700,
+                        percentage: 30
+                    },
+                    {
+                        resource: "xp_hero",
+                        amount: 300,
+                        percentage: 35
+                    },
+                    {
+                        resource: "charta_terrestre",
+                        amount: 1,
+                        percentage: 15
+                    },
+                    {
+                        resource: "roman_cameo_ring",
+                        amount: 1,
+                        percentage: 20
+                    },
+                ]
+            },
+            {
+                id: 4,
+                firstVictoryBonus: [
+                    {
+                        resource: "xp_hero",
+                        amount: 500
+                    },
+                ],
+                rewards: [
+                    {
+                        resource: "coins",
+                        amount: 2700,
+                        percentage: 25
+                    },
+                    {
+                        resource: "xp_hero",
+                        amount: 300,
+                        percentage: 30
+                    },
+                    {
+                        resource: "herbal_poultice",
+                        amount: 1,
+                        percentage: 15
+                    },
+                    {
+                        resource: "amethyst",
+                        amount: 1,
+                        percentage: 30
+                    },
+                ]
+            },
+            {
+                id: 5,
+                firstVictoryBonus: [
+                    {
+                        resource: "antimatter",
+                        amount: 1
+                    }
+                ],
+                rewards: [
+                    {
+                        resource: "xp_hero",
+                        amount: 260,
+                        percentage: 50
+                    },
+                    {
+                        resource: "xp_hero",
+                        amount: 390,
+                        percentage: 35
+                    },
+                    {
+                        resource: "xp_hero",
+                        amount: 940,
+                        percentage: 15
+                    },
+                ],
+                special: true
+            },
+            {
+                id: 6,
+                firstVictoryBonus: [
+                    {
+                        resource: "xp_hero",
+                        amount: 900
+                    }
+                ],
+                rewards: [
+                    {
+                        resource: "coins",
+                        amount: 2700,
+                        percentage: 30
+                    },
+                    {
+                        resource: "xp_hero",
+                        amount: 300,
+                        percentage: 35
+                    },
+                    {
+                        resource: "crested_guidon",
+                        amount: 1,
+                        percentage: 15
+                    },
+                    {
+                        resource: "roman_cameo_ring",
+                        amount: 1,
+                        percentage: 20
+                    },
+                ]
+            },
+            {
+                id: 7,
+                firstVictoryBonus: [
+                    {
+                        resource: "research_point",
+                        amount: 2
+                    }
+                ],
+                rewards: [
+                    {
+                        resource: "coins",
+                        amount: 2700,
+                        percentage: 25
+                    },
+                    {
+                        resource: "xp_hero",
+                        amount: 300,
+                        percentage: 30
+                    },
+                    {
+                        resource: "charta_terrestre",
+                        amount: 1,
+                        percentage: 15
+                    },
+                    {
+                        resource: "amethyst",
+                        amount: 1,
+                        percentage: 30
+                    },
+                ]
+            },
+            {
+                id: 8,
+                firstVictoryBonus: [
+                    {
+                        resource: "xp_hero",
+                        amount: 500
+                    }
+                ],
+                rewards: [
+                    {
+                        resource: "coins",
+                        amount: 2700,
+                        percentage: 30
+                    },
+                    {
+                        resource: "xp_hero",
+                        amount: 300,
+                        percentage: 35
+                    },
+                    {
+                        resource: "herbal_poultice",
+                        amount: 1,
+                        percentage: 15
+                    },
+                    {
+                        resource: "roman_cameo_ring",
+                        amount: 1,
+                        percentage: 20
+                    },
+                ]
+            },
+            {
+                id: 9,
+                firstVictoryBonus: [
+                    {
+                        resource: "antimatter",
+                        amount: 1
+                    }
+                ],
+                rewards: [
+                    {
+                        resource: "amethyst",
+                        amount: 1,
+                        percentage: 90
+                    },
+                    {
+                        resource: "amethyst",
+                        amount: 2,
+                        percentage: 10
+                    },
+                ],
+                special: true
+            },
+        ],
+        rewards: [
+            {
+                resource: "antimatter_legendary_part",
+                amount: 1
+            },
+            {
+                resource: "expansion_regular",
+                amount: 1
+            },
+            {
+                resource: "research_point",
+                amount: 9
             },
             {
                 resource: "gems",

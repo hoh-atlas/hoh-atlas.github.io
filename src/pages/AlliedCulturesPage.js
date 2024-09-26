@@ -6,6 +6,7 @@ import useOptionURL from "../components/shared/hooks/useOptionURL";
 import Quests from "../components/allied-cultures/quests/Quests";
 import { Link } from "react-router-dom";
 import ReactGA from "react-ga4";
+import { addWeeks, differenceInMilliseconds } from 'date-fns';
 
 import layoutEvents from "../components/allied-cultures/sectionsDefinition";
 import allAlliedCultures from "../components/allied-cultures/data";
@@ -31,8 +32,25 @@ const AlliedCulturesPage = (props) => {
         </span>
     ) : "Allied Cultures";
   
-    const options = allAlliedCultures.map((oneAlliedCulture) => {
-        return {value: oneAlliedCulture.id, label: `${oneAlliedCulture.name}`, image: oneAlliedCulture.image}
+    const getCurrentAlliedCultureIndex = (startDate, currentDate, culturesCount) => {
+        const oneWeekInMilliseconds = 1000 * 60 * 60 * 24 * 7;
+        const timeDifference = currentDate - startDate;
+        const weeksPassed = Math.floor(timeDifference / oneWeekInMilliseconds);
+        return weeksPassed % culturesCount;
+    };
+      
+    const reorderAlliedCultures = (alliedCultures) => {
+        const firstCultureStartDate = new Date(Date.UTC(2024, 8, 26, 12, 0));
+        const currentDate = new Date();
+        const currentCultureIndex = getCurrentAlliedCultureIndex(firstCultureStartDate, currentDate, alliedCultures.length);
+        return [
+          ...alliedCultures.slice(currentCultureIndex),
+          ...alliedCultures.slice(0, currentCultureIndex),
+        ];
+    };
+      
+    const options = reorderAlliedCultures(allAlliedCultures).map((oneAlliedCulture) => {
+        return { value: oneAlliedCulture.id, label: `${oneAlliedCulture.name}`, image: oneAlliedCulture.image };
     });
 
     /*const { selectedOption, handleOptionChange } = useOptionURL(options, "id");*/
