@@ -30,3 +30,21 @@
     margin: 0 auto;
     margin-top: 10px;
 }
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
+.btn {
+    background-color: #3e7bad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+}

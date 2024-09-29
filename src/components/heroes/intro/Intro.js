@@ -15,6 +15,7 @@ import cleopatra from "../../../images/heroes/intro/tutorial-host-cleopatra.webp
 
 const Intro = (props) => {
     const heroId = props.heroId;
+    const [showFilters, setShowFilters] = useState(false);
 
     const sortedHeroes = allHeroes.slice().sort((a, b) => a.name.localeCompare(b.name));
 
@@ -223,6 +224,10 @@ const Intro = (props) => {
         return filteredHeroes;
     };
 
+    const toggleFiltersVisibility = () => {
+        setShowFilters(!showFilters);
+    };
+
     const filteredHeroes = getFilteredHeroes();
 
     if (heroId) {
@@ -238,10 +243,11 @@ const Intro = (props) => {
             <SectionDivider />
             <div className="select-boxes-container">
                 <div className="select-box-column">
-                    <H1 center={true}>Filter by types</H1>
+                    <H1 center={true}>Types</H1>
                     <MultiSelectBox
                     options={classOptions}
                     width={"80%"}
+                    mobileWidth={"100%"}
                     height={"40px"}
                     color={"#F6F3EB"}
                     selectedOptions={selectedClasses}
@@ -252,6 +258,7 @@ const Intro = (props) => {
                     <MultiSelectBox
                     options={unitOptions}
                     width={"80%"}
+                    mobileWidth={"100%"}
                     height={"40px"}
                     color={"#F6F3EB"}
                     selectedOptions={selectedUnits}
@@ -262,6 +269,7 @@ const Intro = (props) => {
                     <MultiSelectBox
                     options={colorOptions}
                     width={"80%"}
+                    mobileWidth={"100%"}
                     height={"40px"}
                     color={"#F6F3EB"}
                     selectedOptions={selectedColors}
@@ -271,10 +279,11 @@ const Intro = (props) => {
                     />
                 </div>
                 <div className="select-box-column">
-                    <H1 center={true}>Filter by materials</H1>
+                    <H1 center={true}>Materials</H1>
                     <MultiSelectBox
                     options={crestColorOptions}
                     width={"80%"}
+                    mobileWidth={"100%"}
                     height={"40px"}
                     color={"#F6F3EB"}
                     selectedOptions={selectedCrestColors}
@@ -283,18 +292,9 @@ const Intro = (props) => {
                     style={{marginBottom: '10px'}}
                     />
                     <MultiSelectBox
-                    options={crestFactionOptions}
-                    width={"80%"}
-                    height={"40px"}
-                    color={"#F6F3EB"}
-                    selectedOptions={selectedCrestFactions}
-                    onOptionsChange={handleCrestFactionChange}
-                    placeholder="Crest Factions"
-                    style={{marginBottom: '10px'}}
-                    />
-                    <MultiSelectBox
                     options={ascensionMaterialOptions}
                     width={"80%"}
+                    mobileWidth={"100%"}
                     height={"40px"}
                     color={"#F6F3EB"}
                     selectedOptions={selectedAscensionMaterials}
@@ -304,12 +304,52 @@ const Intro = (props) => {
                     />
                 </div>
             </div>
-            <H1 center={true}>Search by name</H1>
-            <SearchBox 
-            width="50%"
-            onSearch={handleSearch}
-            color={"#F6F3EB"}
-            style={{ margin: '0 auto' }} />
+
+            {/*<div className="btn-container">
+                <button onClick={toggleFiltersVisibility} className="btn">
+                    {showFilters ? 'Hide More Filters' : 'Show More Filters'}
+                </button>
+            </div>*/}
+
+            {/*showFilters && (<div className="select-boxes-container">
+                <div className="select-box-column">
+                    <H1 center={true}>Types</H1>
+                    <MultiSelectBox
+                    options={classOptions}
+                    width={"80%"}
+                    mobileWidth={"100%"}
+                    height={"40px"}
+                    color={"#F6F3EB"}
+                    selectedOptions={selectedClasses}
+                    onOptionsChange={handleClassChange}
+                    placeholder="Hero Class"
+                    style={{marginBottom: '10px'}}
+                    />
+                    <MultiSelectBox
+                    options={unitOptions}
+                    width={"80%"}
+                    mobileWidth={"100%"}
+                    height={"40px"}
+                    color={"#F6F3EB"}
+                    selectedOptions={selectedUnits}
+                    onOptionsChange={handleUnitChange}
+                    placeholder="Unit Type"
+                    style={{marginBottom: '10px'}}
+                    />
+                    <MultiSelectBox
+                    options={colorOptions}
+                    width={"80%"}
+                    mobileWidth={"100%"}
+                    height={"40px"}
+                    color={"#F6F3EB"}
+                    selectedOptions={selectedColors}
+                    onOptionsChange={handleColorChange}
+                    placeholder="Color Type"
+                    style={{marginBottom: '10px'}}
+                    />
+                </div>
+            </div>)*/}
+
             <SectionDivider />
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "15px", marginBottom: "15px" }}>
             </div>

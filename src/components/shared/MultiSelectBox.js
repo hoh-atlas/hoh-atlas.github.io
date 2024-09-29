@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Select, { components } from "react-select";
 
 const dot = (color = 'transparent') => ({
@@ -33,7 +33,22 @@ const MultiValue = (props) => (
     </components.MultiValue>
 );  
 
-const MultiSelectBox = ({ options, width, color, selectedOptions, onOptionsChange, placeholder, style }) => {
+const MultiSelectBox = ({ options, width, mobileWidth, color, selectedOptions, onOptionsChange, placeholder, style }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const [selectHeight, setSelectHeight] = useState('auto');
 
   const handleChange = (value) => {
@@ -43,10 +58,11 @@ const MultiSelectBox = ({ options, width, color, selectedOptions, onOptionsChang
   const customStyles = {
     control: (provided) => ({
       ...provided,
-      width: width,
+      width: isMobile ? mobileWidth : width,
       margin: "0 auto",
       backgroundColor: color,
       height: selectHeight,
+      fontSize: isMobile ? '12px' : '14px',
     }),
     valueContainer: (provided) => ({
       ...provided,
@@ -63,7 +79,7 @@ const MultiSelectBox = ({ options, width, color, selectedOptions, onOptionsChang
     }),
     menu: (provided) => ({
       ...provided,
-      width: width,
+      width: isMobile ? mobileWidth : width,
       margin: "auto",
       left: 0,
       right: 0,
@@ -72,8 +88,8 @@ const MultiSelectBox = ({ options, width, color, selectedOptions, onOptionsChang
     option: (provided, { data }) => ({
       ...provided,
       padding: "5px",
-      fontSize: "14px",
       ...(data.dotColor ? dot(data.dotColor) : {}),
+      fontSize: isMobile ? '12px' : '14px',
     }),
     multiValueRemove: (provided, state) => ({
       ...provided,
