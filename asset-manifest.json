@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.af990d1e.css",
-    "main.js": "/static/js/main.4d958c91.js",
+    "main.css": "/static/css/main.b2f01535.css",
+    "main.js": "/static/js/main.b4c35abd.js",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
     "static/media/china_city.webp": "/static/media/china_city.415736e9ff5f7bc3bfe7.webp",
     "static/media/egypt_city.webp": "/static/media/egypt_city.7719ac968df164a2b372.webp",
@@ -556,12 +556,12 @@
     "static/media/goods_bonus.webp": "/static/media/goods_bonus.2f186029a182460ea6e9.webp",
     "static/media/porcelain.webp": "/static/media/porcelain.2a72466d170e74b66388.webp",
     "static/media/kaolin.webp": "/static/media/kaolin.572f98914b0cf26031c7.webp",
+    "index.html": "/index.html",
     "static/media/social_youtube.webp": "/static/media/social_youtube.d5f48ec7270682a70b0f.webp",
     "static/media/icon-colour-yellow.webp": "/static/media/icon-colour-yellow.698260f686163918a252.webp",
     "static/media/silk_threads.webp": "/static/media/silk_threads.5e725b889156c65cab4a.webp",
     "static/media/social_facebook.webp": "/static/media/social_facebook.5596304d62509b837c22.webp",
     "static/media/icon-colour-green.webp": "/static/media/icon-colour-green.3070a0ef41499526b1fb.webp",
-    "index.html": "/index.html",
     "static/media/icon-colour-purple.webp": "/static/media/icon-colour-purple.fb31533386d253ecd479.webp",
     "static/media/cartwheel.webp": "/static/media/cartwheel.08a3989cc1d8d1f6944a.webp",
     "static/media/gold_laurel.webp": "/static/media/gold_laurel.ecee59f35e097f8816d1.webp",
@@ -596,11 +596,11 @@
     "static/media/herbs.webp": "/static/media/herbs.45e59d4e77aed5c7159a.webp",
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
-    "main.af990d1e.css.map": "/static/css/main.af990d1e.css.map",
-    "main.4d958c91.js.map": "/static/js/main.4d958c91.js.map"
+    "main.b2f01535.css.map": "/static/css/main.b2f01535.css.map",
+    "main.b4c35abd.js.map": "/static/js/main.b4c35abd.js.map"
   },
   "entrypoints": [
-    "static/css/main.af990d1e.css",
-    "static/js/main.4d958c91.js"
+    "static/css/main.b2f01535.css",
+    "static/js/main.b4c35abd.js"
   ]
 }
