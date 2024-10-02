@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b2f01535.css",
-    "main.js": "/static/js/main.b4c35abd.js",
+    "main.js": "/static/js/main.91a3dd98.js",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
     "static/media/china_city.webp": "/static/media/china_city.415736e9ff5f7bc3bfe7.webp",
     "static/media/egypt_city.webp": "/static/media/egypt_city.7719ac968df164a2b372.webp",
@@ -153,6 +153,8 @@
     "static/media/Unit_AbrahamLincoln_fullbody.webp": "/static/media/Unit_AbrahamLincoln_fullbody.c4566092d9f133e32f5d.webp",
     "static/media/hero-backdrop-windmill.webp": "/static/media/hero-backdrop-windmill.24e3225444bc3e967c48.webp",
     "static/media/Unit_AlbertEinstein_fullbody.webp": "/static/media/Unit_AlbertEinstein_fullbody.3e12223fd6119dc8bb21.webp",
+    "static/media/season_sale_offer_bg.webp": "/static/media/season_sale_offer_bg.c4514640bed4550e1d8e.webp",
+    "static/media/season_01_banner.webp": "/static/media/season_01_banner.69f3ad79933e173f9a1a.webp",
     "static/media/hero-backdrop-renaissance.webp": "/static/media/hero-backdrop-renaissance.e31abacf1cee181ce514.webp",
     "static/media/ath_long_nine.webp": "/static/media/ath_long_nine.3f919df3b7c7b0f6311d.webp",
     "static/media/hero-backdrop-grass.webp": "/static/media/hero-backdrop-grass.1cf4403518d6425eb440.webp",
@@ -164,6 +166,7 @@
     "static/media/icon_ath_difficulty_0.webp": "/static/media/icon_ath_difficulty_0.6ab9a8871454ebf2cba7.webp",
     "static/media/tutorial-host-cleopatra.webp": "/static/media/tutorial-host-cleopatra.058c63a6d30455ad953b.webp",
     "static/media/ath_voodoo_head.webp": "/static/media/ath_voodoo_head.d239271a9dab4d13cb18.webp",
+    "static/media/Navbar_Seasons.webp": "/static/media/Navbar_Seasons.4ea46e9c90cda1fc0936.webp",
     "static/media/Navbar_Heroes.webp": "/static/media/Navbar_Heroes.cd61d9b4de5df35f5826.webp",
     "static/media/icon_feature_eventcities.webp": "/static/media/icon_feature_eventcities.6f48a78c4fbb80478be5.webp",
     "static/media/Unit_LudwigVanBeethoven.webp": "/static/media/Unit_LudwigVanBeethoven.66b875531ff192db8ed6.webp",
@@ -185,10 +188,13 @@
     "static/media/Unit_Hercules.webp": "/static/media/Unit_Hercules.49f1df9ad2c610224b4b.webp",
     "static/media/city_event_banner_china_greatwall.webp": "/static/media/city_event_banner_china_greatwall.8191e158503de87df80a.webp",
     "static/media/city_event_banner_egypt_abusimbel.webp": "/static/media/city_event_banner_egypt_abusimbel.fe11cb81e13e86c63f18.webp",
+    "static/media/SeasonPass_01_2024_MainIcon.webp": "/static/media/SeasonPass_01_2024_MainIcon.0d92ce07faa971c62158.webp",
     "static/media/Unit_TomoeGozen.webp": "/static/media/Unit_TomoeGozen.3f8a177edb50353ac00f.webp",
     "static/media/Unit_Geisha.webp": "/static/media/Unit_Geisha.8ce00acb10a3eb3a1e5e.webp",
+    "static/media/icon_golden_ticket.webp": "/static/media/icon_golden_ticket.374c669c17f3cd30e1b1.webp",
     "static/media/Unit_MayanAstronomer.webp": "/static/media/Unit_MayanAstronomer.25bb1d26be6ecd212b78.webp",
     "static/media/Unit_LeifErikson.webp": "/static/media/Unit_LeifErikson.eba85cf4a8aab418733d.webp",
+    "static/media/icon_silver_ticket.webp": "/static/media/icon_silver_ticket.caba71dc0faf41176928.webp",
     "static/media/Unit_AztecTlacateccatl.webp": "/static/media/Unit_AztecTlacateccatl.576b0e5c5743fea1bec6.webp",
     "static/media/Unit_RamsesII.webp": "/static/media/Unit_RamsesII.2a0c2063e41502d8a001.webp",
     "static/media/Unit_Menes.webp": "/static/media/Unit_Menes.eadcc6677440d955c873.webp",
@@ -324,6 +330,7 @@
     "static/media/icon_hero_battle_ability_achilles.webp": "/static/media/icon_hero_battle_ability_achilles.9c88a4c5796cf58aab49.webp",
     "static/media/icon_hero_battle_ability_plato.webp": "/static/media/icon_hero_battle_ability_plato.49125612b375958534e8.webp",
     "static/media/icon_hero_battle_ability_margaretiofdenmark.webp": "/static/media/icon_hero_battle_ability_margaretiofdenmark.370434bb00fd7150b5df.webp",
+    "static/media/icon_reward_season_pass.webp": "/static/media/icon_reward_season_pass.e28351eab380cf9ff079.webp",
     "static/media/icon_hero_battle_ability_johnlocke.webp": "/static/media/icon_hero_battle_ability_johnlocke.798d95cc3bd0d9a01800.webp",
     "static/media/icon_hero_battle_ability_pythagoras.webp": "/static/media/icon_hero_battle_ability_pythagoras.33b67a690f33067a608c.webp",
     "static/media/icon_hero_battle_ability_oracleofdephi.webp": "/static/media/icon_hero_battle_ability_oracleofdephi.0920444a6c94504eb87f.webp",
@@ -460,6 +467,7 @@
     "static/media/irrigation_1.webp": "/static/media/irrigation_1.e71e122932722190e24b.webp",
     "static/media/China_Rice_Farm_Lv3.webp": "/static/media/China_Rice_Farm_Lv3.9bba8d1090f2770aa578.webp",
     "static/media/irrigation_0.webp": "/static/media/irrigation_0.6fb9da9a78d1e76d2b2d.webp",
+    "static/media/icon_seasonpass_progress.webp": "/static/media/icon_seasonpass_progress.c990d8383c7b6a7ffd63.webp",
     "static/media/icon_amber.webp": "/static/media/icon_amber.68886cc1628b54287426.webp",
     "static/media/icon_xp_scroll_common.webp": "/static/media/icon_xp_scroll_common.e6931b79c5dee0739703.webp",
     "static/media/icon-flat-unit-heavy-infantry.webp": "/static/media/icon-flat-unit-heavy-infantry.283beee76b0ee9eac7ea.webp",
@@ -477,6 +485,7 @@
     "static/media/China_Average_Home_Lv6.webp": "/static/media/China_Average_Home_Lv6.86fc4ac10238c5bd3db6.webp",
     "static/media/icon_hematite.webp": "/static/media/icon_hematite.d139b8dbb34514e27c0b.webp",
     "static/media/China_Luxurious_Home_Lv1.webp": "/static/media/China_Luxurious_Home_Lv1.c72edf7bfcbe08d563fb.webp",
+    "static/media/arena_token.webp": "/static/media/arena_token.662018f44b3f406c66cb.webp",
     "static/media/Egypt_Oasis.webp": "/static/media/Egypt_Oasis.a11e2488e4986ffc7c34.webp",
     "static/media/Egypt_Irrigation_Station.webp": "/static/media/Egypt_Irrigation_Station.56f65c34d17567b00887.webp",
     "static/media/icon_lapis_lazuli.webp": "/static/media/icon_lapis_lazuli.173bc60af1cc32ce88a0.webp",
@@ -597,10 +606,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.b2f01535.css.map": "/static/css/main.b2f01535.css.map",
-    "main.b4c35abd.js.map": "/static/js/main.b4c35abd.js.map"
+    "main.91a3dd98.js.map": "/static/js/main.91a3dd98.js.map"
   },
   "entrypoints": [
     "static/css/main.b2f01535.css",
-    "static/js/main.b4c35abd.js"
+    "static/js/main.91a3dd98.js"
   ]
 }
