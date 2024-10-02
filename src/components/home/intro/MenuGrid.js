@@ -7,15 +7,17 @@ import Navbar_Campaign from "../../../images/navbar/Navbar_Campaign.webp";
 import Navbar_Heroes from "../../../images/navbar/Navbar_Heroes.webp";
 import Navbar_Resources from "../../../images/navbar/Navbar_Resources.webp";
 import Navbar_AlliedCultures from "../../../images/navbar/Navbar_AlliedCultures.webp";
+import Navbar_TreasureHunt from "../../../images/navbar/Navbar_TreasureHunt.webp";
+import Navbar_Seasons from "../../../images/navbar/Navbar_Seasons.webp";
 
 const MenuGrid = () => {
     const items = [
         { id: 1, text: "Campaign", icon: Navbar_Campaign, link: "/campaign" },
         { id: 2, text: "Heroes", icon: Navbar_Heroes, link: "/heroes" },
         { id: 3, text: "Resources", icon: Navbar_Resources, link: "/resources" },
-        /*{ id: 4, text: "Events", icon: Navbar_Events, link: "/events" },
-        { id: 5, text: "Item 5", icon: "", link: "" },
-        { id: 6, text: "Item 6", icon: "", link: "" },*/
+        { id: 4, text: "Treasure Hunt", icon: Navbar_TreasureHunt, link: "/treasure-hunt" },
+        { id: 5, text: "Allied Cultures", icon: Navbar_AlliedCultures, link: "/allied-cultures" },
+        { id: 6, text: "Seasons", icon: Navbar_Seasons, link: "/seasons" },
     ];
 
     return (

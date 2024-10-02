@@ -7,6 +7,7 @@ import HeroesPage from "./pages/HeroesPage";
 import TreasureHuntPage from "./pages/TreasureHuntPage";
 import AlliedCulturesPage from "./pages/AlliedCulturesPage";
 import ResourcesPage from "./pages/ResourcesPage";
+import SeasonsPage from "./pages/SeasonsPage";
 import Error from "./pages/Error";
 import SharedLayout from "./pages/SharedLayout";
 import { createPathFromParameters } from "./components/shared/utils";
@@ -18,6 +19,7 @@ import layoutHeroes from "./components/heroes/sectionsDefinition";
 import layoutAlliedCultures from "./components/allied-cultures/sectionsDefinition";
 import layoutTreasureHunt from "./components/treasure-hunt/sectionsDefinition";
 import layoutResources from "./components/resources/sectionsDefinition";
+import layoutSeasons from "./components/seasons/sectionsDefinition";
 
 const App = () => {
 
@@ -92,6 +94,18 @@ const App = () => {
 							<Route key={resourcesTab.id} path={createPathFromParameters(layoutResources.page, resourcesTab.url)} element={ <ResourcesPage tab={resourcesTab}/> || <ResourcesPage tab={layoutResources.tabs[0]}/> }/>
 							{resourcesTab.dynamicSegments.map( (dynamicSegment) => {
 								return <Route path={createPathFromParameters(layoutResources.page, resourcesTab.url, dynamicSegment)} element={ <ResourcesPage tab={resourcesTab} />} />
+							})}
+						</>
+						)
+					})
+				}
+
+				{
+					layoutSeasons.tabs.map( (seasonTab) => {
+						return ( <>
+							<Route key={seasonTab.id} path={createPathFromParameters(layoutSeasons.page, seasonTab.url)} element={ <SeasonsPage tab={seasonTab}/> || <SeasonsPage tab={layoutSeasons.tabs[0]}/> }/>
+							{seasonTab.dynamicSegments.map( (dynamicSegment) => {
+								return <Route path={createPathFromParameters(layoutSeasons.page, seasonTab.url, dynamicSegment)} element={ <SeasonsPage tab={seasonTab} />} />
 							})}
 						</>
 						)

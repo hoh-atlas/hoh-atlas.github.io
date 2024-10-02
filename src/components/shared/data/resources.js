@@ -1,4 +1,5 @@
 import alabaster_idol from '../../../images/shared/resources/alabaster_idol.webp';
+import arena_token from '../../../images/shared/resources/arena_token.webp';
 import barrel from '../../../images/shared/resources/barrel.webp';
 import bronze_bracelet from '../../../images/shared/resources/bronze_bracelet.webp';
 import CampaignEnergy from '../../../images/shared/resources/CampaignEnergy.webp';
@@ -28,6 +29,7 @@ import icon_amethyst from '../../../images/shared/resources/icon_amethyst.webp';
 import icon_ankh from '../../../images/shared/resources/icon_ankh.webp';
 import icon_aquamarine from '../../../images/shared/resources/icon_aquamarine.webp';
 import icon_arabesque_wood_carving from '../../../images/shared/resources/icon_arabesque_wood_carving.webp';
+import icon_ath_attempt from '../../../images/shared/resources/icon_ath_attempt.webp';
 import icon_blue_crest_common from '../../../images/shared/resources/icon_blue_crest_common.webp';
 import icon_blue_crest_enhanced from '../../../images/shared/resources/icon_blue_crest_enhanced.webp';
 import icon_blue_crest_superior from '../../../images/shared/resources/icon_blue_crest_superior.webp';
@@ -93,6 +95,7 @@ import icon_rift_token_legendary_part from '../../../images/shared/resources/ico
 import icon_rift_token_seasonpass_common from '../../../images/shared/resources/icon_rift_token_seasonpass_common.webp';
 import icon_rift_token_vikings_common from '../../../images/shared/resources/icon_rift_token_vikings_common.webp';
 import icon_roman_cameo_ring from '../../../images/shared/resources/icon_roman_cameo_ring.webp';
+import icon_seasonpass_progress from '../../../images/shared/resources/icon_seasonpass_progress.webp';
 import icon_shadow_dial from '../../../images/shared/resources/icon_shadow_dial.webp';
 import icon_spessartine from '../../../images/shared/resources/icon_spessartine.webp';
 import icon_stardust_quartz from '../../../images/shared/resources/icon_stardust_quartz.webp';
@@ -293,6 +296,12 @@ const resources = [
     {id: "china_worker", name: "China Worker", img: icon_workers_city_china, category: "culture_china"},
     // TOKENS
     {id: "token_ath_fountain_of_youth", name: "Fountain of Youth", img: token_ath_fountain_of_youth, category: "tokens"},
+    // SEASONS
+    {id: "seasonpass_progress", name: "Season Pass Progress", img: icon_seasonpass_progress, category: "seasons"},
+    // PVP
+    {id: "arena_token", name: "Arena Token", img: arena_token, category: "pvp"},
+    // TREASURE HUNT
+    {id: "ath_compass", name: "Treasure Hunt Compass", img: icon_ath_attempt, category: "ath"},
     // EXPANSIONS
     {id: "expansion_regular", name: "Regular Expansion", img: icon_expansion_city_capital_land, category: "expansions"},
     {id: "expansion_egypt", name: "Egypt Expansion", img: icon_expansion_city_egypt_land, category: "expansions"},

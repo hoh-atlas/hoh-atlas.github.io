@@ -35,3 +35,17 @@ export const getItem = (id) => {
         return <CustomizationPreview customization={foundCustomization}/>
     }
 }
+
+export const calculateDaysBetween = (startDate, endDate) => {
+    const cleanStartDate = startDate.replace(/(\d+)(st|nd|rd|th)/, '$1');
+    const cleanEndDate = endDate.replace(/(\d+)(st|nd|rd|th)/, '$1');
+  
+    const start = new Date(cleanStartDate);
+    const end = new Date(cleanEndDate);
+  
+    const timeDifference = end - start;
+  
+    const daysDifference = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+  
+    return daysDifference;
+};
