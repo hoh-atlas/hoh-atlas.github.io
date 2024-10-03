@@ -4,6 +4,7 @@ import { getItem } from "../../shared/utils";
 import QuestPlusDivider from "./QuestPlusDivider";
 import QuestOrDivider from "./QuestOrDivider";
 import QuestConnector from "./QuestConnector";
+import QuestlineRewards from "./QuestlineRewards";
 
 const OneQuest = (props) => {
 
@@ -53,8 +54,11 @@ const OneQuest = (props) => {
             </div>
             <div className="quest-reward"><span>{getItem(questline.quests[questId-1].reward.resource)} {questline.quests[questId-1].reward.amount}</span></div>
         </div>
-        {questId !== questline.quests.length && (
+        {questId !== questline.quests.length ? (
             <QuestConnector />
+        ) : (
+            <><QuestConnector />
+            <QuestlineRewards finalRewards={questline.rewards}/></>
         )}
         </div>
     );

@@ -95,10 +95,12 @@ const allAlliedCultures = [
                 appearsAfter: [],
                 name: "The Visionary Invitation",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "deben",
-                    amount: 250
-                },
+                rewards: [
+                    {
+                        resource: "deben",
+                        amount: 250
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -141,10 +143,12 @@ const allAlliedCultures = [
                 appearsAfter: [1],
                 name: "Papyrus Scrolls",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "deben",
-                    amount: 500
-                },
+                rewards: [
+                    {
+                        resource: "deben",
+                        amount: 500
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -199,10 +203,12 @@ const allAlliedCultures = [
                 appearsAfter: [1],
                 name: "Ankhs",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "deben",
-                    amount: 500
-                },
+                rewards: [
+                    {
+                        resource: "deben",
+                        amount: 500
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -257,10 +263,12 @@ const allAlliedCultures = [
                 appearsAfter: [2,3],
                 name: "Irrigation",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "deben",
-                    amount: 750
-                },
+                rewards: [
+                    {
+                        resource: "deben",
+                        amount: 750
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -315,7 +323,7 @@ const allAlliedCultures = [
                 appearsAfter: [4],
                 name: "Workforce",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: [
+                rewards: [
                     {
                         resource: "papyrus",
                         amount: 5000
@@ -369,10 +377,12 @@ const allAlliedCultures = [
                 appearsAfter: [5],
                 name: "Path to Greatness",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "deben",
-                    amount: 250000
-                },
+                rewards: [
+                    {
+                        resource: "deben",
+                        amount: 250000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -451,7 +461,7 @@ const allAlliedCultures = [
                 appearsAfter: [5],
                 name: "Crossing the Nile",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: [
+                rewards: [
                     {
                         resource: "papyrus_scroll",
                         amount: 800
@@ -502,7 +512,7 @@ const allAlliedCultures = [
                 appearsAfter: [6],
                 name: "The Final Stretch",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: [
+                rewards: [
                     {
                         resource: "ceremonial_dress",
                         amount: 5000
@@ -614,10 +624,12 @@ const allAlliedCultures = [
                 appearsAfter: [2,3],
                 name: "Abu Simbel - Phase I",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "antimatter_egyptian",
-                    amount: 2
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_egyptian",
+                        amount: 2
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -670,10 +682,12 @@ const allAlliedCultures = [
                 appearsAfter: [9],
                 name: "Abu Simbel - Phase II",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "antimatter_egyptian",
-                    amount: 2
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_egyptian",
+                        amount: 2
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -715,10 +729,12 @@ const allAlliedCultures = [
                 appearsAfter: [10],
                 name: "Abu Simbel - Phase III",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "antimatter_egyptian",
-                    amount: 15
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_egyptian",
+                        amount: 15
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -4513,10 +4529,12 @@ const allAlliedCultures = [
                 appearsAfter: null,
                 name: "Guardian of Heritage",
                 questgiver: "",
-                reward: {
-                    resource: "wu_zhu",
-                    amount: 1000
-                },
+                rewards: [
+                    {
+                        resource: "wu_zhu",
+                        amount: 1000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -4559,10 +4577,12 @@ const allAlliedCultures = [
                 appearsAfter: [1],
                 name: "Rice Farms",
                 questgiver: "",
-                reward: {
-                    resource: "wu_zhu",
-                    amount: 200
-                },
+                rewards: [
+                    {
+                        resource: "wu_zhu",
+                        amount: 200
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -4605,10 +4625,12 @@ const allAlliedCultures = [
                 appearsAfter: [1],
                 name: "Silk Production",
                 questgiver: "",
-                reward: {
-                    resource: "wu_zhu",
-                    amount: 5000
-                },
+                rewards: [
+                    {
+                        resource: "wu_zhu",
+                        amount: 5000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -4686,7 +4708,7 @@ const allAlliedCultures = [
                 appearsAfter: [2,3],
                 name: "Workforce",
                 questgiver: "",
-                reward: [
+                rewards: [
                     {
                         resource: "rice",
                         amount: 300
@@ -4740,10 +4762,12 @@ const allAlliedCultures = [
                 appearsAfter: [4],
                 name: "Path to Greatness",
                 questgiver: "",
-                reward: {
-                    resource: "wu_zhu",
-                    amount: 150000
-                },
+                rewards: [
+                    {
+                        resource: "wu_zhu",
+                        amount: 150000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -4823,10 +4847,12 @@ const allAlliedCultures = [
                 appearsAfter: [4],
                 name: "Mount Song Crossing",
                 questgiver: "",
-                reward: {
-                    resource: "silk",
-                    amount: 500
-                },
+                rewards: [
+                    {
+                        resource: "silk",
+                        amount: 500
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -4868,10 +4894,12 @@ const allAlliedCultures = [
                 appearsAfter: [5],
                 name: "The Final Stretch",
                 questgiver: "",
-                reward: {
-                    resource: "porcelain",
-                    amount: 1000
-                },
+                rewards: [
+                    {
+                        resource: "porcelain",
+                        amount: 1000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -4964,10 +4992,12 @@ const allAlliedCultures = [
                 appearsAfter: [6],
                 name: "Within Reach",
                 questgiver: "",
-                reward: {
-                    resource: "silk",
-                    amount: 2000
-                },
+                rewards: [
+                    {
+                        resource: "silk",
+                        amount: 2000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -5009,10 +5039,12 @@ const allAlliedCultures = [
                 appearsAfter: [2,3],
                 name: "The Great Wall - Phase I",
                 questgiver: "",
-                reward: {
-                    resource: "antimatter_china",
-                    amount: 2
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_china",
+                        amount: 2
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -5065,10 +5097,12 @@ const allAlliedCultures = [
                 appearsAfter: [9],
                 name: "The Great Wall - Phase II",
                 questgiver: "",
-                reward: {
-                    resource: "antimatter_china",
-                    amount: 2
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_china",
+                        amount: 2
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -5110,10 +5144,12 @@ const allAlliedCultures = [
                 appearsAfter: [10],
                 name: "The Great Wall - Phase III",
                 questgiver: "",
-                reward: {
-                    resource: "antimatter_china",
-                    amount: 15
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_china",
+                        amount: 15
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -7911,10 +7947,12 @@ const allAlliedCultures = [
                 appearsAfter: [],
                 name: "The Grand Celebration",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "deben",
-                    amount: 250
-                },
+                rewards: [
+                    {
+                        resource: "deben",
+                        amount: 250
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -7957,10 +7995,12 @@ const allAlliedCultures = [
                 appearsAfter: [1],
                 name: "Papyrus Scrolls",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "deben",
-                    amount: 500
-                },
+                rewards: [
+                    {
+                        resource: "deben",
+                        amount: 500
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -8015,10 +8055,12 @@ const allAlliedCultures = [
                 appearsAfter: [1],
                 name: "Ankhs",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "deben",
-                    amount: 500
-                },
+                rewards: [
+                    {
+                        resource: "deben",
+                        amount: 500
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -8073,10 +8115,12 @@ const allAlliedCultures = [
                 appearsAfter: [2,3],
                 name: "Irrigation",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "deben",
-                    amount: 750
-                },
+                rewards: [
+                    {
+                        resource: "deben",
+                        amount: 750
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -8131,7 +8175,7 @@ const allAlliedCultures = [
                 appearsAfter: [4],
                 name: "Workforce",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: [
+                rewards: [
                     {
                         resource: "papyrus",
                         amount: 5000
@@ -8185,10 +8229,12 @@ const allAlliedCultures = [
                 appearsAfter: [5],
                 name: "Path to Greatness",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "deben",
-                    amount: 250000
-                },
+                rewards: [
+                    {
+                        resource: "deben",
+                        amount: 250000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -8267,7 +8313,7 @@ const allAlliedCultures = [
                 appearsAfter: [5],
                 name: "Crossing the Nile",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: [
+                rewards: [
                     {
                         resource: "papyrus_scroll",
                         amount: 800
@@ -8318,7 +8364,7 @@ const allAlliedCultures = [
                 appearsAfter: [6],
                 name: "The Final Stretch",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: [
+                rewards: [
                     {
                         resource: "ceremonial_dress",
                         amount: 5000
@@ -8430,10 +8476,12 @@ const allAlliedCultures = [
                 appearsAfter: [2,3],
                 name: "The Cheops Pyramid - Phase I",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "antimatter_egyptian",
-                    amount: 2
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_egyptian",
+                        amount: 2
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -8486,10 +8534,12 @@ const allAlliedCultures = [
                 appearsAfter: [9],
                 name: "The Cheops Pyramid - Phase II",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "antimatter_egyptian",
-                    amount: 2
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_egyptian",
+                        amount: 2
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -8531,10 +8581,12 @@ const allAlliedCultures = [
                 appearsAfter: [10],
                 name: "The Cheops Pyramid - Phase III",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "antimatter_egyptian",
-                    amount: 15
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_egyptian",
+                        amount: 15
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -12329,10 +12381,12 @@ const allAlliedCultures = [
                 appearsAfter: null,
                 name: "The Festival of Warriors",
                 questgiver: "",
-                reward: {
-                    resource: "wu_zhu",
-                    amount: 1000
-                },
+                rewards: [
+                    {
+                        resource: "wu_zhu",
+                        amount: 1000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -12375,10 +12429,12 @@ const allAlliedCultures = [
                 appearsAfter: [1],
                 name: "Rice Farms",
                 questgiver: "",
-                reward: {
-                    resource: "wu_zhu",
-                    amount: 200
-                },
+                rewards: [
+                    {
+                        resource: "wu_zhu",
+                        amount: 200
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -12421,10 +12477,12 @@ const allAlliedCultures = [
                 appearsAfter: [1],
                 name: "Silk Production",
                 questgiver: "",
-                reward: {
-                    resource: "wu_zhu",
-                    amount: 5000
-                },
+                rewards: [
+                    {
+                        resource: "wu_zhu",
+                        amount: 5000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -12502,7 +12560,7 @@ const allAlliedCultures = [
                 appearsAfter: [2,3],
                 name: "Workforce",
                 questgiver: "",
-                reward: [
+                rewards: [
                     {
                         resource: "rice",
                         amount: 300
@@ -12556,10 +12614,12 @@ const allAlliedCultures = [
                 appearsAfter: [4],
                 name: "Path to Greatness",
                 questgiver: "",
-                reward: {
-                    resource: "wu_zhu",
-                    amount: 150000
-                },
+                rewards: [
+                    {
+                        resource: "wu_zhu",
+                        amount: 150000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -12639,10 +12699,12 @@ const allAlliedCultures = [
                 appearsAfter: [4],
                 name: "Mount Song Crossing",
                 questgiver: "",
-                reward: {
-                    resource: "silk",
-                    amount: 500
-                },
+                rewards: [
+                    {
+                        resource: "silk",
+                        amount: 500
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -12684,10 +12746,12 @@ const allAlliedCultures = [
                 appearsAfter: [5],
                 name: "The Final Stretch",
                 questgiver: "",
-                reward: {
-                    resource: "porcelain",
-                    amount: 1000
-                },
+                rewards: [
+                    {
+                        resource: "porcelain",
+                        amount: 1000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -12780,10 +12844,12 @@ const allAlliedCultures = [
                 appearsAfter: [6],
                 name: "Within Reach",
                 questgiver: "",
-                reward: {
-                    resource: "silk",
-                    amount: 2000
-                },
+                rewards: [
+                    {
+                        resource: "silk",
+                        amount: 2000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -12825,10 +12891,12 @@ const allAlliedCultures = [
                 appearsAfter: [2,3],
                 name: "Terracotta Army - Phase I",
                 questgiver: "",
-                reward: {
-                    resource: "antimatter_china",
-                    amount: 2
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_china",
+                        amount: 2
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -12881,10 +12949,12 @@ const allAlliedCultures = [
                 appearsAfter: [9],
                 name: "Terracotta Army - Phase II",
                 questgiver: "",
-                reward: {
-                    resource: "antimatter_china",
-                    amount: 2
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_china",
+                        amount: 2
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -12926,10 +12996,12 @@ const allAlliedCultures = [
                 appearsAfter: [10],
                 name: "Terracotta Army - Phase III",
                 questgiver: "",
-                reward: {
-                    resource: "antimatter_china",
-                    amount: 15
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_china",
+                        amount: 15
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -15727,10 +15799,12 @@ const allAlliedCultures = [
                 appearsAfter: [],
                 name: "The Trade Exhibition",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "deben",
-                    amount: 250
-                },
+                rewards: [
+                    {
+                        resource: "deben",
+                        amount: 250
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -15773,10 +15847,12 @@ const allAlliedCultures = [
                 appearsAfter: [1],
                 name: "Papyrus Scrolls",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "deben",
-                    amount: 500
-                },
+                rewards: [
+                    {
+                        resource: "deben",
+                        amount: 500
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -15831,10 +15907,12 @@ const allAlliedCultures = [
                 appearsAfter: [1],
                 name: "Ankhs",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "deben",
-                    amount: 500
-                },
+                rewards: [
+                    {
+                        resource: "deben",
+                        amount: 500
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -15889,10 +15967,12 @@ const allAlliedCultures = [
                 appearsAfter: [2,3],
                 name: "Irrigation",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "deben",
-                    amount: 750
-                },
+                rewards: [
+                    {
+                        resource: "deben",
+                        amount: 750
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -15947,7 +16027,7 @@ const allAlliedCultures = [
                 appearsAfter: [4],
                 name: "Workforce",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: [
+                rewards: [
                     {
                         resource: "papyrus",
                         amount: 5000
@@ -16001,10 +16081,12 @@ const allAlliedCultures = [
                 appearsAfter: [5],
                 name: "Path to Greatness",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "deben",
-                    amount: 250000
-                },
+                rewards: [
+                    {
+                        resource: "deben",
+                        amount: 250000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -16083,7 +16165,7 @@ const allAlliedCultures = [
                 appearsAfter: [5],
                 name: "Crossing the Nile",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: [
+                rewards: [
                     {
                         resource: "papyrus_scroll",
                         amount: 800
@@ -16134,7 +16216,7 @@ const allAlliedCultures = [
                 appearsAfter: [6],
                 name: "The Final Stretch",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: [
+                rewards: [
                     {
                         resource: "ceremonial_dress",
                         amount: 5000
@@ -16246,10 +16328,12 @@ const allAlliedCultures = [
                 appearsAfter: [2,3],
                 name: "The Great Sphinx - Phase I",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "antimatter_egyptian",
-                    amount: 2
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_egyptian",
+                        amount: 2
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -16302,10 +16386,12 @@ const allAlliedCultures = [
                 appearsAfter: [9],
                 name: "The Great Sphinx - Phase II",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "antimatter_egyptian",
-                    amount: 2
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_egyptian",
+                        amount: 2
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -16347,10 +16433,12 @@ const allAlliedCultures = [
                 appearsAfter: [10],
                 name: "The Great Sphinx - Phase III",
                 questgiver: Questgiver_Egypt_Cleopatra,
-                reward: {
-                    resource: "antimatter_egyptian",
-                    amount: 15
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_egyptian",
+                        amount: 15
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -20145,10 +20233,12 @@ const allAlliedCultures = [
                 appearsAfter: null,
                 name: "The Festival of Lights",
                 questgiver: "",
-                reward: {
-                    resource: "wu_zhu",
-                    amount: 1000
-                },
+                rewards: [
+                    {
+                        resource: "wu_zhu",
+                        amount: 1000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -20191,10 +20281,12 @@ const allAlliedCultures = [
                 appearsAfter: [1],
                 name: "Rice Farms",
                 questgiver: "",
-                reward: {
-                    resource: "wu_zhu",
-                    amount: 200
-                },
+                rewards: [
+                    {
+                        resource: "wu_zhu",
+                        amount: 200
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -20237,10 +20329,12 @@ const allAlliedCultures = [
                 appearsAfter: [1],
                 name: "Silk Production",
                 questgiver: "",
-                reward: {
-                    resource: "wu_zhu",
-                    amount: 5000
-                },
+                rewards: [
+                    {
+                        resource: "wu_zhu",
+                        amount: 5000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -20318,7 +20412,7 @@ const allAlliedCultures = [
                 appearsAfter: [2,3],
                 name: "Workforce",
                 questgiver: "",
-                reward: [
+                rewards: [
                     {
                         resource: "rice",
                         amount: 300
@@ -20372,10 +20466,12 @@ const allAlliedCultures = [
                 appearsAfter: [4],
                 name: "Path to Greatness",
                 questgiver: "",
-                reward: {
-                    resource: "wu_zhu",
-                    amount: 150000
-                },
+                rewards: [
+                    {
+                        resource: "wu_zhu",
+                        amount: 150000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -20455,10 +20551,12 @@ const allAlliedCultures = [
                 appearsAfter: [4],
                 name: "Mount Song Crossing",
                 questgiver: "",
-                reward: {
-                    resource: "silk",
-                    amount: 500
-                },
+                rewards: [
+                    {
+                        resource: "silk",
+                        amount: 500
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -20500,10 +20598,12 @@ const allAlliedCultures = [
                 appearsAfter: [5],
                 name: "The Final Stretch",
                 questgiver: "",
-                reward: {
-                    resource: "porcelain",
-                    amount: 1000
-                },
+                rewards: [
+                    {
+                        resource: "porcelain",
+                        amount: 1000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -20596,10 +20696,12 @@ const allAlliedCultures = [
                 appearsAfter: [6],
                 name: "Within Reach",
                 questgiver: "",
-                reward: {
-                    resource: "silk",
-                    amount: 2000
-                },
+                rewards: [
+                    {
+                        resource: "silk",
+                        amount: 2000
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -20641,10 +20743,12 @@ const allAlliedCultures = [
                 appearsAfter: [2,3],
                 name: "Forbidden City - Phase I",
                 questgiver: "",
-                reward: {
-                    resource: "antimatter_china",
-                    amount: 2
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_china",
+                        amount: 2
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -20697,10 +20801,12 @@ const allAlliedCultures = [
                 appearsAfter: [9],
                 name: "Forbidden City - Phase II",
                 questgiver: "",
-                reward: {
-                    resource: "antimatter_china",
-                    amount: 2
-                },
+                reward: [
+                    {
+                        resource: "antimatter_china",
+                        amount: 2
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
@@ -20742,10 +20848,12 @@ const allAlliedCultures = [
                 appearsAfter: [10],
                 name: "Forbidden City - Phase III",
                 questgiver: "",
-                reward: {
-                    resource: "antimatter_china",
-                    amount: 15
-                },
+                rewards: [
+                    {
+                        resource: "antimatter_china",
+                        amount: 15
+                    }
+                ],
                 quests: [
                     {
                         id: 1,
