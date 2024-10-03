@@ -17,7 +17,7 @@ const MenuGrid = () => {
         { id: 3, text: "Resources", icon: Navbar_Resources, link: "/resources" },
         { id: 4, text: "Treasure Hunt", icon: Navbar_TreasureHunt, link: "/treasure-hunt" },
         { id: 5, text: "Allied Cultures", icon: Navbar_AlliedCultures, link: "/allied-cultures" },
-        { id: 6, text: "Seasons", icon: Navbar_Seasons, link: "/seasons" },
+        { id: 6, text: "Season Pass", icon: Navbar_Seasons, link: "/seasons" },
     ];
 
     return (

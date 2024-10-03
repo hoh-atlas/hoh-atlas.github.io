@@ -64,8 +64,8 @@ const Intro = () => {
 
             <Image src={icon_campaign_battle_ticket} alt="" spacing={true} roundedCorners={true} height={'70px'} marginTop={'10px'} />
 
-            Victory Tickets can be used to instantly receive the reward for a campaign encounter that has been completed with 3 stars. It can be received from Quests. Every day, the free package of 15 Victory Tickets is waiting for you
-            in the Shop - don't forget to claim it.
+            Victory Tickets can be used to instantly receive a reward for the campaign encounter that has been completed with 3 stars. It can be received from Quests, by watching ads 
+            (up to 6 {getItem("victory_ticket")} per day) and most importantly, from completing daily quests in Season Pass (up to 23 {getItem("victory_ticket")} daily).
 
         </TextBlock>
     </>
