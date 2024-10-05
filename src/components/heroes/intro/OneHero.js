@@ -6,7 +6,7 @@ import React from "react";
 
 import { createPathFromParameters } from "../../shared/utils";
 
-import { allHeroes, levelsExperiences, heroClassIcons, unitIcons, backdrops, heroClassNames, unitNames, colorIcons, colorNames } from "../data";
+import { allHeroes, levelsExperiences, heroClassIcons, unitIcons, backdrops, heroClassNames, unitNames, colorIcons, colorNames, positionNames, attackTypeNames } from "../data";
 import layoutHeroes from "../sectionsDefinition";
 import Image from "../../shared/Image";
 import H1 from "../../shared/H1";
@@ -33,7 +33,7 @@ const OneHero = (props) => {
         </div>
     }
 
-    const {id, name, image, icon, backdrop, stars, heroClass, unit, color, abilityIcon, ascension, abilityName, abilityDescription, ability} = hero;
+    const {id, name, image, icon, backdrop, stars, heroClass, unit, color, abilityIcon, ascension, abilityName, abilityDescription, ability, position, attackType} = hero;
 
     const currentIndex = props.filteredHeroes.findIndex(item => item.id === id);
     const leftHero = currentIndex > 0 ? props.filteredHeroes[currentIndex - 1] : null;
@@ -90,7 +90,7 @@ margin-top:
             </thead>
             <tbody>
                 <tr>
-                    <td style={{ width: '30%'}} rowSpan="5">
+                    <td style={{ width: '30%'}} rowSpan="7">
                         <Image src={image} maxHeight={"350px"} />
                     </td>
                 </tr>
@@ -132,6 +132,22 @@ margin-top:
                     </td>
                     <td colSpan={3}>
                         <span dangerouslySetInnerHTML={{ __html: abilityDescription }} />
+                    </td>
+                </tr>
+                <tr>
+                    <th colSpan={1} style={{ width: '23%', height: '20px', lineHeight: '15px' }}>
+                        Position
+                    </th>
+                    <th colSpan={3} style={{ width: '23%', height: '20px', lineHeight: '15px' }}>
+                        Attack Type
+                    </th>
+                </tr>
+                <tr>
+                    <td colSpan={1} style={{ width: '23%', height: '20px', lineHeight: '15px' }}>
+                        {positionNames[position]}
+                    </td>
+                    <td colSpan={3} style={{ width: '23%', height: '20px', lineHeight: '15px' }}>
+                        {attackType.map(type => attackTypeNames[type]).join(', ')}
                     </td>
                 </tr>
             </tbody>

@@ -525,7 +525,9 @@ const allHeroes = [
         abilityDescription: "Directs the Eye of Horus at the biggest cluster of enemy units, making them attack their allies for <b>3.50s</b>. Enemy units under Cleopatra's control gain <b>35%</b> attack speed.",
         ability: [
             "3.50s,35%",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage", "buff"],
     },
     {
         id: "albert-einstein",
@@ -660,7 +662,9 @@ const allHeroes = [
         abilityDescription: "Manipulates the space-time continuum to create a black hole at the location of Einstein's current target. The black hole will move across the battlefield in a spiral shape for <b>6s</b>, dealing up to <b>486%</b> damage to nearby enemy units and stunning them for <b>1s</b>.",
         ability: [
             "6s,486%,1s",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage"],
     },
     {
         id: "benjamin-franklin",
@@ -795,7 +799,9 @@ const allHeroes = [
         abilityDescription: "Inhibits all enemy units' ability to attack, decreasing their Accuracy by <b>10%</b>, their ATK Speed by <b>10%</b>, and their ATK by <b>11%</b> of Franklin's ATK for <b>8s</b>. Also prevents enemies from using Abilities for <b>4s</b>.",
         ability: [
             "10%,10%,11%,8s,4s",
-        ]
+        ],
+        position: "backline",
+        attackType: ["stun", "debuff"],
     },
     {
         id: "julius-caesar",
@@ -930,7 +936,9 @@ const allHeroes = [
         abilityDescription: "Invokes the power of Rome, taunting all enemies for <b>5s</b> and becoming invincible for <b>6s</b>. Enemy units close to Caesar are affected by his fiery aura, burning them for <b>30%</b> damage over <b>2</b>.",
         ability: [
             "5s,6s,30%,2",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["area_damage", "debuff"],
     },
     {
         id: "leonardo-da-vinci",
@@ -1065,7 +1073,9 @@ const allHeroes = [
         abilityDescription: "Teleports to the largest cluster of enemy units and shoots fiery projectiles at enemies within a range of <b>2</b>, burning them for <b>200%</b> damage over <b>8s</b>, and gaining <b>15%</b> attack and <b>10%</b> attack speed for the rest of the battle. Da Vinci then teleports back to his original position on the battlefield after 4 seconds.",
         ability: [
             "2,200%,8s,15%,10%",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage", "debuff", "teleport"],
     },
     {
         id: "marie-curie",
@@ -1200,7 +1210,9 @@ const allHeroes = [
         abilityDescription: "Throws <b>4</b> vials with unstable chemicals at random enemy units, dealing <b>100%</b> damage in a range of <b>1</b> and leaving affected units bleeding and poisoned for a further <b>160%</b> damage over <b>8s</b>.",
         ability: [
             "4,100%,1,160%,8s",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage", "debuff"],
     },
     {
         id: "napoleon-bonaparte",
@@ -1335,7 +1347,9 @@ const allHeroes = [
         abilityDescription: "Commands a cannon shot at the biggest cluster of enemy units, dealing <b>95%</b> damage in a range of <b>3</b>. Affected units have their accuracy reduced by <b>10%</b> for <b>6s</b>. All friendly units gain <b>10%</b> evasion for <b>6s</b>.",
         ability: [
             "95%,3,10%,6s,10%,6s",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["area_damage", "debuff"],
     },
     {
         id: "queen-elisabeth-i",
@@ -1470,7 +1484,9 @@ const allHeroes = [
         abilityDescription: "Inspires all friendly units, increasing their attack speed by <b>10%</b>, their ATK by <b>10%</b> of Elisabeth's ATK, their critical damage by <b>10%</b>, and their chance to critically hit by <b>10%</b> for <b>8s</b>.",
         ability: [
             "10%,10%,10%,10%,8s",
-        ]
+        ],
+        position: "backline",
+        attackType: ["buff"],
     },
     {
         id: "sir-lancelot",
@@ -1605,7 +1621,9 @@ const allHeroes = [
         abilityDescription: "Swings his sword at his current target five times, dealing increased damage with each strike for a total of <b>1500%</b> damage. Each strike has a <b>50%</b> chance to let the opponent bleed for <b>536%</b> damage over <b>8s</b>.",
         ability: [
             "1500%,50%,536%,8s",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["single_target"],
     },
     {
         id: "george-washington",
@@ -1740,7 +1758,9 @@ const allHeroes = [
         abilityDescription: "Stomps the ground, dealing <b>95%</b> damage to all enemies within a range of <b>2</b> and reducing their accuracy by <b>20%</b> for <b>8s</b>. Also links all friendly units' souls for <b>8s</b>. Soul-linked units share incoming damage between them.",
         ability: [
             "95%,2,20%,8s,8s",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["area_damage", "buff", "debuff"],
     },
     {
         id: "hercules",
@@ -1875,7 +1895,9 @@ const allHeroes = [
         abilityDescription: "Slams the ground, dealing <b>135%</b> damage to all enemies within a range of <b>3</b> and stunning them for <b>1.50s</b>.",
         ability: [
             "135%,3,1.50s",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["area_damage", "debuff"],
     },
     {
         id: "william-wallace",
@@ -2010,7 +2032,9 @@ const allHeroes = [
         abilityDescription: "Performs a poweful sword attack, dealing <b>110%</b> damage to all enemy units within a range of <b>3</b>. William Wallace gains <b>350%</b> of his Base Damage as a shield and increases his DEF by <b>35%</b> for <b>8s</b>.",
         ability: [
             "110%,3,350%,35%,8s",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["area_damage", "shield", "buff"],
     },
     {
         id: "robin-hood",
@@ -2145,7 +2169,9 @@ const allHeroes = [
         abilityDescription: "Shoots an arrow at the furthest target, hitting them for <b>700%</b> damage and burning them for a further <b>1464%</b> damage over <b>8s</b>. Prioritizes heroes.",
         ability: [
             "700%,1464%,8s",
-        ]
+        ],
+        position: "backline",
+        attackType: ["single_target", "debuff"],
     },
     {
         id: "joan-of-arc",
@@ -2280,7 +2306,9 @@ const allHeroes = [
         abilityDescription: "Calls for divine assistance targeting the biggest cluster of enemy units, dealing <b>95%</b> damage in a range of <b>2</b>. Also heals the biggest cluster of friendly units by <b>170%</b> of Joan's base damage in a range of <b>2</b>.",
         ability: [
             "95%,2,170%,2",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["area_damage", "heal"],
     },
     {
         id: "achilles",
@@ -2415,7 +2443,9 @@ const allHeroes = [
         abilityDescription: "Unleashes extraordinary strength by striking the current target for <b>610%</b> damage. Achilles then gains a surge of swiftness, increasing his ATK speed by <b>100%</b> for 8s and becoming invincible for <b>4.50s</b>.",
         ability: [
             "610%,100%,4.50s",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["single_target", "buff"],
     },
     {
         id: "abraham-lincoln",
@@ -2550,7 +2580,9 @@ const allHeroes = [
         abilityDescription: "Provides Invincibility to all friendly units for <b>3s</b>.",
         ability: [
             "3s",
-        ]
+        ],
+        position: "backline",
+        attackType: ["buff"],
     },
     {
         id: "medusa",
@@ -2685,7 +2717,9 @@ const allHeroes = [
         abilityDescription: "Fixes her gaze at the biggest cluster of enemy units, applying the poison to all enemies in a range of <b>2</b>. The poison deals <b>400%</b> damage over <b>8s</b> and leaves affected units stunned for <b>3s</b>.",
         ability: [
             "2,400%,8s,3s",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage", "debuff", "stun"],
     },
     {
         id: "hua-mulan",
@@ -2820,7 +2854,9 @@ const allHeroes = [
         abilityDescription: "Summons a fiery dragon striken the location of the biggest cluster of enemy units three times, reducing DEF by <b>15%</b> of Mulan's ATK each time and dealing a total of <b>150%</b> damage in a range of <b>2</b>. Affected enemy units burn for a further <b>50%</b> damage over <b>6s</b>.",
         ability: [
             "15%,150%,2,50%,6s",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["area_damage", "debuff"],
     },
     {
         id: "ramses-ii",
@@ -2955,7 +2991,9 @@ const allHeroes = [
         abilityDescription: "Targets the biggest cluster of friendly units, increasing their ATK by <b>60%</b> of Ramses' ATK, their movement speed by <b>25%</b>, their Accuracy by <b>20%</b>, their critical damage by <b>25%</b>, and their chance to critically hit by <b>15%</b> for <b>8s</b> in a range of <b>3</b>.",
         ability: [
             "60%,25%,20%,25%,15%,8s,3",
-        ]
+        ],
+        position: "backline",
+        attackType: ["buff"],
     },
     {
         id: "sun-tzu",
@@ -3090,7 +3128,9 @@ const allHeroes = [
         abilityDescription: "Strikes the current target twice, dealing a total of <b>160%</b> damage to all enemy units within a range of <b>2.5</b>. Then Sun Tzu centers himself, causing an aura of calmness, reducing nearby enemies' ATK Speed by <b>15%</b> for <b>8s</b>.",
         ability: [
             "160%,2.5,15%,8s",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["area_damage", "debuff"],
     },
     /*{
         id: "nikola-tesla",
@@ -3236,7 +3276,9 @@ const allHeroes = [
         abilityDescription: "Calls forth a storm at the location of the biggest cluster of enemy units. The storm deals <b>110%</b> damage in a range of <b>3</b>, reduces movement speed by <b>80%</b>, and leaves affected units burning for <b>80%</b> over <b>6s</b>.",
         ability: [
             "110%,3,80%,80%,6s",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage", "debuff"],
     },
     {
         id: "spartacus",
@@ -3371,7 +3413,9 @@ const allHeroes = [
         abilityDescription: "Slashes the current target four times, dealing increased damage with each strike for a total of <b>1150%</b> damage. Also increases Spartacus' crit chance by <b>35%</b> for <b>6s</b>.",
         ability: [
             "1150%,35%,6s",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["single_target", "buff"],
     },
     {
         id: "tiger-lily",
@@ -3506,7 +3550,9 @@ const allHeroes = [
         abilityDescription: "Unleashes the power of nature, healing all friendly units by <b>700%</b> of Tiger Lily's base damage. Cleanses all negative effects.",
         ability: [
             "700%",
-        ]
+        ],
+        position: "backline",
+        attackType: ["heal"],
     },
     {
         id: "confucius",
@@ -3641,7 +3687,9 @@ const allHeroes = [
         abilityDescription: "Confucius unleashes the wind's wisdom, reducing all enemy units' DEF by <b>22%</b> of his ATK and increasing all friendly units' ATK by <b>25%</b> of his ATK for <b>8s</b>.",
         ability: [
             "22%,25%,8s",
-        ]
+        ],
+        position: "backline",
+        attackType: ["buff", "debuff"],
     },
     {
         id: "hatshepsut",
@@ -3776,7 +3824,9 @@ const allHeroes = [
         abilityDescription: "Draws energy from fertile ground, healing all friendly units by <b>467%</b> of her base damage and granting them <b>1.60s</b> worth of focus instantly.",
         ability: [
             "467%,1.60s",
-        ]
+        ],
+        position: "backline",
+        attackType: ["heal"], //gives focus
     },
     {
         id: "jane-austen",
@@ -3911,7 +3961,9 @@ const allHeroes = [
         abilityDescription: "Unleashes her literaly genius, convincing an enemy unit to attack their allies for <b>5s</b>. While under Jane's control, the enemy unit's ATK is increased by <b>120%</b>. Prioritizes heroes.",
         ability: [
             "5s,120%",
-        ]
+        ],
+        position: "backline",
+        attackType: ["debuff", "buff", "stun"],
     },
     {
         id: "louis-xiv",
@@ -4046,7 +4098,9 @@ const allHeroes = [
         abilityDescription: "Targets the biggest cluster of friendly units, increasing DEF by <b>36%</b> of Louis' DEF in a range of <b>2.5</b> for <b>8s</b>. Affected units also gain <b>175%</b> of Louis' base damage as a shield.",
         ability: [
             "36%,2.5,8s,175%",
-        ]
+        ],
+        position: "backline",
+        attackType: ["buff", "shield"],
     },
     {
         id: "ludwig-van-beethoven",
@@ -4181,7 +4235,9 @@ const allHeroes = [
         abilityDescription: "Directs a deafening sound towards the biggest cluster of enemy units, dealing <b>50%</b> damage and stunning all enemies for <b>1.50s</b> in a range of <b>3</b>.",
         ability: [
             "50%,1.50s,3",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage", "stun"],
     },
     {
         id: "margaret-i-of-denmark",
@@ -4316,7 +4372,9 @@ const allHeroes = [
         abilityDescription: "Inspires all friendly units, increasing their attack speed by <b>35%</b> and their ATK by <b>35%</b> of Margaret's ATK for <b>8s</b>.",
         ability: [
             "35%,35%,8s",
-        ]
+        ],
+        position: "backline",
+        attackType: ["buff"],
     },
     {
         id: "plato",
@@ -4451,7 +4509,9 @@ const allHeroes = [
         abilityDescription: "Plato speaks in allegories, confusing enemy units and decreasing their accuracy by <b>10%</b> and ATK by <b>17%</b> of Plato's ATK for <b>8s</b>.",
         ability: [
             "10%,17%,8s",
-        ]
+        ],
+        position: "backline",
+        attackType: ["debuff"],
     },
     {
         id: "vincent-van-gogh",
@@ -4586,7 +4646,9 @@ const allHeroes = [
         abilityDescription: "Creates a swirl of color at the location of the current target. For <b>6s</b>, the swirl will move across the battlefield in a spiral shape and deal up to <b>360%</b> damage and reduce defense by <b>8%</b> to all enemy units it comes into contact with.",
         ability: [
             "6s,360%,8%,",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage", "debuff"],
     },
     {
         id: "tomoe-gozen",
@@ -4721,7 +4783,9 @@ const allHeroes = [
         abilityDescription: "Strikes the ground with her spear, unleashing a shockwave that deals <b>220%</b> damage to all enemies within a range of <b>3</b>.",
         ability: [
             "220%,3",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["area_damage"],
     },
     {
         id: "thomas-alva-edison",
@@ -4856,7 +4920,9 @@ const allHeroes = [
         abilityDescription: "Teleports into the largest cluster of enemy units, causing an explosion on arrival. The explosion deals <b>130%</b> damage in a range of <b>2</b>. Edison then gains <b>44%</b> attack speed for the rest of the wave.",
         ability: [
             "130%,2,44%",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage", "buff", "teleport"],
     },
     {
         id: "attila-the-hun",
@@ -4991,7 +5057,9 @@ const allHeroes = [
         abilityDescription: "Attila shoots a life-draining arrow at the furthest enemy target, dealing <b>980%</b> damage and healing himself for <b>420%</b> of his base damage.",
         ability: [
             "980%,420%",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["single_target", "heal"],
     },
     {
         id: "charlemagne",
@@ -5126,7 +5194,9 @@ const allHeroes = [
         abilityDescription: "Strikes the current target, causing an explosion that deals <b>110%</b> damage to all enemy units in a range of <b>2</b> around the target and reduces their ATK Speed by <b>17%</b> for <b>6s</b>.",
         ability: [
             "110%,2,17%,6s",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["area_damage", "debuff"],
     },
     {
         id: "dartagnan",
@@ -5261,7 +5331,9 @@ const allHeroes = [
         abilityDescription: "Pierces the current target four times, dealing increased damage with each stab for a total of <b>700%</b> damage. Each stab has a <b>50%</b> chance to let the opponent bleed for <b>520%</b> over <b>8s</b>.",
         ability: [
             "700%,50%,520%,8s",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["single_target"],
     },
     {
         id: "king-minos",
@@ -5396,7 +5468,9 @@ const allHeroes = [
         abilityDescription: "Pounds his chest, taunting all enemies for <b>5s</b> and gaining <b>950%</b> of DEF as a shield.",
         ability: [
             "5s,950%",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["shield", "stun"],
     },
     {
         id: "queen-boudicca",
@@ -5531,7 +5605,9 @@ const allHeroes = [
         abilityDescription: "Throws her spear at the furthest target, hitting them for <b>1150%</b> damage and leaving them stunned for <b>3.50s</b>. Prioritizes heroes.",
         ability: [
             "1150%,3.50s",
-        ]
+        ],
+        position: "backline",
+        attackType: ["single_target", "stun"],
     },
     {
         id: "qin-shi-huang",
@@ -5666,7 +5742,9 @@ const allHeroes = [
         abilityDescription: "Qin Shi Huang summons his Spirit Sword that flies across the battlefield, damaging enemy units for <b>65%</b> damage, and healing allied units for <b>95%</b> of Qin Shi Huang's base damage for <b>6s</b>.",
         ability: [
             "65%,95%,6s",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage", "heal"],
     },
     {
         id: "miyamoto-musashi",
@@ -5751,7 +5829,9 @@ const allHeroes = [
         abilityDescription: "Strikes the current target four times for a total of <b>3250%</b> damage.",
         ability: [
             "3250%",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["single_target"],
     },
     {
         id: "cyrus-the-great",
@@ -5836,7 +5916,9 @@ const allHeroes = [
         abilityDescription: "Causes an explosion on the current target, dealing <b>120%</b> to all enemy units within a range of <b>1.5</b>.",
         ability: [
             "120%,1.5",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage"],
     },
     {
         id: "john-locke",
@@ -5921,7 +6003,9 @@ const allHeroes = [
         abilityDescription: "Deals <b>844%</b> damage to the current target and stuns it for <b>2s</b>. Enemy units within a radius of <b>2</b> around the target receive <b>70%</b> damage.",
         ability: [
             "844%,2s,2,70%",
-        ]
+        ],
+        position: "backline",
+        attackType: ["single_target", "debuff"],
     },
     {
         id: "karl-marx",
@@ -6006,7 +6090,9 @@ const allHeroes = [
         abilityDescription: "Targets the biggest cluster of enemy unis, reducing accuracy by <b>16%</b> and ATK by <b>50%</b> of Marx's ATK for <b>8s</b> in a range of <b>2</b>.",
         ability: [
             "16%,50%,8s,2",
-        ]
+        ],
+        position: "backline",
+        attackType: ["debuff"],
     },
     {
         id: "mansa-musa",
@@ -6091,7 +6177,9 @@ const allHeroes = [
         abilityDescription: "Mansa Musa targets the biggest cluster of friendly units, increasing their chance to critically hit by <b>25%</b> and their ATK by <b>65%</b> of Mansa Musa's ATK for <b>8s</b> in a range of <b>2</b>.",
         ability: [
             "25%,65%,8s,2",
-        ]
+        ],
+        position: "backline",
+        attackType: ["buff"],
     },
     {
         id: "marco-polo",
@@ -6176,7 +6264,9 @@ const allHeroes = [
         abilityDescription: "Teleports into the largest cluster of enemy units, causing an explosion on arrival. The explosion deals <b>182%</b> damage in a range of <b>2</b>.",
         ability: [
             "182%,2",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage", "teleport"],
     },
     {
         id: "oracle-of-dephi",
@@ -6261,7 +6351,9 @@ const allHeroes = [
         abilityDescription: "Targets the biggest cluster of enemy units, reducing DEF by <b>45%</b> of the Oracle's ATK for <b>8s</b> in a range of <b>2</b>.",
         ability: [
             "45%,8s,2",
-        ]
+        ],
+        position: "backline",
+        attackType: ["debuff"],
     },
     {
         id: "ada-lovelace",
@@ -6346,7 +6438,9 @@ const allHeroes = [
         abilityDescription: "Detonates an explosion targetting the biggest cluster of enemy units, dealing <b>180%</b> damage in a range of <b>1.5</b>.",
         ability: [
             "180%,1.5",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage"],
     },
     {
         id: "artemisia-i-of-caria",
@@ -6431,7 +6525,9 @@ const allHeroes = [
         abilityDescription: "Lets arrows rain on the biggest cluster of enemy units, dealing <b>115%</b> damage in a range of <b>2.5</b>.",
         ability: [
             "115%,2.5",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage"],
     },
     {
         id: "pythagoras",
@@ -6516,7 +6612,9 @@ const allHeroes = [
         abilityDescription: "Throws his triangle ruler at the current target. For <b>4s</b>, the ruler will move across the battlefield in a triangular shape and deal up to <b>336%</b> damage to nearby enemy units.",
         ability: [
             "4s,336%",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage"],
     },
     {
         id: "hermann-the-cheruscan",
@@ -6601,7 +6699,9 @@ const allHeroes = [
         abilityDescription: "Stomps the ground, dealing <b>132%</b> damage to all enemies within a range of <b>2.5</b> and recovering <b>570%</b> of his base damage.",
         ability: [
             "132%,2.5,570%",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["area_damage", "heal"],
     },
     {
         id: "inanna",
@@ -6686,7 +6786,9 @@ const allHeroes = [
         abilityDescription: "Skillfully strikes the current target with her staff, dealing <b>1080%</b> damage.",
         ability: [
             "1080%",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["single_target"],
     },
     {
         id: "otto-von-bismarck",
@@ -6771,7 +6873,9 @@ const allHeroes = [
         abilityDescription: "Taunts all enemies for <b>4s</b>. Bismarck gains <b>520%</b> of his base damage as a shield.",
         ability: [
             "4s,520%",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["shield", "stun"],
     },
     {
         id: "ulysses-s-grant",
@@ -6856,7 +6960,9 @@ const allHeroes = [
         abilityDescription: "Strikes the current target for <b>405%</b> damage, before shooting at the enemy with the lowest DEF, dealing <b>735%</b> damage. Then Ulysses heals himself for <b>500%</b> of his base damage.",
         ability: [
             "405%,735%,500%",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["single_target", "heal"],
     },
     {
         id: "ashoka-the-great",
@@ -6941,7 +7047,9 @@ const allHeroes = [
         abilityDescription: "Channels divine energy, healing the target with the most missing HP by <b>1080%</b> of Ashoka's base damage. Prioritizes heroes.",
         ability: [
             "1080%",
-        ]
+        ],
+        position: "backline",
+        attackType: ["heal"],
     },
     {
         id: "leonidas-i",
@@ -7026,7 +7134,9 @@ const allHeroes = [
         abilityDescription: "Leonidas stomps the ground, dealing <b>120%</b> damage to all enemies within a range of <b>2.5</b>.",
         ability: [
             "120%,2.5",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["area_damage", "stun"],
     },
     {
         id: "william-tell",
@@ -7111,7 +7221,9 @@ const allHeroes = [
         abilityDescription: "Aims his crossbow at the furthest target, shooting them for <b>1475%</b> damage. Prioritizes heroes.",
         ability: [
             "1475%",
-        ]
+        ],
+        position: "backline",
+        attackType: ["single_target"],
     },
     {
         id: "maori-chief",
@@ -7164,7 +7276,9 @@ const allHeroes = [
         abilityDescription: "Invokes the power of water targeting the biggest cluster of friendly units, providing <b>15%</b> of Te Wherowhero's Base Damage as a shield in a range of <b>2</b>.",
         ability: [
             "15%,2",
-        ]
+        ],
+        position: "backline",
+        attackType: ["shield"],
     },
     {
         id: "geisha",
@@ -7217,7 +7331,9 @@ const allHeroes = [
         abilityDescription: "Throws a poisoned fan at the enemy with the highest HP, dealing <b>450%</b> damage and poisoning them for <b>280%</b> damage over <b>8s</b>.",
         ability: [
             "450%,280%,8s",
-        ]
+        ],
+        position: "backline",
+        attackType: ["single_target", "debuff"],
     },
     {
         id: "greek-mathematician",
@@ -7270,7 +7386,9 @@ const allHeroes = [
         abilityDescription: "Stomps the ground, dealing <b>75%</b> damage to all enemies within a range of <b>3</b>.",
         ability: [
             "75%,3",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["area_damage"],
     },
     {
         id: "mayan-astronomer",
@@ -7323,7 +7441,9 @@ const allHeroes = [
         abilityDescription: "Summon celestial energy to rain down upon a random enemy unit, dealing <b>180%</b> damage. The impact also affects nearby enemy units within a range of <b>2</b> from the target.",
         ability: [
             "180%,2",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage"],
     },
     {
         id: "roman-praetor",
@@ -7376,7 +7496,9 @@ const allHeroes = [
         abilityDescription: "Targets the biggest cluster of enemy units, reducing ATK by <b>50%</b> of Aemilia Tertia's ATK for <b>8s</b> in a range of <b>2</b>.",
         ability: [
             "50%,8s,2",
-        ]
+        ],
+        position: "backline",
+        attackType: ["debuff"],
     },
     {
         id: "sioux-shaman",
@@ -7429,7 +7551,9 @@ const allHeroes = [
         abilityDescription: "Targets the biggest cluster of enemy units, increasing DEF by <b>34%</b> of Sitting Bull's DEF for <b>8s</b> in a range of <b>2</b>.",
         ability: [
             "34%,8s,2",
-        ]
+        ],
+        position: "backline",
+        attackType: ["buff"],
     },
     {
         id: "tribal-healer",
@@ -7482,11 +7606,13 @@ const allHeroes = [
         abilityDescription: "Applies a herbal concoction to the friendly unit with the most missing HP, healing them by <b>800%</b> of Naya's base damage. Prioritizes heroes.",
         ability: [
             "800%",
-        ]
+        ],
+        position: "backline",
+        attackType: ["heal"],
     },
     {
         id: "roman-centurion",
-        name: "Roman Centurion",
+        name: "Titus Pullo",
         image: Unit_RomanCenturion_fullbody,
         icon: Unit_RomanCenturion,
         backdrop: "italy",
@@ -7535,7 +7661,9 @@ const allHeroes = [
         abilityDescription: "Stabs the current target from behind his shield, dealing <b>700%</b> damage and gaining <b>500%</b> of his Base Damage as a shield.",
         ability: [
             "700%,500%",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["single_target", "shield"],
     },
     {
         id: "egyptian-vizier",
@@ -7588,7 +7716,9 @@ const allHeroes = [
         abilityDescription: "Targets the biggest cluster of enemy units, reducing DEF by <b>34%</b> of Imhotep's ATK for <b>8s</b> in a range of <b>2</b>.",
         ability: [
             "34%,8s,2",
-        ]
+        ],
+        position: "backline",
+        attackType: ["debuff"],
     },
     {
         id: "ninja",
@@ -7641,7 +7771,9 @@ const allHeroes = [
         abilityDescription: "Throws a kunai at the enemy with the lowest current HP, dealing <b>540%</b> damage. Prioritizes heroes.",
         ability: [
             "540%",
-        ]
+        ],
+        position: "backline",
+        attackType: ["single_target"],
     },
     {
         id: "viking-jarl",
@@ -7694,7 +7826,9 @@ const allHeroes = [
         abilityDescription: "Unleashes a rallying shout, increasing the ATK of friendly units in a range of <b>5</b> around him by <b>40%</b> of his ATk for <b>8s</b>.",
         ability: [
             "5,40%,8s",
-        ]
+        ],
+        position: "backline",
+        attackType: ["buff"],
     },
     {
         id: "aztec-tlacateccatl",
@@ -7747,7 +7881,9 @@ const allHeroes = [
         abilityDescription: "Invokes the Aztec spirits, healing Cuauhtémoc and all friendly units within a range of <b>1</b> by <b>450%</b> of Cuauhtémoc's Base Damage.",
         ability: [
             "1,450%",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["heal"],
     },
     {
         id: "hoplit",
@@ -7800,7 +7936,9 @@ const allHeroes = [
         abilityDescription: "Pierces the current target with a spear, dealing <b>720%</b> damage.",
         ability: [
             "720%",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["single_target"],
     },
     {
         id: "jaguar-warrior",
@@ -7853,7 +7991,9 @@ const allHeroes = [
         abilityDescription: "Swings her sword in a circular motion, dealing <b>90%</b> damage to all enemy units within a range of <b>2.5</b>.",
         ability: [
             "90%,2.5",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["area_damage"],
     },
     {
         id: "japanese-shogun",
@@ -7906,7 +8046,9 @@ const allHeroes = [
         abilityDescription: "Takes a swipe at the current target, dealing <b>100%</b> damage to all enemy units in a range of <b>2</b> around it. Affected units have their accuracy reduced by <b>10%</b> for <b>8s</b>.",
         ability: [
             "100%,2,10%,8s",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["area_damage", "debuff"],
     },
     {
         id: "ottoman-general",
@@ -7959,7 +8101,9 @@ const allHeroes = [
         abilityDescription: "Taunts all enemy units for <b>4s</b>. During this time, Hasan Pasha's DEF is increased by <b>40%</b>.",
         ability: [
             "4s,40%",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["stun", "buff"],
     },
     {
         id: "shaolin",
@@ -8012,7 +8156,9 @@ const allHeroes = [
         abilityDescription: "Kicks the current target three times for a total of <b>720%</b> damage.",
         ability: [
             "720%",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["single_target"],
     },
     {
         id: "jester",
@@ -8065,7 +8211,9 @@ const allHeroes = [
         abilityDescription: "Shoots his cannon at four random targets, dealing <b>30%</b> to enemies in a range of <b>2</b>.",
         ability: [
             "30%,2",
-        ]
+        ],
+        position: "backline",
+        attackType: ["area_damage"],
     },
     {
         id: "nubian-mercenary",
@@ -8118,7 +8266,9 @@ const allHeroes = [
         abilityDescription: "Strikes the current target twice for a total of <b>1000%</b> damage.",
         ability: [
             "1000%",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["single_target"],
     },
     {
         id: "viking-raider",
@@ -8171,7 +8321,9 @@ const allHeroes = [
         abilityDescription: "Throws an axe at the enemy unit with the most HP, dealing <b>600%</b> damage.",
         ability: [
             "600%",
-        ]
+        ],
+        position: "frontline",
+        attackType: ["single_target"],
     },
 ]
 
@@ -8238,6 +8390,22 @@ const colorNames = {
     "green": "Green",
 }
 
+const positionNames = {
+    "frontline": "Frontline",
+    "backline": "Backline",
+}
+
+const attackTypeNames = {
+    "area_damage": "Area Damage",
+    "single_target": "Single Target",
+    "buff": "Buff",
+    "debuff": "Debuff",
+    "heal": "Heal",
+    "stun": "Stun",
+    "shield": "Shield",
+    "teleport": "Teleport",
+}
+
 const backdrops = {
     "baroque": hero_backdrop_baroque,
     "china": hero_backdrop_china,
@@ -8254,4 +8422,4 @@ const backdrops = {
     "windmill": hero_backdrop_windmill,
 }
 
-export { allHeroes, levelsExperiences, heroClassIcons, heroClassNames, unitIcons, unitNames, colorIcons, colorNames, backdrops };
+export { allHeroes, levelsExperiences, heroClassIcons, heroClassNames, unitIcons, unitNames, colorIcons, colorNames, positionNames, attackTypeNames, backdrops };
