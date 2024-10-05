@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0aa82674.css",
-    "main.js": "/static/js/main.c81e3062.js",
+    "main.css": "/static/css/main.98767d86.css",
+    "main.js": "/static/js/main.b5de7c72.js",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
     "static/media/china_city.webp": "/static/media/china_city.415736e9ff5f7bc3bfe7.webp",
     "static/media/egypt_city.webp": "/static/media/egypt_city.7719ac968df164a2b372.webp",
@@ -605,11 +605,11 @@
     "static/media/herbs.webp": "/static/media/herbs.45e59d4e77aed5c7159a.webp",
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
-    "main.0aa82674.css.map": "/static/css/main.0aa82674.css.map",
-    "main.c81e3062.js.map": "/static/js/main.c81e3062.js.map"
+    "main.98767d86.css.map": "/static/css/main.98767d86.css.map",
+    "main.b5de7c72.js.map": "/static/js/main.b5de7c72.js.map"
   },
   "entrypoints": [
-    "static/css/main.0aa82674.css",
-    "static/js/main.c81e3062.js"
+    "static/css/main.98767d86.css",
+    "static/js/main.b5de7c72.js"
   ]
 }
