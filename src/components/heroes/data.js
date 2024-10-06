@@ -527,7 +527,8 @@ const allHeroes = [
             "3.50s,35%",
         ],
         position: "backline",
-        attackType: ["area_damage", "buff"],
+        damageType: ["area_damage"],
+        tacticalType: ["buff"],
     },
     {
         id: "albert-einstein",
@@ -664,7 +665,8 @@ const allHeroes = [
             "6s,486%,1s",
         ],
         position: "backline",
-        attackType: ["area_damage"],
+        damageType: ["area_damage"],
+        tacticalType: ["debuff"],
     },
     {
         id: "benjamin-franklin",
@@ -801,7 +803,8 @@ const allHeroes = [
             "10%,10%,11%,8s,4s",
         ],
         position: "backline",
-        attackType: ["stun", "debuff"],
+        damageType: [],
+        tacticalType: ["stun", "debuff"],
     },
     {
         id: "julius-caesar",
@@ -938,7 +941,8 @@ const allHeroes = [
             "5s,6s,30%,2",
         ],
         position: "frontline",
-        attackType: ["area_damage", "debuff"],
+        damageType: ["area_damage"],
+        tacticalType: ["debuff"],
     },
     {
         id: "leonardo-da-vinci",
@@ -1075,7 +1079,8 @@ const allHeroes = [
             "2,200%,8s,15%,10%",
         ],
         position: "backline",
-        attackType: ["area_damage", "debuff", "teleport"],
+        damageType: ["area_damage"],
+        tacticalType: ["debuff", "teleport"],
     },
     {
         id: "marie-curie",
@@ -1212,7 +1217,8 @@ const allHeroes = [
             "4,100%,1,160%,8s",
         ],
         position: "backline",
-        attackType: ["area_damage", "debuff"],
+        damageType: ["area_damage"],
+        tacticalType: ["debuff"],
     },
     {
         id: "napoleon-bonaparte",
@@ -1349,7 +1355,8 @@ const allHeroes = [
             "95%,3,10%,6s,10%,6s",
         ],
         position: "frontline",
-        attackType: ["area_damage", "debuff"],
+        damageType: ["area_damage"],
+        tacticalType: ["debuff"],
     },
     {
         id: "queen-elisabeth-i",
@@ -1486,7 +1493,8 @@ const allHeroes = [
             "10%,10%,10%,10%,8s",
         ],
         position: "backline",
-        attackType: ["buff"],
+        damageType: [],
+        tacticalType: ["buff"],
     },
     {
         id: "sir-lancelot",
@@ -1623,7 +1631,8 @@ const allHeroes = [
             "1500%,50%,536%,8s",
         ],
         position: "frontline",
-        attackType: ["single_target"],
+        damageType: ["single_target"],
+        tacticalType: [],
     },
     {
         id: "george-washington",
@@ -1760,7 +1769,8 @@ const allHeroes = [
             "95%,2,20%,8s,8s",
         ],
         position: "frontline",
-        attackType: ["area_damage", "buff", "debuff"],
+        damageType: ["area_damage"],
+        tacticalType: ["buff", "debuff"],
     },
     {
         id: "hercules",
@@ -1897,7 +1907,8 @@ const allHeroes = [
             "135%,3,1.50s",
         ],
         position: "frontline",
-        attackType: ["area_damage", "debuff"],
+        damageType: ["area_damage"],
+        tacticalType: ["debuff"],
     },
     {
         id: "william-wallace",
@@ -2034,7 +2045,8 @@ const allHeroes = [
             "110%,3,350%,35%,8s",
         ],
         position: "frontline",
-        attackType: ["area_damage", "shield", "buff"],
+        damageType: ["area_damage"],
+        tacticalType: ["shield", "buff"],
     },
     {
         id: "robin-hood",
@@ -2171,7 +2183,8 @@ const allHeroes = [
             "700%,1464%,8s",
         ],
         position: "backline",
-        attackType: ["single_target", "debuff"],
+        damageType: ["single_target"],
+        tacticalType: ["debuff"],
     },
     {
         id: "joan-of-arc",
@@ -2308,7 +2321,8 @@ const allHeroes = [
             "95%,2,170%,2",
         ],
         position: "frontline",
-        attackType: ["area_damage", "heal"],
+        damageType: ["area_damage"],
+        tacticalType: ["heal"],
     },
     {
         id: "achilles",
@@ -2445,7 +2459,8 @@ const allHeroes = [
             "610%,100%,4.50s",
         ],
         position: "frontline",
-        attackType: ["single_target", "buff"],
+        damageType: ["single_target"],
+        tacticalType: ["buff"],
     },
     {
         id: "abraham-lincoln",
@@ -2582,7 +2597,8 @@ const allHeroes = [
             "3s",
         ],
         position: "backline",
-        attackType: ["buff"],
+        damageType: [],
+        tacticalType: ["buff"],
     },
     {
         id: "medusa",
@@ -2719,7 +2735,8 @@ const allHeroes = [
             "2,400%,8s,3s",
         ],
         position: "backline",
-        attackType: ["area_damage", "debuff", "stun"],
+        damageType: ["area_damage"],
+        tacticalType: ["debuff", "stun"],
     },
     {
         id: "hua-mulan",
@@ -2856,7 +2873,8 @@ const allHeroes = [
             "15%,150%,2,50%,6s",
         ],
         position: "frontline",
-        attackType: ["area_damage", "debuff"],
+        damageType: ["area_damage"],
+        tacticalType: ["debuff"],
     },
     {
         id: "ramses-ii",
@@ -2993,7 +3011,8 @@ const allHeroes = [
             "60%,25%,20%,25%,15%,8s,3",
         ],
         position: "backline",
-        attackType: ["buff"],
+        damageType: [],
+        tacticalType: ["buff"],
     },
     {
         id: "sun-tzu",
@@ -3130,7 +3149,8 @@ const allHeroes = [
             "160%,2.5,15%,8s",
         ],
         position: "frontline",
-        attackType: ["area_damage", "debuff"],
+        damageType: ["area_damage"],
+        tacticalType: ["debuff"],
     },
     /*{
         id: "nikola-tesla",
@@ -3278,7 +3298,8 @@ const allHeroes = [
             "110%,3,80%,80%,6s",
         ],
         position: "backline",
-        attackType: ["area_damage", "debuff"],
+        damageType: ["area_damage"],
+        tacticalType: ["debuff"],
     },
     {
         id: "spartacus",
@@ -3415,7 +3436,8 @@ const allHeroes = [
             "1150%,35%,6s",
         ],
         position: "frontline",
-        attackType: ["single_target", "buff"],
+        damageType: ["single_target"],
+        tacticalType: ["buff"],
     },
     {
         id: "tiger-lily",
@@ -3552,7 +3574,8 @@ const allHeroes = [
             "700%",
         ],
         position: "backline",
-        attackType: ["heal"],
+        damageType: [],
+        tacticalType: ["heal"],
     },
     {
         id: "confucius",
@@ -3689,7 +3712,8 @@ const allHeroes = [
             "22%,25%,8s",
         ],
         position: "backline",
-        attackType: ["buff", "debuff"],
+        damageType: [],
+        tacticalType: ["buff", "debuff"],
     },
     {
         id: "hatshepsut",
@@ -3826,7 +3850,8 @@ const allHeroes = [
             "467%,1.60s",
         ],
         position: "backline",
-        attackType: ["heal"], //gives focus
+        damageType: [],
+        tacticalType: ["heal"], //gives focus
     },
     {
         id: "jane-austen",
@@ -3963,7 +3988,8 @@ const allHeroes = [
             "5s,120%",
         ],
         position: "backline",
-        attackType: ["debuff", "buff", "stun"],
+        damageType: [],
+        tacticalType: ["debuff", "buff", "stun"],
     },
     {
         id: "louis-xiv",
@@ -4100,7 +4126,8 @@ const allHeroes = [
             "36%,2.5,8s,175%",
         ],
         position: "backline",
-        attackType: ["buff", "shield"],
+        damageType: [],
+        tacticalType: ["buff", "shield"],
     },
     {
         id: "ludwig-van-beethoven",
@@ -4237,7 +4264,8 @@ const allHeroes = [
             "50%,1.50s,3",
         ],
         position: "backline",
-        attackType: ["area_damage", "stun"],
+        damageType: ["area_damage"],
+        tacticalType: ["stun"],
     },
     {
         id: "margaret-i-of-denmark",
@@ -4374,7 +4402,8 @@ const allHeroes = [
             "35%,35%,8s",
         ],
         position: "backline",
-        attackType: ["buff"],
+        damageType: [],
+        tacticalType: ["buff"],
     },
     {
         id: "plato",
@@ -4511,7 +4540,8 @@ const allHeroes = [
             "10%,17%,8s",
         ],
         position: "backline",
-        attackType: ["debuff"],
+        damageType: [],
+        tacticalType: ["debuff"],
     },
     {
         id: "vincent-van-gogh",
@@ -4648,7 +4678,8 @@ const allHeroes = [
             "6s,360%,8%,",
         ],
         position: "backline",
-        attackType: ["area_damage", "debuff"],
+        damageType: ["area_damage"],
+        tacticalType: ["debuff"],
     },
     {
         id: "tomoe-gozen",
@@ -4785,7 +4816,8 @@ const allHeroes = [
             "220%,3",
         ],
         position: "frontline",
-        attackType: ["area_damage"],
+        damageType: ["area_damage"],
+        tacticalType: [],
     },
     {
         id: "thomas-alva-edison",
@@ -4922,7 +4954,8 @@ const allHeroes = [
             "130%,2,44%",
         ],
         position: "backline",
-        attackType: ["area_damage", "buff", "teleport"],
+        damageType: ["area_damage"],
+        tacticalType: ["buff", "teleport"],
     },
     {
         id: "attila-the-hun",
@@ -5059,7 +5092,8 @@ const allHeroes = [
             "980%,420%",
         ],
         position: "frontline",
-        attackType: ["single_target", "heal"],
+        damageType: ["single_target"],
+        tacticalType: ["heal"],
     },
     {
         id: "charlemagne",
@@ -5196,7 +5230,8 @@ const allHeroes = [
             "110%,2,17%,6s",
         ],
         position: "frontline",
-        attackType: ["area_damage", "debuff"],
+        damageType: ["area_damage"],
+        tacticalType: ["debuff"],
     },
     {
         id: "dartagnan",
@@ -5333,7 +5368,8 @@ const allHeroes = [
             "700%,50%,520%,8s",
         ],
         position: "frontline",
-        attackType: ["single_target"],
+        damageType: ["single_target"],
+        tacticalType: [],
     },
     {
         id: "king-minos",
@@ -5470,7 +5506,8 @@ const allHeroes = [
             "5s,950%",
         ],
         position: "frontline",
-        attackType: ["shield", "stun"],
+        damageType: [],
+        tacticalType: ["shield", "stun"],
     },
     {
         id: "queen-boudicca",
@@ -5607,7 +5644,8 @@ const allHeroes = [
             "1150%,3.50s",
         ],
         position: "backline",
-        attackType: ["single_target", "stun"],
+        damageType: ["single_target"],
+        tacticalType: ["stun"],
     },
     {
         id: "qin-shi-huang",
@@ -5744,7 +5782,8 @@ const allHeroes = [
             "65%,95%,6s",
         ],
         position: "backline",
-        attackType: ["area_damage", "heal"],
+        damageType: ["area_damage"],
+        tacticalType: ["heal"],
     },
     {
         id: "miyamoto-musashi",
@@ -5831,7 +5870,8 @@ const allHeroes = [
             "3250%",
         ],
         position: "frontline",
-        attackType: ["single_target"],
+        damageType: ["single_target"],
+        tacticalType: [],
     },
     {
         id: "cyrus-the-great",
@@ -5918,7 +5958,8 @@ const allHeroes = [
             "120%,1.5",
         ],
         position: "backline",
-        attackType: ["area_damage"],
+        damageType: ["area_damage"],
+        tacticalType: [],
     },
     {
         id: "john-locke",
@@ -6005,7 +6046,8 @@ const allHeroes = [
             "844%,2s,2,70%",
         ],
         position: "backline",
-        attackType: ["single_target", "debuff"],
+        damageType: ["single_target"],
+        tacticalType: ["debuff"],
     },
     {
         id: "karl-marx",
@@ -6092,7 +6134,8 @@ const allHeroes = [
             "16%,50%,8s,2",
         ],
         position: "backline",
-        attackType: ["debuff"],
+        damageType: [],
+        tacticalType: ["debuff"],
     },
     {
         id: "mansa-musa",
@@ -6179,7 +6222,8 @@ const allHeroes = [
             "25%,65%,8s,2",
         ],
         position: "backline",
-        attackType: ["buff"],
+        damageType: [],
+        tacticalType: ["buff"],
     },
     {
         id: "marco-polo",
@@ -6266,7 +6310,8 @@ const allHeroes = [
             "182%,2",
         ],
         position: "backline",
-        attackType: ["area_damage", "teleport"],
+        damageType: ["area_damage"],
+        tacticalType: ["teleport"],
     },
     {
         id: "oracle-of-dephi",
@@ -6353,7 +6398,8 @@ const allHeroes = [
             "45%,8s,2",
         ],
         position: "backline",
-        attackType: ["debuff"],
+        damageType: [],
+        tacticalType: ["debuff"],
     },
     {
         id: "ada-lovelace",
@@ -6440,7 +6486,8 @@ const allHeroes = [
             "180%,1.5",
         ],
         position: "backline",
-        attackType: ["area_damage"],
+        damageType: ["area_damage"],
+        tacticalType: [],
     },
     {
         id: "artemisia-i-of-caria",
@@ -6527,7 +6574,8 @@ const allHeroes = [
             "115%,2.5",
         ],
         position: "backline",
-        attackType: ["area_damage"],
+        damageType: ["area_damage"],
+        tacticalType: [],
     },
     {
         id: "pythagoras",
@@ -6614,7 +6662,8 @@ const allHeroes = [
             "4s,336%",
         ],
         position: "backline",
-        attackType: ["area_damage"],
+        damageType: ["area_damage"],
+        tacticalType: [],
     },
     {
         id: "hermann-the-cheruscan",
@@ -6701,7 +6750,8 @@ const allHeroes = [
             "132%,2.5,570%",
         ],
         position: "frontline",
-        attackType: ["area_damage", "heal"],
+        damageType: ["area_damage"],
+        tacticalType: ["heal"],
     },
     {
         id: "inanna",
@@ -6788,7 +6838,8 @@ const allHeroes = [
             "1080%",
         ],
         position: "frontline",
-        attackType: ["single_target"],
+        damageType: ["single_target"],
+        tacticalType: [],
     },
     {
         id: "otto-von-bismarck",
@@ -6875,7 +6926,8 @@ const allHeroes = [
             "4s,520%",
         ],
         position: "frontline",
-        attackType: ["shield", "stun"],
+        damageType: [],
+        tacticalType: ["shield", "stun"],
     },
     {
         id: "ulysses-s-grant",
@@ -6962,7 +7014,8 @@ const allHeroes = [
             "405%,735%,500%",
         ],
         position: "frontline",
-        attackType: ["single_target", "heal"],
+        damageType: ["single_target"],
+        tacticalType: ["heal"],
     },
     {
         id: "ashoka-the-great",
@@ -7049,7 +7102,8 @@ const allHeroes = [
             "1080%",
         ],
         position: "backline",
-        attackType: ["heal"],
+        damageType: [],
+        tacticalType: ["heal"],
     },
     {
         id: "leonidas-i",
@@ -7136,7 +7190,8 @@ const allHeroes = [
             "120%,2.5",
         ],
         position: "frontline",
-        attackType: ["area_damage", "stun"],
+        damageType: ["area_damage"],
+        tacticalType: ["stun"],
     },
     {
         id: "william-tell",
@@ -7223,7 +7278,8 @@ const allHeroes = [
             "1475%",
         ],
         position: "backline",
-        attackType: ["single_target"],
+        damageType: ["single_target"],
+        tacticalType: [],
     },
     {
         id: "maori-chief",
@@ -7278,7 +7334,8 @@ const allHeroes = [
             "15%,2",
         ],
         position: "backline",
-        attackType: ["shield"],
+        damageType: [],
+        tacticalType: ["shield"],
     },
     {
         id: "geisha",
@@ -7333,7 +7390,8 @@ const allHeroes = [
             "450%,280%,8s",
         ],
         position: "backline",
-        attackType: ["single_target", "debuff"],
+        damageType: ["single_target"],
+        tacticalType: ["debuff"],
     },
     {
         id: "greek-mathematician",
@@ -7388,7 +7446,8 @@ const allHeroes = [
             "75%,3",
         ],
         position: "frontline",
-        attackType: ["area_damage"],
+        damageType: ["area_damage"],
+        tacticalType: [],
     },
     {
         id: "mayan-astronomer",
@@ -7443,7 +7502,8 @@ const allHeroes = [
             "180%,2",
         ],
         position: "backline",
-        attackType: ["area_damage"],
+        damageType: ["area_damage"],
+        tacticalType: [],
     },
     {
         id: "roman-praetor",
@@ -7498,7 +7558,8 @@ const allHeroes = [
             "50%,8s,2",
         ],
         position: "backline",
-        attackType: ["debuff"],
+        damageType: [],
+        tacticalType: ["debuff"],
     },
     {
         id: "sioux-shaman",
@@ -7553,7 +7614,8 @@ const allHeroes = [
             "34%,8s,2",
         ],
         position: "backline",
-        attackType: ["buff"],
+        damageType: [],
+        tacticalType: ["buff"],
     },
     {
         id: "tribal-healer",
@@ -7608,7 +7670,8 @@ const allHeroes = [
             "800%",
         ],
         position: "backline",
-        attackType: ["heal"],
+        damageType: [],
+        tacticalType: ["heal"],
     },
     {
         id: "roman-centurion",
@@ -7663,7 +7726,8 @@ const allHeroes = [
             "700%,500%",
         ],
         position: "frontline",
-        attackType: ["single_target", "shield"],
+        damageType: ["single_target"],
+        tacticalType: ["shield"],
     },
     {
         id: "egyptian-vizier",
@@ -7718,7 +7782,8 @@ const allHeroes = [
             "34%,8s,2",
         ],
         position: "backline",
-        attackType: ["debuff"],
+        damageType: [],
+        tacticalType: ["debuff"],
     },
     {
         id: "ninja",
@@ -7773,7 +7838,8 @@ const allHeroes = [
             "540%",
         ],
         position: "backline",
-        attackType: ["single_target"],
+        damageType: ["single_target"],
+        tacticalType: [],
     },
     {
         id: "viking-jarl",
@@ -7828,7 +7894,8 @@ const allHeroes = [
             "5,40%,8s",
         ],
         position: "backline",
-        attackType: ["buff"],
+        damageType: [],
+        tacticalType: ["buff"],
     },
     {
         id: "aztec-tlacateccatl",
@@ -7883,7 +7950,8 @@ const allHeroes = [
             "1,450%",
         ],
         position: "frontline",
-        attackType: ["heal"],
+        damageType: [],
+        tacticalType: ["heal"],
     },
     {
         id: "hoplit",
@@ -7938,7 +8006,8 @@ const allHeroes = [
             "720%",
         ],
         position: "frontline",
-        attackType: ["single_target"],
+        damageType: ["single_target"],
+        tacticalType: [],
     },
     {
         id: "jaguar-warrior",
@@ -7993,7 +8062,8 @@ const allHeroes = [
             "90%,2.5",
         ],
         position: "frontline",
-        attackType: ["area_damage"],
+        damageType: ["area_damage"],
+        tacticalType: [],
     },
     {
         id: "japanese-shogun",
@@ -8048,7 +8118,8 @@ const allHeroes = [
             "100%,2,10%,8s",
         ],
         position: "frontline",
-        attackType: ["area_damage", "debuff"],
+        damageType: ["area_damage"],
+        tacticalType: ["debuff"],
     },
     {
         id: "ottoman-general",
@@ -8103,7 +8174,8 @@ const allHeroes = [
             "4s,40%",
         ],
         position: "frontline",
-        attackType: ["stun", "buff"],
+        damageType: [],
+        tacticalType: ["stun", "buff"],
     },
     {
         id: "shaolin",
@@ -8158,7 +8230,8 @@ const allHeroes = [
             "720%",
         ],
         position: "frontline",
-        attackType: ["single_target"],
+        damageType: ["single_target"],
+        tacticalType: [],
     },
     {
         id: "jester",
@@ -8213,7 +8286,8 @@ const allHeroes = [
             "30%,2",
         ],
         position: "backline",
-        attackType: ["area_damage"],
+        damageType: ["area_damage"],
+        tacticalType: [],
     },
     {
         id: "nubian-mercenary",
@@ -8268,7 +8342,8 @@ const allHeroes = [
             "1000%",
         ],
         position: "frontline",
-        attackType: ["single_target"],
+        damageType: ["single_target"],
+        tacticalType: [],
     },
     {
         id: "viking-raider",
@@ -8323,7 +8398,8 @@ const allHeroes = [
             "600%",
         ],
         position: "frontline",
-        attackType: ["single_target"],
+        damageType: ["single_target"],
+        tacticalType: [],
     },
 ]
 
@@ -8395,9 +8471,12 @@ const positionNames = {
     "backline": "Backline",
 }
 
-const attackTypeNames = {
+const damageTypeNames = {
     "area_damage": "Area Damage",
     "single_target": "Single Target",
+}
+
+const tacticalTypeNames = {
     "buff": "Buff",
     "debuff": "Debuff",
     "heal": "Heal",
@@ -8422,4 +8501,4 @@ const backdrops = {
     "windmill": hero_backdrop_windmill,
 }
 
-export { allHeroes, levelsExperiences, heroClassIcons, heroClassNames, unitIcons, unitNames, colorIcons, colorNames, positionNames, attackTypeNames, backdrops };
+export { allHeroes, levelsExperiences, heroClassIcons, heroClassNames, unitIcons, unitNames, colorIcons, colorNames, positionNames, damageTypeNames, tacticalTypeNames, backdrops };

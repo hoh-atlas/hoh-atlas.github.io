@@ -3,7 +3,7 @@ import Image from "../../shared/Image";
 import Prologue from "../../shared/Prologue";
 import SectionDivider from "../../shared/SectionDivider";
 import H1 from "../../shared/H1";
-import { allHeroes, heroClassNames, unitNames, colorNames, positionNames, attackTypeNames } from "../data";
+import { allHeroes, heroClassNames, unitNames, colorNames, positionNames, damageTypeNames, tacticalTypeNames } from "../data";
 import HeroIcon from "./HeroIcon";
 import OneHero from "./OneHero";
 import MultiSelectBox from "../../shared/MultiSelectBox";
@@ -74,10 +74,15 @@ const Intro = (props) => {
         label: positionNames[position],
     }));
 
-    const attackTypeOptions = [...new Set(allHeroes.flatMap(hero => hero.attackType).filter(attackType => attackType))].map(attackType => ({
-        value: attackType,
-        label: attackTypeNames[attackType],
-    }));    
+    const damageTypeOptions = [...new Set(allHeroes.flatMap(hero => hero.damageType).filter(damageType => damageType))].map(damageType => ({
+        value: damageType,
+        label: damageTypeNames[damageType],
+    }));
+
+    const tacticalTypeOptions = [...new Set(allHeroes.flatMap(hero => hero.tacticalType).filter(tacticalType => tacticalType))].map(tacticalType => ({
+        value: tacticalType,
+        label: tacticalTypeNames[tacticalType],
+    }));
 
     const [selectedClasses, setSelectedClasses] = useState([]);
     const [selectedUnits, setSelectedUnits] = useState([]);
@@ -86,10 +91,11 @@ const Intro = (props) => {
     const [selectedColors, setSelectedColors] = useState([]);
     const [selectedAscensionMaterials, setSelectedAscensionMaterials] = useState([]);
     const [selectedPositions, setSelectedPositions] = useState([]);
-    const [selectedAttackTypes, setSelectedAttackTypes] = useState([]);
+    const [selectedDamageTypes, setSelectedDamageTypes] = useState([]);
+    const [selectedTacticalTypes, setSelectedTacticalTypes] = useState([]);
     const [searchedName, setSearchedName] = useState('');
 
-    const updateUrlParams = (selectedClasses, selectedUnits, selectedCrestColors, selectedCrestFactions, selectedColors, selectedAscensionMaterials, selectedPositions, selectedAttackTypes) => {
+    const updateUrlParams = (selectedClasses, selectedUnits, selectedCrestColors, selectedCrestFactions, selectedColors, selectedAscensionMaterials, selectedPositions, selectedDamageTypes, selectedTacticalTypes) => {
         const urlParams = new URLSearchParams();
         selectedClasses?.forEach(classOption => {
             urlParams.append('class', classOption.value);
@@ -112,12 +118,15 @@ const Intro = (props) => {
         selectedPositions?.forEach(positionOption => {
             urlParams.append('position', positionOption.value);
         });
-        selectedAttackTypes?.forEach(attackTypeOption => {
-            urlParams.append('attackType', attackTypeOption.value);
+        selectedDamageTypes?.forEach(damageTypeOption => {
+            urlParams.append('damageType', damageTypeOption.value);
+        });
+        selectedTacticalTypes?.forEach(tacticalTypeOption => {
+            urlParams.append('tacticalType', tacticalTypeOption.value);
         });
     
         const hasFilters = selectedClasses?.length > 0 || selectedUnits?.length > 0 || selectedCrestColors?.length > 0 || selectedCrestFactions?.length > 0 || selectedColors?.length > 0 || selectedAscensionMaterials?.length > 0
-            || selectedPositions?.length > 0 || selectedAttackTypes?.length > 0;
+            || selectedPositions?.length > 0 || selectedDamageTypes?.length > 0 || selectedTacticalTypes?.length > 0;
     
         const newUrl = hasFilters ? `${window.location.hash.split('?')[0]}?${urlParams.toString()}` : window.location.hash.split('?')[0];
         window.history.pushState({ path: newUrl }, '', newUrl);
@@ -125,42 +134,47 @@ const Intro = (props) => {
 
     const handleClassChange = (selectedOptions) => {
         setSelectedClasses(selectedOptions);
-        updateUrlParams(selectedOptions, selectedUnits, selectedCrestColors, selectedCrestFactions, selectedColors, selectedAscensionMaterials, selectedPositions, selectedAttackTypes);
+        updateUrlParams(selectedOptions, selectedUnits, selectedCrestColors, selectedCrestFactions, selectedColors, selectedAscensionMaterials, selectedPositions, selectedDamageTypes);
     };
 
     const handleUnitChange = (selectedOptions) => {
         setSelectedUnits(selectedOptions);
-        updateUrlParams(selectedClasses, selectedOptions, selectedCrestColors, selectedCrestFactions, selectedColors, selectedAscensionMaterials, selectedPositions, selectedAttackTypes);
+        updateUrlParams(selectedClasses, selectedOptions, selectedCrestColors, selectedCrestFactions, selectedColors, selectedAscensionMaterials, selectedPositions, selectedDamageTypes, selectedTacticalTypes);
     };
 
     const handleCrestColorChange = (selectedOptions) => {
         setSelectedCrestColors(selectedOptions);
-        updateUrlParams(selectedClasses, selectedUnits, selectedOptions, selectedCrestFactions, selectedColors, selectedAscensionMaterials, selectedPositions, selectedAttackTypes);
+        updateUrlParams(selectedClasses, selectedUnits, selectedOptions, selectedCrestFactions, selectedColors, selectedAscensionMaterials, selectedPositions, selectedDamageTypes, selectedTacticalTypes);
     };
 
     const handleCrestFactionChange = (selectedOptions) => {
         setSelectedCrestFactions(selectedOptions);
-        updateUrlParams(selectedClasses, selectedUnits, selectedCrestColors, selectedOptions, selectedColors, selectedAscensionMaterials, selectedPositions, selectedAttackTypes);
+        updateUrlParams(selectedClasses, selectedUnits, selectedCrestColors, selectedOptions, selectedColors, selectedAscensionMaterials, selectedPositions, selectedDamageTypes, selectedTacticalTypes);
     };
 
     const handleColorChange = (selectedOptions) => {
         setSelectedColors(selectedOptions);
-        updateUrlParams(selectedClasses, selectedUnits, selectedCrestColors, selectedCrestFactions, selectedOptions, selectedAscensionMaterials, selectedPositions, selectedAttackTypes)
+        updateUrlParams(selectedClasses, selectedUnits, selectedCrestColors, selectedCrestFactions, selectedOptions, selectedAscensionMaterials, selectedPositions, selectedDamageTypes, selectedTacticalTypes)
     }
 
     const handleAscensionMaterialChange = (selectedOptions) => {
         setSelectedAscensionMaterials(selectedOptions);
-        updateUrlParams(selectedClasses, selectedUnits, selectedCrestColors, selectedCrestFactions, selectedColors, selectedOptions, selectedPositions, selectedAttackTypes)
+        updateUrlParams(selectedClasses, selectedUnits, selectedCrestColors, selectedCrestFactions, selectedColors, selectedOptions, selectedPositions, selectedDamageTypes, selectedTacticalTypes)
     }
 
     const handlePositionChange = (selectedOptions) => {
         setSelectedPositions(selectedOptions);
-        updateUrlParams(selectedClasses, selectedUnits, selectedCrestColors, selectedCrestFactions, selectedColors, selectedAscensionMaterials, selectedOptions, selectedAttackTypes);
+        updateUrlParams(selectedClasses, selectedUnits, selectedCrestColors, selectedCrestFactions, selectedColors, selectedAscensionMaterials, selectedOptions, selectedDamageTypes, selectedTacticalTypes);
     }
 
-    const handleAttackTypeChange = (selectedOptions) => {
-        setSelectedAttackTypes(selectedOptions);
-        updateUrlParams(selectedClasses, selectedUnits, selectedCrestColors, selectedCrestFactions, selectedColors, selectedAscensionMaterials, selectedPositions, selectedOptions);
+    const handleDamageTypeChange = (selectedOptions) => {
+        setSelectedDamageTypes(selectedOptions);
+        updateUrlParams(selectedClasses, selectedUnits, selectedCrestColors, selectedCrestFactions, selectedColors, selectedAscensionMaterials, selectedPositions, selectedOptions, selectedTacticalTypes);
+    }
+
+    const handleTacticalTypeChange = (selectedOptions) => {
+        setSelectedTacticalTypes(selectedOptions);
+        updateUrlParams(selectedClasses, selectedUnits, selectedCrestColors, selectedCrestFactions, selectedColors, selectedAscensionMaterials, selectedPositions, selectedDamageTypes, selectedOptions);
     }
 
     const handleSearch = (name) => {
@@ -176,7 +190,8 @@ const Intro = (props) => {
         const colorParams = urlParams.getAll('color');
         const ascensionMaterialParams = urlParams.getAll('ascensionMaterial');
         const positionParams = urlParams.getAll('position');
-        const attackTypeParams = urlParams.getAll('position');
+        const damageTypeParams = urlParams.getAll('damageType');
+        const tacticalTypeParams = urlParams.getAll('tacticalType');
 
         const foundClassOptions = classOptions.filter(option => classParams.includes(option.value));
         setSelectedClasses(foundClassOptions);
@@ -199,8 +214,11 @@ const Intro = (props) => {
         const foundPositionOptions = positionOptions.filter(option => positionParams.includes(option.value));
         setSelectedPositions(foundPositionOptions);
 
-        const foundAttackTypeOptions = attackTypeOptions.filter(option => attackTypeParams.includes(option.value));
-        setSelectedAttackTypes(foundAttackTypeOptions);
+        const foundDamageTypeOptions = damageTypeOptions.filter(option => damageTypeParams.includes(option.value));
+        setSelectedDamageTypes(foundDamageTypeOptions);
+
+        const foundTacticalTypeOptions = tacticalTypeOptions.filter(option => tacticalTypeParams.includes(option.value));
+        setSelectedTacticalTypes(foundTacticalTypeOptions);
     }, []);
 
     const getFilteredHeroes = () => {
@@ -258,14 +276,23 @@ const Intro = (props) => {
             filteredHeroes = filteredHeroes.filter(hero => selectedPositions.some(option => option.value === hero.position));
         }
 
-        if (selectedAttackTypes.length > 0) {
+        if (selectedDamageTypes.length > 0) {
             filteredHeroes = filteredHeroes.filter(hero => 
-                hero.attackType && Array.isArray(hero.attackType) &&
-                selectedAttackTypes.some(option => 
-                    hero.attackType.includes(option.value)
+                hero.damageType && Array.isArray(hero.damageType) &&
+                selectedDamageTypes.some(option => 
+                    hero.damageType.includes(option.value)
                 )
             );
-        }            
+        }
+        
+        if (selectedTacticalTypes.length > 0) {
+            filteredHeroes = filteredHeroes.filter(hero => 
+                hero.tacticalType && Array.isArray(hero.tacticalType) &&
+                selectedTacticalTypes.some(option => 
+                    hero.tacticalType.includes(option.value)
+                )
+            );
+        }
 
         filteredHeroes = filteredHeroes.filter((hero) =>
             hero.name.toLowerCase().includes(searchedName.toLowerCase())
@@ -303,17 +330,6 @@ const Intro = (props) => {
                     selectedOptions={selectedClasses}
                     onOptionsChange={handleClassChange}
                     placeholder="Hero Class"
-                    style={{marginBottom: '10px'}}
-                    />
-                    <MultiSelectBox
-                    options={unitOptions}
-                    width={"80%"}
-                    mobileWidth={"100%"}
-                    height={"40px"}
-                    color={"#F6F3EB"}
-                    selectedOptions={selectedUnits}
-                    onOptionsChange={handleUnitChange}
-                    placeholder="Unit Type"
                     style={{marginBottom: '10px'}}
                     />
                     <MultiSelectBox
@@ -374,22 +390,43 @@ const Intro = (props) => {
                     placeholder="Recommended Position"
                     style={{marginBottom: '10px'}}
                     />
-                </div>
-                <div className="select-box-column">
                     <MultiSelectBox
-                    options={attackTypeOptions}
+                    options={tacticalTypeOptions}
                     width={"80%"}
                     mobileWidth={"100%"}
                     height={"40px"}
                     color={"#F6F3EB"}
-                    selectedOptions={selectedAttackTypes}
-                    onOptionsChange={handleAttackTypeChange}
+                    selectedOptions={selectedTacticalTypes}
+                    onOptionsChange={handleTacticalTypeChange}
+                    placeholder="Tactical Type"
+                    style={{marginBottom: '10px'}}
+                    />
+                </div>
+                <div className="select-box-column">
+                    <MultiSelectBox
+                    options={damageTypeOptions}
+                    width={"80%"}
+                    mobileWidth={"100%"}
+                    height={"40px"}
+                    color={"#F6F3EB"}
+                    selectedOptions={selectedDamageTypes}
+                    onOptionsChange={handleDamageTypeChange}
                     placeholder="Attack Type"
+                    style={{marginBottom: '10px'}}
+                    />
+                    <MultiSelectBox
+                    options={unitOptions}
+                    width={"80%"}
+                    mobileWidth={"100%"}
+                    height={"40px"}
+                    color={"#F6F3EB"}
+                    selectedOptions={selectedUnits}
+                    onOptionsChange={handleUnitChange}
+                    placeholder="Unit Type"
                     style={{marginBottom: '10px'}}
                     />
                 </div>
             </div>)}
-            {/* Maybe divide Attack Type into 2 categories: Damage Type and Tactical Type. Damage Type will have only Area Damage and Single Target, rest will be in Tactical Type. Tactical Type will be a new Select Box. */}
 
             <SectionDivider />
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "15px", marginBottom: "15px" }}>

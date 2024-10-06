@@ -6,7 +6,7 @@ import React from "react";
 
 import { createPathFromParameters } from "../../shared/utils";
 
-import { allHeroes, levelsExperiences, heroClassIcons, unitIcons, backdrops, heroClassNames, unitNames, colorIcons, colorNames, positionNames, attackTypeNames } from "../data";
+import { allHeroes, levelsExperiences, heroClassIcons, unitIcons, backdrops, heroClassNames, unitNames, colorIcons, colorNames, positionNames, damageTypeNames } from "../data";
 import layoutHeroes from "../sectionsDefinition";
 import Image from "../../shared/Image";
 import H1 from "../../shared/H1";
@@ -33,7 +33,7 @@ const OneHero = (props) => {
         </div>
     }
 
-    const {id, name, image, icon, backdrop, stars, heroClass, unit, color, abilityIcon, ascension, abilityName, abilityDescription, ability, position, attackType} = hero;
+    const {id, name, image, icon, backdrop, stars, heroClass, unit, color, abilityIcon, ascension, abilityName, abilityDescription, ability, position, damageType} = hero;
 
     const currentIndex = props.filteredHeroes.findIndex(item => item.id === id);
     const leftHero = currentIndex > 0 ? props.filteredHeroes[currentIndex - 1] : null;
@@ -147,7 +147,7 @@ margin-top:
                         {positionNames[position]}
                     </td>
                     <td colSpan={3} style={{ width: '23%', height: '20px', lineHeight: '15px' }}>
-                        {attackType.map(type => attackTypeNames[type]).join(', ')}
+                        {damageType.map(type => damageTypeNames[type]).join(', ')}
                     </td>
                 </tr>
             </tbody>

@@ -2,6 +2,8 @@ import alliedCultures_intro from "../../images/allied-cultures/intro/icon_featur
 import quests_icon from "../../images/allied-cultures/quests/quests_icon.webp";
 import buildings_icon from "../../images/allied-cultures/buildings/buildings_icon.webp";
 import worldwonder_icon from "../../images/allied-cultures/world-wonder/worldwonder_icon.webp";
+import strategies_icon from "../../images/allied-cultures/strategies/icon_unitstat_movementspeed.webp";
+import layouts_icon from "../../images/allied-cultures/layouts/Technology_Roman_Empire_Urban_Management.webp";
 
 const sectionsDefinition = {
     page: "allied-cultures",
@@ -42,7 +44,7 @@ const sectionsDefinition = {
             id: 5,
             url: "strategies",
             name: "Strategies",
-            img: "https://i.ibb.co/j3g6mfB/icon-unitstat-movementspeed.png",
+            img: strategies_icon,
             show: false,
             dynamicSegments: [],
         },
@@ -50,7 +52,7 @@ const sectionsDefinition = {
             id: 6,
             url: "layouts",
             name: "Layouts",
-            img: "https://i.ibb.co/zn3VD69/Technology-Roman-Empire-Urban-Management.png",
+            img: layouts_icon,
             show: false,
             dynamicSegments: [],
         },
