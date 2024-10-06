@@ -1,7 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.98767d86.css",
-    "main.js": "/static/js/main.b5de7c72.js",
+    "main.css": "/static/css/main.1d1792b4.css",
+    "main.js": "/static/js/main.33ed3955.js",
+    "static/media/layout_3_sector_3.webp": "/static/media/layout_3_sector_3.0e4c1b04af46641c6132.webp",
+    "static/media/layout_2_sector_3.webp": "/static/media/layout_2_sector_3.3428ac5b2a1e207d4160.webp",
+    "static/media/layout_3_sector_2.webp": "/static/media/layout_3_sector_2.7b95405fd51d390530ca.webp",
+    "static/media/layout_4_sector_2.webp": "/static/media/layout_4_sector_2.5d46ba7692e407bb28f4.webp",
+    "static/media/layout_4_sector_1.webp": "/static/media/layout_4_sector_1.60d731b4c2a55cbf5ed9.webp",
+    "static/media/layout_3_sector_1.webp": "/static/media/layout_3_sector_1.cc9d25774ce76af32de9.webp",
+    "static/media/layout_4_sector_3.webp": "/static/media/layout_4_sector_3.5474b0f97e5b1e45eb88.webp",
+    "static/media/layout_2_sector_2.webp": "/static/media/layout_2_sector_2.44859c855019e317e5a4.webp",
+    "static/media/layout_1_sector_2.webp": "/static/media/layout_1_sector_2.7c50663eeab6f59d4264.webp",
+    "static/media/layout_2_sector_1.webp": "/static/media/layout_2_sector_1.2fb89c26123d1dac2f55.webp",
+    "static/media/layout_1_sector_1.webp": "/static/media/layout_1_sector_1.bed3282684a6019a7984.webp",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
     "static/media/china_city.webp": "/static/media/china_city.415736e9ff5f7bc3bfe7.webp",
     "static/media/egypt_city.webp": "/static/media/egypt_city.7719ac968df164a2b372.webp",
@@ -200,6 +211,7 @@
     "static/media/Unit_Menes.webp": "/static/media/Unit_Menes.eadcc6677440d955c873.webp",
     "static/media/Unit_Hatshepsut.webp": "/static/media/Unit_Hatshepsut.7ba1f45550db20407a7a.webp",
     "static/media/Unit_NubianMercenary.webp": "/static/media/Unit_NubianMercenary.ebc8cffe83b64eee754e.webp",
+    "static/media/Technology_Roman_Empire_Urban_Management.webp": "/static/media/Technology_Roman_Empire_Urban_Management.5edd7a210dcdb3e1a867.webp",
     "static/media/city_event_banner_egypt_great_sphinx.webp": "/static/media/city_event_banner_egypt_great_sphinx.c7118b5d31f949df21ea.webp",
     "static/media/Unit_JaguarWarrior.webp": "/static/media/Unit_JaguarWarrior.7f7c51e973f90bdb2f44.webp",
     "static/media/Unit_JohnLocke.webp": "/static/media/Unit_JohnLocke.e1f8112ea0c69920a32d.webp",
@@ -314,6 +326,7 @@
     "static/media/icon_hero_battle_ability_ramsesii.webp": "/static/media/icon_hero_battle_ability_ramsesii.4d47120a824c13c80369.webp",
     "static/media/icon_ath_encounter.webp": "/static/media/icon_ath_encounter.e3bd62e79124d9b526ec.webp",
     "static/media/icon_red_crest_enhanced.webp": "/static/media/icon_red_crest_enhanced.db48c24208018017fb9b.webp",
+    "static/media/sketch_2.webp": "/static/media/sketch_2.73fef9884f3dc5fc86e4.webp",
     "static/media/icon_hero_battle_ability_aztectlacateccatl.webp": "/static/media/icon_hero_battle_ability_aztectlacateccatl.084fcf24992b4a066e23.webp",
     "static/media/icon_rift_token_common.webp": "/static/media/icon_rift_token_common.84bf5c0acb27c962535d.webp",
     "static/media/common_map_encounter.webp": "/static/media/common_map_encounter.b13a710487b7f530d10a.webp",
@@ -334,6 +347,7 @@
     "static/media/icon_hero_battle_ability_johnlocke.webp": "/static/media/icon_hero_battle_ability_johnlocke.798d95cc3bd0d9a01800.webp",
     "static/media/icon_hero_battle_ability_pythagoras.webp": "/static/media/icon_hero_battle_ability_pythagoras.33b67a690f33067a608c.webp",
     "static/media/icon_hero_battle_ability_oracleofdephi.webp": "/static/media/icon_hero_battle_ability_oracleofdephi.0920444a6c94504eb87f.webp",
+    "static/media/sketch_3.webp": "/static/media/sketch_3.90c96564cd1d613b1125.webp",
     "static/media/icon_hero_battle_ability_robinhood.webp": "/static/media/icon_hero_battle_ability_robinhood.81ed3050d7ed1b632759.webp",
     "static/media/icon_hero_battle_ability_juliuscaesar.webp": "/static/media/icon_hero_battle_ability_juliuscaesar.5aa7f4f779df25d7555e.webp",
     "static/media/icon_prism_of_fate.webp": "/static/media/icon_prism_of_fate.3ec754910e9e0de4acba.webp",
@@ -344,8 +358,11 @@
     "static/media/icon_hero_battle_ability_ludwigvanbeethoven.webp": "/static/media/icon_hero_battle_ability_ludwigvanbeethoven.7765d7a95ac2f6645e02.webp",
     "static/media/icon_hero_battle_ability_mansamusa.webp": "/static/media/icon_hero_battle_ability_mansamusa.0b38ea9aaaaf4388b77a.webp",
     "static/media/icon_hero_battle_ability_hoplit.webp": "/static/media/icon_hero_battle_ability_hoplit.787a4d80f92a9b66f028.webp",
+    "static/media/sketch_4.webp": "/static/media/sketch_4.b35c4c31107604d3f3d4.webp",
+    "static/media/sketch_1.webp": "/static/media/sketch_1.72b62b16cbae6776cdfb.webp",
     "static/media/icon_hero_battle_ability_queenelizabethi.webp": "/static/media/icon_hero_battle_ability_queenelizabethi.aa09d987276183b21cb4.webp",
     "static/media/icon_hero_battle_ability_alberteinstein.webp": "/static/media/icon_hero_battle_ability_alberteinstein.2a7415685efcf99da013.webp",
+    "static/media/sketch_5.webp": "/static/media/sketch_5.a387a4e070a75c8c0afd.webp",
     "static/media/Unit_Unknown.webp": "/static/media/Unit_Unknown.3b30265441f77266a0a5.webp",
     "static/media/icon_hero_battle_ability_nubianmercenary.webp": "/static/media/icon_hero_battle_ability_nubianmercenary.e2c49e020e748817df87.webp",
     "static/media/icon_hero_battle_ability_sirlancelot.webp": "/static/media/icon_hero_battle_ability_sirlancelot.473a43daf3bae5b3011b.webp",
@@ -526,6 +543,7 @@
     "static/media/Egypt_Luxurious_Papyrus_Field_Lv4.webp": "/static/media/Egypt_Luxurious_Papyrus_Field_Lv4.ba0a9da20e4c17657c27.webp",
     "static/media/China_Rice_Farm_Lv2.webp": "/static/media/China_Rice_Farm_Lv2.0aaa8a954f2d7c0eda85.webp",
     "static/media/Egypt_Goldsmith_Lv4.webp": "/static/media/Egypt_Goldsmith_Lv4.b5eb48528cb05afa2b2c.webp",
+    "static/media/icon_unitstat_movementspeed.webp": "/static/media/icon_unitstat_movementspeed.3cdf6774db6992ef04ad.webp",
     "static/media/i_icon.webp": "/static/media/i_icon.17b5365068fb9efba440.webp",
     "static/media/China_Rice_Farm_Lv1.webp": "/static/media/China_Rice_Farm_Lv1.9343feec8ab729e0199b.webp",
     "static/media/Egypt_Papyrus_Field_Lv4.webp": "/static/media/Egypt_Papyrus_Field_Lv4.e8b81dd4a9fa4561063b.webp",
@@ -605,11 +623,11 @@
     "static/media/herbs.webp": "/static/media/herbs.45e59d4e77aed5c7159a.webp",
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
-    "main.98767d86.css.map": "/static/css/main.98767d86.css.map",
-    "main.b5de7c72.js.map": "/static/js/main.b5de7c72.js.map"
+    "main.1d1792b4.css.map": "/static/css/main.1d1792b4.css.map",
+    "main.33ed3955.js.map": "/static/js/main.33ed3955.js.map"
   },
   "entrypoints": [
-    "static/css/main.98767d86.css",
-    "static/js/main.b5de7c72.js"
+    "static/css/main.1d1792b4.css",
+    "static/js/main.33ed3955.js"
   ]
 }
