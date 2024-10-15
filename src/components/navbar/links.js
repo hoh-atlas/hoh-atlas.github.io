@@ -5,6 +5,7 @@ import Navbar_Resources from "../../images/navbar/Navbar_Resources.webp";
 import Navbar_AlliedCultures from "../../images/navbar/Navbar_AlliedCultures.webp";
 import Navbar_TreasureHunt from "../../images/navbar/Navbar_TreasureHunt.webp";
 import Navbar_Seasons from "../../images/navbar/Navbar_Seasons.webp";
+import Navbar_Events from "../../images/navbar/Navbar_Events.webp";
 
 const links = [
     {
@@ -30,34 +31,41 @@ const links = [
     },
     {
         id: 4,
+        url: "/events",
+        text: "Events",
+        img: Navbar_Events,
+        show: true,
+    },
+    {
+        id: 5,
         url: "/allied-cultures",
         text: "Allied Cultures",
         img: Navbar_AlliedCultures,
         show: true,
     },
     {
-        id: 5,
+        id: 6,
         url: "/treasure-hunt",
         text: "Treasure Hunt",
         img: Navbar_TreasureHunt,
         show: true,
     },
     {
-        id: 6,
+        id: 7,
         url: "/seasons",
         text: "Seasons",
         img: Navbar_Seasons,
         show: true,
     },
     {
-        id: 7,
+        id: 8,
         url: "/resources",
         text: "Resources",
         img: Navbar_Resources,
         show: true,
     },
     {
-        id: 8,
+        id: 9,
         url: "/tesla-storms",
         text: "Tesla Storms",
         img: "https://i.ibb.co/nRvy33n/event-widget-backer-time-Paradox-2021.png",

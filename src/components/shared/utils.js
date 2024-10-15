@@ -1,5 +1,6 @@
 import resources from "./data/resources";
-import customizations from "./data/customizations";
+import { customizations } from "./data/customizations";
+import chests from "./data/chests";
 import Icon from "./Icon";
 import CustomizationPreview from "./CustomizationPreview";
 
@@ -23,6 +24,23 @@ export const leftJoinArrays = (left, right) => {
     return joined;
 }
 
+export const getItemData = (id) => {
+    const foundResource = resources.find(elem => elem.id === id);
+    if (foundResource) {
+        return foundResource;
+    }
+    
+    const foundCustomization = customizations.find(elem => elem.id === id);
+    if (foundCustomization) {
+        return foundCustomization;
+    }
+
+    const foundChest = chests.find(elem => elem.id === id);
+    if (foundChest) {
+        return foundChest;
+    }
+}
+
 export const getItem = (id) => {
     const foundResource = resources.find(elem => elem.id === id);
     if (foundResource) {
@@ -31,7 +49,6 @@ export const getItem = (id) => {
     
     const foundCustomization = customizations.find(elem => elem.id === id);
     if (foundCustomization) {
-        console.log(foundCustomization);
         return <CustomizationPreview customization={foundCustomization}/>
     }
 }

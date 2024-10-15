@@ -14,6 +14,11 @@ import ath_jolly_roger from "../../../images/shared/customizations/ath_jolly_rog
 import ath_long_nine from "../../../images/shared/customizations/ath_long_nine.webp";
 import ath_treasure_trove from "../../../images/shared/customizations/ath_treasure_trove.webp";
 import ath_sparkling_fortune from "../../../images/shared/customizations/ath_sparkling_fortune.webp";
+import world_fair_2024_singularity_movement from "../../../images/shared/customizations/world_fair_2024_singularity_movement.webp";
+import world_fair_2024_tesla_coil from "../../../images/shared/customizations/world_fair_2024_tesla_coil.webp";
+import world_fair_2024_void_reactor from "../../../images/shared/customizations/world_fair_2024_void_reactor.webp";
+import world_fair_2024_heritage_exhibition from "../../../images/shared/customizations/world_fair_2024_heritage_exhibition.webp";
+import world_fair_2024_ticket_booth from "../../../images/shared/customizations/world_fair_2024_ticket_booth.webp";
 
 const customizations = [
     {
@@ -197,6 +202,90 @@ const customizations = [
         duration: "7d",
         applyTo: "Moderate Culture Site"
     },
+    {
+        id: "customization_world_fair_2024_singularity_movement", 
+        name: "Singularity Movement", 
+        img: world_fair_2024_singularity_movement,
+        production: {
+            resource: "antimatter_legendary_part",
+            time: "1d",
+            amount: "1"
+        },
+        duration: "20d",
+        applyTo: "Domestic Farm"
+    },
+    {
+        id: "customization_world_fair_2024_tesla_coil", 
+        name: "Tesla Coil", 
+        img: world_fair_2024_tesla_coil,
+        production: {
+            resources: [
+                "red_crest_common",
+                "blue_crest_common",
+                "green_crest_common",
+                "yellow_crest_common",
+                "purple_crest_common",
+            ],
+            time: "1d",
+            amount: "2"
+        },
+        duration: "20d",
+        applyTo: "Small Home"
+    },
+    {
+        id: "customization_world_fair_2024_void_reactor", 
+        name: "Void Reactor", 
+        img: world_fair_2024_void_reactor,
+        production: {
+            resource: "antimatter_common_part",
+            time: "1d",
+            amount: "1"
+        },
+        duration: "20d",
+        applyTo: "Medium Home"
+    },
+    {
+        id: "customization_world_fair_2024_heritage_exhibition", 
+        name: "Heritage Exhibition", 
+        img: world_fair_2024_heritage_exhibition,
+        production: {
+            resources: [
+                {
+                    resource: "war_horn",
+                    percentage: 33
+                },
+                {
+                    resource: "shadow_dial",
+                    percentage: 33
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    percentage: 33
+                }
+            ],
+            time: "1d",
+            amount: "1"
+        },
+        duration: "20d",
+        applyTo: "Rural Farm"
+    },
+    {
+        id: "customization_world_fair_2024_ticket_booth", 
+        name: "Ticket Booth", 
+        img: world_fair_2024_ticket_booth,
+        production: {
+            resource: "victory_ticket",
+            time: "1d",
+            amount: "1"
+        },
+        duration: "20d",
+        applyTo: "Moderate Culture Site"
+    },
 ]
 
-export default customizations;
+const obtainableFrom = {
+    "_ath_": "Alliance Treasure Hunt",
+    "_world_fair_2024_": "World Fair 2024"
+}
+
+export {customizations, obtainableFrom};

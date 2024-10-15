@@ -21,6 +21,7 @@ import google_play from "../../../images/home/intro/google_play.webp";
 import china_background_news from "../../../images/home/intro/china_background_news.webp";
 import news_egypt_banner from "../../../images/home/intro/news_egypt_banner.webp";
 import news_china_banner from "../../../images/home/intro/news_china_banner.webp";
+import EventBackgroundWorldFair from "../../../images/events/intro/EventBackgroundWorldFair.webp";
 
 const Intro = () => {
     return <>
@@ -39,7 +40,7 @@ const Intro = () => {
 
     <MenuGrid />
 
-    <SectionDivider />
+    {/*<SectionDivider />
     <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
         <iframe
             width="560"
@@ -50,19 +51,18 @@ const Intro = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
         ></iframe>
-    </div>
+    </div>*/}
 
     <SectionDivider />
     <TextContainer
         centered={true}
-        headerTexts={['Global Launch is here! (Sept 26th 2024)']}
-        texts={[`Heroes of History is now available for all players as a mobile app for iOS and Android. A browser version with cross-play feature, allowing seamless switching between PC and mobile game, is set to be released later this year. 
-            Use the links below to start playing today!`]}
+        headerTexts={['The World Fair event begins on the Preview server! (Oct 15th 2024)']}
+        texts={[``]}
         style={{ marginBottom: '20px', marginTop: '5px' }}
         textRectangleHeight={'150px'}
-        imageUrls={['']}
-        links={[]}
-        pulsate={false}
+        imageUrls={[EventBackgroundWorldFair]}
+        links={[`https://hoh-atlas.com/#/events`]}
+        pulsate={true}
         autoSlideSeconds={10}>
     </TextContainer>
 

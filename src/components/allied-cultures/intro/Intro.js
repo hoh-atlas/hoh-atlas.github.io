@@ -200,7 +200,7 @@ const Intro = (props) => {
             <Image src={events_intro} alt="" spacing={true} maxHeight={'150px'}/>
 
             <TextBlock>
-                Allied Cultures are weekly events where you build a temporary city, accessible via a banner in the bottom-left corner of your screen. These events start on Thursday at 2 PM (CET) and end the following Tuesday at 2 PM (CET).
+                Allied Cultures are weekly events where you build a temporary city, accessible via a banner in the bottom-right corner of your screen. These events start on Thursday at 2 PM (CET) and end the following Tuesday at 2 PM (CET).
                 After the event is over, next time you start developing your city from scratch and have the possibility to collect all the prizes again!<br/><br/>
                 Currently, the game features two Allied Cities: Egypt and China. Each city hosts three distinct events, each centered around different World Wonders. Depending on the event and the featured World Wonder, 
                 a unique resource from the Allied City will be boosted, offering varied strategies for city development each time.<br/><br/>

@@ -45,6 +45,7 @@ import icon_commander_crest_superior from '../../../images/shared/resources/icon
 import icon_crested_guidon from '../../../images/shared/resources/icon_crested_guidon.webp';
 import icon_emerald from '../../../images/shared/resources/icon_emerald.webp';
 import icon_etruscan_bronze_mirror from '../../../images/shared/resources/icon_etruscan_bronze_mirror.webp';
+import icon_event_world_fair_tokens from '../../../images/shared/resources/icon_event_world_fair_tokens.webp';
 import icon_expansion_city_capital_land from '../../../images/shared/resources/icon_expansion_city_capital_land.webp';
 import icon_expansion_city_china_land from '../../../images/shared/resources/icon_expansion_city_china_land.webp';
 import icon_expansion_city_egypt_land from '../../../images/shared/resources/icon_expansion_city_egypt_land.webp';
@@ -311,6 +312,8 @@ const resources = [
     {id: "defense", name: "Defense", img: "https://i.ibb.co/1Jy3KQ0/icon-hero-def.png", category: "attack"},
     {id: "hp", name: "HP", img: "https://i.ibb.co/3c8TYXL/icon-hero-hp.png", category: "attack"},
     {id: "hero_power", name: "Hero Power", img: "https://i.ibb.co/yNZpy6D/icon-hero-power-538925.png", category: "attack"},
+    // EVENTS
+    {id: "event_world_fair_2024_currency", name: "Discovery Books", img: icon_event_world_fair_tokens, category: "events"},
     // BONUSES
     {id: "culture_bonus", name: "Culture Bonus", img: culture_bonus, category: "bonuses"},
     {id: "food_bonus", name: "Food Bonus", img: food_bonus, category: "bonuses"},

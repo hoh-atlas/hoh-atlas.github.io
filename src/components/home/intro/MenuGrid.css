@@ -39,3 +39,7 @@
     height: 50px;
     width: auto;
 }
+
+.single-item {
+    grid-column: 2 / 3;
+}
