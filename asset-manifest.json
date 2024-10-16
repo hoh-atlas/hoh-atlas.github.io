@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.8d92c5ab.css",
-    "main.js": "/static/js/main.8e67fd5c.js",
-    "static/media/layout_3_sector_3.webp": "/static/media/layout_3_sector_3.0e4c1b04af46641c6132.webp",
-    "static/media/layout_2_sector_3.webp": "/static/media/layout_2_sector_3.3428ac5b2a1e207d4160.webp",
-    "static/media/layout_3_sector_2.webp": "/static/media/layout_3_sector_2.7b95405fd51d390530ca.webp",
-    "static/media/layout_4_sector_2.webp": "/static/media/layout_4_sector_2.5d46ba7692e407bb28f4.webp",
-    "static/media/layout_4_sector_1.webp": "/static/media/layout_4_sector_1.60d731b4c2a55cbf5ed9.webp",
-    "static/media/layout_3_sector_1.webp": "/static/media/layout_3_sector_1.cc9d25774ce76af32de9.webp",
-    "static/media/layout_4_sector_3.webp": "/static/media/layout_4_sector_3.5474b0f97e5b1e45eb88.webp",
-    "static/media/layout_2_sector_2.webp": "/static/media/layout_2_sector_2.44859c855019e317e5a4.webp",
-    "static/media/layout_1_sector_2.webp": "/static/media/layout_1_sector_2.7c50663eeab6f59d4264.webp",
-    "static/media/layout_2_sector_1.webp": "/static/media/layout_2_sector_1.2fb89c26123d1dac2f55.webp",
-    "static/media/layout_1_sector_1.webp": "/static/media/layout_1_sector_1.bed3282684a6019a7984.webp",
+    "main.js": "/static/js/main.f323a324.js",
+    "static/media/layout_4_sector_3.webp": "/static/media/layout_4_sector_3.e88146e9c9ed7496bcb5.webp",
+    "static/media/layout_4_sector_1.webp": "/static/media/layout_4_sector_1.7c73d107ef72fe873aac.webp",
+    "static/media/layout_4_sector_2.webp": "/static/media/layout_4_sector_2.81a4c629cfe50df59915.webp",
+    "static/media/layout_2_sector_3.webp": "/static/media/layout_2_sector_3.fe4489413334a5d8d753.webp",
+    "static/media/layout_2_sector_2.webp": "/static/media/layout_2_sector_2.213a47eab5fd7e3a4739.webp",
+    "static/media/layout_3_sector_3.webp": "/static/media/layout_3_sector_3.f353248b04bd7de59004.webp",
+    "static/media/layout_3_sector_1.webp": "/static/media/layout_3_sector_1.c95a7977403e717f0cc3.webp",
+    "static/media/layout_1_sector_3.webp": "/static/media/layout_1_sector_3.2397cf6919cf7dc0c201.webp",
+    "static/media/layout_1_sector_2.webp": "/static/media/layout_1_sector_2.3f10dc08d4c4e2e18bb0.webp",
+    "static/media/layout_2_sector_1.webp": "/static/media/layout_2_sector_1.a68143dfd9de8d6574fc.webp",
+    "static/media/layout_3_sector_2.webp": "/static/media/layout_3_sector_2.02bfef274567a85d3326.webp",
+    "static/media/layout_1_sector_1.webp": "/static/media/layout_1_sector_1.f6d1432f942e9f1ebc40.webp",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
     "static/media/china_city.webp": "/static/media/china_city.415736e9ff5f7bc3bfe7.webp",
     "static/media/egypt_city.webp": "/static/media/egypt_city.7719ac968df164a2b372.webp",
@@ -641,10 +642,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.8d92c5ab.css.map": "/static/css/main.8d92c5ab.css.map",
-    "main.8e67fd5c.js.map": "/static/js/main.8e67fd5c.js.map"
+    "main.f323a324.js.map": "/static/js/main.f323a324.js.map"
   },
   "entrypoints": [
     "static/css/main.8d92c5ab.css",
-    "static/js/main.8e67fd5c.js"
+    "static/js/main.f323a324.js"
   ]
 }
