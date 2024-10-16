@@ -10,6 +10,7 @@ const allEvents = [
         image: icon_event_world_fair_tokens,
         startDate: "October 23th 2024",
         endDate: "November 13th 2024",
+        betaStartDate: "October 15th 2024",
         headerImage: Questgiver_BenjaminFranklin,
         questgiverName: "Benjamin Franklin",
         type: "merge_event",
@@ -1131,7 +1132,15 @@ const allEvents = [
             {
                 resource: "chest_color_crests_red_common_enhanced",
                 amount: 1
+            }, // advanced: "chest_color_crests_red_common_enhanced_superior" next are only advanced and early are missing
+            /*{
+                resource: "antimatter_common_part",
+                amount: 10
             },
+            {
+                resource: "chest_color_crests_red_common_enhanced",
+                amount: 1
+            },*/
         ],
         grandPrizes: [
             {

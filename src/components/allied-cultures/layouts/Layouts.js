@@ -17,6 +17,7 @@ import allAlliedCultures from "../data";
 import layouts_icon from "../../../images/allied-cultures/layouts/Technology_Roman_Empire_Urban_Management.webp";
 import layout_1_sector_1 from "../../../images/allied-cultures/strategies/layout_1_sector_1.webp";
 import layout_1_sector_2 from "../../../images/allied-cultures/strategies/layout_1_sector_2.webp";
+import layout_1_sector_3 from "../../../images/allied-cultures/strategies/layout_1_sector_3.webp";
 import layout_2_sector_1 from "../../../images/allied-cultures/strategies/layout_2_sector_1.webp";
 import layout_2_sector_2 from "../../../images/allied-cultures/strategies/layout_2_sector_2.webp";
 import layout_2_sector_3 from "../../../images/allied-cultures/strategies/layout_2_sector_3.webp";
@@ -64,9 +65,9 @@ const Layouts = (props) => {
                     <TextBlock>
                         <ul><li>Layout up to level 13 of the World Wonder:</li></ul>
 
-                        <LayoutsBook header={"Layout 1"} images={[layout_1_sector_1,layout_1_sector_2]} />
+                        <LayoutsBook header={"Layout 1"} images={[layout_1_sector_1,layout_1_sector_2,layout_1_sector_3]} />
 
-                        <ul><li>Layout up to level 17 of the World Wonder (discovered Kaolin Quarries and more production buildings):</li></ul>
+                        <ul><li>Layout up to level 17 of the World Wonder (discovered Kaolin Quarries and additional production buildings):</li></ul>
 
                         <LayoutsBook header={"Layout 2"} images={[layout_2_sector_1,layout_2_sector_2,layout_2_sector_3]} />
 
@@ -78,7 +79,10 @@ const Layouts = (props) => {
 
                         <LayoutsBook header={"Layout 4"} images={[layout_4_sector_1,layout_4_sector_2,layout_4_sector_3]} />
 
-                        This layout includes in total 8x Rice Farm, 4x Thread Processor, 3x Silk Workshop, 6x Clay Processor and 2x Porcelain Workshop (all at level 6). You may keep with this setup until the end of the event.
+                        This layout includes in total 8x Rice Farm, 4x Thread Processor, 3x Silk Workshop, 6x Clay Processor and 2x Porcelain Workshop (all at level 6). You can maintain this setup until the end of the event,
+                        or in the later stages, you may choose to add more Clay Processors and Porcelain Workshops at the expense of Thread Processors and Silk Workshops, if porcelain becomes your limiting resource in the final phases of the event.<br/><br/>
+
+                        Take a look at the <b>Strategies</b> tab for a more comprehensive guide and explanations of these layouts.
 
                     </TextBlock>
                 ) : null

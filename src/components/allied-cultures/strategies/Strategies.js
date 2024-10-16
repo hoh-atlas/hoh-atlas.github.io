@@ -17,6 +17,7 @@ import allAlliedCultures from "../data";
 import strategies_icon from "../../../images/allied-cultures/strategies/icon_unitstat_movementspeed.webp";
 import layout_1_sector_1 from "../../../images/allied-cultures/strategies/layout_1_sector_1.webp";
 import layout_1_sector_2 from "../../../images/allied-cultures/strategies/layout_1_sector_2.webp";
+import layout_1_sector_3 from "../../../images/allied-cultures/strategies/layout_1_sector_3.webp";
 import layout_2_sector_1 from "../../../images/allied-cultures/strategies/layout_2_sector_1.webp";
 import layout_2_sector_2 from "../../../images/allied-cultures/strategies/layout_2_sector_2.webp";
 import layout_2_sector_3 from "../../../images/allied-cultures/strategies/layout_2_sector_3.webp";
@@ -74,8 +75,9 @@ const Strategies = (props) => {
                             <li>Find the shortest way to Kaolin Quarries, as they will produce a highly demanded Kaolin {getItem("kaolin")} later in the event</li>
                             <li>On your way to Kaolin Quarries, unlock almost all the available Moth Glades</li>
                             <li>Sell the first Medium House required by the questline as soon as you complete the quest</li>
+                            <li>Prioritize finishing the research tree before leveling your workshops</li>
                             <li>Short productions are more effective than long ones, so the shorter you choose, the faster you will progress</li>
-                            <li>This guide will help you compete with Gold League players by maximizing the effectiveness of your city. However, to achieve that, you still need to play regularly</li>
+                            <li>This guide will help you compete with Gold League players by maximizing the effectiveness of your city. To achieve that, you still need to play regularly of course</li>
                         </ul>
 
                         In the picture below, you can find the sketch of the China city right at the beginning:
@@ -93,7 +95,7 @@ const Strategies = (props) => {
                         As you can see, with this number of expansions, you will be able to reach the first Koaolin Quarry. Also, do not forget to construct the bridges on your way as soon as you get close to them!
                         The layout below will show you the current state:
 
-                        <LayoutsBook header={"Layout 1"} images={[layout_1_sector_1,layout_1_sector_2]} />
+                        <LayoutsBook header={"Layout 1"} images={[layout_1_sector_1,layout_1_sector_2,layout_1_sector_3]} />
 
                         Keep in mind - when at any point you unlock the 'Dedicated Workforce' technology in research, continue researching technologies only in the top branch. The goal is to unlock Small House and Kaolin Quarry upgrades first, so
                         do not research 'Iron Plough' technology before you research 'Urban Management'.<br/><br/>
@@ -128,7 +130,8 @@ const Strategies = (props) => {
 
                         <LayoutsBook header={"Layout 4"} images={[layout_4_sector_1,layout_4_sector_2,layout_4_sector_3]} />
 
-                        This layout includes in total 8x Rice Farm, 4x Thread Processor, 3x Silk Workshop, 6x Clay Processor and 2x Porcelain Workshop (all at level 6). You may keep with this setup until the end of the event.
+                        This layout includes in total 8x Rice Farm, 4x Thread Processor, 3x Silk Workshop, 6x Clay Processor and 2x Porcelain Workshop (all at level 6). You can maintain this setup until the end of the event,
+                        or in the later stages, you may choose to add more Clay Processors and Porcelain Workshops at the expense of Thread Processors and Silk Workshops, if porcelain becomes your limiting resource in the final phases of the event.
 
                     </TextBlock>
                 ) : null

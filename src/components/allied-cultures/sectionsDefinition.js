@@ -45,7 +45,7 @@ const sectionsDefinition = {
             url: "strategies",
             name: "Strategies",
             img: strategies_icon,
-            show: false,
+            show: true,
             dynamicSegments: [],
         },
         {
@@ -53,7 +53,7 @@ const sectionsDefinition = {
             url: "layouts",
             name: "Layouts",
             img: layouts_icon,
-            show: false,
+            show: true,
             dynamicSegments: [],
         },
     ]
