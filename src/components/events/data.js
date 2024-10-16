@@ -274,6 +274,854 @@ const allEvents = [
                     },
                 ]
             },
+            {   
+                id: 3,
+                appearsAfter: [2],
+                name: "World Fair Event Questline III",
+                questgiver: Questgiver_BenjaminFranklin,
+                rewards: [
+                    {
+                        resource: "event_world_fair_2024_currency",
+                        amount: 500
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 6,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 7,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 8,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 9,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 10,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 4,
+                appearsAfter: [3],
+                name: "World Fair Event Questline IV",
+                questgiver: Questgiver_BenjaminFranklin,
+                rewards: [
+                    {
+                        resource: "event_world_fair_2024_currency",
+                        amount: 500
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 6,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 7,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 8,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 9,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 10,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 5,
+                appearsAfter: [4],
+                name: "World Fair Event Questline V",
+                questgiver: Questgiver_BenjaminFranklin,
+                rewards: [
+                    {
+                        resource: "event_world_fair_2024_currency",
+                        amount: 500
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 6,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 7,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 8,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 9,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                    {
+                        id: 10,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 100
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 6,
+                appearsAfter: [5],
+                name: "Daily World Fair Questline",
+                questgiver: Questgiver_BenjaminFranklin,
+                rewards: [
+                    {
+                        resource: "event_world_fair_2024_currency",
+                        amount: 100
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 6,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 7,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 8,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 9,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 10,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 11,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 12,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 13,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 14,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 15,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 16,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 17,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 18,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 19,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 20,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 21,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 22,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 23,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 24,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 25,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 26,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 27,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 28,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 29,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 30,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 31,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 32,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 33,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 34,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 35,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 36,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 37,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 38,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 39,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 40,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 41,
+                        tasks: [
+                            "Spend <b>50 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                    {
+                        id: 42,
+                        tasks: [
+                            "Spend <b>100 Stamina</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "event_world_fair_2024_currency",
+                            amount: 120
+                        }
+                    },
+                ]
+            },
         ],
         dailySpecials: [
             {
