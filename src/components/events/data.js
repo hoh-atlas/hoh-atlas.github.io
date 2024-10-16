@@ -280,10 +280,10 @@ const allEvents = [
                 resource: "antimatter_common_part",
                 amount: 10
             },
-            /*{
+            {
                 resource: "chest_color_crests_red_common_enhanced",
                 amount: 1
-            },*/
+            },
         ],
         grandPrizes: [
             {
