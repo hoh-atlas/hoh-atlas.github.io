@@ -17,7 +17,7 @@ const Provinces = () => {
     const basePath = "campaign";
     const pageName = "Campaign - Provinces";
 
-    const optionsColors = {"panganea":"#76cc66", "desert_valley":"#d1b077", "early_rome":"#48805f"};
+    const optionsColors = {"panganea":"#76cc66", "desert_valley":"#d1b077", "early_rome":"#48805f", "mayan":"#669829", "fjords":"#489bb7"};
 
     const options = allProvinces.map((oneProvince) => {
         return {value: oneProvince.id, label: `${oneProvince.id} - ${oneProvince.name}`, dotColor: optionsColors[oneProvince?.location]}
