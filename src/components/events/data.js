@@ -2,6 +2,21 @@ import icon_event_world_fair_tokens from "../../images/events/intro/icon_event_w
 import icon_event_worldfair_2024_grand_prize_progress from "../../images/events/grand-prizes/icon_event_worldfair_2024_grand_prize_progress.webp";
 import Questgiver_BenjaminFranklin from "../../images/events/quests/Questgiver_BenjaminFranklin.webp";
 import world_fair_event_shop_tier_1 from "../../images/events/intro/world_fair_event_shop_tier_1.webp";
+import world_fair_2024_artifact_1 from "../../images/events/intro/world_fair_2024_artifact_1.webp";
+import world_fair_2024_artifact_2 from "../../images/events/intro/world_fair_2024_artifact_2.webp";
+import world_fair_2024_artifact_3 from "../../images/events/intro/world_fair_2024_artifact_3.webp";
+import world_fair_2024_artifact_4 from "../../images/events/intro/world_fair_2024_artifact_4.webp";
+import world_fair_2024_artifact_5 from "../../images/events/intro/world_fair_2024_artifact_5.webp";
+import world_fair_2024_rareflower_1 from "../../images/events/intro/world_fair_2024_rareflower_1.webp";
+import world_fair_2024_rareflower_2 from "../../images/events/intro/world_fair_2024_rareflower_2.webp";
+import world_fair_2024_rareflower_3 from "../../images/events/intro/world_fair_2024_rareflower_3.webp";
+import world_fair_2024_rareflower_4 from "../../images/events/intro/world_fair_2024_rareflower_4.webp";
+import world_fair_2024_rareflower_5 from "../../images/events/intro/world_fair_2024_rareflower_5.webp";
+import world_fair_2024_invention_1 from "../../images/events/intro/world_fair_2024_invention_1.webp";
+import world_fair_2024_invention_2 from "../../images/events/intro/world_fair_2024_invention_2.webp";
+import world_fair_2024_invention_3 from "../../images/events/intro/world_fair_2024_invention_3.webp";
+import world_fair_2024_invention_4 from "../../images/events/intro/world_fair_2024_invention_4.webp";
+import world_fair_2024_invention_5 from "../../images/events/intro/world_fair_2024_invention_5.webp";
 
 const allEvents = [
     {
@@ -14,8 +29,55 @@ const allEvents = [
         headerImage: Questgiver_BenjaminFranklin,
         questgiverName: "Benjamin Franklin",
         type: "merge_event",
-        mergeEventImages: {
-
+        mergeEventData: {
+            items: [
+                {
+                    name: "Artifact",
+                    levelsImages: [world_fair_2024_artifact_1,world_fair_2024_artifact_2,world_fair_2024_artifact_3,world_fair_2024_artifact_4,world_fair_2024_artifact_5]
+                },
+                {
+                    name: "Rare Flower",
+                    levelsImages: [world_fair_2024_rareflower_1,world_fair_2024_rareflower_2,world_fair_2024_rareflower_3,world_fair_2024_rareflower_4,world_fair_2024_rareflower_5]
+                },
+                {
+                    name: "Invention",
+                    levelsImages: [world_fair_2024_invention_1,world_fair_2024_invention_2,world_fair_2024_invention_3,world_fair_2024_invention_4,world_fair_2024_invention_5]
+                },
+            ],
+            tasks: {
+                1: [
+                    {
+                        resource: "coins"
+                    },
+                    {
+                        resource: "goods"
+                    }
+                ],
+                2: [
+                    {
+                        resource: "victory_ticket",
+                        amount: 2
+                    },
+                    {
+                        resource: "goods"
+                    },
+                    {
+                        resource: "coins"
+                    }
+                ],
+                3: [
+                    {
+                        resource: "victory_ticket",
+                        amount: 3
+                    },
+                    {
+                        resource: "coins"
+                    },
+                    {
+                        resource: "goods"
+                    },
+                ]
+            }
         },
         currency: {
             name: "Discovery Books",
@@ -1130,17 +1192,34 @@ const allEvents = [
                 amount: 10
             },
             {
-                resource: "chest_color_crests_red_common_enhanced",
+                resource: "chest_color_crests_red_common_enhanced_superior",
+                amount: 1,
+                //note: "For players in early eras, the chest only contains common and enhanced crests."
+            },
+            {
+                resource: "war_horn",
                 amount: 1
-            }, // advanced: "chest_color_crests_red_common_enhanced_superior" next are only advanced and early are missing
-            /*{
+            },
+            {
                 resource: "antimatter_common_part",
                 amount: 10
             },
             {
-                resource: "chest_color_crests_red_common_enhanced",
+                resource: "chest_color_crests_blue_common_enhanced_superior",
                 amount: 1
-            },*/
+            },
+            {
+                resource: "customization_world_fair_2024_ticket_booth",
+                amount: 1
+            },
+            {
+                resource: "research_point",
+                amount: 2
+            },
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
         ],
         grandPrizes: [
             {

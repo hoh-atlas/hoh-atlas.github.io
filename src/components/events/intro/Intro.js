@@ -18,6 +18,7 @@ import allEvents from "../data";
 
 import icon_event_world_fair_tokens from "../../../images/events/intro/icon_event_world_fair_tokens.webp";
 import EventBackgroundWorldFair from "../../../images/events/intro/EventBackgroundWorldFair.webp";
+import world_fair_2024 from "../../../images/events/intro/world_fair_2024_window.webp";
 
 const Intro = (props) => {
 
@@ -47,8 +48,8 @@ const Intro = (props) => {
             <TextBlock>
 
                 {event.name} is a special event running for several weeks! To participate, you need to unlock the Village technology at the start of the Bronze Age. {event.questgiverName} will be arriving 
-                with quests offering a new gameplay in your city and a truckload of resources like coins {getItem("coins")}, goods {getItem("goods")},
-                Victory Tickets {getItem("victory_ticket")} and special customizations offering valuable benefits for your capital city buildings!
+                with quests offering a new gameplay in your city and a truckload of resources like coins, goods,
+                Victory Tickets and special customizations offering valuable benefits for your capital city buildings!
 
             </TextBlock>
 
@@ -74,9 +75,44 @@ const Intro = (props) => {
 
             {
                 "merge_event" === event.type && (
-                    <TextBlock>
-                        More about this will be added soon.
-                    </TextBlock>
+                    <>
+                        <TextBlock>
+                            The {event.name} features the merge mechanic, where the objective is to merge items on the board to level them up and fulfill orders on the left hand-side. After tapping the event banner, you will visit the main event window:
+                        </TextBlock>
+
+                        <Image src={world_fair_2024} maxHeight={'350px'} centered={true} spacing={true} roundedCorners={true}/>
+
+                        <TextBlock>
+                            Use {event.currency.name} <Icon resource={event.currency.image}/> to spawn pieces on the board: {event.mergeEventData.items[0].name}, {event.mergeEventData.items[1].name} and {event.mergeEventData.items[2].name}.
+                            Each piece can be upgraded up to level 5 by merging two identical ones on the board. With a bit of luck, you may also receive a higher-level piece directly from the spawning process. 
+                            Be aware that the respective cups may also generate pieces from other cups with a small chance, giving an element of randomness to the mechanic. Find all the available pieces in the table below:
+                        </TextBlock>
+
+                        <div style={{ overflowX: 'auto', marginTop: '20px', marginBottom: '20px' }}>
+                            <table>
+                                <tbody>
+                                    {
+                                        event.mergeEventData.items.map((onePiece) => (
+                                            <tr>
+                                                <td style={{ width: '40%' }}>{onePiece.name}</td>
+                                                {
+                                                    onePiece.levelsImages.map((oneLevelImage) => (
+                                                        <td style={{ width: `${60/onePiece.levelsImages.length}%` }}><img src={oneLevelImage} style={{ height: '50px' }}/></td>
+                                                    ))
+                                                }
+                                            </tr>
+                                        ))
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <TextBlock>
+                            Each task you complete gives you a predefined reward, {event.payback.name} <Icon resource={event.payback.image}/> and a chance to win the current Daily Special. To view all Daily Specials during the event,
+                            visit the <b>Daily Specials</b> tab at the top of this page. If you don't win the Daily Special with a particular task, you will make progress toward the pity mechanic, 
+                            which guarantees a 100% chance of receiving the Daily Special once it is full. {/*Below, you can find a list of all available tasks during this event.*/}
+                        </TextBlock>                        
+                    </>
                 )
             }
         </>

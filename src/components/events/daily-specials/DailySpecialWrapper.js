@@ -2,73 +2,123 @@ import "./DailySpecialWrapper.css";
 
 import resources from "../../shared/data/resources";
 import chests from "../../shared/data/chests";
+import { customizations } from "../../shared/data/customizations";
 import H1 from "../../shared/H1";
 import { getItem, getItemData } from "../../shared/utils";
+import CustomizationObject from "../../shared/CustomizationObject";
 
 const DailySpecialWrapper = (props) => {
 
-    const { resource, amount, day } = props;    
+    const { dailySpecial, amount, note, day } = props;    
+    const itemData = getItemData(dailySpecial);
 
     return (
         <>
-        
             <div className="customization-object-container" style={{ width: '100%' }}>
-                
-                {
-                    resources.some(item => item.id === resource) ? (
-                        <>
-                            <H1 center={true} style={{ marginTop: '10px' }}>Day {day}: {getItemData(resource).name}</H1>
-                            <table style={{ width: '100%', marginTop: '10px' }}>
-                                <tbody>
-                                    <tr>
+                {/* If it's a resource */}
+                {resources.some(item => item.id === dailySpecial) ? (
+                    <>
+                        <H1 center={true} style={{ marginTop: '10px' }}>Day {day}: {itemData.name}</H1>
+                        <table style={{ width: '100%', marginTop: '10px' }}>
+                            <tbody>
+                                <tr>
+                                    <th style={{ width: '20%' }}>
+                                        Image
+                                    </th>
+                                    <th style={{ width: '20%' }}>
+                                        Type
+                                    </th>
+                                    <th>
+                                        Amount
+                                    </th>
+                                    {note && (
+                                        <th style={{ width: '20%' }}>
+                                            {note}
+                                        </th>
+                                    )}
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src={itemData.img} style={{ maxHeight: '70px' }} />
+                                    </td>
+                                    <td style={{ width: '20%' }}>
+                                        Resource
+                                    </td>
+                                    <td>
+                                        {amount}x
+                                    </td>
+                                    {note && (
                                         <td style={{ width: '20%' }}>
-                                            <img src={getItemData(resource).img} style={{ maxHeight: '80px' }}/>
+                                            <small>{note}</small>
                                         </td>
-                                        <td style={{ width: '20%'}}>
-                                            Resource
+                                    )}
+                                </tr>
+                            </tbody>
+                        </table>
+                    </>
+                ) : chests.some(item => item.id === dailySpecial) ? (
+                    <>
+                        <H1 center={true} style={{ marginTop: '10px' }}>Day {day}: {itemData.name}</H1>
+                        <table style={{ width: '100%', marginTop: '10px' }}>
+                            <tbody>
+                                <tr>
+                                    <th style={{ width: '20%' }}>
+                                        Image
+                                    </th>
+                                    <th style={{ width: '20%' }}>
+                                        Type
+                                    </th>
+                                    <th>
+                                        Possible Rewards
+                                    </th>
+                                    {note && (
+                                        <th style={{ width: '20%' }}>
+                                            Note
+                                        </th>
+                                    )}
+                                </tr>
+                                <tr>
+                                    <td>
+                                        {itemData.representingIcons.map((icon, index) => (
+                                            <span key={icon} style={{ display: 'inline-flex', alignItems: 'center' }}>
+                                                <img src={getItemData(icon).img} alt={icon} style={{ maxHeight: '60px', verticalAlign: 'middle' }} />
+                                                {index < itemData.representingIcons.length - 1 && (
+                                                    <span style={{ margin: '0 10px', verticalAlign: 'middle' }}> / </span>
+                                                )}
+                                            </span>
+                                        ))}
+                                    </td>
+                                    <td>
+                                        Chest
+                                    </td>
+                                    <td>
+                                        {itemData.items.map((oneItem, index) => (
+                                            <span key={oneItem.resource}>
+                                                {oneItem.amount}x {getItem(oneItem.resource)} ({oneItem.percentage}%)
+                                                {index < itemData.items.length - 1 && " / "}
+                                            </span>
+                                        ))}
+                                    </td>
+                                    {note && (
+                                        <td style={{ width: '20%' }}>
+                                            <small>{note}</small>
                                         </td>
-                                        <td>
-                                            {amount}x
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </>
-                    ) : (
-                        chests.some(item => item.id === resource) && (
-                            <>
-                                <H1 center={true} style={{ marginTop: '10px' }}>Day {day}: {getItemData(resource).name}</H1>
-                                <table style={{ width: '100%', marginTop: '10px' }}>
-                                    <tbody>
-                                        <tr>
-                                            <td style={{ width: '20%' }}>
-                                                <img src={getItemData(resource).img} style={{ maxHeight: '80px' }}/>
-                                            </td>
-                                            <td style={{ width: '20%'}}>
-                                                Chest
-                                            </td>
-                                            <td>
-                                                {
-                                                    getItemData(resource).items.map((oneItem, index) => (
-                                                        <span key={oneItem.resource}>
-                                                            {oneItem.amount}x {getItem(oneItem.resource)} ({oneItem.percentage}%)
-                                                            {index < getItemData(resource).items.length - 1 && " / "}
-                                                        </span>
-                                                    ))
-                                                }
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </>
-                        )
-                    )
-                }
-
+                                    )}
+                                </tr>
+                            </tbody>
+                        </table>
+                    </>
+                ) : customizations.some(item => item.id === dailySpecial) ? (
+                    <>
+                        <H1 center={true} style={{ marginTop: '10px' }}>Day {day}: {itemData.name}</H1>
+                        <CustomizationObject customization={itemData} showHeader={false} imageMaxHeight={"100px"}/>
+                    </>
+                ) : (
+                    <div>No valid daily special found for Day {day}.</div>
+                )}
             </div>
-        
         </>
-    )
+    );
 }
 
 export default DailySpecialWrapper;

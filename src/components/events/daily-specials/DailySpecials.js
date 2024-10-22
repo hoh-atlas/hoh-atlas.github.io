@@ -49,8 +49,9 @@ const DailySpecials = (props) => {
                 dailySpecialsToDisplay.map((oneDailySpecial, index) => (
                     <DailySpecialWrapper
                         key={index}
-                        resource={oneDailySpecial.resource}
+                        dailySpecial={oneDailySpecial.resource}
                         amount={oneDailySpecial.amount}
+                        note={oneDailySpecial.note}
                         day={index + 1}
                     />
                 ))

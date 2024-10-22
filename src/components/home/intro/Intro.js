@@ -56,7 +56,7 @@ const Intro = () => {
     <SectionDivider />
     <TextContainer
         centered={true}
-        headerTexts={['The World Fair event begins on the Preview server! (Oct 15th 2024)']}
+        headerTexts={['The World Fair event begins on the Live server! (Oct 23th 2024)']}
         texts={[``]}
         style={{ marginBottom: '20px', marginTop: '5px' }}
         textRectangleHeight={'150px'}

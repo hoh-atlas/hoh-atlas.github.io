@@ -17,12 +17,10 @@ const Calendar = (props) => {
 
     const event = getEvent();
 
-    // Function to clean up the betaStartDate string
     const cleanDateString = (dateString) => {
         return dateString.replace(/(\d+)(st|nd|rd|th)/, '$1');
     };
 
-    // Function to calculate the number of days since the betaStartDate
     const calculateDaysSinceStart = (startDate) => {
         const cleanedDate = cleanDateString(startDate);
         const betaStartDate = new Date(cleanedDate);
@@ -30,7 +28,7 @@ const Calendar = (props) => {
 
         if (isNaN(betaStartDate)) {
             console.error("Invalid date:", cleanedDate);
-            return 0; // Return 0 if the date is invalid
+            return 0;
         }
 
         const timeDifference = today - betaStartDate;
@@ -39,13 +37,10 @@ const Calendar = (props) => {
         return Math.max(1, daysDifference + 1);
     };
 
-    // Use the passed daysPassed prop instead of recalculating
     const daysPassed = props.daysPassed || calculateDaysSinceStart(event.betaStartDate);
 
-    // Get only the daily specials up to the current day
     const dailySpecialsToDisplay = event.dailySpecials.slice(0, daysPassed);
 
-    // Helper function to chunk the array into weeks
     const chunkArray = (array, chunkSize) => {
         const result = [];
         for (let i = 0; i < array.length; i += chunkSize) {
@@ -54,45 +49,45 @@ const Calendar = (props) => {
         return result;
     };
 
-    // Chunk the daily specials into weeks (7 days per week)
     const dailySpecialChunks = chunkArray(dailySpecialsToDisplay, 7);
 
     return (
         <div style={{ width: '100%', marginTop: '20px', display: 'flex', justifyContent: 'center' }}>
-            <table style={{
-                width: '100%', 
-                maxWidth: '1000px', 
-                margin: 'auto', 
-                textAlign: 'center',
-                tableLayout: 'fixed'
-            }}>
-                <tbody>
-                    {dailySpecialChunks.map((week, weekIndex) => (
-                        <React.Fragment key={weekIndex}>
-                            <tr>
-                                {week.map((dailySpecial, dayIndex) => (
-                                    <th key={dayIndex} style={{ width: '14.28%' }}>
-                                        <div>Day {weekIndex * 7 + dayIndex + 1}</div>
-                                    </th>
-                                ))}
-                                {week.length < 7 && Array(7 - week.length).fill(null).map((_, index) => (
-                                    <td key={`empty-${index}`} style={{ width: '14.28%' }} />
-                                ))}
-                            </tr>
-                            <tr>
-                                {week.map((dailySpecial, dayIndex) => (
-                                    <td key={dayIndex} style={{ width: '14.28%' }}>
-                                        <div>{getItemData(dailySpecial.resource).name}</div>
-                                    </td>
-                                ))}
-                                {week.length < 7 && Array(7 - week.length).fill(null).map((_, index) => (
-                                    <td key={`empty-resources-${index}`} style={{ width: '14.28%' }} />
-                                ))}
-                            </tr>
-                        </React.Fragment>
-                    ))}
-                </tbody>
-            </table>
+            <div style={{ width: '100%', overflowX: 'auto' }}>
+                <table style={{
+                    width: `${dailySpecialChunks[0]?.length * 142}px`,
+                    margin: 'auto',
+                    textAlign: 'center',
+                    tableLayout: 'fixed',
+                }}>
+                    <tbody>
+                        {dailySpecialChunks.map((week, weekIndex) => (
+                            <React.Fragment key={weekIndex}>
+                                <tr>
+                                    {week.map((dailySpecial, dayIndex) => (
+                                        <th key={dayIndex} style={{ width: '142px', wordWrap: 'break-word' }}>
+                                            <div>Day {weekIndex * 7 + dayIndex + 1}</div>
+                                        </th>
+                                    ))}
+                                    {week.length < 7 && Array(7 - week.length).fill(null).map((_, index) => (
+                                        <td key={`empty-${index}`} style={{ width: '142px' }} />
+                                    ))}
+                                </tr>
+                                <tr>
+                                    {week.map((dailySpecial, dayIndex) => (
+                                        <td key={dayIndex} style={{ width: '142px', wordWrap: 'break-word' }}>
+                                            <div>{getItemData(dailySpecial.resource).name}</div>
+                                        </td>
+                                    ))}
+                                    {week.length < 7 && Array(7 - week.length).fill(null).map((_, index) => (
+                                        <td key={`empty-resources-${index}`} style={{ width: '142px' }} />
+                                    ))}
+                                </tr>
+                            </React.Fragment>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
         </div>
     );
 };
