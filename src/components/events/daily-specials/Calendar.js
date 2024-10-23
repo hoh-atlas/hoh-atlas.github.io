@@ -38,8 +38,12 @@ const Calendar = (props) => {
     };
 
     const daysPassed = props.daysPassed || calculateDaysSinceStart(event.betaStartDate);
+    
+    const showRevealNext = daysPassed < event.dailySpecials.length;
 
-    const dailySpecialsToDisplay = event.dailySpecials.slice(0, daysPassed);
+    const dailySpecialsToDisplay = showRevealNext
+        ? [...event.dailySpecials.slice(0, daysPassed), { resource: "nextPrizePlaceholder" }]
+        : event.dailySpecials.slice(0, daysPassed);
 
     const chunkArray = (array, chunkSize) => {
         const result = [];
@@ -66,7 +70,11 @@ const Calendar = (props) => {
                                 <tr>
                                     {week.map((dailySpecial, dayIndex) => (
                                         <th key={dayIndex} style={{ width: '142px', wordWrap: 'break-word' }}>
-                                            <div>Day {weekIndex * 7 + dayIndex + 1}</div>
+                                            <div>
+                                                {dailySpecial.resource === "nextPrizePlaceholder"
+                                                    ? "?"
+                                                    : `Day ${weekIndex * 7 + dayIndex + 1}`}
+                                            </div>
                                         </th>
                                     ))}
                                     {week.length < 7 && Array(7 - week.length).fill(null).map((_, index) => (
@@ -76,7 +84,11 @@ const Calendar = (props) => {
                                 <tr>
                                     {week.map((dailySpecial, dayIndex) => (
                                         <td key={dayIndex} style={{ width: '142px', wordWrap: 'break-word' }}>
-                                            <div>{getItemData(dailySpecial.resource).name}</div>
+                                            <div>
+                                                {dailySpecial.resource === "nextPrizePlaceholder"
+                                                    ? <span style={{ fontSize: '11px', color: '#916a17', fontStyle: 'italic' }}>Reveals tomorrow</span>
+                                                    : getItemData(dailySpecial.resource).name}
+                                            </div>
                                         </td>
                                     ))}
                                     {week.length < 7 && Array(7 - week.length).fill(null).map((_, index) => (

@@ -1220,6 +1220,62 @@ const allEvents = [
                 resource: "antimatter_common_part",
                 amount: 10
             },
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
+            {
+                resource: "customization_world_fair_2024_tesla_coil",
+                amount: 1
+            },
+            {
+                resource: "chest_color_crests_yellow_common_enhanced_superior",
+                amount: 1
+            },
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
+            {
+                resource: "chest_color_crests_purple_common_enhanced_superior",
+                amount: 1
+            },
+            {
+                resource: "fragrant_potpourri",
+                amount: 1
+            },
+            {
+                resource: "customization_world_fair_2024_ticket_booth",
+                amount: 1
+            },
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
+            {
+                resource: "customization_world_fair_2024_void_reactor",
+                amount: 1
+            },
+            {
+                resource: "chest_color_crests_green_common_enhanced_superior",
+                amount: 1
+            },
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
+            {
+                resource: "shadow_dial",
+                amount: 1
+            },
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
+            {
+                resource: "research_point",
+                amount: 2
+            },
         ],
         grandPrizes: [
             {
