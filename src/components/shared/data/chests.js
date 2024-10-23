@@ -47,6 +47,75 @@ const chests = [
             },
         ]
     },
+    {
+        id: "chest_color_crests_yellow_common_enhanced_superior", 
+        name: "Chest with Yellow Crests", 
+        img: "", 
+        representingIcons: ["yellow_crest_common", "yellow_crest_enhanced", "yellow_crest_superior"],
+        items: [
+            {
+                resource: "yellow_crest_common",
+                amount: 20,
+                percentage: 33
+            },
+            {
+                resource: "yellow_crest_enhanced",
+                amount: 15,
+                percentage: 33
+            },
+            {
+                resource: "yellow_crest_superior",
+                amount: 10,
+                percentage: 33
+            },
+        ]
+    },
+    {
+        id: "chest_color_crests_purple_common_enhanced_superior", 
+        name: "Chest with Purple Crests", 
+        img: "", 
+        representingIcons: ["purple_crest_common", "purple_crest_enhanced", "purple_crest_superior"],
+        items: [
+            {
+                resource: "purple_crest_common",
+                amount: 20,
+                percentage: 33
+            },
+            {
+                resource: "purple_crest_enhanced",
+                amount: 15,
+                percentage: 33
+            },
+            {
+                resource: "purple_crest_superior",
+                amount: 10,
+                percentage: 33
+            },
+        ]
+    },
+    {
+        id: "chest_color_crests_green_common_enhanced_superior", 
+        name: "Chest with Green Crests", 
+        img: "", 
+        representingIcons: ["green_crest_common", "green_crest_enhanced", "green_crest_superior"],
+        items: [
+            {
+                resource: "green_crest_common",
+                amount: 20,
+                percentage: 33
+            },
+            {
+                resource: "green_crest_enhanced",
+                amount: 15,
+                percentage: 33
+            },
+            {
+                resource: "green_crest_superior",
+                amount: 10,
+                percentage: 33
+            },
+        ]
+    },
 ]
 
 export default chests;

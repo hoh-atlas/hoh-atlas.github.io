@@ -1745,7 +1745,7 @@ const allHeroes = [
             ],
             80: [
                 {
-                    resource: "purple_crest_superior",
+                    resource: "yellow_crest_superior",
                     amount: 130
                 },
                 {
