@@ -1,10 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.8d92c5ab.css",
-    "main.js": "/static/js/main.1cd576eb.js",
+    "main.js": "/static/js/main.04413681.js",
+    "static/media/layout_5_sector_3.webp": "/static/media/layout_5_sector_3.c0f317a3382f299fbe11.webp",
     "static/media/layout_4_sector_3.webp": "/static/media/layout_4_sector_3.e88146e9c9ed7496bcb5.webp",
     "static/media/layout_4_sector_1.webp": "/static/media/layout_4_sector_1.7c73d107ef72fe873aac.webp",
     "static/media/layout_4_sector_2.webp": "/static/media/layout_4_sector_2.81a4c629cfe50df59915.webp",
+    "static/media/layout_5_sector_2.webp": "/static/media/layout_5_sector_2.11da277ecf97781187c5.webp",
+    "static/media/layout_5_sector_1.webp": "/static/media/layout_5_sector_1.d51b22cb24ddfbe0edb1.webp",
     "static/media/layout_2_sector_3.webp": "/static/media/layout_2_sector_3.fe4489413334a5d8d753.webp",
     "static/media/layout_2_sector_2.webp": "/static/media/layout_2_sector_2.213a47eab5fd7e3a4739.webp",
     "static/media/layout_3_sector_3.webp": "/static/media/layout_3_sector_3.f353248b04bd7de59004.webp",
@@ -79,6 +82,7 @@
     "static/media/china_background_news.webp": "/static/media/china_background_news.598f56e701760888eea9.webp",
     "static/media/hoh_banner.webp": "/static/media/hoh_banner.7e066fb1f5260cd02238.webp",
     "static/media/Unit_CyrusTheGreat_fullbody.webp": "/static/media/Unit_CyrusTheGreat_fullbody.bce1d55d853c116261de.webp",
+    "static/media/Unit_Confucius_fullbody.webp": "/static/media/Unit_Confucius_fullbody.084bdd39a289d23d9602.webp",
     "static/media/city_event_banner_china_forbiddencity.png": "/static/media/city_event_banner_china_forbiddencity.77d42c155cc2ce45d5a4.png",
     "static/media/Unit_RobinHood_fullbody.webp": "/static/media/Unit_RobinHood_fullbody.101ca3240b8d6fe3a13e.webp",
     "static/media/world_fair_2024_tesla_coil.webp": "/static/media/world_fair_2024_tesla_coil.c52129b8900c6acabc13.webp",
@@ -185,10 +189,12 @@
     "static/media/hero-backdrop-windmill.webp": "/static/media/hero-backdrop-windmill.24e3225444bc3e967c48.webp",
     "static/media/Unit_AlbertEinstein_fullbody.webp": "/static/media/Unit_AlbertEinstein_fullbody.3e12223fd6119dc8bb21.webp",
     "static/media/season_sale_offer_bg.webp": "/static/media/season_sale_offer_bg.c4514640bed4550e1d8e.webp",
+    "static/media/season_02_banner.webp": "/static/media/season_02_banner.fac6b02755c1bbc2e098.webp",
     "static/media/season_01_banner.webp": "/static/media/season_01_banner.69f3ad79933e173f9a1a.webp",
     "static/media/world_fair_2024_artifact_4.webp": "/static/media/world_fair_2024_artifact_4.696473012f8aea216bee.webp",
     "static/media/hero-backdrop-renaissance.webp": "/static/media/hero-backdrop-renaissance.e31abacf1cee181ce514.webp",
     "static/media/world_fair_2024_invention_4.webp": "/static/media/world_fair_2024_invention_4.6fd59fad11fa8a393370.webp",
+    "static/media/season_2_sale_offer_bg.webp": "/static/media/season_2_sale_offer_bg.861cc2be1b36c96be8e5.webp",
     "static/media/EventPassPremiumPriceChest.webp": "/static/media/EventPassPremiumPriceChest.17e36140b9ec3748a3c2.webp",
     "static/media/world_fair_2024_rareflower_5.webp": "/static/media/world_fair_2024_rareflower_5.a5cd09a471e4400882d7.webp",
     "static/media/ath_long_nine.webp": "/static/media/ath_long_nine.3f919df3b7c7b0f6311d.webp",
@@ -407,6 +413,7 @@
     "static/media/icon_hero_battle_ability_queenelizabethi.webp": "/static/media/icon_hero_battle_ability_queenelizabethi.aa09d987276183b21cb4.webp",
     "static/media/icon_hero_battle_ability_alberteinstein.webp": "/static/media/icon_hero_battle_ability_alberteinstein.2a7415685efcf99da013.webp",
     "static/media/sketch_5.webp": "/static/media/sketch_5.a387a4e070a75c8c0afd.webp",
+    "static/media/icon_hud_gacha_rift.webp": "/static/media/icon_hud_gacha_rift.5c79d79a10bc9bc3ddd4.webp",
     "static/media/Unit_Unknown.webp": "/static/media/Unit_Unknown.3b30265441f77266a0a5.webp",
     "static/media/icon_hero_battle_ability_nubianmercenary.webp": "/static/media/icon_hero_battle_ability_nubianmercenary.e2c49e020e748817df87.webp",
     "static/media/icon_hero_battle_ability_sirlancelot.webp": "/static/media/icon_hero_battle_ability_sirlancelot.473a43daf3bae5b3011b.webp",
@@ -669,10 +676,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.8d92c5ab.css.map": "/static/css/main.8d92c5ab.css.map",
-    "main.1cd576eb.js.map": "/static/js/main.1cd576eb.js.map"
+    "main.04413681.js.map": "/static/js/main.04413681.js.map"
   },
   "entrypoints": [
     "static/css/main.8d92c5ab.css",
-    "static/js/main.1cd576eb.js"
+    "static/js/main.04413681.js"
   ]
 }
