@@ -27,6 +27,9 @@ import layout_3_sector_3 from "../../../images/allied-cultures/strategies/layout
 import layout_4_sector_1 from "../../../images/allied-cultures/strategies/layout_4_sector_1.webp";
 import layout_4_sector_2 from "../../../images/allied-cultures/strategies/layout_4_sector_2.webp";
 import layout_4_sector_3 from "../../../images/allied-cultures/strategies/layout_4_sector_3.webp";
+import layout_5_sector_1 from "../../../images/allied-cultures/strategies/layout_5_sector_1.webp";
+import layout_5_sector_2 from "../../../images/allied-cultures/strategies/layout_5_sector_2.webp";
+import layout_5_sector_3 from "../../../images/allied-cultures/strategies/layout_5_sector_3.webp";
 
 const Layouts = (props) => {
     // virtual-graph-paper dot com
@@ -79,8 +82,12 @@ const Layouts = (props) => {
 
                         <LayoutsBook header={"Layout 4"} images={[layout_4_sector_1,layout_4_sector_2,layout_4_sector_3]} />
 
-                        This layout includes in total 8x Rice Farm, 4x Thread Processor, 3x Silk Workshop, 6x Clay Processor and 2x Porcelain Workshop (all at level 6). You can maintain this setup until the end of the event,
-                        or in the later stages, you may choose to add more Clay Processors and Porcelain Workshops at the expense of Thread Processors and Silk Workshops, if porcelain becomes your limiting resource in the final phases of the event.<br/><br/>
+                        <ul><li>Layout containing more Rice Farms and Porcelain production buildings to ensure sufficient resource output in the final part of the event:</li></ul>
+
+                        <LayoutsBook header={"Layout 5"} images={[layout_5_sector_1,layout_5_sector_2,layout_5_sector_3]} />
+
+                        <ul><li>You may need to slightly adjust this final layout based on your specific needs and the level of activity you maintained during the event (i.e., the reserves you've accumulated).
+                        If the current World Wonder provides a bonus for Rice, consider removing some Rice Farms to make space for other buildings you might need.</li></ul>
 
                         Take a look at the <b>Strategies</b> tab for a more comprehensive guide and explanations of these layouts.
 

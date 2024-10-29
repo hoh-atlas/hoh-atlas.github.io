@@ -10,6 +10,7 @@ import layoutSeasons from "../components/seasons/sectionsDefinition";
 import allSeasons from "../components/seasons/data";
 import Intro from "../components/seasons/intro/Intro";
 import Rewards from "../components/seasons/rewards/Rewards";
+import Heroes from "../components/seasons/heroes/Heroes";
 
 const SeasonsPage = (props) => {
 
@@ -58,6 +59,8 @@ const SeasonsPage = (props) => {
       switch (props.tab.url) {
           case "rewards":
               return <Rewards tab={props.tab} selectedSeason={selectedSeason} />;
+          case "heroes":
+              return <Heroes tab={props.tab} selectedSeason={selectedSeason} />;
           default:
               return <Intro tab={props.tab} selectedSeason={selectedSeason} />;
       }

@@ -12,8 +12,6 @@ import CardContainer from "../../shared/CardContainer";
 import Card from "../../shared/Card";
 
 import icon_seasonpass_progress from "../../../images/seasons/intro/icon_seasonpass_progress.webp";
-import season_01_banner from "../../../images/seasons/intro/season_01_banner.webp";
-import season_sale_offer_bg from "../../../images/seasons/intro/season_sale_offer_bg.webp";
 
 const Intro = (props) => {
 
@@ -35,7 +33,7 @@ const Intro = (props) => {
 
             <H1 center={true}>{season.name}</H1>
 
-            <Image src={season_01_banner} alt="" spacing={true} maxHeight={'140px'}/>
+            <Image src={season.banner} alt="" spacing={true} maxHeight={'140px'}/>
 
             Season runs for several weeks and offers two lanes of prizes: Free and Premium. You can preview all the available prizes and their requirements inside the <b>Rewards</b> tab at the top of this page. The free lane
             is readily available for all, while the premium lane is only available after a one-time investment. To claim the prizes you need to collect Season Progress {getItem("seasonpass_progress")} by completing daily, weekly
@@ -45,7 +43,7 @@ const Intro = (props) => {
 
         <CardContainer 
             card1={
-                <Card title={"<b>Schedule on Live Servers</b>"} centered backgroundImage={season_sale_offer_bg} blurred={false} footer={season.startDate + " - " + season.endDate}></Card>
+                <Card title={"<b>Schedule on Live Servers</b>"} centered backgroundImage={season.background} blurred={false} footer={season.startDate + " - " + season.endDate}></Card>
             }
             style={{ marginTop: '20px', marginBottom: '20px' }}
         >

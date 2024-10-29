@@ -27,6 +27,9 @@ import layout_3_sector_3 from "../../../images/allied-cultures/strategies/layout
 import layout_4_sector_1 from "../../../images/allied-cultures/strategies/layout_4_sector_1.webp";
 import layout_4_sector_2 from "../../../images/allied-cultures/strategies/layout_4_sector_2.webp";
 import layout_4_sector_3 from "../../../images/allied-cultures/strategies/layout_4_sector_3.webp";
+import layout_5_sector_1 from "../../../images/allied-cultures/strategies/layout_5_sector_1.webp";
+import layout_5_sector_2 from "../../../images/allied-cultures/strategies/layout_5_sector_2.webp";
+import layout_5_sector_3 from "../../../images/allied-cultures/strategies/layout_5_sector_3.webp";
 import sketch_1 from "../../../images/allied-cultures/strategies/sketch_1.webp";
 import sketch_2 from "../../../images/allied-cultures/strategies/sketch_2.webp";
 import sketch_3 from "../../../images/allied-cultures/strategies/sketch_3.webp";
@@ -76,7 +79,7 @@ const Strategies = (props) => {
                             <li>On your way to Kaolin Quarries, unlock almost all the available Moth Glades</li>
                             <li>Sell the first Medium House required by the questline as soon as you complete the quest</li>
                             <li>Prioritize finishing the research tree before leveling your workshops</li>
-                            <li>Short productions are more effective than long ones, so the shorter you choose, the faster you will progress</li>
+                            <li>Short productions are more effective than the long ones, so the shorter you choose, the faster you will progress</li>
                             <li>This guide will help you compete with Gold League players by maximizing the effectiveness of your city. To achieve that, you still need to play regularly of course</li>
                         </ul>
 
@@ -90,7 +93,10 @@ const Strategies = (props) => {
                         <Image src={sketch_2} alt="" roundedCorners={false} spacing={true} maxHeight={'300px'}/>
 
                         During this process, spam the free space with Small Houses
-                        and build one of each of the following production buildings: Rice Farm, Thread Processor, Silk Workshop. Keep all production buildings at level 1, while focusing on leveling up Small Houses as high as possible.<br/><br/>
+                        and build one of each of the following production buildings: Rice Farm, Thread Processor, Silk Workshop. Keep all of these production buildings at level 1, while focusing on leveling up Small Houses as high as possible.
+                        Also make sure to upgrade the first Moth Glade to level 2 at your earliest convenience - it will help you to complete the questline 'Silk Production' that gives a lot of Wu Zhu and Rice. Wu Zhu provided by this questline
+                        will help you to construct the first bridge.
+                        Also, it is not necessary to unlock the second Moth Glade before constructing the first bridge.<br/><br/>
 
                         As you can see, with this number of expansions, you will be able to reach the first Koaolin Quarry. Also, do not forget to construct the bridges on your way as soon as you get close to them!
                         The layout below will show you the current state:
@@ -111,27 +117,36 @@ const Strategies = (props) => {
 
                         <LayoutsBook header={"Layout 2"} images={[layout_2_sector_1,layout_2_sector_2,layout_2_sector_3]} />
 
-                        Keep upgrading Small Houses to level 5. When your World Wonder reach level 17 and you get new expansions, place them as follows:
+                        Keep upgrading Small Houses to level 5. Once done, upgrade your workshops to level 3. When your World Wonder reach level 17 and you get new expansions, place them as follows:
 
                         <Image src={sketch_4} alt="" roundedCorners={false} spacing={true} maxHeight={'300px'}/>
 
                         Fill this space with more production buildings, so that you have 4x Thread Processor and 3x Silk Workshop. Also add more Rice Farms. Add these buildings by replacing Small Houses,
-                        but only after you've completed the research tree. Suggested layout for this state:
+                        but only after you've completed the research tree and upgraded most of your workshops to level 6. Suggested layout for this state:
 
                         <LayoutsBook header={"Layout 3"} images={[layout_3_sector_1,layout_3_sector_2,layout_3_sector_3]} />
 
-                        The reason why you can remove most of the Small Houses after you finish teh research tree is that you won't need so much Wu Zhu {getItem("wu_zhu")} anymore. Rearrange the city so that you include Clay Processors
+                        The reason why you can remove most of the Small Houses after you finish the research tree is that you won't need so much Wu Zhu {getItem("wu_zhu")} anymore. Rearrange the city so that you include Clay Processors
                         and Porcelain Workshops. Some of the removed Small Houses replace with Medium Houses, which provide more Workers {getItem("china_worker")} per tile. It's sufficient to keep them at level 1.
                         When you reach level 24, unlock the following expansions:
 
                         <Image src={sketch_5} alt="" roundedCorners={false} spacing={true} maxHeight={'300px'}/>
 
-                        After you own this last set of free expansions, you can utilize the following effective layout:
+                        After you own this last set of free expansions, you can add more Clay Processors and Porcelain Workshops:
 
                         <LayoutsBook header={"Layout 4"} images={[layout_4_sector_1,layout_4_sector_2,layout_4_sector_3]} />
 
-                        This layout includes in total 8x Rice Farm, 4x Thread Processor, 3x Silk Workshop, 6x Clay Processor and 2x Porcelain Workshop (all at level 6). You can maintain this setup until the end of the event,
-                        or in the later stages, you may choose to add more Clay Processors and Porcelain Workshops at the expense of Thread Processors and Silk Workshops, if porcelain becomes your limiting resource in the final phases of the event.
+                        Note that this layout is only the first step towards producing Porcelain. As you produce more of it and upgrade the World Wonder further, you will need more Porcelain Workshops and Clay Processors (do it by replacing some of the Silk Workshops
+                        and Thread Processors - or possibly all of them, if you have prepared a decent reserve of Silk Threads and Silk). You will also require an increased output of Rice.
+                        Soon after reaching Layout 4, aim for the Layout 5, which will provide a good balance of resources until the end of the event:
+
+                        <LayoutsBook header={"Layout 5"} images={[layout_5_sector_1,layout_5_sector_2,layout_5_sector_3]} />
+
+                        Note that in Layout 5, all Thread Processors have been removed. Only do that if you have some reserve of Silk Threads, which you should have if you have collected resources consistently throughout the event.<br/><br/>
+
+                        In this final part of the event, many of you will likely have slightly different reserves of primary resources (such as Rice or Silk Threads) depending on how long it took to reach certain layouts
+                        and how consistently you collected productions. For this reason - if you find yourself needing a specific resource over time - you may need to make slight modifications to Layout 5 based on your particular needs. For example,
+                        if the current World Wonder offers bonus for Rice, you may remove some of your Rice Farms and replace them by other production buildings you need.
 
                     </TextBlock>
                 ) : null

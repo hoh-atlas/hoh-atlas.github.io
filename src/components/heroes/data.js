@@ -9,6 +9,7 @@ import Unit_AztecTlacateccatl_fullbody from '../../images/heroes/intro/fullbody/
 import Unit_BenjaminFranklin_fullbody from '../../images/heroes/intro/fullbody/Unit_BenjaminFranklin_fullbody.webp';
 import Unit_Charlemagne_fullbody from '../../images/heroes/intro/fullbody/Unit_Charlemagne_fullbody.webp';
 import Unit_Cleopatra_fullbody from '../../images/heroes/intro/fullbody/Unit_Cleopatra_fullbody.webp';
+import Unit_Confucius_fullbody from '../../images/heroes/intro/fullbody/Unit_Confucius_fullbody.webp';
 import Unit_CyrusTheGreat_fullbody from '../../images/heroes/intro/fullbody/Unit_CyrusTheGreat_fullbody.webp';
 import Unit_DArtagnan_fullbody from '../../images/heroes/intro/fullbody/Unit_DArtagnan_fullbody.webp';
 import Unit_Edison_fullbody from '../../images/heroes/intro/fullbody/Unit_Edison_fullbody.webp';
@@ -3580,7 +3581,7 @@ const allHeroes = [
     {
         id: "confucius",
         name: "Confucius",
-        image: "",
+        image: Unit_Confucius_fullbody,
         icon: Unit_Confucius,
         backdrop: "china",
         stars: 4,
