@@ -2731,9 +2731,9 @@ const allHeroes = [
         },
         abilityIcon: icon_hero_battle_ability_medusa,
         abilityName: "Petrifying Gaze",
-        abilityDescription: "Fixes her gaze at the biggest cluster of enemy units, applying the poison to all enemies in a range of <b>2</b>. The poison deals <b>400%</b> damage over <b>8s</b> and leaves affected units stunned for <b>3s</b>.",
+        abilityDescription: "Fixes her gaze at the biggest cluster of enemy units, applying the poison to all enemies in a range of <b>2</b>. The poison deals <b>200%</b> damage over <b>8s</b> and leaves affected units stunned for <b>2.5s</b>.",
         ability: [
-            "2,400%,8s,3s",
+            "2,200%,8s,2.5s",
         ],
         position: "backline",
         damageType: ["area_damage"],

@@ -33,11 +33,11 @@ const allSeasons = [
                 cost: 10,
                 free: {
                     resource: "energy",
-                    amount: 100
+                    amount: 160
                 },
                 premium: {
                     resource: "energy",
-                    amount: 200
+                    amount: 80
                 }
             },
             {
@@ -80,12 +80,12 @@ const allSeasons = [
                 id: 6,
                 cost: 55,
                 free: {
-                    resource: "arena_token",
-                    amount: 5
+                    resource: "energy",
+                    amount: 80
                 },
                 premium: {
-                    resource: "arena_token",
-                    amount: 10
+                    resource: "energy",
+                    amount: 160
                 }
             },
             {
@@ -104,12 +104,12 @@ const allSeasons = [
                 id: 8,
                 cost: 80,
                 free: {
-                    resource: "ath_compass",
+                    resource: "arena_token",
                     amount: 5
                 },
                 premium: {
-                    resource: "ath_compass",
-                    amount: 5
+                    resource: "energy",
+                    amount: 160
                 }
             },
             {
@@ -117,11 +117,11 @@ const allSeasons = [
                 cost: 90,
                 free: {
                     resource: "energy",
-                    amount: 100
+                    amount: 80
                 },
                 premium: {
-                    resource: "energy",
-                    amount: 200
+                    resource: "arena_token",
+                    amount: 5
                 }
             },
             {
@@ -180,8 +180,8 @@ const allSeasons = [
                     amount: 5
                 },
                 premium: {
-                    resource: "arena_token",
-                    amount: 10
+                    resource: "energy",
+                    amount: 160
                 }
             },
             {
@@ -213,11 +213,11 @@ const allSeasons = [
                 cost: 115,
                 free: {
                     resource: "energy",
-                    amount: 100
+                    amount: 80
                 },
                 premium: {
                     resource: "energy",
-                    amount: 200
+                    amount: 160
                 }
             },
             {
@@ -252,19 +252,19 @@ const allSeasons = [
                     amount: 5
                 },
                 premium: {
-                    resource: "arena_token",
-                    amount: 10
+                    resource: "energy",
+                    amount: 160
                 }
             },
             {
                 id: 21,
                 cost: 125,
                 free: {
-                    resource: "ath_compass",
-                    amount: 5
+                    resource: "energy",
+                    amount: 80
                 },
                 premium: {
-                    resource: "ath_compass",
+                    resource: "arena_token",
                     amount: 5
                 }
             },
@@ -285,11 +285,11 @@ const allSeasons = [
                 cost: 135,
                 free: {
                     resource: "energy",
-                    amount: 100
+                    amount: 80
                 },
                 premium: {
                     resource: "energy",
-                    amount: 200
+                    amount: 160
                 }
             },
             {
