@@ -4674,9 +4674,9 @@ const allHeroes = [
         },
         abilityIcon: icon_hero_battle_ability_vincentvangogh,
         abilityName: "Starry Night Storm",
-        abilityDescription: "Creates a swirl of color at the location of the current target. For <b>6s</b>, the swirl will move across the battlefield in a spiral shape and deal up to <b>360%</b> damage and reduce defense by <b>8%</b> to all enemy units it comes into contact with.",
+        abilityDescription: "Creates a swirl of color at the location of the current target. For <b>6s</b>, the swirl will move across the battlefield in a spiral shape and deal up to <b>882%</b> damage and reduce defense by <b>11%</b> to all enemy units it comes into contact with.",
         ability: [
-            "6s,360%,8%,",
+            "6s,882%,11%,",
         ],
         position: "backline",
         damageType: ["area_damage"],

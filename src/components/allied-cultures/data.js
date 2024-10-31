@@ -4580,7 +4580,7 @@ const allAlliedCultures = [
                 rewards: [
                     {
                         resource: "wu_zhu",
-                        amount: 200
+                        amount: 2000
                     }
                 ],
                 quests: [
@@ -4598,7 +4598,7 @@ const allAlliedCultures = [
                     {
                         id: 2,
                         tasks: [
-                            "Have <b>1 Rice Farm</b> on level <b>1</b> in <b>China</b>",
+                            "Have <b>2 Rice Farms</b> on level <b>1</b> in <b>China</b>",
                             "Have <b>1 Luxurious Rice Farm</b> on level <b>1</b> in <b>China</b>"
                         ],
                         relation: "or",
@@ -12432,7 +12432,7 @@ const allAlliedCultures = [
                 rewards: [
                     {
                         resource: "wu_zhu",
-                        amount: 200
+                        amount: 2000
                     }
                 ],
                 quests: [
@@ -12450,7 +12450,7 @@ const allAlliedCultures = [
                     {
                         id: 2,
                         tasks: [
-                            "Have <b>1 Rice Farm</b> on level <b>1</b> in <b>China</b>",
+                            "Have <b>2 Rice Farms</b> on level <b>1</b> in <b>China</b>",
                             "Have <b>1 Luxurious Rice Farm</b> on level <b>1</b> in <b>China</b>"
                         ],
                         relation: "or",
@@ -20284,7 +20284,7 @@ const allAlliedCultures = [
                 rewards: [
                     {
                         resource: "wu_zhu",
-                        amount: 200
+                        amount: 2000
                     }
                 ],
                 quests: [
@@ -20302,7 +20302,7 @@ const allAlliedCultures = [
                     {
                         id: 2,
                         tasks: [
-                            "Have <b>1 Rice Farm</b> on level <b>1</b> in <b>China</b>",
+                            "Have <b>2 Rice Farms</b> on level <b>1</b> in <b>China</b>",
                             "Have <b>1 Luxurious Rice Farm</b> on level <b>1</b> in <b>China</b>"
                         ],
                         relation: "or",
