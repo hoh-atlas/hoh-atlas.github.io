@@ -33,11 +33,11 @@ const allSeasons = [
                 cost: 10,
                 free: {
                     resource: "energy",
-                    amount: 160
+                    amount: 80
                 },
                 premium: {
                     resource: "energy",
-                    amount: 80
+                    amount: 160
                 }
             },
             {
