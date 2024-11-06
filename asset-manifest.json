@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.8d92c5ab.css",
-    "main.js": "/static/js/main.eb5e19a0.js",
+    "main.js": "/static/js/main.17b310e0.js",
     "static/media/layout_5_sector_3.webp": "/static/media/layout_5_sector_3.c0f317a3382f299fbe11.webp",
+    "static/media/layout_egypt_3_sector_3.webp": "/static/media/layout_egypt_3_sector_3.176bb3c09225286b101a.webp",
+    "static/media/layout_egypt_4_sector_3.webp": "/static/media/layout_egypt_4_sector_3.ca8d981c13c641b372d7.webp",
     "static/media/layout_4_sector_3.webp": "/static/media/layout_4_sector_3.e88146e9c9ed7496bcb5.webp",
     "static/media/layout_4_sector_1.webp": "/static/media/layout_4_sector_1.7c73d107ef72fe873aac.webp",
     "static/media/layout_4_sector_2.webp": "/static/media/layout_4_sector_2.81a4c629cfe50df59915.webp",
@@ -17,7 +19,15 @@
     "static/media/layout_2_sector_1.webp": "/static/media/layout_2_sector_1.a68143dfd9de8d6574fc.webp",
     "static/media/layout_3_sector_2.webp": "/static/media/layout_3_sector_2.02bfef274567a85d3326.webp",
     "static/media/layout_1_sector_1.webp": "/static/media/layout_1_sector_1.f6d1432f942e9f1ebc40.webp",
+    "static/media/layout_egypt_4_sector_1.webp": "/static/media/layout_egypt_4_sector_1.3d59ab6df623d4f138d0.webp",
+    "static/media/layout_egypt_3_sector_1.webp": "/static/media/layout_egypt_3_sector_1.e107b337b652e9a53eb1.webp",
+    "static/media/layout_egypt_4_sector_2.webp": "/static/media/layout_egypt_4_sector_2.4d08c55513709dbc5b99.webp",
+    "static/media/layout_egypt_3_sector_2.webp": "/static/media/layout_egypt_3_sector_2.0c563244f96ce56232fa.webp",
+    "static/media/layout_egypt_2_sector_1.webp": "/static/media/layout_egypt_2_sector_1.ec588147cc8158f47c9e.webp",
+    "static/media/layout_egypt_1_sector_1.webp": "/static/media/layout_egypt_1_sector_1.6bf37a3f01c12d2a62fb.webp",
+    "static/media/layout_egypt_2_sector_2.webp": "/static/media/layout_egypt_2_sector_2.b0086f13339fc8f9732d.webp",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
+    "static/media/layout_egypt_1_sector_2.webp": "/static/media/layout_egypt_1_sector_2.96ca42b9a15ada45e769.webp",
     "static/media/china_city.webp": "/static/media/china_city.415736e9ff5f7bc3bfe7.webp",
     "static/media/egypt_city.webp": "/static/media/egypt_city.7719ac968df164a2b372.webp",
     "static/media/hoh_background.webp": "/static/media/hoh_background.4da87c84804609d91f18.webp",
@@ -427,15 +437,19 @@
     "static/media/quests_icon.webp": "/static/media/quests_icon.87ac5aaf9354f43a94fb.webp",
     "static/media/icon_xp_scroll_legendary.webp": "/static/media/icon_xp_scroll_legendary.097840305308205cf48b.webp",
     "static/media/CampaignEnergy.webp": "/static/media/CampaignEnergy.7612f7c4e7a95204fa38.webp",
+    "static/media/sketch_egypt_4.webp": "/static/media/sketch_egypt_4.c4642540e078d6908244.webp",
     "static/media/icon_hero_battle_ability_mariecurie.webp": "/static/media/icon_hero_battle_ability_mariecurie.08bc5709ade781b99d7e.webp",
     "static/media/icon_hero_battle_ability_cyrusthegreat.webp": "/static/media/icon_hero_battle_ability_cyrusthegreat.592051a4cd32f7e853f0.webp",
     "static/media/icon-goldfood.webp": "/static/media/icon-goldfood.1d0a6d9c7651a7bc7d36.webp",
     "static/media/icon_hero_battle_ability_kingminos.webp": "/static/media/icon_hero_battle_ability_kingminos.baa51876efd1f7b6d8a6.webp",
     "static/media/icon_hero_battle_ability_thomasalvaedison.webp": "/static/media/icon_hero_battle_ability_thomasalvaedison.5d6c41b275dfb7142f6e.webp",
+    "static/media/sketch_egypt_2.webp": "/static/media/sketch_egypt_2.4c18f5dce643c4b55fde.webp",
     "static/media/icon_hero_battle_ability_siouxshaman.webp": "/static/media/icon_hero_battle_ability_siouxshaman.058f4525e94830eb891a.webp",
     "static/media/Questgiver_Egypt_Cleopatra.webp": "/static/media/Questgiver_Egypt_Cleopatra.36074d7f135be593405f.webp",
     "static/media/icon_hero_battle_ability_ottomangeneral.webp": "/static/media/icon_hero_battle_ability_ottomangeneral.6476cd475009b9a47143.webp",
     "static/media/icon_hero_battle_ability_dartagnan.webp": "/static/media/icon_hero_battle_ability_dartagnan.207c3bd9cd3b86620c30.webp",
+    "static/media/sketch_egypt_3.webp": "/static/media/sketch_egypt_3.77583929b04443f4af8e.webp",
+    "static/media/sketch_egypt_1.webp": "/static/media/sketch_egypt_1.96fd23d572928c9b0c67.webp",
     "static/media/icon_hero_battle_ability_quinshihuang.webp": "/static/media/icon_hero_battle_ability_quinshihuang.36fa5fbcc628b66829c9.webp",
     "static/media/icon_hero_battle_ability_artemisiaiofcaria.webp": "/static/media/icon_hero_battle_ability_artemisiaiofcaria.972ccff930b4b57dccc5.webp",
     "static/media/icon_hero_battle_ability_miyamotomusashi.webp": "/static/media/icon_hero_battle_ability_miyamotomusashi.4b6243abab3b2a371782.webp",
@@ -467,6 +481,7 @@
     "static/media/icon_xp_hero.webp": "/static/media/icon_xp_hero.8b5eebf952140548836d.webp",
     "static/media/icon_commander_crest_superior.webp": "/static/media/icon_commander_crest_superior.ea6628d3df0551ecfb30.webp",
     "static/media/icon_greek_lyre.webp": "/static/media/icon_greek_lyre.be2132f1373f31670438.webp",
+    "static/media/sketch_egypt_5.webp": "/static/media/sketch_egypt_5.ffe393323b8d2b60a6ba.webp",
     "static/media/icon_fragrant_potpourri.webp": "/static/media/icon_fragrant_potpourri.65601ed9393d95d689d0.webp",
     "static/media/icon_champion_crest_superior.webp": "/static/media/icon_champion_crest_superior.b82c02d7f9a7e70f6278.webp",
     "static/media/icon_frankish_fibula.webp": "/static/media/icon_frankish_fibula.f035f856035b788270cb.webp",
@@ -676,10 +691,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.8d92c5ab.css.map": "/static/css/main.8d92c5ab.css.map",
-    "main.eb5e19a0.js.map": "/static/js/main.eb5e19a0.js.map"
+    "main.17b310e0.js.map": "/static/js/main.17b310e0.js.map"
   },
   "entrypoints": [
     "static/css/main.8d92c5ab.css",
-    "static/js/main.eb5e19a0.js"
+    "static/js/main.17b310e0.js"
   ]
 }
