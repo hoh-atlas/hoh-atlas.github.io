@@ -35,6 +35,21 @@ import sketch_2 from "../../../images/allied-cultures/strategies/sketch_2.webp";
 import sketch_3 from "../../../images/allied-cultures/strategies/sketch_3.webp";
 import sketch_4 from "../../../images/allied-cultures/strategies/sketch_4.webp";
 import sketch_5 from "../../../images/allied-cultures/strategies/sketch_5.webp";
+import sketch_egypt_1 from "../../../images/allied-cultures/strategies/sketch_egypt_1.webp";
+import sketch_egypt_2 from "../../../images/allied-cultures/strategies/sketch_egypt_2.webp";
+import sketch_egypt_3 from "../../../images/allied-cultures/strategies/sketch_egypt_3.webp";
+import sketch_egypt_4 from "../../../images/allied-cultures/strategies/sketch_egypt_4.webp";
+import sketch_egypt_5 from "../../../images/allied-cultures/strategies/sketch_egypt_5.webp";
+import layout_egypt_1_sector_1 from "../../../images/allied-cultures/strategies/layout_egypt_1_sector_1.webp";
+import layout_egypt_1_sector_2 from "../../../images/allied-cultures/strategies/layout_egypt_1_sector_2.webp";
+import layout_egypt_2_sector_1 from "../../../images/allied-cultures/strategies/layout_egypt_2_sector_1.webp";
+import layout_egypt_2_sector_2 from "../../../images/allied-cultures/strategies/layout_egypt_2_sector_2.webp";
+import layout_egypt_3_sector_1 from "../../../images/allied-cultures/strategies/layout_egypt_3_sector_1.webp";
+import layout_egypt_3_sector_2 from "../../../images/allied-cultures/strategies/layout_egypt_3_sector_2.webp";
+import layout_egypt_3_sector_3 from "../../../images/allied-cultures/strategies/layout_egypt_3_sector_3.webp";
+import layout_egypt_4_sector_1 from "../../../images/allied-cultures/strategies/layout_egypt_4_sector_1.webp";
+import layout_egypt_4_sector_2 from "../../../images/allied-cultures/strategies/layout_egypt_4_sector_2.webp";
+import layout_egypt_4_sector_3 from "../../../images/allied-cultures/strategies/layout_egypt_4_sector_3.webp";
 
 const Strategies = (props) => {
 
@@ -66,7 +81,112 @@ const Strategies = (props) => {
             {
                 egyptCultures.includes(alliedCulture.id) ? (
                     <TextBlock>
-                        No content available at the moment.
+                        When the Allied Culture event begins, you should keep the following goals in mind:
+
+                        <ul>
+                            <li>Build as many Small Houses as possible to produce a lot of Deben {getItem("deben")}</li>
+                            <li>Prioritize placing expansions near the river first, then continue expanding farther out</li>
+                            <li>Sell the first Medium House required by the questline as soon as you complete the quest</li>
+                            <li>Short productions are more effective than the long ones, so the shorter you choose, the faster you will progress</li>
+                            <li>This guide will help you compete with Gold League players by maximizing the effectiveness of your city. To achieve that, you still need to play regularly of course</li>
+                            <li>Although this guide is not yet fully complete, it offers a solid foundation for your Egypt city, which you can further build upon in the final stages of the event according to your specific needs</li>
+                        </ul>
+
+                        In the picture below, you can find the sketch of the Egypt city right at the beginning:
+
+                        <Image src={sketch_egypt_1} alt="" roundedCorners={false} spacing={true} maxHeight={'300px'}/>
+
+                        First, you want to maximize the number of expansions, so that you can place many Small Houses to keep unlocking technologies in the research tree quickly. Keep placing the Small Houses
+                        right next to the river and build one of each production buildings and workshops. When you upgrade
+                        the World Wonder to level 2, you will have 5 expansions in total. Place them as follows:
+
+                        <Image src={sketch_egypt_2} alt="" roundedCorners={false} spacing={true} maxHeight={'300px'}/>
+
+                        After you unlock 'Geometry', 'Egyptian Diplomacy' and 'Joists' technologies, make sure to upgrade all your houses and production buildings to level 2. Then, continue with the upper row of technologies
+                        until you unlock 'Burial Rites'. At this point, start upgrading your Small Houses to level 3. Suggested layout for this state:
+
+                        <LayoutsBook header={"Layout 1"} images={[layout_egypt_1_sector_1,layout_egypt_1_sector_2]} />
+
+                        Continue with the second row of technologies. Upgrade two Small Wells as soon as you unlock 'Hieroglyphs' - that will maximize the irrigation bonus for both workshops. Keep with this layout until
+                        you upgrade the World Wonder to level 7. That will unlock a new set of expansions. Place them as follows:
+
+                        <Image src={sketch_egypt_3} alt="" roundedCorners={false} spacing={true} maxHeight={'300px'}/>
+
+                        Spam the free space with Small Houses, so that you can quickly navigate to 'Egyptian Consensus' technology. Also make sure to initiate the first construction
+                        phases of the Nile Bridge at any time when you don't necessarily need Deben for other upgrades. The 'Egyptian Consensus' technology will unlock level 4 for Small Houses, so once unlocked, try to uprade your houses as soon as possible.
+                        Next, unlock the remaining technologies of this column. Then, prioritize upgrading your production buildings (Papyrus Field and Gold Mine) to level 4, followed by your workshops (Papyrus Workshop and Goldsmith).
+                        Suggested layout for this state:
+
+                        <LayoutsBook header={"Layout 2"} images={[layout_egypt_2_sector_1,layout_egypt_2_sector_2]} />
+
+                        This layout contains maximized number of Small Houses, as collecting Deben is the priority for now. Keep upgrading the World Wonder, while focus on researching technologies so that you can
+                        take your Small Houses to level 5. Therefore, 'Astrology' is the next goal in the research. Keep researching technologies and upgrading all your houses, production buildings, workshops as well as channels
+                        to level 5. Once you upgrade the World Wonder to level 13 and 17, you will get 11 expansions (5+6) in total. Place the expansions as follows:
+
+                        <Image src={sketch_egypt_4} alt="" roundedCorners={false} spacing={true} maxHeight={'300px'}/>
+
+                        In the last column of technologies, unlock 'Astronomy' and 'Scaffolding' first. There is no need to push Small Houses to level 6, so it will be more beneficial to upgrade your workshops first.<br/><br/>
+                        
+                        Keep filling the space with more workshops (Papyrus Workshop and Goldsmith - add one of each) and more production buildings. Generally, the goal should be to have 4 workshops (2+2) and around 5 production buildings of each (Papyrus Fields
+                        and Goldmines).<br/><br/>
+                        
+                        {
+                            alliedCulture.id === "egypt_great_sphinx" ? (
+                                <span>
+                                    Because the World Wonder of this event offers a bonus for Gold Ore production, we will leave out some Gold Mines and build Papyrus Fields instead. Take a look at the Layout 3 to find the efficient way of use of our
+                                    currently available space.
+
+                                    <LayoutsBook header={"Layout 3"} images={[layout_egypt_3_sector_1,layout_egypt_3_sector_2,layout_egypt_3_sector_3]} />
+
+                                    This layout is heavily focused on workshops. If you maximize the irrigation buildings, the workshops will receive the maximum possible irrigation boost. Not all Small Houses have full irrigation bonus, but that is not necessary
+                                    now when all relevant technologies in the research are finished.<br/><br/>
+                                </span>
+                            ) : alliedCulture.id === "egypt_abu_simbel" ? (
+                                <span>
+                                    Because the World Wonder of this event offers a bonus for Papyrus production, you can leave out some Papyrus Fields and build Gold Mines instead. The layout 3 for this state is not yet available, but we will add it soon.<br/><br/>
+
+                                </span>
+                            ) : alliedCulture.id === "egypt_cheops_pyramid" ? (
+                                <span>
+                                    The layout 3 for this state is not yet available, but we will add it soon.<br/><br/>
+                                </span>
+                            ) : (
+                                <span>
+                                    Missing content!
+                                </span>
+                            )
+                        }
+
+                        Keep upgrading your World Wonder to level 24 to unlock the last set of expansions. Place them as follows:
+
+                        <Image src={sketch_egypt_5} alt="" roundedCorners={false} spacing={true} maxHeight={'300px'}/>
+
+                        Fill this space with additional production buildings, to make sure your workshops can run more consistently.<br/><br/>
+
+                        {
+                            alliedCulture.id === "egypt_great_sphinx" ? (
+                                <span>
+                                     Suggested layout for the final state, with all available expansions, is here:
+
+                                    <LayoutsBook header={"Layout 4"} images={[layout_egypt_4_sector_1,layout_egypt_4_sector_2,layout_egypt_4_sector_3]} />
+                                </span>
+                            ) : alliedCulture.id === "egypt_abu_simbel" ? (
+                                <span>
+                                    We are currently working on the final section of this guide to help you with the final layouts of the Egypt city,
+                                    and we plan to have it ready in the near future.
+
+                                </span>
+                            ) : alliedCulture.id === "egypt_cheops_pyramid" ? (
+                                <span>
+                                    We are currently working on the next sections of this guide to help you with the final layouts of the Egypt city,
+                                    and we plan to have it ready in the near future.
+                                </span>
+                            ) : (
+                                <span>
+                                    Missing content!
+                                </span>
+                            )
+                        }
 
                     </TextBlock>
                 ) : chinaCultures.includes(alliedCulture.id) ? (

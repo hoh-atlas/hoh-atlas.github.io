@@ -30,6 +30,16 @@ import layout_4_sector_3 from "../../../images/allied-cultures/strategies/layout
 import layout_5_sector_1 from "../../../images/allied-cultures/strategies/layout_5_sector_1.webp";
 import layout_5_sector_2 from "../../../images/allied-cultures/strategies/layout_5_sector_2.webp";
 import layout_5_sector_3 from "../../../images/allied-cultures/strategies/layout_5_sector_3.webp";
+import layout_egypt_1_sector_1 from "../../../images/allied-cultures/strategies/layout_egypt_1_sector_1.webp";
+import layout_egypt_1_sector_2 from "../../../images/allied-cultures/strategies/layout_egypt_1_sector_2.webp";
+import layout_egypt_2_sector_1 from "../../../images/allied-cultures/strategies/layout_egypt_2_sector_1.webp";
+import layout_egypt_2_sector_2 from "../../../images/allied-cultures/strategies/layout_egypt_2_sector_2.webp";
+import layout_egypt_3_sector_1 from "../../../images/allied-cultures/strategies/layout_egypt_3_sector_1.webp";
+import layout_egypt_3_sector_2 from "../../../images/allied-cultures/strategies/layout_egypt_3_sector_2.webp";
+import layout_egypt_3_sector_3 from "../../../images/allied-cultures/strategies/layout_egypt_3_sector_3.webp";
+import layout_egypt_4_sector_1 from "../../../images/allied-cultures/strategies/layout_egypt_4_sector_1.webp";
+import layout_egypt_4_sector_2 from "../../../images/allied-cultures/strategies/layout_egypt_4_sector_2.webp";
+import layout_egypt_4_sector_3 from "../../../images/allied-cultures/strategies/layout_egypt_4_sector_3.webp";
 
 const Layouts = (props) => {
     // virtual-graph-paper dot com
@@ -61,7 +71,41 @@ const Layouts = (props) => {
             {
                 egyptCultures.includes(alliedCulture.id) ? (
                     <TextBlock>
-                        No content available at the moment.
+                        <ul><li>Layout up to level 7 of the World Wonder:</li></ul>
+
+                        <LayoutsBook header={"Layout 1"} images={[layout_egypt_1_sector_1,layout_egypt_1_sector_2]} />
+
+                        <ul><li>Layout up to level 13 of the World Wonder (great focus on generating Deben, to unlock technologies quickly):</li></ul>
+
+                        <LayoutsBook header={"Layout 2"} images={[layout_egypt_2_sector_1,layout_egypt_2_sector_2]} />
+
+                        {
+                            alliedCulture.id === "egypt_great_sphinx" ? (
+                                <span>
+                                    <ul><li>Layout up to level 24 of the World Wonder (focus on workshops):</li></ul>
+
+                                    <LayoutsBook header={"Layout 3"} images={[layout_egypt_3_sector_1,layout_egypt_3_sector_2,layout_egypt_3_sector_3]} />
+
+                                    <ul><li>Layout after level 24 of the World Wonder (all expansions available and focus on workshops):</li></ul>
+
+                                    <LayoutsBook header={"Layout 4"} images={[layout_egypt_4_sector_1,layout_egypt_4_sector_2,layout_egypt_4_sector_3]} />
+                                </span>
+                            ) : alliedCulture.id === "egypt_abu_simbel" ? (
+                                <span>
+                                    <ul><li>We are currently working on the next sections of this guide to help you with the final layouts of the Egypt city,
+                                    and we plan to have it ready for the upcoming events.</li></ul>
+                                </span>
+                            ) : alliedCulture.id === "egypt_cheops_pyramid" ? (
+                                <span>
+                                    <ul><li>We are currently working on the next sections of this guide to help you with the final layouts of the Egypt city,
+                                    and we plan to have it ready for the upcoming events.</li></ul>
+                                </span>
+                            ) : (
+                                <span>
+                                    Missing content!
+                                </span>
+                            )
+                        }
 
                     </TextBlock>
                 ) : chinaCultures.includes(alliedCulture.id) ? (
@@ -89,11 +133,13 @@ const Layouts = (props) => {
                         <ul><li>You may need to slightly adjust this final layout based on your specific needs and the level of activity you maintained during the event (i.e., the reserves you've accumulated).
                         If the current World Wonder provides a bonus for Rice, consider removing some Rice Farms to make space for other buildings you might need.</li></ul>
 
-                        Take a look at the <b>Strategies</b> tab for a more comprehensive guide and explanations of these layouts.
-
                     </TextBlock>
                 ) : null
             }
+
+            <TextBlock>
+                Take a look at the <b>Strategies</b> tab for a more comprehensive guide and explanations of these layouts.
+            </TextBlock>
       </>
     );
 }
