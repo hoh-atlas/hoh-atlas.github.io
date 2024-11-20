@@ -1,6 +1,6 @@
 import "./TableCheckpoints.css";
 
-import { getItem } from "../../shared/utils";
+import { getItemIcon } from "../../shared/utils";
 import resources from "../../shared/data/resources";
 import Image from "../../shared/Image";
 
@@ -41,7 +41,7 @@ const TableCheckpoints = (props) => {
                                                     {reward && resource ? (
                                                         <>
                                                             {reward.amount ? `${reward.amount}x ` : ""}
-                                                            {getItem(resource)}
+                                                            {getItemIcon(resource)}
                                                         </>
                                                     ) : ""}
                                                 </td>

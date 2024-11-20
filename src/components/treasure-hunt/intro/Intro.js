@@ -5,7 +5,7 @@ import Prologue from "../../shared/Prologue";
 import SectionDivider from "../../shared/SectionDivider";
 import H1 from "../../shared/H1";
 import TextBlock from "../../shared/TextBlock";
-import { getItem } from "../../shared/utils";
+import { getItemIcon } from "../../shared/utils";
 
 import icon_ath_attempt from "../../../images/treasure-hunt/intro/icon_ath_attempt.webp";
 import deco_battle_mode_banner_ath from "../../../images/treasure-hunt/intro/deco_battle_mode_banner_ath.webp";
@@ -62,8 +62,8 @@ const Intro = (props) => {
         <Image src={icon_ath_attempt} alt={""} spacing={true} width={'80px'}/>
 
         <TextBlock>
-            Unlike in the Campaign, where Stamina {getItem("energy")} is used, in ATH you need Compasses to initiate battles. Each encounter costs 1 Compass to start. The ATH week begins with 5 Compasses, which regenerate every 1.5 hours.
-            There is a cap of 10 Compasses at a time, so it's important to play regularly to be able to complete the ATH. Additional Compasses can be purchased with Coins {getItem("coins")} or Gems {getItem("gems")}, but they are quite expensive.
+            Unlike in the Campaign, where Stamina {getItemIcon("energy")} is used, in ATH you need Compasses to initiate battles. Each encounter costs 1 Compass to start. The ATH week begins with 5 Compasses, which regenerate every 1.5 hours.
+            There is a cap of 10 Compasses at a time, so it's important to play regularly to be able to complete the ATH. Additional Compasses can be purchased with Coins {getItemIcon("coins")} or Gems {getItemIcon("gems")}, but they are quite expensive.
             When playing actively and not losing to many battles, however, the free Compasses you generate should be sufficient to complete the event.
         </TextBlock>
 

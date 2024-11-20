@@ -56,13 +56,13 @@ const Intro = () => {
     <SectionDivider />
     <TextContainer
         centered={true}
-        headerTexts={['The World Fair event begins on the Live server! (Oct 23th 2024)']}
-        texts={[``]}
+        headerTexts={[`Season 3: Rome's Titans is coming soon! (Nov 19th 2024)`]}
+        texts={[`Check the Seasons page to find all the details about the upcoming Season 3: Rome's Titans!`]}
         style={{ marginBottom: '20px', marginTop: '5px' }}
         textRectangleHeight={'150px'}
-        imageUrls={[EventBackgroundWorldFair]}
-        links={[`https://hoh-atlas.com/#/events`]}
-        pulsate={true}
+        imageUrls={[]}
+        links={[`https://hoh-atlas.com/#/seasons`]}
+        pulsate={false}
         autoSlideSeconds={10}>
     </TextContainer>
 

@@ -30,7 +30,7 @@ const Heroes = (props) => {
 
     return <>
         <Prologue imageSrc={icon_reward_season_pass} alt={"Seasons"} maxHeight={"65px"}>
-            This is an overview of the unique heroes available in Arcanne Antimatter during this season.
+            This is an overview of featured heroes available in Arcanne Antimatter during this season.
         </Prologue>
 
         <SectionDivider/>

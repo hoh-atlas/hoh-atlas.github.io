@@ -7,7 +7,7 @@ import Prologue from "../../shared/Prologue";
 import SelectBox from "../../shared/SelectBox";
 import SectionDivider from "../../shared/SectionDivider";
 import useOptionURL from "../../shared/hooks/useOptionURL";
-import { getItem } from "../../shared/utils";
+import { getItemIcon } from "../../shared/utils";
 import H1 from "../../shared/H1";
 
 import allAlliedCultures from "../data";
@@ -66,7 +66,7 @@ const WorldWonder = (props) => {
                                               <>
                                                   {requirement.amount}x
                                                   {' '}
-                                                  {getItem(requirement.resource)}
+                                                  {getItemIcon(requirement.resource)}
                                                   {' '}
                                               </>
                                           ))
@@ -78,24 +78,29 @@ const WorldWonder = (props) => {
                                               <>
                                                   {bonus.amount}%
                                                   {' '}
-                                                  {getItem(bonus.resource)}
+                                                  {getItemIcon(bonus.resource)}
                                                   {' '}
                                               </>
                                           ))
                                       }
                                   </td>
                                   <td>
-                                      {
-                                          level.reward && (
-                                              <>
-                                                  {level.reward?.amount}x
-                                                  {' '}
-                                                  {getItem(level.reward?.resource)}
-                                                  {' '}
-                                              </>
-                                          )
-                                      }
-                                  </td>
+                                    {Array.isArray(level.reward) ? (
+                                        level.reward.map((reward, index) => (
+                                            <span key={index}>
+                                                {reward.amount}x {' '}
+                                                {getItemIcon(reward.resource)} {' '}
+                                            </span>
+                                        ))
+                                    ) : (
+                                        level.reward && (
+                                            <>
+                                                {level.reward.amount}x {' '}
+                                                {getItemIcon(level.reward.resource)} {' '}
+                                            </>
+                                        )
+                                    )}
+                                </td>
                               </tr>
                           </>
                       ))

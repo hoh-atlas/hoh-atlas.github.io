@@ -1,6 +1,6 @@
 import './QuestlineRewards.css';
 
-import { getItem } from '../../shared/utils';
+import { getItemIcon } from '../../shared/utils';
 
 const QuestlineRewards = (props) => {
     return (
@@ -9,7 +9,7 @@ const QuestlineRewards = (props) => {
                 <b>Final Rewards:</b>
                 {props.finalRewards && props.finalRewards.map((finalReward, index) => (
                     <div key={index} className="reward-item">
-                        {finalReward.amount}x {getItem(finalReward.resource)}
+                        {finalReward.amount}x {getItemIcon(finalReward.resource)}
                     </div>
                 ))}
             </div>

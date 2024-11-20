@@ -4,7 +4,7 @@ import Prologue from "../../shared/Prologue";
 import SectionDivider from "../../shared/SectionDivider";
 import Icon from "../../shared/Icon";
 import resources from "../../shared/data/resources";
-import { leftJoinArrays, getItem } from "../../shared/utils";
+import { leftJoinArrays, getItemIcon } from "../../shared/utils";
 import { Link } from "react-router-dom";
 
 import icon_amber from "../../../images/shared/resources/icon_amber.webp";
@@ -66,8 +66,8 @@ const Research = () => {
                     erasPriorities.map((era) => (
                         <tr>
                             <th>{era}</th>
-                            <td>{getItem(separatedByEras[era][0]?.id)} {separatedByEras[era][0]?.name}</td>
-                            <td>{getItem(separatedByEras[era][1]?.id)} {separatedByEras[era][1]?.name}</td>
+                            <td>{getItemIcon(separatedByEras[era][0]?.id)} {separatedByEras[era][0]?.name}</td>
+                            <td>{getItemIcon(separatedByEras[era][1]?.id)} {separatedByEras[era][1]?.name}</td>
                         </tr>
                     ))
                 }

@@ -3,7 +3,7 @@ import "../../shared/Table.css";
 import React from "react";
 
 import resources from "../../shared/data/resources";
-import { getItem } from "../../shared/utils";
+import { getItemIcon } from "../../shared/utils";
 
 import common_map_encounter from "../../../images/campaign/provinces/common_map_encounter.webp";
 import common_map_encounter_xp from "../../../images/campaign/provinces/common_map_encounter_xp.webp";
@@ -110,7 +110,7 @@ const TableProvince = (props) => {
                                 !isBaseColumn(oneColumn) &&
                                 oneColumn.columns.map((column) => (
                                     <th colSpan={maxOccurrences[column]}>
-                                        {getItem(column)}
+                                        {getItemIcon(column)}
                                     </th>
                                 ))
                             ))                                   
@@ -125,7 +125,7 @@ const TableProvince = (props) => {
                                 COLUMNS.map((oneColumn) => (
                                     isBaseColumn(oneColumn) ?
                                         baseColumns2.includes(oneColumn) ?
-                                        <td rowSpan={2}>{encounter.firstVictoryBonus.map((reward) => <div style={{ display: 'inline-flex', marginRight: '5px'}}>{reward.amount}&nbsp;{getItem(reward.resource)}</div>)}</td> :
+                                        <td rowSpan={2}>{encounter.firstVictoryBonus.map((reward) => <div style={{ display: 'inline-flex', marginRight: '5px'}}>{reward.amount}&nbsp;{getItemIcon(reward.resource)}</div>)}</td> :
                                         <td rowSpan={2}>
                                                 <div style={{backgroundImage: `url(${encounter.special ? common_map_encounter_xp : common_map_encounter})`, width: '30px', height: '30px', display: 'flex', justifyContent: 'center', margin: '0px auto', color: 'white', fontWeight: 'bold', textShadow: 'rgb(0,0,0) 1px 1px 1px', zIndex: '2', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', position: 'relative'}}>
                                                     <p style={{marginTop: '3px', marginRight: `${encounter.special ? '8px' : '10px'}`, alignSelf: 'center', fontSize: '13px'}}>

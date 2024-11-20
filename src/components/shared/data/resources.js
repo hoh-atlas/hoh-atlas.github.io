@@ -5,6 +5,7 @@ import bronze_bracelet from '../../../images/shared/resources/bronze_bracelet.we
 import CampaignEnergy from '../../../images/shared/resources/CampaignEnergy.webp';
 import cape from '../../../images/shared/resources/cape.webp';
 import cartwheel from '../../../images/shared/resources/cartwheel.webp';
+import ceramic_treasure from '../../../images/shared/resources/ceramic_treasure.webp';
 import ceremonial_dress from '../../../images/shared/resources/ceremonial_dress.webp';
 import chili from '../../../images/shared/resources/chili.webp';
 import clay from '../../../images/shared/resources/clay.webp';
@@ -14,15 +15,18 @@ import column from '../../../images/shared/resources/column.webp';
 import culture_bonus from '../../../images/shared/resources/culture_bonus.webp';
 import deben from '../../../images/shared/resources/deben.webp';
 import door from '../../../images/shared/resources/door.webp';
+import fish from '../../../images/shared/resources/fish.webp';
 import Food from '../../../images/shared/resources/Food.webp';
 import food_bonus from '../../../images/shared/resources/food_bonus.webp';
 import Gem from '../../../images/shared/resources/Gem.webp';
 import goblet from '../../../images/shared/resources/goblet.webp';
 import gold_laurel from '../../../images/shared/resources/gold_laurel.webp';
+import gold_treasure from '../../../images/shared/resources/gold_treasure.webp';
 import golden_mask from '../../../images/shared/resources/golden_mask.webp';
 import goods from '../../../images/shared/resources/goods.webp';
 import goods_bonus from '../../../images/shared/resources/goods_bonus.webp';
 import herbs from '../../../images/shared/resources/herbs.webp';
+import honey from '../../../images/shared/resources/honey.webp';
 import icon_agate from '../../../images/shared/resources/icon_agate.webp';
 import icon_amber from '../../../images/shared/resources/icon_amber.webp';
 import icon_amethyst from '../../../images/shared/resources/icon_amethyst.webp';
@@ -49,6 +53,8 @@ import icon_event_world_fair_tokens from '../../../images/shared/resources/icon_
 import icon_expansion_city_capital_land from '../../../images/shared/resources/icon_expansion_city_capital_land.webp';
 import icon_expansion_city_china_land from '../../../images/shared/resources/icon_expansion_city_china_land.webp';
 import icon_expansion_city_egypt_land from '../../../images/shared/resources/icon_expansion_city_egypt_land.webp';
+import icon_expansion_city_vikings_land from '../../../images/shared/resources/icon_expansion_city_vikings_land.webp';
+import icon_expansion_city_vikings_water from '../../../images/shared/resources/icon_expansion_city_vikings_water.webp';
 import icon_folio_of_enlightenment from '../../../images/shared/resources/icon_folio_of_enlightenment.webp';
 import icon_fragrant_potpourri from '../../../images/shared/resources/icon_fragrant_potpourri.webp';
 import icon_frankish_fibula from '../../../images/shared/resources/icon_frankish_fibula.webp';
@@ -120,14 +126,17 @@ import irrigation_0 from '../../../images/shared/resources/irrigation_0.webp';
 import irrigation_1 from '../../../images/shared/resources/irrigation_1.webp';
 import irrigation_2 from '../../../images/shared/resources/irrigation_2.webp';
 import irrigation_3 from '../../../images/shared/resources/irrigation_3.webp';
+import jewel_treasure from '../../../images/shared/resources/jewel_treasure.webp';
 import kaolin from '../../../images/shared/resources/kaolin.webp';
 import linen_shirt from '../../../images/shared/resources/linen_shirt.webp';
 import manuscript from '../../../images/shared/resources/manuscript.webp';
 import marble_bust from '../../../images/shared/resources/marble_bust.webp';
 import mastery_point from '../../../images/shared/resources/mastery_point.webp';
+import mead from '../../../images/shared/resources/mead.webp';
 import mosaic from '../../../images/shared/resources/mosaic.webp';
 import moth_cocoon from '../../../images/shared/resources/moth_cocoon.webp';
 import parchment from '../../../images/shared/resources/parchment.webp';
+import pennies from '../../../images/shared/resources/pennies.webp';
 import pepper from '../../../images/shared/resources/pepper.webp';
 import planks from '../../../images/shared/resources/planks.webp';
 import porcelain from '../../../images/shared/resources/porcelain.webp';
@@ -139,6 +148,8 @@ import salt from '../../../images/shared/resources/salt.webp';
 import silk from '../../../images/shared/resources/silk.webp';
 import silk_threads from '../../../images/shared/resources/silk_threads.webp';
 import silver_ring from '../../../images/shared/resources/silver_ring.webp';
+import spice_treasure from '../../../images/shared/resources/spice_treasure.webp';
+import stockfish from '../../../images/shared/resources/stockfish.webp';
 import stone_tablet from '../../../images/shared/resources/stone_tablet.webp';
 import toga from '../../../images/shared/resources/toga.webp';
 import token_ath_fountain_of_youth from '../../../images/shared/resources/token_ath_fountain_of_youth.webp';
@@ -295,6 +306,16 @@ const resources = [
     {id: "silk_threads", name: "Silk Threads", img: silk_threads, category: "culture_china"},
     {id: "clay", name: "Clay", img: clay, category: "culture_china"},
     {id: "china_worker", name: "China Worker", img: icon_workers_city_china, category: "culture_china"},
+    // VIKINGS ALLIED CULTURE
+    {id: "pennies", name: "Pennies", img: pennies, category: "culture_vikings"},
+    {id: "honey", name: "Honey", img: honey, category: "culture_vikings"},
+    {id: "fish", name: "Fish", img: fish, category: "culture_vikings"},
+    {id: "mead", name: "Mead", img: mead, category: "culture_vikings"},
+    {id: "ceramic_treasure", name: "Ceramic Treasure", img: ceramic_treasure, category: "culture_vikings"},
+    {id: "gold_treasure", name: "Gold Treasure", img: gold_treasure, category: "culture_vikings"},
+    {id: "stockfish", name: "Stockfish", img: stockfish, category: "culture_vikings"},
+    {id: "spice_treasure", name: "Spice Treasure", img: spice_treasure, category: "culture_vikings"},
+    {id: "jewel_treasure", name: "Jewel Treasure", img: jewel_treasure, category: "culture_vikings"},
     // TOKENS
     {id: "token_ath_fountain_of_youth", name: "Fountain of Youth", img: token_ath_fountain_of_youth, category: "tokens"},
     // SEASONS
@@ -307,6 +328,8 @@ const resources = [
     {id: "expansion_regular", name: "Regular Expansion", img: icon_expansion_city_capital_land, category: "expansions"},
     {id: "expansion_egypt", name: "Egypt Expansion", img: icon_expansion_city_egypt_land, category: "expansions"},
     {id: "expansion_china", name: "China Expansion", img: icon_expansion_city_china_land, category: "expansions"},
+    {id: "expansion_vikings_land", name: "Vikings Land Expansion", img: icon_expansion_city_vikings_land, category: "expansions"},
+    {id: "expansion_vikings_water", name: "Vikings Water Expansion", img: icon_expansion_city_vikings_water, category: "expansions"},
     // ATTACK ICONS
     {id: "attack", name: "Attack", img: "https://i.ibb.co/YRn1jcX/icon-hero-atk.png", category: "attack"},
     {id: "defense", name: "Defense", img: "https://i.ibb.co/1Jy3KQ0/icon-hero-def.png", category: "attack"},

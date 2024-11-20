@@ -41,7 +41,7 @@ export const getItemData = (id) => {
     }
 }
 
-export const getItem = (id) => {
+export const getItemIcon = (id) => {
     const foundResource = resources.find(elem => elem.id === id);
     if (foundResource) {
         return <Icon resource={foundResource}/>

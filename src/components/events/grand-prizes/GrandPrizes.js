@@ -10,7 +10,7 @@ import H1 from "../../shared/H1";
 import Image from "../../shared/Image";
 import TextBlock from "../../shared/TextBlock";
 import Icon from "../../shared/Icon";
-import { getItem } from "../../shared/utils";
+import { getItemIcon } from "../../shared/utils";
 
 import allEvents from "../data";
 
@@ -71,8 +71,8 @@ const GrandPrizes = (props) => {
                                     <tr style={{ height: '70px' }}>
                                         <th>{oneReward.id}</th>
                                         <td>{oneReward.cost} <img src={event.payback.image} style={{ maxHeight: '24px', verticalAlign: 'bottom' }}/></td>
-                                        <td>{oneReward.free.amount}x {getItem(oneReward.free.resource)}</td>
-                                        <td>{oneReward.premium.amount}x {getItem(oneReward.premium.resource)}</td>
+                                        <td>{oneReward.free.amount}x {getItemIcon(oneReward.free.resource)}</td>
+                                        <td>{oneReward.premium.amount}x {getItemIcon(oneReward.premium.resource)}</td>
                                     </tr>
                                 ))
                             }

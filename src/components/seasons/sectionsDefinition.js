@@ -24,7 +24,7 @@ const sectionsDefinition = {
         {
             id: 3,
             url: "heroes",
-            name: "Unique Heroes",
+            name: "Featured Heroes",
             img: icon_hud_gacha_rift,
             show: true,
             dynamicSegments: [],

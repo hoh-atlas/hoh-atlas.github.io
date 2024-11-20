@@ -3,7 +3,7 @@ import "./Crests.css";
 import Prologue from "../../shared/Prologue";
 import SectionDivider from "../../shared/SectionDivider";
 import Icon from "../../shared/Icon";
-import { leftJoinArrays, getItem } from "../../shared/utils";
+import { leftJoinArrays, getItemIcon } from "../../shared/utils";
 import resources from "../../shared/data/resources";
 import { Link } from "react-router-dom";
 
@@ -82,7 +82,7 @@ const Crests = () => {
                     separatedByCrestTypes[crestTypes[0]].map((crest) => (
                         <tr>
                             <td>{crest.name}</td>
-                            <td>{getItem(crest.id)}</td>
+                            <td>{getItemIcon(crest.id)}</td>
                             <td>{crest.description1}</td>
                             <td>{crest.description2.split("_")[0]}{crest.link}{crest.description2.split("_")[1]}</td>
                         </tr>
@@ -109,7 +109,7 @@ const Crests = () => {
                     separatedByCrestTypes[crestTypes[1]].map((crest) => (
                         <tr>
                             <td>{crest.name}</td>
-                            <td>{getItem(crest.id)}</td>
+                            <td>{getItemIcon(crest.id)}</td>
                             <td>{crest.description1}</td>
                             <td>{crest.description2.split("_")[0]}{crest.link}{crest.description2.split("_")[1]}</td>
                         </tr>

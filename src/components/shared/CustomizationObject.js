@@ -1,4 +1,4 @@
-import { getItem } from "./utils";
+import { getItemIcon } from "./utils";
 import { obtainableFrom } from "./data/customizations";
 
 const CustomizationObject = ({ customization, showHeader = true, imageMaxHeight = '200px' }) => {    
@@ -45,26 +45,26 @@ const CustomizationObject = ({ customization, showHeader = true, imageMaxHeight 
                         </td>
                         {customization.boost && (
                             <td rowSpan={numberOfBodyRows} >
-                                {getItem(customization.boost.type)} ({customization.boost.amount})
+                                {getItemIcon(customization.boost.type)} ({customization.boost.amount})
                             </td>
                         )}
                         {customization.production && (
                             <td colSpan={2}>
                                 {customization.production.resource
-                                    ? getItem(customization.production.resource)
+                                    ? getItemIcon(customization.production.resource)
                                     : customization.production.resources &&
                                     customization.production.resources.map((resourceItem, index) => {
                                         if (typeof resourceItem === 'string') {
                                             return (
                                                 <span key={resourceItem}>
-                                                    {getItem(resourceItem)}
+                                                    {getItemIcon(resourceItem)}
                                                     {index < customization.production.resources.length - 1 && " "}
                                                 </span>
                                             );
                                         } else if (typeof resourceItem === 'object' && resourceItem.resource) {
                                             return (
                                                 <span key={resourceItem.resource}>
-                                                    {getItem(resourceItem.resource)} ({resourceItem.percentage}%)
+                                                    {getItemIcon(resourceItem.resource)} ({resourceItem.percentage}%)
                                                     {index < customization.production.resources.length - 1 && " "}
                                                 </span>
                                             );

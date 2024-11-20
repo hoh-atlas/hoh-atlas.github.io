@@ -14,7 +14,7 @@ import Prologue from "../../shared/Prologue";
 import Icon from "../../shared/Icon";
 import resources from "../../shared/data/resources";
 import SectionDivider from "../../shared/SectionDivider";
-import { getItem } from "../../shared/utils";
+import { getItemIcon } from "../../shared/utils";
 
 import icon_star from "../../../images/heroes/intro/icon_star.webp";
 
@@ -176,7 +176,7 @@ margin-top:
                                     ascension[parseInt(level)].map((requirement) => {
                                         return (
                                             <div key={level + 1} style={{ display: 'inline-block', marginRight: '10px' }}>
-                                                {requirement.amount}x {getItem(requirement.resource)}
+                                                {requirement.amount}x {getItemIcon(requirement.resource)}
                                             </div>
                                         )
                                     })

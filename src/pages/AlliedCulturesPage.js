@@ -40,7 +40,7 @@ const AlliedCulturesPage = (props) => {
     };
       
     const reorderAlliedCultures = (alliedCultures) => {
-        const firstCultureStartDate = new Date(Date.UTC(2024, 8, 26, 12, 0));
+        const firstCultureStartDate = new Date(Date.UTC(2024, 8, 19, 12, 0));
         const currentDate = new Date();
         const currentCultureIndex = getCurrentAlliedCultureIndex(firstCultureStartDate, currentDate, alliedCultures.length);
         return [

@@ -286,6 +286,420 @@ import hero_backdrop_windmill from "../../images/heroes/intro/backdrops/hero-bac
 
 const allHeroes = [
     {
+        id: "ragnar-lodbrok",
+        name: "Ragnar Lodbrok",
+        image: Unit_RagnarLodbrok_fullbody,
+        icon: Unit_RagnarLodbrok,
+        backdrop: "snow",
+        stars: 5,
+        heroClass: "commander",
+        unit: "heavy-infantry",
+        color: "green",
+        ascension: {
+            10: [
+                {
+                    resource: "green_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "green_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "green_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "war_horn",
+                    amount: 5
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 4
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 4
+                }
+            ],
+            60: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 3
+                }
+            ],
+            80: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 7
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 3
+                }
+            ]
+        },
+        abilityIcon: icon_hero_battle_ability_ragnarlodbrok,
+        abilityName: "Lion of the North",
+        abilityDescription: "Ragnar teleports towards the furthest enemy, taunting them and all units in a range of <b>2</b>, burning them for <b>64%</b> damage and shielding himself for <b>975%</b>.",
+        ability: [
+            "2,64%,975%",
+        ],
+        position: "frontline",
+        damageType: ["area_damage"],
+        tacticalType: ["debuff", "teleport", "shield"],
+    },
+    {
+        id: "lagertha",
+        name: "Lagertha",
+        image: Unit_Lagertha_fullbody,
+        icon: Unit_Lagertha,
+        backdrop: "snow",
+        stars: 5,
+        heroClass: "champion",
+        unit: "infantry",
+        color: "purple",
+        ascension: {
+            10: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 30
+                }
+            ],
+            20: [
+                {
+                    resource: "purple_crest_common",
+                    amount: 50
+                },
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 20
+                },
+                {
+                    resource: "war_horn",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "purple_crest_enhanced",
+                    amount: 100
+                },
+                {
+                    resource: "war_horn",
+                    amount: 5
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 70
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 2
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 90
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 4
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 4
+                }
+            ],
+            60: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 3
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                }
+            ],
+            80: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 7
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 3
+                }
+            ]
+        },
+        abilityIcon: icon_hero_battle_ability_lagertha,
+        abilityName: "Thunderstrike",
+        abilityDescription: "Lagertha becomes lightning itself and strikes the most powerful enemy unit, dealing <b>800%</b> and gaining <b>102%</b> attack speed for <b>8s</b>.",
+        ability: [
+            "800%,102%,8s",
+        ],
+        position: "frontline",
+        damageType: ["single_target"],
+        tacticalType: ["buff", "teleport"],
+    },
+    {
+        id: "leif-erikson",
+        name: "Leif Erikson",
+        image: Unit_LeifErikson_fullbody,
+        icon: Unit_LeifErikson,
+        backdrop: "snow",
+        stars: 4,
+        heroClass: "manipulator",
+        unit: "ranged",
+        color: "blue",
+        ascension: {
+            10: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 25
+                }
+            ],
+            20: [
+                {
+                    resource: "blue_crest_common",
+                    amount: 40
+                },
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 15
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 2
+                }
+            ],
+            30: [
+                {
+                    resource: "blue_crest_enhanced",
+                    amount: 90
+                },
+                {
+                    resource: "fragrant_potpourri",
+                    amount: 4
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 2
+                }
+            ],
+            40: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 60
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            ],
+            50: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 85
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                },
+                {
+                    resource: "shadow_dial",
+                    amount: 3
+                }
+            ],
+            60: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 100
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 2
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 2
+                }
+            ],
+            70: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 110
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 3
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 2
+                }
+            ],
+            80: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 120
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 6
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 3
+                }
+            ]
+        },
+        abilityIcon: icon_hero_battle_ability_leiferikson,
+        abilityName: "Viking Curse",
+        abilityDescription: "Leif Erikson curses the closest enemy unit, negating any positive effects they have, reducing their defense by <b>21%</b> for <b>6s</b> and commands all allies to attack them.",
+        ability: [
+            "21%,6s",
+        ],
+        position: "backline",
+        damageType: ["single_target"],
+        tacticalType: ["debuff"],
+    },
+    {
         id: "cleopatra",
         name: "Cleopatra",
         image: Unit_Cleopatra_fullbody,
@@ -1767,7 +2181,7 @@ const allHeroes = [
         abilityName: "Father of Defenders",
         abilityDescription: "Stomps the ground, dealing <b>95%</b> damage to all enemies within a range of <b>2</b> and reducing their accuracy by <b>20%</b> for <b>8s</b>. Also links all friendly units' souls for <b>8s</b>. Soul-linked units share incoming damage between them.",
         ability: [
-            "95%,2,20%,8s,8s",
+            "95%,2,20%,6s,6s",
         ],
         position: "frontline",
         damageType: ["area_damage"],

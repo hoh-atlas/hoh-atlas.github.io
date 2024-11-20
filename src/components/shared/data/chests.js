@@ -1,11 +1,19 @@
-import chest_color_crests_red_common_enhanced from "../../../images/shared/chests/chest_color_crests_red_common_enhanced.webp";
+import icon_chest_teslacrests_2_blue from "../../../images/shared/chests/icon_chest_teslacrests_2_blue.webp";
+import icon_chest_teslacrests_2_green from "../../../images/shared/chests/icon_chest_teslacrests_2_green.webp";
+import icon_chest_teslacrests_2_purple from "../../../images/shared/chests/icon_chest_teslacrests_2_purple.webp";
+import icon_chest_teslacrests_2_red from "../../../images/shared/chests/icon_chest_teslacrests_2_red.webp";
+import icon_chest_teslacrests_2_yellow from "../../../images/shared/chests/icon_chest_teslacrests_2_yellow.webp";
+import icon_chest_teslacrests_3_blue from "../../../images/shared/chests/icon_chest_teslacrests_3_blue.webp";
+import icon_chest_teslacrests_3_green from "../../../images/shared/chests/icon_chest_teslacrests_3_green.webp";
+import icon_chest_teslacrests_3_purple from "../../../images/shared/chests/icon_chest_teslacrests_3_purple.webp";
+import icon_chest_teslacrests_3_red from "../../../images/shared/chests/icon_chest_teslacrests_3_red.webp";
+import icon_chest_teslacrests_3_yellow from "../../../images/shared/chests/icon_chest_teslacrests_3_yellow.webp";
 
 const chests = [
     {
         id: "chest_color_crests_red_common_enhanced_superior", 
         name: "Chest with Red Crests", 
-        img: chest_color_crests_red_common_enhanced, 
-        representingIcons: ["red_crest_common", "red_crest_enhanced", "red_crest_superior"],
+        img: icon_chest_teslacrests_3_red,
         items: [
             {
                 resource: "red_crest_common",
@@ -27,8 +35,7 @@ const chests = [
     {
         id: "chest_color_crests_blue_common_enhanced_superior", 
         name: "Chest with Blue Crests", 
-        img: "", 
-        representingIcons: ["blue_crest_common", "blue_crest_enhanced", "blue_crest_superior"],
+        img: icon_chest_teslacrests_3_blue,
         items: [
             {
                 resource: "blue_crest_common",
@@ -50,8 +57,7 @@ const chests = [
     {
         id: "chest_color_crests_yellow_common_enhanced_superior", 
         name: "Chest with Yellow Crests", 
-        img: "", 
-        representingIcons: ["yellow_crest_common", "yellow_crest_enhanced", "yellow_crest_superior"],
+        img: icon_chest_teslacrests_3_yellow,
         items: [
             {
                 resource: "yellow_crest_common",
@@ -73,8 +79,7 @@ const chests = [
     {
         id: "chest_color_crests_purple_common_enhanced_superior", 
         name: "Chest with Purple Crests", 
-        img: "", 
-        representingIcons: ["purple_crest_common", "purple_crest_enhanced", "purple_crest_superior"],
+        img: icon_chest_teslacrests_3_purple,
         items: [
             {
                 resource: "purple_crest_common",
@@ -96,8 +101,7 @@ const chests = [
     {
         id: "chest_color_crests_green_common_enhanced_superior", 
         name: "Chest with Green Crests", 
-        img: "", 
-        representingIcons: ["green_crest_common", "green_crest_enhanced", "green_crest_superior"],
+        img: icon_chest_teslacrests_3_green,
         items: [
             {
                 resource: "green_crest_common",

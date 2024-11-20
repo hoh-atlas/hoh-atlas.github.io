@@ -1,5 +1,5 @@
 import React from "react";
-import { getItem } from "./utils";
+import { getItemIcon } from "./utils";
 
 const CustomizationDetails = ({ customization }) => {
     return (
@@ -23,20 +23,20 @@ const CustomizationDetails = ({ customization }) => {
                                 <th>Production</th>
                                 <td>
                                     {customization.production.resource
-                                        ? getItem(customization.production.resource)
+                                        ? getItemIcon(customization.production.resource)
                                         : customization.production.resources &&
                                         customization.production.resources.map((resourceItem, index) => {
                                             if (typeof resourceItem === 'string') {
                                             return (
                                                 <span key={resourceItem}>
-                                                {getItem(resourceItem)}
+                                                {getItemIcon(resourceItem)}
                                                 {index < customization.production.resources.length - 1 && " "}
                                                 </span>
                                             );
                                             } else if (typeof resourceItem === 'object' && resourceItem.resource) {
                                             return (
                                                 <span key={resourceItem.resource}>
-                                                {getItem(resourceItem.resource)} ({resourceItem.percentage}%)
+                                                {getItemIcon(resourceItem.resource)} ({resourceItem.percentage}%)
                                                 {index < customization.production.resources.length - 1 && " "}
                                                 </span>
                                             );
@@ -64,7 +64,7 @@ const CustomizationDetails = ({ customization }) => {
                         customization.boost && <>
                             <tr>
                                 <th>Boost</th>
-                                <td>{getItem(customization.boost.type)} ({customization.boost.amount})</td>
+                                <td>{getItemIcon(customization.boost.type)} ({customization.boost.amount})</td>
                             </tr>
                         </>
                     }

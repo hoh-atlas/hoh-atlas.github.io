@@ -6,7 +6,7 @@ import TextBlock from "../../shared/TextBlock";
 import H1 from "../../shared/H1";
 import Image from "../../shared/Image";
 import Icon from "../../shared/Icon";
-import { getItem } from "../../shared/utils";
+import { getItemIcon } from "../../shared/utils";
 import allSeasons from "../data";
 
 import icon_reward_season_pass from "../../../images/seasons/rewards/icon_reward_season_pass.webp";
@@ -61,9 +61,9 @@ const Rewards = (props) => {
                             season.rewards.map((oneReward) => (
                                 <tr style={{ height: '70px' }}>
                                     <th>{oneReward.id}</th>
-                                    <td>{oneReward.cost} {getItem("seasonpass_progress")}</td>
-                                    <td>{oneReward.free.amount}x {getItem(oneReward.free.resource)}</td>
-                                    <td>{oneReward.premium.amount}x {getItem(oneReward.premium.resource)}</td>
+                                    <td>{oneReward.cost} {getItemIcon("seasonpass_progress")}</td>
+                                    <td>{oneReward.free.amount}x {getItemIcon(oneReward.free.resource)}</td>
+                                    <td>{oneReward.premium.amount}x {getItemIcon(oneReward.premium.resource)}</td>
                                 </tr>
                             ))
                         }

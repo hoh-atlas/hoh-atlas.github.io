@@ -6,7 +6,7 @@ import Prologue from "../../shared/Prologue";
 import SelectBox from "../../shared/SelectBox";
 import SectionDivider from "../../shared/SectionDivider";
 import useOptionURL from "../../shared/hooks/useOptionURL";
-import { getItem } from "../../shared/utils";
+import { getItemIcon } from "../../shared/utils";
 import Image from "../../shared/Image";
 import TextBlock from "../../shared/TextBlock";
 import H1 from "../../shared/H1";
@@ -84,7 +84,7 @@ const Strategies = (props) => {
                         When the Allied Culture event begins, you should keep the following goals in mind:
 
                         <ul>
-                            <li>Build as many Small Houses as possible to produce a lot of Deben {getItem("deben")}</li>
+                            <li>Build as many Small Houses as possible to produce a lot of Deben {getItemIcon("deben")}</li>
                             <li>Prioritize placing expansions near the river first, then continue expanding farther out</li>
                             <li>Sell the first Medium House required by the questline as soon as you complete the quest</li>
                             <li>Short productions are more effective than the long ones, so the shorter you choose, the faster you will progress</li>
@@ -194,8 +194,8 @@ const Strategies = (props) => {
                         When the Allied Culture event begins, you should keep the following goals in mind:
 
                         <ul>
-                            <li>Build as many Small Houses as possible to produce a lot of Wu Zhu {getItem("wu_zhu")} and replace them with Medium Houses later to obtain more Workers {getItem("china_worker")}</li>
-                            <li>Find the shortest way to Kaolin Quarries, as they will produce a highly demanded Kaolin {getItem("kaolin")} later in the event</li>
+                            <li>Build as many Small Houses as possible to produce a lot of Wu Zhu {getItemIcon("wu_zhu")} and replace them with Medium Houses later to obtain more Workers {getItemIcon("china_worker")}</li>
+                            <li>Find the shortest way to Kaolin Quarries, as they will produce a highly demanded Kaolin {getItemIcon("kaolin")} later in the event</li>
                             <li>On your way to Kaolin Quarries, unlock almost all the available Moth Glades</li>
                             <li>Sell the first Medium House required by the questline as soon as you complete the quest</li>
                             <li>Prioritize finishing the research tree before leveling your workshops</li>
@@ -246,8 +246,8 @@ const Strategies = (props) => {
 
                         <LayoutsBook header={"Layout 3"} images={[layout_3_sector_1,layout_3_sector_2,layout_3_sector_3]} />
 
-                        The reason why you can remove most of the Small Houses after you finish the research tree is that you won't need so much Wu Zhu {getItem("wu_zhu")} anymore. Rearrange the city so that you include Clay Processors
-                        and Porcelain Workshops. Some of the removed Small Houses replace with Medium Houses, which provide more Workers {getItem("china_worker")} per tile. It's sufficient to keep them at level 1.
+                        The reason why you can remove most of the Small Houses after you finish the research tree is that you won't need so much Wu Zhu {getItemIcon("wu_zhu")} anymore. Rearrange the city so that you include Clay Processors
+                        and Porcelain Workshops. Some of the removed Small Houses replace with Medium Houses, which provide more Workers {getItemIcon("china_worker")} per tile. It's sufficient to keep them at level 1.
                         When you reach level 24, unlock the following expansions:
 
                         <Image src={sketch_5} alt="" roundedCorners={false} spacing={true} maxHeight={'300px'}/>

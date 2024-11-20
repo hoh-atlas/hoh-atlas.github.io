@@ -4,7 +4,7 @@ import resources from "../../shared/data/resources";
 import chests from "../../shared/data/chests";
 import { customizations } from "../../shared/data/customizations";
 import H1 from "../../shared/H1";
-import { getItem, getItemData } from "../../shared/utils";
+import { getItemIcon, getItemData } from "../../shared/utils";
 import CustomizationObject from "../../shared/CustomizationObject";
 
 const DailySpecialWrapper = (props) => {
@@ -79,14 +79,7 @@ const DailySpecialWrapper = (props) => {
                                 </tr>
                                 <tr>
                                     <td>
-                                        {itemData.representingIcons.map((icon, index) => (
-                                            <span key={icon} style={{ display: 'inline-flex', alignItems: 'center' }}>
-                                                <img src={getItemData(icon).img} alt={icon} style={{ maxHeight: '60px', verticalAlign: 'middle' }} />
-                                                {index < itemData.representingIcons.length - 1 && (
-                                                    <span style={{ margin: '0 10px', verticalAlign: 'middle' }}> / </span>
-                                                )}
-                                            </span>
-                                        ))}
+                                        <img src={itemData.img} style={{ maxHeight: '60px', verticalAlign: 'middle' }} />
                                     </td>
                                     <td>
                                         Chest
@@ -94,7 +87,7 @@ const DailySpecialWrapper = (props) => {
                                     <td>
                                         {itemData.items.map((oneItem, index) => (
                                             <span key={oneItem.resource}>
-                                                {oneItem.amount}x {getItem(oneItem.resource)} ({oneItem.percentage}%)
+                                                {oneItem.amount}x {getItemIcon(oneItem.resource)} ({oneItem.percentage}%)
                                                 {index < itemData.items.length - 1 && " / "}
                                             </span>
                                         ))}

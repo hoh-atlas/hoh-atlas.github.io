@@ -10,7 +10,7 @@ import H1 from "../../shared/H1";
 import Image from "../../shared/Image";
 import TextBlock from "../../shared/TextBlock";
 import Icon from "../../shared/Icon";
-import { getItem } from "../../shared/utils";
+import { getItemIcon } from "../../shared/utils";
 
 import allAlliedCultures from "../data";
 import resources from "../../shared/data/resources";
@@ -58,19 +58,19 @@ const Intro = (props) => {
                         It contains 50 levels, each offering a unique reward including a special bonus for collecting {alliedCulture.wonder.boostedResources.map((resource, index) => (
                             <>
                                 {index > 0 && index === alliedCulture.wonder.boostedResources.length - 1 ? ' and ' : index > 0 ? ', ' : ''}
-                                {resource.name} {getItem(resource.id)}
+                                {resource.name} {getItemIcon(resource.id)}
                             </>
                         ))}
                         &nbsp;that helps you to progress in the Allied Culture faster.
 
                         <Image src={egypt_city} alt="" roundedCorners={true} spacing={true} maxHeight={'300px'}/>
 
-                        The core buildings include Houses (Small, Medium and Luxurious) that provide Egypt Workers {getItem("egypt_worker")} and
-                        Deben {getItem("deben")}. Production buildings consist of the Papyrus Field, which produces Papyrus {getItem("papyrus")} and
-                        the Gold Mine, which yields Gold Ore {getItem("gold_ore")}. These resources are essential for creating the final event products: 
-                        Papyrus Scrolls {getItem("papyrus_scroll")} and Ankhs {getItem("ankh")}, 
+                        The core buildings include Houses (Small, Medium and Luxurious) that provide Egypt Workers {getItemIcon("egypt_worker")} and
+                        Deben {getItemIcon("deben")}. Production buildings consist of the Papyrus Field, which produces Papyrus {getItemIcon("papyrus")} and
+                        the Gold Mine, which yields Gold Ore {getItemIcon("gold_ore")}. These resources are essential for creating the final event products: 
+                        Papyrus Scrolls {getItemIcon("papyrus_scroll")} and Ankhs {getItemIcon("ankh")}, 
                         which are produced in the Papyrus Press and Goldsmith buildings, respectively. Starting from level 4, these production buildings can also create 
-                        Ceremonial Dresses {getItem("ceremonial_dress")} and Golden Masks {getItem("golden_mask")},
+                        Ceremonial Dresses {getItemIcon("ceremonial_dress")} and Golden Masks {getItemIcon("golden_mask")},
                         necessary for upgrading the Cheops Pyramid from level 21 onward.
 
                         <Image src={irrigation_3} alt="" spacing={true} maxHeight={'100px'}/>
@@ -98,17 +98,17 @@ const Intro = (props) => {
                                     </tr>
                                     <tr>
                                         <td>1</td>
-                                        <td>5000 {getItem("deben")}</td>
+                                        <td>5000 {getItemIcon("deben")}</td>
                                         <td>30m</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>30000 {getItem("deben")}</td>
+                                        <td>30000 {getItemIcon("deben")}</td>
                                         <td>2h</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>60000 {getItem("deben")}</td>
+                                        <td>60000 {getItemIcon("deben")}</td>
                                         <td>6h</td>
                                     </tr>
                                 </tbody>
@@ -124,19 +124,19 @@ const Intro = (props) => {
                         It contains 50 levels, each offering a unique reward including a special bonus for collecting {alliedCulture.wonder.boostedResources.map((resource, index) => (
                             <>
                                 {index > 0 && index === alliedCulture.wonder.boostedResources.length - 1 ? ' and ' : index > 0 ? ', ' : ''}
-                                {resource.name} {getItem(resource.id)}
+                                {resource.name} {getItemIcon(resource.id)}
                             </>
                         ))}
                         &nbsp;that helps you to progress in the Allied Culture faster.
 
                         <Image src={china_city} alt="" roundedCorners={true} spacing={true} maxHeight={'300px'}/>
 
-                        The core buildings include Houses (Small, Medium and Luxurious) that provide China Workers {getItem("china_worker")} and
-                        Wu Zhu {getItem("wu_zhu")}. Production buildings consist of the Rice Farm, which produces Rice {getItem("rice")} and
-                        2 special buildings that are obtainable only by unlocking the expansions in the allied city - Moth Glade and Kaolin Quarry, producing Moth Cocoon {getItem("moth_cocoon")} and
-                        Kaolin {getItem("kaolin")}, respectively. Secondary production buildings include Thread Processor, which produces Threads {getItem("silk_threads")} and
-                        Clay Processor, which produces Clay {getItem("clay")}. These resources are essential for creating the final event products:
-                        Silk {getItem("silk")} and Porcelain {getItem("porcelain")}, which are produced in the Silk Workshop and Porcelain Workshop,
+                        The core buildings include Houses (Small, Medium and Luxurious) that provide China Workers {getItemIcon("china_worker")} and
+                        Wu Zhu {getItemIcon("wu_zhu")}. Production buildings consist of the Rice Farm, which produces Rice {getItemIcon("rice")} and
+                        2 special buildings that are obtainable only by unlocking the expansions in the allied city - Moth Glade and Kaolin Quarry, producing Moth Cocoon {getItemIcon("moth_cocoon")} and
+                        Kaolin {getItemIcon("kaolin")}, respectively. Secondary production buildings include Thread Processor, which produces Threads {getItemIcon("silk_threads")} and
+                        Clay Processor, which produces Clay {getItemIcon("clay")}. These resources are essential for creating the final event products:
+                        Silk {getItemIcon("silk")} and Porcelain {getItemIcon("porcelain")}, which are produced in the Silk Workshop and Porcelain Workshop,
                         respectively. The production chain leading to Porcelain is unlocked later in the research of the allied city and is required to upgrade the World Wonder from level 21 onward.
 
                         <Image src={china_bridge} alt="" roundedCorners={true} spacing={true} maxHeight={'200px'}/>
@@ -163,26 +163,26 @@ const Intro = (props) => {
                                     </tr>
                                     <tr>
                                         <td>1</td>
-                                        <td>1500 {getItem("wu_zhu")}</td>
+                                        <td>1500 {getItemIcon("wu_zhu")}</td>
                                         <td>1m</td>
                                         <td>1</td>
-                                        <td>5000 {getItem("wu_zhu")}</td>
+                                        <td>5000 {getItemIcon("wu_zhu")}</td>
                                         <td>30m</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>2500 {getItem("wu_zhu")}</td>
+                                        <td>2500 {getItemIcon("wu_zhu")}</td>
                                         <td>10m</td>
                                         <td>2</td>
-                                        <td>15000 {getItem("wu_zhu")}</td>
+                                        <td>15000 {getItemIcon("wu_zhu")}</td>
                                         <td>1h</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>5000 {getItem("wu_zhu")}</td>
+                                        <td>5000 {getItemIcon("wu_zhu")}</td>
                                         <td>1h</td>
                                         <td>3</td>
-                                        <td>30000 {getItem("wu_zhu")}</td>
+                                        <td>30000 {getItemIcon("wu_zhu")}</td>
                                         <td>2h</td>
                                     </tr>
                                 </tbody>
@@ -208,8 +208,8 @@ const Intro = (props) => {
                 'The Grand Celebration' (featuring Egypt and the Cheops Pyramid wonder), 'The Festival of Warriors' (featuring China and the Terracotta Army wonder), 'The Trade Exhibition' (featuring Egypt and the Great Sphinx wonder)
                 and 'The Festival of Lights' (featuring China and the Forbidden City wonder). Explore all available Allied Cultures using the Select Box at the top of this page.
             </TextBlock>
-        </>
-    );
+        </> 
+    ); // viking ice glacier: stage 1 is completed by unlocking the technology, stage 2 costs: 100000 pennies, 4h of time
   };
   
   export default Intro;

@@ -1,11 +1,13 @@
 import hua_mulan from "../../images/heroes/intro/icons/Unit_HuaMulan.webp";
 import Questgiver_Egypt_Cleopatra from "../../images/allied-cultures/quests/Questgiver_Egypt_Cleopatra.webp";
+import Questgiver_RagnarLodbrok from "../../images/allied-cultures/quests/Questgiver_RagnarLodbrok.webp";
 import great_wall from "../../images/allied-cultures/world-wonder/great_wall.webp";
 import cheops_pyramid from "../../images/allied-cultures/world-wonder/cheops_pyramid.webp";
 import great_sphinx from "../../images/allied-cultures/world-wonder/great_sphinx.webp";
 import terracotta_army from "../../images/allied-cultures/world-wonder/terracotta_army.webp";
 import forbidden_city from "../../images/allied-cultures/world-wonder/forbidden_city.webp";
 import abu_simbel from "../../images/allied-cultures/world-wonder/abu_simbel.webp";
+import yggdrasil from "../../images/allied-cultures/world-wonder/yggdrasil.webp";
 import irrigation_1 from "../../images/shared/resources/irrigation_1.webp";
 import irrigation_3 from "../../images/shared/resources/irrigation_3.webp";
 import city_event_banner_egypt_cheopspyramid from "../../images/allied-cultures/intro/city_event_banner_egypt_cheopspyramid.webp";
@@ -14,6 +16,9 @@ import city_event_banner_egypt_greatsphinx from "../../images/allied-cultures/in
 import city_event_banner_terracotta_army from "../../images/allied-cultures/intro/city_event_banner_china_terracottaarmy.webp";
 import city_event_banner_china_forbiddencity from "../../images/allied-cultures/intro/city_event_banner_china_forbiddencity.png";
 import city_event_banner_egypt_abusimbel from "../../images/allied-cultures/intro/city_event_banner_egypt_abusimbel.webp";
+import city_event_banner_vikings_valhalla from "../../images/allied-cultures/intro/city_event_banner_vikings_valhalla.webp";
+import city_event_banner_vikings_dragonshipellida from "../../images/allied-cultures/intro/city_event_banner_vikings_dragonshipellida.webp";
+import city_event_banner_vikings_yggdrasil from "../../images/allied-cultures/intro/city_event_banner_vikings_yggdrasil.webp";
 
 import Egypt_Small_Home_Lv1 from "../../images/allied-cultures/buildings/Egypt_Small_Home_Lv1.webp";
 import Egypt_Small_Home_Lv2 from "../../images/allied-cultures/buildings/Egypt_Small_Home_Lv2.webp";
@@ -12364,6 +12369,2118 @@ const allAlliedCultures = [
                     ],
                     reward: {
                         resource: "antimatter_egyptian",
+                        amount: 20
+                    }
+                },
+            ]
+        }
+    },
+    {
+        id: "vikings_yggdrasil",
+        name: "Leaves of Fate",
+        image: city_event_banner_vikings_yggdrasil,
+        questlineColor: "#4C80A2",
+        questlines: [
+            {   
+                id: 1,
+                appearsAfter: [],
+                name: "Leaves of Fate",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "pennies",
+                        amount: 250
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Rise of the Vikings</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 30
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>4 Worker Home</b> on level <b>1</b> in <b>Viking Kingdom</b>",
+                            "Have <b>2 Sailor Home</b> on level <b>1</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 50
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Collect <b>20 Pennies</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 100
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 2,
+                appearsAfter: [1],
+                name: "Expedition Preparations",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "pennies",
+                        amount: 750
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Seafaring</b>",
+                            "Have <b>1 Water</b> expansion in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 150
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>1 Fishing Pier</b> on level <b>1</b> in <b>Viking Pier</b>",
+                            "Have <b>1 Luxurious Fishing Pier</b> on level <b>1</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "pennies",
+                            amount: 200
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Collect <b>10 Fish</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "fish",
+                            amount: 200
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Research <b>Beekeeping</b>",
+                            "Have <b>1 Beehive</b> on level <b>1</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 300
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Collect <b>5 Honey</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "honey",
+                            amount: 150
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 3,
+                appearsAfter: [2],
+                name: "Provisions",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "pennies",
+                        amount: 1500
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Mead Brewery</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 350
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>1 Tavern</b> on level <b>1</b> in <b>Viking Kingdom</b>",
+                            "Collect <b>20 Mead</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "fish",
+                            amount: 400
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Research <b>Plundering Raids</b>",
+                            "Have <b>2 Water</b> expansions in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 800
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>1 Expedition Pier</b> on level <b>1</b> in <b>Viking Kingdom</b>",
+                            "Have <b>1 Luxurious Sailor Port</b> on level <b>1</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "honey",
+                            amount: 300
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Collect <b>3 Ceramic Treasure</b> in <b>Viking Kingdom</b>",
+                            "Collect <b>2 Gold Treasure</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 1000
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 4,
+                appearsAfter: [3],
+                name: "Workforce",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "honey",
+                        amount: 2000
+                    },
+                    {
+                        resource: "fish",
+                        amount: 1000
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Jarldom</b>",
+                            "Have <b>4</b> expansions in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 1200
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>6 Worker Home</b> on level <b>2</b> in <b>Viking Kingdom</b>",
+                            "Have <b>2 Luxurious Home</b> on level <b>2</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "pennies",
+                            amount: 1100
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Research <b>Thralls and Karls</b>",
+                            "Have <b>5</b> expansions in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 1400
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>2 Sailor Home</b> on level <b>2</b> in <b>Viking Kingdom</b>",
+                            "Have <b>2 Luxurious Home</b> on level <b>2</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "pennies",
+                            amount: 1700
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Collect <b>30 Pennies</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 2000
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 5,
+                appearsAfter: [3],
+                name: "Eternal Ice",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "ceramic_treasure",
+                        amount: 1000
+                    },
+                    {
+                        resource: "gold_treasure",
+                        amount: 800
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Glacier Mastery</b>",
+                            "Complete <b>1</b> stage of <b>2</b> of the <b>Glacier</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "mead",
+                            amount: 2000
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 6,
+                appearsAfter: [4],
+                name: "Journey to Greatness",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "pennies",
+                        amount: 100000
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>11</b> technologies for <b>Viking Kingdom</b>",
+                            "Have <b>8 Building</b> on level <b>2</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 2500
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>3 Water</b> expansions in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 3000
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Have <b>2 Fishing Pier</b> on level <b>2</b> in <b>Viking Kingdom</b>",
+                            "Have <b>2 Luxurious Fishing Pier</b> on level <b>2</b> in <b>Viking Kingdom</b>",
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "pennies",
+                            amount: 4000
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Research <b>15</b> technologies for <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 5000
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Have <b>2 Tavern</b> on level <b>2</b> in <b>Viking Kingdom</b>",
+                            "Have <b>3 Beehive</b> on level <b>3</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 6000
+                        }
+                    },
+                    {
+                        id: 6,
+                        tasks: [
+                            "Research <b>17</b> technologies for <b>Viking Kingdom</b>",
+                            "Have <b>12 Building</b> on level <b>3</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 7000
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 7,
+                appearsAfter: [6],
+                name: "The Final Stretch",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "spice_treasure",
+                        amount: 3500
+                    },
+                    {
+                        resource: "jewel_treasure",
+                        amount: 1000
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Have <b>2 Tavern</b> on level <b>4</b> in <b>Viking Kingdom</b>",
+                            "Have <b>1 Sailor Port</b> on level <b>4</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 15000
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>12</b> expansions in <b>Viking Kingdom</b>",
+                            "Have <b>20 Building</b> on level <b>4</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "fish",
+                            amount: 7500
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Research <b>25</b> technologies for <b>Viking Kingdom</b>",
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "honey",
+                            amount: 5000
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>4 Beehive</b> on level <b>4</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 30000
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Research <b>30</b> technologies for <b>Viking Kingdom</b>",
+                            "Have <b>25 Building</b> on level <b>5</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "fish",
+                            amount: 15000
+                        }
+                    },
+                    {
+                        id: 6,
+                        tasks: [
+                            "Research <b>35</b> technologies for <b>Viking Kingdom</b>",
+                            "Have <b>20 Building</b> on level <b>6</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "honey",
+                            amount: 10000
+                        }
+                    },
+                    {
+                        id: 7,
+                        tasks: [
+                            "Research <b>39</b> technologies for <b>Viking Kingdom</b>",
+                            "Have <b>30 Building</b> on level <b>6</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 75000
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 10,
+                appearsAfter: [3],
+                name: "Yggdrasil - Phase I",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "antimatter_vikings",
+                        amount: 2
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>1</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 200
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>3</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 500
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>5</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 2000
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>10</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 4000
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 11,
+                appearsAfter: [10],
+                name: "Yggdrasil - Phase II",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "antimatter_vikings",
+                        amount: 2
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>15</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 7000
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>20</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 10000
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>25</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 15000
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 112,
+                appearsAfter: [11],
+                name: "Yggdrasil - Phase III",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "antimatter_vikings",
+                        amount: 15
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>30</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 20000
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>35</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 25000
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>40</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 35000
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>45</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 90000
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>50</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "antimatter_legendary_part",
+                            amount: 1
+                        }
+                    },
+                ]
+            },
+        ],
+        buildingCategories: {
+            
+        },
+        wonder: {
+            name: "Yggdrasil",
+            image: yggdrasil,
+            boostedResources: [
+                {
+                    id: "honey",
+                    name: "Honey"
+                }
+            ],
+            levels: [
+                {
+                    level: 0,
+                    requirements: null,
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 5
+                        }
+                    ],
+                    reward: null
+                },
+                {
+                    level: 1,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 3
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 2
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 12.5
+                        }
+                    ],
+                    reward: {
+                        resource: "energy",
+                        amount: 25
+                    }
+                },
+                {
+                    level: 2,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 10
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 6
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 17.3
+                        }
+                    ],
+                    reward: [
+                        {
+                            resource: "expansion_vikings_land",
+                            amount: 5
+                        },
+                        {
+                            resource: "expansion_vikings_water",
+                            amount: 1
+                        }
+                    ]
+                },
+                {
+                    level: 3,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 15
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 9
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 20.6
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_vikings",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 4,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 25
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 15
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 23.2
+                        }
+                    ],
+                    reward: {
+                        resource: "xp_hero",
+                        amount: 1200
+                    }
+                },
+                {
+                    level: 5,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 50
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 50
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 25.3
+                        }
+                    ],
+                    reward: {
+                        resource: "research_point",
+                        amount: 4
+                    }
+                },
+                {
+                    level: 6,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 150
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 150
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 27.1
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_vikings",
+                        amount: 2
+                    }
+                },
+                {
+                    level: 7,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 100
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 75
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 28.6
+                        }
+                    ],
+                    reward: [
+                        {
+                            resource: "expansion_vikings_land",
+                            amount: 7
+                        },
+                        {
+                            resource: "expansion_vikings_water",
+                            amount: 1
+                        }
+                    ]
+                },
+                {
+                    level: 8,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 150
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 125
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 30.0
+                        }
+                    ],
+                    reward: {
+                        resource: "goods_chest",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 9,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 200
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 175
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 31.2
+                        }
+                    ],
+                    reward: {
+                        resource: "energy",
+                        amount: 40
+                    }
+                },
+                {
+                    level: 10,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 300
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 270
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 32.3
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_vikings",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 11,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 720
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 630
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 33.3
+                        }
+                    ],
+                    reward: {
+                        resource: "food",
+                        amount: "N"
+                    }
+                },
+                {
+                    level: 12,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 900
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 780
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 34.2
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_vikings",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 13,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 1260
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 1050
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 35.1
+                        }
+                    ],
+                    reward: [
+                        {
+                            resource: "expansion_vikings_land",
+                            amount: 10
+                        },
+                        {
+                            resource: "expansion_vikings_water",
+                            amount: 2
+                        }
+                    ]
+                },
+                {
+                    level: 14,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 1365
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 1155
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 35.9
+                        }
+                    ],
+                    reward: {
+                        resource: "research_point",
+                        amount: 5
+                    }
+                },
+                {
+                    level: 15,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 1840
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 1560
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 36.6
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_vikings",
+                        amount: 2
+                    }
+                },
+                {
+                    level: 16,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 2295
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 1980
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 37.3
+                        }
+                    ],
+                    reward: {
+                        resource: "goods_chest",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 17,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 2850
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 2400
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 38.0
+                        }
+                    ],
+                    reward:[
+                        {
+                            resource: "expansion_vikings_land",
+                            amount: 11
+                        },
+                        {
+                            resource: "expansion_vikings_water",
+                            amount: 2
+                        }
+                    ]
+                },
+                {
+                    level: 18,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 3150
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 2700
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 38.6
+                        }
+                    ],
+                    reward: {
+                        resource: "food",
+                        amount: "N"
+                    }
+                },
+                {
+                    level: 19,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 3450
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 2950
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 39.2
+                        }
+                    ],
+                    reward: {
+                        resource: "xp_hero",
+                        amount: 4200
+                    }
+                },
+                {
+                    level: 20,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 6000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 5100
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 39.8
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_vikings",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 21,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 3750
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 3250
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 250
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 150
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 40.3
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_legendary_part",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 22,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 4500
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 3850
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 700
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 420
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 40.8
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_vikings",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 23,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 5250
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 4500
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 1750
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 1000
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 41.3
+                        }
+                    ],
+                    reward: {
+                        resource: "research_point",
+                        amount: 6
+                    }
+                },
+                {
+                    level: 24,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 6000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 5000
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 2500
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 2250
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 41.8
+                        }
+                    ],
+                    reward: [
+                        {
+                            resource: "expansion_vikings_land",
+                            amount: 15
+                        },
+                        {
+                            resource: "expansion_vikings_water",
+                            amount: 4
+                        }
+                    ]
+                },
+                {
+                    level: 25,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 8000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 7000
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 3750
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 3250
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 42.3
+                        }
+                    ],
+                    reward: {
+                        resource: "xp_hero",
+                        amount: 4200
+                    }
+                },
+                {
+                    level: 26,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 10000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 8500
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 6000
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 5300
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 42.7
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_vikings",
+                        amount: 3
+                    }
+                },
+                {
+                    level: 27,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 12000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 10000
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 6500
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 5700
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 43.1
+                        }
+                    ],
+                    reward: {
+                        resource: "food",
+                        amount: "N"
+                    }
+                },
+                {
+                    level: 28,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 14000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 12000
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 6900
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 6000
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 43.5
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_vikings",
+                        amount: 5
+                    }
+                },
+                {
+                    level: 29,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 16000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 13500
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 7400
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 6500
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 43.9
+                        }
+                    ],
+                    reward: {
+                        resource: "goods_chest",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 30,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 18000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 15500
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 7800
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 6900
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 44.3
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_vikings",
+                        amount: 5
+                    }
+                },
+                {
+                    level: 31,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 19000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 16000
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 8100
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 7100
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 44.7
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_legendary_part",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 32,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 20000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 17000
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 8400
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 7400
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 45.0
+                        }
+                    ],
+                    reward: {
+                        resource: "xp_hero",
+                        amount: 2100
+                    }
+                },
+                {
+                    level: 33,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 21000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 18000
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 8700
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 7700
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 45.4
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_vikings",
+                        amount: 3
+                    }
+                },
+                {
+                    level: 34,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 22000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 18500
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 9000
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 8000
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 45.7
+                        }
+                    ],
+                    reward: {
+                        resource: "food",
+                        amount: "N"
+                    }
+                },
+                {
+                    level: 35,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 23000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 19500
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 9300
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 8100
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 46.0
+                        }
+                    ],
+                    reward: {
+                        resource: "goods_chest",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 36,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 24000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 20500
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 9600
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 8400
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 46.3
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_vikings",
+                        amount: 5
+                    }
+                },
+                {
+                    level: 37,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 25000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 21500
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 9900
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 8700
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 46.6
+                        }
+                    ],
+                    reward: {
+                        resource: "research_point",
+                        amount: 10
+                    }
+                },
+                {
+                    level: 38,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 26000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 2200
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 10200
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 9000
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 46.9
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_vikings",
+                        amount: 3
+                    }
+                },
+                {
+                    level: 39,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 27000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 23000
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 10500
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 9200
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 47.2
+                        }
+                    ],
+                    reward: {
+                        resource: "xp_hero",
+                        amount: 6300
+                    }
+                },
+                {
+                    level: 40,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 28000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 24000
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 10800
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 9500
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 47.5
+                        }
+                    ],
+                    reward: {
+                        resource: "goods_chest",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 41,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 29000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 24500
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 11100
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 9800
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 47.8
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_legendary_part",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 42,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 30000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 25500
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 11400
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 10100
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 48.1
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_vikings",
+                        amount: 5
+                    }
+                },
+                {
+                    level: 43,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 31000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 26500
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 11700
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 10200
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 48.3
+                        }
+                    ],
+                    reward: {
+                        resource: "food",
+                        amount: "N"
+                    }
+                },
+                {
+                    level: 44,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 32000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 27000
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 12000
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 10500
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 48.6
+                        }
+                    ],
+                    reward: {
+                        resource: "xp_hero",
+                        amount: 21000
+                    }
+                },
+                {
+                    level: 45,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 33000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 28000
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 12300
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 10800
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 48.9
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_vikings",
+                        amount: 10
+                    }
+                },
+                {
+                    level: 46,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 34000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 29000
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 12600
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 11000
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 49.1
+                        }
+                    ],
+                    reward: {
+                        resource: "research_point",
+                        amount: 15
+                    }
+                },
+                {
+                    level: 47,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 35000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 30000
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 12900
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 11300
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 49.3
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_legendary_part",
+                        amount: 1
+                    }
+                },
+                {
+                    level: 48,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 36000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 30500
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 13200
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 11600
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 49.6
+                        }
+                    ],
+                    reward: {
+                        resource: "food",
+                        amount: "N"
+                    }
+                },
+                {
+                    level: 49,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 37000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 31500
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 13500
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 11900
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 49.8
+                        }
+                    ],
+                    reward: {
+                        resource: "xp_hero",
+                        amount: 18000
+                    }
+                },
+                {
+                    level: 50,
+                    requirements: [
+                        {
+                            resource: "ceramic_treasure",
+                            amount: 38000
+                        },
+                        {
+                            resource: "gold_treasure",
+                            amount: 32500
+                        },
+                        {
+                            resource: "spice_treasure",
+                            amount: 13800
+                        },
+                        {
+                            resource: "jewel_treasure",
+                            amount: 12200
+                        }
+                    ],
+                    bonuses: [
+                        {
+                            resource: "honey",
+                            amount: 50.0
+                        }
+                    ],
+                    reward: {
+                        resource: "antimatter_vikings",
                         amount: 20
                     }
                 },
