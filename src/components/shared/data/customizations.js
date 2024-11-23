@@ -19,6 +19,13 @@ import world_fair_2024_tesla_coil from "../../../images/shared/customizations/wo
 import world_fair_2024_void_reactor from "../../../images/shared/customizations/world_fair_2024_void_reactor.webp";
 import world_fair_2024_heritage_exhibition from "../../../images/shared/customizations/world_fair_2024_heritage_exhibition.webp";
 import world_fair_2024_ticket_booth from "../../../images/shared/customizations/world_fair_2024_ticket_booth.webp";
+import winter_event_2024_winter_home from "../../../images/shared/customizations/winter_event_2024_winter_home.webp";
+import winter_event_2024_winter_home_2 from "../../../images/shared/customizations/winter_event_2024_winter_home_2.webp";
+import winter_event_2024_candy_store from "../../../images/shared/customizations/winter_event_2024_candy_store.webp";
+import winter_event_2024_frozen_pond from "../../../images/shared/customizations/winter_event_2024_frozen_pond.webp";
+import winter_event_2024_winter_market from "../../../images/shared/customizations/winter_event_2024_winter_market.webp";
+import winter_event_2024_snowman from "../../../images/shared/customizations/winter_event_2024_snowman.webp";
+import winter_event_2024_sleigh from "../../../images/shared/customizations/winter_event_2024_sleigh.webp";
 
 const customizations = [
     {
@@ -281,11 +288,96 @@ const customizations = [
         duration: "20d",
         applyTo: "Moderate Culture Site"
     },
+    {
+        id: "customization_winter_event_2024_winter_home", 
+        name: "Winter Home", 
+        img: winter_event_2024_winter_home_2,
+        production: {
+            resource: "antimatter_common_part",
+            time: "1d",
+            amount: "1"
+        },
+        duration: "20d",
+        applyTo: "Small Home"
+    },
+    {
+        id: "customization_winter_event_2024_candy_store", 
+        name: "Candy Store", 
+        img: winter_event_2024_candy_store,
+        production: {
+            resource: "antimatter_common_part",
+            time: "1d",
+            amount: "3"
+        },
+        duration: "20d",
+        applyTo: "Medium Home"
+    },
+    {
+        id: "customization_winter_event_2024_frozen_pond", 
+        name: "Frozen Pond", 
+        img: winter_event_2024_frozen_pond,
+        production: {
+            resource: "chest_ascension_2",
+            time: "2d",
+            amount: "1"
+        },
+        duration: "20d",
+        applyTo: "Rural Farm"
+    },
+    {
+        id: "customization_winter_event_2024_winter_market", 
+        name: "Winter Market", 
+        img: winter_event_2024_winter_market,
+        production: {
+            resource: "antimatter_legendary_part",
+            time: "1d",
+            amount: "1"
+        },
+        duration: "20d",
+        applyTo: "Domestic Farm"
+    },
+    {
+        id: "customization_winter_event_2024_snowman", 
+        name: "Snowman", 
+        img: winter_event_2024_snowman,
+        production: {
+            resource: "goods",
+            time: "1d",
+            amount: "26"
+        },
+        duration: "20d",
+        applyTo: "Little Culture Site"
+    },
+    {
+        id: "customization_winter_event_2024_sleigh", 
+        name: "Sleigh", 
+        img: winter_event_2024_sleigh,
+        production: {
+            resource: "victory_ticket",
+            time: "1d",
+            amount: "1"
+        },
+        duration: "20d",
+        applyTo: "Compact Culture Site"
+    },
+    {
+        id: "customization_winter_event_2024_winter_pyramid", 
+        name: "Winter Pyramid", 
+        img: "",
+        production: {
+            resource: "chest_teslacrests_enhanced",
+            time: "1d",
+            amount: "1"
+        },
+        duration: "20d",
+        applyTo: "Moderate Culture Site"
+    },
 ]
 
 const obtainableFrom = {
     "_ath_": "Alliance Treasure Hunt",
-    "_world_fair_2024_": "World Fair 2024"
+    "_world_fair_2024_": "World Fair 2024",
+    "_winter_event_2024": "Winter Event 2024",
 }
 
 export {customizations, obtainableFrom};

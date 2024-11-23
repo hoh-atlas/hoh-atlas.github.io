@@ -3,6 +3,7 @@ import { customizations } from "./data/customizations";
 import chests from "./data/chests";
 import Icon from "./Icon";
 import CustomizationPreview from "./CustomizationPreview";
+import ChestPreview from "./ChestPreview";
 
 export const createPathFromParameters = (...parameters) => {
     const validParameters = parameters.filter(param => param !== undefined && param !== null && param !== "");
@@ -50,6 +51,11 @@ export const getItemIcon = (id) => {
     const foundCustomization = customizations.find(elem => elem.id === id);
     if (foundCustomization) {
         return <CustomizationPreview customization={foundCustomization}/>
+    }
+
+    const foundChest = chests.find(elem => elem.id === id);
+    if (foundChest) {
+        return <ChestPreview chest={foundChest}/>
     }
 }
 

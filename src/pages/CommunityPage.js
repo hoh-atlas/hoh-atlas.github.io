@@ -5,6 +5,7 @@ import layoutCampaign from "../components/community/sectionsDefinition";
 import Intro from "../components/community/intro/Intro";
 import PrivacyPolicy from "../components/community/privacy-policy/PrivacyPolicy";
 import { Link } from "react-router-dom";
+import VideoCreators from "../components/community/video-creators/VideoCreators";
 
 const CommunityPage = (props) => {
 
@@ -24,6 +25,8 @@ const CommunityPage = (props) => {
 
     const renderSelectedTab = () => {
         switch (props.tab.url) {
+            case "video-creators":
+                return <VideoCreators tab={props.tab} />;
             case "privacy-policy":
                 return <PrivacyPolicy tab={props.tab} />;
             default:

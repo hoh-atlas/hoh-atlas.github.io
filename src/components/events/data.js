@@ -1,5 +1,8 @@
+import quests_icon from "../../images/events/quests/quests_icon.webp";
+
 import icon_event_world_fair_tokens from "../../images/events/intro/icon_event_world_fair_tokens.webp";
 import icon_event_worldfair_2024_grand_prize_progress from "../../images/events/grand-prizes/icon_event_worldfair_2024_grand_prize_progress.webp";
+import EventBackgroundWorldFair from "../../images/events/intro/EventBackgroundWorldFair.webp";
 import Questgiver_BenjaminFranklin from "../../images/events/quests/Questgiver_BenjaminFranklin.webp";
 import world_fair_event_shop_tier_1 from "../../images/events/intro/world_fair_event_shop_tier_1.webp";
 import world_fair_2024_artifact_1 from "../../images/events/intro/world_fair_2024_artifact_1.webp";
@@ -18,7 +21,398 @@ import world_fair_2024_invention_3 from "../../images/events/intro/world_fair_20
 import world_fair_2024_invention_4 from "../../images/events/intro/world_fair_2024_invention_4.webp";
 import world_fair_2024_invention_5 from "../../images/events/intro/world_fair_2024_invention_5.webp";
 
+import icon_event_winter_tokens from "../../images/events/intro/icon_event_winter_tokens.webp";
+import icon_event_winter_grand_prize_progress from "../../images/events/grand-prizes/icon_event_winter_grand_prize_progress.webp";
+import EventBackgroundWinterEvent from "../../images/events/intro/EventBackgroundWinterEvent.webp";
+import EventHeaderWinterEvent from "../../images/events/intro/EventHeaderWinterEvent.webp";
+import icon_snowflake_competion_leaderboard_chest from "../../images/events/intro/icon_snowflake_competion_leaderboard_chest.webp";
+import Reward_Winter_GoldChest_4 from "../../images/events/intro/Reward_Winter_GoldChest_4.webp";
+
 const allEvents = [
+    /*{
+        id: "winter_event_2024",
+        name: "Winter Event 2024",
+        image: icon_event_winter_tokens,
+        startDate: "November 23th 2024",
+        endDate: "December 13th 2024",
+        betaStartDate: "November 23th 2024",
+        banner: EventBackgroundWinterEvent,
+        headerImage: EventHeaderWinterEvent,
+        questgiverName: "Winter town",
+        type: "chest_event",
+        chestEventData: {
+
+        },
+        currency: {
+            name: "Snowflakes",
+            image: icon_event_winter_tokens,
+            description: "are collected by spending Stamina in the Leaderboard. You can purchase more of them with Gems. They are used to open presents in the main event window."
+        },
+        payback: {
+            name: "Candles",
+            image: icon_event_winter_grand_prize_progress,
+            description: "are collected by opening presents. You can purchase more of them with Gems. They are used to illuminate the houses of wintery town and define your progress on the Grand Prizes lane."
+        },
+        questsIcon: icon_snowflake_competion_leaderboard_chest,
+        leaderboard: {
+        },
+        dailySpecials: [
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
+            {
+                resource: "customization_winter_event_2024_sleigh",
+                amount: 1,
+            },
+            {
+                resource: "chest_color_crests_purple_common_enhanced_superior",
+                amount: 1
+            },
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
+            {
+                resource: "charta_terrestre",
+                amount: 1
+            },
+            {
+                resource: "customization_winter_event_2024_winter_home",
+                amount: 1
+            },
+            {
+                resource: "customization_winter_event_2024_snowman",
+                amount: 1
+            },
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
+            {
+                resource: "herbal_poultice",
+                amount: 1
+            },
+            {
+                resource: "chest_color_crests_green_common_enhanced_superior",
+                amount: 1
+            },
+            {
+                resource: "crested_guidon",
+                amount: 1
+            },
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
+            {
+                resource: "customization_winter_event_2024_sleigh",
+                amount: 1
+            },
+            {
+                resource: "chest_color_crests_yellow_common_enhanced_superior",
+                amount: 1
+            },
+            {
+                resource: "customization_winter_event_2024_winter_pyramid",
+                amount: 1
+            },
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
+            {
+                resource: "chest_color_crests_blue_common_enhanced_superior",
+                amount: 1
+            },
+            {
+                resource: "herbal_poultice",
+                amount: 1
+            },
+            {
+                resource: "customization_winter_event_2024_snowman",
+                amount: 1
+            },
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
+            {
+                resource: "charta_terrestre",
+                amount: 1
+            },
+            {
+                resource: "customization_winter_event_2024_sleigh",
+                amount: 1
+            },
+            {
+                resource: "chest_color_crests_red_common_enhanced_superior",
+                amount: 1
+            },
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
+            {
+                resource: "crested_guidon",
+                amount: 1
+            },
+            {
+                resource: "customization_winter_event_2024_snowman",
+                amount: 1
+            },
+            {
+                resource: "customization_winter_event_2024_winter_home",
+                amount: 1
+            },
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
+        ],
+        grandPrizes: [
+            {
+                id: 1,
+                cost: 12,
+                free: {
+                    resource: "customization_winter_event_2024_sleigh",
+                    amount: 1
+                },
+                premium: {
+                    resource: "victory_ticket",
+                    amount: 25
+                }
+            },
+            {
+                id: 2,
+                cost: 12,
+                free: {
+                    resource: "antimatter",
+                    amount: 1
+                },
+                premium: {
+                    resource: "antimatter",
+                    amount: 2
+                }
+            },
+            {
+                id: 3,
+                cost: 12,
+                free: {
+                    resource: "customization_winter_event_2024_snowman",
+                    amount: 1
+                },
+                premium: {
+                    resource: "goods",
+                    amount: "N"
+                }
+            },
+            {
+                id: 4,
+                cost: 12,
+                free: {
+                    resource: "antimatter",
+                    amount: 1
+                },
+                premium: {
+                    resource: "antimatter",
+                    amount: 2
+                }
+            },
+            {
+                id: 5,
+                cost: 12,
+                free: {
+                    resource: "customization_winter_event_2024_winter_home",
+                    amount: 1
+                },
+                premium: {
+                    resource: "antimatter",
+                    amount: 2
+                }
+            },
+            {
+                id: 6,
+                cost: 12,
+                free: {
+                    resource: "antimatter_legendary_part",
+                    amount: 2
+                },
+                premium: {
+                    resource: "antimatter_legendary_part",
+                    amount: 3
+                }
+            },
+            {
+                id: 7,
+                cost: 12,
+                free: {
+                    resource: "research_point",
+                    amount: 5
+                },
+                premium: {
+                    resource: "research_point",
+                    amount: 7
+                }
+            },
+            {
+                id: 8,
+                cost: 12,
+                free: {
+                    resource: "antimatter",
+                    amount: 1
+                },
+                premium: {
+                    resource: "antimatter",
+                    amount: 2
+                }
+            },
+            {
+                id: 9,
+                cost: 12,
+                free: {
+                    resource: "customization_winter_event_2024_candy_store",
+                    amount: 1
+                },
+                premium: {
+                    resource: "chest_ascension_2",
+                    amount: 1
+                }
+            },
+            {
+                id: 10,
+                cost: 12,
+                free: {
+                    resource: "antimatter",
+                    amount: 1
+                },
+                premium: {
+                    resource: "antimatter",
+                    amount: 2
+                }
+            },
+            {
+                id: 11,
+                cost: 12,
+                free: {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                },
+                premium: {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            },
+            {
+                id: 12,
+                cost: 12,
+                free: {
+                    resource: "research_point",
+                    amount: 5
+                },
+                premium: {
+                    resource: "research_point",
+                    amount: 7
+                }
+            },
+            {
+                id: 13,
+                cost: 12,
+                free: {
+                    resource: "customization_winter_event_2024_frozen_pond",
+                    amount: 1
+                },
+                premium: {
+                    resource: "antimatter",
+                    amount: 2
+                }
+            },
+            {
+                id: 14,
+                cost: 12,
+                free: {
+                    resource: "antimatter",
+                    amount: 1
+                },
+                premium: {
+                    resource: "antimatter",
+                    amount: 2
+                }
+            },
+            {
+                id: 15,
+                cost: 12,
+                free: {
+                    resource: "customization_winter_event_2024_winter_pyramid",
+                    amount: 1
+                },
+                premium: {
+                    resource: "folio_of_enlightenment",
+                    amount: 1
+                }
+            },
+            {
+                id: 16,
+                cost: 12,
+                free: {
+                    resource: "victory_ticket",
+                    amount: 15
+                },
+                premium: {
+                    resource: "victory_ticket",
+                    amount: 25
+                }
+            },
+            {
+                id: 17,
+                cost: 12,
+                free: {
+                    resource: "antimatter",
+                    amount: 1
+                },
+                premium: {
+                    resource: "antimatter",
+                    amount: 2
+                }
+            },
+            {
+                id: 18,
+                cost: 12,
+                free: {
+                    resource: "antimatter_legendary",
+                    amount: 1
+                },
+                premium: {
+                    resource: "antimatter_legendary",
+                    amount: 1
+                }
+            },
+            {
+                id: 19,
+                cost: 12,
+                free: {
+                    resource: "antimatter",
+                    amount: 1
+                },
+                premium: {
+                    resource: "antimatter",
+                    amount: 2
+                }
+            },
+            {
+                id: 20,
+                cost: 12,
+                free: {
+                    resource: "antimatter_legendary_part",
+                    amount: 10
+                },
+                premium: {
+                    resource: "customization_winter_event_2024_winter_market",
+                    amount: 1
+                }
+            },
+        ]
+    },*/
     {
         id: "world_fair_2024",
         name: "World Fair 2024",
@@ -26,6 +420,7 @@ const allEvents = [
         startDate: "October 23th 2024",
         endDate: "November 13th 2024",
         betaStartDate: "October 15th 2024",
+        banner: EventBackgroundWorldFair,
         headerImage: Questgiver_BenjaminFranklin,
         questgiverName: "Benjamin Franklin",
         type: "merge_event",
@@ -81,12 +476,15 @@ const allEvents = [
         },
         currency: {
             name: "Discovery Books",
-            image: icon_event_world_fair_tokens
+            image: icon_event_world_fair_tokens,
+            description: "are collected by completing event quests and by logging in daily. You can purchase more of them with Gems. They are used to spawn inventions on the board in the main event window."
         },
         payback: {
             name: "Energy",
-            image: icon_event_worldfair_2024_grand_prize_progress
+            image: icon_event_worldfair_2024_grand_prize_progress,
+            description: "is collected by fulfulling orders on the left-hand side. Merge pieces on the board to create the inventions required in the tasks. Candles defines your progress on the Grand Prizes lane."
         },
+        questsIcon: quests_icon,
         questlineColor: "#686cfe",
         questlines: [
             {   

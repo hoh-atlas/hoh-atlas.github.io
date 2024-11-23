@@ -77,7 +77,7 @@ const links = [
         url: "/community",
         text: "Community",
         img: Navbar_Community,
-        show: false,
+        show: true,
     },
 ]
 

@@ -17,7 +17,6 @@ import CardContainer from "../../shared/CardContainer";
 import allEvents from "../data";
 
 import icon_event_world_fair_tokens from "../../../images/events/intro/icon_event_world_fair_tokens.webp";
-import EventBackgroundWorldFair from "../../../images/events/intro/EventBackgroundWorldFair.webp";
 import world_fair_2024 from "../../../images/events/intro/world_fair_2024_window.webp";
 
 const Intro = (props) => {
@@ -55,7 +54,7 @@ const Intro = (props) => {
 
             <CardContainer 
                 card1={
-                    <Card title={"<b>Schedule on Live Servers</b>"} centered backgroundImage={EventBackgroundWorldFair} blurred={false} footer={event.startDate + " - " + event.endDate}></Card>
+                    <Card title={"<b>Schedule on Live Servers</b>"} centered backgroundImage={event.banner} blurred={false} footer={event.startDate + " - " + event.endDate}></Card>
                 }
                 style={{ marginTop: '20px', marginBottom: '20px' }}
             >
@@ -63,11 +62,9 @@ const Intro = (props) => {
 
             <TextBlock>
 
-                <Icon resource={event.currency.image}/> <b>{event.currency.name}</b> are collected by completing event quests and by logging in daily. You can purchase more of them with Gems. They are used to spawn
-                inventions on the board in the main event window.<br/><br/>
+                <Icon resource={event.currency.image}/> <b>{event.currency.name}</b> {event.currency.description}<br/><br/>
 
-                <Icon resource={event.payback.image}/> <b>{event.payback.name}</b> is collected by fulfulling orders on the left-hand side. Merge pieces on the board to create the inventions required in the tasks. {event.payback.name} defines
-                your progress on the Grand Prizes lane.
+                <Icon resource={event.payback.image}/> <b>{event.payback.name}</b> {event.payback.description}
 
             </TextBlock>
 

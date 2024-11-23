@@ -12,7 +12,8 @@ const PrivacyPolicy = () => {
 
     return <>
         <Prologue imageSrc={xp_scroll_uncommon} alt="" maxHeight="80px">
-            Privacy Policy for HoH-Atlas
+            The Privacy Policy for HoH-Atlas outlines how we collect, use, and protect your personal information when you visit and interact with our website.
+            This page ensures transparency and helps you understand your privacy rights while using the HoH-Atlas Wiki.
         </Prologue>
 
         <SectionDivider/>

@@ -31,7 +31,7 @@ const Quests = (props) => {
   
     return (
         <>
-            <Prologue imageSrc={quests_icon} alt={"Events"} maxHeight={"65px"} >            
+            <Prologue imageSrc={event.questsIcon} alt={"Events"} maxHeight={"65px"} >            
                 Quests introduce players to the story of the event and offer a variety of rewards. They consist of rush quests and daily quests that appear at a pace of 4 per event day.
             </Prologue>
 

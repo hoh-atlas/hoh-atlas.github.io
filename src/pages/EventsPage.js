@@ -61,6 +61,20 @@ const EventsPage = (props) => {
     const selectedEvent = selectedOption.value;
     
     sectionsDefinition.tabs[0].img = selectedOption.image;
+   
+    const event = allEvents.find((oneEvent) => oneEvent.id === selectedEvent);
+    if (event.questlines === undefined) {
+        if (event.leaderboard) {
+            sectionsDefinition.tabs[2].name = "Leaderboard";
+            sectionsDefinition.tabs[2].img = event.questsIcon;
+        }
+    }
+    if (event.leaderboard === undefined) {
+        if (event.questlines) {
+            sectionsDefinition.tabs[2].name = "Quests";
+            sectionsDefinition.tabs[2].img = event.questsIcon;
+        }
+    }
 
     const renderSelectedTab = () => {
       switch (props.tab.url) {
