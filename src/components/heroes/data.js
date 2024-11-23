@@ -411,6 +411,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_ragnarlodbrok,
@@ -549,6 +581,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_lagertha,
@@ -686,6 +750,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "hortus_sanitatis",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "hortus_sanitatis",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -826,7 +922,7 @@ const allHeroes = [
                     amount: 3
                 }
             ],
-            /*90: [  check values before publishing due to changes
+            90: [
                 {
                     resource: "yellow_crest_superior",
                     amount: 140
@@ -838,10 +934,6 @@ const allHeroes = [
                 {
                     resource: "tesla_core",
                     amount: 2
-                },
-                {
-                    resource: "prism_of_fate",
-                    amount: 3
                 }
             ],
             100: [
@@ -861,8 +953,8 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 4
                 }
-            ],
-            110: [
+            ]
+            /*110: [
                 {
                     resource: "yellow_crest_superior",
                     amount: 160
@@ -1071,6 +1163,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_alberteinstein,
@@ -1208,6 +1332,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "hortus_sanitatis",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -1347,6 +1503,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_juliuscaesar,
@@ -1484,6 +1672,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -1623,6 +1843,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_mariecurie,
@@ -1760,6 +2012,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -1899,6 +2183,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_queenelizabethi,
@@ -2036,6 +2352,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -2175,6 +2523,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_georgewashington,
@@ -2312,6 +2692,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -2451,6 +2863,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_williamwallace,
@@ -2588,6 +3032,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -2727,6 +3203,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_joanofarc,
@@ -2864,6 +3372,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -3003,6 +3543,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_abrahamlincoln,
@@ -3140,6 +3712,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "hortus_sanitatis",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -3279,6 +3883,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "herbal_poultice",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_huamulan,
@@ -3417,6 +4053,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "crested_guidon",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_ramsesii,
@@ -3554,6 +4222,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "charta_terrestre",
+                    amount: 8
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                }
+            ],
+            100: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 150
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 5
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 3
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -3704,6 +4404,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_menes,
@@ -3841,6 +4573,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -3980,6 +4744,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_tigerlily,
@@ -4117,6 +4913,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "hortus_sanitatis",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "hortus_sanitatis",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -4256,6 +5084,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_hatshepsut,
@@ -4393,6 +5253,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "hortus_sanitatis",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "hortus_sanitatis",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -4532,6 +5424,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_louisxiv,
@@ -4669,6 +5593,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -4808,6 +5764,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_margaretiofdenmark,
@@ -4945,6 +5933,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "hortus_sanitatis",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "hortus_sanitatis",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -5084,6 +6104,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_vincentvangogh,
@@ -5221,6 +6273,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -5360,6 +6444,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "purple_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_thomasalvaedison,
@@ -5497,6 +6613,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "green_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -5636,6 +6784,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_charlemagne,
@@ -5773,6 +6953,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "blue_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },
@@ -5912,6 +7124,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_kingminos,
@@ -6050,6 +7294,38 @@ const allHeroes = [
                     resource: "folio_of_enlightenment",
                     amount: 3
                 }
+            ],
+            90: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "red_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "gilded_pennant",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
+                }
             ]
         },
         abilityIcon: icon_hero_battle_ability_queenboudicca,
@@ -6187,6 +7463,38 @@ const allHeroes = [
                 {
                     resource: "folio_of_enlightenment",
                     amount: 3
+                }
+            ],
+            90: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 130
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 2
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 1
+                }
+            ],
+            100: [
+                {
+                    resource: "yellow_crest_superior",
+                    amount: 140
+                },
+                {
+                    resource: "travelers_compass",
+                    amount: 4
+                },
+                {
+                    resource: "tesla_core",
+                    amount: 2
+                },
+                {
+                    resource: "folio_of_enlightenment",
+                    amount: 4
                 }
             ]
         },

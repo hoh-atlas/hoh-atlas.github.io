@@ -314,8 +314,8 @@ const Intro = (props) => {
     return (
         <>
             <Prologue imageSrc={cleopatra} alt={"Event"} maxHeight={"65px"}>
-            Use the filters to refine your search and find heroes that match your preferred criteria. Whether you seek valiant knights, cunning rogues, powerful mages, or wise sages, you'll find them all here. 
-            Filter by hero class, unit type, crest colors, and factions to tailor your adventure to your liking.
+                Use the filters to refine your search and find heroes that match your preferred criteria. Whether you seek valiant defenders, powerful tanks, smart mages, or wise thinkers, you'll find them all here. 
+                Filter by hero class, unit type, crest colors, and various tactical types to tailor your fights to your liking.
             </Prologue>
             <SectionDivider />
             <div className="select-boxes-container">
