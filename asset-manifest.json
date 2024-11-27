@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d6aba71.css",
-    "main.js": "/static/js/main.42af3c30.js",
+    "main.css": "/static/css/main.9a2a1cad.css",
+    "main.js": "/static/js/main.4111ce18.js",
     "static/media/layout_5_sector_3.webp": "/static/media/layout_5_sector_3.c0f317a3382f299fbe11.webp",
     "static/media/layout_egypt_3_sector_3.webp": "/static/media/layout_egypt_3_sector_3.176bb3c09225286b101a.webp",
     "static/media/layout_egypt_4_sector_3.webp": "/static/media/layout_egypt_4_sector_3.ca8d981c13c641b372d7.webp",
@@ -100,6 +100,7 @@
     "static/media/hoh_banner.webp": "/static/media/hoh_banner.7e066fb1f5260cd02238.webp",
     "static/media/Unit_CyrusTheGreat_fullbody.webp": "/static/media/Unit_CyrusTheGreat_fullbody.bce1d55d853c116261de.webp",
     "static/media/Unit_Confucius_fullbody.webp": "/static/media/Unit_Confucius_fullbody.084bdd39a289d23d9602.webp",
+    "static/media/Research_age_cover_0.webp": "/static/media/Research_age_cover_0.df85f19f96193ebcdd01.webp",
     "static/media/city_event_banner_china_forbiddencity.png": "/static/media/city_event_banner_china_forbiddencity.77d42c155cc2ce45d5a4.png",
     "static/media/Unit_RobinHood_fullbody.webp": "/static/media/Unit_RobinHood_fullbody.101ca3240b8d6fe3a13e.webp",
     "static/media/world_fair_2024_tesla_coil.webp": "/static/media/world_fair_2024_tesla_coil.c52129b8900c6acabc13.webp",
@@ -240,6 +241,7 @@
     "static/media/world_fair_2024_rareflower_3.webp": "/static/media/world_fair_2024_rareflower_3.dbb0892303f6e61f3476.webp",
     "static/media/Navbar_Events.webp": "/static/media/Navbar_Events.a0c03c1891d5db25d4d5.webp",
     "static/media/Navbar_Seasons.webp": "/static/media/Navbar_Seasons.4ea46e9c90cda1fc0936.webp",
+    "static/media/Navbar_Research.webp": "/static/media/Navbar_Research.2909e67487d320e58acf.webp",
     "static/media/icon_rift_token_common_part.webp": "/static/media/icon_rift_token_common_part.74427aa3c807df4006f9.webp",
     "static/media/icon_selection_kit_customizations_generic.webp": "/static/media/icon_selection_kit_customizations_generic.5c0b75017bf8d6afc49d.webp",
     "static/media/Reward_Winter_GoldChest_4.webp": "/static/media/Reward_Winter_GoldChest_4.3a15f46095460c352299.webp",
@@ -397,6 +399,7 @@
     "static/media/icon_expansion_city_capital_land.webp": "/static/media/icon_expansion_city_capital_land.0ef703bbf14fcb112753.webp",
     "static/media/China_Small_Home_Lv3.webp": "/static/media/China_Small_Home_Lv3.4268e45aeadf49ab87aa.webp",
     "static/media/China_Small_Home_Lv2.webp": "/static/media/China_Small_Home_Lv2.d26565b950b1d8ac66a2.webp",
+    "static/media/icon_hud_research.webp": "/static/media/icon_hud_research.e223758b11983ad21e49.webp",
     "static/media/Unit_AttilaTheHun.webp": "/static/media/Unit_AttilaTheHun.ba0910f5fdb7bedae416.webp",
     "static/media/icon_expansion_city_china_land.webp": "/static/media/icon_expansion_city_china_land.097cc5f374ca65fad606.webp",
     "static/media/icon_hero_battle_ability_leiferikson.webp": "/static/media/icon_hero_battle_ability_leiferikson.fa93fdce88d8cf25101b.webp",
@@ -741,11 +744,11 @@
     "static/media/herbs.webp": "/static/media/herbs.45e59d4e77aed5c7159a.webp",
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
-    "main.1d6aba71.css.map": "/static/css/main.1d6aba71.css.map",
-    "main.42af3c30.js.map": "/static/js/main.42af3c30.js.map"
+    "main.9a2a1cad.css.map": "/static/css/main.9a2a1cad.css.map",
+    "main.4111ce18.js.map": "/static/js/main.4111ce18.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d6aba71.css",
-    "static/js/main.42af3c30.js"
+    "static/css/main.9a2a1cad.css",
+    "static/js/main.4111ce18.js"
   ]
 }
