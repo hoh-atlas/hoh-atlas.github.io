@@ -29,13 +29,13 @@ import icon_snowflake_competion_leaderboard_chest from "../../images/events/intr
 import Reward_Winter_GoldChest_4 from "../../images/events/intro/Reward_Winter_GoldChest_4.webp";
 
 const allEvents = [
-    /*{
+    {
         id: "winter_event_2024",
         name: "Winter Event 2024",
         image: icon_event_winter_tokens,
-        startDate: "November 23th 2024",
-        endDate: "December 13th 2024",
-        betaStartDate: "November 23th 2024",
+        startDate: "__ _ 2024",
+        endDate: "__ _ 2024",
+        betaStartDate: "November 27th 2024",
         banner: EventBackgroundWinterEvent,
         headerImage: EventHeaderWinterEvent,
         questgiverName: "Winter town",
@@ -412,7 +412,7 @@ const allEvents = [
                 }
             },
         ]
-    },*/
+    },
     {
         id: "world_fair_2024",
         name: "World Fair 2024",

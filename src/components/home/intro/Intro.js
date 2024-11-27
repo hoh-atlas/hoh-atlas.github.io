@@ -22,6 +22,7 @@ import china_background_news from "../../../images/home/intro/china_background_n
 import news_egypt_banner from "../../../images/home/intro/news_egypt_banner.webp";
 import news_china_banner from "../../../images/home/intro/news_china_banner.webp";
 import EventBackgroundWorldFair from "../../../images/events/intro/EventBackgroundWorldFair.webp";
+import EventBackgroundWinterEvent from "../../../images/events/intro/EventBackgroundWinterEvent.webp";
 
 const Intro = () => {
     return <>
@@ -56,12 +57,12 @@ const Intro = () => {
     <SectionDivider />
     <TextContainer
         centered={true}
-        headerTexts={[`Season 3: Rome's Titans is coming soon! (Nov 19th 2024)`]}
-        texts={[`Check the Seasons page to find all the details about the upcoming Season 3: Rome's Titans!`]}
+        headerTexts={[`The Winter Event has started on the Preview Server! (Nov 27th 2024)`,`Season 3: Rome's Titans is coming soon! (Nov 19th 2024)`]}
+        texts={[``,`Check the Seasons page to find all the details about the upcoming Season 3: Rome's Titans!`]}
         style={{ marginBottom: '20px', marginTop: '5px' }}
         textRectangleHeight={'150px'}
-        imageUrls={[]}
-        links={[`https://hoh-atlas.com/#/seasons`]}
+        imageUrls={[EventBackgroundWinterEvent,'']}
+        links={[`https://hoh-atlas.com/#/events`,`https://hoh-atlas.com/#/seasons`]}
         pulsate={false}
         autoSlideSeconds={10}>
     </TextContainer>
