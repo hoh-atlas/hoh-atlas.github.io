@@ -1,6 +1,10 @@
+import Research_age_cover_0 from "../../images/research/intro/Research_age_cover_0.webp";
+
 const allTechnologies = [
     {
+        id: 1,
         era: "Stone Age",
+        image: Research_age_cover_0,
         technologies: [
             {
                 id: 1,
@@ -289,6 +293,7 @@ const allTechnologies = [
         ]
     },
     {
+        id: 2,
         era: "Bronze Age",
         technologies: [
             {
@@ -386,6 +391,10 @@ const allTechnologies = [
                     {
                         resource: "coins",
                         amount: 2100
+                    },
+                    {
+                        resource: "petroglyph",
+                        amount: 1
                     }
                 ],
                 parents: [4],
@@ -419,6 +428,10 @@ const allTechnologies = [
                         resource: "coins",
                         amount: 4750
                     },
+                    {
+                        resource: "lapis_lazuli",
+                        amount: 2
+                    }
                 ],
                 parents: [5],
                 children: [11]
@@ -499,6 +512,10 @@ const allTechnologies = [
                         resource: "coins",
                         amount: 5150
                     },
+                    {
+                        resource: "bronze_bracelet",
+                        amount: 25
+                    }
                 ],
                 parents: [12],
                 children: [16]
@@ -1054,6 +1071,7 @@ const allTechnologies = [
         ]
     },
     {
+        id: 3,
         era: "Minoan Era",
         technologies: [
             {
@@ -1835,6 +1853,7 @@ const allTechnologies = [
         ]
     },
     {
+        id: 4,
         era: "Classic Greece",
         technologies: [
             {
@@ -2604,6 +2623,7 @@ const allTechnologies = [
         ]
     },
     {
+        id: 5,
         era: "Early Rome",
         technologies: [
             {
@@ -3400,6 +3420,2464 @@ const allTechnologies = [
                     }
                 ],
                 parents: [27,28,29],
+                children: []
+            },
+        ]
+    },
+    {
+        id: 6,
+        era: "Roman Empire",
+        technologies: [
+            {
+                id: 1,
+                name: "Urbs Aeterna",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 33
+                    },
+                    {
+                        resource: "coins",
+                        amount: 170000
+                    },
+                    {
+                        resource: "gold_laurel",
+                        amount: 1365
+                    },
+                    {
+                        resource: "tunic",
+                        amount: 585
+                    },
+                ],
+                parents: [],
+                children: [2,3,4]
+            },
+            {
+                id: 2,
+                name: "Sagittarii",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 33
+                    },
+                    {
+                        resource: "coins",
+                        amount: 115000
+                    },
+                    {
+                        resource: "tunic",
+                        amount: 1240
+                    },
+                    {
+                        resource: "stone_tablet",
+                        amount: 530
+                    },
+                    {
+                        resource: "amethyst",
+                        amount: 2
+                    }
+                ],
+                parents: [1],
+                children: [5]
+            },
+            {
+                id: 3,
+                name: "Cape",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 28
+                    },
+                    {
+                        resource: "coins",
+                        amount: 111000
+                    },
+                    {
+                        resource: "stone_tablet",
+                        amount: 865
+                    },
+                    {
+                        resource: "gold_laurel",
+                        amount: 370
+                    },
+                    {
+                        resource: "roman_cameo_ring",
+                        amount: 2
+                    },
+                ],
+                parents: [1],
+                children: [6,7]
+            },
+            {
+                id: 4,
+                name: "Legionary",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 30
+                    },
+                    {
+                        resource: "coins",
+                        amount: 132000
+                    },
+                    {
+                        resource: "gold_laurel",
+                        amount: 1300
+                    },
+                    {
+                        resource: "tunic",
+                        amount: 560
+                    },
+                ],
+                parents: [1],
+                children: [8]
+            },
+            {
+                id: 5,
+                name: "Fountains",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 34
+                    },
+                    {
+                        resource: "coins",
+                        amount: 128000
+                    },
+                    {
+                        resource: "stone_tablet",
+                        amount: 835
+                    },
+                    {
+                        resource: "gold_laurel",
+                        amount: 360
+                    },
+                    {
+                        resource: "amethyst",
+                        amount: 4
+                    }
+                ],
+                parents: [2],
+                children: [9]
+            },
+            {
+                id: 6,
+                name: "Goblet",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 25
+                    },
+                    {
+                        resource: "coins",
+                        amount: 165000
+                    },
+                    {
+                        resource: "cape",
+                        amount: 930
+                    },
+                    {
+                        resource: "gold_laurel",
+                        amount: 400
+                    },
+                ],
+                parents: [3],
+                children: [9,10]
+            },
+            {
+                id: 7,
+                name: "Mosaic",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 30
+                    },
+                    {
+                        resource: "coins",
+                        amount: 161000
+                    },
+                    {
+                        resource: "cape",
+                        amount: 1145
+                    },
+                    {
+                        resource: "stone_tablet",
+                        amount: 490
+                    },
+                    {
+                        resource: "roman_cameo_ring",
+                        amount: 3
+                    }
+                ],
+                parents: [3],
+                children: [11]
+            },
+            {
+                id: 8,
+                name: "Princeps",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 29
+                    },
+                    {
+                        resource: "coins",
+                        amount: 140000
+                    },,
+                    {
+                        resource: "tunic",
+                        amount: 1055
+                    },
+                    {
+                        resource: "stone_tablet",
+                        amount: 450
+                    },
+                    {
+                        resource: "amethyst",
+                        amount: 4
+                    },
+                ],
+                parents: [4],
+                children: [11]
+            },
+            {
+                id: 9,
+                name: "Swinery",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 23
+                    },
+                    {
+                        resource: "coins",
+                        amount: 152000
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 1210
+                    },
+                    {
+                        resource: "cape",
+                        amount: 520
+                    },
+                    {
+                        resource: "amethyst",
+                        amount: 6
+                    }
+                ],
+                parents: [5,6],
+                children: [12]
+            },
+            {
+                id: 10,
+                name: "Turmae",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 24
+                    },
+                    {
+                        resource: "coins",
+                        amount: 181000
+                    },
+                    {
+                        resource: "cape",
+                        amount: 1455
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 625
+                    },
+                ],
+                parents: [6],
+                children: [12]
+            },
+            {
+                id: 11,
+                name: "Ballistas",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 33
+                    },
+                    {
+                        resource: "coins",
+                        amount: 161000
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 1270
+                    },
+                    {
+                        resource: "cape",
+                        amount: 545
+                    },
+                    {
+                        resource: "amethyst",
+                        amount: 6
+                    },
+                ],
+                parents: [7,8],
+                children: [12]
+            },
+            {
+                id: 12,
+                name: "Alloyed Arrowheads",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 32
+                    },
+                    {
+                        resource: "coins",
+                        amount: 120000
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 1055
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 450
+                    },
+                    {
+                        resource: "roman_cameo_ring",
+                        amount: 7
+                    }
+                ],
+                parents: [9,10,11],
+                children: [13,14,15]
+            },
+            {
+                id: 13,
+                name: "Villa Rustica",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 30
+                    },
+                    {
+                        resource: "coins",
+                        amount: 173000
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 1210
+                    },
+                    {
+                        resource: "cape",
+                        amount: 520
+                    },
+                    {
+                        resource: "roman_cameo_ring",
+                        amount: 7
+                    },
+                ],
+                parents: [12],
+                children: [16]
+            },
+            {
+                id: 14,
+                name: "Shieldwall Fortification",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 26
+                    },
+                    {
+                        resource: "coins",
+                        amount: 140000
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 1365
+                    },
+                    {
+                        resource: "gold_laurel",
+                        amount: 585
+                    },
+                    {
+                        resource: "amethyst",
+                        amount: 8
+                    }
+                ],
+                parents: [12],
+                children: [17]
+            },
+            {
+                id: 15,
+                name: "Tenant Farming",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 29
+                    },
+                    {
+                        resource: "coins",
+                        amount: 185000
+                    },
+                    {
+                        resource: "cape",
+                        amount: 990
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 425
+                    }
+                ],
+                parents: [12],
+                children: [18]
+            },
+            {
+                id: 16,
+                name: "Forums",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 26
+                    },
+                    {
+                        resource: "coins",
+                        amount: 136000
+                    },
+                    {
+                        resource: "cape",
+                        amount: 1610
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 690
+                    },
+                    {
+                        resource: "roman_cameo_ring",
+                        amount: 8
+                    }
+                ],
+                parents: [13],
+                children: [19]
+            },
+            {
+                id: 17,
+                name: "Enhanced Torsion",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 38
+                    },
+                    {
+                        resource: "coins",
+                        amount: 124000
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 1580
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 675
+                    },
+                    {
+                        resource: "amethyst",
+                        amount: 11
+                    },
+                ],
+                parents: [14],
+                children: [20]
+            },
+            {
+                id: 18,
+                name: "Field Medicines",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 34
+                    },
+                    {
+                        resource: "coins",
+                        amount: 214000
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 1240
+                    },
+                    {
+                        resource: "cape",
+                        amount: 530
+                    },
+                    {
+                        resource: "amethyst",
+                        amount: 13
+                    }
+                ],
+                parents: [15],
+                children: [20]
+            },
+            {
+                id: 19,
+                name: "Improved Stirrups",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 35
+                    },
+                    {
+                        resource: "coins",
+                        amount: 136000
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 1520
+                    },
+                    {
+                        resource: "tunic",
+                        amount: 650
+                    },
+                    {
+                        resource: "roman_cameo_ring",
+                        amount: 8
+                    }
+                ],
+                parents: [16],
+                children: [21,22]
+            },
+            {
+                id: 20,
+                name: "Centurions Aim",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 26
+                    },
+                    {
+                        resource: "coins",
+                        amount: 210000
+                    },
+                    {
+                        resource: "cape",
+                        amount: 900
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 385
+                    },
+                    {
+                        resource: "roman_cameo_ring",
+                        amount: 10
+                    }
+                ],
+                parents: [17,18],
+                children: [22,23,24]
+            },
+            {
+                id: 21,
+                name: "Villa Urbana",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 24
+                    },
+                    {
+                        resource: "coins",
+                        amount: 210000
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 1300
+                    },
+                    {
+                        resource: "stone_tablet",
+                        amount: 560
+                    },
+                ],
+                parents: [19],
+                children: [25]
+            },
+            {
+                id: 22,
+                name: "Quick Reload System",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 30
+                    },
+                    {
+                        resource: "coins",
+                        amount: 181000
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 1055
+                    },
+                    {
+                        resource: "tunic",
+                        amount: 450
+                    },
+                    {
+                        resource: "amethyst",
+                        amount: 13
+                    },
+                ],
+                parents: [19,20],
+                children: [26]
+            },
+            {
+                id: 23,
+                name: "Public Gardens",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 28
+                    },
+                    {
+                        resource: "coins",
+                        amount: 128000
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 1580
+                    },
+                    {
+                        resource: "cape",
+                        amount: 675
+                    },
+                ],
+                parents: [20],
+                children: [26]
+            },
+            {
+                id: 24,
+                name: "Centurion Command",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 29
+                    },
+                    {
+                        resource: "coins",
+                        amount: 194000
+                    },
+                    {
+                        resource: "cape",
+                        amount: 960
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 410
+                    },
+                    {
+                        resource: "roman_cameo_ring",
+                        amount: 13
+                    },
+                ],
+                parents: [20],
+                children: [27]
+            },
+            {
+                id: 25,
+                name: "Underfloor Heating",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 36
+                    },
+                    {
+                        resource: "coins",
+                        amount: 140000
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 1020
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 440
+                    },
+                    {
+                        resource: "amethyst",
+                        amount: 15
+                    }
+                ],
+                parents: [21],
+                children: [28]
+            },
+            {
+                id: 26,
+                name: "Improved Gladius",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 25
+                    },
+                    {
+                        resource: "coins",
+                        amount: 202000
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 1395
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 595
+                    },
+                    {
+                        resource: "amethyst",
+                        amount: 16
+                    }
+                ],
+                parents: [22,23],
+                children: [28]
+            },
+            {
+                id: 27,
+                name: "Circus Maximus",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 34
+                    },
+                    {
+                        resource: "coins",
+                        amount: 210000
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 960
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 410
+                    },
+                ],
+                parents: [24],
+                children: [28]
+            },
+            {
+                id: 28,
+                name: "Pasture Improvement",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 31
+                    },
+                    {
+                        resource: "coins",
+                        amount: 165000
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 1580
+                    },
+                    {
+                        resource: "stone_tablet",
+                        amount: 675
+                    },
+                    {
+                        resource: "roman_cameo_ring",
+                        amount: 17
+                    },
+                ],
+                parents: [25,26,27],
+                children: [29]
+            },
+            {
+                id: 29,
+                name: "Horseshoe Alloys",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 34
+                    },
+                    {
+                        resource: "coins",
+                        amount: 169000
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 1020
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 440
+                    },
+                    {
+                        resource: "amethyst",
+                        amount: 20
+                    }
+                ],
+                parents: [28],
+                children: []
+            },
+        ]
+    },
+    {
+        id: 7,
+        era: "Byzantine Era",
+        technologies: [
+            {
+                id: 1,
+                name: "Byzantium",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 39
+                    },
+                    {
+                        resource: "coins",
+                        amount: 266000
+                    },
+                    {
+                        resource: "cape",
+                        amount: 1320
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 570
+                    },
+                ],
+                parents: [],
+                children: [2,3,4]
+            },
+            {
+                id: 2,
+                name: "Carpenter",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 41
+                    },
+                    {
+                        resource: "coins",
+                        amount: 223000
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 410
+                    },
+                    {
+                        resource: "opal",
+                        amount: 2
+                    },
+                ],
+                parents: [1],
+                children: [5]
+            },
+            {
+                id: 3,
+                name: "Spice Merchant",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 46
+                    },
+                    {
+                        resource: "coins",
+                        amount: 309000
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 1200
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 520
+                    },
+                    {
+                        resource: "opal",
+                        amount: 3
+                    },
+                ],
+                parents: [1],
+                children: [6]
+            },
+            {
+                id: 4,
+                name: "Scribe",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 40
+                    },
+                    {
+                        resource: "coins",
+                        amount: 240000
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 1090
+                    },
+                    {
+                        resource: "cape",
+                        amount: 470
+                    },
+                    {
+                        resource: "byzantine_ewer",
+                        amount: 2
+                    },
+                ],
+                parents: [1],
+                children: [7]
+            },
+            {
+                id: 5,
+                name: "Bucellarii",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 37
+                    },
+                    {
+                        resource: "coins",
+                        amount: 326000
+                    },
+                    {
+                        resource: "planks",
+                        amount: 370
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 160
+                    },
+                    {
+                        resource: "opal",
+                        amount: 5
+                    }
+                ],
+                parents: [2],
+                children: [8]
+            },
+            {
+                id: 6,
+                name: "Saracen Archers",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 30
+                    },
+                    {
+                        resource: "coins",
+                        amount: 249000
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 250
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 110
+                    },
+                    {
+                        resource: "opal",
+                        amount: 5
+                    },
+                ],
+                parents: [3],
+                children: [8,9]
+            },
+            {
+                id: 7,
+                name: "Catapult",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 41
+                    },
+                    {
+                        resource: "coins",
+                        amount: 249000
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 390
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 170
+                    },
+                    {
+                        resource: "opal",
+                        amount: 8
+                    }
+                ],
+                parents: [4],
+                children: [9]
+            },
+            {
+                id: 8,
+                name: "Trapezites",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 39
+                    },
+                    {
+                        resource: "coins",
+                        amount: 360000
+                    },,
+                    {
+                        resource: "pepper",
+                        amount: 740
+                    },
+                    {
+                        resource: "planks",
+                        amount: 320
+                    },
+                    {
+                        resource: "byzantine_ewer",
+                        amount: 7
+                    },
+                ],
+                parents: [5,6],
+                children: [10,11]
+            },
+            {
+                id: 9,
+                name: "Jovians",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 36
+                    },
+                    {
+                        resource: "coins",
+                        amount: 343000
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 980
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 420
+                    },
+                ],
+                parents: [6,7],
+                children: [12]
+            },
+            {
+                id: 10,
+                name: "Pendentive Dome",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 50
+                    },
+                    {
+                        resource: "coins",
+                        amount: 386000
+                    },
+                    {
+                        resource: "planks",
+                        amount: 860
+                    },
+                    {
+                        resource: "cape",
+                        amount: 370
+                    },
+                    {
+                        resource: "opal",
+                        amount: 8
+                    },
+                ],
+                parents: [8],
+                children: [13]
+            },
+            {
+                id: 11,
+                name: "Forquier",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 35
+                    },
+                    {
+                        resource: "coins",
+                        amount: 309000
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 1470
+                    },
+                    {
+                        resource: "planks",
+                        amount: 630
+                    },
+                    {
+                        resource: "byzantine_ewer",
+                        amount: 7
+                    },
+                ],
+                parents: [8],
+                children: [14]
+            },
+            {
+                id: 12,
+                name: "Architekton",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 40
+                    },
+                    {
+                        resource: "coins",
+                        amount: 223000
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 1170
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 500
+                    },
+                    {
+                        resource: "opal",
+                        amount: 11
+                    }
+                ],
+                parents: [9],
+                children: [15,16]
+            },
+            {
+                id: 13,
+                name: "Improved Lorica",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 47
+                    },
+                    {
+                        resource: "coins",
+                        amount: 378000
+                    },
+                    {
+                        resource: "planks",
+                        amount: 1640
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 700
+                    },
+                    {
+                        resource: "byzantine_ewer",
+                        amount: 11
+                    },
+                ],
+                parents: [10],
+                children: [17]
+            },
+            {
+                id: 14,
+                name: "Theodosian Walls",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 34
+                    },
+                    {
+                        resource: "coins",
+                        amount: 438000
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 1870
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 800
+                    },
+                ],
+                parents: [11],
+                children: [18]
+            },
+            {
+                id: 15,
+                name: "Polyculture",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 45
+                    },
+                    {
+                        resource: "coins",
+                        amount: 318000
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 1310
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 560
+                    },
+                    {
+                        resource: "opal",
+                        amount: 12
+                    },
+                ],
+                parents: [12],
+                children: [18]
+            },
+            {
+                id: 16,
+                name: "Precision Armguards",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 40
+                    },
+                    {
+                        resource: "coins",
+                        amount: 275000
+                    },
+                    {
+                        resource: "planks",
+                        amount: 1540
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 660
+                    },
+                    {
+                        resource: "opal",
+                        amount: 12
+                    }
+                ],
+                parents: [12],
+                children: [19]
+            },
+            {
+                id: 17,
+                name: "Crossgroined Vault",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 32
+                    },
+                    {
+                        resource: "coins",
+                        amount: 343000
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 1260
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 540
+                    },
+                    {
+                        resource: "byzantine_ewer",
+                        amount: 12
+                    },
+                ],
+                parents: [13],
+                children: [20]
+            },
+            {
+                id: 18,
+                name: "Byzantine Steeds",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 31
+                    },
+                    {
+                        resource: "coins",
+                        amount: 300000
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 2430
+                    },
+                    {
+                        resource: "planks",
+                        amount: 1040
+                    },
+                ],
+                parents: [14,15],
+                children: [20,21]
+            },
+            {
+                id: 19,
+                name: "Advanced Counterweights",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 43
+                    },
+                    {
+                        resource: "coins",
+                        amount: 412000
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 1880
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 810
+                    },
+                    {
+                        resource: "byzantine_ewer",
+                        amount: 12
+                    }
+                ],
+                parents: [16],
+                children: [22]
+            },
+            {
+                id: 20,
+                name: "Wheeled Plough",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 37
+                    },
+                    {
+                        resource: "coins",
+                        amount: 378000
+                    },
+                    {
+                        resource: "planks",
+                        amount: 1910
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 820
+                    },
+                    {
+                        resource: "opal",
+                        amount: 15
+                    }
+                ],
+                parents: [17,18],
+                children: [22]
+            },
+            {
+                id: 21,
+                name: "Counter Cavalry Tactics",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 45
+                    },
+                    {
+                        resource: "coins",
+                        amount: 232000
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 1960
+                    },
+                    {
+                        resource: "planks",
+                        amount: 840
+                    },
+                ],
+                parents: [18],
+                children: [23,24]
+            },
+            {
+                id: 22,
+                name: "Gregorian Calendar",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 40
+                    },
+                    {
+                        resource: "coins",
+                        amount: 206000
+                    },
+                    {
+                        resource: "planks",
+                        amount: 1720
+                    },
+                    {
+                        resource: "cape",
+                        amount: 740
+                    },
+                    {
+                        resource: "byzantine_ewer",
+                        amount: 13
+                    },
+                ],
+                parents: [19],
+                children: [24]
+            },
+            {
+                id: 23,
+                name: "Trench Warfare",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 37
+                    },
+                    {
+                        resource: "coins",
+                        amount: 472000
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 1900
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 820
+                    },
+                    {
+                        resource: "opal",
+                        amount: 16
+                    },
+                ],
+                parents: [20,21],
+                children: [25,26,27]
+            },
+            {
+                id: 24,
+                name: "Flight Path Analysis",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 37
+                    },
+                    {
+                        resource: "coins",
+                        amount: 300000
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 1960
+                    },
+                    {
+                        resource: "goblet",
+                        amount: 840
+                    },
+                ],
+                parents: [21,22],
+                children: [27,28]
+            },
+            {
+                id: 25,
+                name: "Shielded Saddles",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 32
+                    },
+                    {
+                        resource: "coins",
+                        amount: 309000
+                    },
+                    {
+                        resource: "planks",
+                        amount: 1720
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 740
+                    },
+                    {
+                        resource: "byzantine_ewer",
+                        amount: 11
+                    }
+                ],
+                parents: [23],
+                children: [29]
+            },
+            {
+                id: 26,
+                name: "Tillage",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 45
+                    },
+                    {
+                        resource: "coins",
+                        amount: 343000
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 2940
+                    },
+                    {
+                        resource: "cape",
+                        amount: 1260
+                    },
+                    {
+                        resource: "opal",
+                        amount: 20
+                    }
+                ],
+                parents: [23],
+                children: [29,30]
+            },
+            {
+                id: 27,
+                name: "Mortar",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 50
+                    },
+                    {
+                        resource: "coins",
+                        amount: 266000
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 2210
+                    },
+                    {
+                        resource: "planks",
+                        amount: 950
+                    },
+                ],
+                parents: [23,24],
+                children: [30,31]
+            },
+            {
+                id: 28,
+                name: "Mobility Innovations",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 43
+                    },
+                    {
+                        resource: "coins",
+                        amount: 438000
+                    },
+                    {
+                        resource: "planks",
+                        amount: 2450
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 1050
+                    },
+                    {
+                        resource: "byzantine_ewer",
+                        amount: 13
+                    },
+                ],
+                parents: [24],
+                children: [31]
+            },
+            {
+                id: 29,
+                name: "Water Cistern",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 40
+                    },
+                    {
+                        resource: "coins",
+                        amount: 343000
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 2700
+                    },
+                    {
+                        resource: "mosaic",
+                        amount: 1160
+                    },
+                    {
+                        resource: "opal",
+                        amount: 20
+                    }
+                ],
+                parents: [25,26],
+                children: []
+            },
+            {
+                id: 30,
+                name: "Chainmail Reinforcement",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 47
+                    },
+                    {
+                        resource: "coins",
+                        amount: 240000
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 1910
+                    },
+                    {
+                        resource: "planks",
+                        amount: 820
+                    },
+                    {
+                        resource: "byzantine_ewer",
+                        amount: 20
+                    }
+                ],
+                parents: [26,27],
+                children: []
+            },
+            {
+                id: 31,
+                name: "Domical Vault",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 45
+                    },
+                    {
+                        resource: "coins",
+                        amount: 300000
+                    },
+                    {
+                        resource: "planks",
+                        amount: 2940
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 1260
+                    },
+                    {
+                        resource: "opal",
+                        amount: 26
+                    }
+                ],
+                parents: [27,28],
+                children: []
+            },
+        ]
+    },
+    {
+        id: 8,
+        era: "Age of the Franks",
+        technologies: [
+            {
+                id: 1,
+                name: "Regnum Francorum",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 43
+                    },
+                    {
+                        resource: "coins",
+                        amount: 357000
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 1830
+                    },
+                    {
+                        resource: "planks",
+                        amount: 780
+                    },
+                ],
+                parents: [],
+                children: [2,3,4]
+            },
+            {
+                id: 2,
+                name: "Ink",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 51
+                    },
+                    {
+                        resource: "coins",
+                        amount: 371000
+                    },
+                    {
+                        resource: "planks",
+                        amount: 1390
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 600
+                    },
+                    {
+                        resource: "spessartine",
+                        amount: 3
+                    },
+                ],
+                parents: [1],
+                children: [5]
+            },
+            {
+                id: 3,
+                name: "Carolingian Catapult",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 58
+                    },
+                    {
+                        resource: "coins",
+                        amount: 300000
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 2810
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 1200
+                    },
+                ],
+                parents: [1],
+                children: [6]
+            },
+            {
+                id: 4,
+                name: "Cartwheel",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 59
+                    },
+                    {
+                        resource: "coins",
+                        amount: 457000
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 2370
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 1020
+                    },
+                    {
+                        resource: "frankish_fibula",
+                        amount: 3
+                    },
+                ],
+                parents: [1],
+                children: [7,8]
+            },
+            {
+                id: 5,
+                name: "Villers",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 41
+                    },
+                    {
+                        resource: "coins",
+                        amount: 414000
+                    },
+                    {
+                        resource: "ink",
+                        amount: 1090
+                    },
+                    {
+                        resource: "planks",
+                        amount: 470
+                    },
+                    {
+                        resource: "spessartine",
+                        amount: 5
+                    }
+                ],
+                parents: [2],
+                children: [9]
+            },
+            {
+                id: 6,
+                name: "Halberds",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 53
+                    },
+                    {
+                        resource: "coins",
+                        amount: 528000
+                    },
+                    {
+                        resource: "planks",
+                        amount: 2350
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 1010
+                    },
+                ],
+                parents: [3],
+                children: [10,11]
+            },
+            {
+                id: 7,
+                name: "Salt",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 61
+                    },
+                    {
+                        resource: "coins",
+                        amount: 585000
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 1310
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 560
+                    },
+                    {
+                        resource: "spessartine",
+                        amount: 7
+                    }
+                ],
+                parents: [4],
+                children: [11]
+            },
+            {
+                id: 8,
+                name: "Franc Axe Throwers",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 64
+                    },
+                    {
+                        resource: "coins",
+                        amount: 600000
+                    },,
+                    {
+                        resource: "cartwheel",
+                        amount: 1530
+                    },
+                    {
+                        resource: "planks",
+                        amount: 660
+                    },
+                    {
+                        resource: "frankish_fibula",
+                        amount: 7
+                    },
+                ],
+                parents: [4],
+                children: [11]
+            },
+            {
+                id: 9,
+                name: "Aristocracy",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 54
+                    },
+                    {
+                        resource: "coins",
+                        amount: 643000
+                    },
+                    {
+                        resource: "ink",
+                        amount: 1370
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 590
+                    },
+                    {
+                        resource: "spessartine",
+                        amount: 12
+                    },
+                ],
+                parents: [5],
+                children: [12,13]
+            },
+            {
+                id: 10,
+                name: "Skirmishers",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 43
+                    },
+                    {
+                        resource: "coins",
+                        amount: 628000
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 4740
+                    },
+                    {
+                        resource: "planks",
+                        amount: 2030
+                    },
+                    {
+                        resource: "frankish_fibula",
+                        amount: 10
+                    },
+                ],
+                parents: [6],
+                children: [13,14]
+            },
+            {
+                id: 11,
+                name: "Caballarii",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 69
+                    },
+                    {
+                        resource: "coins",
+                        amount: 671000
+                    },
+                    {
+                        resource: "salt",
+                        amount: 2230
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 960
+                    },
+                    {
+                        resource: "spessartine",
+                        amount: 12
+                    },
+                ],
+                parents: [6,7,8],
+                children: [14,15]
+            },
+            {
+                id: 12,
+                name: "Spades",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 58
+                    },
+                    {
+                        resource: "coins",
+                        amount: 628000
+                    },
+                    {
+                        resource: "salt",
+                        amount: 3460
+                    },
+                    {
+                        resource: "ink",
+                        amount: 1480
+                    },
+                ],
+                parents: [9],
+                children: [16]
+            },
+            {
+                id: 13,
+                name: "Banner Standardization",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 42
+                    },
+                    {
+                        resource: "coins",
+                        amount: 378000
+                    },
+                    {
+                        resource: "ink",
+                        amount: 1840
+                    },
+                    {
+                        resource: "planks",
+                        amount: 790
+                    },
+                    {
+                        resource: "frankish_fibula",
+                        amount: 10
+                    },
+                ],
+                parents: [9,10],
+                children: [16]
+            },
+            {
+                id: 14,
+                name: "Ballistic Innovation",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 64
+                    },
+                    {
+                        resource: "coins",
+                        amount: 742000
+                    },
+                    {
+                        resource: "salt",
+                        amount: 4330
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 1860
+                    },
+                    {
+                        resource: "spessartine",
+                        amount: 13
+                    },
+                ],
+                parents: [10,11],
+                children: [16,17]
+            },
+            {
+                id: 15,
+                name: "Lingua Franca",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 68
+                    },
+                    {
+                        resource: "coins",
+                        amount: 742000
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 3310
+                    },
+                    {
+                        resource: "salt",
+                        amount: 1420
+                    },
+                    {
+                        resource: "frankish_fibula",
+                        amount: 12
+                    },
+                ],
+                parents: [11],
+                children: [17]
+            },
+            {
+                id: 16,
+                name: "Improved Reins",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 68
+                    },
+                    {
+                        resource: "coins",
+                        amount: 457000
+                    },
+                    {
+                        resource: "ink",
+                        amount: 4510
+                    },
+                    {
+                        resource: "planks",
+                        amount: 1940
+                    },
+                    {
+                        resource: "spessartine",
+                        amount: 19
+                    }
+                ],
+                parents: [12,13,14],
+                children: [18]
+            },
+            {
+                id: 17,
+                name: "Tactical Hurling",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 59
+                    },
+                    {
+                        resource: "coins",
+                        amount: 343000
+                    },
+                    {
+                        resource: "salt",
+                        amount: 3740
+                    },
+                    {
+                        resource: "ink",
+                        amount: 1600
+                    },
+                    {
+                        resource: "spessartine",
+                        amount: 19
+                    },
+                ],
+                parents: [14,15],
+                children: [18]
+            },
+            {
+                id: 18,
+                name: "Armor Adaptation",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 43
+                    },
+                    {
+                        resource: "coins",
+                        amount: 685000
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 4330
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 1860
+                    },
+                    {
+                        resource: "frankish_fibula",
+                        amount: 13
+                    },
+                ],
+                parents: [16,17],
+                children: [19,20,21]
+            },
+            {
+                id: 19,
+                name: "Production Boom",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 61
+                    },
+                    {
+                        resource: "coins",
+                        amount: 443000
+                    },
+                    {
+                        resource: "ink",
+                        amount: 6550
+                    },
+                    {
+                        resource: "salt",
+                        amount: 2810
+                    },
+                    {
+                        resource: "spessartine",
+                        amount: 19
+                    }
+                ],
+                parents: [18],
+                children: [21]
+            },
+            {
+                id: 20,
+                name: "Advanced Fodder",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 63
+                    },
+                    {
+                        resource: "coins",
+                        amount: 700000
+                    },
+                    {
+                        resource: "salt",
+                        amount: 4230
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 1820
+                    },
+                    {
+                        resource: "frankish_fibula",
+                        amount: 13
+                    }
+                ],
+                parents: [18],
+                children: [23]
+            },
+            {
+                id: 21,
+                name: "Pottery Wheel",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 48
+                    },
+                    {
+                        resource: "coins",
+                        amount: 386000
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 3980
+                    },
+                    {
+                        resource: "pepper",
+                        amount: 1710
+                    },
+                    {
+                        resource: "spessartine",
+                        amount: 21
+                    },
+                ],
+                parents: [18],
+                children: [24]
+            },
+            {
+                id: 22,
+                name: "Urban Combat Prowess",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 64
+                    },
+                    {
+                        resource: "coins",
+                        amount: 714000
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 3280
+                    },
+                    {
+                        resource: "ink",
+                        amount: 1410
+                    },
+                    {
+                        resource: "frankish_fibula",
+                        amount: 13
+                    },
+                ],
+                parents: [19],
+                children: [25]
+            },
+            {
+                id: 23,
+                name: "Scythes",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 51
+                    },
+                    {
+                        resource: "coins",
+                        amount: 800000
+                    },
+                    {
+                        resource: "ink",
+                        amount: 5220
+                    },
+                    {
+                        resource: "salt",
+                        amount: 2240
+                    },
+                    {
+                        resource: "spessartine",
+                        amount: 21
+                    },
+                ],
+                parents: [20],
+                children: [26,27]
+            },
+            {
+                id: 24,
+                name: "Siege Engine Tactics",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 41
+                    },
+                    {
+                        resource: "coins",
+                        amount: 557000
+                    },
+                    {
+                        resource: "salt",
+                        amount: 5180
+                    },
+                    {
+                        resource: "ink",
+                        amount: 2220
+                    },
+                    {
+                        resource: "spessartine",
+                        amount: 21
+                    },
+                ],
+                parents: [21],
+                children: [28]
+            },
+            {
+                id: 25,
+                name: "Elite Rider Training",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 56
+                    },
+                    {
+                        resource: "coins",
+                        amount: 628000
+                    },
+                    {
+                        resource: "ink",
+                        amount: 4150
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 1780
+                    },
+                    {
+                        resource: "frankish_fibula",
+                        amount: 16
+                    }
+                ],
+                parents: [22],
+                children: [29]
+            },
+            {
+                id: 26,
+                name: "Goat Herds",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 59
+                    },
+                    {
+                        resource: "coins",
+                        amount: 571000
+                    },
+                    {
+                        resource: "salt",
+                        amount: 5780
+                    },
+                    {
+                        resource: "parchment",
+                        amount: 2480
+                    },
+                    {
+                        resource: "frankish_fibula",
+                        amount: 16
+                    }
+                ],
+                parents: [23],
+                children: [29]
+            },
+            {
+                id: 27,
+                name: "Patrimony",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 66
+                    },
+                    {
+                        resource: "coins",
+                        amount: 67100
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 7230
+                    },
+                    {
+                        resource: "salt",
+                        amount: 3100
+                    },
+                    {
+                        resource: "spessartine",
+                        amount: 24
+                    },
+                ],
+                parents: [23],
+                children: [30]
+            },
+            {
+                id: 28,
+                name: "Reinforced Handles",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 58
+                    },
+                    {
+                        resource: "coins",
+                        amount: 828000
+                    },
+                    {
+                        resource: "salt",
+                        amount: 5280
+                    },
+                    {
+                        resource: "ink",
+                        amount: 2270
+                    },
+                    {
+                        resource: "frankish_fibula",
+                        amount: 16
+                    },
+                ],
+                parents: [24],
+                children: [30]
+            },
+            {
+                id: 29,
+                name: "Battle Axe Mastery",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 33
+                    },
+                    {
+                        resource: "coins",
+                        amount: 428000
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 5460
+                    },
+                    {
+                        resource: "ink",
+                        amount: 2340
+                    },
+                    {
+                        resource: "spessartine",
+                        amount: 26
+                    }
+                ],
+                parents: [25,26],
+                children: []
+            },
+            {
+                id: 30,
+                name: "Leges Salica",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 59
+                    },
+                    {
+                        resource: "coins",
+                        amount: 757000
+                    },
+                    {
+                        resource: "ink",
+                        amount: 4370
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 1870
+                    },
+                    {
+                        resource: "frankish_fibula",
+                        amount: 20
+                    }
+                ],
+                parents: [27,28],
                 children: []
             },
         ]

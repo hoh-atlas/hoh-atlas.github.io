@@ -10,6 +10,7 @@ import ResourcesPage from "./pages/ResourcesPage";
 import SeasonsPage from "./pages/SeasonsPage";
 import EventsPage from "./pages/EventsPage";
 import CommunityPage from "./pages/CommunityPage";
+import ResearchPage from "./pages/ResearchPage";
 import Error from "./pages/Error";
 import SharedLayout from "./pages/SharedLayout";
 import { createPathFromParameters } from "./components/shared/utils";
@@ -24,6 +25,7 @@ import layoutResources from "./components/resources/sectionsDefinition";
 import layoutSeasons from "./components/seasons/sectionsDefinition";
 import layoutEvents from "./components/events/sectionsDefinition";
 import layoutCommunity from "./components/community/sectionsDefinition";
+import layoutResearch from "./components/research/sectionsDefinition";
 
 const App = () => {
 
@@ -134,6 +136,18 @@ const App = () => {
 							<Route key={communityTab.id} path={createPathFromParameters(layoutCommunity.page, communityTab.url)} element={ <CommunityPage tab={communityTab}/> || <CommunityPage tab={layoutCommunity.tabs[0]}/> }/>
 							{communityTab.dynamicSegments.map( (dynamicSegment) => {
 								return <Route path={createPathFromParameters(layoutCommunity.page, communityTab.url, dynamicSegment)} element={ <CommunityPage tab={communityTab} />} />
+							})}
+						</>
+						)
+					})
+				}
+
+				{
+					layoutResearch.tabs.map( (researchTab) => {
+						return ( <>
+							<Route key={researchTab.id} path={createPathFromParameters(layoutResearch.page, researchTab.url)} element={ <ResearchPage tab={researchTab}/> || <ResearchPage tab={layoutResearch.tabs[0]}/> }/>
+							{researchTab.dynamicSegments.map( (dynamicSegment) => {
+								return <Route path={createPathFromParameters(layoutResearch.page, researchTab.url, dynamicSegment)} element={ <ResearchPage tab={researchTab} />} />
 							})}
 						</>
 						)

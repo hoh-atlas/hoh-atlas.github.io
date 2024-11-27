@@ -22,7 +22,7 @@ import china_city from "../../../images/allied-cultures/intro/china_city.webp";
 import china_bridge from "../../../images/allied-cultures/intro/china_bridge.webp";
 import egypt_bridge from "../../../images/allied-cultures/intro/egypt_bridge.webp";
 
-import ResearchHandler from "./ResearchHandler"; 
+import ResearchHandler from "../../research/intro/ResearchHandler"; 
 
 const Intro = (props) => {
 

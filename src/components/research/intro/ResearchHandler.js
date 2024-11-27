@@ -1,54 +1,55 @@
-import React, { useState, useEffect } from 'react';
-import data_research from "../data_research";
-import { getItemIcon, getItemData } from '../../shared/utils';
+import "./ResearchHandler.css";
 
-const ResearchHandler = () => {
+import React, { useState, useEffect } from 'react';
+import { getItemIcon, getItemData } from '../../shared/utils';
+import H1 from '../../shared/H1';
+import TextBlock from "../../shared/TextBlock";
+
+const ResearchHandler = (props) => {
     const [completedTechnologies, setCompletedTechnologies] = useState({});
 
-    const data = data_research;
+    const data = props.data;
 
     const categoryPriority = ["soft", "research_materials", "goods"];
 
     useEffect(() => {
-        const savedData = localStorage.getItem("completedTechnologies");
+        const savedData = localStorage.getItem(`completedTechnologies-${props.eraId}`);
         if (savedData) {
             setCompletedTechnologies(JSON.parse(savedData));
+        } else {
+            setCompletedTechnologies({});
         }
-    }, []);
+    }, [props.era]);
 
     useEffect(() => {
-        localStorage.setItem("completedTechnologies", JSON.stringify(completedTechnologies));
-    }, [completedTechnologies]);
+        localStorage.setItem(`completedTechnologies-${props.eraId}`, JSON.stringify(completedTechnologies));
+    }, [completedTechnologies, props.era]);
 
     const toggleCompletion = (id, enable) => {
         const enableParents = (techId) => {
-            data.forEach((era) => {
-                const tech = era.technologies.find((t) => t.id === techId);
-                if (tech) {
-                    tech.parents.forEach((parentId) => {
-                        setCompletedTechnologies((prev) => ({
-                            ...prev,
-                            [parentId]: true,
-                        }));
-                        enableParents(parentId);
-                    });
-                }
-            });
+            const tech = data.find((t) => t.id === techId);
+            if (tech) {
+                tech.parents.forEach((parentId) => {
+                    setCompletedTechnologies((prev) => ({
+                        ...prev,
+                        [parentId]: true,
+                    }));
+                    enableParents(parentId);
+                });
+            }
         };
 
         const disableChildren = (techId) => {
-            data.forEach((era) => {
-                const tech = era.technologies.find((t) => t.id === techId);
-                if (tech) {
-                    tech.children.forEach((childId) => {
-                        setCompletedTechnologies((prev) => ({
-                            ...prev,
-                            [childId]: false,
-                        }));
-                        disableChildren(childId);
-                    });
-                }
-            });
+            const tech = data.find((t) => t.id === techId);
+            if (tech) {
+                tech.children.forEach((childId) => {
+                    setCompletedTechnologies((prev) => ({
+                        ...prev,
+                        [childId]: false,
+                    }));
+                    disableChildren(childId);
+                });
+            }
         };
 
         setCompletedTechnologies((prev) => ({
@@ -65,17 +66,15 @@ const ResearchHandler = () => {
 
     const calculateTotalCosts = () => {
         const totalCosts = {};
-        data.forEach((era) => {
-            era.technologies.forEach((tech) => {
-                if (!completedTechnologies[tech.id]) {
-                    tech.costs.forEach((cost) => {
-                        if (!totalCosts[cost.resource]) {
-                            totalCosts[cost.resource] = 0;
-                        }
-                        totalCosts[cost.resource] += cost.amount;
-                    });
-                }
-            });
+        data.forEach((tech) => {
+            if (!completedTechnologies[tech.id]) {
+                tech.costs.forEach((cost) => {
+                    if (!totalCosts[cost.resource]) {
+                        totalCosts[cost.resource] = 0;
+                    }
+                    totalCosts[cost.resource] += cost.amount;
+                });
+            }
         });
         return totalCosts;
     };
@@ -83,10 +82,8 @@ const ResearchHandler = () => {
     const totalCosts = calculateTotalCosts();
 
     const maxCostColumns = Math.max(
-        ...data.flatMap((era) =>
-            era.technologies.map((tech) =>
-                tech.costs.filter((cost) => cost.resource !== "research_point").length
-            )
+        ...data.map((tech) =>
+            tech.costs.filter((cost) => cost.resource !== "research_point").length
         )
     );
 
@@ -99,31 +96,31 @@ const ResearchHandler = () => {
     };
 
     return (
-        <div>
-            <div className="calculated-costs">
-                <h3>Total Costs for Not Completed Technologies:</h3>
-                <ul>
-                    {Object.entries(totalCosts).map(([resource, amount]) => (
-                        <li key={resource}>
-                            {amount}x {getItemIcon(resource)}
-                        </li>
-                    ))}
-                </ul>
-            </div>
+        <>
+            <div>
+                <div className="calculated-costs">
+                    <H1>Remaining costs</H1><br/>
+                    <div className="calculated-costs-items">
+                        {Object.entries(totalCosts).map(([resource, amount]) => (
+                            <div key={resource} className="calculated-costs-item">
+                                {amount}x {getItemIcon(resource)}
+                            </div>
+                        ))}
+                    </div><br/>
+                </div>
 
-            <table className="research-table" style={{ width: '100%', tableLayout: 'auto', borderCollapse: 'collapse' }} cellSpacing="0" cellPadding="8">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>RP</th>
-                        <th colSpan={maxCostColumns}>Costs</th>
-                        <th>Completed</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {data.map((era) =>
-                        era.technologies.map((tech) => {
+                <table className="research-table" style={{ width: '80%', tableLayout: 'auto', borderCollapse: 'collapse' }} cellSpacing="0" cellPadding="8">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>RP</th>
+                            <th colSpan={maxCostColumns}>Costs</th>
+                            <th>Completed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {data.map((tech) => {
                             const rpCost = tech.costs.find((cost) => cost.resource === "research_point");
                             const otherCosts = tech.costs.filter((cost) => cost.resource !== "research_point");
 
@@ -155,11 +152,11 @@ const ResearchHandler = () => {
                                     </td>
                                 </tr>
                             );
-                        })
-                    )}
-                </tbody>
-            </table>
-        </div>
+                        })}
+                    </tbody>
+                </table>
+            </div>
+        </>
     );
 };
 
