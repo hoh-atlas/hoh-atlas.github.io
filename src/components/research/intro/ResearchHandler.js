@@ -106,9 +106,14 @@ const ResearchHandler = (props) => {
                                 {amount}x {getItemIcon(resource)}
                             </div>
                         ))}
-                    </div><br/>
+                    </div>
                 </div>
 
+                <div style={{ textAlign: 'center' }}>
+                    <small style={{ fontSize: '11px', color: '#916a17' }}>
+                        <i>Note: Each technology you mark as "Completed" will automatically finish all of its prerequisite technologies. You do not need to click all of them manually.</i>
+                    </small>
+                </div>
                 <table className="research-table" style={{ width: '80%', tableLayout: 'auto', borderCollapse: 'collapse' }} cellSpacing="0" cellPadding="8">
                     <thead>
                         <tr>

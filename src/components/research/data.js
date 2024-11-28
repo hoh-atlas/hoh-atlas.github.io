@@ -1,10 +1,20 @@
-import Research_age_cover_0 from "../../images/research/intro/Research_age_cover_0.webp";
+import age_transition_ancient_greece_main1 from "../../images/research/intro/age_transition_ancient_greece_main1.webp";
+import age_transition_bronze_age_main1 from "../../images/research/intro/age_transition_bronze_age_main1.webp";
+import age_transition_byzantine_era_main1 from "../../images/research/intro/age_transition_byzantine_era_main1.webp";
+import age_transition_classic_greece_main1 from "../../images/research/intro/age_transition_classic_greece_main1.webp";
+import age_transition_early_rome_main1 from "../../images/research/intro/age_transition_early_rome_main1.webp";
+import age_transition_feudal_age_main1 from "../../images/research/intro/age_transition_feudal_age_main1.webp";
+import age_transition_franks_main1 from "../../images/research/intro/age_transition_franks_main1.webp";
+import age_transition_iberian_era_main1 from "../../images/research/intro/age_transition_iberian_era_main1.webp";
+import age_transition_kingdom_of_sicily_main1 from "../../images/research/intro/age_transition_kingdom_of_sicily_main1.webp";
+import age_transition_roman_empire_main1 from "../../images/research/intro/age_transition_roman_empire_main1.webp";
+import age_transition_stone_age_main1 from "../../images/research/intro/age_transition_stone_age_main1.webp";
 
 const allTechnologies = [
     {
         id: 1,
         era: "Stone Age",
-        image: Research_age_cover_0,
+        image: age_transition_stone_age_main1,
         technologies: [
             {
                 id: 1,
@@ -295,6 +305,7 @@ const allTechnologies = [
     {
         id: 2,
         era: "Bronze Age",
+        image: age_transition_bronze_age_main1,
         technologies: [
             {
                 id: 1,
@@ -1073,6 +1084,7 @@ const allTechnologies = [
     {
         id: 3,
         era: "Minoan Era",
+        image: age_transition_ancient_greece_main1,
         technologies: [
             {
                 id: 1,
@@ -1855,6 +1867,7 @@ const allTechnologies = [
     {
         id: 4,
         era: "Classic Greece",
+        image: age_transition_classic_greece_main1,
         technologies: [
             {
                 id: 1,
@@ -2625,6 +2638,7 @@ const allTechnologies = [
     {
         id: 5,
         era: "Early Rome",
+        image: age_transition_early_rome_main1,
         technologies: [
             {
                 id: 1,
@@ -3427,6 +3441,7 @@ const allTechnologies = [
     {
         id: 6,
         era: "Roman Empire",
+        image: age_transition_roman_empire_main1,
         technologies: [
             {
                 id: 1,
@@ -4213,6 +4228,7 @@ const allTechnologies = [
     {
         id: 7,
         era: "Byzantine Era",
+        image: age_transition_byzantine_era_main1,
         technologies: [
             {
                 id: 1,
@@ -5055,6 +5071,7 @@ const allTechnologies = [
     {
         id: 8,
         era: "Age of the Franks",
+        image: age_transition_franks_main1,
         technologies: [
             {
                 id: 1,
@@ -5878,6 +5895,841 @@ const allTechnologies = [
                     }
                 ],
                 parents: [27,28],
+                children: []
+            },
+        ]
+    },
+    {
+        id: 9,
+        era: "Feudal Age",
+        image: age_transition_feudal_age_main1,
+        technologies: [
+            {
+                id: 1,
+                name: "Feudalism",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 46
+                    },
+                    {
+                        resource: "coins",
+                        amount: 826000
+                    },
+                    {
+                        resource: "salt",
+                        amount: 3030
+                    },
+                    {
+                        resource: "ink",
+                        amount: 1300
+                    },
+                ],
+                parents: [],
+                children: [2,3,4,5]
+            },
+            {
+                id: 2,
+                name: "Barrel",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 46
+                    },
+                    {
+                        resource: "coins",
+                        amount: 705000
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 1850
+                    },
+                    {
+                        resource: "salt",
+                        amount: 790
+                    },
+                    {
+                        resource: "agate",
+                        amount: 3
+                    },
+                ],
+                parents: [1],
+                children: [6]
+            },
+            {
+                id: 3,
+                name: "Herbs",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 53
+                    },
+                    {
+                        resource: "coins",
+                        amount: 564000
+                    },
+                    {
+                        resource: "ink",
+                        amount: 2220
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 950
+                    },
+                    {
+                        resource: "medieval_tapestry",
+                        amount: 3
+                    },
+                ],
+                parents: [1],
+                children: [7]
+            },
+            {
+                id: 4,
+                name: "Longbowmen",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 43
+                    },
+                    {
+                        resource: "coins",
+                        amount: 745000
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 3030
+                    },
+                    {
+                        resource: "ink",
+                        amount: 1300
+                    },
+                    {
+                        resource: "medieval_tapestry",
+                        amount: 6
+                    },
+                ],
+                parents: [1],
+                children: [8]
+            },
+            {
+                id: 5,
+                name: "Manuscript",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 58
+                    },
+                    {
+                        resource: "coins",
+                        amount: 483000
+                    },
+                    {
+                        resource: "ink",
+                        amount: 1780
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 760
+                    },
+                    {
+                        resource: "agate",
+                        amount: 6
+                    }
+                ],
+                parents: [1],
+                children: [9]
+            },
+            {
+                id: 6,
+                name: "Trebuchets",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 45
+                    },
+                    {
+                        resource: "coins",
+                        amount: 866000
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 3700
+                    },
+                    {
+                        resource: "salt",
+                        amount: 1590
+                    },
+                    {
+                        resource: "medieval_tapestry",
+                        amount: 8
+                    },
+                ],
+                parents: [2],
+                children: [10]
+            },
+            {
+                id: 7,
+                name: "Knights",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 45
+                    },
+                    {
+                        resource: "coins",
+                        amount: 504000
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 2740
+                    },
+                    {
+                        resource: "ink",
+                        amount: 1180
+                    },
+                    {
+                        resource: "medieval_tapestry",
+                        amount: 11
+                    }
+                ],
+                parents: [3],
+                children: [10]
+            },
+            {
+                id: 8,
+                name: "Axemen",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 63
+                    },
+                    {
+                        resource: "coins",
+                        amount: 604000
+                    },,
+                    {
+                        resource: "salt",
+                        amount: 2220
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 950
+                    },
+                    {
+                        resource: "agate",
+                        amount: 11
+                    },
+                ],
+                parents: [4],
+                children: [11]
+            },
+            {
+                id: 9,
+                name: "Kings Guard",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 54
+                    },
+                    {
+                        resource: "coins",
+                        amount: 987000
+                    },
+                    {
+                        resource: "manuscript",
+                        amount: 2590
+                    },
+                    {
+                        resource: "salt",
+                        amount: 1110
+                    },
+                    {
+                        resource: "agate",
+                        amount: 13
+                    },
+                ],
+                parents: [5],
+                children: [11]
+            },
+            {
+                id: 10,
+                name: "Domestic Sheep",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 64
+                    },
+                    {
+                        resource: "coins",
+                        amount: 564000
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 2440
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 1050
+                    },
+                    {
+                        resource: "agate",
+                        amount: 16
+                    },
+                ],
+                parents: [6,7],
+                children: [12]
+            },
+            {
+                id: 11,
+                name: "Myths and Legends",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 51
+                    },
+                    {
+                        resource: "coins",
+                        amount: 504000
+                    },
+                    {
+                        resource: "manuscript",
+                        amount: 3770
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 1620
+                    },
+                    {
+                        resource: "medieval_tapestry",
+                        amount: 11
+                    },
+                ],
+                parents: [8,9],
+                children: [12]
+            },
+            {
+                id: 12,
+                name: "Repurposed Ruins",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 68
+                    },
+                    {
+                        resource: "coins",
+                        amount: 927000
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 3180
+                    },
+                    {
+                        resource: "manuscript",
+                        amount: 1370
+                    },
+                    {
+                        resource: "medieval_tapestry",
+                        amount: 11
+                    },
+                ],
+                parents: [10,11],
+                children: [13,14,15,16]
+            },
+            {
+                id: 13,
+                name: "Heavy Draw Weight",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 51
+                    },
+                    {
+                        resource: "coins",
+                        amount: 906000
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 2960
+                    },
+                    {
+                        resource: "ink",
+                        amount: 1270
+                    },
+                    {
+                        resource: "agate",
+                        amount: 17
+                    },
+                ],
+                parents: [12],
+                children: [17]
+            },
+            {
+                id: 14,
+                name: "Open Field System",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 66
+                    },
+                    {
+                        resource: "coins",
+                        amount: 584000
+                    },
+                    {
+                        resource: "manuscript",
+                        amount: 1850
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 790
+                    },
+                ],
+                parents: [12],
+                children: [17]
+            },
+            {
+                id: 15,
+                name: "Peaked Roofs",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 59
+                    },
+                    {
+                        resource: "coins",
+                        amount: 806000
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 3330
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 1430
+                    },
+                    {
+                        resource: "agate",
+                        amount: 13
+                    },
+                ],
+                parents: [12],
+                children: [17]
+            },
+            {
+                id: 16,
+                name: "Socket Langets",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 59
+                    },
+                    {
+                        resource: "coins",
+                        amount: 564000
+                    },
+                    {
+                        resource: "manuscript",
+                        amount: 2960
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 1270
+                    },
+                    {
+                        resource: "agate",
+                        amount: 13
+                    }
+                ],
+                parents: [12],
+                children: [17]
+            },
+            {
+                id: 17,
+                name: "Battlefield Artillery",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 61
+                    },
+                    {
+                        resource: "coins",
+                        amount: 665000
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 3400
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 1460
+                    },
+                    {
+                        resource: "medieval_tapestry",
+                        amount: 11
+                    },
+                ],
+                parents: [13,14,15,16],
+                children: [18,19,20]
+            },
+            {
+                id: 18,
+                name: "Halberd Mastery",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 43
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1000000
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 2520
+                    },
+                    {
+                        resource: "salt",
+                        amount: 1080
+                    },
+                ],
+                parents: [17],
+                children: [21]
+            },
+            {
+                id: 19,
+                name: "Manorialism",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 58
+                    },
+                    {
+                        resource: "coins",
+                        amount: 544000
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 2070
+                    },
+                    {
+                        resource: "manuscript",
+                        amount: 890
+                    },
+                    {
+                        resource: "agate",
+                        amount: 13
+                    }
+                ],
+                parents: [17],
+                children: [21,22]
+            },
+            {
+                id: 20,
+                name: "Plate Barding",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 59
+                    },
+                    {
+                        resource: "coins",
+                        amount: 806000
+                    },
+                    {
+                        resource: "manuscript",
+                        amount: 3920
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 1680
+                    },
+                    {
+                        resource: "agate",
+                        amount: 13
+                    }
+                ],
+                parents: [17],
+                children: [22]
+            },
+            {
+                id: 21,
+                name: "Timber Framing",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 56
+                    },
+                    {
+                        resource: "coins",
+                        amount: 826000
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 2070
+                    },
+                    {
+                        resource: "cartwheel",
+                        amount: 890
+                    },
+                    {
+                        resource: "medieval_tapestry",
+                        amount: 15
+                    },
+                ],
+                parents: [18,19],
+                children: [23]
+            },
+            {
+                id: 22,
+                name: "Sheep Herds",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 48
+                    },
+                    {
+                        resource: "coins",
+                        amount: 604000
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 2000
+                    },
+                    {
+                        resource: "manuscript",
+                        amount: 860
+                    },
+                    {
+                        resource: "agate",
+                        amount: 16
+                    },
+                ],
+                parents: [19,20],
+                children: [23]
+            },
+            {
+                id: 23,
+                name: "Wing Guards",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 54
+                    },
+                    {
+                        resource: "coins",
+                        amount: 604000
+                    },
+                    {
+                        resource: "manuscript",
+                        amount: 2070
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 890
+                    },
+                    {
+                        resource: "medieval_tapestry",
+                        amount: 15
+                    },
+                ],
+                parents: [21,22],
+                children: [24,25,26,27]
+            },
+            {
+                id: 24,
+                name: "Sinew Backing",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 63
+                    },
+                    {
+                        resource: "coins",
+                        amount: 685000
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 2520
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 1080
+                    },
+                    {
+                        resource: "agate",
+                        amount: 20
+                    },
+                ],
+                parents: [23],
+                children: [28]
+            },
+            {
+                id: 25,
+                name: "Ridge and Furrow",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 43
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1100000
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 2220
+                    },
+                    {
+                        resource: "ink",
+                        amount: 950
+                    },
+                    {
+                        resource: "agate",
+                        amount: 20
+                    }
+                ],
+                parents: [23],
+                children: [28]
+            },
+            {
+                id: 26,
+                name: "Castle",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 66
+                    },
+                    {
+                        resource: "coins",
+                        amount: 906000
+                    },
+                    {
+                        resource: "manuscript",
+                        amount: 4370
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 1870
+                    },
+                    {
+                        resource: "medieval_tapestry",
+                        amount: 15
+                    }
+                ],
+                parents: [23],
+                children: [29]
+            },
+            {
+                id: 27,
+                name: "Trebuchet Command",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 50
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1000000
+                    },
+                    {
+                        resource: "manuscript",
+                        amount: 4140
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 1780
+                    },
+                    {
+                        resource: "agate",
+                        amount: 24
+                    },
+                ],
+                parents: [23],
+                children: [29]
+            },
+            {
+                id: 28,
+                name: "Polearm Maneuvers",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 63
+                    },
+                    {
+                        resource: "coins",
+                        amount: 685000
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 3330
+                    },
+                    {
+                        resource: "manuscript",
+                        amount: 1430
+                    },
+                    {
+                        resource: "medieval_tapestry",
+                        amount: 17
+                    },
+                ],
+                parents: [24,25],
+                children: [30]
+            },
+            {
+                id: 29,
+                name: "Knight Training",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 48
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1100000
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 2150
+                    },
+                    {
+                        resource: "manuscript",
+                        amount: 920
+                    },
+                    {
+                        resource: "agate",
+                        amount: 26
+                    }
+                ],
+                parents: [26,27],
+                children: [30]
+            },
+            {
+                id: 30,
+                name: "Transhumance",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 68
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1000000
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 3630
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 1560
+                    },
+                    {
+                        resource: "medieval_tapestry",
+                        amount: 20
+                    }
+                ],
+                parents: [28,29],
                 children: []
             },
         ]

@@ -20,7 +20,7 @@ const Intro = () => {
     const pageName = "Research";
 
     const optionsColors = {1:"#be6061", 2:"#e9942e", 3:"#5cc299", 4:"#5a98bd", 5:"#686cc5", 6: "#be6061", 7: "#e9942e",
-        8: "#5cc299"
+        8: "#5cc299", 9: "#5a98bd"
     };
 
     const options = allTechnologies.map((oneEra) => {
@@ -60,9 +60,7 @@ const Intro = () => {
 
         <H1 center={true}>Research Calculator</H1>
 
-        <TextBlock>
-            Use the dropdown below to select the desired age. This will update the displayed technologies and their requirements accordingly.
-        </TextBlock>
+        <Image src={getEra(selectedOption).image} maxHeight={140} marginBottom={20}/>
 
         <SelectBox
             options={options}
