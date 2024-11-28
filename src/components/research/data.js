@@ -5587,7 +5587,7 @@ const allTechnologies = [
                     }
                 ],
                 parents: [18],
-                children: [21]
+                children: [22]
             },
             {
                 id: 20,
@@ -5795,7 +5795,7 @@ const allTechnologies = [
                     },
                     {
                         resource: "coins",
-                        amount: 67100
+                        amount: 671000
                     },
                     {
                         resource: "cartwheel",
@@ -6107,7 +6107,7 @@ const allTechnologies = [
                     {
                         resource: "coins",
                         amount: 604000
-                    },,
+                    },
                     {
                         resource: "salt",
                         amount: 2220
@@ -6730,6 +6730,1724 @@ const allTechnologies = [
                     }
                 ],
                 parents: [28,29],
+                children: []
+            },
+        ]
+    },
+    {
+        id: 10,
+        era: "Iberian Era",
+        image: age_transition_iberian_era_main1,
+        technologies: [
+            {
+                id: 1,
+                name: "Castillos",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 53
+                    },
+                    {
+                        resource: "coins",
+                        amount: 816000
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 2230
+                    },
+                    {
+                        resource: "manuscript",
+                        amount: 960
+                    },
+                ],
+                parents: [],
+                children: [2,3]
+            },
+            {
+                id: 2,
+                name: "Saffron",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 51
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1000000
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 1560
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 670
+                    },
+                    {
+                        resource: "aquamarine",
+                        amount: 3
+                    },
+                ],
+                parents: [1],
+                children: [4]
+            },
+            {
+                id: 3,
+                name: "Door",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 54
+                    },
+                    {
+                        resource: "coins",
+                        amount: 489000
+                    },
+                    {
+                        resource: "manuscript",
+                        amount: 3640
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 1560
+                    },
+                    {
+                        resource: "aquamarine",
+                        amount: 6
+                    },
+                ],
+                parents: [1],
+                children: [4]
+            },
+            {
+                id: 4,
+                name: "Wax Seal",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 58
+                    },
+                    {
+                        resource: "coins",
+                        amount: 769000
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 2530
+                    },
+                    {
+                        resource: "door",
+                        amount: 1090
+                    },
+                    {
+                        resource: "iberian_torc_necklace",
+                        amount: 5
+                    },
+                ],
+                parents: [2,3],
+                children: [5,6,7]
+            },
+            {
+                id: 5,
+                name: "Almogavars",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 48
+                    },
+                    {
+                        resource: "coins",
+                        amount: 979000
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 2310
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 990
+                    },
+                ],
+                parents: [4],
+                children: [8]
+            },
+            {
+                id: 6,
+                name: "Crossbowmen",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 50
+                    },
+                    {
+                        resource: "coins",
+                        amount: 699000
+                    },
+                    {
+                        resource: "door",
+                        amount: 3420
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 1470
+                    },
+                    {
+                        resource: "aquamarine",
+                        amount: 7
+                    },
+                ],
+                parents: [4],
+                children: [9]
+            },
+            {
+                id: 7,
+                name: "Order of Calatrava",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 61
+                    },
+                    {
+                        resource: "coins",
+                        amount: 932000
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 2970
+                    },
+                    {
+                        resource: "door",
+                        amount: 1280
+                    },
+                    {
+                        resource: "aquamarine",
+                        amount: 10
+                    }
+                ],
+                parents: [4],
+                children: [10]
+            },
+            {
+                id: 8,
+                name: "Advanced Trebuchet",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 54
+                    },
+                    {
+                        resource: "coins",
+                        amount: 816000
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 4240
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 1820
+                    },
+                    {
+                        resource: "iberian_torc_necklace",
+                        amount: 7
+                    },
+                ],
+                parents: [5],
+                children: [11]
+            },
+            {
+                id: 9,
+                name: "Masia",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 46
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1000000
+                    },
+                    {
+                        resource: "door",
+                        amount: 2010
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 860
+                    },
+                    {
+                        resource: "aquamarine",
+                        amount: 11
+                    },
+                ],
+                parents: [6],
+                children: [12]
+            },
+            {
+                id: 10,
+                name: "Jinete",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 41
+                    },
+                    {
+                        resource: "coins",
+                        amount: 769000
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 2380
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 1020
+                    },
+                    {
+                        resource: "aquamarine",
+                        amount: 11
+                    },
+                ],
+                parents: [7],
+                children: [13]
+            },
+            {
+                id: 11,
+                name: "Domesticated Donkeys",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 41
+                    },
+                    {
+                        resource: "coins",
+                        amount: 746000
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 3120
+                    },
+                    {
+                        resource: "door",
+                        amount: 1340
+                    },
+                    {
+                        resource: "iberian_torc_necklace",
+                        amount: 10
+                    },
+                ],
+                parents: [8],
+                children: [14]
+            },
+            {
+                id: 12,
+                name: "Orange Plantation",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 66
+                    },
+                    {
+                        resource: "coins",
+                        amount: 932000
+                    },
+                    {
+                        resource: "door",
+                        amount: 2450
+                    },
+                    {
+                        resource: "manuscript",
+                        amount: 1050
+                    },
+                    {
+                        resource: "iberian_torc_necklace",
+                        amount: 12
+                    },
+                ],
+                parents: [9],
+                children: [14,15]
+            },
+            {
+                id: 13,
+                name: "Patios",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 63
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1000000
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 3270
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 1400
+                    },
+                    {
+                        resource: "aquamarine",
+                        amount: 13
+                    },
+                ],
+                parents: [10],
+                children: [16,17]
+            },
+            {
+                id: 14,
+                name: "Horseshoe Arches",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 43
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1000000
+                    },
+                    {
+                        resource: "door",
+                        amount: 4010
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 1720
+                    },
+                    {
+                        resource: "aquamarine",
+                        amount: 13
+                    },
+                ],
+                parents: [11,12],
+                children: [18]
+            },
+            {
+                id: 15,
+                name: "Latch Mechanism",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 59
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1000000
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 2160
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 930
+                    },
+                    {
+                        resource: "iberian_torc_necklace",
+                        amount: 12
+                    },
+                ],
+                parents: [12],
+                children: [18]
+            },
+            {
+                id: 16,
+                name: "Eyeglasses",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 66
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1200000
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 2600
+                    },
+                    {
+                        resource: "door",
+                        amount: 1120
+                    },
+                ],
+                parents: [13],
+                children: [18]
+            },
+            {
+                id: 17,
+                name: "Shield Boss",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 56
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1100000
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 3870
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 1660
+                    },
+                    {
+                        resource: "aquamarine",
+                        amount: 15
+                    },
+                ],
+                parents: [13],
+                children: [18]
+            },
+            {
+                id: 18,
+                name: "Donkey Herds",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 61
+                    },
+                    {
+                        resource: "coins",
+                        amount: 769000
+                    },
+                    {
+                        resource: "door",
+                        amount: 3940
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 1690
+                    },
+                    {
+                        resource: "iberian_torc_necklace",
+                        amount: 13
+                    },
+                ],
+                parents: [14,15,16,17],
+                children: [19,20,21]
+            },
+            {
+                id: 19,
+                name: "Lightweight Shields",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 58
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1200000
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 2970
+                    },
+                    {
+                        resource: "door",
+                        amount: 1280
+                    },
+                ],
+                parents: [18],
+                children: [22]
+            },
+            {
+                id: 20,
+                name: "Brace Mechanism",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 45
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1000000
+                    },
+                    {
+                        resource: "door",
+                        amount: 1930
+                    },
+                    {
+                        resource: "barrel",
+                        amount: 830
+                    },
+                    {
+                        resource: "aquamarine",
+                        amount: 17
+                    }
+                ],
+                parents: [18],
+                children: [22]
+            },
+            {
+                id: 21,
+                name: "Shock Charges",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 59
+                    },
+                    {
+                        resource: "coins",
+                        amount: 676000
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 3270
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 1400
+                    },
+                    {
+                        resource: "iberian_torc_necklace",
+                        amount: 15
+                    },
+                ],
+                parents: [18],
+                children: [23]
+            },
+            {
+                id: 22,
+                name: "Distillation",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 48
+                    },
+                    {
+                        resource: "coins",
+                        amount: 792000
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 2450
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 1050
+                    },
+                    {
+                        resource: "iberian_torc_necklace",
+                        amount: 17
+                    },
+                ],
+                parents: [19,20],
+                children: [24]
+            },
+            {
+                id: 23,
+                name: "Botany",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 68
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1100000
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 3870
+                    },
+                    {
+                        resource: "door",
+                        amount: 1660
+                    },
+                    {
+                        resource: "aquamarine",
+                        amount: 20
+                    },
+                ],
+                parents: [21],
+                children: [25,26]
+            },
+            {
+                id: 24,
+                name: "Safety Mechanisms",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 64
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1200000
+                    },
+                    {
+                        resource: "door",
+                        amount: 2450
+                    },
+                    {
+                        resource: "herbs",
+                        amount: 1050
+                    },
+                    {
+                        resource: "aquamarine",
+                        amount: 20
+                    },
+                ],
+                parents: [22],
+                children: [27]
+            },
+            {
+                id: 25,
+                name: "Toledo Steel",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 46
+                    },
+                    {
+                        resource: "coins",
+                        amount: 723000
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 2310
+                    },
+                    {
+                        resource: "door",
+                        amount: 990
+                    },
+                    {
+                        resource: "iberian_torc_necklace",
+                        amount: 15
+                    }
+                ],
+                parents: [23],
+                children: [28]
+            },
+            {
+                id: 26,
+                name: "Gambeson Padding",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 56
+                    },
+                    {
+                        resource: "coins",
+                        amount: 606000
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 2600
+                    },
+                    {
+                        resource: "door",
+                        amount: 1120
+                    },
+                    {
+                        resource: "aquamarine",
+                        amount: 21
+                    }
+                ],
+                parents: [23],
+                children: [28]
+            },
+            {
+                id: 27,
+                name: "Leather Lappets",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 63
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1200000
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 3720
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 1590
+                    },
+                    {
+                        resource: "iberian_torc_necklace",
+                        amount: 17
+                    },
+                ],
+                parents: [24],
+                children: [29,30]
+            },
+            {
+                id: 28,
+                name: "Equestrian Excellence",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 56
+                    },
+                    {
+                        resource: "coins",
+                        amount: 723000
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 3350
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 1440
+                    },
+                    {
+                        resource: "aquamarine",
+                        amount: 24
+                    },
+                ],
+                parents: [25,26],
+                children: [29,30]
+            },
+            {
+                id: 29,
+                name: "Improved Crew Arrangement",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 68
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1300000
+                    },
+                    {
+                        resource: "door",
+                        amount: 3420
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 1470
+                    },
+                    {
+                        resource: "iberian_torc_necklace",
+                        amount: 20
+                    }
+                ],
+                parents: [27,28],
+                children: []
+            },
+            {
+                id: 30,
+                name: "Donkey Farms",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 48
+                    },
+                    {
+                        resource: "coins",
+                        amount: 629000
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 3200
+                    },
+                    {
+                        resource: "door",
+                        amount: 1370
+                    },
+                    {
+                        resource: "aquamarine",
+                        amount: 26
+                    }
+                ],
+                parents: [27,28],
+                children: []
+            },
+        ]
+    },
+    {
+        id: 11,
+        era: "Kingdom of Sicily",
+        image: age_transition_kingdom_of_sicily_main1,
+        technologies: [
+            {
+                id: 1,
+                name: "Sicilian Villetta",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 56
+                    },
+                    {
+                        resource: "coins",
+                        amount: 525000
+                    },
+                    {
+                        resource: "door",
+                        amount: 2010
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 860
+                    },
+                ],
+                parents: [],
+                children: [2,3,4,5]
+            },
+            {
+                id: 2,
+                name: "Siege Tower",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 61
+                    },
+                    {
+                        resource: "coins",
+                        amount: 475000
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 2610
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 1120
+                    },
+                    {
+                        resource: "lava_stone",
+                        amount: 3
+                    },
+                ],
+                parents: [1],
+                children: [6]
+            },
+            {
+                id: 3,
+                name: "Wardrobe",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 53
+                    },
+                    {
+                        resource: "coins",
+                        amount: 999000
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 2530
+                    },
+                    {
+                        resource: "door",
+                        amount: 1090
+                    },
+                ],
+                parents: [1],
+                children: [6,7]
+            },
+            {
+                id: 4,
+                name: "Chili",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 46
+                    },
+                    {
+                        resource: "coins",
+                        amount: 999000
+                    },
+                    {
+                        resource: "door",
+                        amount: 1420
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 610
+                    },
+                    {
+                        resource: "arabesque_wood_carving",
+                        amount: 2
+                    },
+                ],
+                parents: [1],
+                children: [7,8]
+            },
+            {
+                id: 5,
+                name: "Tome",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 46
+                    },
+                    {
+                        resource: "coins",
+                        amount: 749000
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 2310
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 990
+                    },
+                    {
+                        resource: "lava_stone",
+                        amount: 5
+                    },
+                ],
+                parents: [1],
+                children: [8]
+            },
+            {
+                id: 6,
+                name: "Melites",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 53
+                    },
+                    {
+                        resource: "coins",
+                        amount: 899000
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 1260
+                    },
+                    {
+                        resource: "door",
+                        amount: 540
+                    },
+                ],
+                parents: [2],
+                children: [9]
+            },
+            {
+                id: 7,
+                name: "Armored Crossbowmen",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 63
+                    },
+                    {
+                        resource: "coins",
+                        amount: 600000
+                    },
+                    {
+                        resource: "chili",
+                        amount: 1050
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 450
+                    },
+                    {
+                        resource: "lava_stone",
+                        amount: 6
+                    }
+                ],
+                parents: [3,4],
+                children: [10]
+            },
+            {
+                id: 8,
+                name: "Pedites",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 43
+                    },
+                    {
+                        resource: "coins",
+                        amount: 899000
+                    },
+                    {
+                        resource: "tome",
+                        amount: 1470
+                    },
+                    {
+                        resource: "chili",
+                        amount: 630
+                    },
+                    {
+                        resource: "arabesque_wood_carving",
+                        amount: 7
+                    },
+                ],
+                parents: [4,5],
+                children: [11]
+            },
+            {
+                id: 9,
+                name: "Vegetable Gardens",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 59
+                    },
+                    {
+                        resource: "coins",
+                        amount: 999000
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 2680
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 1150
+                    },
+                    {
+                        resource: "arabesque_wood_carving",
+                        amount: 10
+                    },
+                ],
+                parents: [6],
+                children: [12]
+            },
+            {
+                id: 10,
+                name: "Familia Regis",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 61
+                    },
+                    {
+                        resource: "coins",
+                        amount: 849000
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 3500
+                    },
+                    {
+                        resource: "chili",
+                        amount: 1500
+                    },
+                    {
+                        resource: "lava_stone",
+                        amount: 10
+                    },
+                ],
+                parents: [7],
+                children: [12]
+            },
+            {
+                id: 11,
+                name: "Improved Roof Tiles",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 43
+                    },
+                    {
+                        resource: "coins",
+                        amount: 774000
+                    },
+                    {
+                        resource: "chili",
+                        amount: 1940
+                    },
+                    {
+                        resource: "tome",
+                        amount: 830
+                    },
+                    {
+                        resource: "lava_stone",
+                        amount: 10
+                    },
+                ],
+                parents: [8],
+                children: [12]
+            },
+            {
+                id: 12,
+                name: "Windmill",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 40
+                    },
+                    {
+                        resource: "coins",
+                        amount: 675000
+                    },
+                    {
+                        resource: "tome",
+                        amount: 3060
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 1310
+                    },
+                    {
+                        resource: "arabesque_wood_carving",
+                        amount: 4
+                    },
+                ],
+                parents: [9,10,11],
+                children: [13,14]
+            },
+            {
+                id: 13,
+                name: "Orchards",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 58
+                    },
+                    {
+                        resource: "coins",
+                        amount: 874000
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 2240
+                    },
+                    {
+                        resource: "chili",
+                        amount: 960
+                    },
+                    {
+                        resource: "lava_stone",
+                        amount: 13
+                    },
+                ],
+                parents: [12],
+                children: [15,16]
+            },
+            {
+                id: 14,
+                name: "Armored Panels",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 46
+                    },
+                    {
+                        resource: "coins",
+                        amount: 725000
+                    },
+                    {
+                        resource: "chili",
+                        amount: 2760
+                    },
+                    {
+                        resource: "wax_seal",
+                        amount: 1180
+                    },
+                    {
+                        resource: "arabesque_wood_carving",
+                        amount: 3
+                    },
+                ],
+                parents: [12],
+                children: [16,17]
+            },
+            {
+                id: 15,
+                name: "Couched Spear Technique",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 64
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1100000
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 2020
+                    },
+                    {
+                        resource: "tome",
+                        amount: 870
+                    },
+                    {
+                        resource: "lava_stone",
+                        amount: 11
+                    },
+                ],
+                parents: [13],
+                children: [18]
+            },
+            {
+                id: 16,
+                name: "Polychrome Inlays",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 41
+                    },
+                    {
+                        resource: "coins",
+                        amount: 650000
+                    },
+                    {
+                        resource: "tome",
+                        amount: 2160
+                    },
+                    {
+                        resource: "chili",
+                        amount: 930
+                    },
+                    {
+                        resource: "arabesque_wood_carving",
+                        amount: 3
+                    },
+                ],
+                parents: [13,14],
+                children: [19]
+            },
+            {
+                id: 17,
+                name: "Reinforced Nasal Guards",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 40
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1100000
+                    },
+                    {
+                        resource: "chili",
+                        amount: 3650
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 1570
+                    },
+                    {
+                        resource: "lava_stone",
+                        amount: 13
+                    },
+                ],
+                parents: [14],
+                children: [20]
+            },
+            {
+                id: 18,
+                name: "Domed Sanctuary",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 64
+                    },
+                    {
+                        resource: "coins",
+                        amount: 899000
+                    },
+                    {
+                        resource: "tome",
+                        amount: 1790
+                    },
+                    {
+                        resource: "chili",
+                        amount: 770
+                    },
+                    {
+                        resource: "arabesque_wood_carving",
+                        amount: 13
+                    },
+                ],
+                parents: [15],
+                children: [21]
+            },
+            {
+                id: 19,
+                name: "Refined Chainmail Coifs",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 58
+                    },
+                    {
+                        resource: "coins",
+                        amount: 924000
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 1940
+                    },
+                    {
+                        resource: "saffron",
+                        amount: 830
+                    },
+                    {
+                        resource: "lava_stone",
+                        amount: 17
+                    },
+                ],
+                parents: [16],
+                children: [22]
+            },
+            {
+                id: 20,
+                name: "Refined Tools",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 53
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1200000
+                    },
+                    {
+                        resource: "chili",
+                        amount: 2980
+                    },
+                    {
+                        resource: "tome",
+                        amount: 1280
+                    },
+                    {
+                        resource: "arabesque_wood_carving",
+                        amount: 13
+                    }
+                ],
+                parents: [17],
+                children: [23]
+            },
+            {
+                id: 21,
+                name: "Close Formation Tactics",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 41
+                    },
+                    {
+                        resource: "coins",
+                        amount: 650000
+                    },
+                    {
+                        resource: "tome",
+                        amount: 4100
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 1760
+                    },
+                    {
+                        resource: "arabesque_wood_carving",
+                        amount: 13
+                    },
+                ],
+                parents: [18],
+                children: [24]
+            },
+            {
+                id: 22,
+                name: "Pavilions",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 51
+                    },
+                    {
+                        resource: "coins",
+                        amount: 575000
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 2530
+                    },
+                    {
+                        resource: "door",
+                        amount: 1090
+                    },
+                    {
+                        resource: "lava_stone",
+                        amount: 20
+                    },
+                ],
+                parents: [19],
+                children: [25]
+            },
+            {
+                id: 23,
+                name: "Tactical Chambers",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 56
+                    },
+                    {
+                        resource: "coins",
+                        amount: 874000
+                    },
+                    {
+                        resource: "tome",
+                        amount: 2940
+                    },
+                    {
+                        resource: "chili",
+                        amount: 1260
+                    },
+                    {
+                        resource: "lava_stone",
+                        amount: 20
+                    },
+                ],
+                parents: [20],
+                children: [26]
+            },
+            {
+                id: 24,
+                name: "Terrain Mastery",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 63
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1000000
+                    },
+                    {
+                        resource: "tome",
+                        amount: 3530
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 1510
+                    },
+                    {
+                        resource: "lava_stone",
+                        amount: 21
+                    },
+                ],
+                parents: [21],
+                children: [27]
+            },
+            {
+                id: 25,
+                name: "Improved Sails",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 45
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1100000
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 3730
+                    },
+                    {
+                        resource: "tome",
+                        amount: 1600
+                    },
+                    {
+                        resource: "arabesque_wood_carving",
+                        amount: 15
+                    }
+                ],
+                parents: [22],
+                children: [27]
+            },
+            {
+                id: 26,
+                name: "Conservation",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 51
+                    },
+                    {
+                        resource: "coins",
+                        amount: 849000
+                    },
+                    {
+                        resource: "chili",
+                        amount: 2100
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 900
+                    },
+                    {
+                        resource: "lava_stone",
+                        amount: 23
+                    }
+                ],
+                parents: [23],
+                children: [27]
+            },
+            {
+                id: 27,
+                name: "Heavy Crossbow Designs",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 51
+                    },
+                    {
+                        resource: "coins",
+                        amount: 650000
+                    },
+                    {
+                        resource: "tome",
+                        amount: 2520
+                    },
+                    {
+                        resource: "door",
+                        amount: 1080
+                    },
+                    {
+                        resource: "arabesque_wood_carving",
+                        amount: 17
+                    },
+                ],
+                parents: [24,25,26],
+                children: [28,29,30,31]
+            },
+            {
+                id: 28,
+                name: "Monasteries",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 64
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1300000
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 2690
+                    },
+                    {
+                        resource: "chili",
+                        amount: 1150
+                    },
+                ],
+                parents: [27],
+                children: [32]
+            },
+            {
+                id: 29,
+                name: "Improved Heater Shield",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 40
+                    },
+                    {
+                        resource: "coins",
+                        amount: 924000
+                    },
+                    {
+                        resource: "chili",
+                        amount: 4200
+                    },
+                    {
+                        resource: "tome",
+                        amount: 1800
+                    },
+                    {
+                        resource: "arabesque_wood_carving",
+                        amount: 17
+                    }
+                ],
+                parents: [27],
+                children: [32]
+            },
+            {
+                id: 30,
+                name: "Marble Decorations",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 53
+                    },
+                    {
+                        resource: "coins",
+                        amount: 999000
+                    },
+                    {
+                        resource: "tome",
+                        amount: 2680
+                    },
+                    {
+                        resource: "chili",
+                        amount: 1150
+                    },
+                    {
+                        resource: "lava_stone",
+                        amount: 24
+                    }
+                ],
+                parents: [27],
+                children: [32]
+            },
+            {
+                id: 31,
+                name: "Reinforced Kite Shield",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 46
+                    },
+                    {
+                        resource: "coins",
+                        amount: 849000
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 5040
+                    },
+                    {
+                        resource: "chili",
+                        amount: 2160
+                    },
+                    {
+                        resource: "lava_stone",
+                        amount: 26
+                    }
+                ],
+                parents: [27],
+                children: [32]
+            },
+            {
+                id: 32,
+                name: "Piazza",
+                costs: [
+                    {
+                        resource: "research_point",
+                        amount: 41
+                    },
+                    {
+                        resource: "coins",
+                        amount: 1200000
+                    },
+                    {
+                        resource: "chili",
+                        amount: 2610
+                    },
+                    {
+                        resource: "wardrobe",
+                        amount: 1120
+                    },
+                    {
+                        resource: "arabesque_wood_carving",
+                        amount: 20
+                    }
+                ],
+                parents: [28,29,30,31],
                 children: []
             },
         ]

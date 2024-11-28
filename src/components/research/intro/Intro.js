@@ -20,7 +20,7 @@ const Intro = () => {
     const pageName = "Research";
 
     const optionsColors = {1:"#be6061", 2:"#e9942e", 3:"#5cc299", 4:"#5a98bd", 5:"#686cc5", 6: "#be6061", 7: "#e9942e",
-        8: "#5cc299", 9: "#5a98bd"
+        8: "#5cc299", 9: "#5a98bd", 10: "#686cc5", 11: "#be6061"
     };
 
     const options = allTechnologies.map((oneEra) => {
