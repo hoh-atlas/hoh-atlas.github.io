@@ -26,6 +26,7 @@ import winter_event_2024_frozen_pond from "../../../images/shared/customizations
 import winter_event_2024_winter_market from "../../../images/shared/customizations/winter_event_2024_winter_market.webp";
 import winter_event_2024_snowman from "../../../images/shared/customizations/winter_event_2024_snowman.webp";
 import winter_event_2024_sleigh from "../../../images/shared/customizations/winter_event_2024_sleigh.webp";
+import winter_event_2024_winter_pyramid from "../../../images/shared/customizations/winter_event_2024_winter_pyramid.webp";
 
 const customizations = [
     {
@@ -363,7 +364,7 @@ const customizations = [
     {
         id: "customization_winter_event_2024_winter_pyramid", 
         name: "Winter Pyramid", 
-        img: "",
+        img: winter_event_2024_winter_pyramid,
         production: {
             resource: "chest_teslacrests_enhanced",
             time: "1d",

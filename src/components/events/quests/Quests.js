@@ -97,7 +97,7 @@ const Quests = (props) => {
                             If you log in regularly and consistently use your Stamina, you can spend approximately 2,940 Stamina in a week, giving you a slight surplus over the required 2,800. 
                             Any potential loss of Stamina due to inconsistent collection during the day can be offset by earning additional Stamina from seasonal rewards, Treasure Hunt rewards, watching ads, and completing certain quests.<br/><br/>
 
-                            This means you should be able to collect all individual rewards without needing to purchase extra Stamina.<br/><br/>
+                            This means you should be able to collect all individual rewards without needing to purchase extra Stamina, provided that you play consistently and ensure your Stamina is not maxed out for long periods.<br/><br/>
 
                             Note: If a season is active, we strongly recommend holding off on collecting Stamina rewards until the Leaderboard event starts. This strategy will help you maximize your Stamina reserves for the event.
                         </TextBlock>
