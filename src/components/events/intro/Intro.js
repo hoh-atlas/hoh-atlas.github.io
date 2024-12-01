@@ -10,14 +10,13 @@ import H1 from "../../shared/H1";
 import Image from "../../shared/Image";
 import TextBlock from "../../shared/TextBlock";
 import Icon from "../../shared/Icon";
-import { getItem } from "../../shared/utils";
+import { getItemIcon } from "../../shared/utils";
 import Card from "../../shared/Card";
 import CardContainer from "../../shared/CardContainer";
 
 import allEvents from "../data";
 
 import icon_event_world_fair_tokens from "../../../images/events/intro/icon_event_world_fair_tokens.webp";
-import world_fair_2024 from "../../../images/events/intro/world_fair_2024_window.webp";
 
 const Intro = (props) => {
 
@@ -71,13 +70,13 @@ const Intro = (props) => {
             <H1 center={true}>Mechanics</H1>
 
             {
-                "merge_event" === event.type && (
+                "merge_event" === event.type ? (
                     <>
                         <TextBlock>
                             The {event.name} features the merge mechanic, where the objective is to merge items on the board to level them up and fulfill orders on the left hand-side. After tapping the event banner, you will visit the main event window:
                         </TextBlock>
 
-                        <Image src={world_fair_2024} maxHeight={'350px'} centered={true} spacing={true} roundedCorners={true}/>
+                        <Image src={event.windowImage} maxHeight={'350px'} centered={true} spacing={true} roundedCorners={true}/>
 
                         <TextBlock>
                             Use {event.currency.name} <Icon resource={event.currency.image}/> to spawn pieces on the board: {event.mergeEventData.items[0].name}, {event.mergeEventData.items[1].name} and {event.mergeEventData.items[2].name}.
@@ -109,6 +108,64 @@ const Intro = (props) => {
                             visit the <b>Daily Specials</b> tab at the top of this page. If you don't win the Daily Special with a particular task, you will make progress toward the pity mechanic, 
                             which guarantees a 100% chance of receiving the Daily Special once it is full. {/*Below, you can find a list of all available tasks during this event.*/}
                         </TextBlock>                        
+                    </>
+                ) : event.type === "chest_event" ? (
+                    <>
+                        <TextBlock>
+                            The {event.name} features the chest mechanic, where the objective is to open one of the three chests, each containing different rewards. After tapping the event banner, you will visit the main event window:
+                        </TextBlock>
+
+                        <Image src={event.windowImage} maxHeight={'350px'} centered={true} spacing={true} roundedCorners={true}/>
+
+                        <TextBlock>
+                            Use {event.currency.name} <Icon resource={event.currency.image}/> to open chests. If you have a good amount of {event.currency.name} at your disposal, you can decide to open 5 chests in one go by pressing the x5 button.
+                            You can preview all the available chest in the table below:
+                        </TextBlock>
+
+                        <div style={{ overflowX: 'auto', marginTop: '20px', marginBottom: '20px' }}>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Chest Level</th>
+                                        <th><Icon resource={event.currency.image}/></th>
+                                        <th><Icon resource={event.payback.image}/></th>
+                                        <th>Resource</th>
+                                        <th>Amount</th>
+                                        <th>Daily Special %</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {Object.entries(event.chestEventData.chests).map(([chestLevel, items]) => (
+                                        items.map((item, index) => (
+                                            <tr key={`${chestLevel}-${index}`}>
+                                                {index === 0 && (
+                                                    <td rowSpan={items.length} style={{ textAlign: 'center', fontWeight: 'bold' }}>
+                                                        Chest {chestLevel}
+                                                    </td>
+                                                )}
+                                                <td>{item.costs}</td>
+                                                <td>{item.payback}</td>
+                                                <td>{getItemIcon(item.resource)}</td>
+                                                <td>{item.amount}</td>
+                                                <td>{item.dailySpecialPercentage}%</td>
+                                            </tr>
+                                        ))
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <TextBlock>
+                            Each chest you open gives you a predefined reward, {event.payback.name} <Icon resource={event.payback.image}/> and a chance to win the current Daily Special. To view all Daily Specials during the event,
+                            visit the <b>Daily Specials</b> tab at the top of this page. If you don't win the Daily Special by opening a particular chest, you will make progress toward the pity mechanic, 
+                            which guarantees a 100% chance of receiving the Daily Special once the progress bar is full.
+                        </TextBlock>     
+                    </>
+                ) : (
+                    <>
+                        <TextBlock>
+                            This event type has no data at the moment.
+                        </TextBlock>
                     </>
                 )
             }

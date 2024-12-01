@@ -5,6 +5,7 @@ import icon_event_worldfair_2024_grand_prize_progress from "../../images/events/
 import EventBackgroundWorldFair from "../../images/events/intro/EventBackgroundWorldFair.webp";
 import Questgiver_BenjaminFranklin from "../../images/events/quests/Questgiver_BenjaminFranklin.webp";
 import world_fair_event_shop_tier_1 from "../../images/events/intro/world_fair_event_shop_tier_1.webp";
+import world_fair_2024 from "../../images/events/intro/world_fair_2024_window.webp";
 import world_fair_2024_artifact_1 from "../../images/events/intro/world_fair_2024_artifact_1.webp";
 import world_fair_2024_artifact_2 from "../../images/events/intro/world_fair_2024_artifact_2.webp";
 import world_fair_2024_artifact_3 from "../../images/events/intro/world_fair_2024_artifact_3.webp";
@@ -27,21 +28,121 @@ import EventBackgroundWinterEvent from "../../images/events/intro/EventBackgroun
 import EventHeaderWinterEvent from "../../images/events/intro/EventHeaderWinterEvent.webp";
 import icon_snowflake_competion_leaderboard_chest from "../../images/events/intro/icon_snowflake_competion_leaderboard_chest.webp";
 import Reward_Winter_GoldChest_4 from "../../images/events/intro/Reward_Winter_GoldChest_4.webp";
+import winter_event_2024 from "../../images/events/intro/winter_event_2024_window.webp";
 
 const allEvents = [
     {
         id: "winter_event_2024",
         name: "Winter Event 2024",
         image: icon_event_winter_tokens,
-        startDate: "__ _ 2024",
-        endDate: "__ _ 2024",
+        startDate: "December 11th 2024",
+        endDate: "January 8th 2025",
         betaStartDate: "November 27th 2024",
         banner: EventBackgroundWinterEvent,
         headerImage: EventHeaderWinterEvent,
         questgiverName: "Winter town",
+        windowImage: winter_event_2024,
         type: "chest_event",
         chestEventData: {
-
+            chests: {
+                1: [
+                    {
+                        costs: 90,
+                        payback: 1,
+                        resource: "antimatter_common_part",
+                        amount: 1,
+                        dailySpecialPercentage: 5
+                    },
+                    {
+                        costs: 90,
+                        payback: 1,
+                        resource: "coins",
+                        amount: "N",
+                        dailySpecialPercentage: 5
+                    },
+                    {
+                        costs: 90,
+                        payback: 1,
+                        resource: "goods",
+                        amount: "N",
+                        dailySpecialPercentage: 5
+                    },
+                    {
+                        costs: 90,
+                        payback: 1,
+                        resource: "victory_ticket",
+                        amount: 1,
+                        dailySpecialPercentage: 5
+                    },
+                    {
+                        costs: 90,
+                        payback: 1,
+                        resource: "chest_teslacrests_common",
+                        amount: 4,
+                        dailySpecialPercentage: 5
+                    },
+                ],
+                2: [
+                    {
+                        costs: 180,
+                        payback: 2,
+                        resource: "chest_teslacrests_enhanced",
+                        amount: 6,
+                        dailySpecialPercentage: 10
+                    },
+                    {
+                        costs: 180,
+                        payback: 2,
+                        resource: "coins",
+                        amount: "N",
+                        dailySpecialPercentage: 10
+                    },
+                    {
+                        costs: 180,
+                        payback: 2,
+                        resource: "victory_ticket",
+                        amount: 2,
+                        dailySpecialPercentage: 10
+                    },
+                    {
+                        costs: 180,
+                        payback: 2,
+                        resource: "antimatter_common_part",
+                        amount: 2,
+                        dailySpecialPercentage: 10
+                    },
+                ],
+                3: [
+                    {
+                        costs: 270,
+                        payback: 3,
+                        resource: "goods",
+                        amount: "N",
+                        dailySpecialPercentage: 15
+                    },
+                    {
+                        costs: 270,
+                        payback: 3,
+                        resource: "antimatter_common_part",
+                        amount: 3,
+                        dailySpecialPercentage: 15
+                    },
+                    {
+                        costs: 270,
+                        payback: 3,
+                        resource: "chest_teslacrests_enhanced",
+                        amount: 9,
+                        dailySpecialPercentage: 15
+                    },
+                    {
+                        costs: 270,
+                        payback: 3,
+                        resource: "victory_ticket",
+                        amount: 3,
+                        dailySpecialPercentage: 15
+                    },
+                ]
+            }
         },
         currency: {
             name: "Snowflakes",
@@ -55,6 +156,148 @@ const allEvents = [
         },
         questsIcon: icon_snowflake_competion_leaderboard_chest,
         leaderboard: {
+            individualRewards: [
+                {
+                    costs: 5,
+                    currency: 100
+                },
+                {
+                    costs: 15,
+                    currency: 100
+                },
+                {
+                    costs: 30,
+                    currency: 100
+                },
+                {
+                    costs: 50,
+                    currency: 100
+                },
+                {
+                    costs: 75,
+                    currency: 300
+                },
+                {
+                    costs: 110,
+                    currency: 100
+                },
+                {
+                    costs: 150,
+                    currency: 100
+                },
+                {
+                    costs: 200,
+                    currency: 100
+                },
+                {
+                    costs: 260,
+                    currency: 100
+                },
+                {
+                    costs: 330,
+                    currency: 300
+                },
+                {
+                    costs: 410,
+                    currency: 100
+                },
+                {
+                    costs: 500,
+                    currency: 100
+                },
+                {
+                    costs: 600,
+                    currency: 100
+                },
+                {
+                    costs: 700,
+                    currency: 100
+                },
+                {
+                    costs: 800,
+                    currency: 300
+                },
+                {
+                    costs: 900,
+                    currency: 100
+                },
+                {
+                    costs: 1000,
+                    currency: 100
+                },
+                {
+                    costs: 1100,
+                    currency: 100
+                },
+                {
+                    costs: 1200,
+                    currency: 100
+                },
+                {
+                    costs: 1300,
+                    currency: 300
+                },
+                {
+                    costs: 1400,
+                    currency: 100
+                },
+                {
+                    costs: 1500,
+                    currency: 100
+                },
+                {
+                    costs: 1600,
+                    currency: 100
+                },
+                {
+                    costs: 1700,
+                    currency: 100
+                },
+                {
+                    costs: 1800,
+                    currency: 300
+                },
+                {
+                    costs: 1900,
+                    currency: 100
+                },
+                {
+                    costs: 2000,
+                    currency: 100
+                },
+                {
+                    costs: 2100,
+                    currency: 100
+                },
+                {
+                    costs: 2200,
+                    currency: 100
+                },
+                {
+                    costs: 2300,
+                    currency: 300
+                },
+                {
+                    costs: 2400,
+                    currency: 100
+                },
+                {
+                    costs: 2500,
+                    currency: 100
+                },
+                {
+                    costs: 2600,
+                    currency: 100
+                },
+                {
+                    costs: 2700,
+                    currency: 100
+                },
+                {
+                    costs: 2800,
+                    currency: 300
+                },
+            ]
         },
         dailySpecials: [
             {
@@ -423,6 +666,7 @@ const allEvents = [
         banner: EventBackgroundWorldFair,
         headerImage: Questgiver_BenjaminFranklin,
         questgiverName: "Benjamin Franklin",
+        windowImage: world_fair_2024,
         type: "merge_event",
         mergeEventData: {
             items: [
