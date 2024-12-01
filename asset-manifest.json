@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9a2a1cad.css",
-    "main.js": "/static/js/main.9702d7b0.js",
+    "main.js": "/static/js/main.bbf5ab69.js",
     "static/media/layout_5_sector_3.webp": "/static/media/layout_5_sector_3.c0f317a3382f299fbe11.webp",
     "static/media/layout_egypt_3_sector_3.webp": "/static/media/layout_egypt_3_sector_3.176bb3c09225286b101a.webp",
     "static/media/layout_egypt_4_sector_3.webp": "/static/media/layout_egypt_4_sector_3.ca8d981c13c641b372d7.webp",
@@ -28,6 +28,7 @@
     "static/media/layout_egypt_2_sector_2.webp": "/static/media/layout_egypt_2_sector_2.b0086f13339fc8f9732d.webp",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
     "static/media/layout_egypt_1_sector_2.webp": "/static/media/layout_egypt_1_sector_2.96ca42b9a15ada45e769.webp",
+    "static/media/winter_event_2024_window.webp": "/static/media/winter_event_2024_window.751edbed4db8c45da173.webp",
     "static/media/china_city.webp": "/static/media/china_city.415736e9ff5f7bc3bfe7.webp",
     "static/media/egypt_city.webp": "/static/media/egypt_city.7719ac968df164a2b372.webp",
     "static/media/hoh_background.webp": "/static/media/hoh_background.4da87c84804609d91f18.webp",
@@ -755,10 +756,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.9a2a1cad.css.map": "/static/css/main.9a2a1cad.css.map",
-    "main.9702d7b0.js.map": "/static/js/main.9702d7b0.js.map"
+    "main.bbf5ab69.js.map": "/static/js/main.bbf5ab69.js.map"
   },
   "entrypoints": [
     "static/css/main.9a2a1cad.css",
-    "static/js/main.9702d7b0.js"
+    "static/js/main.bbf5ab69.js"
   ]
 }
