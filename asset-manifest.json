@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9a2a1cad.css",
-    "main.js": "/static/js/main.bbf5ab69.js",
+    "main.js": "/static/js/main.9e4377a0.js",
     "static/media/layout_5_sector_3.webp": "/static/media/layout_5_sector_3.c0f317a3382f299fbe11.webp",
     "static/media/layout_egypt_3_sector_3.webp": "/static/media/layout_egypt_3_sector_3.176bb3c09225286b101a.webp",
     "static/media/layout_egypt_4_sector_3.webp": "/static/media/layout_egypt_4_sector_3.ca8d981c13c641b372d7.webp",
@@ -185,6 +185,7 @@
     "static/media/Unit_KarlMarx_fullbody.webp": "/static/media/Unit_KarlMarx_fullbody.ef25e7fb6943bd0f630b.webp",
     "static/media/Unit_MarieCurie_fullbody.webp": "/static/media/Unit_MarieCurie_fullbody.6a03e75d8a8bc99afe30.webp",
     "static/media/Unit_VincentVanGogh_fullbody.webp": "/static/media/Unit_VincentVanGogh_fullbody.a6e429f8c7c0d43b1f32.webp",
+    "static/media/winter_event_2024_winter_pyramid.webp": "/static/media/winter_event_2024_winter_pyramid.2efe2a1efe80a5a04d20.webp",
     "static/media/Unit_UlyssesSGrant_fullbody.webp": "/static/media/Unit_UlyssesSGrant_fullbody.7f664ca7ad9c7967e629.webp",
     "static/media/Unit_LadySixSky_fullbody.webp": "/static/media/Unit_LadySixSky_fullbody.9cfd2d62d401270e07ad.webp",
     "static/media/Unit_NapoleonBonaparte_fullbody.webp": "/static/media/Unit_NapoleonBonaparte_fullbody.587bd2141bd24bffa22c.webp",
@@ -756,10 +757,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.9a2a1cad.css.map": "/static/css/main.9a2a1cad.css.map",
-    "main.bbf5ab69.js.map": "/static/js/main.bbf5ab69.js.map"
+    "main.9e4377a0.js.map": "/static/js/main.9e4377a0.js.map"
   },
   "entrypoints": [
     "static/css/main.9a2a1cad.css",
-    "static/js/main.bbf5ab69.js"
+    "static/js/main.9e4377a0.js"
   ]
 }
