@@ -16,7 +16,7 @@ const Icon = (props) => {
         title = resource?.name;
     }
 
-    return <img src={src} alt={alt} title={title} style={{ maxHeight: '24px', verticalAlign: 'bottom' }} />
+    return <img src={src} alt={alt} title={title} style={{ maxHeight: props.maxHeight ? props.maxHeight : '24px', verticalAlign: 'bottom' }} />
 }
 
 export default Icon;

@@ -1,6 +1,8 @@
 import { getItemIcon } from "./utils";
 import Image from "./Image";
 import { workersIds } from "../allied-cultures/_data/workersIds";
+import heroBuildingBoosts from "../buildings/_data/heroBuildingBoosts";
+import heroAbilityTrainings from "../buildings/_data/heroAbilityTrainings";
 
 const BuildingsHandler = (props) => {
 
@@ -75,7 +77,11 @@ const BuildingsHandler = (props) => {
             })
             if (differentConstructionUpgradeComponents.size > 1) additionalColumns += 1;
             const testProductionComponents = testBuildingData?.components?.find(component => component["@type"].includes("ProductionComponentDTO"));
-            if (testProductionComponents) additionalColumns += 1;
+            const isHeroBoostComponentPresent = testBuildingData.components.some(component => 
+                component["@type"] === "type.googleapis.com/GameDesignReference" && 
+                component.id.includes("hero_building_boost")
+            );
+            if (testProductionComponents || isHeroBoostComponentPresent) additionalColumns += 1;
             const testGrantWorkerComponent = testBuildingData?.components?.find(component => component["@type"].includes("GrantWorkerComponentDTO"));
             if (testGrantWorkerComponent) additionalColumns += 1;
             const testCultureComponent = testBuildingData?.components?.find(component => component["@type"].includes("CultureComponentDTO"));
@@ -95,10 +101,10 @@ const BuildingsHandler = (props) => {
                             <th style={{ width: '10%' }}>Image</th>
                             <th style={{ width: '5%' }}>Level</th>
                             <th style={{ width: '5%' }}>Size</th>
-                            {differentConstructionUpgradeComponents.has("ConstructionComponent") && <th style={{ width: '15%' }}>Construction Costs</th>}
-                            {differentConstructionUpgradeComponents.has("UpgradeComponent") && <th style={{ width: '15%' }}>Upgrade Costs</th>}
-                            {testProductionComponents && <th>Production</th>}
-                            {testGrantWorkerComponent && <th>Provided</th>}
+                            {differentConstructionUpgradeComponents.has("ConstructionComponent") && <th style={{ width: '17%' }}>Construction Costs</th>}
+                            {differentConstructionUpgradeComponents.has("UpgradeComponent") && <th style={{ width: '17%' }}>Upgrade Costs</th>}
+                            {(testProductionComponents || isHeroBoostComponentPresent) && <th style={{ width: '30%' }}>Production</th>}
+                            {testGrantWorkerComponent && <th style={{ width: '10%' }}>Provided</th>}
                             {testCultureComponent && <th>Effect</th>}
                         </tr>
                         {
@@ -145,12 +151,33 @@ const BuildingsHandler = (props) => {
                                 const productionComponents = buildingData?.components?.filter(component => component["@type"].includes("ProductionComponentDTO")) || [];
                                 const grantWorkerComponent = buildingData?.components?.find(component => component["@type"].includes("GrantWorkerComponentDTO"));
                                 const cultureComponent = buildingData?.components?.find(component => component["@type"].includes("CultureComponentDTO"));
+                                let maxHappiness;
+                                if (buildingData.happinessEffect && buildingData.happinessEffect.maxHappiness) {
+                                    maxHappiness = buildingData.happinessEffect.maxHappiness;
+                                }
+                                let isHeroBoostComponentPresent = buildingData.components.some(component => 
+                                    component["@type"] === "type.googleapis.com/GameDesignReference" && 
+                                    component.id.includes("hero_building_boost")
+                                );
+                                if (isHeroBoostComponentPresent) {
+                                    const heroAbilityTraining = heroAbilityTrainings.find(component => component.definitionId.includes(buildingId));
+                                    if (heroAbilityTraining) {
+                                        const heroAbilityTrainingComponent = {};
+                                        heroAbilityTrainingComponent['duration'] = "3600s";
+                                        heroAbilityTrainingComponent['finish'] = {};
+                                        heroAbilityTrainingComponent['finish']['rewards'] = [];
+                                        heroAbilityTrainingComponent['finish']['rewards'].push({"amount": heroAbilityTraining.amountPerHour, "resource": "mastery_point"});
+                                        productionComponents.push(heroAbilityTrainingComponent);
+                                    } else {
+                                        isHeroBoostComponentPresent = false;
+                                    }
+                                }
                                 
                                 return (
                                     <>
                                         <tr key={buildingId}>
                                             <td rowSpan={2}><Image src={buildingsImages[buildingName][buildingId]}/></td>
-                                            <td rowSpan={2}>{parseInt(buildingId.match(/_([0-9]+)/)[1])}</td>
+                                            <td rowSpan={2}>{buildingData.level}</td>
                                             <td rowSpan={2}>{buildingData.width}x{buildingData.height}</td>
                                             {differentConstructionUpgradeComponents.has("ConstructionComponent") && <td rowSpan={1}>
                                                 {
@@ -188,7 +215,7 @@ const BuildingsHandler = (props) => {
                                                       )
                                                 }
                                             </td>}
-                                            {productionComponents && productionComponents.length > 0 && <td rowSpan={2}>
+                                            {productionComponents && productionComponents.length > 0 && <td rowSpan={maxHappiness ? 1 : 2}>
                                                 <div
                                                     style={{
                                                         display: 'flex',
@@ -248,6 +275,23 @@ const BuildingsHandler = (props) => {
                                                     upgradeComponent && <>{formatDuration(upgradeTime)} / {upgradeWorkers} {getItemIcon(upgradeWorkersType)}</>
                                                 }
                                             </td>}
+                                            {maxHappiness && 
+                                                <td 
+                                                    rowSpan={1} 
+                                                    style={{ 
+                                                        borderTop: '2px solid #e1cda4', 
+                                                        borderTop: '2px dotted #e1cda4', 
+                                                        whiteSpace: 'normal',
+                                                        fontSize: '11px', 
+                                                        color: '#916a17',
+                                                    }}
+                                                >
+                                                    Boost requirements:<br/><span style={{ whiteSpace: 'nowrap', marginRight: '12px' }}>{0}&nbsp;{getItemIcon("culture_bonus", "16px")}</span>
+                                                    <span style={{ whiteSpace: 'nowrap', marginRight: '12px' }}>{(maxHappiness / 3).toFixed(0)}&nbsp;{getItemIcon("culture_bonus", "16px")}</span>
+                                                    <span style={{ whiteSpace: 'nowrap', marginRight: '12px' }}>{(maxHappiness / 3 * 2).toFixed(0)}&nbsp;{getItemIcon("culture_bonus", "16px")}</span>
+                                                    <span style={{ whiteSpace: 'nowrap' }}>{maxHappiness}&nbsp;{getItemIcon("culture_bonus", "16px")}</span>
+                                                </td>
+                                            }
                                         </tr>
                                     </>
                                 );

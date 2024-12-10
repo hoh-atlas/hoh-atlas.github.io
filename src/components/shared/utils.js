@@ -42,10 +42,10 @@ export const getItemData = (id) => {
     }
 }
 
-export const getItemIcon = (id) => {
+export const getItemIcon = (id, maxHeight) => {
     const foundResource = resources.find(elem => elem.id === id);
     if (foundResource) {
-        return <Icon resource={foundResource}/>
+        return <Icon resource={foundResource} maxHeight={maxHeight}/>
     }
     
     const foundCustomization = customizations.find(elem => elem.id === id);
