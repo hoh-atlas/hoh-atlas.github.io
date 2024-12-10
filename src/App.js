@@ -11,6 +11,7 @@ import SeasonsPage from "./pages/SeasonsPage";
 import EventsPage from "./pages/EventsPage";
 import CommunityPage from "./pages/CommunityPage";
 import ResearchPage from "./pages/ResearchPage";
+import BuildingsPage from "./pages/BuildingsPage";
 import Error from "./pages/Error";
 import SharedLayout from "./pages/SharedLayout";
 import { createPathFromParameters } from "./components/shared/utils";
@@ -26,13 +27,14 @@ import layoutSeasons from "./components/seasons/sectionsDefinition";
 import layoutEvents from "./components/events/sectionsDefinition";
 import layoutCommunity from "./components/community/sectionsDefinition";
 import layoutResearch from "./components/research/sectionsDefinition";
+import layoutBuildings from "./components/buildings/sectionsDefinition";
 
 const App = () => {
 
 	ReactGA.initialize("G-TH20891YX2");
 
 	useEffect(() => {
-		document.title = "Heroes of History - Atlas";
+		document.title = "Heroes of History Wiki";
 	}, []);
 	
 	return <HashRouter>
@@ -148,6 +150,18 @@ const App = () => {
 							<Route key={researchTab.id} path={createPathFromParameters(layoutResearch.page, researchTab.url)} element={ <ResearchPage tab={researchTab}/> || <ResearchPage tab={layoutResearch.tabs[0]}/> }/>
 							{researchTab.dynamicSegments.map( (dynamicSegment) => {
 								return <Route path={createPathFromParameters(layoutResearch.page, researchTab.url, dynamicSegment)} element={ <ResearchPage tab={researchTab} />} />
+							})}
+						</>
+						)
+					})
+				}
+
+				{
+					layoutBuildings.tabs.map( (buildingsTab) => {
+						return ( <>
+							<Route key={buildingsTab.id} path={createPathFromParameters(layoutBuildings.page, buildingsTab.url)} element={ <BuildingsPage tab={buildingsTab}/> || <BuildingsPage tab={layoutBuildings.tabs[0]}/> }/>
+							{buildingsTab.dynamicSegments.map( (dynamicSegment) => {
+								return <Route path={createPathFromParameters(layoutBuildings.page, buildingsTab.url, dynamicSegment)} element={ <BuildingsPage tab={buildingsTab} />} />
 							})}
 						</>
 						)

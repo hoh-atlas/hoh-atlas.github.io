@@ -3,10 +3,11 @@ import "../../shared/Table.css";
 
 import { Link, useParams } from "react-router-dom";
 import React from "react";
+import { useState } from "react";
 
 import { createPathFromParameters } from "../../shared/utils";
 
-import { allHeroes, levelsExperiences, heroClassIcons, unitIcons, backdrops, heroClassNames, unitNames, colorIcons, colorNames, positionNames, damageTypeNames, tacticalTypeNames } from "../data";
+import { allHeroes, levelsExperiences, heroClassIcons, unitIcons, backdrops, heroClassNames, unitNames, colorIcons, colorNames, positionNames, damageTypeNames, tacticalTypeNames, ascensions, abilityDescriptions, abilities } from "../data";
 import layoutHeroes from "../sectionsDefinition";
 import Image from "../../shared/Image";
 import H1 from "../../shared/H1";
@@ -22,6 +23,30 @@ const OneHero = (props) => {
 
     const {heroId} = useParams();
 
+    const [checkedRows, setCheckedRows] = useState([]);
+    const [totalXp, setTotalXp] = useState(0);
+    const [totalFood, setTotalFood] = useState(0);
+    const [lastCheckedRowIndex, setLastCheckedRowIndex] = useState(null);
+
+    const handleCheckboxChange = (xp, foodCost, rowIndex, isChecked) => {
+        if (isChecked) {
+            setCheckedRows((prevCheckedRows) => [...prevCheckedRows, rowIndex]);
+            setTotalXp((prevTotalXp) => prevTotalXp + xp);
+            setTotalFood((prevTotalFood) => prevTotalFood + foodCost);
+            setLastCheckedRowIndex(rowIndex);
+        } else {
+            setCheckedRows((prevCheckedRows) =>
+                prevCheckedRows.filter((index) => index !== rowIndex)
+            );
+            setTotalXp((prevTotalXp) => prevTotalXp - xp);
+            setTotalFood((prevTotalFood) => prevTotalFood - foodCost);
+            if (lastCheckedRowIndex === rowIndex) {
+                const newLastChecked = checkedRows.length > 1 ? checkedRows[checkedRows.length - 2] : null;
+                setLastCheckedRowIndex(newLastChecked);
+            }
+        }
+    };
+    
     const hero = allHeroes.find( (oneHero) => {
         return oneHero.id == heroId;
     })
@@ -33,21 +58,79 @@ const OneHero = (props) => {
         </div>
     }
 
-    const {id, name, image, icon, backdrop, stars, heroClass, unit, color, abilityIcon, ascension, abilityName, abilityDescription, ability, position, damageType, tacticalType} = hero;
+    const {id, name, codeName, image, icon, backdrop, stars, heroClass, unit, color, abilityIcon, ascension, abilityName, abilityDescription, ability, position, damageType, tacticalType} = hero;
 
     const currentIndex = props.filteredHeroes.findIndex(item => item.id === id);
     const leftHero = currentIndex > 0 ? props.filteredHeroes[currentIndex - 1] : null;
     const rightHero = currentIndex < props.filteredHeroes.length - 1 ? props.filteredHeroes[currentIndex + 1] : null;
 
-    /*backgroundImage: `url(${backdrops[backdrop]})`,
-                            backgroundSize: 'cover',
-                            backgroundRepeat: 'no-repeat',
-                            backgroundPosition: 'center',
-                            
-                            background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 100%);
-margin-top: 
-                    <Image src={backdrops[backdrop]} style={{background: 'linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 100%)'}}   />*/
+    const generateAbilityText = (ability, abilityDescriptions) => {
+        const match = ability.id.match(/_([0-9]+)/);
+        let abilityLevel;
+        if (match) {
+            abilityLevel = parseInt(match[1], 10);
+        } else {
+            console.log("No matching ability id found.");
+            return null;
+        }
+    
+        const originalAbilityDescription = abilityDescriptions.find(item => item.key.includes(ability.descriptionLocaKey));
+        if (!originalAbilityDescription) {
+            console.log("No matching ability description found.");
+            return null;
+        }
+    
+        let abilityDescriptionCopy = originalAbilityDescription.values[0];
+        abilityDescriptionCopy = abilityDescriptionCopy.replace(/<style[^>]*>[^<]*<\/style>/, '<style></style>');
+    
+        const parametersArray = Object.entries(ability.descriptionParameters).map(([key, { value, type }]) => {
+            let realValue = null;
+            if (type === "percentage") {
+                realValue = (value * 100).toFixed(1);
+                if (realValue.endsWith('.0')) {
+                    realValue = realValue.slice(0, -2);
+                }
+                realValue += "%";
+            } else if (type === "duration") {
+                realValue = `${value}s`;
+            } else {
+                realValue = value;
+            }
+            abilityDescriptionCopy = abilityDescriptionCopy.replace(`{${key}}`, `<b>${realValue}</b>`);
+        });
+    
+        return {
+            level: abilityLevel,
+            description: abilityDescriptionCopy
+        };
+    };
+
+    let abilityLevels = [];
+
+    const renderAbilityLevels = abilities
+        .filter(ability => ability.id.includes(codeName))
+        .sort((a, b) => {
+            const levelA = parseInt(a.id.match(/_([0-9]+)/)?.[1], 10);
+            const levelB = parseInt(b.id.match(/_([0-9]+)/)?.[1], 10);
+            return levelA - levelB;
+        })
+        .map((ability, index) => {
+            const abilityText = generateAbilityText(ability, abilityDescriptions);
+            if (!abilityText) return null;
+
+            abilityLevels.push(abilityText);
+
+            return (
+                <tr key={index}>
+                    <td>{abilityText.level}</td>
+                    <td colSpan={4}>
+                        <span dangerouslySetInnerHTML={{ __html: abilityText.description }} />
+                    </td>
+                </tr>
+            );
+        });
+
+    const firstAbilityDescription = abilityLevels[0]?.description || '';
 
     return <div>
         <table style={{ width: '70%', marginBottom: '20px' }}>
@@ -131,7 +214,7 @@ margin-top:
                         <Image src={abilityIcon} maxWidth={'100px'}/>
                     </td>
                     <td colSpan={3}>
-                        <span dangerouslySetInnerHTML={{ __html: abilityDescription }} />
+                        <span dangerouslySetInnerHTML={{ __html: firstAbilityDescription }} />
                     </td>
                 </tr>
                 <tr>
@@ -168,22 +251,30 @@ margin-top:
                     <th colSpan={4}>Required Materials</th>
                 </tr>
                 {
-                    ascension && Object.entries(ascension).map(([level, requirements]) => (
-                        <tr>
-                            <td>{parseInt(level)} &gt; {parseInt(level) + 10}</td>
-                            <td colSpan={4}>
-                                {
-                                    ascension[parseInt(level)].map((requirement) => {
-                                        return (
-                                            <div key={level + 1} style={{ display: 'inline-block', marginRight: '10px' }}>
-                                                {requirement.amount}x {getItemIcon(requirement.resource)}
-                                            </div>
-                                        )
-                                    })
-                                }
-                            </td>
-                        </tr>
-                    ))
+                    ascensions && ascensions.map((ascension, index) => {
+                        const ascensionStarLevel = `hero_progression_ascension_cost.${colorNames[color]}_${heroClassNames[heroClass]}_Star_${stars}`;
+
+                        if (ascension.definitionId === ascensionStarLevel) {
+                            const currentAscensionCosts = ascension.ascensionCosts;
+
+                            return Object.entries(currentAscensionCosts).map(([level, cost], costIndex) => {
+                                return (
+                                    <tr key={`${index}-${costIndex}`}>
+                                        <td>{(parseInt(level)+1)*10} &gt; {(parseInt(level)+1)*10 + 10}</td>
+                                        <td colSpan={4}>
+                                            {cost.costs.map((resource, resIndex) => (
+                                                <span key={resIndex}>
+                                                    {Math.abs(resource.amount)}x {getItemIcon(resource.definitionId)}
+                                                    {resIndex < cost.costs.length - 1 && "  "}
+                                                </span>
+                                            ))}
+                                        </td>
+                                    </tr>
+                                );
+                            });
+                        }
+                        return null;
+                    })
                 }
             </tbody>
             <thead>
@@ -191,19 +282,79 @@ margin-top:
                     <th colSpan={5}>Ability: {abilityName}</th>
                 </tr>
             </thead>
+            <tbody>{renderAbilityLevels}</tbody>
+            <thead>
+                <tr>
+                    <th colSpan={5}>Upgrade Costs</th>
+                </tr>
+            </thead>
             <tbody>
                 <tr>
                     <th>Level</th>
-                    <th colSpan={4}>Bonuses</th>
+                    <th colSpan={3}>Costs</th>
+                    <th style={{ whiteSpace: 'nowrap' }}>Sum</th>
                 </tr>
-                {
-                    ability && ability.map((level, index) => (
-                        <tr>
-                            <td>{index + 1}</td>
-                            <td colSpan={4}>{level.replaceAll(",", ", ")}</td>
-                        </tr>
-                    ))
-                }
+                {levelsExperiences &&
+                    levelsExperiences.map((experience, index) => {
+                        const starLevel = `hero_progression_cost.Cost_Star_${stars}`;
+
+                        if (experience.definitionId === starLevel) {
+                            const currentCost = experience.levelUpCosts;
+
+                            return Object.entries(currentCost).map(([level, cost], levelIndex) => {
+                                const foodCost = cost.xp * cost.costPerXp;
+                                const rowIndex = `${index}-${levelIndex}`;
+                                const isChecked = checkedRows.includes(rowIndex);
+
+                                return (
+                                    <>
+                                        <tr key={`${index}-${levelIndex}`}>
+                                            <td>{level}</td>
+                                            <td colSpan={3}>
+                                                {cost.xp} {getItemIcon('xp_hero')}, {foodCost.toFixed(0)}{' '}
+                                                {getItemIcon('food')}
+                                            </td>
+                                            <td>
+                                                <input
+                                                    type="checkbox"
+                                                    checked={isChecked}
+                                                    onChange={(e) =>
+                                                        handleCheckboxChange(
+                                                            cost.xp,
+                                                            foodCost,
+                                                            rowIndex,
+                                                            e.target.checked
+                                                        )
+                                                    }
+                                                />
+                                            </td>
+                                        </tr>
+
+                                        {isChecked && rowIndex === lastCheckedRowIndex && (
+                                            <tr key={`total-${rowIndex}`}>
+                                                <td colSpan={4}></td>
+                                                <td
+                                                    style={{
+                                                        fontSize: '11px',
+                                                        color: '#916a17',
+                                                        display: 'flex',
+                                                        flexDirection: 'column',
+                                                        alignItems: 'center',
+                                                        textAlign: 'center',
+                                                    }}
+                                                >
+                                                    <span>Total:</span>
+                                                    <span>{totalXp} {getItemIcon('xp_hero')}</span>
+                                                    <span>{totalFood.toFixed(0)} {getItemIcon('food')}</span>
+                                                </td>
+                                            </tr>
+                                        )}
+                                    </>
+                                );
+                            });
+                        }
+                        return null;
+                    })}
             </tbody>
         </table>
     </div>

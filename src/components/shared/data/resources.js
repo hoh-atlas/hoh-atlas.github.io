@@ -155,9 +155,12 @@ import toga from '../../../images/shared/resources/toga.webp';
 import token_ath_fountain_of_youth from '../../../images/shared/resources/token_ath_fountain_of_youth.webp';
 import tome from '../../../images/shared/resources/tome.webp';
 import tunic from '../../../images/shared/resources/tunic.webp';
+import Viking_Sailor from '../../../images/shared/resources/Viking_Sailor.webp';
+import Viking_Worker from '../../../images/shared/resources/Viking_Worker.webp';
 import wardrobe from '../../../images/shared/resources/wardrobe.webp';
 import wax_seal from '../../../images/shared/resources/wax_seal.webp';
 import wool from '../../../images/shared/resources/wool.webp';
+import Worker from '../../../images/shared/resources/Worker.webp';
 import wu_zhu from '../../../images/shared/resources/wu_zhu.webp';
 
 const resources = [
@@ -165,7 +168,9 @@ const resources = [
     {id: "coins", name: "Coins", img: Coin, category: "soft"},   // consider different type of categories, such as: ["crests", "colors"]
     {id: "food", name: "Food", img: Food, category: "soft"},
     {id: "research_point", name: "Research Point", img: Research, category: "soft"},
+    {id: "research_points", name: "Research Point", img: Research, category: "soft"},
     {id: "gems", name: "Gems", img: Gem, category: "soft"},
+    {id: "premium", name: "Gems", img: Gem, category: "soft"},
     {id: "energy", name: "Stamina", img: CampaignEnergy, category: "soft"},
     {id: "victory_ticket", name: "Victory Ticket", img: icon_campaign_battle_ticket, category: "soft"},
     {id: "goods", name: "Goods", img: goods, category: "soft"},
@@ -177,6 +182,7 @@ const resources = [
     {id: "xp_legendary", name: "Legendary Scroll of Prowess", img: icon_xp_scroll_legendary, category: "experiences"},
     {id: "xp_hero", name: "Experience Points", img: icon_xp_hero, category: "experiences"},
     {id: "mastery_point", name: "Mastery Points", img: mastery_point, category: "experiences"},
+    {id: "resource.mastery_points", name: "Mastery Points", img: mastery_point, category: "experiences"},
     // ANTIMATTERS
     {id: "antimatter", name: "Antimatter", img: icon_rift_token_common, category: "antimatters"},
     {id: "antimatter_egyptian", name: "Egyptian Antimatter", img: icon_rift_token_egypt_common, category: "antimatters"},
@@ -283,6 +289,8 @@ const resources = [
     {id: "wardrobe", name: "Wardrobe", img: wardrobe, category: "goods"},
     {id: "tome", name: "Tome", img: tome, category: "goods"},
     {id: "chili", name: "Chili", img: chili, category: "goods"},
+    // CAPITAL CITY
+    {id: "worker", name: "Workers", img: Worker, category: "capital_city"},
     // EGYPT ALLIED CULTURE
     {id: "deben", name: "Deben", img: deben, category: "culture_egypt"},
     {id: "papyrus", name: "Papyrus", img: icon_papyrus, category: "culture_egypt"},
@@ -316,6 +324,9 @@ const resources = [
     {id: "stockfish", name: "Stockfish", img: stockfish, category: "culture_vikings"},
     {id: "spice_treasure", name: "Spice Treasure", img: spice_treasure, category: "culture_vikings"},
     {id: "jewel_treasure", name: "Jewel Treasure", img: jewel_treasure, category: "culture_vikings"},
+    {id: "gem_treasure", name: "Jewel Treasure", img: jewel_treasure, category: "culture_vikings"},
+    {id: "viking_worker", name: "Viking Worker", img: Viking_Worker, category: "culture_vikings"},
+    {id: "viking_sailor", name: "Viking Sailor", img: Viking_Sailor, category: "culture_vikings"},
     // TOKENS
     {id: "token_ath_fountain_of_youth", name: "Fountain of Youth", img: token_ath_fountain_of_youth, category: "tokens"},
     // SEASONS
@@ -344,6 +355,9 @@ const resources = [
     {id: "coins_bonus", name: "Coins Bonus", img: coins_bonus, category: "bonuses"},
     // FRAGMENTS
     {id: "puzzle_piece", name: "Puzzle Piece", img: puzzle_piece, category: "fragments"},
+    {id: "BuildingPiece|Building_BronzeAge_Collectable_School_1", name: "School Puzzle Piece", img: puzzle_piece, category: "fragments"},
+    {id: "BuildingPiece|Building_MinoanEra_Collectable_MinoanWatchtower_1", name: "Minoan Watchtower Puzzle Piece", img: puzzle_piece, category: "fragments"},
+    {id: "BuildingPiece|Building_ClassicGreece_Collectable_ArchitectsStudio_1", name: "Scholars Lyceum Puzzle Piece", img: puzzle_piece, category: "fragments"},
     {id: "antimatter_common_part", name: "Antimatter Piece", img: icon_rift_token_common_part, category: "fragments"},
     {id: "antimatter_legendary_part", name: "Legendary Antimatter Piece", img: icon_rift_token_legendary_part, category: "fragments"},
 ]

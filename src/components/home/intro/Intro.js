@@ -28,7 +28,7 @@ const Intro = () => {
     return <>
     <TextContainer 
         centered={true} 
-        headerTexts={['Welcome to the Heroes of History Atlas, the home of all things Heroes of History!']}
+        headerTexts={['Welcome to the Heroes of History Wiki, the home of all things Heroes of History!']}
         texts={[``]}
         style={{ marginBottom: '20px', marginTop: '5px' }}
         textRectangleHeight={'150px'}

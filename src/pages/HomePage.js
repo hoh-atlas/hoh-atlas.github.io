@@ -19,7 +19,7 @@ const HomePage = (props) => {
         <span>
             <Link to={`/${basePath}`} className="text-link-white">Campaign</Link> &gt; {props.tab.name}
         </span>
-    ) : "Heroes of History - Atlas";
+    ) : "Heroes of History Wiki";
 
     const renderSelectedTab = () => {
         switch (props.tab.url) {

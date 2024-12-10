@@ -8,6 +8,7 @@ import Navbar_Seasons from "../../images/navbar/Navbar_Seasons.webp";
 import Navbar_Events from "../../images/navbar/Navbar_Events.webp";
 import Navbar_Community from "../../images/navbar/Navbar_Community.webp";
 import Navbar_Research from "../../images/navbar/Navbar_Research.webp";
+import Navbar_Buildings from "../../images/navbar/Navbar_Buildings.webp";
 
 const links = [
     {
@@ -33,55 +34,62 @@ const links = [
     },
     {
         id: 4,
+        url: "/buildings",
+        text: "Buildings",
+        img: Navbar_Buildings,
+        show: true,
+    },
+    {
+        id: 5,
         url: "/events",
         text: "Events",
         img: Navbar_Events,
         show: true,
     },
     {
-        id: 5,
+        id: 6,
         url: "/allied-cultures",
         text: "Allied Cultures",
         img: Navbar_AlliedCultures,
         show: true,
     },
     {
-        id: 6,
+        id: 7,
         url: "/research",
         text: "Research",
         img: Navbar_Research,
         show: true,
     },
     {
-        id: 7,
+        id: 8,
         url: "/treasure-hunt",
         text: "Treasure Hunt",
         img: Navbar_TreasureHunt,
         show: true,
     },
     {
-        id: 8,
+        id: 9,
         url: "/seasons",
         text: "Seasons",
         img: Navbar_Seasons,
         show: true,
     },
     {
-        id: 9,
+        id: 10,
         url: "/resources",
         text: "Resources",
         img: Navbar_Resources,
         show: true,
     },
     {
-        id: 10,
+        id: 11,
         url: "/tesla-storms",
         text: "Tesla Storms",
         img: "https://i.ibb.co/nRvy33n/event-widget-backer-time-Paradox-2021.png",
         show: false,
     },
     {
-        id: 11,
+        id: 12,
         url: "/community",
         text: "Community",
         img: Navbar_Community,
