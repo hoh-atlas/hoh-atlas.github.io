@@ -1,4 +1,5 @@
 import alabaster_idol from '../../../images/shared/resources/alabaster_idol.webp';
+import ambrosia from '../../../images/shared/resources/ambrosia.webp';
 import arena_token from '../../../images/shared/resources/arena_token.webp';
 import barrel from '../../../images/shared/resources/barrel.webp';
 import bronze_bracelet from '../../../images/shared/resources/bronze_bracelet.webp';
@@ -174,6 +175,7 @@ const resources = [
     {id: "energy", name: "Stamina", img: CampaignEnergy, category: "soft"},
     {id: "victory_ticket", name: "Victory Ticket", img: icon_campaign_battle_ticket, category: "soft"},
     {id: "goods", name: "Goods", img: goods, category: "soft"},
+    {id: "ambrosia", name: "Ambrosia", img: ambrosia, category: "soft"},
     // EXPERIENCES
     {id: "xp_common", name: "Common Scroll of Prowess", img: icon_xp_scroll_common, category: "experiences"},
     {id: "xp_uncommon", name: "Uncommon Scroll of Prowess", img: icon_xp_scroll_uncommon, category: "experiences"},

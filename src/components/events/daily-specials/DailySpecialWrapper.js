@@ -15,7 +15,6 @@ const DailySpecialWrapper = (props) => {
     return (
         <>
             <div className="customization-object-container" style={{ width: '100%' }}>
-                {/* If it's a resource */}
                 {resources.some(item => item.id === dailySpecial) ? (
                     <>
                         <H1 center={true} style={{ marginTop: '10px' }}>Day {day}: {itemData.name}</H1>
@@ -33,7 +32,7 @@ const DailySpecialWrapper = (props) => {
                                     </th>
                                     {note && (
                                         <th style={{ width: '20%' }}>
-                                            {note}
+                                            Note
                                         </th>
                                     )}
                                 </tr>

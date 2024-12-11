@@ -130,7 +130,7 @@ const allEvents = [
                     {
                         costs: 270,
                         payback: 3,
-                        resource: "chest_teslacrests_enhanced",
+                        resource: "chest_teslacrests_superior",
                         amount: 9,
                         dailySpecialPercentage: 15
                     },
@@ -139,6 +139,13 @@ const allEvents = [
                         payback: 3,
                         resource: "victory_ticket",
                         amount: 3,
+                        dailySpecialPercentage: 15
+                    },
+                    {
+                        costs: 270,
+                        payback: 3,
+                        resource: "ambrosia",
+                        amount: 1,
                         dailySpecialPercentage: 15
                     },
                 ]
@@ -310,7 +317,8 @@ const allEvents = [
             },
             {
                 resource: "chest_color_crests_purple_common_enhanced_superior",
-                amount: 1
+                amount: 1,
+                note: "The rarity of provided crests depends on your current era"
             },
             {
                 resource: "antimatter_common_part",
@@ -318,7 +326,8 @@ const allEvents = [
             },
             {
                 resource: "charta_terrestre",
-                amount: 1
+                amount: 1,
+                note: "The rarity of provided ascension material depends on your current era"
             },
             {
                 resource: "customization_winter_event_2024_winter_home",
@@ -334,15 +343,18 @@ const allEvents = [
             },
             {
                 resource: "herbal_poultice",
-                amount: 1
+                amount: 1,
+                note: "The rarity of provided ascension material depends on your current era"
             },
             {
                 resource: "chest_color_crests_green_common_enhanced_superior",
-                amount: 1
+                amount: 1,
+                note: "The rarity of provided crests depends on your current era"
             },
             {
                 resource: "crested_guidon",
-                amount: 1
+                amount: 1,
+                note: "The rarity of provided ascension material depends on your current era"
             },
             {
                 resource: "antimatter_common_part",
@@ -354,7 +366,8 @@ const allEvents = [
             },
             {
                 resource: "chest_color_crests_yellow_common_enhanced_superior",
-                amount: 1
+                amount: 1,
+                note: "The rarity of provided crests depends on your current era"
             },
             {
                 resource: "customization_winter_event_2024_winter_pyramid",
@@ -366,11 +379,13 @@ const allEvents = [
             },
             {
                 resource: "chest_color_crests_blue_common_enhanced_superior",
-                amount: 1
+                amount: 1,
+                note: "The rarity of provided crests depends on your current era"
             },
             {
                 resource: "herbal_poultice",
-                amount: 1
+                amount: 1,
+                note: "The rarity of provided ascension material depends on your current era"
             },
             {
                 resource: "customization_winter_event_2024_snowman",
@@ -382,7 +397,8 @@ const allEvents = [
             },
             {
                 resource: "charta_terrestre",
-                amount: 1
+                amount: 1,
+                note: "The rarity of provided ascension material depends on your current era"
             },
             {
                 resource: "customization_winter_event_2024_sleigh",
@@ -390,7 +406,8 @@ const allEvents = [
             },
             {
                 resource: "chest_color_crests_red_common_enhanced_superior",
-                amount: 1
+                amount: 1,
+                note: "The rarity of provided crests depends on your current era"
             },
             {
                 resource: "antimatter_common_part",
@@ -398,7 +415,8 @@ const allEvents = [
             },
             {
                 resource: "crested_guidon",
-                amount: 1
+                amount: 1,
+                note: "The rarity of provided ascension material depends on your current era"
             },
             {
                 resource: "customization_winter_event_2024_snowman",
@@ -490,11 +508,11 @@ const allEvents = [
                 id: 7,
                 cost: 12,
                 free: {
-                    resource: "research_point",
+                    resource: "ambrosia",
                     amount: 5
                 },
                 premium: {
-                    resource: "research_point",
+                    resource: "ambrosia",
                     amount: 7
                 }
             },

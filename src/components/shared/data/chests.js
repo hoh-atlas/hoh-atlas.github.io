@@ -162,7 +162,7 @@ const chests = [
                 resource: "herbal_poultice",
                 amount: 1,
             },
-        ]
+        ],
     },
     {
         id: "chest_ascension_3", 
