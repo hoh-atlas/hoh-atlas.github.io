@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9a2a1cad.css",
-    "main.js": "/static/js/main.45c8e0a1.js",
+    "main.js": "/static/js/main.f5999a66.js",
     "static/media/layout_5_sector_3.webp": "/static/media/layout_5_sector_3.c0f317a3382f299fbe11.webp",
     "static/media/layout_egypt_3_sector_3.webp": "/static/media/layout_egypt_3_sector_3.176bb3c09225286b101a.webp",
     "static/media/layout_egypt_4_sector_3.webp": "/static/media/layout_egypt_4_sector_3.ca8d981c13c641b372d7.webp",
@@ -946,6 +946,7 @@
     "static/media/Egypt_Small_Well.webp": "/static/media/Egypt_Small_Well.17257ec458b2d77d2404.webp",
     "static/media/China_Rice_Farm_Lv5.webp": "/static/media/China_Rice_Farm_Lv5.6bed9b5075738b84c189.webp",
     "static/media/Capital_Compact_Culture_Site_Lv4.webp": "/static/media/Capital_Compact_Culture_Site_Lv4.5869d03a8ac9b3af251c.webp",
+    "static/media/ambrosia.webp": "/static/media/ambrosia.76756e87e783a59a3fee.webp",
     "static/media/Egypt_Gold_Mine_Lv5.webp": "/static/media/Egypt_Gold_Mine_Lv5.62618e735fb67fda646e.webp",
     "static/media/Egypt_Papyrus_Field_Lv5.webp": "/static/media/Egypt_Papyrus_Field_Lv5.165747c855c2cbdc9fa5.webp",
     "static/media/China_Average_Home_Lv3.webp": "/static/media/China_Average_Home_Lv3.1c4e34d60b3b72de06db.webp",
@@ -1057,10 +1058,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.9a2a1cad.css.map": "/static/css/main.9a2a1cad.css.map",
-    "main.45c8e0a1.js.map": "/static/js/main.45c8e0a1.js.map"
+    "main.f5999a66.js.map": "/static/js/main.f5999a66.js.map"
   },
   "entrypoints": [
     "static/css/main.9a2a1cad.css",
-    "static/js/main.45c8e0a1.js"
+    "static/js/main.f5999a66.js"
   ]
 }
