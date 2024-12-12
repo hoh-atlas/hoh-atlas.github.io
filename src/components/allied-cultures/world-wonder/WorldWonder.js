@@ -11,6 +11,9 @@ import { getItemIcon } from "../../shared/utils";
 import H1 from "../../shared/H1";
 
 import allAlliedCultures from "../data";
+import wondersChests from "../_data/wondersChests";
+import wondersBoosts from "../_data/wondersBoosts";
+import wondersRewards from "../_data/wondersRewards";
 import worldwonder_icon from "../../../images/allied-cultures/world-wonder/worldwonder_icon.webp";
 
 const WorldWonder = (props) => {
@@ -22,7 +25,45 @@ const WorldWonder = (props) => {
         return allAlliedCultures.find(oneAlliedCulture => oneAlliedCulture.id == props.selectedAlliedCulture);
     }
 
+    const wonderChests = wondersChests.find(wonder => wonder.id === getAlliedCulture().wonder.id);
+    const boosts = wonderChests.components.filter(component => component["@type"] === "type.googleapis.com/BoostResourceComponentDTO");
+    const boostsComponents = boosts.map(boost => wondersBoosts.find(wonderBoost => wonderBoost.id === boost.dynamicModifiedFloatDefinitionId));
+    const rewardsComponent = wondersRewards.find(rewardComponent => rewardComponent.id.includes("event.EventCity_") && rewardComponent.id.includes(getAlliedCulture().type));
     const wonder = getAlliedCulture().wonder;
+
+    const requirementsByLevels = wonderChests.components[0].dynamicCosts.byWonderLevel;
+    let chestsSum = 0;
+    let boostsPerLevel = [];
+    boostsComponents.map((boostComponent, index) => {
+        let object = {};
+        let component = [];
+        boostComponent.mapping.values.map((level) => {
+            component.push(level.then.value);
+        });
+        object['levels'] = component;
+        object['resource'] = boosts[index].resourceDefinitionId;
+        boostsPerLevel.push(object);
+    });
+    const rewards = rewardsComponent.components.find((component) => component["@type"].includes("RewardLaneEventComponentDTO"))?.rewards;
+    console.log(rewards)
+
+    const renderRewards = (rewards) => {
+        return rewards.map((reward, index) => (
+            <span key={index} className="resource-span">
+                {reward.amount || reward.regular}
+                {(reward.amount || reward.regular) && "x"}&nbsp;
+                {(reward.resource && getItemIcon(reward.resource)) ||
+                    (reward.city && reward.subType && getItemIcon(`${reward.city}_${reward.subType}`)) ||
+                    (reward.city && !reward.subType && getItemIcon(reward.city)) ||
+                    (reward.dynamicDefinitionId && reward.dynamicDefinitionId.includes("XpScrolls") && getItemIcon("xp_hero")) ||
+                    (reward.dynamicDefinitionId && reward.dynamicDefinitionId.includes("_Coins_") && getItemIcon("coins")) ||
+                    (reward.dynamicDefinitionId && reward.dynamicDefinitionId.includes("_Food_") && getItemIcon("food")) ||
+                    (reward.dynamicDefinitionId && reward.dynamicDefinitionId.includes("_Goods_") && getItemIcon("goods"))}
+    
+                {reward.rewards && renderRewards(reward.rewards)}
+            </span>
+        ));
+    };    
   
     return (
       <>
@@ -32,78 +73,91 @@ const WorldWonder = (props) => {
           </Prologue>
           <SectionDivider />
           <H1 center={true}>{wonder.name}</H1>
-          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "15px",marginBottom: "15px" }}>
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "15px", marginBottom: "15px" }}>
               <img src={wonder?.image} style={{ maxWidth: "300px" }} />
           </div>
           <table style={{ width: '90%' }}>
               <thead>
                   <tr>
-                      <th style={{ width: '15%' }}>
+                      <th style={{ width: '5%' }}>
                           Level
                       </th>
                       <th style={{ width: '35%' }}>
                           Costs
                       </th>
-                      <th style={{ width: '25%' }}>
+                      <th style={{ width: '10%' }}>
+                          Chests
+                      </th>
+                      <th style={{ width: '10%' }}>
+                          Chests sum
+                      </th>
+                      <th style={{ width: '15%' }}>
                           Boost
                       </th>
-                      <th style={{ width: '25%' }}>
+                      <th style={{ width: '20%' }}>
                           Rewards
                       </th>
                   </tr>
               </thead>
               <tbody>
                   {
-                      wonder?.levels.map( (level) => (
-                          <>
-                              <tr>
-                                  <td>
-                                      {level.level}
-                                  </td>
-                                  <td>
-                                      {
-                                          level.requirements?.map( (requirement) => (
-                                              <>
-                                                  {requirement.amount}x
-                                                  {' '}
-                                                  {getItemIcon(requirement.resource)}
-                                                  {' '}
-                                              </>
-                                          ))
-                                      }
-                                  </td>
-                                  <td>
-                                      {
-                                          level.bonuses?.map( (bonus) => (
-                                              <>
-                                                  {bonus.amount}%
-                                                  {' '}
-                                                  {getItemIcon(bonus.resource)}
-                                                  {' '}
-                                              </>
-                                          ))
-                                      }
-                                  </td>
-                                  <td>
-                                    {Array.isArray(level.reward) ? (
-                                        level.reward.map((reward, index) => (
-                                            <span key={index}>
-                                                {reward.amount}x {' '}
-                                                {getItemIcon(reward.resource)} {' '}
-                                            </span>
-                                        ))
-                                    ) : (
-                                        level.reward && (
-                                            <>
-                                                {level.reward.amount}x {' '}
-                                                {getItemIcon(level.reward.resource)} {' '}
-                                            </>
-                                        )
-                                    )}
-                                </td>
-                              </tr>
-                          </>
-                      ))
+                    Array.from({ length: 51 }, (_, index) => (
+                        <tr>
+                            <td>{index}</td>
+                            <td>
+                            {
+                                index !== 0 && requirementsByLevels[index-1] !== undefined && Object.entries(
+                                    requirementsByLevels[index-1].crates.reduce((acc, crate) => {
+                                        const { definitionId, amount } = crate.cost;
+                                        const totalAmount = crate.crateAmount * amount;
+
+                                        if (!acc[definitionId]) {
+                                            acc[definitionId] = 0;
+                                        }
+                                        acc[definitionId] += totalAmount;
+
+                                        return acc;
+                                    }, {})
+                                ).map(([definitionId, totalAmount]) => (
+                                    <span key={definitionId} className="resource-span">
+                                        {totalAmount} {getItemIcon(definitionId)}
+                                    </span>
+                                ))
+                            }
+                            </td>
+                            <td>
+                                {
+                                    index !== 0 && requirementsByLevels[index - 1] !== undefined && (
+                                        <>
+                                            {
+                                                requirementsByLevels[index - 1].crates.reduce((totalCrates, crate) => {
+                                                    chestsSum += crate.crateAmount;
+                                                    return totalCrates + crate.crateAmount;
+                                                }, 0)
+                                            } {getItemIcon("icon_crate", "18px")}
+                                        </>
+                                    )
+                                }
+                            </td>
+                            <td>
+                                {chestsSum} {getItemIcon("icon_crate", "18px")}
+                            </td>
+                            <td>
+                                {
+                                    boostsPerLevel.map((boost) => (
+                                        <span className="resource-span">
+                                            {boost.levels[index]}% {getItemIcon(boost.resource)}
+                                        </span>
+                                    ))
+                                }
+                            </td>
+                            <td>
+                            {
+                                rewards[index]?.rewards && renderRewards(rewards[index].rewards)
+                            }
+                            </td>
+                        </tr>
+                    ))
                   }
               </tbody>
           </table>

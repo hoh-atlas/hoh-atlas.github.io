@@ -7,7 +7,11 @@ import { useState } from "react";
 
 import { createPathFromParameters } from "../../shared/utils";
 
-import { allHeroes, levelsExperiences, heroClassIcons, unitIcons, backdrops, heroClassNames, unitNames, colorIcons, colorNames, positionNames, damageTypeNames, tacticalTypeNames, ascensions, abilityDescriptions, abilities } from "../data";
+import { allHeroes, heroClassIcons, unitIcons, backdrops, heroClassNames, unitNames, colorIcons, colorNames, positionNames, damageTypeNames, tacticalTypeNames } from "../data";
+import levelsExperiences from "../_data/levelsExperiences";
+import ascensions from "../_data/ascensions";
+import abilityDescriptions from "../_data/abilityDescriptions";
+import abilities from "../_data/abilities";
 import layoutHeroes from "../sectionsDefinition";
 import Image from "../../shared/Image";
 import H1 from "../../shared/H1";

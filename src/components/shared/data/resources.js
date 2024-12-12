@@ -47,6 +47,7 @@ import icon_charta_terrestre from '../../../images/shared/resources/icon_charta_
 import icon_commander_crest_common from '../../../images/shared/resources/icon_commander_crest_common.webp';
 import icon_commander_crest_enhanced from '../../../images/shared/resources/icon_commander_crest_enhanced.webp';
 import icon_commander_crest_superior from '../../../images/shared/resources/icon_commander_crest_superior.webp';
+import icon_crate from '../../../images/shared/resources/icon_crate.webp';
 import icon_crested_guidon from '../../../images/shared/resources/icon_crested_guidon.webp';
 import icon_emerald from '../../../images/shared/resources/icon_emerald.webp';
 import icon_etruscan_bronze_mirror from '../../../images/shared/resources/icon_etruscan_bronze_mirror.webp';
@@ -173,6 +174,7 @@ const resources = [
     {id: "gems", name: "Gems", img: Gem, category: "soft"},
     {id: "premium", name: "Gems", img: Gem, category: "soft"},
     {id: "energy", name: "Stamina", img: CampaignEnergy, category: "soft"},
+    {id: "campaign_energy", name: "Stamina", img: CampaignEnergy, category: "soft"},
     {id: "victory_ticket", name: "Victory Ticket", img: icon_campaign_battle_ticket, category: "soft"},
     {id: "goods", name: "Goods", img: goods, category: "soft"},
     {id: "ambrosia", name: "Ambrosia", img: ambrosia, category: "soft"},
@@ -188,10 +190,13 @@ const resources = [
     // ANTIMATTERS
     {id: "antimatter", name: "Antimatter", img: icon_rift_token_common, category: "antimatters"},
     {id: "antimatter_egyptian", name: "Egyptian Antimatter", img: icon_rift_token_egypt_common, category: "antimatters"},
+    {id: "rift_token_egypt_common", name: "Egyptian Antimatter", img: icon_rift_token_egypt_common, category: "antimatters"},
     {id: "antimatter_legendary", name: "Legendary Antimatter", img: icon_rift_token_legendary, category: "antimatters"},
     {id: "antimatter_seasonpass", name: "Season Pass Antimatter", img: icon_rift_token_seasonpass_common, category: "antimatters"}, //old image: https://i.ibb.co/RbK0gQc/icon-rift-token-seasonpass-common.png
     {id: "antimatter_china", name: "China Antimatter", img: icon_rift_token_china_common, category: "antimatters"},
+    {id: "rift_token_china_common", name: "China Antimatter", img: icon_rift_token_china_common, category: "antimatters"},
     {id: "antimatter_vikings", name: "Vikings Antimatter", img: icon_rift_token_vikings_common, category: "antimatters"},
+    {id: "rift_token_vikings_common", name: "Vikings Antimatter", img: icon_rift_token_vikings_common, category: "antimatters"},
     // CRESTS - COLORS
     {id: "red_crest_common", name: "Common Red Crest", img: icon_red_crest_common, category: "crests_colors"},
     {id: "yellow_crest_common", name: "Common Yellow Crest", img: icon_yellow_crest_common, category: "crests_colors"},
@@ -340,9 +345,13 @@ const resources = [
     // EXPANSIONS
     {id: "expansion_regular", name: "Regular Expansion", img: icon_expansion_city_capital_land, category: "expansions"},
     {id: "expansion_egypt", name: "Egypt Expansion", img: icon_expansion_city_egypt_land, category: "expansions"},
+    {id: "City_Egypt", name: "Egypt Expansion", img: icon_expansion_city_egypt_land, category: "expansions"},
     {id: "expansion_china", name: "China Expansion", img: icon_expansion_city_china_land, category: "expansions"},
+    {id: "City_China", name: "China Expansion", img: icon_expansion_city_china_land, category: "expansions"},
     {id: "expansion_vikings_land", name: "Vikings Land Expansion", img: icon_expansion_city_vikings_land, category: "expansions"},
+    {id: "City_Vikings", name: "Vikings Land Expansion", img: icon_expansion_city_vikings_land, category: "expansions"},
     {id: "expansion_vikings_water", name: "Vikings Water Expansion", img: icon_expansion_city_vikings_water, category: "expansions"},
+    {id: "City_Vikings_ExpansionSubType_WATER", name: "Vikings Water Expansion", img: icon_expansion_city_vikings_water, category: "expansions"},
     // ATTACK ICONS
     {id: "attack", name: "Attack", img: "https://i.ibb.co/YRn1jcX/icon-hero-atk.png", category: "attack"},
     {id: "defense", name: "Defense", img: "https://i.ibb.co/1Jy3KQ0/icon-hero-def.png", category: "attack"},
@@ -362,6 +371,9 @@ const resources = [
     {id: "BuildingPiece|Building_ClassicGreece_Collectable_ArchitectsStudio_1", name: "Scholars Lyceum Puzzle Piece", img: puzzle_piece, category: "fragments"},
     {id: "antimatter_common_part", name: "Antimatter Piece", img: icon_rift_token_common_part, category: "fragments"},
     {id: "antimatter_legendary_part", name: "Legendary Antimatter Piece", img: icon_rift_token_legendary_part, category: "fragments"},
+    {id: "rift_token_legendary_part", name: "Legendary Antimatter Piece", img: icon_rift_token_legendary_part, category: "fragments"},
+    // ICONS
+    {id: "icon_crate", name: "Crate", img: icon_crate, category: "icons"},
 ]
 
 export default resources;
