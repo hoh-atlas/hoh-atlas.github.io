@@ -289,7 +289,7 @@ import hero_backdrop_renaissance from "../../images/heroes/intro/backdrops/hero-
 import hero_backdrop_snow from "../../images/heroes/intro/backdrops/hero-backdrop-snow.webp";
 import hero_backdrop_sunflower from "../../images/heroes/intro/backdrops/hero-backdrop-sunflower.webp";
 import hero_backdrop_windmill from "../../images/heroes/intro/backdrops/hero-backdrop-windmill.webp";
-import hero_backdrop_relics from "../../images/heroes/intro/backdrops/hero-backdrop-relics.webp";
+import hero_backdrop_eternal_rivals from "../../images/heroes/intro/backdrops/hero-backdrop-eternal-rivals.webp";
 
 const allHeroes = [
     {
@@ -332,7 +332,7 @@ const allHeroes = [
         codeName: "Dracula",
         image: Unit_Dracula_fullbody,
         icon: Unit_Dracula,
-        backdrop: "relics",
+        backdrop: "eternal_rivals",
         stars: 5,
         heroClass: "champion",
         unit: "infantry",
@@ -706,7 +706,7 @@ const allHeroes = [
         codeName: "VanHelsing",
         image: Unit_VanHelsing_fullbody,
         icon: Unit_VanHelsing,
-        backdrop: "relics",
+        backdrop: "eternal_rivals",
         stars: 4,
         heroClass: "genius",
         unit: "ranged",
@@ -1752,7 +1752,7 @@ const backdrops = {
     "snow": hero_backdrop_snow,
     "sunflower": hero_backdrop_sunflower,
     "windmill": hero_backdrop_windmill,
-    "relics": hero_backdrop_relics,
+    "eternal_rivals": hero_backdrop_eternal_rivals,
 }
 
 export { allHeroes, heroClassIcons, heroClassNames, unitIcons, unitNames, colorIcons, colorNames, positionNames, damageTypeNames, tacticalTypeNames, backdrops };

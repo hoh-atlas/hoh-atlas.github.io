@@ -3,12 +3,25 @@ import arcane_antimatter from "../../images/shared/resources/icon_rift_token_sea
 import season_01_banner from "../../images/seasons/intro/season_01_banner.webp";
 import season_02_banner from "../../images/seasons/intro/season_02_banner.webp";
 import season_03_banner from "../../images/seasons/intro/season_03_banner.webp";
+import season_04_banner from "../../images/seasons/intro/season_04_banner.webp";
 
 import season_sale_offer_bg from "../../images/seasons/intro/season_sale_offer_bg.webp";
 import season_2_sale_offer_bg from "../../images/seasons/intro/season_2_sale_offer_bg.webp";
 import season_3_sale_offer_bg from "../../images/seasons/intro/season_3_sale_offer_bg.webp";
+import season_4_sale_offer_bg from "../../images/seasons/intro/season_4_sale_offer_bg.webp";
 
 const allSeasons = [
+    {
+        id: 4,
+        codeName: "SeasonPass_04_2024",
+        name: "Season 4: Eternal Rivals",
+        image: arcane_antimatter,
+        startDate: "__ _ 2024",
+        endDate: "__ _ 2025",
+        banner: season_04_banner,
+        background: season_4_sale_offer_bg,
+        uniqueHeroes: ["dracula", "abraham-van-helsing"],
+    },
     {
         id: 3,
         name: "Season 3: Rome's Titans",

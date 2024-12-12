@@ -8,6 +8,7 @@ import Image from "../../shared/Image";
 import Icon from "../../shared/Icon";
 import { getItemIcon } from "../../shared/utils";
 import allSeasons from "../data";
+import seasonsCheckpoints from "../_data/seasonsCheckpoints";
 
 import icon_reward_season_pass from "../../../images/seasons/rewards/icon_reward_season_pass.webp";
 import icon_silver_ticket from "../../../images/seasons/rewards/icon_silver_ticket.webp";
@@ -58,12 +59,22 @@ const Rewards = (props) => {
                             <td><Image src={icon_golden_ticket} maxHeight={'80px'}/></td>
                         </tr>
                         {
-                            season.rewards.map((oneReward) => (
+                            season.rewards && season.rewards.map((oneReward) => (
                                 <tr style={{ height: '70px' }}>
                                     <th>{oneReward.id}</th>
                                     <td>{oneReward.cost} {getItemIcon("seasonpass_progress")}</td>
                                     <td>{oneReward.free.amount}x {getItemIcon(oneReward.free.resource)}</td>
                                     <td>{oneReward.premium.amount}x {getItemIcon(oneReward.premium.resource)}</td>
+                                </tr>
+                            ))
+                        }
+                        {
+                            season.codeName && seasonsCheckpoints[season.codeName][0].map((checkpoint) => (
+                                <tr style={{ height: '70px'}}>
+                                    <th>{checkpoint.order}</th>
+                                    <td>{checkpoint.requiredProgress} {getItemIcon("seasonpass_progress")}</td>
+                                    <td>{checkpoint.regularRewards[0].amount}x {getItemIcon(checkpoint.regularRewards[0].resource)}</td>
+                                    <td>{checkpoint.premiumRewards[0].amount}x {getItemIcon(checkpoint.premiumRewards[0].resource)}</td>
                                 </tr>
                             ))
                         }

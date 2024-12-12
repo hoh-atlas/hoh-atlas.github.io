@@ -176,6 +176,7 @@ const resources = [
     {id: "energy", name: "Stamina", img: CampaignEnergy, category: "soft"},
     {id: "campaign_energy", name: "Stamina", img: CampaignEnergy, category: "soft"},
     {id: "victory_ticket", name: "Victory Ticket", img: icon_campaign_battle_ticket, category: "soft"},
+    {id: "campaign_battle_ticket", name: "Victory Ticket", img: icon_campaign_battle_ticket, category: "soft"},
     {id: "goods", name: "Goods", img: goods, category: "soft"},
     {id: "ambrosia", name: "Ambrosia", img: ambrosia, category: "soft"},
     // EXPERIENCES
@@ -193,6 +194,7 @@ const resources = [
     {id: "rift_token_egypt_common", name: "Egyptian Antimatter", img: icon_rift_token_egypt_common, category: "antimatters"},
     {id: "antimatter_legendary", name: "Legendary Antimatter", img: icon_rift_token_legendary, category: "antimatters"},
     {id: "antimatter_seasonpass", name: "Season Pass Antimatter", img: icon_rift_token_seasonpass_common, category: "antimatters"}, //old image: https://i.ibb.co/RbK0gQc/icon-rift-token-seasonpass-common.png
+    {id: "rift_token_seasonpass_common", name: "Season Pass Antimatter", img: icon_rift_token_seasonpass_common, category: "antimatters"},
     {id: "antimatter_china", name: "China Antimatter", img: icon_rift_token_china_common, category: "antimatters"},
     {id: "rift_token_china_common", name: "China Antimatter", img: icon_rift_token_china_common, category: "antimatters"},
     {id: "antimatter_vikings", name: "Vikings Antimatter", img: icon_rift_token_vikings_common, category: "antimatters"},
@@ -340,6 +342,7 @@ const resources = [
     {id: "seasonpass_progress", name: "Season Pass Progress", img: icon_seasonpass_progress, category: "seasons"},
     // PVP
     {id: "arena_token", name: "Arena Token", img: arena_token, category: "pvp"},
+    {id: "pvp_energy", name: "Arena Token", img: arena_token, category: "pvp"},
     // TREASURE HUNT
     {id: "ath_compass", name: "Treasure Hunt Compass", img: icon_ath_attempt, category: "ath"},
     // EXPANSIONS

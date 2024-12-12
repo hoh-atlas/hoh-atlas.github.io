@@ -36,7 +36,7 @@ const Heroes = (props) => {
         <SectionDivider/>
         <TextBlock>
 
-            <H1 center={true}>Unique Heroes</H1>
+            <H1 center={true}>Featured Heroes</H1>
 
             <div style={{ overflowX: 'auto', marginTop: '20px' }} className="responsive-table-container">
                 <table style={{ width: '100%' }}>
