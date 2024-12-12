@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9a2a1cad.css",
-    "main.js": "/static/js/main.f5999a66.js",
+    "main.css": "/static/css/main.4c716b87.css",
+    "main.js": "/static/js/main.8fc9ddd4.js",
     "static/media/layout_5_sector_3.webp": "/static/media/layout_5_sector_3.c0f317a3382f299fbe11.webp",
     "static/media/layout_egypt_3_sector_3.webp": "/static/media/layout_egypt_3_sector_3.176bb3c09225286b101a.webp",
     "static/media/layout_egypt_4_sector_3.webp": "/static/media/layout_egypt_4_sector_3.ca8d981c13c641b372d7.webp",
@@ -92,11 +92,13 @@
     "static/media/winter_event_2024_winter_home.webp": "/static/media/winter_event_2024_winter_home.00ca2d0e8e04424aac85.webp",
     "static/media/cheops_pyramid.webp": "/static/media/cheops_pyramid.1acfaaf71f7a0ba11eba.webp",
     "static/media/age_transition_feudal_age_main1.webp": "/static/media/age_transition_feudal_age_main1.70a801d60164216fdbd8.webp",
+    "static/media/Unit_VanHelsing_fullbody.webp": "/static/media/Unit_VanHelsing_fullbody.26c9b9a5bdb15d618810.webp",
     "static/media/age_transition_ancient_greece_main1.webp": "/static/media/age_transition_ancient_greece_main1.0ced59b1183460d80383.webp",
     "static/media/winter_event_2024_frozen_pond.webp": "/static/media/winter_event_2024_frozen_pond.c328f3e5bfa8bb9b9945.webp",
     "static/media/world_fair_2024_void_reactor.webp": "/static/media/world_fair_2024_void_reactor.2fe79fbfd55f4c61bc44.webp",
     "static/media/winter_event_2024_winter_home_2.webp": "/static/media/winter_event_2024_winter_home_2.bb3df426121e3b963af4.webp",
     "static/media/ath_pirate_den.webp": "/static/media/ath_pirate_den.7d23bccb4d8f8977e583.webp",
+    "static/media/Unit_Dracula_fullbody.webp": "/static/media/Unit_Dracula_fullbody.1e98c0ae40c884829bb5.webp",
     "static/media/Unit_Hercules_fullbody.webp": "/static/media/Unit_Hercules_fullbody.aa09b7bf834575e102a5.webp",
     "static/media/EventBackgroundWorldFair.webp": "/static/media/EventBackgroundWorldFair.5bf41b386ebccf4e1cfc.webp",
     "static/media/age_transition_roman_empire_main1.webp": "/static/media/age_transition_roman_empire_main1.6aad3ea2a1b9a744924e.webp",
@@ -138,6 +140,7 @@
     "static/media/Unit_JuliusCaesar_fullbody.webp": "/static/media/Unit_JuliusCaesar_fullbody.8ddd155298db5971f6d1.webp",
     "static/media/Unit_Charlemagne_fullbody.webp": "/static/media/Unit_Charlemagne_fullbody.58f8c314c4e726a1502c.webp",
     "static/media/Unit_Achilles_fullbody.webp": "/static/media/Unit_Achilles_fullbody.b4fbab515e2271d34263.webp",
+    "static/media/hero-backdrop-relics.webp": "/static/media/hero-backdrop-relics.1820ab76e0f35f69b29d.webp",
     "static/media/Unit_VikingJarl_fullbody.webp": "/static/media/Unit_VikingJarl_fullbody.f50d39b1560b1fe6d85c.webp",
     "static/media/Unit_LouisXIV_fullbody.webp": "/static/media/Unit_LouisXIV_fullbody.92e3f1f0027f1821e0cd.webp",
     "static/media/Unit_RamsesII_fullbody.webp": "/static/media/Unit_RamsesII_fullbody.04b19de48aac10283d39.webp",
@@ -236,6 +239,7 @@
     "static/media/hero-backdrop-grass.webp": "/static/media/hero-backdrop-grass.1cf4403518d6425eb440.webp",
     "static/media/checkpoints_ui.webp": "/static/media/checkpoints_ui.478830c761b12b2320f7.webp",
     "static/media/icon_event_world_fair_tokens.webp": "/static/media/icon_event_world_fair_tokens.997801e223330684deef.webp",
+    "static/media/Unit_Dracula.webp": "/static/media/Unit_Dracula.cac0d56868ad114bf6c9.webp",
     "static/media/Navbar_AlliedCultures.webp": "/static/media/Navbar_AlliedCultures.4b51fe745d3761391b53.webp",
     "static/media/world_fair_2024_invention_3.webp": "/static/media/world_fair_2024_invention_3.899297f2a7e9b7a49c3b.webp",
     "static/media/world_fair_2024_rareflower_4.webp": "/static/media/world_fair_2024_rareflower_4.39b7dadab7381657daa5.webp",
@@ -253,6 +257,7 @@
     "static/media/world_fair_2024_rareflower_3.webp": "/static/media/world_fair_2024_rareflower_3.dbb0892303f6e61f3476.webp",
     "static/media/Navbar_Events.webp": "/static/media/Navbar_Events.a0c03c1891d5db25d4d5.webp",
     "static/media/Navbar_Seasons.webp": "/static/media/Navbar_Seasons.4ea46e9c90cda1fc0936.webp",
+    "static/media/Unit_VanHelsing.webp": "/static/media/Unit_VanHelsing.e100cbf11ee44e232fcd.webp",
     "static/media/Navbar_Research.webp": "/static/media/Navbar_Research.2909e67487d320e58acf.webp",
     "static/media/icon_rift_token_common_part.webp": "/static/media/icon_rift_token_common_part.74427aa3c807df4006f9.webp",
     "static/media/Navbar_Buildings.webp": "/static/media/Navbar_Buildings.2b985eb92dfb76f42256.webp",
@@ -279,6 +284,7 @@
     "static/media/world_fair_2024_artifact_2.webp": "/static/media/world_fair_2024_artifact_2.68780362b28e2ac86669.webp",
     "static/media/city_event_banner_vikings_yggdrasil.webp": "/static/media/city_event_banner_vikings_yggdrasil.68c2ea395c4a927dc808.webp",
     "static/media/world_fair_2024_artifact_3.webp": "/static/media/world_fair_2024_artifact_3.d5e0192a4be69671df52.webp",
+    "static/media/icon_hero_battle_ability_dracula.webp": "/static/media/icon_hero_battle_ability_dracula.982c68f410d809542e86.webp",
     "static/media/Unit_LadySixSky.webp": "/static/media/Unit_LadySixSky.58e04ce1a1dc522ea11e.webp",
     "static/media/background_mobile.webp": "/static/media/background_mobile.49893679d89a7f613a80.webp",
     "static/media/Unit_Cleopatra.webp": "/static/media/Unit_Cleopatra.8d6f431099091ad88ede.webp",
@@ -314,6 +320,7 @@
     "static/media/Questgiver_RagnarLodbrok.webp": "/static/media/Questgiver_RagnarLodbrok.3ad12d499887944044f0.webp",
     "static/media/Unit_JohnLocke.webp": "/static/media/Unit_JohnLocke.e1f8112ea0c69920a32d.webp",
     "static/media/China_Luxurious_Rice_Farm_Lv4.webp": "/static/media/China_Luxurious_Rice_Farm_Lv4.ab80b0afa2af37e2016e.webp",
+    "static/media/icon_hero_battle_ability_vanhelsing.webp": "/static/media/icon_hero_battle_ability_vanhelsing.bd3902c1117111cbfe44.webp",
     "static/media/Unit_Lagertha.webp": "/static/media/Unit_Lagertha.e31466c1b08922cdbd9a.webp",
     "static/media/worldwonder_icon.webp": "/static/media/worldwonder_icon.03fdfd18e9457ef89f5c.webp",
     "static/media/city_event_banner_egypt_cheopspyramid.webp": "/static/media/city_event_banner_egypt_cheopspyramid.333a0ac89dc258e4d284.webp",
@@ -985,6 +992,7 @@
     "static/media/icon-flat-unit-range.webp": "/static/media/icon-flat-unit-range.8c23e1d579dd39621260.webp",
     "static/media/Egypt_Average_Home_Lv1.webp": "/static/media/Egypt_Average_Home_Lv1.463be2488b15a0a77130.webp",
     "static/media/jewel_treasure.webp": "/static/media/jewel_treasure.d04c45c4d2ec7d26adaf.webp",
+    "static/media/icon_crate.webp": "/static/media/icon_crate.dfc0f068e2f7253f8b30.webp",
     "static/media/Egypt_Average_Home_Lv2.webp": "/static/media/Egypt_Average_Home_Lv2.a0fad7c22086087d97d9.webp",
     "static/media/ceramic_treasure.webp": "/static/media/ceramic_treasure.ec9c6eeb00b3e1577901.webp",
     "static/media/icon-flat-unit-siege-units.webp": "/static/media/icon-flat-unit-siege-units.2109593bcd483c869717.webp",
@@ -1057,11 +1065,11 @@
     "static/media/herbs.webp": "/static/media/herbs.45e59d4e77aed5c7159a.webp",
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
-    "main.9a2a1cad.css.map": "/static/css/main.9a2a1cad.css.map",
-    "main.f5999a66.js.map": "/static/js/main.f5999a66.js.map"
+    "main.4c716b87.css.map": "/static/css/main.4c716b87.css.map",
+    "main.8fc9ddd4.js.map": "/static/js/main.8fc9ddd4.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a2a1cad.css",
-    "static/js/main.f5999a66.js"
+    "static/css/main.4c716b87.css",
+    "static/js/main.8fc9ddd4.js"
   ]
 }
