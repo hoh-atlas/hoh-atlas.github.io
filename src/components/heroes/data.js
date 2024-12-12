@@ -12,6 +12,7 @@ import Unit_Cleopatra_fullbody from '../../images/heroes/intro/fullbody/Unit_Cle
 import Unit_Confucius_fullbody from '../../images/heroes/intro/fullbody/Unit_Confucius_fullbody.webp';
 import Unit_CyrusTheGreat_fullbody from '../../images/heroes/intro/fullbody/Unit_CyrusTheGreat_fullbody.webp';
 import Unit_DArtagnan_fullbody from '../../images/heroes/intro/fullbody/Unit_DArtagnan_fullbody.webp';
+import Unit_Dracula_fullbody from '../../images/heroes/intro/fullbody/Unit_Dracula_fullbody.webp';
 import Unit_Edison_fullbody from '../../images/heroes/intro/fullbody/Unit_Edison_fullbody.webp';
 import Unit_EgyptianVizier_fullbody from '../../images/heroes/intro/fullbody/Unit_EgyptianVizier_fullbody.webp';
 import Unit_Geisha_fullbody from '../../images/heroes/intro/fullbody/Unit_Geisha_fullbody.webp';
@@ -73,6 +74,7 @@ import Unit_SunTzu_fullbody from '../../images/heroes/intro/fullbody/Unit_SunTzu
 import Unit_TomoeGozen_fullbody from '../../images/heroes/intro/fullbody/Unit_TomoeGozen_fullbody.webp';
 import Unit_TribalHealer_fullbody from '../../images/heroes/intro/fullbody/Unit_TribalHealer_fullbody.webp';
 import Unit_UlyssesSGrant_fullbody from '../../images/heroes/intro/fullbody/Unit_UlyssesSGrant_fullbody.webp';
+import Unit_VanHelsing_fullbody from '../../images/heroes/intro/fullbody/Unit_VanHelsing_fullbody.webp';
 import Unit_VikingJarl_fullbody from '../../images/heroes/intro/fullbody/Unit_VikingJarl_fullbody.webp';
 import Unit_VikingRaider_fullbody from '../../images/heroes/intro/fullbody/Unit_VikingRaider_fullbody.webp';
 import Unit_VincentVanGogh_fullbody from '../../images/heroes/intro/fullbody/Unit_VincentVanGogh_fullbody.webp';
@@ -93,6 +95,7 @@ import Unit_Cleopatra from '../../images/heroes/intro/icons/Unit_Cleopatra.webp'
 import Unit_Confucius from '../../images/heroes/intro/icons/Unit_Confucius.webp';
 import Unit_CyrusTheGreat from '../../images/heroes/intro/icons/Unit_CyrusTheGreat.webp';
 import Unit_DArtagnan from '../../images/heroes/intro/icons/Unit_DArtagnan.webp';
+import Unit_Dracula from '../../images/heroes/intro/icons/Unit_Dracula.webp';
 import Unit_EarlyRome_Huns_Attila from '../../images/heroes/intro/icons/Unit_EarlyRome_Huns_Attila.webp';
 import Unit_EgyptianVizier from '../../images/heroes/intro/icons/Unit_EgyptianVizier.webp';
 import Unit_Geisha from '../../images/heroes/intro/icons/Unit_Geisha.webp';
@@ -159,6 +162,7 @@ import Unit_TomoeGozen from '../../images/heroes/intro/icons/Unit_TomoeGozen.web
 import Unit_TribalHealer from '../../images/heroes/intro/icons/Unit_TribalHealer.webp';
 import Unit_UlyssesSGrant from '../../images/heroes/intro/icons/Unit_UlyssesSGrant.webp';
 import Unit_Unknown from '../../images/heroes/intro/icons/Unit_Unknown.webp';
+import Unit_VanHelsing from '../../images/heroes/intro/icons/Unit_VanHelsing.webp';
 import Unit_VikingJarl from '../../images/heroes/intro/icons/Unit_VikingJarl.webp';
 import Unit_VikingRaider from '../../images/heroes/intro/icons/Unit_VikingRaider.webp';
 import Unit_VincentVanGogh from '../../images/heroes/intro/icons/Unit_VincentVanGogh.webp';
@@ -179,6 +183,7 @@ import icon_hero_battle_ability_cleopatra from '../../images/heroes/intro/abilit
 import icon_hero_battle_ability_confucius from '../../images/heroes/intro/abilities/icon_hero_battle_ability_confucius.webp';
 import icon_hero_battle_ability_cyrusthegreat from '../../images/heroes/intro/abilities/icon_hero_battle_ability_cyrusthegreat.webp';
 import icon_hero_battle_ability_dartagnan from '../../images/heroes/intro/abilities/icon_hero_battle_ability_dartagnan.webp';
+import icon_hero_battle_ability_dracula from '../../images/heroes/intro/abilities/icon_hero_battle_ability_dracula.webp';
 import icon_hero_battle_ability_egyptianvizier from '../../images/heroes/intro/abilities/icon_hero_battle_ability_egyptianvizier.webp';
 import icon_hero_battle_ability_geisha from '../../images/heroes/intro/abilities/icon_hero_battle_ability_geisha.webp';
 import icon_hero_battle_ability_georgewashington from '../../images/heroes/intro/abilities/icon_hero_battle_ability_georgewashington.webp';
@@ -246,6 +251,7 @@ import icon_hero_battle_ability_tigerlily from '../../images/heroes/intro/abilit
 import icon_hero_battle_ability_tomoegozen from '../../images/heroes/intro/abilities/icon_hero_battle_ability_tomoegozen.webp';
 import icon_hero_battle_ability_tribalhealer from '../../images/heroes/intro/abilities/icon_hero_battle_ability_tribalhealer.webp';
 import icon_hero_battle_ability_ulyssessgrant from '../../images/heroes/intro/abilities/icon_hero_battle_ability_ulyssessgrant.webp';
+import icon_hero_battle_ability_vanhelsing from '../../images/heroes/intro/abilities/icon_hero_battle_ability_vanhelsing.webp';
 import icon_hero_battle_ability_vikingjarl from '../../images/heroes/intro/abilities/icon_hero_battle_ability_vikingjarl.webp';
 import icon_hero_battle_ability_vikingraider from '../../images/heroes/intro/abilities/icon_hero_battle_ability_vikingraider.webp';
 import icon_hero_battle_ability_vincentvangogh from '../../images/heroes/intro/abilities/icon_hero_battle_ability_vincentvangogh.webp';
@@ -283,6 +289,7 @@ import hero_backdrop_renaissance from "../../images/heroes/intro/backdrops/hero-
 import hero_backdrop_snow from "../../images/heroes/intro/backdrops/hero-backdrop-snow.webp";
 import hero_backdrop_sunflower from "../../images/heroes/intro/backdrops/hero-backdrop-sunflower.webp";
 import hero_backdrop_windmill from "../../images/heroes/intro/backdrops/hero-backdrop-windmill.webp";
+import hero_backdrop_relics from "../../images/heroes/intro/backdrops/hero-backdrop-relics.webp";
 
 const allHeroes = [
     {
@@ -318,6 +325,23 @@ const allHeroes = [
         position: "frontline",
         damageType: ["single_target"],
         tacticalType: ["buff", "teleport"],
+    },
+    {
+        id: "dracula",
+        name: "Dracula",
+        codeName: "Dracula",
+        image: Unit_Dracula_fullbody,
+        icon: Unit_Dracula,
+        backdrop: "relics",
+        stars: 5,
+        heroClass: "champion",
+        unit: "infantry",
+        color: "purple",
+        abilityIcon: icon_hero_battle_ability_dracula,
+        abilityName: "Vampiric Essence",
+        position: "frontline",
+        damageType: ["single_target"],
+        tacticalType: ["heal"],
     },
     {
         id: "leif-erikson",
@@ -674,6 +698,23 @@ const allHeroes = [
         abilityName: "Art of Defense",
         position: "frontline",
         damageType: ["area_damage"],
+        tacticalType: ["debuff"],
+    },
+    {
+        id: "abraham-van-helsing",
+        name: "Abraham Van Helsing",
+        codeName: "VanHelsing",
+        image: Unit_VanHelsing_fullbody,
+        icon: Unit_VanHelsing,
+        backdrop: "relics",
+        stars: 4,
+        heroClass: "genius",
+        unit: "ranged",
+        color: "red",
+        abilityIcon: icon_hero_battle_ability_vanhelsing,
+        abilityName: "Silver Bolts",
+        position: "backline",
+        damageType: ["single_target"],
         tacticalType: ["debuff"],
     },
     {
@@ -1711,6 +1752,7 @@ const backdrops = {
     "snow": hero_backdrop_snow,
     "sunflower": hero_backdrop_sunflower,
     "windmill": hero_backdrop_windmill,
+    "relics": hero_backdrop_relics,
 }
 
 export { allHeroes, heroClassIcons, heroClassNames, unitIcons, unitNames, colorIcons, colorNames, positionNames, damageTypeNames, tacticalTypeNames, backdrops };

@@ -1822,7 +1822,7 @@ const levelsExperiences = [
                 "costPerXp": 100.0
             }
         }
-    },
+    }
 ]
 
 export default levelsExperiences;
