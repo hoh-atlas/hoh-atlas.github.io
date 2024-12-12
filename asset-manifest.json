@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4c716b87.css",
-    "main.js": "/static/js/main.8fc9ddd4.js",
+    "main.js": "/static/js/main.8b3e5de6.js",
     "static/media/layout_5_sector_3.webp": "/static/media/layout_5_sector_3.c0f317a3382f299fbe11.webp",
     "static/media/layout_egypt_3_sector_3.webp": "/static/media/layout_egypt_3_sector_3.176bb3c09225286b101a.webp",
     "static/media/layout_egypt_4_sector_3.webp": "/static/media/layout_egypt_4_sector_3.ca8d981c13c641b372d7.webp",
@@ -140,7 +140,6 @@
     "static/media/Unit_JuliusCaesar_fullbody.webp": "/static/media/Unit_JuliusCaesar_fullbody.8ddd155298db5971f6d1.webp",
     "static/media/Unit_Charlemagne_fullbody.webp": "/static/media/Unit_Charlemagne_fullbody.58f8c314c4e726a1502c.webp",
     "static/media/Unit_Achilles_fullbody.webp": "/static/media/Unit_Achilles_fullbody.b4fbab515e2271d34263.webp",
-    "static/media/hero-backdrop-relics.webp": "/static/media/hero-backdrop-relics.1820ab76e0f35f69b29d.webp",
     "static/media/Unit_VikingJarl_fullbody.webp": "/static/media/Unit_VikingJarl_fullbody.f50d39b1560b1fe6d85c.webp",
     "static/media/Unit_LouisXIV_fullbody.webp": "/static/media/Unit_LouisXIV_fullbody.92e3f1f0027f1821e0cd.webp",
     "static/media/Unit_RamsesII_fullbody.webp": "/static/media/Unit_RamsesII_fullbody.04b19de48aac10283d39.webp",
@@ -235,6 +234,8 @@
     "static/media/season_03_banner.webp": "/static/media/season_03_banner.7a45029606d81e333733.webp",
     "static/media/EventPassPremiumPriceChest.webp": "/static/media/EventPassPremiumPriceChest.17e36140b9ec3748a3c2.webp",
     "static/media/world_fair_2024_rareflower_5.webp": "/static/media/world_fair_2024_rareflower_5.a5cd09a471e4400882d7.webp",
+    "static/media/hero-backdrop-eternal-rivals.webp": "/static/media/hero-backdrop-eternal-rivals.a59d0c5a7746d8069860.webp",
+    "static/media/season_4_sale_offer_bg.webp": "/static/media/season_4_sale_offer_bg.a59d0c5a7746d8069860.webp",
     "static/media/ath_long_nine.webp": "/static/media/ath_long_nine.3f919df3b7c7b0f6311d.webp",
     "static/media/hero-backdrop-grass.webp": "/static/media/hero-backdrop-grass.1cf4403518d6425eb440.webp",
     "static/media/checkpoints_ui.webp": "/static/media/checkpoints_ui.478830c761b12b2320f7.webp",
@@ -243,6 +244,7 @@
     "static/media/Navbar_AlliedCultures.webp": "/static/media/Navbar_AlliedCultures.4b51fe745d3761391b53.webp",
     "static/media/world_fair_2024_invention_3.webp": "/static/media/world_fair_2024_invention_3.899297f2a7e9b7a49c3b.webp",
     "static/media/world_fair_2024_rareflower_4.webp": "/static/media/world_fair_2024_rareflower_4.39b7dadab7381657daa5.webp",
+    "static/media/season_04_banner.webp": "/static/media/season_04_banner.15bf9db0888fbd93564e.webp",
     "static/media/ath_jolly_roger.webp": "/static/media/ath_jolly_roger.a8633ebfbf5e69913b57.webp",
     "static/media/Navbar_TreasureHunt.webp": "/static/media/Navbar_TreasureHunt.68ccad2453f6e9284bca.webp",
     "static/media/logo.webp": "/static/media/logo.a5499a1ab3a4cf1a5141.webp",
@@ -1066,10 +1068,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.4c716b87.css.map": "/static/css/main.4c716b87.css.map",
-    "main.8fc9ddd4.js.map": "/static/js/main.8fc9ddd4.js.map"
+    "main.8b3e5de6.js.map": "/static/js/main.8b3e5de6.js.map"
   },
   "entrypoints": [
     "static/css/main.4c716b87.css",
-    "static/js/main.8fc9ddd4.js"
+    "static/js/main.8b3e5de6.js"
   ]
 }
