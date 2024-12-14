@@ -57,12 +57,13 @@ const Intro = () => {
     <SectionDivider />
     <TextContainer
         centered={true}
-        headerTexts={[`The Winter Event has started on the Preview Server! (Nov 27th 2024)`,`Season 3: Rome's Titans is coming soon! (Nov 19th 2024)`]}
-        texts={[``,`Check the Seasons page to find all the details about the upcoming Season 3: Rome's Titans!`]}
+        headerTexts={[`Dynamic Rewards on the Wiki (Dec 14th 2024)`,`The Winter Event is running! (Dec 11th 2024)`]}
+        texts={[`Introducing Dynamic Rewards for the Wiki! What does this mean? You can now use a new dropdown menu in the top-left corner of the website to preset your current era from the game.
+This information will be used throughout the Wiki to ensure the values we display are always accurate to your current in-game progress. From Daily Specials for events to customizations and more, everything will now be 100% precise for you.`,``]}
         style={{ marginBottom: '20px', marginTop: '5px' }}
         textRectangleHeight={'150px'}
-        imageUrls={[EventBackgroundWinterEvent,'']}
-        links={[`https://hoh-atlas.com/#/events`,`https://hoh-atlas.com/#/seasons`]}
+        imageUrls={['',EventBackgroundWinterEvent]}
+        links={[`https://heroesofhistory.wiki/#/events/daily-specials`,`https://heroesofhistory.wiki/#/events`]}
         pulsate={false}
         autoSlideSeconds={10}>
     </TextContainer>

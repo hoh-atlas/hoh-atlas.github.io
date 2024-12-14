@@ -4,6 +4,9 @@ import chests from "./data/chests";
 import Icon from "./Icon";
 import CustomizationPreview from "./CustomizationPreview";
 import ChestPreview from "./ChestPreview";
+import dynamicDefinitions from "./_data/dynamicDefinitions";
+import _customizations from "../events/_data/_customizations";
+import dropdownItems from "../navbar/dropdownItems";
 
 export const createPathFromParameters = (...parameters) => {
     const validParameters = parameters.filter(param => param !== undefined && param !== null && param !== "");
@@ -31,7 +34,7 @@ export const getItemData = (id) => {
         return foundResource;
     }
     
-    const foundCustomization = customizations.find(elem => elem.id === id);
+    const foundCustomization = _customizations.find(elem => elem.id === id);
     if (foundCustomization) {
         return foundCustomization;
     }
@@ -40,6 +43,82 @@ export const getItemData = (id) => {
     if (foundChest) {
         return foundChest;
     }
+
+    // This code is receiving the elem.when according to preset era. If the DAC has now such era, then it is looking for the first previous one.
+    let presetEra = getFromLocalStorage("preset_era");
+    let availableEras = dynamicDefinitions
+        .find(elem => elem.id === id)
+        .mapping[0]
+        .values.map(value => value.when);
+    const orderedEras = dropdownItems.map(item => item.value);
+    let presetEraIndex = orderedEras.indexOf(presetEra);
+    let effectiveEra = availableEras.includes(presetEra)
+        ? presetEra
+        : (() => {
+            for (let i = presetEraIndex - 1; i >= 0; i--) {
+                if (availableEras.includes(orderedEras[i])) {
+                    return orderedEras[i];
+                }
+            }
+            return orderedEras.find(era => availableEras.includes(era));
+        })();
+    let foundDynamicDefinition = dynamicDefinitions
+        .find(elem => elem.id === id)
+        .mapping[0]
+        .values.find(elem => elem.when === effectiveEra).then;
+    // ---
+
+    let dynamicRewards = flattenRewards(foundDynamicDefinition.rewards);
+    if (dynamicRewards) {
+        dynamicRewards.rewards = dynamicRewards.rewards.map(reward => {
+            const resourceName = resources.find(elem => elem.id === reward.resource).name;
+            return {
+                ...reward,
+                name: resourceName
+            };
+        });
+        const allEraGoods = Object.values(eraGoods).flat();
+        if (dynamicRewards.chances.length === 0) {
+            dynamicRewards["chances"] = undefined;
+        }
+        if (dynamicRewards.rewards.length === 1) {
+            dynamicRewards.name = getItemData(dynamicRewards.rewards[0].resource).name;
+        } else if (dynamicRewards.rewards.every(reward => allEraGoods.includes(reward.resource))) {
+            dynamicRewards.name = "Goods";
+        } else {
+            dynamicRewards.name = "Mystery Chest";
+        }
+        return dynamicRewards;
+    }
+}
+
+function flattenRewards(rewards, result = {rewards: [], chances: []}, chances = []) {
+    rewards.forEach(reward => {
+        if (reward["@type"] === "type.googleapis.com/ResourceRewardDTO") {
+            result.rewards.push({
+                resource: reward.resource,
+                amount: reward.amount,
+                
+            });
+        }
+        if (reward["@type"] === "type.googleapis.com/GoodRewardDTO") {
+            result.rewards.push({
+                resource: eraGoods[getFromLocalStorage("preset_era")][reward.number-1],
+                amount: reward.amount,
+                
+            });
+        }
+        if (reward["chances"]) {
+            const totalChances = reward["chances"].reduce((sum, chance) => sum + chance, 0);
+            const percentageChances = reward["chances"].map(chance => ((chance / totalChances) * 100).toFixed(0));
+            result.chances = percentageChances;
+        }
+        
+        if (reward.rewards) {
+            flattenRewards(reward.rewards, result, chances);
+        }
+    });
+    return result;
 }
 
 export const getItemIcon = (id, maxHeight) => {
@@ -72,3 +151,50 @@ export const calculateDaysBetween = (startDate, endDate) => {
   
     return daysDifference;
 };
+
+
+
+export const formatDuration = (durationString) => {
+    const duration = parseInt(durationString.replace('s', ''), 10);
+    if (duration < 60) {
+        return `${duration}s`;
+    } else if (duration < 3600) {
+        const minutes = Math.floor(duration / 60);
+        const seconds = duration % 60;
+        return `${minutes}m${seconds ? seconds : ''}${seconds ? 's' : ''}`;
+    } else if (duration < 86400) {
+        const hours = Math.floor(duration / 3600);
+        const minutes = Math.floor((duration % 3600) / 60);
+        const seconds = duration % 60;
+        return `${hours}h${minutes ? `${minutes}m` : ''}${seconds ? `${seconds}s` : ''}`;
+    } else {
+        const days = Math.floor(duration / 86400);
+        const hours = Math.floor((duration % 86400) / 3600);
+        const minutes = Math.floor((duration % 3600) / 60);
+        const seconds = duration % 60;
+        return `${days}d${hours ? `${hours}h` : ''}${minutes ? `${minutes}m` : ''}${seconds ? `${seconds}s` : ''}`;
+    }
+};
+
+const eraGoods = {
+    "StoneAge": ["alabaster_idol","bronze_bracelet","wool"],
+    "BronzeAge": ["alabaster_idol","bronze_bracelet","wool"],
+    "MinoanEra": ["marble_bust","iron_pendant","linen_shirt"],
+    "ClassicGreece": ["column","silver_ring","toga"],
+    "EarlyRome": ["stone_tablet","gold_laurel","tunic"],
+    "RomanEmpire": ["mosaic","goblet","cape"],
+    "ByzantineEra": ["planks","parchment","pepper"],
+    "AgeOfTheFranks": ["cartwheel","ink","salt"],
+    "FeudalAge": ["barrel","manuscript","herbs"],
+    "IberianEra": ["door","wax_seal","saffron"],
+    "KingdomOfSicily": ["wardrobe","tome","chili"],
+}
+
+export const getFromLocalStorage = (string) => {
+    if (string === "preset_era") {
+        if (!localStorage.getItem(string)) {
+            localStorage.setItem(string, "RomanEmpire");
+        }
+        return localStorage.getItem(string);
+    }
+}

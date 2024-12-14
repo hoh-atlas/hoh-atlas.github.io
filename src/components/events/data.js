@@ -33,6 +33,7 @@ import winter_event_2024 from "../../images/events/intro/winter_event_2024_windo
 const allEvents = [
     {
         id: "winter_event_2024",
+        codeName: "WinterEvent2024",
         name: "Winter Event 2024",
         image: icon_event_winter_tokens,
         startDate: "December 11th 2024",
@@ -312,65 +313,27 @@ const allEvents = [
                 amount: 10
             },
             {
-                resource: "customization_winter_event_2024_sleigh",
+                resource: "BuildingCustomization_EventWinter_CultureSite_Compact",
                 amount: 1,
             },
             {
-                resource: "chest_color_crests_purple_common_enhanced_superior",
+                resource: "Dac_TeslaCrests_Purple_20",
                 amount: 1,
-                note: "The rarity of provided crests depends on your current era"
             },
             {
                 resource: "antimatter_common_part",
                 amount: 10
             },
             {
-                resource: "charta_terrestre",
+                resource: "Dac_Reward_AscensionMaterial_DeviceTimeSpace",
                 amount: 1,
-                note: "The rarity of provided ascension material depends on your current era"
             },
             {
-                resource: "customization_winter_event_2024_winter_home",
+                resource: "BuildingCustomization_EventWinter_Home_Small",
                 amount: 1
             },
             {
-                resource: "customization_winter_event_2024_snowman",
-                amount: 1
-            },
-            {
-                resource: "antimatter_common_part",
-                amount: 10
-            },
-            {
-                resource: "herbal_poultice",
-                amount: 1,
-                note: "The rarity of provided ascension material depends on your current era"
-            },
-            {
-                resource: "chest_color_crests_green_common_enhanced_superior",
-                amount: 1,
-                note: "The rarity of provided crests depends on your current era"
-            },
-            {
-                resource: "crested_guidon",
-                amount: 1,
-                note: "The rarity of provided ascension material depends on your current era"
-            },
-            {
-                resource: "antimatter_common_part",
-                amount: 10
-            },
-            {
-                resource: "customization_winter_event_2024_sleigh",
-                amount: 1
-            },
-            {
-                resource: "chest_color_crests_yellow_common_enhanced_superior",
-                amount: 1,
-                note: "The rarity of provided crests depends on your current era"
-            },
-            {
-                resource: "customization_winter_event_2024_winter_pyramid",
+                resource: "BuildingCustomization_EventWinter_CultureSite_Little",
                 amount: 1
             },
             {
@@ -378,17 +341,31 @@ const allEvents = [
                 amount: 10
             },
             {
-                resource: "chest_color_crests_blue_common_enhanced_superior",
+                resource: "Dac_Reward_AscensionMaterial_Herbology",
                 amount: 1,
-                note: "The rarity of provided crests depends on your current era"
             },
             {
-                resource: "herbal_poultice",
+                resource: "Dac_TeslaCrests_Green_20",
                 amount: 1,
-                note: "The rarity of provided ascension material depends on your current era"
             },
             {
-                resource: "customization_winter_event_2024_snowman",
+                resource: "Dac_Reward_AscensionMaterial_BattleInsignia",
+                amount: 1,
+            },
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
+            {
+                resource: "BuildingCustomization_EventWinter_CultureSite_Compact",
+                amount: 1
+            },
+            {
+                resource: "Dac_TeslaCrests_Yellow_20",
+                amount: 1,
+            },
+            {
+                resource: "BuildingCustomization_EventWinter_CultureSite_Moderate",
                 amount: 1
             },
             {
@@ -396,34 +373,47 @@ const allEvents = [
                 amount: 10
             },
             {
-                resource: "charta_terrestre",
+                resource: "Dac_TeslaCrests_Blue_20",
                 amount: 1,
-                note: "The rarity of provided ascension material depends on your current era"
             },
             {
-                resource: "customization_winter_event_2024_sleigh",
+                resource: "Dac_Reward_AscensionMaterial_Herbology",
+                amount: 1,
+            },
+            {
+                resource: "BuildingCustomization_EventWinter_CultureSite_Little",
                 amount: 1
-            },
-            {
-                resource: "chest_color_crests_red_common_enhanced_superior",
-                amount: 1,
-                note: "The rarity of provided crests depends on your current era"
             },
             {
                 resource: "antimatter_common_part",
                 amount: 10
             },
             {
-                resource: "crested_guidon",
+                resource: "Dac_Reward_AscensionMaterial_DeviceTimeSpace",
                 amount: 1,
-                note: "The rarity of provided ascension material depends on your current era"
             },
             {
-                resource: "customization_winter_event_2024_snowman",
+                resource: "BuildingCustomization_EventWinter_CultureSite_Compact",
                 amount: 1
             },
             {
-                resource: "customization_winter_event_2024_winter_home",
+                resource: "Dac_TeslaCrests_Red_20",
+                amount: 1,
+            },
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
+            {
+                resource: "Dac_Reward_AscensionMaterial_BattleInsignia",
+                amount: 1,
+            },
+            {
+                resource: "BuildingCustomization_EventWinter_CultureSite_Little",
+                amount: 1
+            },
+            {
+                resource: "BuildingCustomization_EventWinter_Home_Small",
                 amount: 1
             },
             {
@@ -676,6 +666,7 @@ const allEvents = [
     },
     {
         id: "world_fair_2024",
+        codeName: "WorldFair2024",
         name: "World Fair 2024",
         image: icon_event_world_fair_tokens,
         startDate: "October 23th 2024",

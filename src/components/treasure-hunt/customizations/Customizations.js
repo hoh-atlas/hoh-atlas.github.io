@@ -12,9 +12,9 @@ import TextBlock from "../../shared/TextBlock";
 import Icon from "../../shared/Icon";
 import { getItem } from "../../shared/utils";
 import { customizations } from "../../shared/data/customizations";
-import _customizations from "../_data/_customizations";
+import _customizations from "../../events/_data/_customizations";
 import CustomizationObject from "../../shared/CustomizationObject";
-import { customizationsImages } from "../_data/customizationsImages";
+import { customizationsImages } from "../../events/_data/customizationsImages";
 
 import allEvents from "../data";
 
@@ -22,30 +22,12 @@ import icon_selection_kit_customizations_generic from "../../../images/events/cu
 
 const Customizations = (props) => {
 
-    const basePath = "events";
-    const pageName = "Events";
-  
-    const getEvent = () => {
-        return allEvents.find(oneEvent => oneEvent.id == props.selectedEvent);
-    }
-
-    const event = getEvent();
-
-    var eventCustomizations;
-
-    if (props.customizationId) {
-        eventCustomizations = customizations.filter((customization) => customization.id === props.customizationId);
-    } else {
-        eventCustomizations = customizations.filter((customization) => customization.id.includes(event.id));
-    }
-
-    let customizationImages = customizationsImages[getEvent().codeName];
-    console.log(customizationImages)
+    let customizationImages = customizationsImages["TreasureHunt"];    
 
     return (
         <>
-            <Prologue imageSrc={icon_selection_kit_customizations_generic} alt={"Events"} maxHeight={"65px"} >
-                This is the list of all new customizations introduced during this event.
+            <Prologue imageSrc={icon_selection_kit_customizations_generic} alt={"Treasure Hunt"} maxHeight={"65px"} >
+                This is the list of all customizations you can obtain during Alliance Treasure Hunt.
             </Prologue>
 
             <SectionDivider />
@@ -59,7 +41,7 @@ const Customizations = (props) => {
             </div>
 
             {Object.keys(customizationImages).map((oneCustomizationId) => (
-                <CustomizationObject customizationId={oneCustomizationId} img={customizationImages[oneCustomizationId]} obtainableFrom={getEvent().name}/>
+                <CustomizationObject customizationId={oneCustomizationId} img={customizationImages[oneCustomizationId]} obtainableFrom={"Treasure Hunt"}/>
             ))}
         </>
     );

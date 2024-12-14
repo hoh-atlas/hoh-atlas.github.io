@@ -6,10 +6,12 @@ import { customizations } from "../../shared/data/customizations";
 import H1 from "../../shared/H1";
 import { getItemIcon, getItemData } from "../../shared/utils";
 import CustomizationObject from "../../shared/CustomizationObject";
+import dynamicDefinitions from "../../shared/_data/dynamicDefinitions";
+import _customizations from "../_data/_customizations";
 
 const DailySpecialWrapper = (props) => {
 
-    const { dailySpecial, amount, note, day } = props;    
+    const { dailySpecial, amount, note, day, customizationsImages } = props;
     const itemData = getItemData(dailySpecial);
 
     return (
@@ -44,7 +46,7 @@ const DailySpecialWrapper = (props) => {
                                         Resource
                                     </td>
                                     <td>
-                                        {amount}x
+                                        {amount}x {getItemIcon(itemData.id)}
                                     </td>
                                     {note && (
                                         <td style={{ width: '20%' }}>
@@ -100,10 +102,66 @@ const DailySpecialWrapper = (props) => {
                             </tbody>
                         </table>
                     </>
-                ) : customizations.some(item => item.id === dailySpecial) ? (
+                ) : _customizations.some(item => item.id === dailySpecial) ? (
                     <>
                         <H1 center={true} style={{ marginTop: '10px' }}>Day {day}: {itemData.name}</H1>
-                        <CustomizationObject customization={itemData} showHeader={false} imageMaxHeight={"100px"}/>
+                        <CustomizationObject customizationId={dailySpecial} img={customizationsImages[dailySpecial]} showHeader={false} imageMaxHeight={"100px"}/>
+                    </>
+                ) : dynamicDefinitions.some(item => item.id === dailySpecial) ? (
+                    <>
+                        <H1 center={true} style={{ marginTop: '10px' }}>Day {day}: {itemData.name}</H1>
+                        <table style={{ width: '100%', marginTop: '10px' }}>
+                            <tbody>
+                                <tr>
+                                    <th style={{ width: '20%' }}>
+                                        Image
+                                    </th>
+                                    <th style={{ width: '20%' }}>
+                                        Type
+                                    </th>
+                                    <th>
+                                        Possible Rewards
+                                    </th>
+                                    {note && (
+                                        <th style={{ width: '20%' }}>
+                                            Note
+                                        </th>
+                                    )}
+                                </tr>
+                                <tr>
+                                    <td>
+                                    {itemData.rewards.map((reward, index) => (
+                                        <img
+                                            key={index}
+                                            src={getItemData(reward.resource).img}
+                                            alt={reward.name}
+                                            style={{
+                                                maxHeight: '40px',
+                                                maxWidth: '40px',
+                                                objectFit: 'cover'
+                                            }}
+                                        />
+                                    ))}
+                                    </td>
+                                    <td>
+                                        Chest
+                                    </td>
+                                    <td>
+                                        {itemData.rewards.map((oneItem, index) => (
+                                            <span key={oneItem.resource}>
+                                                {oneItem.amount}x {getItemIcon(oneItem.resource)} {itemData.chances && "("+itemData.chances[index]+"%)"}
+                                                {index < itemData.rewards.length - 1 && " / "}
+                                            </span>
+                                        ))}
+                                    </td>
+                                    {note && (
+                                        <td style={{ width: '20%' }}>
+                                            <small>{note}</small>
+                                        </td>
+                                    )}
+                                </tr>
+                            </tbody>
+                        </table>
                     </>
                 ) : (
                     <div>No valid daily special found for Day {day}.</div>

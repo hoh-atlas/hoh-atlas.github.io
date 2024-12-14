@@ -63,8 +63,6 @@ const Collectable = (props) => {
         case "MinoanWatchtower": buildings = minoanWatchtower; break;
         case "ArchitecsStudio": buildings = architectsStudio; break;
     }
-
-    console.log(collectableBuildings, buildings)
   
     return (
         <>

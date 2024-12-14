@@ -7,6 +7,7 @@ import layoutTreasureHunt from "../components/treasure-hunt/sectionsDefinition";
 import Intro from "../components/treasure-hunt/intro/Intro";
 import Encounters from "../components/treasure-hunt/encounters/Encounters";
 import Checkpoints from "../components/treasure-hunt/checkpoints/Checkpoints";
+import Customizations from "../components/treasure-hunt/customizations/Customizations";
 import { difficulties } from "../components/treasure-hunt/data";
 import useOptionURL from "../components/shared/hooks/useOptionURL";
 import SelectBox from "../components/shared/SelectBox";
@@ -38,6 +39,8 @@ const TreasureHuntPage = (props) => {
                 return <Encounters tab={props.tab} />
             case "checkpoints":
                 return <Checkpoints tab={props.tab} />
+            case "customizations":
+                    return <Customizations tab={props.tab} />
             default:
                 return <Intro tab={props.tab} />;
         }

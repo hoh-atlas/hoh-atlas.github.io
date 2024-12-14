@@ -1,5 +1,6 @@
 import icon_ath_attempt from "../../images/treasure-hunt/intro/icon_ath_attempt.webp";
 import icon_mystery_chest_gold from "../../images/treasure-hunt/checkpoints/icon_mystery_chest_gold.webp";
+import icon_selection_kit_customizations_generic from "../../images/events/customizations/icon_selection_kit_customizations_generic.webp";
 
 const sectionsDefinition = {
     page: "treasure-hunt",
@@ -25,6 +26,14 @@ const sectionsDefinition = {
             url: "checkpoints",
             name: "Checkpoints",
             img: icon_mystery_chest_gold,
+            show: true,
+            dynamicSegments: [],
+        },
+        {
+            id: 4,
+            url: "customizations",
+            name: "Customizations",
+            img: icon_selection_kit_customizations_generic,
             show: true,
             dynamicSegments: [],
         },

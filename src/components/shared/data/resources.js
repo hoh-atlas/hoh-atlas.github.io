@@ -178,6 +178,7 @@ const resources = [
     {id: "victory_ticket", name: "Victory Ticket", img: icon_campaign_battle_ticket, category: "soft"},
     {id: "campaign_battle_ticket", name: "Victory Ticket", img: icon_campaign_battle_ticket, category: "soft"},
     {id: "goods", name: "Goods", img: goods, category: "soft"},
+    {id: "good", name: "Goods", img: goods, category: "soft"},
     {id: "ambrosia", name: "Ambrosia", img: ambrosia, category: "soft"},
     // EXPERIENCES
     {id: "xp_common", name: "Common Scroll of Prowess", img: icon_xp_scroll_common, category: "experiences"},
@@ -373,6 +374,7 @@ const resources = [
     {id: "BuildingPiece|Building_MinoanEra_Collectable_MinoanWatchtower_1", name: "Minoan Watchtower Puzzle Piece", img: puzzle_piece, category: "fragments"},
     {id: "BuildingPiece|Building_ClassicGreece_Collectable_ArchitectsStudio_1", name: "Scholars Lyceum Puzzle Piece", img: puzzle_piece, category: "fragments"},
     {id: "antimatter_common_part", name: "Antimatter Piece", img: icon_rift_token_common_part, category: "fragments"},
+    {id: "rift_token_common_part", name: "Antimatter Piece", img: icon_rift_token_common_part, category: "fragments"},
     {id: "antimatter_legendary_part", name: "Legendary Antimatter Piece", img: icon_rift_token_legendary_part, category: "fragments"},
     {id: "rift_token_legendary_part", name: "Legendary Antimatter Piece", img: icon_rift_token_legendary_part, category: "fragments"},
     // ICONS

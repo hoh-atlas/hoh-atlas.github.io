@@ -11,6 +11,7 @@ import Icon from "../../shared/Icon";
 import { getItem, calculateDaysBetween } from "../../shared/utils";
 import Calendar from "./Calendar";
 import DailySpecialWrapper from "./DailySpecialWrapper";
+import { customizationsImages } from "../_data/customizationsImages";
 
 import allEvents from "../data";
 
@@ -32,6 +33,8 @@ const DailySpecials = (props) => {
 
     const daysPassed = calculateDaysBetween(event.betaStartDate, todayString) + 1;
     const dailySpecialsToDisplay = event.dailySpecials.slice(0, daysPassed);
+    
+    let customizationImages = customizationsImages[getEvent().codeName];
 
     return (
         <>
@@ -45,6 +48,12 @@ const DailySpecials = (props) => {
 
             <Calendar eventId={event.id} daysPassed={daysPassed} />
 
+            <div style={{ textAlign: 'center', marginTop: '10px' }}>
+                <small style={{ fontSize: '11px', color: '#916a17' }}>
+                    <i>Note: The rewards offered by these customizations vary depending on your current era. Be sure to set your era on the website using the dropdown menu in the top-left corner.</i>
+                </small>
+            </div>
+
             {
                 dailySpecialsToDisplay.map((oneDailySpecial, index) => (
                     <DailySpecialWrapper
@@ -53,6 +62,7 @@ const DailySpecials = (props) => {
                         amount={oneDailySpecial.amount}
                         note={oneDailySpecial.note}
                         day={index + 1}
+                        customizationsImages={customizationImages}
                     />
                 ))
             }

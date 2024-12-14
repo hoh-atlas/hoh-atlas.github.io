@@ -1,4 +1,4 @@
-import { getItemIcon } from "./utils";
+import { getItemIcon, formatDuration } from "./utils";
 import Image from "./Image";
 import { workersIds } from "../allied-cultures/_data/workersIds";
 import heroBuildingBoosts from "../buildings/_data/heroBuildingBoosts";
@@ -25,28 +25,6 @@ const BuildingsHandler = (props) => {
             return Object.keys(buildingImages)[Object.keys(buildingImages).length-1]
         } else {
             return updatedId;
-        }
-    };
-
-    const formatDuration = (durationString) => {
-        const duration = parseInt(durationString.replace('s', ''), 10);
-        if (duration < 60) {
-            return `${duration}s`;
-        } else if (duration < 3600) {
-            const minutes = Math.floor(duration / 60);
-            const seconds = duration % 60;
-            return `${minutes}m${seconds ? seconds : ''}${seconds ? 's' : ''}`;
-        } else if (duration < 86400) {
-            const hours = Math.floor(duration / 3600);
-            const minutes = Math.floor((duration % 3600) / 60);
-            const seconds = duration % 60;
-            return `${hours}h${minutes ? `${minutes}m` : ''}${seconds ? `${seconds}s` : ''}`;
-        } else {
-            const days = Math.floor(duration / 86400);
-            const hours = Math.floor((duration % 86400) / 3600);
-            const minutes = Math.floor((duration % 3600) / 60);
-            const seconds = duration % 60;
-            return `${days}d${hours ? `${hours}h` : ''}${minutes ? `${minutes}m` : ''}${seconds ? `${seconds}s` : ''}`;
         }
     };
     

@@ -45,7 +45,6 @@ const WorldWonder = (props) => {
         boostsPerLevel.push(object);
     });
     const rewards = rewardsComponent.components.find((component) => component["@type"].includes("RewardLaneEventComponentDTO"))?.rewards;
-    console.log(rewards)
 
     const renderRewards = (rewards) => {
         return rewards.map((reward, index) => (

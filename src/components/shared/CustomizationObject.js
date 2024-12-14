@@ -1,10 +1,20 @@
-import { getItemIcon } from "./utils";
+import { getItemIcon, formatDuration, getItemData } from "./utils";
 import { obtainableFrom } from "./data/customizations";
+import _customizations from "../events/_data/_customizations";
+import customizationsApplyTo from "./data/customizationsApplyTo";
 
-const CustomizationObject = ({ customization, showHeader = true, imageMaxHeight = '200px' }) => {    
+const CustomizationObject = ({ customizationId, img, obtainableFrom, showHeader = true, imageMaxHeight = '200px' }) => {
 
-    const numberOfColumns = 4 + (customization.boost ? 1 : 0) + (customization.production ? 2 : 0) + (customization.production?.resources ? customization.production?.resources.length : 0);
-    const numberOfBodyRows = customization.production ? 3 : 1;
+    const foundCustomization = _customizations.find(elem => elem.id === customizationId);
+
+    const productionComponents = foundCustomization?.components?.filter(component => component["@type"].includes("ProductionComponentDTO")) || [];
+    const cultureBoostComponent = foundCustomization?.components?.find(component => component["@type"].includes("CultureBoostComponentDTO"));
+    const boostResourceComponent = foundCustomization?.components?.find(component => component["@type"].includes("BoostResourceComponentDTO"));
+
+    const numberOfColumns = 4 + (productionComponents.length > 0 ? 1 : 0) + (cultureBoostComponent ? 1 : 0) + (boostResourceComponent ? 1 : 0);
+
+    /*const numberOfColumns = 4 + (customization.boost ? 1 : 0) + (customization.production ? 2 : 0) + (customization.production?.resources ? customization.production?.resources.length : 0);
+    const numberOfBodyRows = customization.production ? 3 : 1;*/
 
     return ( 
         <>        
@@ -14,7 +24,7 @@ const CustomizationObject = ({ customization, showHeader = true, imageMaxHeight 
                     <thead>
                         <tr>
                             <th colSpan={numberOfColumns} style={{ padding: '5px' }}>
-                                {customization.name}
+                                {foundCustomization.name}
                             </th>
                         </tr>
                     </thead>
@@ -24,80 +34,67 @@ const CustomizationObject = ({ customization, showHeader = true, imageMaxHeight 
                         <th style={{ width: '25%' }}>Image</th>
                         <th style={{ width: '15%' }}>Obtainable From</th>
                         <th style={{ width: '10%' }}>Duration</th>
-                        {customization.boost && (
-                            <th>Boost</th>
-                        )}
-                        {customization.production && (
-                            <th colSpan={2}>Production</th>
-                        )}
+                        {productionComponents.length > 0 && <th>Production</th>}
+                        {cultureBoostComponent && <th>Culture Boost</th>}
+                        {boostResourceComponent && <th>Resource Boost</th>}
                         <th style={{ width: '15%' }}>Apply To</th>
                     </tr>
 
                     <tr>
-                        <td rowSpan={numberOfBodyRows}>
-                            <img src={customization.img} style={{ maxHeight: imageMaxHeight }}/>
+                        <td rowSpan={2}>
+                            <img src={img} style={{ maxHeight: imageMaxHeight }}/>
                         </td>
-                        <td rowSpan={numberOfBodyRows}>
-                            {Object.keys(obtainableFrom).reduce((acc, key) => customization.id.includes(key) ? obtainableFrom[key] : acc, null)}
+                        <td rowSpan={2}>
+                            {obtainableFrom}
                         </td>
-                        <td rowSpan={numberOfBodyRows}>
-                            {customization.duration}
+                        <td rowSpan={2}>
+                            {formatDuration(foundCustomization.duration)}
                         </td>
-                        {customization.boost && (
-                            <td rowSpan={numberOfBodyRows} >
-                                {getItemIcon(customization.boost.type)} ({customization.boost.amount})
-                            </td>
-                        )}
-                        {customization.production && (
-                            <td colSpan={2}>
-                                {customization.production.resource
-                                    ? getItemIcon(customization.production.resource)
-                                    : customization.production.resources &&
-                                    customization.production.resources.map((resourceItem, index) => {
-                                        if (typeof resourceItem === 'string') {
-                                            return (
-                                                <span key={resourceItem}>
-                                                    {getItemIcon(resourceItem)}
-                                                    {index < customization.production.resources.length - 1 && " "}
-                                                </span>
-                                            );
-                                        } else if (typeof resourceItem === 'object' && resourceItem.resource) {
-                                            return (
-                                                <span key={resourceItem.resource}>
-                                                    {getItemIcon(resourceItem.resource)} ({resourceItem.percentage}%)
-                                                    {index < customization.production.resources.length - 1 && " "}
-                                                </span>
-                                            );
-                                        }
-                                        return null;
-                                    })
-                                }
-                            </td>
-                        )}
-                        <td rowSpan={numberOfBodyRows}>
-                            {customization.applyTo}
-                        </td>
+                        {productionComponents && productionComponents.length > 0 && (() => {
+                            const finish = productionComponents[0].finish;
+                            const finishRewards = finish?.rewards;
+
+                            if (finishRewards) {
+                                return (
+                                    <td colSpan={1}>
+                                        {finishRewards[0].amount + "x"}&nbsp;
+                                        {getItemIcon(finishRewards[0].resource)}
+                                    </td>
+                                );
+                            } else if (finish?.dynamicChangeDefinitionId) {
+                                const itemData = getItemData(finish.dynamicChangeDefinitionId);
+                                return (
+                                    <td colSpan={1}>
+                                        {itemData.rewards.map((oneItem, index) => (
+                                            <span key={oneItem.resource}>
+                                                {oneItem.amount}x {getItemIcon(oneItem.resource)} {itemData.chances && "("+itemData.chances[index]+"%)"}
+                                                {index < itemData.rewards.length - 1 && (itemData.chances ? " / " : " ")}
+                                            </span>
+                                        ))}
+                                    </td>
+                                );
+                            } else {
+                                return null;
+                            }
+                        })()}
+                        {cultureBoostComponent && <td rowSpan={2}>
+                            {cultureBoostComponent.cultureBoost*100}% {getItemIcon("culture_bonus")}
+                            </td>}
+                        {boostResourceComponent && <td rowSpan={2}>
+                            {boostResourceComponent.modifier*100}% {getItemIcon(boostResourceComponent.resourceType || boostResourceComponent.resourceDefinitionId)}
+                            </td>}
+                        <td rowSpan={2}>{customizationsApplyTo[foundCustomization.buildingGroup]}</td>
                     </tr>
-                    {customization.production && (
-                        <tr>
-                            <th style={{ height: '10px' }}>
-                                Amount
-                            </th>
-                            <th>
-                                Production Time
-                            </th>
-                        </tr>
-                    )}
-                    {customization.production && (
-                        <tr>
-                            <td>
-                                {customization.production.amount}
-                            </td>
-                            <td>
-                                {customization.production.time}
-                            </td>
-                        </tr>
-                    )}
+                    <tr>
+                        {productionComponents && productionComponents.length > 0 && (() => {
+                            const duration = productionComponents[0].duration;
+                            return (
+                                <td colSpan={1}>
+                                    {formatDuration(duration)}
+                                </td>
+                            );
+                        })()}
+                    </tr>
                 </tbody>
             </table>
         </div>
