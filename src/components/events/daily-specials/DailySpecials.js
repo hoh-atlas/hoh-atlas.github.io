@@ -50,7 +50,7 @@ const DailySpecials = (props) => {
 
             <div style={{ textAlign: 'center', marginTop: '10px' }}>
                 <small style={{ fontSize: '11px', color: '#916a17' }}>
-                    <i>Note: The rewards offered by these customizations vary depending on your current era. Be sure to set your era on the website using the dropdown menu in the top-left corner.</i>
+                    <i>Note: Daily specials vary depending on your current era. Be sure to set your era on the website using the dropdown menu in the top-left corner, to see the accurate data for your current in-game progress.</i>
                 </small>
             </div>
 
