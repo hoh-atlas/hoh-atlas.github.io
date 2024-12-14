@@ -18,8 +18,8 @@ const Navbar = () => {
   };
 
   return (
-    <header onClick={() => handleClick}>
-      <nav>
+    <header>
+      <nav onClick={handleClick}>
         <div className="navigation">
           <div className="nav-header">
             <NavLink to="/">

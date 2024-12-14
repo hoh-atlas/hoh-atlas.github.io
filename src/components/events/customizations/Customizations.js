@@ -54,7 +54,7 @@ const Customizations = (props) => {
 
             <div style={{ textAlign: 'center' }}>
                 <small style={{ fontSize: '11px', color: '#916a17' }}>
-                    <i>Note: The rewards offered by these customizations vary depending on your current era. Be sure to set your era on the website using the dropdown menu in the top-left corner.</i>
+                    <i>Note: The rewards offered by these customizations vary depending on your current era. Be sure to set your era on the website using the dropdown menu in the navigation bar.</i>
                 </small>
             </div>
 

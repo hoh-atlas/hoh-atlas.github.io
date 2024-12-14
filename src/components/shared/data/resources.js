@@ -189,6 +189,7 @@ const resources = [
     {id: "xp_hero", name: "Experience Points", img: icon_xp_hero, category: "experiences"},
     {id: "mastery_point", name: "Mastery Points", img: mastery_point, category: "experiences"},
     {id: "resource.mastery_points", name: "Mastery Points", img: mastery_point, category: "experiences"},
+    {id: "resource.hero_xp", name: "Experience Points", img: icon_xp_hero, category: "experiences"},
     // ANTIMATTERS
     {id: "antimatter", name: "Antimatter", img: icon_rift_token_common, category: "antimatters"},
     {id: "antimatter_egyptian", name: "Egyptian Antimatter", img: icon_rift_token_egypt_common, category: "antimatters"},

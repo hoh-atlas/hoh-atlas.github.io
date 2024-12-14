@@ -114,52 +114,54 @@ const ResearchHandler = (props) => {
                         <i>Note: Each technology you mark as "Completed" will automatically finish all of its prerequisite technologies. You do not need to click all of them manually.</i>
                     </small>
                 </div>
-                <table className="research-table" style={{ width: '80%', tableLayout: 'auto', borderCollapse: 'collapse' }} cellSpacing="0" cellPadding="8">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Name</th>
-                            <th>RP</th>
-                            <th colSpan={maxCostColumns}>Costs</th>
-                            <th>Completed</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {data.map((tech) => {
-                            const rpCost = tech.costs.find((cost) => cost.resource === "research_point");
-                            const otherCosts = tech.costs.filter((cost) => cost.resource !== "research_point");
+                <div className="scroll">
+                    <table className="research-table" style={{ width: '80%', tableLayout: 'auto', borderCollapse: 'collapse' }} cellSpacing="0" cellPadding="8">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>RP</th>
+                                <th colSpan={maxCostColumns}>Costs</th>
+                                <th>Completed</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {data.map((tech) => {
+                                const rpCost = tech.costs.find((cost) => cost.resource === "research_point");
+                                const otherCosts = tech.costs.filter((cost) => cost.resource !== "research_point");
 
-                            const sortedCosts = sortCostsByCategory(otherCosts);
+                                const sortedCosts = sortCostsByCategory(otherCosts);
 
-                            return (
-                                <tr key={tech.id}>
-                                    <td>{tech.id}</td>
-                                    <td>{tech.name}</td>
-                                    <td>{rpCost ? rpCost.amount : 0}x {getItemIcon("research_point")}</td>
-                                    {Array.from({ length: maxCostColumns }).map((_, index) => (
-                                        <td key={index}>
-                                            {sortedCosts[index] ? (
-                                                <>
-                                                    {sortedCosts[index].amount}x{" "}
-                                                    {getItemIcon(sortedCosts[index].resource)}
-                                                </>
-                                            ) : null}
+                                return (
+                                    <tr key={tech.id}>
+                                        <td>{tech.id}</td>
+                                        <td>{tech.name}</td>
+                                        <td>{rpCost ? rpCost.amount : 0}x {getItemIcon("research_point")}</td>
+                                        {Array.from({ length: maxCostColumns }).map((_, index) => (
+                                            <td key={index}>
+                                                {sortedCosts[index] ? (
+                                                    <>
+                                                        {sortedCosts[index].amount}x{" "}
+                                                        {getItemIcon(sortedCosts[index].resource)}
+                                                    </>
+                                                ) : null}
+                                            </td>
+                                        ))}
+                                        <td>
+                                            <input
+                                                type="checkbox"
+                                                checked={completedTechnologies[tech.id] || false}
+                                                onChange={(e) =>
+                                                    toggleCompletion(tech.id, e.target.checked)
+                                                }
+                                            />
                                         </td>
-                                    ))}
-                                    <td>
-                                        <input
-                                            type="checkbox"
-                                            checked={completedTechnologies[tech.id] || false}
-                                            onChange={(e) =>
-                                                toggleCompletion(tech.id, e.target.checked)
-                                            }
-                                        />
-                                    </td>
-                                </tr>
-                            );
-                        })}
-                    </tbody>
-                </table>
+                                    </tr>
+                                );
+                            })}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </>
     );
