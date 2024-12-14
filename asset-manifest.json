@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.34a01d90.css",
-    "main.js": "/static/js/main.a332afa4.js",
+    "main.css": "/static/css/main.7d079eeb.css",
+    "main.js": "/static/js/main.edf89cc2.js",
     "static/media/layout_5_sector_3.webp": "/static/media/layout_5_sector_3.c0f317a3382f299fbe11.webp",
     "static/media/layout_egypt_3_sector_3.webp": "/static/media/layout_egypt_3_sector_3.176bb3c09225286b101a.webp",
     "static/media/layout_egypt_4_sector_3.webp": "/static/media/layout_egypt_4_sector_3.ca8d981c13c641b372d7.webp",
@@ -1067,11 +1067,11 @@
     "static/media/herbs.webp": "/static/media/herbs.45e59d4e77aed5c7159a.webp",
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
-    "main.34a01d90.css.map": "/static/css/main.34a01d90.css.map",
-    "main.a332afa4.js.map": "/static/js/main.a332afa4.js.map"
+    "main.7d079eeb.css.map": "/static/css/main.7d079eeb.css.map",
+    "main.edf89cc2.js.map": "/static/js/main.edf89cc2.js.map"
   },
   "entrypoints": [
-    "static/css/main.34a01d90.css",
-    "static/js/main.a332afa4.js"
+    "static/css/main.7d079eeb.css",
+    "static/js/main.edf89cc2.js"
   ]
 }
