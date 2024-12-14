@@ -1,5 +1,3 @@
-// Navbar.js
-
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
@@ -8,13 +6,19 @@ import logo from "../../images/shared/logo.webp";
 import links from "./links";
 import dropdownItems from "./dropdownItems";
 import { GiHamburgerMenu } from "react-icons/gi";
-import DropdownEra from "./DropdownEra"; // Import the new DropdownEra component
+import DropdownEra from "./DropdownEra";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+  const handleClick = (event) => {
+    if (window.innerWidth <= 700 && event.target.tagName === "A") {
+      setShowMenu(false);
+    }
+  };
+
   return (
-    <header onClick={() => setShowMenu(false)}>
+    <header onClick={() => handleClick}>
       <nav>
         <div className="navigation">
           <div className="nav-header">
