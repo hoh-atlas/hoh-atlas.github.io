@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6d690acd.css",
-    "main.js": "/static/js/main.691c51b6.js",
+    "main.css": "/static/css/main.f1cd7f0a.css",
+    "main.js": "/static/js/main.444ad027.js",
     "static/media/layout_5_sector_3.webp": "/static/media/layout_5_sector_3.c0f317a3382f299fbe11.webp",
     "static/media/layout_egypt_3_sector_3.webp": "/static/media/layout_egypt_3_sector_3.176bb3c09225286b101a.webp",
     "static/media/layout_egypt_4_sector_3.webp": "/static/media/layout_egypt_4_sector_3.ca8d981c13c641b372d7.webp",
@@ -32,12 +32,14 @@
     "static/media/china_city.webp": "/static/media/china_city.415736e9ff5f7bc3bfe7.webp",
     "static/media/egypt_city.webp": "/static/media/egypt_city.7719ac968df164a2b372.webp",
     "static/media/hoh_background.webp": "/static/media/hoh_background.4da87c84804609d91f18.webp",
+    "static/media/vikings_city.webp": "/static/media/vikings_city.3b15c0adb3df82ae0dc2.webp",
     "static/media/world_fair_2024_window.webp": "/static/media/world_fair_2024_window.34566d55b8938adfd78e.webp",
     "static/media/province_29.webp": "/static/media/province_29.a34e600a301d403540c9.webp",
     "static/media/province_19.webp": "/static/media/province_19.697cccf7a9d4d02bbecd.webp",
     "static/media/province_25.webp": "/static/media/province_25.84ee3a0737d6765ab352.webp",
     "static/media/navbar.png": "/static/media/navbar.7961641a9e850277dd7e.png",
     "static/media/province_1.webp": "/static/media/province_1.35ee7c70cfdfc5be1ee4.webp",
+    "static/media/vikings_glacier.webp": "/static/media/vikings_glacier.cf14fae6c78e90d04930.webp",
     "static/media/province_27.webp": "/static/media/province_27.55c858cc8a27fcc9cd26.webp",
     "static/media/province_28.webp": "/static/media/province_28.fb2332b17ccbbd0e9f34.webp",
     "static/media/EventBackgroundWinterEvent.webp": "/static/media/EventBackgroundWinterEvent.26e81c935171969c011e.webp",
@@ -89,6 +91,7 @@
     "static/media/ath_crows_inn.webp": "/static/media/ath_crows_inn.632354c907625a77789f.webp",
     "static/media/age_transition_bronze_age_main1.webp": "/static/media/age_transition_bronze_age_main1.2af8f0a550a25dfde98d.webp",
     "static/media/winter_event_2024_candy_store.webp": "/static/media/winter_event_2024_candy_store.d5405e14c7b1833b32c8.webp",
+    "static/media/valhalla.webp": "/static/media/valhalla.0aebe727be1e3978dcd9.webp",
     "static/media/winter_event_2024_winter_home.webp": "/static/media/winter_event_2024_winter_home.00ca2d0e8e04424aac85.webp",
     "static/media/cheops_pyramid.webp": "/static/media/cheops_pyramid.1acfaaf71f7a0ba11eba.webp",
     "static/media/age_transition_feudal_age_main1.webp": "/static/media/age_transition_feudal_age_main1.70a801d60164216fdbd8.webp",
@@ -107,6 +110,8 @@
     "static/media/age_transition_iberian_era_main1.webp": "/static/media/age_transition_iberian_era_main1.0aaf1701d92cc631ff79.webp",
     "static/media/world_fair_2024_ticket_booth.webp": "/static/media/world_fair_2024_ticket_booth.8af33ea28bf9dba254e4.webp",
     "static/media/ath_skull_home.webp": "/static/media/ath_skull_home.c72b731b175fc04fd221.webp",
+    "static/media/season_5_sale_offer_bg.webp": "/static/media/season_5_sale_offer_bg.7b2594ecca363a2cf040.webp",
+    "static/media/dragonship_ellida.webp": "/static/media/dragonship_ellida.06503680025b3ad8245f.webp",
     "static/media/great_wall.webp": "/static/media/great_wall.96ae6034f872a3d2141b.webp",
     "static/media/ath_robber_crab.webp": "/static/media/ath_robber_crab.12022edf57ff094daebd.webp",
     "static/media/china_background_news.webp": "/static/media/china_background_news.598f56e701760888eea9.webp",
@@ -236,6 +241,7 @@
     "static/media/Unit_AmeliaEarhart.webp": "/static/media/Unit_AmeliaEarhart.e344c6f3b99ef8792862.webp",
     "static/media/season_03_banner.webp": "/static/media/season_03_banner.7a45029606d81e333733.webp",
     "static/media/EventPassPremiumPriceChest.webp": "/static/media/EventPassPremiumPriceChest.17e36140b9ec3748a3c2.webp",
+    "static/media/season_05_banner.webp": "/static/media/season_05_banner.a60719551a4d93b9a4f2.webp",
     "static/media/world_fair_2024_rareflower_5.webp": "/static/media/world_fair_2024_rareflower_5.a5cd09a471e4400882d7.webp",
     "static/media/hero-backdrop-eternal-rivals.webp": "/static/media/hero-backdrop-eternal-rivals.a59d0c5a7746d8069860.webp",
     "static/media/season_4_sale_offer_bg.webp": "/static/media/season_4_sale_offer_bg.a59d0c5a7746d8069860.webp",
@@ -1073,11 +1079,11 @@
     "static/media/herbs.webp": "/static/media/herbs.45e59d4e77aed5c7159a.webp",
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
-    "main.6d690acd.css.map": "/static/css/main.6d690acd.css.map",
-    "main.691c51b6.js.map": "/static/js/main.691c51b6.js.map"
+    "main.f1cd7f0a.css.map": "/static/css/main.f1cd7f0a.css.map",
+    "main.444ad027.js.map": "/static/js/main.444ad027.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d690acd.css",
-    "static/js/main.691c51b6.js"
+    "static/css/main.f1cd7f0a.css",
+    "static/js/main.444ad027.js"
   ]
 }
