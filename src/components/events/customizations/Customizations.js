@@ -40,7 +40,6 @@ const Customizations = (props) => {
     }
 
     let customizationImages = customizationsImages[getEvent().codeName];
-    console.log(customizationImages)
 
     return (
         <>

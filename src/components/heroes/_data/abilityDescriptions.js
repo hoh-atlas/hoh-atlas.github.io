@@ -32,7 +32,7 @@ const abilityDescriptions = [
     {
         "key": "Base.AbilityDescriptions.hero_battle_ability_description.BessieColeman_1_Name",
         "values": [
-            "<style=ability_label>Debuff </style>Bessie launches smoke flares at the closest and furthest enemy units while prioritizing heroes, dealing <style=basestat>{damage}</style> damage and reducing  accuracy by <style=basestat>{accuracy_debuff}</style> for <style=basestat>{accuracy_debuff_duration}</style> to all units in a small range around the targets."
+            "<style=ability_label>Debuff </style>Bessie launches smoke flares at the closest and furthest enemy units while prioritizing heroes, dealing <style=basestat>{damage}</style> damage and reducing  accuracy by <style=basestat>{accuracy_debuff}</style> for <style=basestat>{accuracy_debuff_duration}</style> to them."
         ]
     },
     {
@@ -542,7 +542,7 @@ const abilityDescriptions = [
     {
         "key": "Base.AbilityDescriptions.hero_battle_ability_description.LudwigVanBeethoven_15_Name",
         "values": [
-            "<style=ability_label>Area Strike| Stun| Bleed</style>Directs a deafening sound towards the biggest cluster of enemy units, dealing <style=basestat>{dmg_percentage}</style> damage and stunning all enemies for <style=basestat>{stun_duration}</style> in a range of <style=basestat>{range}</style>. Affected units have a <style=basestat>{chance}</style> chance to bleed, dealing a further <style=basestat>{bleed_dmg_percentage}</style> damage over <style=basestat>{bleed_duration}</style>."
+            "<style=ability_label>Area Strike| Stun| Burn</style>Directs a deafening sound towards the biggest cluster of enemy units, dealing <style=basestat>{dmg_percentage}</style> damage and stunning all enemies for <style=basestat>{stun_duration}</style> in a range of <style=basestat>{range}</style>. Affected units have a <style=basestat>{chance}</style> chance to burn, dealing a further <style=basestat>{burn_dmg_percentage}</style> damage over <style=basestat>{burn_duration}</style>."
         ]
     },
     {
@@ -596,7 +596,7 @@ const abilityDescriptions = [
     {
         "key": "Base.AbilityDescriptions.hero_battle_ability_description.AmeliaEarhart_1_Name",
         "values": [
-            "<style=ability_label> Teleport | Heal | Buff </style> Amelia rescues the most injured allied hero, transporting them to a safe location on the battlefield, healing them for <style=basestat>{heal_percent}</style> of Amelia's base damage. The unit then gains an adrenaline rush, improving their attack speed by <style=basestat>{attack_speed_buff}</style> and movement speed by <style=basestat>{move_speed_buff}</style> for <style=basestat>{buff_duration}</style>"
+            "<style=ability_label>Teleport | Heal | Buff </style>Amelia rescues the most injured allied hero, transporting them to a safe location on the battlefield, healing them for <style=basestat>{heal_percent}</style> of Amelia's base damage. The unit then gains an adrenaline rush, improving their attack speed by <style=basestat>{attack_speed_buff}</style> and movement speed by <style=basestat>{move_speed_buff}</style> for <style=basestat>{buff_duration}</style>"
         ]
     },
     {

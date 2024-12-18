@@ -998,14 +998,6 @@ const abilities = [
                 "value": 1.25,
                 "type": "duration"
             },
-            "bleed_dmg_percentage": {
-                "value": 0.09,
-                "type": "percentage"
-            },
-            "bleed_duration": {
-                "value": 6.0,
-                "type": "duration"
-            },
             "chance": {
                 "value": 0.5,
                 "type": "percentage"
@@ -1017,6 +1009,14 @@ const abilities = [
             "range": {
                 "value": 3.0,
                 "type": "number"
+            },
+            "burn_duration": {
+                "value": 6.0,
+                "type": "duration"
+            },
+            "burn_dmg_percentage": {
+                "value": 0.09,
+                "type": "percentage"
             }
         }
     },
@@ -1028,14 +1028,6 @@ const abilities = [
                 "value": 1.25,
                 "type": "duration"
             },
-            "bleed_dmg_percentage": {
-                "value": 0.12,
-                "type": "percentage"
-            },
-            "bleed_duration": {
-                "value": 6.0,
-                "type": "duration"
-            },
             "chance": {
                 "value": 0.5,
                 "type": "percentage"
@@ -1047,6 +1039,14 @@ const abilities = [
             "range": {
                 "value": 3.0,
                 "type": "number"
+            },
+            "burn_duration": {
+                "value": 6.0,
+                "type": "duration"
+            },
+            "burn_dmg_percentage": {
+                "value": 0.12,
+                "type": "percentage"
             }
         }
     },
@@ -1058,14 +1058,6 @@ const abilities = [
                 "value": 1.25,
                 "type": "duration"
             },
-            "bleed_dmg_percentage": {
-                "value": 0.15,
-                "type": "percentage"
-            },
-            "bleed_duration": {
-                "value": 6.0,
-                "type": "duration"
-            },
             "chance": {
                 "value": 0.5,
                 "type": "percentage"
@@ -1077,6 +1069,14 @@ const abilities = [
             "range": {
                 "value": 3.0,
                 "type": "number"
+            },
+            "burn_duration": {
+                "value": 6.0,
+                "type": "duration"
+            },
+            "burn_dmg_percentage": {
+                "value": 0.15,
+                "type": "percentage"
             }
         }
     },
@@ -1124,14 +1124,6 @@ const abilities = [
                 "value": 1.25,
                 "type": "duration"
             },
-            "bleed_dmg_percentage": {
-                "value": 0.03,
-                "type": "percentage"
-            },
-            "bleed_duration": {
-                "value": 6.0,
-                "type": "duration"
-            },
             "chance": {
                 "value": 0.5,
                 "type": "percentage"
@@ -1143,6 +1135,14 @@ const abilities = [
             "range": {
                 "value": 3.0,
                 "type": "number"
+            },
+            "burn_duration": {
+                "value": 6.0,
+                "type": "duration"
+            },
+            "burn_dmg_percentage": {
+                "value": 0.03,
+                "type": "percentage"
             }
         }
     },
@@ -1154,14 +1154,6 @@ const abilities = [
                 "value": 1.25,
                 "type": "duration"
             },
-            "bleed_dmg_percentage": {
-                "value": 0.06,
-                "type": "percentage"
-            },
-            "bleed_duration": {
-                "value": 6.0,
-                "type": "duration"
-            },
             "chance": {
                 "value": 0.5,
                 "type": "percentage"
@@ -1173,6 +1165,14 @@ const abilities = [
             "range": {
                 "value": 3.0,
                 "type": "number"
+            },
+            "burn_duration": {
+                "value": 6.0,
+                "type": "duration"
+            },
+            "burn_dmg_percentage": {
+                "value": 0.06,
+                "type": "percentage"
             }
         }
     },
@@ -1184,14 +1184,6 @@ const abilities = [
                 "value": 1.25,
                 "type": "duration"
             },
-            "bleed_dmg_percentage": {
-                "value": 0.18,
-                "type": "percentage"
-            },
-            "bleed_duration": {
-                "value": 6.0,
-                "type": "duration"
-            },
             "chance": {
                 "value": 0.5,
                 "type": "percentage"
@@ -1203,6 +1195,14 @@ const abilities = [
             "range": {
                 "value": 3.0,
                 "type": "number"
+            },
+            "burn_duration": {
+                "value": 6.0,
+                "type": "duration"
+            },
+            "burn_dmg_percentage": {
+                "value": 0.18,
+                "type": "percentage"
             }
         }
     },
@@ -1214,14 +1214,6 @@ const abilities = [
                 "value": 1.25,
                 "type": "duration"
             },
-            "bleed_dmg_percentage": {
-                "value": 0.21,
-                "type": "percentage"
-            },
-            "bleed_duration": {
-                "value": 6.0,
-                "type": "duration"
-            },
             "chance": {
                 "value": 0.5,
                 "type": "percentage"
@@ -1233,6 +1225,14 @@ const abilities = [
             "range": {
                 "value": 3.0,
                 "type": "number"
+            },
+            "burn_duration": {
+                "value": 6.0,
+                "type": "duration"
+            },
+            "burn_dmg_percentage": {
+                "value": 0.21,
+                "type": "percentage"
             }
         }
     },
@@ -1300,14 +1300,6 @@ const abilities = [
                 "value": 1.25,
                 "type": "duration"
             },
-            "bleed_dmg_percentage": {
-                "value": 0.24,
-                "type": "percentage"
-            },
-            "bleed_duration": {
-                "value": 6.0,
-                "type": "duration"
-            },
             "chance": {
                 "value": 0.5,
                 "type": "percentage"
@@ -1319,6 +1311,14 @@ const abilities = [
             "range": {
                 "value": 3.0,
                 "type": "number"
+            },
+            "burn_duration": {
+                "value": 6.0,
+                "type": "duration"
+            },
+            "burn_dmg_percentage": {
+                "value": 0.24,
+                "type": "percentage"
             }
         }
     },
@@ -1348,14 +1348,6 @@ const abilities = [
                 "value": 1.25,
                 "type": "duration"
             },
-            "bleed_dmg_percentage": {
-                "value": 0.27,
-                "type": "percentage"
-            },
-            "bleed_duration": {
-                "value": 6.0,
-                "type": "duration"
-            },
             "chance": {
                 "value": 0.5,
                 "type": "percentage"
@@ -1367,6 +1359,14 @@ const abilities = [
             "range": {
                 "value": 3.0,
                 "type": "number"
+            },
+            "burn_duration": {
+                "value": 6.0,
+                "type": "duration"
+            },
+            "burn_dmg_percentage": {
+                "value": 0.27,
+                "type": "percentage"
             }
         }
     },
@@ -1565,14 +1565,6 @@ const abilities = [
                 "value": 1.25,
                 "type": "duration"
             },
-            "bleed_dmg_percentage": {
-                "value": 0.3,
-                "type": "percentage"
-            },
-            "bleed_duration": {
-                "value": 6.0,
-                "type": "duration"
-            },
             "chance": {
                 "value": 0.5,
                 "type": "percentage"
@@ -1584,6 +1576,14 @@ const abilities = [
             "range": {
                 "value": 3.0,
                 "type": "number"
+            },
+            "burn_duration": {
+                "value": 6.0,
+                "type": "duration"
+            },
+            "burn_dmg_percentage": {
+                "value": 0.3,
+                "type": "percentage"
             }
         }
     },
@@ -1595,14 +1595,6 @@ const abilities = [
                 "value": 1.25,
                 "type": "duration"
             },
-            "bleed_dmg_percentage": {
-                "value": 0.33,
-                "type": "percentage"
-            },
-            "bleed_duration": {
-                "value": 6.0,
-                "type": "duration"
-            },
             "chance": {
                 "value": 0.5,
                 "type": "percentage"
@@ -1614,6 +1606,14 @@ const abilities = [
             "range": {
                 "value": 3.0,
                 "type": "number"
+            },
+            "burn_duration": {
+                "value": 6.0,
+                "type": "duration"
+            },
+            "burn_dmg_percentage": {
+                "value": 0.33,
+                "type": "percentage"
             }
         }
     },
@@ -7694,6 +7694,116 @@ const abilities = [
         "descriptionParameters": null
     },
     {
+        "id": "ability.AmeliaEarhart_39",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 23.6,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 1.101,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_38",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 23.3,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 1.0917,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_37",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 23.0,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 1.0825,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_36",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 22.7,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 1.0733,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_40",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 23.9,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 1.1102,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.WilliamTell_8",
         "descriptionLocaKey": "hero_battle_ability_description.WilliamTell_1",
         "descriptionParameters": {
@@ -11224,7 +11334,7 @@ const abilities = [
                 "type": "percentage"
             },
             "hp_percentage": {
-                "value": 0.175,
+                "value": 2.1,
                 "type": "percentage"
             },
             "taunt_duration": {
@@ -11272,7 +11382,7 @@ const abilities = [
                 "type": "percentage"
             },
             "hp_percentage": {
-                "value": 0.18,
+                "value": 2.45,
                 "type": "percentage"
             },
             "taunt_duration": {
@@ -11420,7 +11530,7 @@ const abilities = [
                 "type": "percentage"
             },
             "hp_percentage": {
-                "value": 0.195,
+                "value": 3.5,
                 "type": "percentage"
             },
             "taunt_duration": {
@@ -11468,7 +11578,7 @@ const abilities = [
                 "type": "percentage"
             },
             "hp_percentage": {
-                "value": 0.2,
+                "value": 3.85,
                 "type": "percentage"
             },
             "taunt_duration": {
@@ -11494,7 +11604,7 @@ const abilities = [
                 "type": "percentage"
             },
             "hp_percentage": {
-                "value": 0.185,
+                "value": 2.8,
                 "type": "percentage"
             },
             "taunt_duration": {
@@ -11520,7 +11630,7 @@ const abilities = [
                 "type": "percentage"
             },
             "hp_percentage": {
-                "value": 0.19,
+                "value": 3.15,
                 "type": "percentage"
             },
             "taunt_duration": {
@@ -12360,6 +12470,72 @@ const abilities = [
         }
     },
     {
+        "id": "ability.AmeliaEarhart_19",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 17.6,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.9163,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_18",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 17.3,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.907,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_17",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 17.0,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.8978,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.OttoVonBismarck_5",
         "descriptionLocaKey": "hero_battle_ability_description.OttoVonBismarck_1",
         "descriptionParameters": {
@@ -12370,6 +12546,28 @@ const abilities = [
             "taunt_duration": {
                 "value": 4.0,
                 "type": "duration"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_16",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 16.7,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.8885,
+                "type": "percentage"
             }
         }
     },
@@ -12388,6 +12586,28 @@ const abilities = [
         }
     },
     {
+        "id": "ability.AmeliaEarhart_15",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 16.4,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.8793,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.OttoVonBismarck_7",
         "descriptionLocaKey": "hero_battle_ability_description.OttoVonBismarck_1",
         "descriptionParameters": {
@@ -12402,6 +12622,28 @@ const abilities = [
         }
     },
     {
+        "id": "ability.AmeliaEarhart_14",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 16.1,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.8701,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.OttoVonBismarck_6",
         "descriptionLocaKey": "hero_battle_ability_description.OttoVonBismarck_1",
         "descriptionParameters": {
@@ -12412,6 +12654,116 @@ const abilities = [
             "taunt_duration": {
                 "value": 4.0,
                 "type": "duration"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_24",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 19.1,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.9624,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_23",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 18.8,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.9532,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_22",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 18.5,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.944,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_21",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 18.2,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.9347,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_20",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 17.9,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.9255,
+                "type": "percentage"
             }
         }
     },
@@ -12686,7 +13038,7 @@ const abilities = [
                 "type": "percentage"
             },
             "hp_percentage": {
-                "value": 0.16,
+                "value": 1.05,
                 "type": "percentage"
             },
             "taunt_duration": {
@@ -12712,7 +13064,7 @@ const abilities = [
                 "type": "percentage"
             },
             "hp_percentage": {
-                "value": 0.165,
+                "value": 1.4,
                 "type": "percentage"
             },
             "taunt_duration": {
@@ -12738,7 +13090,7 @@ const abilities = [
                 "type": "percentage"
             },
             "hp_percentage": {
-                "value": 0.15,
+                "value": 0.35,
                 "type": "percentage"
             },
             "taunt_duration": {
@@ -12764,7 +13116,7 @@ const abilities = [
                 "type": "percentage"
             },
             "hp_percentage": {
-                "value": 0.155,
+                "value": 0.7,
                 "type": "percentage"
             },
             "taunt_duration": {
@@ -12790,7 +13142,7 @@ const abilities = [
                 "type": "percentage"
             },
             "hp_percentage": {
-                "value": 0.17,
+                "value": 1.75,
                 "type": "percentage"
             },
             "taunt_duration": {
@@ -12818,6 +13170,50 @@ const abilities = [
             "taunt_duration": {
                 "value": 5.0,
                 "type": "duration"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_29",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 20.6,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 1.0086,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_28",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 20.3,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.9994,
+                "type": "percentage"
             }
         }
     },
@@ -12858,6 +13254,28 @@ const abilities = [
         }
     },
     {
+        "id": "ability.AmeliaEarhart_27",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 20.0,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.9901,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.KingMinos_14",
         "descriptionLocaKey": "hero_battle_ability_description.KingMinos_9",
         "descriptionParameters": {
@@ -12876,6 +13294,28 @@ const abilities = [
             "taunt_duration": {
                 "value": 5.0,
                 "type": "duration"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_26",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 19.7,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.9809,
+                "type": "percentage"
             }
         }
     },
@@ -12916,6 +13356,28 @@ const abilities = [
         }
     },
     {
+        "id": "ability.AmeliaEarhart_25",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 19.4,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.9717,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.AttilaTheHun_11",
         "descriptionLocaKey": "hero_battle_ability_description.AttilaTheHun_1",
         "descriptionParameters": {
@@ -12952,6 +13414,28 @@ const abilities = [
         }
     },
     {
+        "id": "ability.AmeliaEarhart_35",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 22.4,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 1.064,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.MargaretIOfDenmark_8",
         "descriptionLocaKey": "hero_battle_ability_description.MargaretIOfDenmark_1",
         "descriptionParameters": {
@@ -12979,6 +13463,28 @@ const abilities = [
             },
             "dmg_percentage": {
                 "value": 11.62,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_34",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 22.1,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 1.0548,
                 "type": "percentage"
             }
         }
@@ -13016,6 +13522,28 @@ const abilities = [
         }
     },
     {
+        "id": "ability.AmeliaEarhart_33",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 21.8,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 1.0456,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.AttilaTheHun_16",
         "descriptionLocaKey": "hero_battle_ability_description.AttilaTheHun_1",
         "descriptionParameters": {
@@ -13025,6 +13553,28 @@ const abilities = [
             },
             "dmg_percentage": {
                 "value": 11.9,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_32",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 21.5,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 1.0363,
                 "type": "percentage"
             }
         }
@@ -13044,6 +13594,28 @@ const abilities = [
         }
     },
     {
+        "id": "ability.AmeliaEarhart_31",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 21.2,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 1.0271,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.AttilaTheHun_18",
         "descriptionLocaKey": "hero_battle_ability_description.AttilaTheHun_1",
         "descriptionParameters": {
@@ -13053,6 +13625,28 @@ const abilities = [
             },
             "dmg_percentage": {
                 "value": 12.18,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_30",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 20.9,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 1.0179,
                 "type": "percentage"
             }
         }
@@ -13937,6 +14531,94 @@ const abilities = [
             },
             "def_percentage": {
                 "value": 0.06,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_13",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 15.8,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.8608,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_12",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 15.5,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.8516,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_11",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 15.2,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.8424,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_10",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 14.9,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.8331,
                 "type": "percentage"
             }
         }
@@ -18823,6 +19505,168 @@ const abilities = [
         }
     },
     {
+        "id": "ability.BessieColeman_2",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 1.5,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_1",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 1.4,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_4",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 1.7,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_3",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 1.6,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_6",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 1.9,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_5",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 1.8,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_8",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 2.1,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_7",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 2.0,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_9",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 2.2,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.HuaMulan_9",
         "descriptionLocaKey": "hero_battle_ability_description.HuaMulan_1",
         "descriptionParameters": {
@@ -22709,6 +23553,24 @@ const abilities = [
         }
     },
     {
+        "id": "ability.BessieColeman_10",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 2.3,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.WilliamWallace_23",
         "descriptionLocaKey": "hero_battle_ability_description.WilliamWallace_10",
         "descriptionParameters": {
@@ -22752,6 +23614,24 @@ const abilities = [
             },
             "hp_percentage": {
                 "value": 6.3333,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_11",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 2.4,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
                 "type": "percentage"
             }
         }
@@ -22805,6 +23685,24 @@ const abilities = [
         }
     },
     {
+        "id": "ability.BessieColeman_12",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 2.5,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.WilliamWallace_21",
         "descriptionLocaKey": "hero_battle_ability_description.WilliamWallace_10",
         "descriptionParameters": {
@@ -22848,6 +23746,24 @@ const abilities = [
             },
             "hp_percentage": {
                 "value": 6.5444,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_13",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 2.6,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
                 "type": "percentage"
             }
         }
@@ -23191,6 +24107,24 @@ const abilities = [
         }
     },
     {
+        "id": "ability.BessieColeman_14",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 2.7,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.Hatshepsut_19",
         "descriptionLocaKey": "hero_battle_ability_description.Hatshepsut_1",
         "descriptionParameters": {
@@ -23231,6 +24165,24 @@ const abilities = [
         }
     },
     {
+        "id": "ability.BessieColeman_15",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 2.8,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.MarieCurie_32",
         "descriptionLocaKey": "hero_battle_ability_description.MarieCurie_1",
         "descriptionParameters": {
@@ -23252,6 +24204,24 @@ const abilities = [
             },
             "debuff_percentage": {
                 "value": 1.9,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_16",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 2.9,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
                 "type": "percentage"
             }
         }
@@ -23283,6 +24253,24 @@ const abilities = [
         }
     },
     {
+        "id": "ability.BessieColeman_17",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 3.0,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.MarieCurie_34",
         "descriptionLocaKey": "hero_battle_ability_description.MarieCurie_1",
         "descriptionParameters": {
@@ -23304,6 +24292,24 @@ const abilities = [
             },
             "debuff_percentage": {
                 "value": 1.94,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_18",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 3.1,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
                 "type": "percentage"
             }
         }
@@ -23344,6 +24350,24 @@ const abilities = [
             },
             "debuff_percentage": {
                 "value": 2.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_19",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 3.2,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
                 "type": "percentage"
             }
         }
@@ -23529,6 +24553,42 @@ const abilities = [
         }
     },
     {
+        "id": "ability.BessieColeman_20",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 3.3,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_21",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 3.4,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.WilliamWallace_34",
         "descriptionLocaKey": "hero_battle_ability_description.WilliamWallace_10",
         "descriptionParameters": {
@@ -23554,6 +24614,24 @@ const abilities = [
             },
             "def_percentage": {
                 "value": 0.39,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_22",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 3.5,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
                 "type": "percentage"
             }
         }
@@ -23589,6 +24667,24 @@ const abilities = [
         }
     },
     {
+        "id": "ability.BessieColeman_23",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 3.6,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.WilliamWallace_32",
         "descriptionLocaKey": "hero_battle_ability_description.WilliamWallace_10",
         "descriptionParameters": {
@@ -23614,6 +24710,24 @@ const abilities = [
             },
             "def_percentage": {
                 "value": 0.39,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_24",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 3.7,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
                 "type": "percentage"
             }
         }
@@ -23822,6 +24936,24 @@ const abilities = [
             },
             "debuff_percentage": {
                 "value": 2.06,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.BessieColeman_25",
+        "descriptionLocaKey": "hero_battle_ability_description.BessieColeman_1",
+        "descriptionParameters": {
+            "damage": {
+                "value": 3.8,
+                "type": "percentage"
+            },
+            "accuracy_debuff_duration": {
+                "value": 3.0,
+                "type": "duration"
+            },
+            "accuracy_debuff": {
+                "value": 1.0,
                 "type": "percentage"
             }
         }
@@ -36236,6 +37368,28 @@ const abilities = [
         }
     },
     {
+        "id": "ability.AmeliaEarhart_1",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 12.2,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.75,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.AlbertEinstein_19",
         "descriptionLocaKey": "hero_battle_ability_description.AlbertEinstein_1",
         "descriptionParameters": {
@@ -36254,6 +37408,28 @@ const abilities = [
         }
     },
     {
+        "id": "ability.AmeliaEarhart_2",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 12.5,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.7592,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.OttomanGeneral_5",
         "descriptionLocaKey": "hero_battle_ability_description.OttomanGeneral",
         "descriptionParameters": {
@@ -36263,6 +37439,50 @@ const abilities = [
             },
             "def_percentage": {
                 "value": 0.52,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_3",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 12.8,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.7685,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_4",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 13.1,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.7777,
                 "type": "percentage"
             }
         }
@@ -36340,6 +37560,50 @@ const abilities = [
         }
     },
     {
+        "id": "ability.AmeliaEarhart_9",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 14.6,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.8239,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_5",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 13.4,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.7869,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.OttomanGeneral_2",
         "descriptionLocaKey": "hero_battle_ability_description.OttomanGeneral",
         "descriptionParameters": {
@@ -36349,6 +37613,28 @@ const abilities = [
             },
             "def_percentage": {
                 "value": 0.43,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_6",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 13.7,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.7962,
                 "type": "percentage"
             }
         }
@@ -36368,6 +37654,28 @@ const abilities = [
         }
     },
     {
+        "id": "ability.AmeliaEarhart_7",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 14.0,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.8054,
+                "type": "percentage"
+            }
+        }
+    },
+    {
         "id": "ability.OttomanGeneral_4",
         "descriptionLocaKey": "hero_battle_ability_description.OttomanGeneral",
         "descriptionParameters": {
@@ -36377,6 +37685,28 @@ const abilities = [
             },
             "def_percentage": {
                 "value": 0.49,
+                "type": "percentage"
+            }
+        }
+    },
+    {
+        "id": "ability.AmeliaEarhart_8",
+        "descriptionLocaKey": "hero_battle_ability_description.AmeliaEarhart_1",
+        "descriptionParameters": {
+            "move_speed_buff": {
+                "value": 1.0,
+                "type": "percentage"
+            },
+            "buff_duration": {
+                "value": 8.0,
+                "type": "duration"
+            },
+            "heal_percent": {
+                "value": 14.3,
+                "type": "percentage"
+            },
+            "attack_speed_buff": {
+                "value": 0.8147,
                 "type": "percentage"
             }
         }

@@ -1,12 +1,14 @@
 import Unit_AbrahamLincoln_fullbody from '../../images/heroes/intro/fullbody/Unit_AbrahamLincoln_fullbody.webp';
 import Unit_Achilles_fullbody from '../../images/heroes/intro/fullbody/Unit_Achilles_fullbody.webp';
 import Unit_AdaLovelace_fullbody from '../../images/heroes/intro/fullbody/Unit_AdaLovelace_fullbody.webp';
+import Unit_AmeliaEarhart_fullbody from '../../images/heroes/intro/fullbody/Unit_AmeliaEarhart_fullbody.webp';
 import Unit_AlbertEinstein_fullbody from '../../images/heroes/intro/fullbody/Unit_AlbertEinstein_fullbody.webp';
 import Unit_ArtemisiaIOfCaria_fullbody from '../../images/heroes/intro/fullbody/Unit_ArtemisiaIOfCaria_fullbody.webp';
 import Unit_AshokaTheGreat_fullbody from '../../images/heroes/intro/fullbody/Unit_AshokaTheGreat_fullbody.webp';
 import Unit_AttilaTheHun_fullbody from '../../images/heroes/intro/fullbody/Unit_AttilaTheHun_fullbody.webp';
 import Unit_AztecTlacateccatl_fullbody from '../../images/heroes/intro/fullbody/Unit_AztecTlacateccatl_fullbody.webp';
 import Unit_BenjaminFranklin_fullbody from '../../images/heroes/intro/fullbody/Unit_BenjaminFranklin_fullbody.webp';
+import Unit_BessieColeman_fullbody from '../../images/heroes/intro/fullbody/Unit_BessieColeman_fullbody.webp';
 import Unit_Charlemagne_fullbody from '../../images/heroes/intro/fullbody/Unit_Charlemagne_fullbody.webp';
 import Unit_Cleopatra_fullbody from '../../images/heroes/intro/fullbody/Unit_Cleopatra_fullbody.webp';
 import Unit_Confucius_fullbody from '../../images/heroes/intro/fullbody/Unit_Confucius_fullbody.webp';
@@ -85,11 +87,13 @@ import Unit_AbrahamLincoln from '../../images/heroes/intro/icons/Unit_AbrahamLin
 import Unit_Achilles from '../../images/heroes/intro/icons/Unit_Achilles.webp';
 import Unit_AdaLovelace from '../../images/heroes/intro/icons/Unit_AdaLovelace.webp';
 import Unit_AlbertEinstein from '../../images/heroes/intro/icons/Unit_AlbertEinstein.webp';
+import Unit_AmeliaEarhart from '../../images/heroes/intro/icons/Unit_AmeliaEarhart.webp';
 import Unit_ArtemisiaIOfCaria from '../../images/heroes/intro/icons/Unit_ArtemisiaIOfCaria.webp';
 import Unit_AshokaTheGreat from '../../images/heroes/intro/icons/Unit_AshokaTheGreat.webp';
 import Unit_AttilaTheHun from '../../images/heroes/intro/icons/Unit_AttilaTheHun.webp';
 import Unit_AztecTlacateccatl from '../../images/heroes/intro/icons/Unit_AztecTlacateccatl.webp';
 import Unit_BenjaminFranklin from '../../images/heroes/intro/icons/Unit_BenjaminFranklin.webp';
+import Unit_BessieColeman from '../../images/heroes/intro/icons/Unit_BessieColeman.webp';
 import Unit_Charlemagne from '../../images/heroes/intro/icons/Unit_Charlemagne.webp';
 import Unit_Cleopatra from '../../images/heroes/intro/icons/Unit_Cleopatra.webp';
 import Unit_Confucius from '../../images/heroes/intro/icons/Unit_Confucius.webp';
@@ -173,11 +177,13 @@ import icon_hero_battle_ability_abrahamlincoln from '../../images/heroes/intro/a
 import icon_hero_battle_ability_achilles from '../../images/heroes/intro/abilities/icon_hero_battle_ability_achilles.webp';
 import icon_hero_battle_ability_adalovelace from '../../images/heroes/intro/abilities/icon_hero_battle_ability_adalovelace.webp';
 import icon_hero_battle_ability_alberteinstein from '../../images/heroes/intro/abilities/icon_hero_battle_ability_alberteinstein.webp';
+import icon_hero_battle_ability_ameliaearhart from '../../images/heroes/intro/abilities/icon_hero_battle_ability_ameliaearhart.webp';
 import icon_hero_battle_ability_artemisiaiofcaria from '../../images/heroes/intro/abilities/icon_hero_battle_ability_artemisiaiofcaria.webp';
 import icon_hero_battle_ability_ashokathegreat from '../../images/heroes/intro/abilities/icon_hero_battle_ability_ashokathegreat.webp';
 import icon_hero_battle_ability_attilathehun from '../../images/heroes/intro/abilities/icon_hero_battle_ability_attilathehun.webp';
 import icon_hero_battle_ability_aztectlacateccatl from '../../images/heroes/intro/abilities/icon_hero_battle_ability_aztectlacateccatl.webp';
 import icon_hero_battle_ability_benjaminfranklin from '../../images/heroes/intro/abilities/icon_hero_battle_ability_benjaminfranklin.webp';
+import icon_hero_battle_ability_bessiecoleman from '../../images/heroes/intro/abilities/icon_hero_battle_ability_bessiecoleman.webp';
 import icon_hero_battle_ability_charlemagne from '../../images/heroes/intro/abilities/icon_hero_battle_ability_charlemagne.webp';
 import icon_hero_battle_ability_cleopatra from '../../images/heroes/intro/abilities/icon_hero_battle_ability_cleopatra.webp';
 import icon_hero_battle_ability_confucius from '../../images/heroes/intro/abilities/icon_hero_battle_ability_confucius.webp';
@@ -292,6 +298,23 @@ import hero_backdrop_windmill from "../../images/heroes/intro/backdrops/hero-bac
 import hero_backdrop_eternal_rivals from "../../images/heroes/intro/backdrops/hero-backdrop-eternal-rivals.webp";
 
 const allHeroes = [
+    {
+        id: "amelia-earhart",
+        name: "Amelia Earhart",
+        codeName: "AmeliaEarhart",
+        image: Unit_AmeliaEarhart_fullbody,
+        icon: Unit_AmeliaEarhart,
+        backdrop: "italy",
+        stars: 5,
+        heroClass: "great-leader",
+        unit: "infantry",
+        color: "yellow",
+        abilityIcon: icon_hero_battle_ability_ameliaearhart,
+        abilityName: "Tactical Evacuation",
+        position: "backline",
+        damageType: [],
+        tacticalType: ["teleport", "heal", "buff"],
+    },
     {
         id: "ragnar-lodbrok",
         name: "Ragnar Lodbrok",
@@ -698,6 +721,23 @@ const allHeroes = [
         abilityName: "Art of Defense",
         position: "frontline",
         damageType: ["area_damage"],
+        tacticalType: ["debuff"],
+    },
+    {
+        id: "bessie-coleman",
+        name: "Bessie Coleman",
+        codeName: "BessieColeman",
+        image: Unit_BessieColeman_fullbody,
+        icon: Unit_BessieColeman,
+        backdrop: "italy",
+        stars: 4,
+        heroClass: "manipulator",
+        unit: "ranged",
+        color: "purple",
+        abilityIcon: icon_hero_battle_ability_bessiecoleman,
+        abilityName: "Smoke Flares",
+        position: "backline",
+        damageType: ["single_target"],
         tacticalType: ["debuff"],
     },
     {
