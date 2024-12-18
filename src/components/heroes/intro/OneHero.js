@@ -33,23 +33,65 @@ const OneHero = (props) => {
     const [lastCheckedRowIndex, setLastCheckedRowIndex] = useState(null);
 
     const handleCheckboxChange = (xp, foodCost, rowIndex, isChecked) => {
+        const rowIndexes = levelsExperiences
+            .flatMap((experience, index) => {
+                const starLevel = `hero_progression_cost.Cost_Star_${stars}`;
+                if (experience.definitionId === starLevel) {
+                    const currentCost = experience.levelUpCosts;
+                    return Object.keys(currentCost).map((level, levelIndex) => `${index}-${levelIndex}`);
+                }
+                return [];
+            });
+    
         if (isChecked) {
-            setCheckedRows((prevCheckedRows) => [...prevCheckedRows, rowIndex]);
-            setTotalXp((prevTotalXp) => prevTotalXp + xp);
-            setTotalFood((prevTotalFood) => prevTotalFood + foodCost);
+            // Handle checking (same as before)
+            const newCheckedRows = [...checkedRows, rowIndex].sort((a, b) => rowIndexes.indexOf(a) - rowIndexes.indexOf(b));
+            const firstIndex = rowIndexes.indexOf(newCheckedRows[0]);
+            const lastIndex = rowIndexes.indexOf(newCheckedRows[newCheckedRows.length - 1]);
+    
+            const rangeToCheck = rowIndexes.slice(firstIndex, lastIndex + 1);
+    
+            const totalValues = rangeToCheck.reduce(
+                (totals, index) => {
+                    const [expIndex, levelIndex] = index.split('-').map(Number);
+                    const cost = levelsExperiences[expIndex].levelUpCosts[Object.keys(levelsExperiences[expIndex].levelUpCosts)[levelIndex]];
+                    return {
+                        xp: totals.xp + cost.xp,
+                        food: totals.food + cost.xp * cost.costPerXp,
+                    };
+                },
+                { xp: 0, food: 0 }
+            );
+    
+            setCheckedRows(rangeToCheck);
+            setTotalXp(totalValues.xp);
+            setTotalFood(totalValues.food);
             setLastCheckedRowIndex(rowIndex);
         } else {
-            setCheckedRows((prevCheckedRows) =>
-                prevCheckedRows.filter((index) => index !== rowIndex)
+            // Handle unchecking
+            const indexOfUncheckedRow = rowIndexes.indexOf(rowIndex);
+            const rowsToKeep = checkedRows.filter((index) => rowIndexes.indexOf(index) < indexOfUncheckedRow);
+    
+            const totalValues = rowsToKeep.reduce(
+                (totals, index) => {
+                    const [expIndex, levelIndex] = index.split('-').map(Number);
+                    const cost = levelsExperiences[expIndex].levelUpCosts[Object.keys(levelsExperiences[expIndex].levelUpCosts)[levelIndex]];
+                    return {
+                        xp: totals.xp + cost.xp,
+                        food: totals.food + cost.xp * cost.costPerXp,
+                    };
+                },
+                { xp: 0, food: 0 }
             );
-            setTotalXp((prevTotalXp) => prevTotalXp - xp);
-            setTotalFood((prevTotalFood) => prevTotalFood - foodCost);
-            if (lastCheckedRowIndex === rowIndex) {
-                const newLastChecked = checkedRows.length > 1 ? checkedRows[checkedRows.length - 2] : null;
-                setLastCheckedRowIndex(newLastChecked);
-            }
+    
+            setCheckedRows(rowsToKeep);
+            setTotalXp(totalValues.xp);
+            setTotalFood(totalValues.food);
+            setLastCheckedRowIndex(rowsToKeep[rowsToKeep.length - 1] || null);
         }
     };
+    
+    
     
     const hero = allHeroes.find( (oneHero) => {
         return oneHero.id == heroId;

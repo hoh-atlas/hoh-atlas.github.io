@@ -65,7 +65,7 @@ const DropdownEra = ({ dropdownItems }) => {
 					const presetEra = getFromLocalStorage("preset_era");
 					const matchingItem = dropdownItems.find(item => item.value === presetEra);
 					let resultText = matchingItem ? matchingItem.text : "Unknown Era";
-					if (window.innerWidth <= 768 && resultText.length > 10) {
+					if (resultText.length > 10) {
 						resultText = resultText.substring(0, 10) + "...";
 					}
 					return resultText;

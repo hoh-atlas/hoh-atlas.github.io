@@ -4,11 +4,13 @@ import season_01_banner from "../../images/seasons/intro/season_01_banner.webp";
 import season_02_banner from "../../images/seasons/intro/season_02_banner.webp";
 import season_03_banner from "../../images/seasons/intro/season_03_banner.webp";
 import season_04_banner from "../../images/seasons/intro/season_04_banner.webp";
+import season_05_banner from "../../images/seasons/intro/season_05_banner.webp";
 
 import season_sale_offer_bg from "../../images/seasons/intro/season_sale_offer_bg.webp";
 import season_2_sale_offer_bg from "../../images/seasons/intro/season_2_sale_offer_bg.webp";
 import season_3_sale_offer_bg from "../../images/seasons/intro/season_3_sale_offer_bg.webp";
 import season_4_sale_offer_bg from "../../images/seasons/intro/season_4_sale_offer_bg.webp";
+import season_5_sale_offer_bg from "../../images/seasons/intro/season_5_sale_offer_bg.webp";
 
 const allSeasons = [
     {
@@ -16,11 +18,22 @@ const allSeasons = [
         codeName: "SeasonPass_04_2024",
         name: "Season 4: Eternal Rivals",
         image: arcane_antimatter,
-        startDate: "__ _ 2024",
-        endDate: "__ _ 2025",
+        startDate: "December 18th 2024",
+        endDate: "January 15th 2025",
         banner: season_04_banner,
         background: season_4_sale_offer_bg,
         uniqueHeroes: ["dracula", "abraham-van-helsing"],
+    },
+    {
+        id: 5,
+        codeName: "SeasonPass_05_2024",
+        name: "Season 5: Skyward Pioneers",
+        image: arcane_antimatter,
+        startDate: "__ _ 2025",
+        endDate: "__ _ 2025",
+        banner: season_05_banner,
+        background: season_5_sale_offer_bg,
+        uniqueHeroes: ["amelia-earhart", "bessie-coleman"],
     },
     {
         id: 3,

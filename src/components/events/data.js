@@ -1843,12 +1843,12 @@ const allEvents = [
                 amount: 10
             },
             {
-                resource: "chest_color_crests_red_common_enhanced_superior",
+                resource: "Dac_TeslaCrests_Red_20",
                 amount: 1,
                 //note: "For players in early eras, the chest only contains common and enhanced crests."
             },
             {
-                resource: "war_horn",
+                resource: "Dac_Reward_AscensionMaterial_BattleInsignia",
                 amount: 1
             },
             {
@@ -1856,11 +1856,11 @@ const allEvents = [
                 amount: 10
             },
             {
-                resource: "chest_color_crests_blue_common_enhanced_superior",
+                resource: "Dac_TeslaCrests_Blue_20",
                 amount: 1
             },
             {
-                resource: "customization_world_fair_2024_ticket_booth",
+                resource: "BuildingCustomization_EventWorldFair2024_CultureSite_Moderate",
                 amount: 1
             },
             {
@@ -1876,27 +1876,11 @@ const allEvents = [
                 amount: 10
             },
             {
-                resource: "customization_world_fair_2024_tesla_coil",
+                resource: "BuildingCustomization_EventWorldFair2024_Home_Small",
                 amount: 1
             },
             {
-                resource: "chest_color_crests_yellow_common_enhanced_superior",
-                amount: 1
-            },
-            {
-                resource: "antimatter_common_part",
-                amount: 10
-            },
-            {
-                resource: "chest_color_crests_purple_common_enhanced_superior",
-                amount: 1
-            },
-            {
-                resource: "fragrant_potpourri",
-                amount: 1
-            },
-            {
-                resource: "customization_world_fair_2024_ticket_booth",
+                resource: "Dac_TeslaCrests_Yellow_20",
                 amount: 1
             },
             {
@@ -1904,11 +1888,15 @@ const allEvents = [
                 amount: 10
             },
             {
-                resource: "customization_world_fair_2024_void_reactor",
+                resource: "Dac_TeslaCrests_Purple_20",
                 amount: 1
             },
             {
-                resource: "chest_color_crests_green_common_enhanced_superior",
+                resource: "Dac_Reward_AscensionMaterial_Herbology",
+                amount: 1
+            },
+            {
+                resource: "BuildingCustomization_EventWorldFair2024_CultureSite_Moderate",
                 amount: 1
             },
             {
@@ -1916,7 +1904,19 @@ const allEvents = [
                 amount: 10
             },
             {
-                resource: "shadow_dial",
+                resource: "BuildingCustomization_EventWorldFair2024_Home_Average",
+                amount: 1
+            },
+            {
+                resource: "Dac_TeslaCrests_Green_20",
+                amount: 1
+            },
+            {
+                resource: "antimatter_common_part",
+                amount: 10
+            },
+            {
+                resource: "Dac_Reward_AscensionMaterial_DeviceTimeSpace",
                 amount: 1
             },
             {

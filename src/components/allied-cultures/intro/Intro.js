@@ -21,6 +21,8 @@ import irrigation_3 from "../../../images/shared/resources/irrigation_3.webp";
 import china_city from "../../../images/allied-cultures/intro/china_city.webp";
 import china_bridge from "../../../images/allied-cultures/intro/china_bridge.webp";
 import egypt_bridge from "../../../images/allied-cultures/intro/egypt_bridge.webp";
+import vikings_city from "../../../images/allied-cultures/intro/vikings_city.webp";
+import vikings_glacier from "../../../images/allied-cultures/intro/vikings_glacier.webp";
 
 import ResearchHandler from "../../research/intro/ResearchHandler"; 
 
@@ -37,6 +39,7 @@ const Intro = (props) => {
 
     const egyptCultures = ["egypt_cheops_pyramid", "egypt_great_sphinx", "egypt_abu_simbel"];
     const chinaCultures = ["china_terracotta_army", "china_great_wall", "china_forbidden_city"];
+    const vikingsCultures = ["vikings_yggdrasil", "vikings_ellida", "vikings_valhalla"];
   
     return (
         <>
@@ -186,6 +189,68 @@ const Intro = (props) => {
                                         <td>3</td>
                                         <td>30000 {getItemIcon("wu_zhu")}</td>
                                         <td>2h</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        Visit the <b>Quests</b> tab to see all the quests that await you, the <b>Buildings</b> tab to find an overview of all buildings and their productions, and the <b>World Wonder</b> tab to find all the requirements, rewards and
+                        bonuses of the {alliedCulture.wonder.name}!
+                    </TextBlock>
+                ) : vikingsCultures.includes(alliedCulture.id) ? (
+                    <TextBlock>
+                        {alliedCulture.name} is one of the weekly events in the theme of Vikings culture. The World Wonder is the {alliedCulture.wonder.name} - a majestic structure located next to the allied city. 
+                        It contains 50 levels, each offering a unique reward including a special bonus for collecting {alliedCulture.wonder.boostedResources.map((resource, index) => (
+                            <>
+                                {index > 0 && index === alliedCulture.wonder.boostedResources.length - 1 ? ' and ' : index > 0 ? ', ' : ''}
+                                {resource.name} {getItemIcon(resource.id)}
+                            </>
+                        ))}
+                        &nbsp;that helps you to progress in the Allied Culture faster.
+
+                        <Image src={vikings_city} alt="" roundedCorners={true} spacing={true} maxHeight={'300px'}/>
+
+                        The core buildings in the game include Houses, which come in three types: Worker Houses, Sailor Houses, and Luxurious Houses. These provide Workers {getItemIcon("viking_worker")}, Sailors {getItemIcon("viking_sailor")}, or both, respectively, along with Pennies {getItemIcon("pennies")}.
+
+                        Production buildings consist of the Beehive, which produces Honey {getItemIcon("honey")}, and the Fishing Pier, which produces Fish {getItemIcon("fish")}.
+
+                        Secondary production buildings include the Tavern, where Honey is turned into Mead {getItemIcon("mead")} and, later, Honey and Fish are processed into Stockfish {getItemIcon("stockfish")}.
+
+                        Finally, there are two advanced production buildings:
+
+                        1) Expedition Pier, which converts Mead and Fish into Ceramic Treasure {getItemIcon("ceramic_treasure")} and Gold Treasure {getItemIcon("gold_treasure")},
+                        2) Sailor Port, which processes Mead and Stockfish into Spice Treasure {getItemIcon("spice_treasure")} and Gem Treasure {getItemIcon("gem_treasure")}.
+                        To progress further, visit the World Wonder tab to review the requirements for upgrading the {alliedCulture.wonder.name}.
+
+                        <Image src={vikings_glacier} alt="" roundedCorners={true} spacing={true} maxHeight={'200px'}/>
+
+                        Vikings do not contain a cultural system. Instead, they bring 2 types of expansions: Land Expansions {getItemIcon("expansion_vikings_land")} and Water Expansions {getItemIcon("expansion_vikings_water")}. Some buildings can only be placed on water
+                        (such as Fishing Pier, Expedition Pier and Sailor Port). To obtain any of these expansions, simply upgrade the World Wonder to higher levels.<br/><br/>
+
+                        Once you unlock the technology 'Glacier Mastery', you will be able to explore the second part of the playfield. You will need to create a path along the glacier:
+                        
+                        <div style={{ overflowX: 'auto', maxWidth: '100%' }}>
+                            <table style={{ marginTop: '20px', marginBottom: '20px' }}>
+                                <thead>
+                                    <tr>
+                                        <th colSpan={3}>Glacier</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Level</th>
+                                        <th>Requirements</th>
+                                        <th>Time</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Glacier Mastery</td>
+                                        <td>0s</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>100000 {getItemIcon("pennies")}</td>
+                                        <td>4h</td>
                                     </tr>
                                 </tbody>
                             </table>

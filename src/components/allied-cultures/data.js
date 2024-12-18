@@ -8,6 +8,8 @@ import terracotta_army from "../../images/allied-cultures/world-wonder/terracott
 import forbidden_city from "../../images/allied-cultures/world-wonder/forbidden_city.webp";
 import abu_simbel from "../../images/allied-cultures/world-wonder/abu_simbel.webp";
 import yggdrasil from "../../images/allied-cultures/world-wonder/yggdrasil.webp";
+import dragonship_ellida from "../../images/allied-cultures/world-wonder/dragonship_ellida.webp";
+import valhalla from "../../images/allied-cultures/world-wonder/valhalla.webp";
 import irrigation_1 from "../../images/shared/resources/irrigation_1.webp";
 import irrigation_3 from "../../images/shared/resources/irrigation_3.webp";
 import city_event_banner_egypt_cheopspyramid from "../../images/allied-cultures/intro/city_event_banner_egypt_cheopspyramid.webp";
@@ -808,6 +810,684 @@ const allAlliedCultures = [
                 {
                     id: "papyrus",
                     name: "Papyrus"
+                }
+            ],
+        }
+    },
+    {
+        id: "vikings_valhalla",
+        name: "Bravery's Call",
+        type: "Vikings",
+        image: city_event_banner_vikings_valhalla,
+        questlineColor: "#4C80A2",
+        questlines: [
+            {   
+                id: 1,
+                appearsAfter: [],
+                name: "Leaves of Fate",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "pennies",
+                        amount: 250
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Rise of the Vikings</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 30
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>4 Worker Home</b> on level <b>1</b> in <b>Viking Kingdom</b>",
+                            "Have <b>2 Sailor Home</b> on level <b>1</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 50
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Collect <b>20 Pennies</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 100
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 2,
+                appearsAfter: [1],
+                name: "Expedition Preparations",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "pennies",
+                        amount: 750
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Seafaring</b>",
+                            "Have <b>1 Water</b> expansion in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 150
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>1 Fishing Pier</b> on level <b>1</b> in <b>Viking Pier</b>",
+                            "Have <b>1 Luxurious Fishing Pier</b> on level <b>1</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "pennies",
+                            amount: 200
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Collect <b>10 Fish</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "fish",
+                            amount: 200
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Research <b>Beekeeping</b>",
+                            "Have <b>1 Beehive</b> on level <b>1</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 300
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Collect <b>5 Honey</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "honey",
+                            amount: 150
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 3,
+                appearsAfter: [2],
+                name: "Provisions",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "pennies",
+                        amount: 1500
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Mead Brewery</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 350
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>1 Tavern</b> on level <b>1</b> in <b>Viking Kingdom</b>",
+                            "Collect <b>20 Mead</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "fish",
+                            amount: 400
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Research <b>Plundering Raids</b>",
+                            "Have <b>2 Water</b> expansions in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 800
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>1 Expedition Pier</b> on level <b>1</b> in <b>Viking Kingdom</b>",
+                            "Have <b>1 Luxurious Sailor Port</b> on level <b>1</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "honey",
+                            amount: 300
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Collect <b>3 Ceramic Treasure</b> in <b>Viking Kingdom</b>",
+                            "Collect <b>2 Gold Treasure</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 1000
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 4,
+                appearsAfter: [3],
+                name: "Workforce",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "honey",
+                        amount: 2000
+                    },
+                    {
+                        resource: "fish",
+                        amount: 1000
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Jarldom</b>",
+                            "Have <b>4</b> expansions in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 1200
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>6 Worker Home</b> on level <b>2</b> in <b>Viking Kingdom</b>",
+                            "Have <b>2 Luxurious Home</b> on level <b>2</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "pennies",
+                            amount: 1100
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Research <b>Thralls and Karls</b>",
+                            "Have <b>5</b> expansions in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 1400
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>2 Sailor Home</b> on level <b>2</b> in <b>Viking Kingdom</b>",
+                            "Have <b>2 Luxurious Home</b> on level <b>2</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "pennies",
+                            amount: 1700
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Collect <b>30 Pennies</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 2000
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 5,
+                appearsAfter: [3],
+                name: "Eternal Ice",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "ceramic_treasure",
+                        amount: 1000
+                    },
+                    {
+                        resource: "gold_treasure",
+                        amount: 800
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Glacier Mastery</b>",
+                            "Complete <b>1</b> stage of <b>2</b> of the <b>Glacier</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "mead",
+                            amount: 2000
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 6,
+                appearsAfter: [4],
+                name: "Journey to Greatness",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "pennies",
+                        amount: 100000
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>11</b> technologies for <b>Viking Kingdom</b>",
+                            "Have <b>8 Building</b> on level <b>2</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 2500
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>3 Water</b> expansions in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 3000
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Have <b>2 Fishing Pier</b> on level <b>2</b> in <b>Viking Kingdom</b>",
+                            "Have <b>2 Luxurious Fishing Pier</b> on level <b>2</b> in <b>Viking Kingdom</b>",
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "pennies",
+                            amount: 4000
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Research <b>15</b> technologies for <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 5000
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Have <b>2 Tavern</b> on level <b>2</b> in <b>Viking Kingdom</b>",
+                            "Have <b>3 Beehive</b> on level <b>3</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 6000
+                        }
+                    },
+                    {
+                        id: 6,
+                        tasks: [
+                            "Research <b>17</b> technologies for <b>Viking Kingdom</b>",
+                            "Have <b>12 Building</b> on level <b>3</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 7000
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 7,
+                appearsAfter: [6],
+                name: "The Final Stretch",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "spice_treasure",
+                        amount: 3500
+                    },
+                    {
+                        resource: "jewel_treasure",
+                        amount: 1000
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Have <b>2 Tavern</b> on level <b>4</b> in <b>Viking Kingdom</b>",
+                            "Have <b>1 Sailor Port</b> on level <b>4</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 15000
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>12</b> expansions in <b>Viking Kingdom</b>",
+                            "Have <b>20 Building</b> on level <b>4</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "fish",
+                            amount: 7500
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Research <b>25</b> technologies for <b>Viking Kingdom</b>",
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "honey",
+                            amount: 5000
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>4 Beehive</b> on level <b>4</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 30000
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Research <b>30</b> technologies for <b>Viking Kingdom</b>",
+                            "Have <b>25 Building</b> on level <b>5</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "fish",
+                            amount: 15000
+                        }
+                    },
+                    {
+                        id: 6,
+                        tasks: [
+                            "Research <b>35</b> technologies for <b>Viking Kingdom</b>",
+                            "Have <b>20 Building</b> on level <b>6</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "honey",
+                            amount: 10000
+                        }
+                    },
+                    {
+                        id: 7,
+                        tasks: [
+                            "Research <b>39</b> technologies for <b>Viking Kingdom</b>",
+                            "Have <b>30 Building</b> on level <b>6</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 75000
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 10,
+                appearsAfter: [3],
+                name: "Yggdrasil - Phase I",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "antimatter_vikings",
+                        amount: 2
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>1</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 200
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>3</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 500
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>5</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 2000
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>10</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 4000
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 11,
+                appearsAfter: [10],
+                name: "Yggdrasil - Phase II",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "antimatter_vikings",
+                        amount: 2
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>15</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 7000
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>20</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 10000
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>25</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 15000
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 112,
+                appearsAfter: [11],
+                name: "Yggdrasil - Phase III",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "antimatter_vikings",
+                        amount: 15
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>30</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 20000
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>35</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 25000
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>40</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 35000
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>45</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 90000
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>50</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "antimatter_legendary_part",
+                            amount: 1
+                        }
+                    },
+                ]
+            },
+        ],
+        wonder: {
+            name: "Valhalla",
+            id: "Wonder_Vikings_Valhalla",
+            image: valhalla,
+            boostedResources: [
+                {
+                    id: "pennies",
+                    name: "Pennies"
                 }
             ],
         }
@@ -4340,6 +5020,688 @@ const allAlliedCultures = [
                 {
                     id: "gold_ore",
                     name: "Gold Ore"
+                }
+            ],
+        }
+    },
+    {
+        id: "vikings_ellida",
+        name: "Ellida's Wake",
+        type: "Vikings",
+        image: city_event_banner_vikings_dragonshipellida,
+        questlineColor: "#4C80A2",
+        questlines: [
+            {   
+                id: 1,
+                appearsAfter: [],
+                name: "Leaves of Fate",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "pennies",
+                        amount: 250
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Rise of the Vikings</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 30
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>4 Worker Home</b> on level <b>1</b> in <b>Viking Kingdom</b>",
+                            "Have <b>2 Sailor Home</b> on level <b>1</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 50
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Collect <b>20 Pennies</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 100
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 2,
+                appearsAfter: [1],
+                name: "Expedition Preparations",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "pennies",
+                        amount: 750
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Seafaring</b>",
+                            "Have <b>1 Water</b> expansion in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 150
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>1 Fishing Pier</b> on level <b>1</b> in <b>Viking Pier</b>",
+                            "Have <b>1 Luxurious Fishing Pier</b> on level <b>1</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "pennies",
+                            amount: 200
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Collect <b>10 Fish</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "fish",
+                            amount: 200
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Research <b>Beekeeping</b>",
+                            "Have <b>1 Beehive</b> on level <b>1</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 300
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Collect <b>5 Honey</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "honey",
+                            amount: 150
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 3,
+                appearsAfter: [2],
+                name: "Provisions",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "pennies",
+                        amount: 1500
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Mead Brewery</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 350
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>1 Tavern</b> on level <b>1</b> in <b>Viking Kingdom</b>",
+                            "Collect <b>20 Mead</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "fish",
+                            amount: 400
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Research <b>Plundering Raids</b>",
+                            "Have <b>2 Water</b> expansions in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 800
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>1 Expedition Pier</b> on level <b>1</b> in <b>Viking Kingdom</b>",
+                            "Have <b>1 Luxurious Sailor Port</b> on level <b>1</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "honey",
+                            amount: 300
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Collect <b>3 Ceramic Treasure</b> in <b>Viking Kingdom</b>",
+                            "Collect <b>2 Gold Treasure</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 1000
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 4,
+                appearsAfter: [3],
+                name: "Workforce",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "honey",
+                        amount: 2000
+                    },
+                    {
+                        resource: "fish",
+                        amount: 1000
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Jarldom</b>",
+                            "Have <b>4</b> expansions in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 1200
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>6 Worker Home</b> on level <b>2</b> in <b>Viking Kingdom</b>",
+                            "Have <b>2 Luxurious Home</b> on level <b>2</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "pennies",
+                            amount: 1100
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Research <b>Thralls and Karls</b>",
+                            "Have <b>5</b> expansions in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 1400
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>2 Sailor Home</b> on level <b>2</b> in <b>Viking Kingdom</b>",
+                            "Have <b>2 Luxurious Home</b> on level <b>2</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "pennies",
+                            amount: 1700
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Collect <b>30 Pennies</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 2000
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 5,
+                appearsAfter: [3],
+                name: "Eternal Ice",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "ceramic_treasure",
+                        amount: 1000
+                    },
+                    {
+                        resource: "gold_treasure",
+                        amount: 800
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>Glacier Mastery</b>",
+                            "Complete <b>1</b> stage of <b>2</b> of the <b>Glacier</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "mead",
+                            amount: 2000
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 6,
+                appearsAfter: [4],
+                name: "Journey to Greatness",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "pennies",
+                        amount: 100000
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Research <b>11</b> technologies for <b>Viking Kingdom</b>",
+                            "Have <b>8 Building</b> on level <b>2</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 2500
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>3 Water</b> expansions in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 3000
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Have <b>2 Fishing Pier</b> on level <b>2</b> in <b>Viking Kingdom</b>",
+                            "Have <b>2 Luxurious Fishing Pier</b> on level <b>2</b> in <b>Viking Kingdom</b>",
+                        ],
+                        relation: "or",
+                        reward: {
+                            resource: "pennies",
+                            amount: 4000
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Research <b>15</b> technologies for <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 5000
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Have <b>2 Tavern</b> on level <b>2</b> in <b>Viking Kingdom</b>",
+                            "Have <b>3 Beehive</b> on level <b>3</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 6000
+                        }
+                    },
+                    {
+                        id: 6,
+                        tasks: [
+                            "Research <b>17</b> technologies for <b>Viking Kingdom</b>",
+                            "Have <b>12 Building</b> on level <b>3</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 7000
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 7,
+                appearsAfter: [6],
+                name: "The Final Stretch",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "spice_treasure",
+                        amount: 3500
+                    },
+                    {
+                        resource: "jewel_treasure",
+                        amount: 1000
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Have <b>2 Tavern</b> on level <b>4</b> in <b>Viking Kingdom</b>",
+                            "Have <b>1 Sailor Port</b> on level <b>4</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 15000
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>12</b> expansions in <b>Viking Kingdom</b>",
+                            "Have <b>20 Building</b> on level <b>4</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "fish",
+                            amount: 7500
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Research <b>25</b> technologies for <b>Viking Kingdom</b>",
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "honey",
+                            amount: 5000
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>4 Beehive</b> on level <b>4</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 30000
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Research <b>30</b> technologies for <b>Viking Kingdom</b>",
+                            "Have <b>25 Building</b> on level <b>5</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "fish",
+                            amount: 15000
+                        }
+                    },
+                    {
+                        id: 6,
+                        tasks: [
+                            "Research <b>35</b> technologies for <b>Viking Kingdom</b>",
+                            "Have <b>20 Building</b> on level <b>6</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "honey",
+                            amount: 10000
+                        }
+                    },
+                    {
+                        id: 7,
+                        tasks: [
+                            "Research <b>39</b> technologies for <b>Viking Kingdom</b>",
+                            "Have <b>30 Building</b> on level <b>6</b> in <b>Viking Kingdom</b>"
+                        ],
+                        relation: "plus",
+                        reward: {
+                            resource: "pennies",
+                            amount: 75000
+                        }
+                    }
+                ]
+            },
+            {   
+                id: 10,
+                appearsAfter: [3],
+                name: "Yggdrasil - Phase I",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "antimatter_vikings",
+                        amount: 2
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>1</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 200
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>3</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 500
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>5</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 2000
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>10</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 4000
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 11,
+                appearsAfter: [10],
+                name: "Yggdrasil - Phase II",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "antimatter_vikings",
+                        amount: 2
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>15</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 7000
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>20</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 10000
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>25</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 15000
+                        }
+                    },
+                ]
+            },
+            {   
+                id: 112,
+                appearsAfter: [11],
+                name: "Yggdrasil - Phase III",
+                questgiver: "",
+                rewards: [
+                    {
+                        resource: "antimatter_vikings",
+                        amount: 15
+                    }
+                ],
+                quests: [
+                    {
+                        id: 1,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>30</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 20000
+                        }
+                    },
+                    {
+                        id: 2,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>35</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 25000
+                        }
+                    },
+                    {
+                        id: 3,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>40</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 35000
+                        }
+                    },
+                    {
+                        id: 4,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>45</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "pennies",
+                            amount: 90000
+                        }
+                    },
+                    {
+                        id: 5,
+                        tasks: [
+                            "Have <b>Yggdrasil</b> on level <b>50</b>"
+                        ],
+                        relation: null,
+                        reward: {
+                            resource: "antimatter_legendary_part",
+                            amount: 1
+                        }
+                    },
+                ]
+            },
+        ],
+        wonder: {
+            name: "Dragonship Ellida",
+            id: "Wonder_Vikings_DragonshipEllida",
+            image: dragonship_ellida,
+            boostedResources: [
+                {
+                    id: "honey",
+                    name: "Honey"
+                },
+                {
+                    id: "pennies",
+                    name: "Pennies"
                 }
             ],
         }
