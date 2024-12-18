@@ -64,7 +64,9 @@ const WorldWonder = (props) => {
                 {reward.rewards && renderRewards(reward.rewards)}
             </span>
         ));
-    };    
+    };
+
+    let costsSum = {};
   
     return (
       <>
@@ -84,13 +86,16 @@ const WorldWonder = (props) => {
                         <th style={{ width: '5%' }}>
                             Level
                         </th>
-                        <th style={{ width: '35%' }}>
+                        <th style={{ width: '18%' }}>
                             Costs
                         </th>
-                        <th style={{ width: '10%' }}>
+                        <th style={{ width: '18%' }}>
+                            Costs Sum
+                        </th>
+                        <th style={{ width: '7%' }}>
                             Chests
                         </th>
-                        <th style={{ width: '10%' }}>
+                        <th style={{ width: '7%' }}>
                             Chests Sum
                         </th>
                         <th style={{ width: '15%' }}>
@@ -103,63 +108,80 @@ const WorldWonder = (props) => {
                 </thead>
                 <tbody>
                     {
-                        Array.from({ length: 51 }, (_, index) => (
-                            <tr>
-                                <td>{index}</td>
-                                <td>
-                                {
-                                    index !== 0 && requirementsByLevels[index-1] !== undefined && Object.entries(
-                                        requirementsByLevels[index-1].crates.reduce((acc, crate) => {
-                                            const { definitionId, amount } = crate.cost;
-                                            const totalAmount = crate.crateAmount * amount;
+                        Array.from({ length: 51 }, (_, index) => {
 
-                                            if (!acc[definitionId]) {
-                                                acc[definitionId] = 0;
-                                            }
-                                            acc[definitionId] += totalAmount;
+                            return (
+                                <tr>
+                                    <td>{index}</td>
+                                    <td>
+                                    {
+                                        index !== 0 && requirementsByLevels[index-1] !== undefined && Object.entries(
+                                            requirementsByLevels[index-1].crates.reduce((acc, crate) => {
+                                                const { definitionId, amount } = crate.cost;
+                                                const totalAmount = crate.crateAmount * amount;
 
-                                            return acc;
-                                        }, {})
-                                    ).map(([definitionId, totalAmount]) => (
-                                        <span key={definitionId} className="resource-span">
-                                            {totalAmount} {getItemIcon(definitionId)}
-                                        </span>
-                                    ))
-                                }
-                                </td>
-                                <td>
-                                    {
-                                        index !== 0 && requirementsByLevels[index - 1] !== undefined && (
-                                            <span className="resource-span">
-                                                {
-                                                    requirementsByLevels[index - 1].crates.reduce((totalCrates, crate) => {
-                                                        chestsSum += crate.crateAmount;
-                                                        return totalCrates + crate.crateAmount;
-                                                    }, 0)
-                                                } {getItemIcon("icon_crate", "18px")}
-                                            </span>
-                                        )
-                                    }
-                                </td>
-                                <td>
-                                    <span className="resource-span">{chestsSum} {getItemIcon("icon_crate", "18px")}</span>
-                                </td>
-                                <td>
-                                    {
-                                        boostsPerLevel.map((boost) => (
-                                            <span className="resource-span">
-                                                {boost.levels[index]}% {getItemIcon(boost.resource)}
+                                                if (!acc[definitionId]) {
+                                                    acc[definitionId] = 0;
+                                                }
+                                                acc[definitionId] += totalAmount;
+                                                
+                                                if (!costsSum[definitionId]) {
+                                                    costsSum[definitionId] = 0;
+                                                }
+                                                costsSum[definitionId] += totalAmount;
+
+                                                return acc;
+                                            }, {})
+                                        ).map(([definitionId, totalAmount]) => (
+                                            <span key={definitionId} className="resource-span">
+                                                {totalAmount} {getItemIcon(definitionId)}
                                             </span>
                                         ))
                                     }
-                                </td>
-                                <td>
-                                {
-                                    rewards[index]?.rewards && renderRewards(rewards[index].rewards)
-                                }
-                                </td>
-                            </tr>
-                        ))
+                                    </td>
+                                    <td>
+                                        {
+                                            Object.keys(costsSum).map((resourceId) => {
+                                                return (
+                                                    <span className="resource-span"><small>{costsSum[resourceId]}x {getItemIcon(resourceId, "16px")}</small></span>
+                                                )
+                                            })
+                                        }
+                                    </td>
+                                    <td>
+                                        {
+                                            index !== 0 && requirementsByLevels[index - 1] !== undefined && (
+                                                <span className="resource-span">
+                                                    {
+                                                        requirementsByLevels[index - 1].crates.reduce((totalCrates, crate) => {
+                                                            chestsSum += crate.crateAmount;
+                                                            return totalCrates + crate.crateAmount;
+                                                        }, 0)
+                                                    } {getItemIcon("icon_crate", "18px")}
+                                                </span>
+                                            )
+                                        }
+                                    </td>
+                                    <td>
+                                        <span className="resource-span">{chestsSum} {getItemIcon("icon_crate", "18px")}</span>
+                                    </td>
+                                    <td>
+                                        {
+                                            boostsPerLevel.map((boost) => (
+                                                <span className="resource-span">
+                                                    {boost.levels[index]}% {getItemIcon(boost.resource)}
+                                                </span>
+                                            ))
+                                        }
+                                    </td>
+                                    <td>
+                                    {
+                                        rewards[index]?.rewards && renderRewards(rewards[index].rewards)
+                                    }
+                                    </td>
+                                </tr>
+                            )
+                        })
                     }
                 </tbody>
             </table>
