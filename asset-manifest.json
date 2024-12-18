@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6d690acd.css",
-    "main.js": "/static/js/main.a65839cf.js",
+    "main.js": "/static/js/main.691c51b6.js",
     "static/media/layout_5_sector_3.webp": "/static/media/layout_5_sector_3.c0f317a3382f299fbe11.webp",
     "static/media/layout_egypt_3_sector_3.webp": "/static/media/layout_egypt_3_sector_3.176bb3c09225286b101a.webp",
     "static/media/layout_egypt_4_sector_3.webp": "/static/media/layout_egypt_4_sector_3.ca8d981c13c641b372d7.webp",
@@ -96,6 +96,7 @@
     "static/media/age_transition_ancient_greece_main1.webp": "/static/media/age_transition_ancient_greece_main1.0ced59b1183460d80383.webp",
     "static/media/winter_event_2024_frozen_pond.webp": "/static/media/winter_event_2024_frozen_pond.c328f3e5bfa8bb9b9945.webp",
     "static/media/world_fair_2024_void_reactor.webp": "/static/media/world_fair_2024_void_reactor.2fe79fbfd55f4c61bc44.webp",
+    "static/media/Unit_AmeliaEarhart_fullbody.webp": "/static/media/Unit_AmeliaEarhart_fullbody.02a703fa3869a4ed7ca7.webp",
     "static/media/winter_event_2024_winter_home_2.webp": "/static/media/winter_event_2024_winter_home_2.bb3df426121e3b963af4.webp",
     "static/media/ath_pirate_den.webp": "/static/media/ath_pirate_den.7d23bccb4d8f8977e583.webp",
     "static/media/Unit_Dracula_fullbody.webp": "/static/media/Unit_Dracula_fullbody.1e98c0ae40c884829bb5.webp",
@@ -125,6 +126,7 @@
     "static/media/Unit_PakalTheGreat_fullbody.webp": "/static/media/Unit_PakalTheGreat_fullbody.6c75203aa3e7d54e60f5.webp",
     "static/media/Unit_Hatshepsut_fullbody.webp": "/static/media/Unit_Hatshepsut_fullbody.f23bf1e7d557683aaffc.webp",
     "static/media/Unit_RagnarLodbrok_fullbody.webp": "/static/media/Unit_RagnarLodbrok_fullbody.bfda8dfe7bb04980e3c6.webp",
+    "static/media/Unit_BessieColeman_fullbody.webp": "/static/media/Unit_BessieColeman_fullbody.cf76a44b3234ddf9d3b5.webp",
     "static/media/Unit_Spartacus_fullbody.webp": "/static/media/Unit_Spartacus_fullbody.82f25e6d14c049ab0bd7.webp",
     "static/media/Unit_JoanOfArc_fullbody.webp": "/static/media/Unit_JoanOfArc_fullbody.573a52b3908d8653240e.webp",
     "static/media/age_transition_kingdom_of_sicily_main1.webp": "/static/media/age_transition_kingdom_of_sicily_main1.d8f8fdf66a225aa426ee.webp",
@@ -231,6 +233,7 @@
     "static/media/hero-backdrop-renaissance.webp": "/static/media/hero-backdrop-renaissance.e31abacf1cee181ce514.webp",
     "static/media/world_fair_2024_invention_4.webp": "/static/media/world_fair_2024_invention_4.6fd59fad11fa8a393370.webp",
     "static/media/season_2_sale_offer_bg.webp": "/static/media/season_2_sale_offer_bg.861cc2be1b36c96be8e5.webp",
+    "static/media/Unit_AmeliaEarhart.webp": "/static/media/Unit_AmeliaEarhart.e344c6f3b99ef8792862.webp",
     "static/media/season_03_banner.webp": "/static/media/season_03_banner.7a45029606d81e333733.webp",
     "static/media/EventPassPremiumPriceChest.webp": "/static/media/EventPassPremiumPriceChest.17e36140b9ec3748a3c2.webp",
     "static/media/world_fair_2024_rareflower_5.webp": "/static/media/world_fair_2024_rareflower_5.a5cd09a471e4400882d7.webp",
@@ -244,6 +247,7 @@
     "static/media/Navbar_AlliedCultures.webp": "/static/media/Navbar_AlliedCultures.4b51fe745d3761391b53.webp",
     "static/media/world_fair_2024_invention_3.webp": "/static/media/world_fair_2024_invention_3.899297f2a7e9b7a49c3b.webp",
     "static/media/world_fair_2024_rareflower_4.webp": "/static/media/world_fair_2024_rareflower_4.39b7dadab7381657daa5.webp",
+    "static/media/Unit_BessieColeman.webp": "/static/media/Unit_BessieColeman.b36efef99ac1437b5b09.webp",
     "static/media/season_04_banner.webp": "/static/media/season_04_banner.15bf9db0888fbd93564e.webp",
     "static/media/ath_jolly_roger.webp": "/static/media/ath_jolly_roger.a8633ebfbf5e69913b57.webp",
     "static/media/Navbar_TreasureHunt.webp": "/static/media/Navbar_TreasureHunt.68ccad2453f6e9284bca.webp",
@@ -294,6 +298,7 @@
     "static/media/world_fair_2024_invention_1.webp": "/static/media/world_fair_2024_invention_1.7fef538737522113579a.webp",
     "static/media/Technology_BronzeAge_Alliances.webp": "/static/media/Technology_BronzeAge_Alliances.d65946b1e9bfc82ffde6.webp",
     "static/media/Navbar_Campaign.webp": "/static/media/Navbar_Campaign.1593034ee310ade0fd81.webp",
+    "static/media/icon_hero_battle_ability_bessiecoleman.webp": "/static/media/icon_hero_battle_ability_bessiecoleman.f396301507483b89310c.webp",
     "static/media/Unit_Charlemagne.webp": "/static/media/Unit_Charlemagne.9d5be8bb0b6d7ccac7c9.webp",
     "static/media/Unit_Hercules.webp": "/static/media/Unit_Hercules.49f1df9ad2c610224b4b.webp",
     "static/media/School.webp": "/static/media/School.2119b90f9b18f47d145e.webp",
@@ -314,6 +319,7 @@
     "static/media/Unit_Menes.webp": "/static/media/Unit_Menes.eadcc6677440d955c873.webp",
     "static/media/Unit_Hatshepsut.webp": "/static/media/Unit_Hatshepsut.7ba1f45550db20407a7a.webp",
     "static/media/Unit_NubianMercenary.webp": "/static/media/Unit_NubianMercenary.ebc8cffe83b64eee754e.webp",
+    "static/media/icon_hero_battle_ability_ameliaearhart.webp": "/static/media/icon_hero_battle_ability_ameliaearhart.fd02c86e7ae7a39a419c.webp",
     "static/media/Viking_Beehive_Lv3.webp": "/static/media/Viking_Beehive_Lv3.49e638428b1b3426d992.webp",
     "static/media/Technology_Roman_Empire_Urban_Management.webp": "/static/media/Technology_Roman_Empire_Urban_Management.5edd7a210dcdb3e1a867.webp",
     "static/media/city_event_banner_egypt_great_sphinx.webp": "/static/media/city_event_banner_egypt_great_sphinx.c7118b5d31f949df21ea.webp",
@@ -1068,10 +1074,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.6d690acd.css.map": "/static/css/main.6d690acd.css.map",
-    "main.a65839cf.js.map": "/static/js/main.a65839cf.js.map"
+    "main.691c51b6.js.map": "/static/js/main.691c51b6.js.map"
   },
   "entrypoints": [
     "static/css/main.6d690acd.css",
-    "static/js/main.a65839cf.js"
+    "static/js/main.691c51b6.js"
   ]
 }
