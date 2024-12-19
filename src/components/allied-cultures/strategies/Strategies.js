@@ -50,6 +50,15 @@ import layout_egypt_3_sector_3 from "../../../images/allied-cultures/strategies/
 import layout_egypt_4_sector_1 from "../../../images/allied-cultures/strategies/layout_egypt_4_sector_1.webp";
 import layout_egypt_4_sector_2 from "../../../images/allied-cultures/strategies/layout_egypt_4_sector_2.webp";
 import layout_egypt_4_sector_3 from "../../../images/allied-cultures/strategies/layout_egypt_4_sector_3.webp";
+import sketch_vikings_1 from "../../../images/allied-cultures/strategies/sketch_vikings_1.webp";
+import sketch_vikings_2 from "../../../images/allied-cultures/strategies/sketch_vikings_2.webp";
+import sketch_vikings_3 from "../../../images/allied-cultures/strategies/sketch_vikings_3.webp";
+import sketch_vikings_4 from "../../../images/allied-cultures/strategies/sketch_vikings_4.webp";
+import sketch_vikings_5 from "../../../images/allied-cultures/strategies/sketch_vikings_5.webp";
+import layout_vikings_1_sector_1 from "../../../images/allied-cultures/strategies/layout_vikings_1_sector_1.webp";
+import layout_vikings_2_sector_1 from "../../../images/allied-cultures/strategies/layout_vikings_2_sector_1.webp";
+import layout_vikings_3_sector_1 from "../../../images/allied-cultures/strategies/layout_vikings_3_sector_1.webp";
+import layout_vikings_3_sector_2 from "../../../images/allied-cultures/strategies/layout_vikings_3_sector_2.webp";
 
 const Strategies = (props) => {
 
@@ -64,6 +73,7 @@ const Strategies = (props) => {
 
     const egyptCultures = ["egypt_cheops_pyramid", "egypt_great_sphinx", "egypt_abu_simbel"];
     const chinaCultures = ["china_terracotta_army", "china_great_wall", "china_forbidden_city"];
+    const vikingsCultures = ["vikings_yggdrasil", "vikings_ellida", "vikings_valhalla"];
   
     return (
       <>
@@ -267,6 +277,64 @@ const Strategies = (props) => {
                         In this final part of the event, many of you will likely have slightly different reserves of primary resources (such as Rice or Silk Threads) depending on how long it took to reach certain layouts
                         and how consistently you collected productions. For this reason - if you find yourself needing a specific resource over time - you may need to make slight modifications to Layout 5 based on your particular needs. For example,
                         if the current World Wonder offers bonus for Rice, you may remove some of your Rice Farms and replace them by other production buildings you need.
+
+                    </TextBlock>
+                ) : vikingsCultures.includes(alliedCulture.id) ? (
+                    <TextBlock>
+                        When the Allied Culture event begins, you should keep the following goals in mind:
+
+                        <ul>
+                            <li>Build as many Worker Houses as possible to produce a lot of Pennies {getItemIcon("pennies")} and later, replace most of them with Sailor Houses, so that once the research is done, you can focus more
+                                on producing Treasures {getItemIcon("gold_treasure")}</li>
+                            <li>Place expansions in a checkerboard pattern to save time when placing adjoining expansions (take a look at the sketches below to learn more)</li>
+                            <li>When progressing in research, always try to unlock the upgrades for Houses first</li>
+                            <li>Short productions are more effective than the long ones, so the shorter you choose, the faster you will progress</li>
+                            <li>This guide will help you compete with Gold League players by maximizing the effectiveness of your city. To achieve that, you still need to play regularly of course</li>
+                        </ul>
+
+                        In the picture below, you can find the sketch of the Vikings city right at the beginning:
+
+                        <Image src={sketch_vikings_1} alt="" roundedCorners={false} spacing={true} maxHeight={'300px'}/>
+
+                        Right when the Vikings culture begins, you will have 3 Land Expansions and 2 Water Expansions available. Place them as follows:
+
+                        <Image src={sketch_vikings_2} alt="" roundedCorners={false} spacing={true} maxHeight={'300px'}/>
+
+                        Maximize the number of Worker Homes and build a necessary amount of Sailor Homes. From production buildings, one from each (Beehive, Tavern, Fishing Pier and Expedition Pier) will be enough for now. Your first goal in research will be to unlock 'Jarldom' and 'Thralls and Karls'
+                        technologies. Once done, upgrade all your houses to level 2. The layout below will show you the current state:
+
+                        <LayoutsBook header={"Layout 1"} images={[layout_vikings_1_sector_1]} />
+
+                        Next goal is to unlock the 'Improved Beekeeping' technology and upgrade your Beehive to level 2. Around this time, you should have your World Wonder at level 2. Place the new expansions as follows:
+
+                        <Image src={sketch_vikings_3} alt="" roundedCorners={false} spacing={true} maxHeight={'300px'}/>
+
+                        Note that you can start unlocking all of these expansions simultaneously. Next goal is to unlock 'Tar Ovens' technology, then 'Runic Writing' technology and then 'Fishing Nets' technology. Then, start upgrading your Worker Houses
+                        to level 3. See the layout below for the current state:
+
+                        <LayoutsBook header={"Layout 2"} images={[layout_vikings_2_sector_1]} />
+
+                        When you upgrade your World Wonder to level 7, place the new expansions as displayed on the sketch below. Note, that thanks to the checkerboard pattern we follow, you can place them simultaneously and save time:
+
+                        <Image src={sketch_vikings_4} alt="" roundedCorners={false} spacing={true} maxHeight={'300px'}/>
+
+                        Fill this space with more Houses, unlock 'Fearing Mastery' technology and upgrade Tavern, Fishing Spots and Expedition Piers to level 2. Suggested layout for this state:
+
+                        <LayoutsBook header={"Layout 3"} images={[layout_vikings_3_sector_1,layout_vikings_3_sector_2]} />
+
+                        Keep upgrading all the newly built Worker Houses to level 3. Then head for the 'Pictograms' technology and upgrade your Beehive to level 3. Once done, unlock 'Skaldic Poetry' and start upgrading your Sailor Houses to level 3.
+                        Then, unlock 'Drift Nets'.<br/><br/>
+
+                        When your World Wonder reach level 13, place the new expansions as follows:
+
+                        <Image src={sketch_vikings_5} alt="" roundedCorners={false} spacing={true} maxHeight={'300px'}/>
+
+                        As we will soon start heavily focusing on productions, we will need more advanced Sailor Houses. To achieve that, head for the 'Funeral At Sea' technology. Once unlocked, start upgrading your Sailor Houses to level 4. Upgrade your Taverns to level 3.
+                        Take a look at the current state:
+
+                        {/*<LayoutsBook header={"Layout 4"} images={[layout_4_sector_1,layout_4_sector_2,layout_4_sector_3]} />*/}
+
+                        We are working on the final parts of this guide, that will include second part of the Vikings playfield (behind the glacier). We are looking forward to sharing it with you soon.
 
                     </TextBlock>
                 ) : null
