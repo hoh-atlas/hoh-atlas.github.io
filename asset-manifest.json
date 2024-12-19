@@ -1,13 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.f1cd7f0a.css",
-    "main.js": "/static/js/main.da162c74.js",
+    "main.js": "/static/js/main.bb4ee1e3.js",
     "static/media/layout_5_sector_3.webp": "/static/media/layout_5_sector_3.c0f317a3382f299fbe11.webp",
+    "static/media/layout_vikings_5_sector_1.webp": "/static/media/layout_vikings_5_sector_1.53b484e845e9b530fcfe.webp",
+    "static/media/layout_vikings_6_sector_1.webp": "/static/media/layout_vikings_6_sector_1.427b78d13967c655fb88.webp",
     "static/media/layout_egypt_3_sector_3.webp": "/static/media/layout_egypt_3_sector_3.176bb3c09225286b101a.webp",
     "static/media/layout_egypt_4_sector_3.webp": "/static/media/layout_egypt_4_sector_3.ca8d981c13c641b372d7.webp",
     "static/media/layout_vikings_3_sector_1.webp": "/static/media/layout_vikings_3_sector_1.276a41165379e7f3f61a.webp",
     "static/media/layout_4_sector_3.webp": "/static/media/layout_4_sector_3.e88146e9c9ed7496bcb5.webp",
     "static/media/layout_vikings_2_sector_1.webp": "/static/media/layout_vikings_2_sector_1.a4a948c137246d821e03.webp",
+    "static/media/layout_vikings_4_sector_1.webp": "/static/media/layout_vikings_4_sector_1.e6f1d9df90f91fcc08fd.webp",
     "static/media/layout_4_sector_1.webp": "/static/media/layout_4_sector_1.7c73d107ef72fe873aac.webp",
     "static/media/layout_4_sector_2.webp": "/static/media/layout_4_sector_2.81a4c629cfe50df59915.webp",
     "static/media/layout_5_sector_2.webp": "/static/media/layout_5_sector_2.11da277ecf97781187c5.webp",
@@ -24,10 +27,17 @@
     "static/media/layout_vikings_3_sector_2.webp": "/static/media/layout_vikings_3_sector_2.ce06b69c6b18a7991989.webp",
     "static/media/layout_1_sector_1.webp": "/static/media/layout_1_sector_1.f6d1432f942e9f1ebc40.webp",
     "static/media/layout_egypt_4_sector_1.webp": "/static/media/layout_egypt_4_sector_1.3d59ab6df623d4f138d0.webp",
+    "static/media/layout_vikings_6_sector_2.webp": "/static/media/layout_vikings_6_sector_2.d810ab55bf1480e8019b.webp",
+    "static/media/layout_vikings_5_sector_2.webp": "/static/media/layout_vikings_5_sector_2.15dc6d7d2c1fa68372af.webp",
     "static/media/layout_egypt_3_sector_1.webp": "/static/media/layout_egypt_3_sector_1.e107b337b652e9a53eb1.webp",
+    "static/media/layout_vikings_6_sector_3.webp": "/static/media/layout_vikings_6_sector_3.01a6222595f3ba9e98bb.webp",
+    "static/media/layout_vikings_4_sector_2.webp": "/static/media/layout_vikings_4_sector_2.d63a5fbbcfe459313100.webp",
+    "static/media/layout_vikings_5_sector_3.webp": "/static/media/layout_vikings_5_sector_3.54c7b280f7122881bccf.webp",
     "static/media/layout_egypt_4_sector_2.webp": "/static/media/layout_egypt_4_sector_2.4d08c55513709dbc5b99.webp",
     "static/media/layout_egypt_3_sector_2.webp": "/static/media/layout_egypt_3_sector_2.0c563244f96ce56232fa.webp",
+    "static/media/layout_vikings_6_sector_4.webp": "/static/media/layout_vikings_6_sector_4.920220eec6e15ce4aaac.webp",
     "static/media/layout_egypt_2_sector_1.webp": "/static/media/layout_egypt_2_sector_1.ec588147cc8158f47c9e.webp",
+    "static/media/layout_vikings_4_sector_3.webp": "/static/media/layout_vikings_4_sector_3.2be22b96182ccd3431a6.webp",
     "static/media/layout_egypt_1_sector_1.webp": "/static/media/layout_egypt_1_sector_1.6bf37a3f01c12d2a62fb.webp",
     "static/media/layout_egypt_2_sector_2.webp": "/static/media/layout_egypt_2_sector_2.b0086f13339fc8f9732d.webp",
     "static/media/WorldMap_Fallback.webp": "/static/media/WorldMap_Fallback.33c9095fed2a78a9cc45.webp",
@@ -527,6 +537,7 @@
     "static/media/Capital_Rural_Farm_Lv27.webp": "/static/media/Capital_Rural_Farm_Lv27.753ed04cfe973716dd13.webp",
     "static/media/Capital_Luxurious_Home_Lv30.webp": "/static/media/Capital_Luxurious_Home_Lv30.75dbfa02b4f6c3172374.webp",
     "static/media/Capital_Cavalry_Barracks_Lv11.webp": "/static/media/Capital_Cavalry_Barracks_Lv11.9c8301ffddca6a935b80.webp",
+    "static/media/sketch_vikings_6.webp": "/static/media/sketch_vikings_6.55480637267699788f70.webp",
     "static/media/Capital_Siege_Barracks_Lv9.webp": "/static/media/Capital_Siege_Barracks_Lv9.b43b8591d044b62c6f1f.webp",
     "static/media/Viking_Sailor_Home_Lv6.webp": "/static/media/Viking_Sailor_Home_Lv6.d058690b348233da30e8.webp",
     "static/media/Capital_Average_Home_Lv32.webp": "/static/media/Capital_Average_Home_Lv32.00f9a531763d5ef14ae0.webp",
@@ -580,6 +591,7 @@
     "static/media/Viking_Sailor_Home_Lv4.webp": "/static/media/Viking_Sailor_Home_Lv4.4cf377dcbd4bb78054ad.webp",
     "static/media/Capital_Rural_Farm_Lv26.webp": "/static/media/Capital_Rural_Farm_Lv26.8e951ee4e3fb797706f8.webp",
     "static/media/Capital_Small_Home_Lv25.webp": "/static/media/Capital_Small_Home_Lv25.669b609b05859219bab3.webp",
+    "static/media/sketch_vikings_7.webp": "/static/media/sketch_vikings_7.6b6a20e38d940bb28a1d.webp",
     "static/media/Capital_Luxurious_Farm_Lv18.webp": "/static/media/Capital_Luxurious_Farm_Lv18.934710bcc7b47ea1f38a.webp",
     "static/media/icon_expansion_city_capital_land.webp": "/static/media/icon_expansion_city_capital_land.0ef703bbf14fcb112753.webp",
     "static/media/Capital_Average_Home_Lv12.webp": "/static/media/Capital_Average_Home_Lv12.c1d1b12f958b05cc51c1.webp",
@@ -1089,10 +1101,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.f1cd7f0a.css.map": "/static/css/main.f1cd7f0a.css.map",
-    "main.da162c74.js.map": "/static/js/main.da162c74.js.map"
+    "main.bb4ee1e3.js.map": "/static/js/main.bb4ee1e3.js.map"
   },
   "entrypoints": [
     "static/css/main.f1cd7f0a.css",
-    "static/js/main.da162c74.js"
+    "static/js/main.bb4ee1e3.js"
   ]
 }
