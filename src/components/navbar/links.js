@@ -83,13 +83,20 @@ const links = [
     },
     {
         id: 11,
+        url: "/leaderboards",
+        text: "Leaderboards",
+        img: Navbar_Resources,
+        show: false,
+    },
+    {
+        id: 12,
         url: "/tesla-storms",
         text: "Tesla Storms",
         img: "https://i.ibb.co/nRvy33n/event-widget-backer-time-Paradox-2021.png",
         show: false,
     },
     {
-        id: 12,
+        id: 13,
         url: "/community",
         text: "Community",
         img: Navbar_Community,
