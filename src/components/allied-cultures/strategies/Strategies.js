@@ -55,10 +55,22 @@ import sketch_vikings_2 from "../../../images/allied-cultures/strategies/sketch_
 import sketch_vikings_3 from "../../../images/allied-cultures/strategies/sketch_vikings_3.webp";
 import sketch_vikings_4 from "../../../images/allied-cultures/strategies/sketch_vikings_4.webp";
 import sketch_vikings_5 from "../../../images/allied-cultures/strategies/sketch_vikings_5.webp";
+import sketch_vikings_6 from "../../../images/allied-cultures/strategies/sketch_vikings_6.webp";
+import sketch_vikings_7 from "../../../images/allied-cultures/strategies/sketch_vikings_7.webp";
 import layout_vikings_1_sector_1 from "../../../images/allied-cultures/strategies/layout_vikings_1_sector_1.webp";
 import layout_vikings_2_sector_1 from "../../../images/allied-cultures/strategies/layout_vikings_2_sector_1.webp";
 import layout_vikings_3_sector_1 from "../../../images/allied-cultures/strategies/layout_vikings_3_sector_1.webp";
 import layout_vikings_3_sector_2 from "../../../images/allied-cultures/strategies/layout_vikings_3_sector_2.webp";
+import layout_vikings_4_sector_1 from "../../../images/allied-cultures/strategies/layout_vikings_4_sector_1.webp";
+import layout_vikings_4_sector_2 from "../../../images/allied-cultures/strategies/layout_vikings_4_sector_2.webp";
+import layout_vikings_4_sector_3 from "../../../images/allied-cultures/strategies/layout_vikings_4_sector_3.webp";
+import layout_vikings_5_sector_1 from "../../../images/allied-cultures/strategies/layout_vikings_5_sector_1.webp";
+import layout_vikings_5_sector_2 from "../../../images/allied-cultures/strategies/layout_vikings_5_sector_2.webp";
+import layout_vikings_5_sector_3 from "../../../images/allied-cultures/strategies/layout_vikings_5_sector_3.webp";
+import layout_vikings_6_sector_1 from "../../../images/allied-cultures/strategies/layout_vikings_6_sector_1.webp";
+import layout_vikings_6_sector_2 from "../../../images/allied-cultures/strategies/layout_vikings_6_sector_2.webp";
+import layout_vikings_6_sector_3 from "../../../images/allied-cultures/strategies/layout_vikings_6_sector_3.webp";
+import layout_vikings_6_sector_4 from "../../../images/allied-cultures/strategies/layout_vikings_6_sector_4.webp";
 
 const Strategies = (props) => {
 
@@ -332,10 +344,30 @@ const Strategies = (props) => {
                         As we will soon start heavily focusing on productions, we will need more advanced Sailor Houses. To achieve that, head for the 'Funeral At Sea' technology. Once unlocked, start upgrading your Sailor Houses to level 4. Upgrade your Taverns to level 3.
                         Take a look at the current state:
 
-                        {/*<LayoutsBook header={"Layout 4"} images={[layout_4_sector_1,layout_4_sector_2,layout_4_sector_3]} />*/}
+                        <LayoutsBook header={"Layout 4"} images={[layout_vikings_4_sector_1,layout_vikings_4_sector_2,layout_vikings_4_sector_3]} />
 
-                        We are working on the final parts of this guide, that will include second part of the Vikings playfield (behind the glacier). We are looking forward to sharing it with you soon.
+                        After reaching World Wonder level 17, we start exploring the second part of the playfield (behind the glacier). The first 5 expansions of this part are available right after creating the path along the glacier. Place the expansions you receive from
+                        level 17 as follows:
 
+                        <Image src={sketch_vikings_6} alt="" roundedCorners={false} spacing={true} maxHeight={'300px'}/>
+
+                        Find the shortest path to 'Mead Mastery' technology (so for now, skip 'Glima Fighting'). Upgrade all Houses, Beehives and Fishing Piers to level 4. Upgrade your Taverns and Expedition Piers to level 3. It is sufficient to keep Sailors
+                        at level 1 for now. See the layout below for the current state:
+
+                        <LayoutsBook header={"Layout 5"} images={[layout_vikings_5_sector_1,layout_vikings_5_sector_2,layout_vikings_5_sector_3]} />
+
+                        When you upgrade the World Wonder to level 24, you will unlock the last set of expansions. Place them as follows:
+
+                        <Image src={sketch_vikings_7} alt="" roundedCorners={false} spacing={true} maxHeight={'300px'}/>
+
+                        Suggested layout for the final set of expansions can be found below. We are now heavily focusing on productions, so we have replaced some of our Worker Homes with Sailor Homes, to obtain more Sailors.
+                        You can stay with this layout until the end of the event. Note that depending on the boost from the World Wonder, you may want to slightly modify the
+                        ratio of Houses and Beehives. We will elaborate on that as we will continue working on this guide in the future.
+
+                        <LayoutsBook header={"Layout 6"} images={[layout_vikings_6_sector_1,layout_vikings_6_sector_2,layout_vikings_6_sector_3,layout_vikings_6_sector_4]} />
+
+                        {/* two issues currently: layout4_sector_3 contains Expedition Pier. Should be empty to build 2 Sailor Ports in those 3 expansions later
+                        second issue: sketches 2,3,4,5 have water expansions too high. There is a gap of 3 fields from the top*/}
                     </TextBlock>
                 ) : null
             }

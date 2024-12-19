@@ -40,6 +40,20 @@ import layout_egypt_3_sector_3 from "../../../images/allied-cultures/strategies/
 import layout_egypt_4_sector_1 from "../../../images/allied-cultures/strategies/layout_egypt_4_sector_1.webp";
 import layout_egypt_4_sector_2 from "../../../images/allied-cultures/strategies/layout_egypt_4_sector_2.webp";
 import layout_egypt_4_sector_3 from "../../../images/allied-cultures/strategies/layout_egypt_4_sector_3.webp";
+import layout_vikings_1_sector_1 from "../../../images/allied-cultures/strategies/layout_vikings_1_sector_1.webp";
+import layout_vikings_2_sector_1 from "../../../images/allied-cultures/strategies/layout_vikings_2_sector_1.webp";
+import layout_vikings_3_sector_1 from "../../../images/allied-cultures/strategies/layout_vikings_3_sector_1.webp";
+import layout_vikings_3_sector_2 from "../../../images/allied-cultures/strategies/layout_vikings_3_sector_2.webp";
+import layout_vikings_4_sector_1 from "../../../images/allied-cultures/strategies/layout_vikings_4_sector_1.webp";
+import layout_vikings_4_sector_2 from "../../../images/allied-cultures/strategies/layout_vikings_4_sector_2.webp";
+import layout_vikings_4_sector_3 from "../../../images/allied-cultures/strategies/layout_vikings_4_sector_3.webp";
+import layout_vikings_5_sector_1 from "../../../images/allied-cultures/strategies/layout_vikings_5_sector_1.webp";
+import layout_vikings_5_sector_2 from "../../../images/allied-cultures/strategies/layout_vikings_5_sector_2.webp";
+import layout_vikings_5_sector_3 from "../../../images/allied-cultures/strategies/layout_vikings_5_sector_3.webp";
+import layout_vikings_6_sector_1 from "../../../images/allied-cultures/strategies/layout_vikings_6_sector_1.webp";
+import layout_vikings_6_sector_2 from "../../../images/allied-cultures/strategies/layout_vikings_6_sector_2.webp";
+import layout_vikings_6_sector_3 from "../../../images/allied-cultures/strategies/layout_vikings_6_sector_3.webp";
+import layout_vikings_6_sector_4 from "../../../images/allied-cultures/strategies/layout_vikings_6_sector_4.webp";
 
 const Layouts = (props) => {
     // virtual-graph-paper dot com
@@ -54,6 +68,7 @@ const Layouts = (props) => {
 
     const egyptCultures = ["egypt_cheops_pyramid", "egypt_great_sphinx", "egypt_abu_simbel"];
     const chinaCultures = ["china_terracotta_army", "china_great_wall", "china_forbidden_city"];
+    const vikingsCultures = ["vikings_yggdrasil", "vikings_ellida", "vikings_valhalla"];
   
     return (
       <>
@@ -132,6 +147,36 @@ const Layouts = (props) => {
 
                         <ul><li>You may need to slightly adjust this final layout based on your specific needs and the level of activity you maintained during the event (i.e., the reserves you've accumulated).
                         If the current World Wonder provides a bonus for Rice, consider removing some Rice Farms to make space for other buildings you might need.</li></ul>
+
+                    </TextBlock>
+                ) : vikingsCultures.includes(alliedCulture.id) ? (
+                    <TextBlock>
+                        <ul><li>Layout up to level 2 of the World Wonder:</li></ul>
+
+                        <LayoutsBook header={"Layout 1"} images={[layout_vikings_1_sector_1]} />
+
+                        <ul><li>Layout up to level 7 of the World Wonder:</li></ul>
+
+                        <LayoutsBook header={"Layout 2"} images={[layout_vikings_2_sector_1]} />
+
+                        <ul><li>Layout up to level 13 of the World Wonder:</li></ul>
+
+                        <LayoutsBook header={"Layout 3"} images={[layout_vikings_3_sector_1,layout_vikings_3_sector_2]} />
+
+                        <ul><li>Layout up to level 17 of the World Wonder:</li></ul>
+
+                        <LayoutsBook header={"Layout 4"} images={[layout_vikings_4_sector_1,layout_vikings_4_sector_2,layout_vikings_4_sector_3]} />
+
+                        <ul><li>Layout up to level 24 of the World Wonder:</li></ul>
+
+                        <LayoutsBook header={"Layout 5"} images={[layout_vikings_5_sector_1,layout_vikings_5_sector_2,layout_vikings_5_sector_3]} />
+
+                        <ul><li>Layout after all possible expansions are obtained:</li></ul>
+
+                        <LayoutsBook header={"Layout 6"} images={[layout_vikings_6_sector_1,layout_vikings_6_sector_2,layout_vikings_6_sector_3,layout_vikings_6_sector_4]} />
+
+                        <ul><li>You may need to slightly adjust this final layout based on your specific needs and the level of activity you maintained during the event (i.e., the reserves you've accumulated).
+                        If the current World Wonder provides a bonus for Pennies, consider replacing a few houses with additional Beehives and vice versa.</li></ul>
 
                     </TextBlock>
                 ) : null
