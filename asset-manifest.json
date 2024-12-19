@@ -1,14 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.f1cd7f0a.css",
-    "main.js": "/static/js/main.78ddc9fb.js",
+    "main.js": "/static/js/main.9627a4bf.js",
     "static/media/layout_5_sector_3.webp": "/static/media/layout_5_sector_3.c0f317a3382f299fbe11.webp",
     "static/media/layout_egypt_3_sector_3.webp": "/static/media/layout_egypt_3_sector_3.176bb3c09225286b101a.webp",
     "static/media/layout_egypt_4_sector_3.webp": "/static/media/layout_egypt_4_sector_3.ca8d981c13c641b372d7.webp",
+    "static/media/layout_vikings_3_sector_1.webp": "/static/media/layout_vikings_3_sector_1.276a41165379e7f3f61a.webp",
     "static/media/layout_4_sector_3.webp": "/static/media/layout_4_sector_3.e88146e9c9ed7496bcb5.webp",
+    "static/media/layout_vikings_2_sector_1.webp": "/static/media/layout_vikings_2_sector_1.a4a948c137246d821e03.webp",
     "static/media/layout_4_sector_1.webp": "/static/media/layout_4_sector_1.7c73d107ef72fe873aac.webp",
     "static/media/layout_4_sector_2.webp": "/static/media/layout_4_sector_2.81a4c629cfe50df59915.webp",
     "static/media/layout_5_sector_2.webp": "/static/media/layout_5_sector_2.11da277ecf97781187c5.webp",
+    "static/media/layout_vikings_1_sector_1.webp": "/static/media/layout_vikings_1_sector_1.d4b3123aee1643ee2477.webp",
     "static/media/layout_5_sector_1.webp": "/static/media/layout_5_sector_1.d51b22cb24ddfbe0edb1.webp",
     "static/media/layout_2_sector_3.webp": "/static/media/layout_2_sector_3.fe4489413334a5d8d753.webp",
     "static/media/layout_2_sector_2.webp": "/static/media/layout_2_sector_2.213a47eab5fd7e3a4739.webp",
@@ -18,6 +21,7 @@
     "static/media/layout_1_sector_2.webp": "/static/media/layout_1_sector_2.3f10dc08d4c4e2e18bb0.webp",
     "static/media/layout_2_sector_1.webp": "/static/media/layout_2_sector_1.a68143dfd9de8d6574fc.webp",
     "static/media/layout_3_sector_2.webp": "/static/media/layout_3_sector_2.02bfef274567a85d3326.webp",
+    "static/media/layout_vikings_3_sector_2.webp": "/static/media/layout_vikings_3_sector_2.ce06b69c6b18a7991989.webp",
     "static/media/layout_1_sector_1.webp": "/static/media/layout_1_sector_1.f6d1432f942e9f1ebc40.webp",
     "static/media/layout_egypt_4_sector_1.webp": "/static/media/layout_egypt_4_sector_1.3d59ab6df623d4f138d0.webp",
     "static/media/layout_egypt_3_sector_1.webp": "/static/media/layout_egypt_3_sector_1.e107b337b652e9a53eb1.webp",
@@ -469,7 +473,9 @@
     "static/media/Unit_EgyptianVizier.webp": "/static/media/Unit_EgyptianVizier.d29a2984f17f2a6152ee.webp",
     "static/media/Capital_Small_Home_Lv33.webp": "/static/media/Capital_Small_Home_Lv33.9fceb61c19775df15df0.webp",
     "static/media/icon_chest_ascension_3.webp": "/static/media/icon_chest_ascension_3.78d3b97b1a1472f4a97a.webp",
+    "static/media/sketch_vikings_2.webp": "/static/media/sketch_vikings_2.6a7291a9250a8edec37b.webp",
     "static/media/icon_green_crest_common.webp": "/static/media/icon_green_crest_common.8b23d15c92098a7ba9a5.webp",
+    "static/media/sketch_vikings_3.webp": "/static/media/sketch_vikings_3.6eb74eb2e708f2d53238.webp",
     "static/media/Capital_Small_Home_Lv16.webp": "/static/media/Capital_Small_Home_Lv16.b99e13f96f405a31ec6e.webp",
     "static/media/icon_purple_crest_common.webp": "/static/media/icon_purple_crest_common.8f5cd26ed21f298b159c.webp",
     "static/media/icon_hero_battle_ability_huamulan.webp": "/static/media/icon_hero_battle_ability_huamulan.d5bb5e688f22e437d2a4.webp",
@@ -482,6 +488,7 @@
     "static/media/Viking_Luxurious_Fishing_Pier_Lv1.webp": "/static/media/Viking_Luxurious_Fishing_Pier_Lv1.680b10db0477de56ece6.webp",
     "static/media/Unit_GeorgeWashington.webp": "/static/media/Unit_GeorgeWashington.6e8dfcdf2191ed2cb98a.webp",
     "static/media/Unit_Pythagoras.webp": "/static/media/Unit_Pythagoras.b28fbbf4195081e74bce.webp",
+    "static/media/sketch_vikings_5.webp": "/static/media/sketch_vikings_5.b44b90f43ad6960932c1.webp",
     "static/media/icon_tesla_core.webp": "/static/media/icon_tesla_core.7fe3a58f96cbe91539c3.webp",
     "static/media/Capital_Small_Home_Lv26.webp": "/static/media/Capital_Small_Home_Lv26.4212de5945a3e0927064.webp",
     "static/media/China_Thread_Processor.webp": "/static/media/China_Thread_Processor.477a1ac2dac3d1f7967c.webp",
@@ -512,6 +519,7 @@
     "static/media/Capital_Average_Home_Lv28.webp": "/static/media/Capital_Average_Home_Lv28.2fc29817007671de83ab.webp",
     "static/media/Capital_Luxurious_Home_Lv24.webp": "/static/media/Capital_Luxurious_Home_Lv24.6ff54048a04cc692080d.webp",
     "static/media/Technology_KingdomOfSicily_MagnifyingGlass.webp": "/static/media/Technology_KingdomOfSicily_MagnifyingGlass.89016723ebf5f955e48a.webp",
+    "static/media/sketch_vikings_4.webp": "/static/media/sketch_vikings_4.aeac32a2844b8b5c63e6.webp",
     "static/media/Capital_Cavalry_Barracks_Lv5.webp": "/static/media/Capital_Cavalry_Barracks_Lv5.5c6def8c2c3f04923b4d.webp",
     "static/media/Capital_Small_Home_Lv20.webp": "/static/media/Capital_Small_Home_Lv20.209f44a740e7093515ce.webp",
     "static/media/Capital_Domestic_Farm_Lv21.webp": "/static/media/Capital_Domestic_Farm_Lv21.aff874fd89d75bc6a565.webp",
@@ -536,6 +544,7 @@
     "static/media/Viking_Worker_Home_Lv2.webp": "/static/media/Viking_Worker_Home_Lv2.8c120981968c80d7aa2d.webp",
     "static/media/icon_chest_ascension.webp": "/static/media/icon_chest_ascension.54f95054752a0cdbd140.webp",
     "static/media/Capital_Domestic_Farm_Lv12.webp": "/static/media/Capital_Domestic_Farm_Lv12.4b3a68a75383279d9435.webp",
+    "static/media/sketch_vikings_1.webp": "/static/media/sketch_vikings_1.bda2d30452b1270041da.webp",
     "static/media/Viking_Sailor_Home_Lv5.webp": "/static/media/Viking_Sailor_Home_Lv5.363d28e2ab4309af5bed.webp",
     "static/media/Capital_Rural_Farm_Lv3.webp": "/static/media/Capital_Rural_Farm_Lv3.f274a6f65c6197309f1f.webp",
     "static/media/Capital_Domestic_Farm_Lv22.webp": "/static/media/Capital_Domestic_Farm_Lv22.543eef5c12287153f979.webp",
@@ -1080,10 +1089,10 @@
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
     "main.f1cd7f0a.css.map": "/static/css/main.f1cd7f0a.css.map",
-    "main.78ddc9fb.js.map": "/static/js/main.78ddc9fb.js.map"
+    "main.9627a4bf.js.map": "/static/js/main.9627a4bf.js.map"
   },
   "entrypoints": [
     "static/css/main.f1cd7f0a.css",
-    "static/js/main.78ddc9fb.js"
+    "static/js/main.9627a4bf.js"
   ]
 }
