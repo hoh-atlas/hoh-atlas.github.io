@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f1cd7f0a.css",
-    "main.js": "/static/js/main.c6736d3a.js",
+    "main.css": "/static/css/main.3f1a2bbc.css",
+    "main.js": "/static/js/main.65e1fbae.js",
     "static/media/layout_5_sector_3.webp": "/static/media/layout_5_sector_3.c0f317a3382f299fbe11.webp",
     "static/media/layout_vikings_5_sector_1.webp": "/static/media/layout_vikings_5_sector_1.53b484e845e9b530fcfe.webp",
     "static/media/layout_vikings_6_sector_1.webp": "/static/media/layout_vikings_6_sector_1.427b78d13967c655fb88.webp",
@@ -107,6 +107,7 @@
     "static/media/winter_event_2024_candy_store.webp": "/static/media/winter_event_2024_candy_store.d5405e14c7b1833b32c8.webp",
     "static/media/valhalla.webp": "/static/media/valhalla.0aebe727be1e3978dcd9.webp",
     "static/media/winter_event_2024_winter_home.webp": "/static/media/winter_event_2024_winter_home.00ca2d0e8e04424aac85.webp",
+    "static/media/hero_backdrop_antimatter.webp": "/static/media/hero_backdrop_antimatter.2a672869b8add3cb92aa.webp",
     "static/media/cheops_pyramid.webp": "/static/media/cheops_pyramid.1acfaaf71f7a0ba11eba.webp",
     "static/media/age_transition_feudal_age_main1.webp": "/static/media/age_transition_feudal_age_main1.70a801d60164216fdbd8.webp",
     "static/media/Unit_VanHelsing_fullbody.webp": "/static/media/Unit_VanHelsing_fullbody.26c9b9a5bdb15d618810.webp",
@@ -251,6 +252,7 @@
     "static/media/world_fair_2024_artifact_4.webp": "/static/media/world_fair_2024_artifact_4.696473012f8aea216bee.webp",
     "static/media/hero-backdrop-renaissance.webp": "/static/media/hero-backdrop-renaissance.e31abacf1cee181ce514.webp",
     "static/media/world_fair_2024_invention_4.webp": "/static/media/world_fair_2024_invention_4.6fd59fad11fa8a393370.webp",
+    "static/media/icon_selection_kit_supportascensionmaterial_tier2.webp": "/static/media/icon_selection_kit_supportascensionmaterial_tier2.6f3c9cdd701197c7e0cf.webp",
     "static/media/season_2_sale_offer_bg.webp": "/static/media/season_2_sale_offer_bg.861cc2be1b36c96be8e5.webp",
     "static/media/Unit_AmeliaEarhart.webp": "/static/media/Unit_AmeliaEarhart.e344c6f3b99ef8792862.webp",
     "static/media/season_03_banner.webp": "/static/media/season_03_banner.7a45029606d81e333733.webp",
@@ -267,9 +269,12 @@
     "static/media/Navbar_AlliedCultures.webp": "/static/media/Navbar_AlliedCultures.4b51fe745d3761391b53.webp",
     "static/media/world_fair_2024_invention_3.webp": "/static/media/world_fair_2024_invention_3.899297f2a7e9b7a49c3b.webp",
     "static/media/world_fair_2024_rareflower_4.webp": "/static/media/world_fair_2024_rareflower_4.39b7dadab7381657daa5.webp",
+    "static/media/icon_selection_kit_supportascensionmaterial_tier1.webp": "/static/media/icon_selection_kit_supportascensionmaterial_tier1.743a9658e86054bff961.webp",
     "static/media/Unit_BessieColeman.webp": "/static/media/Unit_BessieColeman.b36efef99ac1437b5b09.webp",
+    "static/media/icon_selection_kit_teslastorm_crest_common.webp": "/static/media/icon_selection_kit_teslastorm_crest_common.45fb09cdea1b44732587.webp",
     "static/media/season_04_banner.webp": "/static/media/season_04_banner.15bf9db0888fbd93564e.webp",
     "static/media/ath_jolly_roger.webp": "/static/media/ath_jolly_roger.a8633ebfbf5e69913b57.webp",
+    "static/media/icon_selection_kit_teslastorm_crest_superior.webp": "/static/media/icon_selection_kit_teslastorm_crest_superior.79e073623aee98369ac6.webp",
     "static/media/Navbar_TreasureHunt.webp": "/static/media/Navbar_TreasureHunt.68ccad2453f6e9284bca.webp",
     "static/media/logo.webp": "/static/media/logo.a5499a1ab3a4cf1a5141.webp",
     "static/media/world_fair_2024_invention_5.webp": "/static/media/world_fair_2024_invention_5.0fba45b0c24d4cdf8328.webp",
@@ -279,17 +284,20 @@
     "static/media/tutorial-host-cleopatra.webp": "/static/media/tutorial-host-cleopatra.058c63a6d30455ad953b.webp",
     "static/media/Navbar_Community.webp": "/static/media/Navbar_Community.d0d8896662ab7b21e6fa.webp",
     "static/media/ath_voodoo_head.webp": "/static/media/ath_voodoo_head.d239271a9dab4d13cb18.webp",
+    "static/media/icon_selection_kit_teslastorm_crest_enhanced.webp": "/static/media/icon_selection_kit_teslastorm_crest_enhanced.a60483eacca3c0260ddf.webp",
     "static/media/winter_event_2024_snowman.webp": "/static/media/winter_event_2024_snowman.4e49d0cfdf810c87bdf0.webp",
     "static/media/world_fair_2024_rareflower_3.webp": "/static/media/world_fair_2024_rareflower_3.dbb0892303f6e61f3476.webp",
     "static/media/Navbar_Events.webp": "/static/media/Navbar_Events.a0c03c1891d5db25d4d5.webp",
     "static/media/Navbar_Seasons.webp": "/static/media/Navbar_Seasons.4ea46e9c90cda1fc0936.webp",
     "static/media/Unit_VanHelsing.webp": "/static/media/Unit_VanHelsing.e100cbf11ee44e232fcd.webp",
     "static/media/Navbar_Research.webp": "/static/media/Navbar_Research.2909e67487d320e58acf.webp",
+    "static/media/Navbar_Leaderboards.webp": "/static/media/Navbar_Leaderboards.76918d34f65bbc143c7a.webp",
     "static/media/icon_rift_token_common_part.webp": "/static/media/icon_rift_token_common_part.74427aa3c807df4006f9.webp",
     "static/media/Navbar_Buildings.webp": "/static/media/Navbar_Buildings.2b985eb92dfb76f42256.webp",
     "static/media/icon_selection_kit_customizations_generic.webp": "/static/media/icon_selection_kit_customizations_generic.5c0b75017bf8d6afc49d.webp",
     "static/media/Reward_Winter_GoldChest_4.webp": "/static/media/Reward_Winter_GoldChest_4.3a15f46095460c352299.webp",
     "static/media/theRealBehemothPlays.webp": "/static/media/theRealBehemothPlays.9529182e02d12a411b87.webp",
+    "static/media/Ranking04.webp": "/static/media/Ranking04.d5e68e720f5ca61f1504.webp",
     "static/media/Navbar_Heroes.webp": "/static/media/Navbar_Heroes.cd61d9b4de5df35f5826.webp",
     "static/media/world_fair_event_shop_tier_1.webp": "/static/media/world_fair_event_shop_tier_1.ead72fbada1982419f40.webp",
     "static/media/world_fair_2024_rareflower_2.webp": "/static/media/world_fair_2024_rareflower_2.0b4c22f9dad88aadab11.webp",
@@ -832,6 +840,7 @@
     "static/media/icon_hero_battle_ability_confucius.webp": "/static/media/icon_hero_battle_ability_confucius.2d359a53158d4117aa93.webp",
     "static/media/icon_travelers_compass.webp": "/static/media/icon_travelers_compass.68a945dac2e8d874ac45.webp",
     "static/media/icon_hero_battle_ability_adalovelace.webp": "/static/media/icon_hero_battle_ability_adalovelace.4cb84e1a6dc4c3b03479.webp",
+    "static/media/icon_ranking_points.webp": "/static/media/icon_ranking_points.80a93bbe4d78341276be.webp",
     "static/media/icon_xp_scroll_epic.webp": "/static/media/icon_xp_scroll_epic.73747aa8b0e95aa1bfec.webp",
     "static/media/icon_hero_battle_ability_charlemagne.webp": "/static/media/icon_hero_battle_ability_charlemagne.8d75f4b0f72df22779cd.webp",
     "static/media/icon_hero_battle_ability_shaolin.webp": "/static/media/icon_hero_battle_ability_shaolin.210784ab8941e42c79b0.webp",
@@ -1100,11 +1109,11 @@
     "static/media/herbs.webp": "/static/media/herbs.45e59d4e77aed5c7159a.webp",
     "static/media/door.webp": "/static/media/door.f9e7f4f033a95aee69e6.webp",
     "static/media/wool.webp": "/static/media/wool.9ecf0f79649286c9367d.webp",
-    "main.f1cd7f0a.css.map": "/static/css/main.f1cd7f0a.css.map",
-    "main.c6736d3a.js.map": "/static/js/main.c6736d3a.js.map"
+    "main.3f1a2bbc.css.map": "/static/css/main.3f1a2bbc.css.map",
+    "main.65e1fbae.js.map": "/static/js/main.65e1fbae.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1cd7f0a.css",
-    "static/js/main.c6736d3a.js"
+    "static/css/main.3f1a2bbc.css",
+    "static/js/main.65e1fbae.js"
   ]
 }
