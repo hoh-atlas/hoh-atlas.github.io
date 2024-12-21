@@ -92,6 +92,7 @@ import icon_prism_of_fate from '../../../images/shared/resources/icon_prism_of_f
 import icon_purple_crest_common from '../../../images/shared/resources/icon_purple_crest_common.webp';
 import icon_purple_crest_enhanced from '../../../images/shared/resources/icon_purple_crest_enhanced.webp';
 import icon_purple_crest_superior from '../../../images/shared/resources/icon_purple_crest_superior.webp';
+import icon_ranking_points from '../../../images/shared/resources/icon_ranking_points.webp';
 import icon_red_crest_common from '../../../images/shared/resources/icon_red_crest_common.webp';
 import icon_red_crest_enhanced from '../../../images/shared/resources/icon_red_crest_enhanced.webp';
 import icon_red_crest_superior from '../../../images/shared/resources/icon_red_crest_superior.webp';
@@ -192,6 +193,7 @@ const resources = [
     {id: "resource.hero_xp", name: "Experience Points", img: icon_xp_hero, category: "experiences"},
     // ANTIMATTERS
     {id: "antimatter", name: "Antimatter", img: icon_rift_token_common, category: "antimatters"},
+    {id: "rift_token_common", name: "Antimatter", img: icon_rift_token_common, category: "antimatters"},
     {id: "antimatter_egyptian", name: "Egyptian Antimatter", img: icon_rift_token_egypt_common, category: "antimatters"},
     {id: "rift_token_egypt_common", name: "Egyptian Antimatter", img: icon_rift_token_egypt_common, category: "antimatters"},
     {id: "antimatter_legendary", name: "Legendary Antimatter", img: icon_rift_token_legendary, category: "antimatters"},
@@ -380,6 +382,7 @@ const resources = [
     {id: "rift_token_legendary_part", name: "Legendary Antimatter Piece", img: icon_rift_token_legendary_part, category: "fragments"},
     // ICONS
     {id: "icon_crate", name: "Crate", img: icon_crate, category: "icons"},
+    {id: "icon_ranking_points", name: "Trophies", img: icon_ranking_points, category: "icons"},
 ]
 
 export default resources;

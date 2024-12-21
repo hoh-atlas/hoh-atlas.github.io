@@ -5,6 +5,12 @@ import SelectBox from "../components/shared/SelectBox";
 import useOptionURL from "../components/shared/hooks/useOptionURL";
 import { Link } from "react-router-dom";
 import ReactGA from "react-ga4";
+import allLeaderboards from "../components/leaderboards/data";
+import layoutLeaderboards from "../components/leaderboards/sectionsDefinition";
+
+import Intro from "../components/leaderboards/intro/Intro";
+import Milestones from "../components/leaderboards/milestones/Milestones";
+import Ranking from "../components/leaderboards/ranking/Ranking";
 
 const LeaderboardsPage = (props) => {
 
@@ -24,6 +30,10 @@ const LeaderboardsPage = (props) => {
 
     /*const { selectedOption, handleOptionChange } = useOptionURL(options, "id");*/
 
+    const options = allLeaderboards.map((oneLeaderboard) => {
+        return { value: oneLeaderboard.id, label: `${oneLeaderboard.name}`, image: oneLeaderboard.image };
+    });
+
     const [selectedOption, setSelectedOption] = useState(options[0]);
 
     useEffect(() => {
@@ -39,21 +49,27 @@ const LeaderboardsPage = (props) => {
 
     const handleOptionChange = (selectedOption) => {
         setSelectedOption(selectedOption);
-        const newUrl = `/#/allied-cultures/${props.tab.url}?id=${selectedOption.value}`;
+        const newUrl = `/#/leaderboards/${props.tab.url}?id=${selectedOption.value}`;
         window.history.pushState({ path: newUrl }, '', newUrl);
     };
 
-    const selectedAlliedCulture = selectedOption.value;
+    layoutLeaderboards.tabs[0].img = selectedOption.image;
+
+    const selectedLeaderboard = selectedOption.value;
 
     const renderSelectedTab = () => {
       switch (props.tab.url) {
+          case "milestones":
+                return <Milestones tab={props.tab} selectedLeaderboard={selectedLeaderboard} />;
+          case "ranking":
+                return <Ranking tab={props.tab} selectedLeaderboard={selectedLeaderboard} />;
           default:
-              return <Intro tab={props.tab} selectedAlliedCulture={selectedAlliedCulture} />;
+              return <Intro tab={props.tab} selectedLeaderboard={selectedLeaderboard} />;
       }
   };
   
     return (
-      <Container basePath={basePath} tabs={layoutEvents.tabs} pageName={pageName} selectBox={
+      <Container basePath={basePath} tabs={layoutLeaderboards.tabs} pageName={pageName} selectBox={
           <SelectBox
               options={options}
               width={"400px"}

@@ -12,6 +12,7 @@ import EventsPage from "./pages/EventsPage";
 import CommunityPage from "./pages/CommunityPage";
 import ResearchPage from "./pages/ResearchPage";
 import BuildingsPage from "./pages/BuildingsPage";
+import LeaderboardsPage from "./pages/LeaderboardsPage";
 import Error from "./pages/Error";
 import SharedLayout from "./pages/SharedLayout";
 import { createPathFromParameters } from "./components/shared/utils";
@@ -28,6 +29,7 @@ import layoutEvents from "./components/events/sectionsDefinition";
 import layoutCommunity from "./components/community/sectionsDefinition";
 import layoutResearch from "./components/research/sectionsDefinition";
 import layoutBuildings from "./components/buildings/sectionsDefinition";
+import layoutLeaderboards from "./components/leaderboards/sectionsDefinition";
 
 const App = () => {
 
@@ -162,6 +164,18 @@ const App = () => {
 							<Route key={buildingsTab.id} path={createPathFromParameters(layoutBuildings.page, buildingsTab.url)} element={ <BuildingsPage tab={buildingsTab}/> || <BuildingsPage tab={layoutBuildings.tabs[0]}/> }/>
 							{buildingsTab.dynamicSegments.map( (dynamicSegment) => {
 								return <Route path={createPathFromParameters(layoutBuildings.page, buildingsTab.url, dynamicSegment)} element={ <BuildingsPage tab={buildingsTab} />} />
+							})}
+						</>
+						)
+					})
+				}
+
+				{
+					layoutLeaderboards.tabs.map( (leaderboardsTab) => {
+						return ( <>
+							<Route key={leaderboardsTab.id} path={createPathFromParameters(layoutLeaderboards.page, leaderboardsTab.url)} element={ <LeaderboardsPage tab={leaderboardsTab}/> || <LeaderboardsPage tab={layoutLeaderboards.tabs[0]}/> }/>
+							{leaderboardsTab.dynamicSegments.map( (dynamicSegment) => {
+								return <Route path={createPathFromParameters(layoutLeaderboards.page, leaderboardsTab.url, dynamicSegment)} element={ <LeaderboardsPage tab={leaderboardsTab} />} />
 							})}
 						</>
 						)

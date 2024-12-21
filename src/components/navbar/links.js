@@ -9,6 +9,7 @@ import Navbar_Events from "../../images/navbar/Navbar_Events.webp";
 import Navbar_Community from "../../images/navbar/Navbar_Community.webp";
 import Navbar_Research from "../../images/navbar/Navbar_Research.webp";
 import Navbar_Buildings from "../../images/navbar/Navbar_Buildings.webp";
+import Navbar_Leaderboards from "../../images/navbar/Navbar_Leaderboards.webp";
 
 const links = [
     {
@@ -76,17 +77,17 @@ const links = [
     },
     {
         id: 10,
-        url: "/resources",
-        text: "Resources",
-        img: Navbar_Resources,
+        url: "/leaderboards",
+        text: "Leaderboards",
+        img: Navbar_Leaderboards,
         show: true,
     },
     {
         id: 11,
-        url: "/leaderboards",
-        text: "Leaderboards",
+        url: "/resources",
+        text: "Resources",
         img: Navbar_Resources,
-        show: false,
+        show: true,
     },
     {
         id: 12,

@@ -7,6 +7,8 @@ import ChestPreview from "./ChestPreview";
 import dynamicDefinitions from "./_data/dynamicDefinitions";
 import _customizations from "../events/_data/_customizations";
 import dropdownItems from "../navbar/dropdownItems";
+import selectionKits from "./_data/selectionKits";
+import SelectionKitPreview from "./SelectionKitPreview";
 
 export const createPathFromParameters = (...parameters) => {
     const validParameters = parameters.filter(param => param !== undefined && param !== null && param !== "");
@@ -44,51 +46,53 @@ export const getItemData = (id) => {
         return foundChest;
     }
 
-    // This code is receiving the elem.when according to preset era. If the DAC has now such era, then it is looking for the first previous one.
-    let presetEra = getFromLocalStorage("preset_era");
-    let availableEras = dynamicDefinitions
-        .find(elem => elem.id === id)
-        .mapping[0]
-        .values.map(value => value.when);
-    const orderedEras = dropdownItems.map(item => item.value);
-    let presetEraIndex = orderedEras.indexOf(presetEra);
-    let effectiveEra = availableEras.includes(presetEra)
-        ? presetEra
-        : (() => {
-            for (let i = presetEraIndex - 1; i >= 0; i--) {
-                if (availableEras.includes(orderedEras[i])) {
-                    return orderedEras[i];
+    if (id.includes("Dac_")) {
+        // This code is receiving the elem.when according to preset era. If the DAC has now such era, then it is looking for the first previous one.
+        let presetEra = getFromLocalStorage("preset_era");
+        let availableEras = dynamicDefinitions
+            .find(elem => elem.id === id)
+            .mapping[0]
+            .values.map(value => value.when);
+        const orderedEras = dropdownItems.map(item => item.value);
+        let presetEraIndex = orderedEras.indexOf(presetEra);
+        let effectiveEra = availableEras.includes(presetEra)
+            ? presetEra
+            : (() => {
+                for (let i = presetEraIndex - 1; i >= 0; i--) {
+                    if (availableEras.includes(orderedEras[i])) {
+                        return orderedEras[i];
+                    }
                 }
-            }
-            return orderedEras.find(era => availableEras.includes(era));
-        })();
-    let foundDynamicDefinition = dynamicDefinitions
-        .find(elem => elem.id === id)
-        .mapping[0]
-        .values.find(elem => elem.when === effectiveEra).then;
-    // ---
+                return orderedEras.find(era => availableEras.includes(era));
+            })();
+        let foundDynamicDefinition = dynamicDefinitions
+            .find(elem => elem.id === id)
+            .mapping[0]
+            .values.find(elem => elem.when === effectiveEra).then;
+        // ---
 
-    let dynamicRewards = flattenRewards(foundDynamicDefinition.rewards);
-    if (dynamicRewards) {
-        dynamicRewards.rewards = dynamicRewards.rewards.map(reward => {
-            const resourceName = resources.find(elem => elem.id === reward.resource).name;
-            return {
-                ...reward,
-                name: resourceName
-            };
-        });
-        const allEraGoods = Object.values(eraGoods).flat();
-        if (dynamicRewards.chances.length === 0) {
-            dynamicRewards["chances"] = undefined;
+        let dynamicRewards = flattenRewards(foundDynamicDefinition.rewards);
+        if (dynamicRewards) {
+            dynamicRewards.rewards = dynamicRewards.rewards.map(reward => {
+                const resourceName = resources.find(elem => elem.id === reward.resource).name;
+                return {
+                    ...reward,
+                    name: resourceName
+                };
+            });
+            const allEraGoods = Object.values(eraGoods).flat();
+            if (dynamicRewards.chances.length === 0) {
+                dynamicRewards["chances"] = undefined;
+            }
+            if (dynamicRewards.rewards.length === 1) {
+                dynamicRewards.name = getItemData(dynamicRewards.rewards[0].resource).name;
+            } else if (dynamicRewards.rewards.every(reward => allEraGoods.includes(reward.resource))) {
+                dynamicRewards.name = "Goods";
+            } else {
+                dynamicRewards.name = "Mystery Chest";
+            }
+            return dynamicRewards;
         }
-        if (dynamicRewards.rewards.length === 1) {
-            dynamicRewards.name = getItemData(dynamicRewards.rewards[0].resource).name;
-        } else if (dynamicRewards.rewards.every(reward => allEraGoods.includes(reward.resource))) {
-            dynamicRewards.name = "Goods";
-        } else {
-            dynamicRewards.name = "Mystery Chest";
-        }
-        return dynamicRewards;
     }
 }
 
@@ -136,6 +140,10 @@ export const getItemIcon = (id, maxHeight) => {
     if (foundChest) {
         return <ChestPreview chest={foundChest}/>
     }
+
+    const foundSelectionKit = selectionKits.find(elem => elem.id === id);
+    if (foundSelectionKit)
+        return <SelectionKitPreview selectionKit={foundSelectionKit} />
 }
 
 export const calculateDaysBetween = (startDate, endDate) => {
@@ -198,3 +206,52 @@ export const getFromLocalStorage = (string) => {
         return localStorage.getItem(string);
     }
 }
+
+const extractRewards = (rewardsArray) => {
+    const extractedRewards = [];
+    rewardsArray.forEach((reward) => {
+        if (reward.resource) {
+            extractedRewards.push({ type: "resource", value: reward.resource });
+        } else if (reward.dynamicDefinitionId) {
+            extractedRewards.push({ type: "dynamicDefinitionId", value: reward.dynamicDefinitionId });
+        } else if (reward.selectionKit) {
+            extractedRewards.push({ type: "selectionKit", value: reward.selectionKit});
+        } else if (reward.rewards) {
+            extractedRewards.push(...extractRewards(reward.rewards));
+        }
+    });
+    return extractedRewards;
+};
+
+export const displayRewards = (arrayOfRewards) => {
+    return (
+        <>
+            {arrayOfRewards.rewards.map((reward, rewardIndex) => {
+                const nestedRewards = extractRewards([reward]);
+                return (
+                    <div key={rewardIndex}>
+                        {nestedRewards.map((nestedReward, nestedIndex) => (
+                            <div key={nestedIndex}>
+                                {nestedReward.type === "resource" ? (
+                                    <span className="resource-span">{reward.amount}x {getItemIcon(nestedReward.value)}</span>
+                                ) : nestedReward.type === "dynamicDefinitionId" ? (
+                                    <>
+                                        {getItemData(nestedReward.value).rewards.map((nestedResourceReward, nestedRewardIndex) => (
+                                            <span className="resource-span" key={nestedRewardIndex}>
+                                                {nestedResourceReward.amount}x {getItemIcon(nestedResourceReward.resource)}
+                                            </span>
+                                        ))}
+                                    </>
+                                ) : nestedReward.type === "selectionKit" ? (
+                                        <span className="resource-span">{reward.amount}x {getItemIcon(nestedReward.value)}</span>
+                                ) : (
+                                    <></>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                );
+            })}
+        </>
+    );
+};
