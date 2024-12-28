@@ -4,7 +4,6 @@ import Container from "@/src/components/container/Container";
 import { useTabHandler } from "@/src/components/tabs/useTabHandler";
 import Intro from "./intro/Intro";
 import Collectable from "./collectable/Collectable";
-import ReactGA from "react-ga4";
 import { updateMeta } from "@/src/shared-resources/utils/utils";
 import { useEffect } from "react";
 
@@ -13,12 +12,6 @@ const BuildingsPage = () => {
   	const basePath = "buildings";
 
   	const selectedTab = useTabHandler(layoutBuildings);
-
-	  ReactGA.send({
-        hitType: "pageview",
-        page: `/${basePath}`,
-        title: `Buildings - ${selectedTab.name}`,
-    });
 
 	useEffect(() => {
 		updateMeta("Buildings", selectedTab, basePath);
@@ -40,9 +33,18 @@ const BuildingsPage = () => {
   	};
 
   	return (
-    	<Container basePath={basePath} tabs={layoutBuildings.tabs} selectedTab={selectedTab} pageName={pageName}>
-      		{renderSelectedTab()}
-    	</Container>
+		<>
+			<head>
+				<title>Buildings | Wiki</title>
+				<meta 
+					name="description" 
+					content="Explore all the buildings in the game. Find all the construction costs, productions and much more!" 
+				/>
+			</head>
+			<Container basePath={basePath} tabs={layoutBuildings.tabs} selectedTab={selectedTab} pageName={pageName}>
+				{renderSelectedTab()}
+			</Container>
+		</>
   	);
 };
 

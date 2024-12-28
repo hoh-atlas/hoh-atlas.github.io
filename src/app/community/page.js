@@ -5,7 +5,6 @@ import { useTabHandler } from "@/src/components/tabs/useTabHandler";
 import Intro from "./intro/Intro";
 import VideoCreators from "./video-creators/VideoCreators";
 import PrivacyPolicy from "./privacy-policy/PrivacyPolicy";
-import ReactGA from "react-ga4";
 import { updateMeta } from "@/src/shared-resources/utils/utils";
 import { useEffect } from "react";
 
@@ -14,12 +13,6 @@ const CommunityPage = () => {
   	const basePath = "community";
 
   	const selectedTab = useTabHandler(layoutCommunity);
-
-	  ReactGA.send({
-        hitType: "pageview",
-        page: `/${basePath}`,
-        title: `Community - ${selectedTab.name}`,
-    });
 
 	useEffect(() => {
 		updateMeta("Community", selectedTab, basePath);
@@ -43,9 +36,18 @@ const CommunityPage = () => {
   	};
 
   	return (
-    	<Container basePath={basePath} tabs={layoutCommunity.tabs} selectedTab={selectedTab} pageName={pageName}>
-      		{renderSelectedTab()}
-    	</Container>
+		<>
+			<head>
+				<title>Community | Wiki</title>
+				<meta 
+					name="description" 
+					content="Learn how to get in touch with thousands of other players of Heroes of History!" 
+				/>
+			</head>
+			<Container basePath={basePath} tabs={layoutCommunity.tabs} selectedTab={selectedTab} pageName={pageName}>
+				{renderSelectedTab()}
+			</Container>
+		</>
   	);
 };
 

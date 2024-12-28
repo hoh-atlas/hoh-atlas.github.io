@@ -281,7 +281,7 @@ export const displayRewards = (arrayOfRewards) => {
 };
 
 export const updateMeta = (pageName, selectedTab, basePath) => {
-	const descriptions = {
+	/*const descriptions = {
 		"allied-cultures": `Explore various Allied Cultures in the game: Egypt, China, Vikings. Each offering comprehensive guides, including tips & tricks, quests, and much more!`,
         "buildings": `Explore all the buildings in the game. Find all the construction costs, productions and much more!`,
         "campaign": `Discover the full campaign of the game. Find all the provinces, rewards and much more!`,
@@ -293,18 +293,18 @@ export const updateMeta = (pageName, selectedTab, basePath) => {
         "resources": `Discover all the resources in the game.`,
         "seasons": `Learn everything about the seasons in the game, including tasks and rewards.`,
         "treasure-hunt": `Everything about the Treasure Hunt in Heroes of History. From tips & tricks to comprehensive lists of rewards.`,
-	};
+	};*/
 
-	const metaTitle = `${pageName} - ${selectedTab.name || "Overview"} | Wiki`;
-	const metaDescription = descriptions[basePath] || "Heroes of History Wiki is a place where you can find information about heroes, battles, events, allied cultures and many written guides to help you better navigate in the game.";
+	//const metaDescription = descriptions[basePath] || "Heroes of History Wiki is a place where you can find information about heroes, battles, events, allied cultures and many written guides to help you better navigate in the game.";
 
-	document.title = metaTitle;
+    const metaTitle = `${pageName} - ${selectedTab.name || "Overview"} | Wiki`;
+    document.title = metaTitle;
 
-	let metaDescriptionTag = document.querySelector('meta[name="description"]');
+	/*let metaDescriptionTag = document.querySelector('meta[name="description"]');
 	if (!metaDescriptionTag) {
 		metaDescriptionTag = document.createElement('meta');
 		metaDescriptionTag.name = "description";
 		document.head.appendChild(metaDescriptionTag);
 	}
-	metaDescriptionTag.content = metaDescription;
+	metaDescriptionTag.content = metaDescription;*/
 };

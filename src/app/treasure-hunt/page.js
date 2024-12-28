@@ -5,7 +5,8 @@ import { useTabHandler } from "@/src/components/tabs/useTabHandler";
 import Intro from "./intro/Intro";
 import Checkpoints from "./checkpoints/Checkpoints";
 import Customizations from "./customizations/Customizations";
-import ReactGA from "react-ga4";
+import { updateMeta } from "@/src/shared-resources/utils/utils";
+import { useEffect } from "react";
 
 const TreasureHuntPage = () => {
 
@@ -13,17 +14,15 @@ const TreasureHuntPage = () => {
 
   	const selectedTab = useTabHandler(layoutTreasureHunt);
 
-	ReactGA.send({
-		hitType: "pageview",
-		page: `/${basePath}`,
-		title: `Treasure Hunt - ${selectedTab.name}`,
-	});
-
 	const pageName = selectedTab.url ? (
         <span>
             <a href={`/${basePath}`} className="text-link-white">Treasure Hunt</a> &gt; {selectedTab.name}
         </span>
     ) : "Treasure Hunt";
+
+	useEffect(() => {
+		updateMeta("Treasure Hunt", selectedTab, basePath);
+	}, [selectedTab]);
 
   	const renderSelectedTab = () => {
     	switch (selectedTab.url) {
@@ -37,9 +36,18 @@ const TreasureHuntPage = () => {
   	};
 
   	return (
-    	<Container basePath={basePath} tabs={layoutTreasureHunt.tabs} selectedTab={selectedTab} pageName={pageName}>
-      		{renderSelectedTab()}
-    	</Container>
+		<>
+			<head>
+				<title>Treasure Hunt | Wiki</title>
+				<meta 
+					name="description" 
+					content="Everything about the Treasure Hunt in Heroes of History. From tips & tricks to comprehensive lists of rewards." 
+				/>
+			</head>
+			<Container basePath={basePath} tabs={layoutTreasureHunt.tabs} selectedTab={selectedTab} pageName={pageName}>
+				{renderSelectedTab()}
+			</Container>
+		</>
   	);
 };
 

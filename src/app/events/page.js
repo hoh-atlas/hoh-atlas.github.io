@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 import Container from "@/src/components/container/Container";
 import SelectBox from "@/src/components/select-box/SelectBox";
 import { useTabHandler } from "@/src/components/tabs/useTabHandler";
-import ReactGA from "react-ga4";
 import { updateMeta } from "@/src/shared-resources/utils/utils";
 
 import layoutEvents from "./sectionsDefinition";
@@ -21,12 +20,6 @@ const EventsPage = (props) => {
 	const basePath = "events";
 
 	const selectedTab = useTabHandler(layoutEvents);
-
-	ReactGA.send({
-        hitType: "pageview",
-        page: `/${basePath}`,
-        title: `Events - ${selectedTab.name}`,
-    });
 
 	useEffect(() => {
 		updateMeta("Events", selectedTab, basePath);
@@ -95,20 +88,29 @@ const EventsPage = (props) => {
 	};
 
 	return (
-		<Container basePath={basePath} tabs={layoutEvents.tabs} selectedTab={selectedTab} pageName={pageName} selectBox={
-			<SelectBox
-				options={options}
-				width={"400px"}
-				mobileWidth={"350px"}
-				height={"32px"}
-				color={"#EFEADA"}
-				selectedOption={selectedOption}
-				onOptionChange={handleOptionChange}
-				className="custom-selectbox"
-			/>
-		}>
-			{renderSelectedTab()}
-		</Container>
+		<>
+			<head>
+				<title>Events | Wiki</title>
+				<meta 
+					name="description" 
+					content="Find daily specials, customizations, quests and much more from the seasonal events in Heroes of History!" 
+				/>
+			</head>
+			<Container basePath={basePath} tabs={layoutEvents.tabs} selectedTab={selectedTab} pageName={pageName} selectBox={
+				<SelectBox
+					options={options}
+					width={"400px"}
+					mobileWidth={"350px"}
+					height={"32px"}
+					color={"#EFEADA"}
+					selectedOption={selectedOption}
+					onOptionChange={handleOptionChange}
+					className="custom-selectbox"
+				/>
+			}>
+				{renderSelectedTab()}
+			</Container>
+		</>
 	);
 };
   

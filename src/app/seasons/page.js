@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import Container from "@/src/components/container/Container";
 import SelectBox from "@/src/components/select-box/SelectBox";
 import { useTabHandler } from "@/src/components/tabs/useTabHandler";
-import ReactGA from "react-ga4";
+import { updateMeta } from "@/src/shared-resources/utils/utils";
 
 import layoutSeasons from "./sectionsDefinition";
 import allSeasons from "./data";
@@ -19,17 +19,15 @@ const SeasonsPage = (props) => {
 
 	const selectedTab = useTabHandler(layoutSeasons);
 
-    ReactGA.send({
-        hitType: "pageview",
-        page: `/${basePath}`,
-        title: `Seasons - ${selectedTab.name}`,
-    });
-
 	const pageName = selectedTab.url ? (
 		<span>
 			<a href={`/${basePath}`} className="text-link-white">Seasons</a> &gt; {selectedTab.name}
 		</span>
 	) : "Seasons";
+
+	useEffect(() => {
+		updateMeta("Seasons", selectedTab, basePath);
+	}, [selectedTab]);
 		
 	const options = allSeasons.map((oneSeason) => {
         return { value: oneSeason.id, label: `${oneSeason.name}`, image: oneSeason.image };
@@ -70,20 +68,29 @@ const SeasonsPage = (props) => {
 	};
 
 	return (
-		<Container basePath={basePath} tabs={layoutSeasons.tabs} selectedTab={selectedTab} pageName={pageName} selectBox={
-			<SelectBox
-				options={options}
-				width={"400px"}
-				mobileWidth={"350px"}
-				height={"32px"}
-				color={"#EFEADA"}
-				selectedOption={selectedOption}
-				onOptionChange={handleOptionChange}
-				className="custom-selectbox"
-			/>
-		}>
-			{renderSelectedTab()}
-		</Container>
+		<>
+			<head>
+				<title>Seasons | Wiki</title>
+				<meta 
+					name="description" 
+					content="Learn everything about the seasons in the game, including tasks and rewards." 
+				/>
+			</head>
+			<Container basePath={basePath} tabs={layoutSeasons.tabs} selectedTab={selectedTab} pageName={pageName} selectBox={
+				<SelectBox
+					options={options}
+					width={"400px"}
+					mobileWidth={"350px"}
+					height={"32px"}
+					color={"#EFEADA"}
+					selectedOption={selectedOption}
+					onOptionChange={handleOptionChange}
+					className="custom-selectbox"
+				/>
+			}>
+				{renderSelectedTab()}
+			</Container>
+		</>
 	);
 };
   

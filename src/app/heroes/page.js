@@ -6,7 +6,6 @@ import layoutHeroes from "./sectionsDefinition";
 import Intro from "./intro/Intro";
 import { allHeroes } from "./data";
 import { useTabHandler } from "@/src/components/tabs/useTabHandler";
-import ReactGA from "react-ga4";
 import { updateMeta } from "@/src/shared-resources/utils/utils";
 import { useEffect } from "react";
 
@@ -15,12 +14,6 @@ const HeroesPage = () => {
     const basePath = "heroes";
 
     const selectedTab = useTabHandler(layoutHeroes);
-
-    ReactGA.send({
-        hitType: "pageview",
-        page: `/${basePath}`,
-        title: `Heroes - ${selectedTab.name}`,
-    });
 
     useEffect(() => {
         updateMeta("Heroes", selectedTab, basePath);
@@ -47,9 +40,18 @@ const HeroesPage = () => {
     };
 
     return (
-        <Container basePath={basePath} tabs={layoutHeroes.tabs} selectedTab={selectedTab} pageName={pageName}>
-            {renderSelectedTab()}
-        </Container>
+        <>
+            <head>
+                <title>Heroes | Wiki</title>
+                <meta 
+                    name="description" 
+                    content="Discover all the heroes in the game. Find their abilities, upgrade costs, ascension materials and much more!" 
+                />
+            </head>
+            <Container basePath={basePath} tabs={layoutHeroes.tabs} selectedTab={selectedTab} pageName={pageName}>
+                {renderSelectedTab()}
+            </Container>
+        </>
     );
 }
 

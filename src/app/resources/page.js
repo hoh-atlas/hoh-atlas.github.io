@@ -9,7 +9,6 @@ import Goods from "./goods/Goods";
 import Research from "./research/Research";
 import Crests from "./crests/Crests";
 import Ascension from "./ascension/Ascension";
-import ReactGA from "react-ga4";
 import { updateMeta } from "@/src/shared-resources/utils/utils";
 import { useEffect } from "react";
 
@@ -18,12 +17,6 @@ const ResourcesPage = () => {
   	const basePath = "resources";
 
   	const selectedTab = useTabHandler(layoutResources);
-
-    ReactGA.send({
-        hitType: "pageview",
-        page: `/${basePath}`,
-        title: `Resources - ${selectedTab.name}`,
-    });
 
     useEffect(() => {
         updateMeta("Resources", selectedTab, basePath);
@@ -53,9 +46,18 @@ const ResourcesPage = () => {
   	};
 
   	return (
-    	<Container basePath={basePath} tabs={layoutResources.tabs} selectedTab={selectedTab} pageName={pageName}>
-      		{renderSelectedTab()}
-    	</Container>
+        <>
+            <head>
+                <title>Resources | Wiki</title>
+                <meta 
+                    name="description" 
+                    content="Discover all the resources in the game." 
+                />
+            </head>
+            <Container basePath={basePath} tabs={layoutResources.tabs} selectedTab={selectedTab} pageName={pageName}>
+                {renderSelectedTab()}
+            </Container>
+        </>
   	);
 };
 

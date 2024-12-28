@@ -4,8 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "../components/shared/navbar/Navbar";
 import Footer from "../components/shared/footer/Footer";
-import ReactGA from "react-ga4";
-import { useEffect } from "react";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -20,17 +19,11 @@ const geistMono = localFont({
 });
 
 export default function RootLayout({ children }) {
-	useEffect(() => {
-		ReactGA.initialize("G-TH20891YX2");
-	}, []);
 	
 	return (
 		<html lang="en">
-		<head>
-			<title>Heroes of History Wiki</title>
-			<meta name="description" content={"Heroes of History Wiki is a place where you can find information about heroes, battles, events, allied cultures and many written guides to help you better navigate in the game."} />
-		</head>
 		<body className={`${geistSans.variable} ${geistMono.variable}`}>
+		<GoogleAnalytics gaId="G-TH20891YX2" />
 			<Navbar />
 			{children}
 			<Footer />
