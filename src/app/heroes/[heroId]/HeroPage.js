@@ -7,11 +7,10 @@ import Intro from "./intro/Intro";
 import { allHeroes } from "../data";
 import { useTabHandler } from "@/src/components/tabs/useTabHandler";
 import { useRouter } from "next/navigation";
-import ReactGA from "react-ga4";
 import { updateMeta } from "@/src/shared-resources/utils/utils";
 
 const HeroPage = ({ params }) => {
-    const { heroId } = params;
+    const { heroId } = JSON.parse(params.value);
     const basePath = "heroes";
 
     const selectedTab = useTabHandler(layoutHeroes);
@@ -23,12 +22,6 @@ const HeroPage = ({ params }) => {
     }
 
     const hero = allHeroes.find((oneHero) => oneHero.id === heroId);
-
-    ReactGA.send({
-        hitType: "pageview",
-        page: `/${basePath}`,
-        title: `Heroes - ${hero.name}`,
-    });
 
     useEffect(() => {
         updateMeta("Heroes", selectedTab, basePath);
@@ -62,9 +55,18 @@ const HeroPage = ({ params }) => {
     };
 
     return (
-        <Container basePath={basePath} tabs={layoutHeroes.tabs} pageName={pageName}>
-        {renderSelectedTab()}
-        </Container>
+        <>
+            <head>
+                <title>Heroes | Wiki</title>
+                <meta 
+                    name="description" 
+                    content="Discover all the heroes in the game. Find their abilities, upgrade costs, ascension materials and much more!" 
+                />
+            </head>
+            <Container basePath={basePath} tabs={layoutHeroes.tabs} pageName={pageName}>
+            {renderSelectedTab()}
+            </Container>
+        </>
     );
 };
 
