@@ -10,6 +10,9 @@ import { useRouter } from "next/navigation";
 import { updateMeta } from "@/src/shared-resources/utils/utils";
 
 const HeroPage = ({ params }) => {
+    if (JSON.parse(params.value) === null) {
+        return null;
+    }
     const { heroId } = JSON.parse(params.value);
     const basePath = "heroes";
 
