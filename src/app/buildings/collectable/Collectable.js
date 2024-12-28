@@ -38,7 +38,7 @@ const Collectable = (props) => {
 
     const handleOptionChange = (selectedOption) => {
         setSelectedOption(selectedOption);
-        const newUrl = `/#/buildings/collectable/?building=${selectedOption.value}`;
+        const newUrl = `/buildings#collectable?building=${selectedOption.value}`;
         window.history.pushState({ path: newUrl }, '', newUrl);
     };
 
