@@ -70,7 +70,7 @@ const SeasonsPage = (props) => {
 	return (
 		<>
 			<head>
-				<title>Seasons | Wiki</title>
+				<title>Seasons | Heroes of History Wiki</title>
 				<meta 
 					name="description" 
 					content="Learn everything about the seasons in the game, including tasks and rewards." 

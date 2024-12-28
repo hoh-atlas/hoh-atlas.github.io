@@ -90,7 +90,7 @@ const EventsPage = (props) => {
 	return (
 		<>
 			<head>
-				<title>Events | Wiki</title>
+				<title>Events | Heroes of History Wiki</title>
 				<meta 
 					name="description" 
 					content="Find daily specials, customizations, quests and much more from the seasonal events in Heroes of History!" 

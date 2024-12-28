@@ -297,7 +297,7 @@ export const updateMeta = (pageName, selectedTab, basePath) => {
 
 	//const metaDescription = descriptions[basePath] || "Heroes of History Wiki is a place where you can find information about heroes, battles, events, allied cultures and many written guides to help you better navigate in the game.";
 
-    const metaTitle = `${pageName} - ${selectedTab.name || "Overview"} | Wiki`;
+    const metaTitle = `${pageName} - ${selectedTab.name || "Overview"} | Heroes of History Wiki`;
     document.title = metaTitle;
 
 	/*let metaDescriptionTag = document.querySelector('meta[name="description"]');

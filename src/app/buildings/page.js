@@ -35,7 +35,7 @@ const BuildingsPage = () => {
   	return (
 		<>
 			<head>
-				<title>Buildings | Wiki</title>
+				<title>Buildings | Heroes of History Wiki</title>
 				<meta 
 					name="description" 
 					content="Explore all the buildings in the game. Find all the construction costs, productions and much more!" 

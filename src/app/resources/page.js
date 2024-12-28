@@ -48,7 +48,7 @@ const ResourcesPage = () => {
   	return (
         <>
             <head>
-                <title>Resources | Wiki</title>
+                <title>Resources | Heroes of History Wiki</title>
                 <meta 
                     name="description" 
                     content="Discover all the resources in the game." 

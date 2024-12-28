@@ -96,7 +96,7 @@ const AlliedCulturesPage = (props) => {
 	return (
         <>
             <head>
-                <title>Allied Cultures | Wiki</title>
+                <title>Allied Cultures | Heroes of History Wiki</title>
                 <meta 
                     name="description" 
                     content="Explore various Allied Cultures in the game: Egypt, China, Vikings. Each offering comprehensive guides, tips & tricks, quests, and much more!" 

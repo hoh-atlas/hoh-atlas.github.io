@@ -38,7 +38,7 @@ const CommunityPage = () => {
   	return (
 		<>
 			<head>
-				<title>Community | Wiki</title>
+				<title>Community | Heroes of History Wiki</title>
 				<meta 
 					name="description" 
 					content="Learn how to get in touch with thousands of other players of Heroes of History!" 

@@ -35,7 +35,7 @@ const CampaignPage = () => {
   	return (
 		<>
 			<head>
-				<title>Campaign | Wiki</title>
+				<title>Campaign | Heroes of History Wiki</title>
 				<meta 
 					name="description" 
 					content="Discover the full campaign of the game. Find all the provinces, rewards and much more!" 

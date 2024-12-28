@@ -60,7 +60,7 @@ const HeroPage = ({ params }) => {
     return (
         <>
             <head>
-                <title>Heroes | Wiki</title>
+                <title>Heroes | Heroes of History Wiki</title>
                 <meta 
                     name="description" 
                     content="Discover all the heroes in the game. Find their abilities, upgrade costs, ascension materials and much more!" 

@@ -32,7 +32,7 @@ const ResearchPage = () => {
   	return (
 		<>
 			<head>
-				<title>Research | Wiki</title>
+				<title>Research | Heroes of History Wiki</title>
 				<meta 
 					name="description" 
 					content="Explore the research calculator! Calculate the remaining costs for your current era in the game!" 

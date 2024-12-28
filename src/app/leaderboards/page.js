@@ -72,7 +72,7 @@ const LeaderboardsPage = (props) => {
 	return (
         <>
             <head>
-                <title>Leaderboards | Wiki</title>
+                <title>Leaderboards | Heroes of History Wiki</title>
                 <meta 
                     name="description" 
                     content="Learn everything about the short events in the game, including tasks and comprehensive lists of rewards." 

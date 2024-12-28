@@ -38,7 +38,7 @@ const TreasureHuntPage = () => {
   	return (
 		<>
 			<head>
-				<title>Treasure Hunt | Wiki</title>
+				<title>Treasure Hunt | Heroes of History Wiki</title>
 				<meta 
 					name="description" 
 					content="Everything about the Treasure Hunt in Heroes of History. From tips & tricks to comprehensive lists of rewards." 
