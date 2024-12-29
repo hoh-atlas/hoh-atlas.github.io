@@ -29,6 +29,7 @@ const resources = [
     {id: "antimatter_egyptian", name: "Egyptian Antimatter", img: "/shared/resources/icon_rift_token_egypt_common.webp", category: "antimatters"},
     {id: "rift_token_egypt_common", name: "Egyptian Antimatter", img: "/shared/resources/icon_rift_token_egypt_common.webp", category: "antimatters"},
     {id: "antimatter_legendary", name: "Legendary Antimatter", img: "/shared/resources/icon_rift_token_legendary.webp", category: "antimatters"},
+    {id: "rift_token_legendary", name: "Legendary Antimatter", img: "/shared/resources/icon_rift_token_legendary.webp", category: "antimatters"},
     {id: "antimatter_seasonpass", name: "Season Pass Antimatter", img: "/shared/resources/icon_rift_token_seasonpass_common.webp", category: "antimatters"}, //old image: https://i.ibb.co/RbK0gQc/icon-rift-token-seasonpass-common.png
     {id: "rift_token_seasonpass_common", name: "Season Pass Antimatter", img: "/shared/resources/icon_rift_token_seasonpass_common.webp", category: "antimatters"},
     {id: "antimatter_china", name: "China Antimatter", img: "/shared/resources/icon_rift_token_china_common.webp", category: "antimatters"},
@@ -183,6 +184,7 @@ const resources = [
     {id: "ath_compass", name: "Treasure Hunt Compass", img: "/shared/resources/icon_ath_attempt.webp", category: "ath"},
     // EXPANSIONS
     {id: "expansion_regular", name: "Regular Expansion", img: "/shared/resources/icon_expansion_city_capital_land.webp", category: "expansions"},
+    {id: "City_Capital", name: "Regular Expansion", img: "/shared/resources/icon_expansion_city_capital_land.webp", category: "expansions"},
     {id: "expansion_egypt", name: "Egypt Expansion", img: "/shared/resources/icon_expansion_city_egypt_land.webp", category: "expansions"},
     {id: "City_Egypt", name: "Egypt Expansion", img: "/shared/resources/icon_expansion_city_egypt_land.webp", category: "expansions"},
     {id: "expansion_china", name: "China Expansion", img: "/shared/resources/icon_expansion_city_china_land.webp", category: "expansions"},
@@ -215,6 +217,8 @@ const resources = [
     // ICONS
     {id: "icon_crate", name: "Crate", img: "/shared/resources/icon_crate.webp", category: "icons"},
     {id: "icon_ranking_points", name: "Trophies", img: "/shared/resources/icon_ranking_points.webp", category: "icons"},
+    // EVENTS CURRENCIES
+    {id: "event_winter_tokens", name: "Snowflakes", img: "/events/intro/icon_event_winter_tokens.webp", category: "icons"},
 ]
 
 export default resources;

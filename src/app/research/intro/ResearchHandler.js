@@ -1,13 +1,11 @@
 import "./ResearchHandler.css";
-
 import React, { useState, useEffect } from 'react';
 import { getItemIcon, getItemData } from "../../../shared-resources/utils/utils";
 import H1 from "@/src/components/h1/H1";
 
 const ResearchHandler = (props) => {
     const [completedTechnologies, setCompletedTechnologies] = useState({});
-
-    const data = props.data;
+    const technologies = props.data;
 
     const categoryPriority = ["soft", "research_materials", "goods"];
 
@@ -26,27 +24,27 @@ const ResearchHandler = (props) => {
 
     const toggleCompletion = (id, enable) => {
         const enableParents = (techId) => {
-            const tech = data.find((t) => t.id === techId);
+            const tech = technologies.find((t) => t.id === techId);
             if (tech) {
-                tech.parents.forEach((parentId) => {
+                tech.components[0].start.requirements.forEach((parent) => {
                     setCompletedTechnologies((prev) => ({
                         ...prev,
-                        [parentId]: true,
+                        [parent.id]: true,
                     }));
-                    enableParents(parentId);
+                    enableParents(parent.id);
                 });
             }
         };
 
         const disableChildren = (techId) => {
-            const tech = data.find((t) => t.id === techId);
+            const tech = technologies.find((t) => t.id === techId);
             if (tech) {
-                tech.children.forEach((childId) => {
+                tech.components[0].start.requirements.forEach((child) => {
                     setCompletedTechnologies((prev) => ({
                         ...prev,
-                        [childId]: false,
+                        [child.id]: false,
                     }));
-                    disableChildren(childId);
+                    disableChildren(child.id);
                 });
             }
         };
@@ -65,13 +63,14 @@ const ResearchHandler = (props) => {
 
     const calculateTotalCosts = () => {
         const totalCosts = {};
-        data.forEach((tech) => {
+        technologies.forEach((tech) => {
             if (!completedTechnologies[tech.id]) {
-                tech.costs.forEach((cost) => {
-                    if (!totalCosts[cost.resource]) {
-                        totalCosts[cost.resource] = 0;
+                tech.components[0].start.costs.forEach((cost) => {
+                    const resourceId = cost.definitionId;
+                    if (!totalCosts[resourceId]) {
+                        totalCosts[resourceId] = 0;
                     }
-                    totalCosts[cost.resource] += cost.amount;
+                    totalCosts[resourceId] += parseInt(Math.abs(cost.amount));
                 });
             }
         });
@@ -81,18 +80,25 @@ const ResearchHandler = (props) => {
     const totalCosts = calculateTotalCosts();
 
     const maxCostColumns = Math.max(
-        ...data.map((tech) =>
-            tech.costs.filter((cost) => cost.resource !== "research_point").length
+        ...technologies.map((tech) =>
+            tech.components[0].start.costs.filter((cost) => cost.definitionId !== "research_points").length
         )
     );
 
     const sortCostsByCategory = (costs) => {
         return costs.sort((a, b) => {
-            const categoryA = getItemData(a.resource).category;
-            const categoryB = getItemData(b.resource).category;
+            const categoryA = getItemData(a.definitionId).category;
+            const categoryB = getItemData(b.definitionId).category;
             return categoryPriority.indexOf(categoryA) - categoryPriority.indexOf(categoryB);
         });
     };
+
+    const sortedTechnologies = technologies.sort((a, b) => {
+        if (a.column === b.column) {
+            return a.order - b.order;
+        }
+        return a.column - b.column;
+    });
 
     return (
         <>
@@ -125,23 +131,23 @@ const ResearchHandler = (props) => {
                             </tr>
                         </thead>
                         <tbody>
-                            {data.map((tech) => {
-                                const rpCost = tech.costs.find((cost) => cost.resource === "research_point");
-                                const otherCosts = tech.costs.filter((cost) => cost.resource !== "research_point");
+                            {sortedTechnologies.map((tech, index) => { // Adding index as the first column
+                                const rpCost = tech.components[0].start.costs.find((cost) => cost.definitionId === "research_points");
+                                const otherCosts = tech.components[0].start.costs.filter((cost) => cost.definitionId !== "research_points");
 
                                 const sortedCosts = sortCostsByCategory(otherCosts);
 
                                 return (
                                     <tr key={tech.id}>
-                                        <td>{tech.id}</td>
+                                        <td>{index + 1}</td> {/* Technology index (1-based) */}
                                         <td>{tech.name}</td>
-                                        <td>{rpCost ? rpCost.amount : 0}x {getItemIcon("research_point")}</td>
-                                        {Array.from({ length: maxCostColumns }).map((_, index) => (
-                                            <td key={index}>
-                                                {sortedCosts[index] ? (
+                                        <td>{rpCost ? Math.abs(rpCost.amount) : 0}x {getItemIcon("research_points")}</td>
+                                        {Array.from({ length: maxCostColumns }).map((_, colIndex) => (
+                                            <td key={colIndex}>
+                                                {sortedCosts[colIndex] ? (
                                                     <>
-                                                        {sortedCosts[index].amount}x{" "}
-                                                        {getItemIcon(sortedCosts[index].resource)}
+                                                        {Math.abs(sortedCosts[colIndex].amount)}x{" "}
+                                                        {getItemIcon(sortedCosts[colIndex].definitionId)}
                                                     </>
                                                 ) : null}
                                             </td>

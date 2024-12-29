@@ -1,16 +1,22 @@
 import React from "react";
-import { getItemIcon } from "@/src/shared-resources/utils/utils";
+import { getItemIcon, getItemData, formatDuration, displayRewards, displayDynamicDefinition } from "@/src/shared-resources/utils/utils";
+import customizationsApplyTo from "@/src/shared-resources/data/customizationsApplyTo";
 
-const CustomizationDetails = ({ customization }) => {
+const CustomizationDetails = ({ customization, customizationImage }) => {
+    
+    let duration = formatDuration(customization.duration);
+    let applyTo = customization.buildingGroup;
+    let productionComponent = customization.components.find(oneComponent => oneComponent["@type"] === "type.googleapis.com/ProductionComponentDTO");
+
     return (
         <div className="responsive-table-container" style={{ width: '90%' }}>
             <img 
-                src={customization.img} 
+                src={customizationImage} 
                 alt={customization.name} 
                 style={{ display: 'block', margin: '0 auto', maxHeight: '100px', marginTop: '10px' }} 
             />
             
-            <table style={{ width: '90%', margin: '20px auto' }}>
+            <table style={{ maxWidth: '90%', margin: '20px auto' }}>
                 <thead>
                     <tr>
                         <th colSpan="2">Details</th>
@@ -18,64 +24,31 @@ const CustomizationDetails = ({ customization }) => {
                 </thead>
                 <tbody>
                     {
-                        customization.production && <>
+                        productionComponent && <>
                             <tr>
-                                <th>Production</th>
+                                <th style={{ width: '60%' }}>Production</th>
                                 <td>
-                                    {customization.production.resource
-                                        ? getItemIcon(customization.production.resource)
-                                        : customization.production.resources &&
-                                        customization.production.resources.map((resourceItem, index) => {
-                                            if (typeof resourceItem === 'string') {
-                                            return (
-                                                <span key={resourceItem}>
-                                                {getItemIcon(resourceItem)}
-                                                {index < customization.production.resources.length - 1 && " "}
-                                                </span>
-                                            );
-                                            } else if (typeof resourceItem === 'object' && resourceItem.resource) {
-                                            return (
-                                                <span key={resourceItem.resource}>
-                                                {getItemIcon(resourceItem.resource)} ({resourceItem.percentage}%)
-                                                {index < customization.production.resources.length - 1 && " "}
-                                                </span>
-                                            );
-                                            }
-                                            return null;
-                                        })
-                                    }
+                                    {productionComponent.finish.rewards 
+                                        ? displayRewards(productionComponent.finish) 
+                                        : productionComponent.finish.dynamicChangeDefinitionId 
+                                        ? displayDynamicDefinition(productionComponent.finish.dynamicChangeDefinitionId)
+                                        : null}
                                 </td>
                             </tr>
                             <tr>
-                                <th>Time</th>
-                                <td>{customization.production.time}</td>
+                                <th>Production Time</th>
+                                <td>{formatDuration(productionComponent.duration)}</td>
                             </tr>
-                            {
-                                customization.production.amount && <>
-                                    <tr>
-                                        <th>Amount</th>
-                                        <td>{customization.production.amount}</td>
-                                    </tr>
-                                </>
-                            }
-                        </>
-                    }
-                    {
-                        customization.boost && <>
                             <tr>
-                                <th>Boost</th>
-                                <td>{getItemIcon(customization.boost.type)} ({customization.boost.amount})</td>
+                                <th>Duration</th>
+                                <td>{duration}</td>
+                            </tr>
+                            <tr>
+                                <th>Apply To</th>
+                                <td>{customizationsApplyTo[applyTo]}</td>
                             </tr>
                         </>
                     }
-                    <tr>
-                        <th>Duration</th>
-                        <td>{customization.duration}</td>
-                    </tr>
-                    <tr>
-                        <th>Apply To</th>
-                        <td>{customization.applyTo}</td>
-                    </tr>
                 </tbody>
             </table>
         </div>

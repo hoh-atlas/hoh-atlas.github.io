@@ -7,10 +7,11 @@ import SelectBox from "@/src/components/select-box/SelectBox";
 import TableProvince from "./TableProvince";
 import SectionDivider from "@/src/components/section-divider/SectionDivider";
 import TableFinalRewards from "./TableFinalRewards";
+import encounters from "../_data/encounters";
 
 const Provinces = () => {
 
-    const optionsColors = {"panganea":"#76cc66", "desert_valley":"#d1b077", "early_rome":"#48805f", "mayan":"#669829", "fjords":"#489bb7"};
+    const optionsColors = {"Panganea":"#76cc66", "DesertDelta":"#d1b077", "EasternValley":"#48805f", "VolcanicJungle":"#669829", "FrozenFjord":"#489bb7"};
 
     const options = allProvinces.map((oneProvince) => {
         return {value: oneProvince.id, label: `${oneProvince.id} - ${oneProvince.name}`, dotColor: optionsColors[oneProvince?.location]}
@@ -21,6 +22,31 @@ const Provinces = () => {
     const getProvince = (option) => {
         return allProvinces.find(oneProvince => oneProvince.id == option.value);
     }
+
+    function getProvinceInLocationOrder(provinceId) {
+        const province = allProvinces.find(p => p.id === provinceId);
+        if (province) {
+            const location = province.location;
+            const provincesInSameLocation = allProvinces.filter(p => p.location === location);
+            return provincesInSameLocation.findIndex(p => p.id === provinceId) + 1;
+        } else {
+            return -1;
+        }
+    }
+
+    const provinceEncounters = encounters.filter((oneEncounter) => {
+        const selectedProvince = getProvince(selectedOption);
+        const provinceOrder = getProvinceInLocationOrder(selectedProvince.id, allProvinces);
+        const match = oneEncounter.id.match(/(\d+)/);
+        const encounterOrder = match ? parseInt(match[1], 10) : null;
+        return oneEncounter.id.includes(selectedProvince.location) && encounterOrder === provinceOrder;
+    }).sort((a, b) => {
+        const matchA = a.id.match(/(\d+)$/);
+        const matchB = b.id.match(/(\d+)$/);
+        const orderA = matchA ? parseInt(matchA[1], 10) : null;
+        const orderB = matchB ? parseInt(matchB[1], 10) : null;
+        return orderA - orderB;
+    });
 
     useEffect(() => {
         const hashParams = new URLSearchParams(window.location.hash.substring(window.location.hash.indexOf('?') + 1));
@@ -58,9 +84,9 @@ const Provinces = () => {
             <img src={getProvince(selectedOption)?.img} style={{ maxHeight: '200px', maxWidth: '90%' }} />
         </div>
 
-        <TableProvince data={getProvince(selectedOption)}/>
+        <TableProvince province={getProvince(selectedOption)} encounters={provinceEncounters} />
 
-        <TableFinalRewards data={getProvince(selectedOption)}/>
+        <TableFinalRewards province={getProvince(selectedOption)} orderInLocation={getProvinceInLocationOrder(getProvince(selectedOption).id)} />
     </>
 }
 

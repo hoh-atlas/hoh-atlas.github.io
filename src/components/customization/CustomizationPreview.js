@@ -3,10 +3,19 @@ import "./CustomizationPreview.css";
 import H1 from "../h1/H1";
 import "../feedback-modal/FeedbackModal.css";
 import CustomizationDetails from "./CustomizationDetails";
+import { customizationsImages } from "@/src/app/events/_data/customizationsImages";
 
 const CustomizationPreview = (props) => {
 
     const customization = props.customization;
+    const customizationImage = (() => {
+        for (const event in customizationsImages) {
+            if (customizationsImages[event][customization.id]) {
+                return customizationsImages[event][customization.id];
+            }
+        }
+        return null;
+    })();
 
     const [showModal, setShowModal] = useState(false);
 
@@ -21,7 +30,7 @@ const CustomizationPreview = (props) => {
     return (
         <>
             <img 
-                src={customization.img} 
+                src={customizationImage} 
                 alt="Customization" 
                 className="customization-image" 
                 onClick={handleOpenModal} 
@@ -32,7 +41,7 @@ const CustomizationPreview = (props) => {
                 <div className="modal-backdrop" onClick={handleCloseModal}>
                     <div className="modal-content" onClick={e => e.stopPropagation()}>
                         <H1>{customization.name}</H1>
-                        <CustomizationDetails customization={customization} />
+                        <CustomizationDetails customization={customization} customizationImage={customizationImage}/>
                         <div className="modal-actions">
                             <button className="btn-close" onClick={handleCloseModal}>
                                 Close

@@ -1,8 +1,13 @@
 import { getItemIcon } from "@/src/shared-resources/utils/utils";
+import regionsFinalRewards from "../_data/regionsFinalRewards";
 
 const TableFinalRewards = (props) => {
 
-    const rewards = props.data.rewards;    
+    const province = props.province;
+    const orderInLocation = props.orderInLocation;
+
+    const region = regionsFinalRewards.find(item => item.id === `region.${province.location}_${orderInLocation}`);
+    const regionRewards = region['byDifficulty']['difficulty.Normal']['finish']['rewards'];
 
     return (
         <div style={{ overflowX: 'auto' }} className="responsive-table-container">
@@ -18,7 +23,12 @@ const TableFinalRewards = (props) => {
                     <tr>
                         <td>
                             {
-                                rewards.map((oneReward) => <div style={{ display: 'inline-flex', marginRight: '5px'}}>{oneReward.amount}&nbsp;{getItemIcon(oneReward.resource)}</div>)
+                                regionRewards.map((oneReward) => (
+                                    <div style={{ display: 'inline-flex', marginRight: '5px' }}>
+                                        {oneReward.amount || oneReward.regular}&nbsp;
+                                        {oneReward.resource ? getItemIcon(oneReward.resource) : getItemIcon(oneReward.city)}
+                                    </div>
+                                ))                                
                             }
                         </td>
                     </tr>

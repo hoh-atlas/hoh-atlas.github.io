@@ -35,6 +35,11 @@ export const getItemIcon = (id, maxHeight) => {
         return <CustomizationPreview customization={foundCustomization}/>
     }
 
+    const _foundCustomization = _customizations.find(elem => elem.id === id);
+    if (_foundCustomization) {
+        return <CustomizationPreview customization={_foundCustomization}/>
+    }
+
     const foundChest = chests.find(elem => elem.id === id);
     if (foundChest) {
         return <ChestPreview chest={foundChest}/>
@@ -109,6 +114,15 @@ export const getItemData = (id) => {
             return dynamicRewards;
         }
     }
+}
+
+export const displayDynamicDefinition = (id) => {
+    const data = getItemData(id);
+    return data.rewards.map((reward, index) => (
+        <span className="resource-span" key={index}>
+            {reward.amount}x {getItemIcon(reward.resource)} {data.chances ? `(${data.chances[index]}%)` : null}
+        </span>
+    ))
 }
 
 export const calculateDaysBetween = (startDate, endDate) => {
@@ -240,6 +254,8 @@ const extractRewards = (rewardsArray) => {
             extractedRewards.push({ type: "dynamicDefinitionId", value: reward.dynamicDefinitionId });
         } else if (reward.selectionKit) {
             extractedRewards.push({ type: "selectionKit", value: reward.selectionKit});
+        } else if (reward.definition) {
+            extractedRewards.push({ type: "definition", value: reward.definition})
         } else if (reward.rewards) {
             extractedRewards.push(...extractRewards(reward.rewards));
         }
@@ -268,6 +284,8 @@ export const displayRewards = (arrayOfRewards) => {
                                     </>
                                 ) : nestedReward.type === "selectionKit" ? (
                                         <span className="resource-span">{reward.amount}x {getItemIcon(nestedReward.value)}</span>
+                                ) : nestedReward.type === "definition" ? (
+                                    <span className="resource-span">{reward.amount}x {getItemIcon(nestedReward.value)}</span>
                                 ) : (
                                     <></>
                                 )}

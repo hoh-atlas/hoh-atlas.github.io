@@ -60,12 +60,12 @@ const EventsPage = (props) => {
 
 	const event = allEvents.find((oneEvent) => oneEvent.id === selectedEvent);
 	if (event.questlines === undefined) {
-		if (event.leaderboard) {
-			layoutEvents.tabs[2].name = "Leaderboard";
+		if (event.leaderboards) {
+			layoutEvents.tabs[2].name = "Leaderboards";
 			layoutEvents.tabs[2].img = event.questsIcon;
 		}
 	}
-	if (event.leaderboard === undefined) {
+	if (event.leaderboards === undefined) {
 		if (event.questlines) {
 			layoutEvents.tabs[2].name = "Quests";
 			layoutEvents.tabs[2].img = event.questsIcon;

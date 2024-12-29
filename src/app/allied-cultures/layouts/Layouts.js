@@ -6,6 +6,8 @@ import Image from "@/src/components/image/Image";
 import TextBlock from "@/src/components/textblock/TextBlock";
 import H1 from "@/src/components/h1/H1";
 import LayoutsBook from "./LayoutsBook";
+//import { CityPlanner, createLayout } from "@hoh/city-planner";
+import { useState } from "react";
 
 import allAlliedCultures from "../data";
 
@@ -21,6 +23,23 @@ const Layouts = (props) => {
     const egyptCultures = ["egypt_cheops_pyramid", "egypt_great_sphinx", "egypt_abu_simbel"];
     const chinaCultures = ["china_terracotta_army", "china_great_wall", "china_forbidden_city"];
     const vikingsCultures = ["vikings_yggdrasil", "vikings_ellida", "vikings_valhalla"];
+
+    /*const App = () => {
+        const [layout] = useState(() => createLayout('vikings'));
+        return (
+            <div style={{ 
+                height: '50vh', 
+                width: '80%', 
+                display: 'flex', 
+                justifyContent: 'center', 
+                alignItems: 'center', 
+                margin: 'auto' 
+            }}>
+                <CityPlanner initialLayout={layout} />
+            </div>
+        );
+    };*/
+    
   
     return (
       <>
@@ -34,6 +53,8 @@ const Layouts = (props) => {
             <H1 center={true}>Layouts</H1>
 
             <Image src={alliedCulture?.image} alt="" spacing={true} maxHeight={'150px'}/>
+
+            {/*<App />*/}
 
             {
                 egyptCultures.includes(alliedCulture.id) ? (

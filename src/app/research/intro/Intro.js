@@ -10,6 +10,8 @@ import Image from "@/src/components/image/Image";
 
 import allTechnologies from "../data";
 import ResearchHandler from "./ResearchHandler";
+import allEras from "../../buildings/_data/eras";
+import technologies from "../_data/technologies";
 
 const Intro = () => {
 
@@ -17,14 +19,14 @@ const Intro = () => {
         8: "#5cc299", 9: "#5a98bd", 10: "#686cc5", 11: "#be6061"
     };
 
-    const options = allTechnologies.map((oneEra) => {
-        return {value: oneEra.id, label: `${oneEra.id} - ${oneEra.era}`, dotColor: optionsColors[oneEra?.id]}
+    const options = allEras.map((oneEra, index) => {
+        return {value: oneEra.id, label: oneEra.name, dotColor: optionsColors[(index+1)]}
     });   
 
     const [selectedOption, setSelectedOption] = useState(options[0]);
 
-    const getEra = (option) => {
-        return allTechnologies.find(oneEra => oneEra.id === option.value);
+    const getTechnologies = (option) => {
+        return technologies.filter(oneTechnology => oneTechnology.age === option.value);
     }
 
     useEffect(() => {
@@ -54,7 +56,7 @@ const Intro = () => {
 
         <H1 center={true}>Research Calculator</H1>
 
-        <Image src={getEra(selectedOption).image} maxHeight={140} marginBottom={20}/>
+        <Image src={allEras.find(era => era.id === selectedOption.value).image} maxHeight={140} marginBottom={20}/>
 
         <SelectBox
             options={options}
@@ -64,8 +66,8 @@ const Intro = () => {
             onOptionChange={handleOptionChange}
         />
 
-        <ResearchHandler data={getEra(selectedOption).technologies} era={getEra(selectedOption).era}
-        eraId={getEra(selectedOption).id}/>
+        <ResearchHandler data={getTechnologies(selectedOption)} era={allEras.find(era => era.id === selectedOption.value).name}
+        eraId={allEras.find(era => era.id === selectedOption.value).id}/>
     </>
 }
 
