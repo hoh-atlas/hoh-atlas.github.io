@@ -814,8 +814,8 @@ const seasonsCheckpoints = {
                         "baseData": {
                             "id": "SeasonPass_04_2024_Checkpoint_8_RegularReward1"
                         },
-                        "resource": "pvp_energy",
-                        "amount": "5"
+                        "resource": "ambrosia",
+                        "amount": "3"
                     }
                 ],
                 "premiumRewards": [
@@ -824,8 +824,8 @@ const seasonsCheckpoints = {
                         "baseData": {
                             "id": "SeasonPass_04_2024_Checkpoint_8_PremiumReward1"
                         },
-                        "resource": "campaign_energy",
-                        "amount": "160"
+                        "resource": "ambrosia",
+                        "amount": "5"
                     }
                 ],
                 "requiredProgress": "80"
@@ -849,8 +849,8 @@ const seasonsCheckpoints = {
                         "baseData": {
                             "id": "SeasonPass_04_2024_Checkpoint_9_PremiumReward1"
                         },
-                        "resource": "pvp_energy",
-                        "amount": "5"
+                        "resource": "campaign_energy",
+                        "amount": "160"
                     }
                 ],
                 "requiredProgress": "90"
@@ -964,7 +964,7 @@ const seasonsCheckpoints = {
                         "baseData": {
                             "id": "SeasonPass_04_2024_Checkpoint_14_RegularReward1"
                         },
-                        "resource": "pvp_energy",
+                        "resource": "ambrosia",
                         "amount": "5"
                     }
                 ],
@@ -990,7 +990,7 @@ const seasonsCheckpoints = {
                             "id": "SeasonPass_04_2024_Checkpoint_15_RegularReward1"
                         },
                         "resource": "campaign_battle_ticket",
-                        "amount": "15"
+                        "amount": "25"
                     }
                 ],
                 "premiumRewards": [
@@ -1000,7 +1000,7 @@ const seasonsCheckpoints = {
                             "id": "SeasonPass_04_2024_Checkpoint_15_PremiumReward1"
                         },
                         "resource": "campaign_battle_ticket",
-                        "amount": "30"
+                        "amount": "50"
                     }
                 ],
                 "requiredProgress": "115"
@@ -1114,7 +1114,7 @@ const seasonsCheckpoints = {
                         "baseData": {
                             "id": "SeasonPass_04_2024_Checkpoint_20_RegularReward1"
                         },
-                        "resource": "pvp_energy",
+                        "resource": "ambrosia",
                         "amount": "5"
                     }
                 ],
@@ -1124,8 +1124,8 @@ const seasonsCheckpoints = {
                         "baseData": {
                             "id": "SeasonPass_04_2024_Checkpoint_20_PremiumReward1"
                         },
-                        "resource": "campaign_energy",
-                        "amount": "160"
+                        "resource": "ambrosia",
+                        "amount": "10"
                     }
                 ],
                 "requiredProgress": "125"
@@ -1149,8 +1149,8 @@ const seasonsCheckpoints = {
                         "baseData": {
                             "id": "SeasonPass_04_2024_Checkpoint_21_PremiumReward1"
                         },
-                        "resource": "pvp_energy",
-                        "amount": "5"
+                        "resource": "campaign_energy",
+                        "amount": "160"
                     }
                 ],
                 "requiredProgress": "125"
