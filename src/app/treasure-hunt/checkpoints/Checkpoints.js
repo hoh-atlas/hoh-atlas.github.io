@@ -45,13 +45,13 @@ const Checkpoints = (props) => {
         <SectionDivider />
         <H1 center={true}>Checkpoints</H1>
 
-        <SelectBox
+        {/*<SelectBox
             options={options}
             width={"50%"}
             color={"#f2f1ed"}
             selectedOption={selectedOption}
             onOptionChange={handleOptionChange}
-        />
+        />*/}
 
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "15px", marginBottom: "15px" }}>
             <Image src={"/treasure-hunt/checkpoints/icon_ath_encounter.webp"} maxHeight={'100px'}/>
