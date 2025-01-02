@@ -7,8 +7,8 @@ const allLeaderboards = [
         codeName: "event.LeaderboardEvent_RallyOfHeroes_1",
         image: "/shared/resources/icon_rift_token_legendary.webp",
         background: "/leaderboards/intro/hero_backdrop_antimatter.webp",
-        startDate: "__ _ 2025",
-        endDate: "__ _ 2025",
+        startDate: "January 8th 2025",
+        endDate: "January 15th 2025",
         description: (
             <>
                 Open any portal to earn trophies and rewards in the Rally of Heroes event. The number of trophies you receive depends on the specific portal:

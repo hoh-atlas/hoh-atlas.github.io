@@ -282,8 +282,7 @@ const leaderboardsData = [
                         "rift.SeasonPass_01_2024",
                         "rift.SeasonPass_02_2024",
                         "rift.SeasonPass_03_2024",
-                        "rift.SeasonPass_04_2024",
-                        "rift.SeasonPass_05_2024"
+                        "rift.SeasonPass_04_2024"
                     ]
                 },
                 "progressCarriedOver": true,
@@ -349,7 +348,7 @@ const leaderboardsData = [
                                 },
                                 "resource": "campaign_energy",
                                 "amount": "200"
-                            },
+                            }
                         ]
                     },
                     "70": {
