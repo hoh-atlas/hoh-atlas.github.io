@@ -1,4 +1,4 @@
-const checkpoints = [
+const _checkpoints = [
     {
         "@type": "type.googleapis.com/RewardDefinitionDTO",
         "id": "reward.TreasureHunt_Milestone_48000",
@@ -1672,4 +1672,4 @@ const checkpoints = [
     }
 ]
 
-export default checkpoints;
+export default _checkpoints;

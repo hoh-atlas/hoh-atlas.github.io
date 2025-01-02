@@ -3,6 +3,7 @@ import layoutTreasureHunt from "./sectionsDefinition";
 import Container from "@/src/components/container/Container";
 import { useTabHandler } from "@/src/components/tabs/useTabHandler";
 import Intro from "./intro/Intro";
+import Encounters from "./encounters/Encounters";
 import Checkpoints from "./checkpoints/Checkpoints";
 import Customizations from "./customizations/Customizations";
 import { updateMeta } from "@/src/shared-resources/utils/utils";
@@ -26,6 +27,8 @@ const TreasureHuntPage = () => {
 
   	const renderSelectedTab = () => {
     	switch (selectedTab.url) {
+			case "encounters":
+				return <Encounters />;
             case "checkpoints":
                 return <Checkpoints />;
             case "customizations":

@@ -52773,7 +52773,7 @@ const athRewards = [
         "baseData": {
             "id": "reward.TreasureHunt_5_2_2"
         }
-    }
+    },
 ]
 
 export default athRewards;

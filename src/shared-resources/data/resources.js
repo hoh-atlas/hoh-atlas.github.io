@@ -175,6 +175,7 @@ const resources = [
     {id: "viking_sailor", name: "Viking Sailor", img: "/shared/resources/Viking_Sailor.webp", category: "culture_vikings"},
     // TOKENS
     {id: "token_ath_fountain_of_youth", name: "Fountain of Youth", img: "/shared/resources/token_ath_fountain_of_youth.webp", category: "tokens"},
+    {id: "EvolutionToken|Building_TreasureHunt_Evolving_FountainOfYouth_1", name: "Fountain of Youth", img: "/shared/resources/token_ath_fountain_of_youth.webp", category: "tokens"},
     // SEASONS
     {id: "seasonpass_progress", name: "Season Pass Progress", img: "/shared/resources/icon_seasonpass_progress.webp", category: "seasons"},
     // PVP

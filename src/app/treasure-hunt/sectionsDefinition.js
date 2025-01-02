@@ -13,7 +13,7 @@ const layoutTreasureHunt = {
             id: 2,
             url: "encounters",
             name: "Encounters",
-            img: "https://i.ibb.co/FDghJ4Y/Treasure-Hunt-Icon.png",
+            img: "/treasure-hunt/checkpoints/icon_ath_encounter.webp",
             show: false,
             dynamicSegments: [],
         },

@@ -69,27 +69,51 @@ export const getItemData = (id) => {
     if (id.includes("Dac_")) {
         // This code is receiving the elem.when according to preset era. If the DAC has now such era, then it is looking for the first previous one.
         let presetEra = getFromLocalStorage("preset_era");
-        let availableEras = dynamicDefinitions
-            .find(elem => elem.id === id)
-            .mapping[0]
-            .values.map(value => value.when);
-        const orderedEras = dropdownItems.map(item => item.value);
-        let presetEraIndex = orderedEras.indexOf(presetEra);
-        let effectiveEra = availableEras.includes(presetEra)
-            ? presetEra
-            : (() => {
-                for (let i = presetEraIndex - 1; i >= 0; i--) {
-                    if (availableEras.includes(orderedEras[i])) {
-                        return orderedEras[i];
+        let athDifficulty = getFromLocalStorage("ath_difficulty");
+        let availableErasOrDifficulties;
+        let effectiveValue;
+
+        if (id.includes("_ATH_")) {
+            availableErasOrDifficulties = dynamicDefinitions
+                .find(elem => elem.id === id)
+                .mapping[0]
+                .cases.map(value => value.when);
+            effectiveValue = availableErasOrDifficulties.includes(athDifficulty)
+                ? athDifficulty
+                : availableErasOrDifficulties[0];
+        } else {
+            availableErasOrDifficulties = dynamicDefinitions
+                .find(elem => elem.id === id)
+                .mapping[0]
+                .values.map(value => value.when);
+            const orderedEras = dropdownItems.map(item => item.value);
+            let presetEraIndex = orderedEras.indexOf(presetEra);
+            effectiveValue = availableErasOrDifficulties.includes(presetEra)
+                ? presetEra
+                : (() => {
+                    for (let i = presetEraIndex - 1; i >= 0; i--) {
+                        if (availableErasOrDifficulties.includes(orderedEras[i])) {
+                            return orderedEras[i];
+                        }
                     }
-                }
-                return orderedEras.find(era => availableEras.includes(era));
-            })();
+                    return orderedEras.find(era => availableErasOrDifficulties.includes(era));
+                })();
+        }
+
         let foundDynamicDefinition = dynamicDefinitions
             .find(elem => elem.id === id)
-            .mapping[0]
-            .values.find(elem => elem.when === effectiveEra).then;
+            .mapping[0];
+
+        let mappingData = foundDynamicDefinition.values || foundDynamicDefinition.cases;
+
+        let effectiveDynamic = mappingData.find(elem => elem.when === effectiveValue);
+
+        foundDynamicDefinition = effectiveDynamic?.then;
+
         // ---
+        if (foundDynamicDefinition?.dynamicChangeDefinitionId) {
+            return getItemData(foundDynamicDefinition.dynamicChangeDefinitionId[0]);
+        }
 
         let dynamicRewards = flattenRewards(foundDynamicDefinition.rewards);
         if (dynamicRewards) {
@@ -114,6 +138,7 @@ export const getItemData = (id) => {
             return dynamicRewards;
         }
     }
+    console.log(id)
 }
 
 export const displayDynamicDefinition = (id) => {
@@ -239,6 +264,12 @@ export const getFromLocalStorage = (string) => {
         if (string === "preset_era") {
             if (!localStorage.getItem(string)) {
                 localStorage.setItem(string, "RomanEmpire");
+            }
+            return localStorage.getItem(string);
+        }
+        if (string === "ath_difficulty") {
+            if (!localStorage.getItem(string)) {
+                localStorage.setItem(string, "0");
             }
             return localStorage.getItem(string);
         }
